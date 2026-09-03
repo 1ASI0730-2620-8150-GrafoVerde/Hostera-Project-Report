@@ -9,6 +9,11 @@ body {
   line-height: 1.35;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .cover {
   text-align: center;
   page-break-after: always;
@@ -17,9 +22,16 @@ body {
 .cover img {
   display: block;
   width: 300px;
+  max-width: none;
   height: auto;
   margin: 0 auto 1.2em;
   border: 0;
+}
+
+table img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
 }
 
 .cover h3 {
