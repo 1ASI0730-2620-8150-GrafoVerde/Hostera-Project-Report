@@ -1,0 +1,47 @@
+@page {
+  size: A4;
+  margin: 2cm;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.35;
+}
+
+.cover {
+  text-align: center;
+  page-break-after: always;
+}
+
+.cover img {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 0 auto 1.2em;
+  border: 0;
+}
+
+.cover h3 {
+  margin: 0.22em 0;
+  font-size: 12pt;
+}
+
+.cover table,
+.version-history table {
+  width: 100%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+.cover th,
+.cover td,
+.version-history th,
+.version-history td {
+  padding: 0.25em 0.45em;
+  border: 1px solid #888;
+}
+
+.version-history {
+  page-break-after: always;
+}

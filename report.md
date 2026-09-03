@@ -1,4 +1,4 @@
- <div align ="center">
+<div class="cover">
 
 <img src="assets/cover/logo-upc.png" alt="logo-upc" style="width:300px; height:auto;"/>
 
@@ -35,7 +35,7 @@
 ## Setiembre - 2026
 
 </div>
-<div align ="center">
+<div class="version-history">
 
 # Control de versiones
 
