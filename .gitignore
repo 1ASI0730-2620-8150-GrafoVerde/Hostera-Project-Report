@@ -9,3 +9,6 @@ Desktop.ini
 # IDE
 .idea
 .crossnote
+
+# Build files
+report.pdf
