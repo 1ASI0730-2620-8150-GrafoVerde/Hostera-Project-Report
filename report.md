@@ -174,6 +174,20 @@
 
 ### 1.1.1. Descripción de la Startup
 
+Grafo Verde es una startup tecnológica enfocada en desarrollar soluciones digitales innovadoras para la gestión y operación del sector hotelero. Nuestro propósito es ayudar a los hoteles a trabajar de manera más ordenada, segura y eficiente mediante herramientas accesibles, centralizadas y escalables que permitan supervisar la operación diaria y tomar decisiones basadas en información actualizada.
+
+Nuestra solución es Hostera, una plataforma web administrativa que centraliza la gestión de reservas, la disponibilidad de habitaciones, el inventario del almacén y el control de accesos físicos. A través de un panel de monitoreo en tiempo real, Hostera permite visualizar el estado de la operación hotelera desde un solo lugar, reduciendo errores de sobreventa, mejorando la visibilidad del stock y facilitando el control de las habitaciones.
+
+Hostera incorpora una solución de Internet de las Cosas (IoT) basada en tarjetas RFID y lectores RFID para gestionar el acceso de huéspedes y personal autorizado. Esta integración permite asociar tarjetas con habitaciones, validar los accesos y mantener un registro de las entradas, fortaleciendo la seguridad y proporcionando mayor control sobre los espacios del hotel.
+
+La propuesta de Grafo Verde se centra en construir un ecosistema de gestión hotelera conectado, intuitivo y preparado para crecer. Hostera puede adaptarse a la operación de un hotel individual y replicarse en distintas sedes de una cadena, manteniendo la información organizada y ofreciendo una visión consolidada de reservas, habitaciones, inventario y accesos.
+
+**Misión:** Desarrollar herramientas digitales accesibles, seguras y eficientes que permitan a los hoteles gestionar sus reservas, habitaciones, inventario y accesos en tiempo real, mejorando la operación diaria y la experiencia de sus equipos y huéspedes.
+
+**Visión:** En los próximos cinco años, consolidar a Grafo Verde como una empresa referente en soluciones de gestión hotelera en Latinoamérica, reconocida por conectar la operación de los hoteles mediante tecnología innovadora, escalable y orientada a la eficiencia y la seguridad.
+
+**Alcance del proyecto:** El alcance inicial de Hostera comprende una plataforma web administrativa para centralizar el monitoreo de reservas, disponibilidad de habitaciones, inventario del almacén y accesos físicos mediante tarjetas y lectores RFID. La solución está diseñada para ofrecer visibilidad en tiempo real, reducir inconsistencias operativas y facilitar la administración de una o varias sedes desde un único panel. A mediano plazo, buscamos ampliar sus capacidades de automatización, análisis y control para acompañar el crecimiento de hoteles y cadenas hoteleras en Latinoamérica.
+
 ### 1.1.2. Perfiles de integrantes del equipo
 
 | Foto | Apellidos y Nombres | Código | Carrera | Habilidades |
