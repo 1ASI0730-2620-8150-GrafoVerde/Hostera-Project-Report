@@ -371,6 +371,87 @@ fin de mejorar la visibilidad y la coordinación de la operación hotelera.
 
 #### 1.2.2.1. Lean UX Problem Statement
 
+**Enunciado del problema**
+
+Nuestro servicio ofrece una plataforma web administrativa para la gestión y operación
+hotelera. Hostera busca ayudar a los administradores y responsables de la operación a
+coordinar reservas, disponibilidad de habitaciones, inventario y accesos físicos desde
+una visión común. El personal de recepción, los encargados del almacén y el personal
+autorizado también participan en estos procesos, mientras que los huéspedes se
+benefician indirectamente de una atención más coordinada y oportuna.
+
+Hemos observado un factor crítico que afecta la coordinación de la operación
+hotelera: la información necesaria para estos procesos puede encontrarse distribuida
+entre diferentes registros o herramientas independientes. Esta situación puede
+dificultar que los responsables y usuarios operativos conozcan el estado actualizado
+de una reserva o habitación, controlen las existencias del almacén y relacionen los
+accesos autorizados con una habitación y un usuario. También puede obligarlos a
+comparar y conciliar datos manualmente, generando riesgos de duplicidad, demoras en la
+atención y menor trazabilidad, especialmente cuando se coordinan varias sedes. Esta
+observación es preliminar y deberá validarse con usuarios del sector hotelero.
+
+¿Cómo podríamos mejorar la coordinación de la operación hotelera para que sus
+responsables y usuarios operativos trabajen con información actualizada, reduzcan la
+conciliación manual, mantengan la trazabilidad de los eventos y tomen decisiones
+oportunas?
+
+**Domain:** Gestión y operación hotelera, incluyendo reservas, disponibilidad de
+habitaciones, control de inventario y gestión de accesos físicos.
+
+**Customer Segments:**
+
+- Administradores y responsables de la operación hotelera.
+- Personal de recepción.
+- Encargados del almacén.
+- Personal autorizado que gestiona o supervisa accesos.
+- Huéspedes como beneficiarios indirectos de una operación coordinada.
+
+**Pain Points:**
+
+- Dificultad para consultar en un mismo contexto la información de reservas,
+  habitaciones, inventario y accesos.
+- Riesgo de trabajar con datos diferentes entre áreas o registros independientes.
+- Tiempo adicional dedicado a verificar y conciliar información antes de completar
+  tareas operativas.
+- Poca trazabilidad para relacionar los accesos autorizados con una habitación y un
+  usuario o huésped.
+- Mayor dificultad para mantener una visión consistente cuando se coordinan varias
+  sedes.
+
+**Gap:** Los registros y herramientas utilizados en los procesos hoteleros no
+resuelven de manera integrada la necesidad de contar con información centralizada,
+actualizada y relacionada entre reservas, habitaciones, inventario y accesos. Esta
+brecha limita la visibilidad de los responsables de la operación y la coordinación
+entre los usuarios que participan en las tareas diarias.
+
+**Vision/Strategy:** Hostera buscará cerrar esta brecha mediante una solución digital
+administrativa orientada a centralizar la información operativa, facilitar su consulta
+y apoyar la coordinación entre áreas. La estrategia inicial considera la gestión de
+reservas y habitaciones, el seguimiento del inventario y la relación de los accesos
+físicos con tarjetas y lectores RFID. Esta dirección deberá evolucionar según la
+evidencia obtenida durante el descubrimiento y la validación.
+
+**Initial Segment:** El foco inicial serán los **administradores y responsables de la
+operación hotelera**, debido a que necesitan una visión consolidada para supervisar
+los procesos y tomar decisiones. Los demás perfiles se considerarán usuarios
+operativos relacionados o beneficiarios indirectos. Esta priorización es preliminar y
+deberá confirmarse con evidencia de usuarios.
+
+**Success Criteria:** Se considerará que la iniciativa avanza hacia el éxito cuando
+los usuarios puedan completar tareas representativas con información centralizada,
+actualizada y sin depender de la conciliación entre registros independientes. Para
+medir ese comportamiento se proponen los siguientes indicadores, cuyos valores
+iniciales y metas se definirán durante la validación:
+
+- porcentaje de tareas de consulta o actualización de reservas y disponibilidad que
+  se completan desde el entorno administrativo;
+- tiempo promedio que necesita el personal para encontrar el estado actual de una
+  reserva o habitación;
+- porcentaje de movimientos de inventario registrados y consultables en la solución;
+- porcentaje de accesos autorizados relacionados con una tarjeta RFID, una habitación
+  y un usuario o huésped; y
+- número de inconsistencias detectadas durante escenarios de prueba.
+
 #### 1.2.2.2. Lean UX Assumptions
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
@@ -514,5 +595,9 @@ This is program for AV2 (not in AV1)
 # Bibliografía
 
 [1] Progressa Lean. (2021, 13 de mayo). [*5W+2H: Técnica de análisis de problemas*](https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/).
+
+[2] Gothelf, J., & Seiden, J. (2021). *Lean UX: Creating Great Products with Agile Teams* (3rd ed.). O'Reilly Media.
+
+[3] Universidad Peruana de Ciencias Aplicadas. (2021). *Lean & Hypothesis-Driven Development* [Material de clase].
 
 # Anexos
