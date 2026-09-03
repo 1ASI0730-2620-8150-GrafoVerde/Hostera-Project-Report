@@ -40,6 +40,9 @@
 # Control de versiones
 
 | Versión | Fecha | Autor(es) | Descripción de cambios |
+| :---: | :---: | :--- | :--- |
+| 0.1.1 | 03/09/2026 | Joaquin Cuba (`joacuba`) | Se agregó la documentación del repositorio, el script para generar el PDF y la licencia MIT. Se corrigió el diseño de la portada, el tamaño de las imágenes y los bordes de las tablas. |
+| 0.1.0 | 03/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Juan Diego Flores Rios (`YopoFlores`) | Se creó la estructura inicial del informe del proyecto Hostera, se incorporaron los recursos gráficos y se agregó la descripción de la startup. |
 
 </div>
 
