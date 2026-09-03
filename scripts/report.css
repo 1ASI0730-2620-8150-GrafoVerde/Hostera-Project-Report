@@ -46,12 +46,29 @@ table img {
   border-collapse: collapse;
 }
 
+table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #888;
+}
+
+table tbody {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+table th,
+table td {
+  padding: 0.35em 0.5em;
+  border: 1px solid #888;
+}
+
 .cover th,
 .cover td,
 .version-history th,
 .version-history td {
   padding: 0.25em 0.45em;
-  border: 1px solid #888;
 }
 
 .version-history {
