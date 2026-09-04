@@ -628,6 +628,80 @@ varias sedes, sin duplicar ni confundir la información operativa.
 
 ## 1.3. Segmentos objetivo
 
+Hostera está orientada a organizaciones del sector hotelero que necesitan coordinar
+reservas, disponibilidad de habitaciones, inventario y accesos desde una plataforma
+administrativa común. La segmentación considera el tipo de operación del hotel y el
+rol de las personas responsables de tomar decisiones o supervisar estos procesos.
+Debido a que se trata de una solución B2B, se consideran tanto características del
+perfil de las personas como características empresariales del establecimiento, tales
+como el número de sedes, el nivel de responsabilidad y la complejidad operativa.
+
+Como contexto del mercado peruano, el Ministerio de Comercio Exterior y Turismo
+(MINCETUR) reportó para 2024 una oferta promedio de 28 050 establecimientos de
+hospedaje, 329 340 habitaciones y 567 292 plazas-cama. El 85,1 % de los
+establecimientos no estaba categorizado y el 14,9 % estaba categorizado. Durante el
+mismo año se registraron 57,6 millones de arribos, de los cuales el 88,4 % correspondió
+a visitantes nacionales [4]. Estas cifras muestran la amplitud y diversidad del
+sector, pero no clasifican directamente los establecimientos según propiedad
+independiente o pertenencia a una cadena.
+
+### 1.3.1. Administradores y propietarios de hoteles independientes
+
+Este segmento está conformado por personas propietarias o administradoras que toman
+decisiones y supervisan directamente la operación de un hotel independiente de una
+sola sede. En este contexto, pueden participar en la gestión de reservas, la consulta
+de disponibilidad, el control del almacén y la autorización o revisión de accesos.
+Su necesidad principal es disponer de una visión consolidada de la operación sin
+depender de registros separados o de conciliaciones manuales entre áreas.
+
+Entre sus características relevantes se encuentran las siguientes:
+
+- Responsabilidad directa sobre la continuidad y organización de la operación diaria.
+- Gestión de un establecimiento ubicado en una única sede.
+- Participación en decisiones administrativas y en la supervisión de varias áreas
+  operativas.
+- Necesidad de consultar información actualizada sin requerir sistemas independientes
+  para cada proceso.
+
+La importancia de este segmento se relaciona con la composición de la oferta peruana:
+MINCETUR registró que el 85,1 % de los establecimientos de hospedaje no estaba
+categorizado en 2024 [4]. Este indicador describe la estructura de categorización del
+sector y no demuestra por sí solo que todos esos establecimientos sean independientes;
+por ello, la relación entre esta característica y el tipo de propiedad deberá
+validarse mediante entrevistas con administradores y propietarios en el mercado
+peruano.
+
+### 1.3.2. Gerentes o responsables de operaciones de pequeñas cadenas hoteleras
+
+Este segmento está conformado por personas que supervisan la operación de una cadena
+hotelera pequeña con dos o más sedes. Su responsabilidad consiste en coordinar y
+comparar información de reservas, disponibilidad, inventario y accesos entre los
+establecimientos, manteniendo la visibilidad de cada sede y una visión consolidada
+del negocio.
+
+Entre sus características relevantes se encuentran las siguientes:
+
+- Responsabilidad sobre la coordinación operativa de varias sedes.
+- Necesidad de comparar indicadores y estados sin mezclar la información de cada
+  establecimiento.
+- Supervisión de procesos que pueden ser ejecutados por equipos diferentes en cada
+  sede.
+- Interés en una plataforma que pueda crecer junto con la incorporación de nuevos
+  establecimientos.
+
+Este segmento se relaciona con la concentración geográfica de la oferta hotelera
+peruana. En 2024, Lima concentró el 27,6 % de los establecimientos de hospedaje,
+seguida por Cusco (8,1 %), Arequipa (5,9 %), Junín (5,7 %) y La Libertad (4,6 %); estas
+cinco regiones reunieron el 52,0 % de la oferta nacional [4]. La concentración no
+confirma por sí misma la existencia de cadenas pequeñas, pero evidencia un contexto
+en el que la coordinación entre sedes puede ser relevante y deberá validarse con
+gerentes o responsables de operaciones del sector hotelero peruano.
+
+Los perfiles de recepción, almacén y control de accesos se consideran usuarios
+operativos relacionados con estos dos segmentos. Los huéspedes son beneficiarios
+indirectos de una operación más coordinada y no constituyen el usuario administrativo
+principal del producto mínimo viable.
+
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
@@ -767,5 +841,7 @@ This is program for AV2 (not in AV1)
 [2] Gothelf, J., & Seiden, J. (2021). *Lean UX: Creating Great Products with Agile Teams* (3rd ed.). O'Reilly Media.
 
 [3] Universidad Peruana de Ciencias Aplicadas. (2021). *Lean & Hypothesis-Driven Development* [Material de clase].
+
+[4] Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). [*Perú: Oferta y Demanda de Establecimientos de Hospedaje - Año 2024*](https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024).
 
 # Anexos
