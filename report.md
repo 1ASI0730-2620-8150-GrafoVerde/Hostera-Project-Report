@@ -706,7 +706,82 @@ principal del producto mínimo viable.
 
 ## 2.1. Competidores
 
+En esta sección se identifican y describen tres competidores directos de Hostera en
+el mercado peruano. La selección considera proveedores que ofrecen productos
+digitales para la gestión de establecimientos de hospedaje y que cubren, total o
+parcialmente, los procesos que Hostera busca centralizar: reservas, disponibilidad de
+habitaciones, inventario y supervisión de la operación. La información se basa en la
+oferta pública de cada proveedor; por ello, la selección no pretende establecer un
+ranking de participación de mercado.
+
+**Nexus PMS de HotelClick.**
+
+Nexus PMS es una plataforma web en la nube orientada a hoteles en Perú. Su propuesta
+incluye la gestión de reservas, check-in y check-out, la sincronización con canales
+como Booking.com, Airbnb, Expedia y Agoda, y la facturación electrónica integrada con
+SUNAT. También ofrece control de inventarios con registro de entradas y salidas,
+alertas de stock mínimo, usuarios con permisos y acceso desde computadoras y
+dispositivos móviles [5].
+
+El proveedor ofrece una demostración inicial y contratación mediante un pago anual
+que incluye los módulos, las actualizaciones y el soporte técnico. La plataforma
+integra facturación, POS y distribución por OTAs, de acuerdo con la información
+pública del proveedor [5].
+
+**OkFac.**
+
+OkFac se presenta como un PMS hecho para hoteles peruanos. Incluye un calendario de
+reservas, vista del estado de las habitaciones, check-in y check-out, housekeeping,
+conexión con OTAs y emisión de comprobantes electrónicos mediante SUNAT [6]. En su
+plan Pro incorpora inventario, compras y gastos; el plan Enterprise añade reportes y
+operación multi-sucursal, además de roles y permisos avanzados [6]. Estas funciones
+se ofrecen para hoteles y hostales de distintos tamaños.
+
+Su modelo comercial es de suscripción mensual o anual por planes. El proveedor
+publica planes para hoteles y hostales pequeños, medianos y grandes, desde S/ 140 al
+mes, con implementación y capacitación incluidas; el plan Enterprise contempla
+funciones multi-sucursal [6]. También ofrece facturación electrónica y módulos de
+restaurante dentro de la misma cuenta [6].
+
+**SysHotel.**
+
+SysHotel es una plataforma PMS y ERP desarrollada para el mercado peruano, dirigida
+desde hostales pequeños hasta cadenas con varias sedes. Su oferta pública incluye
+reservas, check-in y check-out, disponibilidad de habitaciones, housekeeping,
+facturación electrónica SUNAT, channel manager y un ERP con inventario
+multi-almacén y kardex [7]. Además, el proveedor declara que puede cotizar
+integraciones con cerraduras inteligentes y sistemas de control de acceso, aunque no
+especifica que estas integraciones utilicen RFID [7].
+
+El servicio se comercializa como suscripción con precios publicados desde S/ 100 al
+mes, demostración guiada e integraciones personalizadas según el alcance. SysHotel
+declara tener más de 150 hoteles activos en Perú [7].
+
 ### 2.1.1. Análisis competitivo
+
+El objetivo del análisis es responder: **¿cómo se posiciona Hostera frente a las
+soluciones digitales que ya pueden utilizar los hoteles peruanos para administrar su
+operación?** Para responder esta pregunta se utiliza el *Competitive Analysis
+Landscape* del Project Statement, comparando el perfil, el valor ofrecido, el mercado,
+las acciones de marketing, el producto, el modelo de precios y los canales de los
+tres competidores seleccionados.
+
+| Criterio | Hostera | Nexus PMS (HotelClick) [5] | OkFac [6] | SysHotel [7] |
+| --- | --- | --- | --- | --- |
+| **Overview / Perfil** | Plataforma web administrativa en desarrollo para centralizar reservas, disponibilidad de habitaciones, inventario y accesos físicos mediante RFID. | PMS web en la nube para administrar reservas, habitaciones, inventario, facturación y distribución por OTAs en Perú. | PMS para hoteles y hostales peruanos con recepción, reservas, housekeeping y facturación electrónica. | PMS + ERP hotelero desarrollado en Perú, con módulos para recepción, housekeeping, inventario y back-office. |
+| **Ventaja competitiva: valor para clientes** | Integra en un solo panel la operación de reservas, habitaciones, almacén y accesos RFID, con posibilidad de administrar una o varias sedes. | Centraliza la operación con facturación SUNAT, POS, channel manager, acceso remoto y alertas de stock mínimo. | Combina operación hotelera, cumplimiento SUNAT, implementación incluida y planes escalables hasta multi-sucursal. | Combina PMS y ERP con inventario multi-almacén, kardex e integraciones personalizadas, incluidas opciones de cerraduras y control de acceso. |
+| **Perfil de mercado objetivo** | Administradores y propietarios de hoteles independientes, y gerentes o responsables de pequeñas cadenas hoteleras. | Hoteles que operan en Perú; la página del proveedor no limita públicamente el servicio a un tamaño específico. | Hoteles y hostales pequeños, hoteles medianos y establecimientos grandes con necesidades multi-sucursal. | Hostales pequeños, hoteles medianos y hoteles grandes o cadenas con varias sedes. |
+| **Estrategias de marketing observadas** | La estrategia comercial aún debe validarse; el proyecto se encuentra en etapa de desarrollo y levantamiento de requisitos. | Captación mediante demo gratuita, comunicación de cobertura nacional, testimonios de clientes y promoción de una solución 100 % web. | Demo gratuita, contacto por WhatsApp, planes y precios publicados, implementación y capacitación incluidas. | Demo guiada, precios de entrada publicados, contenidos comparativos y oferta de integraciones a medida. |
+| **Productos y servicios** | Panel administrativo, reservas, disponibilidad, inventario, registro de eventos y control de accesos con tarjetas y lectores RFID. | PMS, channel manager, reservas, check-in/out, inventarios, POS, facturación SUNAT, usuarios y permisos. | PMS, calendario de reservas, habitaciones, check-in/out, housekeeping, OTAs, inventario, compras, reportes y facturación SUNAT. | PMS, ERP, reservas, disponibilidad, housekeeping, channel manager, facturación SUNAT, multi-almacén, kardex, reportes e integraciones. |
+| **Precios y costos** | No definidos; se determinarán después de validar necesidades, alcance e implementación. | Pago anual; el precio no se publica en la página consultada y se solicita una demostración. | Planes publicados de S/ 140, S/ 210 y S/ 350 mensuales; ofrece descuento anual e implementación incluida. | Suscripción desde S/ 100 mensuales; las integraciones específicas se cotizan según alcance. |
+| **Canales de distribución (web y/o móvil)** | Plataforma web administrativa y dispositivos RFID instalados en los puntos de acceso del hotel. | Aplicación web en la nube accesible desde PC, laptop, tableta o celular; demo en línea. | Servicio web promocionado mediante su sitio y atención comercial por WhatsApp. | Acceso desde computadora, tableta o móvil; demo guiada y soporte local. |
+
+El *landscape* evidencia que los tres competidores ya cubren la gestión de reservas y
+habitaciones, y que Nexus, OkFac y SysHotel también ofrecen funciones de inventario en
+distinto nivel. La oportunidad preliminar de Hostera está en tratar el control de
+accesos RFID como parte del mismo contexto operativo, en lugar de presentarlo como un
+módulo independiente. Esta diferencia debe validarse con entrevistas y pruebas del
+producto; no se asume todavía como una ventaja competitiva comprobada.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -843,5 +918,11 @@ This is program for AV2 (not in AV1)
 [3] Universidad Peruana de Ciencias Aplicadas. (2021). *Lean & Hypothesis-Driven Development* [Material de clase].
 
 [4] Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). [*Perú: Oferta y Demanda de Establecimientos de Hospedaje - Año 2024*](https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024).
+
+[5] HotelClick. (s. f.). [*Sistema de Administración y Gestión Hotelera para Perú: Nexus PMS*](https://hotelclick.net.pe/). Recuperado el 4 de septiembre de 2026.
+
+[6] Montalvo Soluciones Tecnológicas S.A.C. (s. f.). [*Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac*](https://okfac.pe/sistema-hotelero-peru). Recuperado el 4 de septiembre de 2026.
+
+[7] SysHotel. (s. f.). [*PMS hotelero en Perú: software de gestión hotelera*](https://syshotel.app/). Recuperado el 4 de septiembre de 2026.
 
 # Anexos
