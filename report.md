@@ -27,10 +27,10 @@
 |       Apellidos y Nombres        | Código de Alumno |
 | :------------------------------: | :--------------: |
 |   Cuba Pareja, Joaquin Antonio   |    u201621281    |
-|     Cuba Vega, Darnell Yadir     |                  |
+|     Cuba Vega, Darnell Yadir     |    u202410105    |
 | Condori Urviola, Mateo Sebastián |                  |
-|     Flores Rios, Juan Diego      |                  |
-|    Santana Luna, José Antonio    |                  |
+|     Flores Rios, Juan Diego      |    U202412124    |
+|    Santana Luna, José Antonio    |    U20241E281    |
 
 ## Setiembre - 2026
 
