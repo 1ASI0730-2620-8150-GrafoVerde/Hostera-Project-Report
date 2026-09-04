@@ -871,6 +871,42 @@ del mismo contexto operativo.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
+Las siguientes estrategias y tácticas son preliminares y se derivan del *Competitive
+Analysis Landscape*. Su propósito es aprovechar las capacidades diferenciales de
+Hostera, responder a las fortalezas de los competidores y reducir los riesgos
+identificados en el análisis SWOT. No representan decisiones comerciales definitivas;
+deberán validarse con administradores y responsables de operaciones hoteleras.
+
+#### Estrategias preliminares
+
+| Estrategia | Justificación | Tácticas iniciales |
+| --- | --- | --- |
+| **Enfoque en la coordinación operativa y la trazabilidad RFID** | Nexus PMS, OkFac y SysHotel cubren buena parte de las reservas, habitaciones e inventarios. Hostera puede diferenciarse al relacionar esos procesos con la autorización y el historial de accesos RFID en un mismo contexto. | Priorizar en el MVP el panel de operación, la relación entre habitación, usuario y tarjeta, y la consulta del historial de eventos. Comunicar la propuesta como coordinación operativa y seguridad, sin afirmar todavía una ventaja comprobada. |
+| **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multi-sede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel. |
+| **Producto modular e interoperable** | Nexus, OkFac y SysHotel ya ofrecen facturación, OTAs, POS u otros módulos. Hostera no debe asumir que reemplazará todas las herramientas comerciales y contables que utiliza un hotel. | Mantener el alcance inicial en reservas, disponibilidad, inventario y accesos RFID. Levantar como requisitos de integración los sistemas de facturación, canales de reserva y cerraduras que los hoteles ya utilicen, empezando por los escenarios de mayor valor. |
+| **Entrada gradual mediante demostraciones y pilotos** | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación [5][6][7]. | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
+| **Precio y despliegue transparentes** | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio [5][6][7]. Hostera aún no tiene precios definidos. | Validar si la suscripción por hotel o por sede resulta comprensible para los segmentos objetivo. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto. |
+| **Confianza mediante adaptación local y soporte** | Los competidores resaltan SUNAT, soporte en español y conocimiento del mercado peruano [5][6][7]. Esa expectativa debe considerarse aunque la facturación no forme parte del MVP de Hostera. | Usar terminología y flujos comprensibles para equipos hoteleros peruanos, documentar la compatibilidad del hardware RFID y ofrecer acompañamiento inicial. Cuando una función dependa de un sistema externo, explicitar esa dependencia en lugar de prometer cobertura no validada. |
+
+#### Tácticas frente a los competidores seleccionados
+
+| Competidor | Fortaleza a afrontar | Táctica de Hostera |
+| --- | --- | --- |
+| **Nexus PMS** | Plataforma en la nube con reservas, inventario, facturación SUNAT, POS y channel manager [5]. | Evitar una comparación basada en amplitud de módulos. Mostrar cómo Hostera añade la relación entre reserva, habitación, tarjeta RFID y evento de acceso, y evaluar integraciones para que el hotel no tenga que reemplazar sus herramientas de facturación o distribución desde el primer día. |
+| **OkFac** | Planes escalables, implementación incluida, housekeeping, inventario y operación multi-sucursal [6]. | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren. |
+| **SysHotel** | PMS + ERP con inventario multi-almacén, kardex y posibilidad de integrar cerraduras o control de acceso [7]. | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee. |
+
+#### Criterios para validar la estrategia
+
+La estrategia se considerará viable solo si los experimentos con usuarios muestran que
+Hostera facilita la supervisión de la operación y aporta trazabilidad sin introducir
+una carga de configuración desproporcionada. La validación utilizará los indicadores
+ya propuestos para la iniciativa: tiempo de consulta del estado de una reserva o
+habitación, porcentaje de movimientos de inventario registrados, porcentaje de accesos
+relacionados con una tarjeta RFID, una habitación y un usuario, y número de
+inconsistencias detectadas. Los valores de referencia y las metas se definirán luego
+de obtener una línea base con usuarios reales.
+
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
