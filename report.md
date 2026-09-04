@@ -561,6 +561,67 @@ definir los experimentos que permitan confirmarlos o modificarlos.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+Los Hypothesis Statements representan una evolución de los Assumptions, ya que
+convierten las creencias iniciales del equipo en afirmaciones que pueden medirse y
+comprobarse. Cada hipótesis aplica el formato de Lean UX y relaciona un business
+outcome con un user outcome y una feature específica. Esta estructura permite
+contrastar las ideas con evidencia y comprobar si Hostera contribuye tanto a los
+objetivos del negocio como a las necesidades reales de sus usuarios.
+
+**Hipótesis 1: Panel administrativo centralizado**
+
+Creemos que centralizar la información de reservas, habitaciones, inventario y
+accesos en un panel administrativo reducirá la dependencia de registros
+independientes para supervisar la operación hotelera.
+
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
+tareas de supervisión que los administradores y responsables de la operación
+completan desde el panel sin consultar registros adicionales, respecto a la línea
+base definida durante la validación.
+
+**Hipótesis 2: Gestión de reservas y disponibilidad**
+
+Creemos que ofrecer al personal de recepción y a los administradores información
+actualizada para registrar y consultar reservas y disponibilidad reducirá las
+inconsistencias entre las reservas registradas y el estado de las habitaciones.
+
+**Sabremos que hemos tenido éxito cuando veamos** una reducción de al menos 5% en
+las inconsistencias detectadas entre reservas y disponibilidad, y una disminución del
+tiempo necesario para encontrar el estado de una reserva o habitación, en comparación
+con la línea base de la validación.
+
+**Hipótesis 3: Registro y consulta del inventario**
+
+Creemos que registrar y consultar los movimientos de inventario permitirá a los
+encargados del almacén y a los responsables de la operación mejorar la visibilidad y
+el seguimiento de las existencias.
+
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
+movimientos de inventario registrados y consultables, junto con una reducción de las
+diferencias encontradas durante las pruebas de control de existencias, respecto a la
+línea base.
+
+**Hipótesis 4: Control y trazabilidad de accesos RFID**
+
+Creemos que integrar las tarjetas y lectores RFID con el registro de eventos de
+Hostera permitirá al personal autorizado y a los responsables de la operación mejorar
+la trazabilidad de los accesos a las habitaciones y espacios del hotel.
+
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
+accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un
+usuario o huésped, además de una reducción del tiempo necesario para consultar su
+historial.
+
+**Hipótesis 5: Administración de una o varias sedes**
+
+Creemos que una estructura de información preparada para administrar una o varias
+sedes permitirá a los administradores y responsables de la operación mantener una
+visión consistente sin perder el contexto de cada hotel.
+
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
+tareas de consulta y supervisión completadas correctamente en escenarios de una y
+varias sedes, sin duplicar ni confundir la información operativa.
+
 #### 1.2.2.4. Lean UX Canvas
 
 ## 1.3. Segmentos objetivo
