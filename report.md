@@ -39,10 +39,10 @@
 
 # Control de versiones
 
-| Versión | Fecha | Autor(es) | Descripción de cambios |
-| :---: | :---: | :--- | :--- |
-| 0.1.1 | 03/09/2026 | Joaquin Cuba (`joacuba`) | Se agregó la documentación del repositorio, el script para generar el PDF y la licencia MIT. Se corrigió el diseño de la portada, el tamaño de las imágenes y los bordes de las tablas. |
-| 0.1.0 | 03/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Juan Diego Flores Rios (`YopoFlores`) | Se creó la estructura inicial del informe del proyecto Hostera, se incorporaron los recursos gráficos y se agregó la descripción de la startup. |
+| Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
+| :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  0.1.1  | 03/09/2026 | Joaquin Cuba (`joacuba`)                                                                          | Se agregó la documentación del repositorio, el script para generar el PDF y la licencia MIT. Se corrigió el diseño de la portada, el tamaño de las imágenes y los bordes de las tablas. |
+|  0.1.0  | 03/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Juan Diego Flores Rios (`YopoFlores`) | Se creó la estructura inicial del informe del proyecto Hostera, se incorporaron los recursos gráficos y se agregó la descripción de la startup.                                         |
 
 </div>
 
@@ -194,13 +194,13 @@ La propuesta de Grafo Verde se centra en construir un ecosistema de gestión hot
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| Foto | Apellidos y Nombres | Código | Carrera | Habilidades |
-|---|---|---|---|---|
-| <img src="assets/chapter-1/joaquin-cuba-image-profile.png" alt="Foto de Joaquin Antonio Cuba Pareja" width="100"> | Cuba Pareja, Joaquin Antonio | u201621281 | Ingeniería de Software | JavaScript, TypeScript, Python, HTML, CSS y C++. Dispuesto a trabajar y aprender en equipo. Tiene facilidad para aprender rápidamente nuevas tecnologías y lenguajes de programación. |
-|  | Cuba Vega, Darnell Yadir |  | Ingeniería de Software |  |
-|  | Condori Urviola, Mateo Sebastián |  | Ingeniería de Software |  |
-|  | Flores Rios, Juan Diego |  | Ingeniería de Software |  |
-|  | Santana Luna, José Antonio |  | Ingeniería de Software |  |
+| Foto                                                                                                              | Apellidos y Nombres              | Código     | Carrera                | Habilidades                                                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="assets/chapter-1/joaquin-cuba-image-profile.png" alt="Foto de Joaquin Antonio Cuba Pareja" width="100"> | Cuba Pareja, Joaquin Antonio     | u201621281 | Ingeniería de Software | JavaScript, TypeScript, Python, HTML, CSS y C++. Dispuesto a trabajar y aprender en equipo. Tiene facilidad para aprender rápidamente nuevas tecnologías y lenguajes de programación. |
+|                                                                                                                   | Cuba Vega, Darnell Yadir         |            | Ingeniería de Software |                                                                                                                                                                                       |
+|                                                                                                                   | Condori Urviola, Mateo Sebastián |            | Ingeniería de Software |                                                                                                                                                                                       |
+|                                                                                                                   | Flores Rios, Juan Diego          |            | Ingeniería de Software |                                                                                                                                                                                       |
+|                                                                                                                   | Santana Luna, José Antonio       |            | Ingeniería de Software |                                                                                                                                                                                       |
 
 ## 1.2. Solution Profile
 
@@ -324,15 +324,15 @@ los requisitos, la arquitectura y las integraciones necesarias.
 
 **Presupuesto estimado de software:**
 
-| Componente | Costo estimado |
-|---|---:|
-| Diseño UX/UI y prototipo del dashboard web | S/ 2,500 – S/ 4,000 |
-| Desarrollo frontend del dashboard administrativo | S/ 4,000 – S/ 6,000 |
-| Backend, API y base de datos | S/ 4,000 – S/ 6,500 |
-| Integración del software de control de accesos RFID y registro de eventos | S/ 2,500 – S/ 4,000 |
-| Pruebas, documentación y configuración del despliegue | S/ 1,500 – S/ 2,500 |
-| Dominio, hosting y servicios de infraestructura (anual) | S/ 1,200 – S/ 2,000 |
-| **Total estimado de software** | **S/ 15,700 – S/ 25,000** |
+| Componente                                                                |            Costo estimado |
+| ------------------------------------------------------------------------- | ------------------------: |
+| Diseño UX/UI y prototipo del dashboard web                                |       S/ 2,500 – S/ 4,000 |
+| Desarrollo frontend del dashboard administrativo                          |       S/ 4,000 – S/ 6,000 |
+| Backend, API y base de datos                                              |       S/ 4,000 – S/ 6,500 |
+| Integración del software de control de accesos RFID y registro de eventos |       S/ 2,500 – S/ 4,000 |
+| Pruebas, documentación y configuración del despliegue                     |       S/ 1,500 – S/ 2,500 |
+| Dominio, hosting y servicios de infraestructura (anual)                   |       S/ 1,200 – S/ 2,000 |
+| **Total estimado de software**                                            | **S/ 15,700 – S/ 25,000** |
 
 Esta estimación no incluye la compra de tarjetas, lectores RFID u otro hardware
 físico, ni costos de operación del hotel. Tampoco representa una cotización
@@ -871,30 +871,30 @@ del mismo contexto operativo.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Las siguientes estrategias y tácticas son preliminares y se derivan del *Competitive
-Analysis Landscape*. Su propósito es aprovechar las capacidades diferenciales de
+Las siguientes estrategias y tácticas son preliminares y se derivan del _Competitive
+Analysis Landscape_. Su propósito es aprovechar las capacidades diferenciales de
 Hostera, responder a las fortalezas de los competidores y reducir los riesgos
 identificados en el análisis SWOT. No representan decisiones comerciales definitivas;
 deberán validarse con administradores y responsables de operaciones hoteleras.
 
 #### Estrategias preliminares
 
-| Estrategia | Justificación | Tácticas iniciales |
-| --- | --- | --- |
-| **Enfoque en la coordinación operativa y la trazabilidad RFID** | Nexus PMS, OkFac y SysHotel cubren buena parte de las reservas, habitaciones e inventarios. Hostera puede diferenciarse al relacionar esos procesos con la autorización y el historial de accesos RFID en un mismo contexto. | Priorizar en el MVP el panel de operación, la relación entre habitación, usuario y tarjeta, y la consulta del historial de eventos. Comunicar la propuesta como coordinación operativa y seguridad, sin afirmar todavía una ventaja comprobada. |
-| **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multi-sede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel. |
-| **Producto modular e interoperable** | Nexus, OkFac y SysHotel ya ofrecen facturación, OTAs, POS u otros módulos. Hostera no debe asumir que reemplazará todas las herramientas comerciales y contables que utiliza un hotel. | Mantener el alcance inicial en reservas, disponibilidad, inventario y accesos RFID. Levantar como requisitos de integración los sistemas de facturación, canales de reserva y cerraduras que los hoteles ya utilicen, empezando por los escenarios de mayor valor. |
-| **Entrada gradual mediante demostraciones y pilotos** | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación [5][6][7]. | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
-| **Precio y despliegue transparentes** | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio [5][6][7]. Hostera aún no tiene precios definidos. | Validar si la suscripción por hotel o por sede resulta comprensible para los segmentos objetivo. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto. |
-| **Confianza mediante adaptación local y soporte** | Los competidores resaltan SUNAT, soporte en español y conocimiento del mercado peruano [5][6][7]. Esa expectativa debe considerarse aunque la facturación no forme parte del MVP de Hostera. | Usar terminología y flujos comprensibles para equipos hoteleros peruanos, documentar la compatibilidad del hardware RFID y ofrecer acompañamiento inicial. Cuando una función dependa de un sistema externo, explicitar esa dependencia en lugar de prometer cobertura no validada. |
+| Estrategia                                                       | Justificación                                                                                                                                                                                                                                      | Tácticas iniciales                                                                                                                                                                                                                                                                                      |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Enfoque en la coordinación operativa y la trazabilidad RFID**  | Nexus PMS, OkFac y SysHotel cubren buena parte de las reservas, habitaciones e inventarios. Hostera puede diferenciarse al relacionar esos procesos con la autorización y el historial de accesos RFID en un mismo contexto.                       | Priorizar en el MVP el panel de operación, la relación entre habitación, usuario y tarjeta, y la consulta del historial de eventos. Comunicar la propuesta como coordinación operativa y seguridad, sin afirmar todavía una ventaja comprobada.                                                         |
+| **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multi-sede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel.                                                    |
+| **Producto modular e interoperable**                             | Nexus, OkFac y SysHotel ya ofrecen facturación, OTAs, POS u otros módulos. Hostera no debe asumir que reemplazará todas las herramientas comerciales y contables que utiliza un hotel.                                                             | Mantener el alcance inicial en reservas, disponibilidad, inventario y accesos RFID. Levantar como requisitos de integración los sistemas de facturación, canales de reserva y cerraduras que los hoteles ya utilicen, empezando por los escenarios de mayor valor.                                      |
+| **Entrada gradual mediante demostraciones y pilotos**            | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación [5][6][7].                                                                                         | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
+| **Precio y despliegue transparentes**                            | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio [5][6][7]. Hostera aún no tiene precios definidos.                                                                                   | Validar si la suscripción por hotel o por sede resulta comprensible para los segmentos objetivo. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto.                                                                   |
+| **Confianza mediante adaptación local y soporte**                | Los competidores resaltan SUNAT, soporte en español y conocimiento del mercado peruano [5][6][7]. Esa expectativa debe considerarse aunque la facturación no forme parte del MVP de Hostera.                                                       | Usar terminología y flujos comprensibles para equipos hoteleros peruanos, documentar la compatibilidad del hardware RFID y ofrecer acompañamiento inicial. Cuando una función dependa de un sistema externo, explicitar esa dependencia en lugar de prometer cobertura no validada.                     |
 
 #### Tácticas frente a los competidores seleccionados
 
-| Competidor | Fortaleza a afrontar | Táctica de Hostera |
-| --- | --- | --- |
-| **Nexus PMS** | Plataforma en la nube con reservas, inventario, facturación SUNAT, POS y channel manager [5]. | Evitar una comparación basada en amplitud de módulos. Mostrar cómo Hostera añade la relación entre reserva, habitación, tarjeta RFID y evento de acceso, y evaluar integraciones para que el hotel no tenga que reemplazar sus herramientas de facturación o distribución desde el primer día. |
-| **OkFac** | Planes escalables, implementación incluida, housekeeping, inventario y operación multi-sucursal [6]. | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren. |
-| **SysHotel** | PMS + ERP con inventario multi-almacén, kardex y posibilidad de integrar cerraduras o control de acceso [7]. | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee. |
+| Competidor    | Fortaleza a afrontar                                                                                         | Táctica de Hostera                                                                                                                                                                                                                                                                             |
+| ------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nexus PMS** | Plataforma en la nube con reservas, inventario, facturación SUNAT, POS y channel manager [5].                | Evitar una comparación basada en amplitud de módulos. Mostrar cómo Hostera añade la relación entre reserva, habitación, tarjeta RFID y evento de acceso, y evaluar integraciones para que el hotel no tenga que reemplazar sus herramientas de facturación o distribución desde el primer día. |
+| **OkFac**     | Planes escalables, implementación incluida, housekeeping, inventario y operación multi-sucursal [6].         | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren.                                  |
+| **SysHotel**  | PMS + ERP con inventario multi-almacén, kardex y posibilidad de integrar cerraduras o control de acceso [7]. | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee.                                                |
 
 #### Criterios para validar la estrategia
 
@@ -910,6 +910,88 @@ de obtener una línea base con usuarios reales.
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
+
+El objetivo de las entrevistas es comprender cómo los representantes de los dos
+segmentos objetivo realizan actualmente la supervisión de reservas, habitaciones,
+inventario y accesos, qué dificultades encuentran y qué criterios utilizarían para
+adoptar una solución digital. La investigación buscará describir comportamientos y
+experiencias reales, no confirmar de antemano las hipótesis de Hostera ni presentar
+la solución como respuesta durante las primeras preguntas.
+
+#### Enfoque y participantes
+
+Se utilizarán entrevistas individuales semiestructuradas, con preguntas abiertas y
+repreguntas adaptables. Se planificarán entre tres y cinco entrevistas por segmento,
+tal como solicita el Project Statement para el registro posterior. La selección será
+intencional y buscará variación en tamaño del establecimiento, experiencia en el
+puesto, ubicación en el Perú y uso de herramientas digitales. No se considerarán como
+representantes del segmento los proveedores de software, consultores o personas que
+no participen en la operación del establecimiento.
+
+| Segmento                                                                 | Criterios de selección del participante                                                                                                        | Contexto que se buscará cubrir                                                                                                                     |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Administradores y propietarios de hoteles independientes**             | Propietario, administrador o responsable de un hotel de una sola sede que participe directamente en decisiones y supervisión operativa.        | Gestión de reservas, disponibilidad, almacén y accesos desde la perspectiva de quien coordina varias áreas en un establecimiento individual.       |
+| **Gerentes o responsables de operaciones de pequeñas cadenas hoteleras** | Persona que coordine o supervise dos o más sedes de una cadena hotelera pequeña y que compare información o resultados entre establecimientos. | Consolidación de reservas, disponibilidad, inventario y accesos; coordinación de equipos y necesidad de mantener separados los datos de cada sede. |
+
+La participación será voluntaria. Antes de iniciar se explicará el propósito académico,
+la duración, el uso del registro y la posibilidad de no responder cualquier pregunta o
+retirarse. La grabación en video solo se realizará con autorización explícita. En el
+informe se utilizarán los nombres y datos que el participante autorice; cualquier
+información adicional se presentará de forma anonimizada y se solicitará permiso
+separado para publicar capturas o enlaces del video.
+
+#### Protocolo de entrevista
+
+Cada sesión seguirá una estructura común de aproximadamente 30 a 45 minutos:
+
+1. **Introducción y consentimiento (3–5 minutos):** presentación del entrevistador,
+   propósito, confidencialidad, autorización de grabación y permiso para tomar notas.
+2. **Contexto del participante (5 minutos):** rol, establecimiento, experiencia y
+   responsabilidades dentro de la operación.
+3. **Relato de la operación actual (15–20 minutos):** descripción de actividades
+   recientes y herramientas utilizadas para reservas, habitaciones, inventario y
+   accesos.
+4. **Problemas, objetivos y criterios (7–10 minutos):** dificultades, consecuencias,
+   prioridades y señales de una mejora valiosa.
+5. **Cierre (3–5 minutos):** oportunidad para agregar información, confirmar si se
+   puede contactar nuevamente y agradecer la participación.
+
+#### 1. Primer segmento objetivo: administradores y propietarios de hoteles independientes
+
+Las preguntas se enfocan en la operación de una sola sede y en las decisiones que la
+persona propietaria o administradora coordina directamente.
+
+| N.º | Pregunta principal                                                                            | Pregunta complementaria                                                                                         |
+| --- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 1   | ¿Cuál es su cargo y qué responsabilidades asume en el hotel?                                  | ¿Desde cuándo desempeña este rol y qué tareas revisa personalmente?                                             |
+| 2   | ¿Cómo organiza en un día normal las actividades de reservas, habitaciones, almacén y accesos? | ¿Qué actividad atiende primero y qué información necesita para decidir?                                         |
+| 3   | ¿Cómo registra y verifica actualmente las reservas y la disponibilidad de habitaciones?       | ¿Qué herramientas utiliza y qué ocurre cuando encuentra una diferencia o una reserva duplicada?                 |
+| 4   | ¿Cómo controla las entradas, salidas y existencias del almacén?                               | ¿Quién actualiza la información y cómo detecta faltantes o necesidades de reposición?                           |
+| 5   | ¿Cómo autoriza, entrega y revisa los accesos de huéspedes y personal?                         | ¿Qué hace cuando se pierde una tarjeta, cambia una autorización o necesita revisar un evento?                   |
+| 6   | ¿Qué información debe consultar para supervisar el hotel cuando no está presente?             | ¿Cómo recibe esa información y cuánto tiempo necesita para obtenerla?                                           |
+| 7   | ¿Qué sistemas, documentos, dispositivos y canales utiliza para realizar estas tareas?         | ¿Utiliza Excel, WhatsApp, un PMS, lectores o cerraduras electrónicas? ¿Qué herramienta considera más confiable? |
+| 8   | ¿Cuál es la dificultad más importante que encuentra al coordinar estas áreas?                 | ¿Qué consecuencias tiene para el personal, los huéspedes o la operación?                                        |
+| 9   | ¿Qué cambio mejoraría más la administración de su hotel?                                      | ¿Qué condiciones de costo, soporte, capacitación o seguridad necesitaría para adoptarlo?                        |
+| 10  | ¿Hay algún aspecto de la operación de una sede que debamos comprender mejor?                  | ¿Autoriza que se utilicen las respuestas y la grabación según el consentimiento explicado?                      |
+
+#### 2. Segundo segmento objetivo: gerentes o responsables de operaciones de pequeñas cadenas hoteleras
+
+Las preguntas se enfocan en la coordinación de dos o más sedes, la consolidación de
+información y el control de las diferencias entre establecimientos.
+
+| N.º | Pregunta principal                                                                                         | Pregunta complementaria                                                                                     |
+| --- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 1   | ¿Cuál es su cargo y qué responsabilidades tiene sobre las sedes de la cadena?                              | ¿Cuántas sedes coordina y desde cuándo realiza esta función?                                                |
+| 2   | ¿Cómo obtiene una visión general del estado de las reservas y habitaciones de todas las sedes?             | ¿Qué información recibe de cada sede y con qué frecuencia la revisa?                                        |
+| 3   | ¿Cómo compara actualmente el desempeño o la disponibilidad entre establecimientos?                         | ¿Qué indicadores utiliza y en qué formato los consulta?                                                     |
+| 4   | ¿Cómo se coordinan los movimientos de inventario entre las sedes?                                          | ¿Cómo se registran las entradas, salidas, transferencias y necesidades de reposición?                       |
+| 5   | ¿Cómo se administran los accesos de huéspedes y personal cuando intervienen distintas sedes?               | ¿Quién autoriza los accesos y cómo se revisan los eventos o cambios de permisos?                            |
+| 6   | Cuénteme sobre una situación en la que una reserva, inventario o acceso requirió coordinación entre sedes. | ¿Qué personas participaron, dónde se produjo la dificultad y cómo se resolvió?                              |
+| 7   | ¿Cómo mantiene separada la información de cada sede y, al mismo tiempo, obtiene reportes consolidados?     | ¿Qué roles y permisos tienen los equipos? ¿Quién puede consultar o modificar la información?                |
+| 8   | ¿Qué sistemas, documentos, dispositivos y canales utiliza el equipo de la cadena?                          | ¿Qué diferencias existen entre sedes en cuanto a PMS, hojas de cálculo, dispositivos o cerraduras?          |
+| 9   | ¿Qué debería ofrecer una solución para acompañar el crecimiento de la cadena?                              | ¿Qué configuraciones deberían replicarse y qué procesos deberían mantenerse específicos por sede?           |
+| 10  | ¿Qué cambio mejoraría más la coordinación de las sedes?                                                    | ¿Qué condiciones de costo, soporte, capacitación, seguridad e integración serían necesarias para adoptarlo? |
+| 11  | ¿Hay algún aspecto de la operación multi-sede que debamos comprender mejor?                                | ¿Autoriza que se utilicen las respuestas y la grabación según el consentimiento explicado?                  |
 
 ### 2.2.2. Registro de entrevistas
 
@@ -1033,18 +1115,18 @@ This is program for AV2 (not in AV1)
 
 # Bibliografía
 
-[1] Progressa Lean. (2021, 13 de mayo). [*5W+2H: Técnica de análisis de problemas*](https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/).
+[1] Progressa Lean. (2021, 13 de mayo). [_5W+2H: Técnica de análisis de problemas_](https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/).
 
-[2] Gothelf, J., & Seiden, J. (2021). *Lean UX: Creating Great Products with Agile Teams* (3rd ed.). O'Reilly Media.
+[2] Gothelf, J., & Seiden, J. (2021). _Lean UX: Creating Great Products with Agile Teams_ (3rd ed.). O'Reilly Media.
 
-[3] Universidad Peruana de Ciencias Aplicadas. (2021). *Lean & Hypothesis-Driven Development* [Material de clase].
+[3] Universidad Peruana de Ciencias Aplicadas. (2021). _Lean & Hypothesis-Driven Development_ [Material de clase].
 
-[4] Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). [*Perú: Oferta y Demanda de Establecimientos de Hospedaje - Año 2024*](https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024).
+[4] Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). [_Perú: Oferta y Demanda de Establecimientos de Hospedaje - Año 2024_](https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024).
 
-[5] HotelClick. (s. f.). [*Sistema de Administración y Gestión Hotelera para Perú: Nexus PMS*](https://hotelclick.net.pe/). Recuperado el 4 de septiembre de 2026.
+[5] HotelClick. (s. f.). [_Sistema de Administración y Gestión Hotelera para Perú: Nexus PMS_](https://hotelclick.net.pe/). Recuperado el 4 de septiembre de 2026.
 
-[6] Montalvo Soluciones Tecnológicas S.A.C. (s. f.). [*Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac*](https://okfac.pe/sistema-hotelero-peru). Recuperado el 4 de septiembre de 2026.
+[6] Montalvo Soluciones Tecnológicas S.A.C. (s. f.). [_Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac_](https://okfac.pe/sistema-hotelero-peru). Recuperado el 4 de septiembre de 2026.
 
-[7] SysHotel. (s. f.). [*PMS hotelero en Perú: software de gestión hotelera*](https://syshotel.app/). Recuperado el 4 de septiembre de 2026.
+[7] SysHotel. (s. f.). [_PMS hotelero en Perú: software de gestión hotelera_](https://syshotel.app/). Recuperado el 4 de septiembre de 2026.
 
 # Anexos
