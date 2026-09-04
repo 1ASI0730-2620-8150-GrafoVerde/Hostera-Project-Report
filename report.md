@@ -454,6 +454,111 @@ iniciales y metas se definirán durante la validación:
 
 #### 1.2.2.2. Lean UX Assumptions
 
+Los siguientes supuestos representan las creencias iniciales del equipo sobre el
+negocio, los usuarios, los resultados esperados y las capacidades que podría ofrecer
+Hostera. Se formulan como afirmaciones que deberán ser contrastadas mediante
+entrevistas, prototipos y experimentos durante las siguientes iteraciones del proceso
+Lean UX.
+
+**Business Assumptions**
+
+1. Creemos que los hoteles que administran sus reservas, habitaciones, inventario y
+   accesos con procesos separados necesitan una visión operativa más centralizada.
+2. Creemos que una plataforma web administrativa enfocada en la coordinación de estos
+   procesos puede ofrecer valor a hoteles individuales y a negocios que administran
+   varias sedes.
+3. Creemos que el principal valor de Hostera para el negocio será facilitar la
+   supervisión diaria y mejorar la consistencia de la información operativa.
+4. Creemos que un modelo de suscripción por hotel o por sede podría ser una
+   alternativa viable para comercializar Hostera, aunque esta posibilidad todavía no
+   ha sido validada con clientes.
+5. Creemos que Grafo Verde puede organizar sus capacidades de diseño y desarrollo
+   para construir y validar un producto mínimo viable dentro del alcance académico
+   definido para Hostera.
+
+**Business Outcome Assumptions**
+
+1. Creemos que los responsables de la operación consultarán el entorno administrativo
+   como una fuente principal para supervisar reservas, habitaciones, inventario y
+   accesos.
+2. Creemos que la centralización de la información reducirá la necesidad de comparar
+   registros independientes antes de tomar decisiones operativas.
+3. Creemos que el personal podrá identificar con mayor rapidez el estado de una
+   reserva o habitación cuando la información se encuentre disponible en un mismo
+   entorno.
+4. Creemos que una mayor trazabilidad de los accesos y movimientos de inventario
+   permitirá a los responsables detectar inconsistencias con mayor oportunidad.
+5. Creemos que estos cambios de comportamiento contribuirán a que Hostera genere
+   valor para los hoteles, aunque las métricas y metas concretas deberán definirse
+   después de establecer una línea base.
+
+**User Assumptions**
+
+1. **¿Quién es el usuario?** Creemos que los usuarios principales serán los
+   administradores y responsables de la operación hotelera. También interactuarán con
+   la solución el personal de recepción, los encargados del almacén y el personal
+   autorizado que gestiona o supervisa los accesos. Los huéspedes serán beneficiarios
+   indirectos y no constituirán el usuario administrativo principal del MVP.
+2. **¿Dónde encaja nuestro producto en su trabajo o vida?** Creemos que Hostera
+   encajará en las actividades diarias de administración y operación del hotel como
+   un entorno común para consultar y actualizar información de reservas, habitaciones,
+   inventario y accesos. Los responsables lo utilizarán para supervisar la operación,
+   mientras que el personal operativo lo empleará como apoyo en sus tareas específicas.
+3. **¿Qué problemas debe resolver nuestro producto?** Creemos que Hostera debe
+   ayudar a resolver la dispersión de información entre registros independientes, las
+   inconsistencias entre reservas y disponibilidad, la poca visibilidad del inventario,
+   la dificultad para rastrear accesos autorizados y la coordinación de información
+   entre varias sedes.
+4. **¿Cuándo y cómo se usará nuestro producto?** Creemos que Hostera se utilizará
+   durante el registro o modificación de reservas, la actualización de la
+   disponibilidad, los procesos de check-in y check-out, el registro de movimientos
+   del almacén, la autorización de accesos y la revisión del historial de eventos. El
+   uso se realizará desde la plataforma web, según las responsabilidades de cada
+   usuario y las necesidades de la operación.
+5. **¿Qué características son importantes?** Creemos que serán importantes la
+   centralización de reservas y disponibilidad, el registro y consulta del inventario,
+   la relación de tarjetas y lectores RFID con habitaciones y usuarios, la trazabilidad
+   de los accesos y la posibilidad de consultar información de una o varias sedes.
+6. **¿Cómo debe verse y comportarse nuestro producto?** Creemos que Hostera debe
+   presentar una interfaz clara, ordenada y fácil de comprender para usuarios con
+   diferentes responsabilidades. La solución debe mostrar información actualizada,
+   mantener una navegación consistente, brindar confirmación de las acciones
+   realizadas y facilitar la identificación de estados, cambios e incidencias sin
+   exigir que el usuario consulte múltiples registros.
+
+**User Outcome and Benefit Assumptions**
+
+1. Creemos que los responsables de la operación desean contar con información
+   actualizada para tomar decisiones sin depender de múltiples registros.
+2. Creemos que el personal de recepción se beneficiará de consultar rápidamente la
+   disponibilidad de las habitaciones y el estado de las reservas.
+3. Creemos que los encargados del almacén se beneficiarán de disponer de un historial
+   organizado de los ingresos, consumos y existencias.
+4. Creemos que el personal autorizado y los responsables del hotel valorarán poder
+   revisar la trazabilidad de los accesos vinculados con tarjetas RFID.
+5. Creemos que los usuarios operativos considerarán valiosa una experiencia que
+   reduzca la conciliación manual y les permita coordinar tareas entre áreas o sedes.
+
+**Feature Assumptions**
+
+1. Creemos que un panel administrativo que centralice reservas, habitaciones,
+   inventario y accesos ayudará a los usuarios a supervisar la operación desde un
+   mismo entorno.
+2. Creemos que las funciones para registrar y consultar reservas y disponibilidad
+   permitirán reducir inconsistencias entre la información reservada y el estado de
+   las habitaciones.
+3. Creemos que el registro de movimientos de inventario permitirá mejorar la
+   visibilidad de las existencias y facilitar su seguimiento.
+4. Creemos que la integración con tarjetas y lectores RFID permitirá asociar accesos
+   autorizados con habitaciones y usuarios, además de conservar un historial de
+   eventos.
+5. Creemos que una estructura de información preparada para una o varias sedes
+   permitirá que Hostera crezca junto con las necesidades de sus clientes.
+
+Estos supuestos no representan requisitos definitivos ni resultados comprobados. Los
+supuestos más riesgosos deberán priorizarse para formular los Hypothesis Statements y
+definir los experimentos que permitan confirmarlos o modificarlos.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 #### 1.2.2.4. Lean UX Canvas
