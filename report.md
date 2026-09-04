@@ -27,10 +27,10 @@
 |       Apellidos y Nombres        | Código de Alumno |
 | :------------------------------: | :--------------: |
 |   Cuba Pareja, Joaquin Antonio   |    u201621281    |
-|     Cuba Vega, Darnell Yadir     |                  |
-| Condori Urviola, Mateo Sebastián |                  |
-|     Flores Rios, Juan Diego      |                  |
-|    Santana Luna, José Antonio    |                  |
+|     Cuba Vega, Darnell Yadir     |    u202410105    |
+| Condori Urviola, Mateo Sebastián |    U20231E443    |
+|     Flores Rios, Juan Diego      |    U202412124    |
+|    Santana Luna, José Antonio    |    U20241E281    |
 
 ## Setiembre - 2026
 
@@ -197,10 +197,10 @@ La propuesta de Grafo Verde se centra en construir un ecosistema de gestión hot
 | Foto                                                                                                              | Apellidos y Nombres              | Código     | Carrera                | Habilidades                                                                                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="assets/chapter-1/joaquin-cuba-image-profile.png" alt="Foto de Joaquin Antonio Cuba Pareja" width="100"> | Cuba Pareja, Joaquin Antonio     | u201621281 | Ingeniería de Software | JavaScript, TypeScript, Python, HTML, CSS y C++. Dispuesto a trabajar y aprender en equipo. Tiene facilidad para aprender rápidamente nuevas tecnologías y lenguajes de programación. |
-|                                                                                                                   | Cuba Vega, Darnell Yadir         |            | Ingeniería de Software |                                                                                                                                                                                       |
-|                                                                                                                   | Condori Urviola, Mateo Sebastián |            | Ingeniería de Software |                                                                                                                                                                                       |
-|                                                                                                                   | Flores Rios, Juan Diego          |            | Ingeniería de Software |                                                                                                                                                                                       |
-|                                                                                                                   | Santana Luna, José Antonio       |            | Ingeniería de Software |                                                                                                                                                                                       |
+| <img src="assets/chapter-1/darnell-cuba-image-profile.png" alt="Foto de Darnell Yadir Cuba Vega" width="100">   | Cuba Vega, Darnell Yadir         | u202410105 | Ingeniería de Software |                                                                                                                                                                                       |
+| <img src="assets/chapter-1/mateo-condori-image-profile.png" alt="Foto de Mateo Sebastián Condori Urviola" width="100"> | Condori Urviola, Mateo Sebastián | U20231E443 | Ingeniería de Software |                                                                                                                                                                                       |
+| <img src="assets/chapter-1/juan-flores-image-profile.png" alt="Foto de Juan Diego Flores Rios" width="100">      | Flores Rios, Juan Diego          | U202412124 | Ingeniería de Software |                                                                                                                                                                                       |
+| <img src="assets/chapter-1/jose-santana-image-profile.png" alt="Foto de José Antonio Santana Luna" width="100"> | Santana Luna, José Antonio       | U20241E281 | Ingeniería de Software |                                                                                                                                                                                       |
 
 ## 1.2. Solution Profile
 
