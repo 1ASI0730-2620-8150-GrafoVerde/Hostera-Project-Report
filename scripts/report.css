@@ -64,6 +64,51 @@ table td {
   border: 1px solid #888;
 }
 
+.competitive-landscape {
+  table-layout: fixed;
+  font-size: 7.2pt;
+  line-height: 1.15;
+  page-break-inside: auto;
+}
+
+.competitive-landscape th,
+.competitive-landscape td {
+  padding: 0.28em 0.35em;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.competitive-landscape tr {
+  page-break-inside: avoid;
+}
+
+.competitive-landscape .group-label {
+  width: 7%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.competitive-landscape .vertical-label {
+  display: inline-block;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+}
+
+.competitive-landscape tr > td:nth-child(2),
+.competitive-landscape tr > th:nth-child(2) {
+  width: 14%;
+}
+
+.competitive-landscape tr > td:nth-child(n + 3),
+.competitive-landscape tr > th:nth-child(n + 3) {
+  width: 19.75%;
+}
+
+.competitive-landscape th {
+  vertical-align: middle;
+  text-align: center;
+}
+
 .cover th,
 .cover td,
 .version-history th,

@@ -706,9 +706,206 @@ principal del producto mínimo viable.
 
 ## 2.1. Competidores
 
+En esta sección se identifican y describen tres competidores directos de Hostera en
+el mercado peruano. La selección considera proveedores que ofrecen productos
+digitales para la gestión de establecimientos de hospedaje y que cubren, total o
+parcialmente, los procesos que Hostera busca centralizar: reservas, disponibilidad de
+habitaciones, inventario y supervisión de la operación. La información se basa en la
+oferta pública de cada proveedor; por ello, la selección no pretende establecer un
+ranking de participación de mercado.
+
+**Nexus PMS de HotelClick.**
+
+Nexus PMS es una plataforma web en la nube orientada a hoteles en Perú. Su propuesta
+incluye la gestión de reservas, check-in y check-out, la sincronización con canales
+como Booking.com, Airbnb, Expedia y Agoda, y la facturación electrónica integrada con
+SUNAT. También ofrece control de inventarios con registro de entradas y salidas,
+alertas de stock mínimo, usuarios con permisos y acceso desde computadoras y
+dispositivos móviles [5].
+
+El proveedor ofrece una demostración inicial y contratación mediante un pago anual
+que incluye los módulos, las actualizaciones y el soporte técnico. La plataforma
+integra facturación, POS y distribución por OTAs, de acuerdo con la información
+pública del proveedor [5].
+
+**OkFac.**
+
+OkFac se presenta como un PMS hecho para hoteles peruanos. Incluye un calendario de
+reservas, vista del estado de las habitaciones, check-in y check-out, housekeeping,
+conexión con OTAs y emisión de comprobantes electrónicos mediante SUNAT [6]. En su
+plan Pro incorpora inventario, compras y gastos; el plan Enterprise añade reportes y
+operación multi-sucursal, además de roles y permisos avanzados [6]. Estas funciones
+se ofrecen para hoteles y hostales de distintos tamaños.
+
+Su modelo comercial es de suscripción mensual o anual por planes. El proveedor
+publica planes para hoteles y hostales pequeños, medianos y grandes, desde S/ 140 al
+mes, con implementación y capacitación incluidas; el plan Enterprise contempla
+funciones multi-sucursal [6]. También ofrece facturación electrónica y módulos de
+restaurante dentro de la misma cuenta [6].
+
+**SysHotel.**
+
+SysHotel es una plataforma PMS y ERP desarrollada para el mercado peruano, dirigida
+desde hostales pequeños hasta cadenas con varias sedes. Su oferta pública incluye
+reservas, check-in y check-out, disponibilidad de habitaciones, housekeeping,
+facturación electrónica SUNAT, channel manager y un ERP con inventario
+multi-almacén y kardex [7]. Además, el proveedor declara que puede cotizar
+integraciones con cerraduras inteligentes y sistemas de control de acceso, aunque no
+especifica que estas integraciones utilicen RFID [7].
+
+El servicio se comercializa como suscripción con precios publicados desde S/ 100 al
+mes, demostración guiada e integraciones personalizadas según el alcance. SysHotel
+declara tener más de 150 hoteles activos en Perú [7].
+
 ### 2.1.1. Análisis competitivo
 
+El objetivo del análisis es responder: **¿cómo se posiciona Hostera frente a las
+soluciones digitales que ya pueden utilizar los hoteles peruanos para administrar su
+operación?** La siguiente tabla compara el perfil, el valor ofrecido, el mercado,
+las acciones de marketing, el producto, el modelo de precios, los canales y el
+análisis SWOT de Hostera y de los tres competidores seleccionados.
+
+<table class="competitive-landscape">
+<tr><th colspan="6">Competitive Analysis Landscape</th></tr>
+<tr>
+  <td colspan="2"><strong>¿Por qué llevar a cabo este análisis?</strong></td>
+  <td colspan="4">Comparar las alternativas digitales disponibles para la operación hotelera peruana y definir una posible ventaja competitiva para Hostera.</td>
+</tr>
+<tr>
+  <th colspan="2">(En la cabecera colocar por cada competidor nombre y logo)</th>
+  <th>Su startup<br><strong>Hostera</strong></th>
+  <th>Competidor 1<br><strong>Nexus PMS</strong><br>HotelClick [5]</th>
+  <th>Competidor 2<br><strong>OkFac</strong> [6]</th>
+  <th>Competidor 3<br><strong>SysHotel</strong> [7]</th>
+</tr>
+<tr>
+  <td class="group-label" rowspan="2"><span class="vertical-label">Perfil</span></td>
+  <td>Overview</td>
+  <td>Plataforma web administrativa en desarrollo para reservas, disponibilidad, inventario y accesos RFID.</td>
+  <td>PMS web en la nube para reservas, habitaciones, inventario, facturación y OTAs en Perú.</td>
+  <td>PMS para hoteles y hostales peruanos con recepción, reservas, housekeeping y facturación electrónica.</td>
+  <td>PMS + ERP desarrollado en Perú para recepción, housekeeping, inventario y back-office.</td>
+</tr>
+<tr>
+  <td>Ventaja competitiva<br>¿Qué valor ofrece a los clientes?</td>
+  <td>Integra reservas, habitaciones, almacén y accesos RFID en un mismo panel para una o varias sedes.</td>
+  <td>Integra facturación SUNAT, POS, channel manager, acceso remoto y alertas de stock mínimo.</td>
+  <td>Combina operación hotelera, cumplimiento SUNAT, implementación incluida y planes multi-sucursal.</td>
+  <td>Combina PMS y ERP con inventario multi-almacén, kardex e integraciones de cerraduras y control de acceso.</td>
+</tr>
+<tr>
+  <td class="group-label" rowspan="2"><span class="vertical-label">Perfil de Marketing</span></td>
+  <td>Mercado objetivo</td>
+  <td>Administradores y propietarios de hoteles independientes; gerentes o responsables de pequeñas cadenas.</td>
+  <td>Hoteles que operan en Perú; no limita públicamente el servicio a un tamaño específico.</td>
+  <td>Hoteles y hostales pequeños, hoteles medianos y establecimientos grandes con necesidades multi-sucursal.</td>
+  <td>Hostales pequeños, hoteles medianos y hoteles grandes o cadenas con varias sedes.</td>
+</tr>
+<tr>
+  <td>Estrategias de marketing</td>
+  <td>La estrategia comercial se encuentra por validar durante el desarrollo y el levantamiento de requisitos.</td>
+  <td>Demo gratuita, cobertura nacional, testimonios de clientes y promoción de una solución 100 % web.</td>
+  <td>Demo gratuita, contacto por WhatsApp, planes publicados e implementación y capacitación incluidas.</td>
+  <td>Demo guiada, precios de entrada publicados, contenidos comparativos e integraciones a medida.</td>
+</tr>
+<tr>
+  <td class="group-label" rowspan="3"><span class="vertical-label">Perfil de Producto</span></td>
+  <td>Productos &amp; Servicios</td>
+  <td>Panel administrativo, reservas, disponibilidad, inventario, registro de eventos y control RFID.</td>
+  <td>PMS, channel manager, reservas, check-in/out, inventarios, POS, SUNAT, usuarios y permisos.</td>
+  <td>PMS, calendario, habitaciones, check-in/out, housekeeping, OTAs, inventario, compras, reportes y SUNAT.</td>
+  <td>PMS, ERP, reservas, disponibilidad, housekeeping, channel manager, SUNAT, multi-almacén, kardex e integraciones.</td>
+</tr>
+<tr>
+  <td>Precios &amp; Costos</td>
+  <td>No definidos; se determinarán después de validar necesidades, alcance e implementación.</td>
+  <td>Pago anual; el precio no se publica en la página consultada y se solicita una demostración.</td>
+  <td>Planes de S/ 140, S/ 210 y S/ 350 mensuales; descuento anual e implementación incluida.</td>
+  <td>Suscripción desde S/ 100 mensuales; integraciones específicas cotizadas según alcance.</td>
+</tr>
+<tr>
+  <td>Canales de distribución<br>(Web y/o Móvil)</td>
+  <td>Plataforma web administrativa y lectores RFID instalados en los puntos de acceso.</td>
+  <td>Aplicación web en la nube para PC, laptop, tableta o celular; demo en línea.</td>
+  <td>Servicio web, demo y atención comercial por WhatsApp.</td>
+  <td>Acceso desde computadora, tableta o móvil; demo guiada y soporte local.</td>
+</tr>
+<tr>
+  <td class="group-label" rowspan="5"><span class="vertical-label">Análisis SWOT</span></td>
+  <td colspan="5">Realice esto para su startup y sus competidores. Sus fortalezas deberían apoyar sus oportunidades y contribuir a lo que ustedes definan como su posible ventaja competitiva.</td>
+</tr>
+<tr>
+  <td>Fortalezas</td>
+  <td>Centralización de reservas, inventario y accesos RFID; alcance para una o varias sedes.</td>
+  <td>Plataforma en la nube, inventario, SUNAT, POS y conexiones con OTAs.</td>
+  <td>Planes escalables, implementación incluida y adaptación a SUNAT y multi-sucursal.</td>
+  <td>PMS + ERP, multi-almacén, kardex y posibilidad de integraciones de acceso.</td>
+</tr>
+<tr>
+  <td>Debilidades</td>
+  <td>Producto, precios e integraciones aún en definición; supuestos pendientes de validación.</td>
+  <td>Pago anual y precio no publicado; no documenta RFID en la información consultada.</td>
+  <td>Inventario y multi-sucursal dependen de planes superiores; no documenta RFID.</td>
+  <td>Las integraciones de acceso requieren cotización y no especifican RFID.</td>
+</tr>
+<tr>
+  <td>Oportunidades</td>
+  <td>Atender hoteles independientes y pequeñas cadenas que requieren operación y accesos en un mismo contexto.</td>
+  <td>Ampliar la gestión remota y multi-propiedad en un mercado hotelero que continúa digitalizándose.</td>
+  <td>Captar hoteles pequeños y hostales que buscan formalizar reservas y facturación.</td>
+  <td>Escalar desde establecimientos pequeños hacia cadenas y proyectos con integraciones a medida.</td>
+</tr>
+<tr>
+  <td>Amenazas</td>
+  <td>Competidores con productos activos, precios publicados y mayor trayectoria; adopción adicional de hardware RFID.</td>
+  <td>Competidores locales con adaptación normativa y precios en soles.</td>
+  <td>Otros PMS locales y soluciones internacionales con mayor ecosistema de integraciones.</td>
+  <td>Competencia de PMS locales de menor precio y de plataformas internacionales consolidadas.</td>
+</tr>
+</table>
+
+La tabla muestra que los tres competidores cubren la gestión de reservas y
+habitaciones, y que también ofrecen funciones de inventario en distinto nivel. La
+oportunidad preliminar de Hostera está en tratar el control de accesos RFID como parte
+del mismo contexto operativo.
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+Las siguientes estrategias y tácticas son preliminares y se derivan del *Competitive
+Analysis Landscape*. Su propósito es aprovechar las capacidades diferenciales de
+Hostera, responder a las fortalezas de los competidores y reducir los riesgos
+identificados en el análisis SWOT. No representan decisiones comerciales definitivas;
+deberán validarse con administradores y responsables de operaciones hoteleras.
+
+#### Estrategias preliminares
+
+| Estrategia | Justificación | Tácticas iniciales |
+| --- | --- | --- |
+| **Enfoque en la coordinación operativa y la trazabilidad RFID** | Nexus PMS, OkFac y SysHotel cubren buena parte de las reservas, habitaciones e inventarios. Hostera puede diferenciarse al relacionar esos procesos con la autorización y el historial de accesos RFID en un mismo contexto. | Priorizar en el MVP el panel de operación, la relación entre habitación, usuario y tarjeta, y la consulta del historial de eventos. Comunicar la propuesta como coordinación operativa y seguridad, sin afirmar todavía una ventaja comprobada. |
+| **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multi-sede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel. |
+| **Producto modular e interoperable** | Nexus, OkFac y SysHotel ya ofrecen facturación, OTAs, POS u otros módulos. Hostera no debe asumir que reemplazará todas las herramientas comerciales y contables que utiliza un hotel. | Mantener el alcance inicial en reservas, disponibilidad, inventario y accesos RFID. Levantar como requisitos de integración los sistemas de facturación, canales de reserva y cerraduras que los hoteles ya utilicen, empezando por los escenarios de mayor valor. |
+| **Entrada gradual mediante demostraciones y pilotos** | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación [5][6][7]. | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
+| **Precio y despliegue transparentes** | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio [5][6][7]. Hostera aún no tiene precios definidos. | Validar si la suscripción por hotel o por sede resulta comprensible para los segmentos objetivo. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto. |
+| **Confianza mediante adaptación local y soporte** | Los competidores resaltan SUNAT, soporte en español y conocimiento del mercado peruano [5][6][7]. Esa expectativa debe considerarse aunque la facturación no forme parte del MVP de Hostera. | Usar terminología y flujos comprensibles para equipos hoteleros peruanos, documentar la compatibilidad del hardware RFID y ofrecer acompañamiento inicial. Cuando una función dependa de un sistema externo, explicitar esa dependencia en lugar de prometer cobertura no validada. |
+
+#### Tácticas frente a los competidores seleccionados
+
+| Competidor | Fortaleza a afrontar | Táctica de Hostera |
+| --- | --- | --- |
+| **Nexus PMS** | Plataforma en la nube con reservas, inventario, facturación SUNAT, POS y channel manager [5]. | Evitar una comparación basada en amplitud de módulos. Mostrar cómo Hostera añade la relación entre reserva, habitación, tarjeta RFID y evento de acceso, y evaluar integraciones para que el hotel no tenga que reemplazar sus herramientas de facturación o distribución desde el primer día. |
+| **OkFac** | Planes escalables, implementación incluida, housekeeping, inventario y operación multi-sucursal [6]. | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren. |
+| **SysHotel** | PMS + ERP con inventario multi-almacén, kardex y posibilidad de integrar cerraduras o control de acceso [7]. | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee. |
+
+#### Criterios para validar la estrategia
+
+La estrategia se considerará viable solo si los experimentos con usuarios muestran que
+Hostera facilita la supervisión de la operación y aporta trazabilidad sin introducir
+una carga de configuración desproporcionada. La validación utilizará los indicadores
+ya propuestos para la iniciativa: tiempo de consulta del estado de una reserva o
+habitación, porcentaje de movimientos de inventario registrados, porcentaje de accesos
+relacionados con una tarjeta RFID, una habitación y un usuario, y número de
+inconsistencias detectadas. Los valores de referencia y las metas se definirán luego
+de obtener una línea base con usuarios reales.
 
 ## 2.2. Entrevistas
 
@@ -843,5 +1040,11 @@ This is program for AV2 (not in AV1)
 [3] Universidad Peruana de Ciencias Aplicadas. (2021). *Lean & Hypothesis-Driven Development* [Material de clase].
 
 [4] Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). [*Perú: Oferta y Demanda de Establecimientos de Hospedaje - Año 2024*](https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024).
+
+[5] HotelClick. (s. f.). [*Sistema de Administración y Gestión Hotelera para Perú: Nexus PMS*](https://hotelclick.net.pe/). Recuperado el 4 de septiembre de 2026.
+
+[6] Montalvo Soluciones Tecnológicas S.A.C. (s. f.). [*Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac*](https://okfac.pe/sistema-hotelero-peru). Recuperado el 4 de septiembre de 2026.
+
+[7] SysHotel. (s. f.). [*PMS hotelero en Perú: software de gestión hotelera*](https://syshotel.app/). Recuperado el 4 de septiembre de 2026.
 
 # Anexos
