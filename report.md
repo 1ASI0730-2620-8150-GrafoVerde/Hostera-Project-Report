@@ -624,6 +624,8 @@ varias sedes, sin duplicar ni confundir la información operativa.
 
 #### 1.2.2.4. Lean UX Canvas
 
+![Lean UX Canvas de Hostera](assets/chapter-1/hostera-lean-ux-canvas.svg)
+
 ## 1.3. Segmentos objetivo
 
 # Capítulo II: Requirements Elicitation & Analysis
