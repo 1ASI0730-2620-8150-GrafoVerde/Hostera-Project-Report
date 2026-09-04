@@ -961,15 +961,15 @@ Cada sesión seguirá una estructura común de aproximadamente 30 a 45 minutos:
 Las preguntas se enfocan en la operación de una sola sede y en las decisiones que la
 persona propietaria o administradora coordina directamente.
 
-| N.º | Pregunta principal                                                                            | Pregunta complementaria                                                                                         |
-| --- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| 1   | ¿Cuál es su cargo y qué responsabilidades asume en el hotel?                                  | ¿Desde cuándo desempeña este rol y qué tareas revisa personalmente?                                             |
+| N.º | Pregunta principal                                                                                                      | Pregunta complementaria                                                                                         |
+| --- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 1   | ¿Qué edad tiene, cuál es su ocupación o cargo y en qué distrito, provincia o ciudad reside?                            | ¿Desde cuándo trabaja en hotelería y desde cuándo desempeña este rol?                                           |
 | 2   | ¿Cómo organiza en un día normal las actividades de reservas, habitaciones, almacén y accesos? | ¿Qué actividad atiende primero y qué información necesita para decidir?                                         |
 | 3   | ¿Cómo registra y verifica actualmente las reservas y la disponibilidad de habitaciones?       | ¿Qué herramientas utiliza y qué ocurre cuando encuentra una diferencia o una reserva duplicada?                 |
 | 4   | ¿Cómo controla las entradas, salidas y existencias del almacén?                               | ¿Quién actualiza la información y cómo detecta faltantes o necesidades de reposición?                           |
 | 5   | ¿Cómo autoriza, entrega y revisa los accesos de huéspedes y personal?                         | ¿Qué hace cuando se pierde una tarjeta, cambia una autorización o necesita revisar un evento?                   |
 | 6   | ¿Qué información debe consultar para supervisar el hotel cuando no está presente?             | ¿Cómo recibe esa información y cuánto tiempo necesita para obtenerla?                                           |
-| 7   | ¿Qué sistemas, documentos, dispositivos y canales utiliza para realizar estas tareas?         | ¿Utiliza Excel, WhatsApp, un PMS, lectores o cerraduras electrónicas? ¿Qué herramienta considera más confiable? |
+| 7   | ¿Qué sistemas, dispositivos y canales utiliza para realizar estas tareas?                                             | ¿Usa PMS, Excel u otra herramienta; teléfono, computadora, laptop o tableta; qué navegador y canal prefiere?    |
 | 8   | ¿Cuál es la dificultad más importante que encuentra al coordinar estas áreas?                 | ¿Qué consecuencias tiene para el personal, los huéspedes o la operación?                                        |
 | 9   | ¿Qué cambio mejoraría más la administración de su hotel?                                      | ¿Qué condiciones de costo, soporte, capacitación o seguridad necesitaría para adoptarlo?                        |
 | 10  | ¿Hay algún aspecto de la operación de una sede que debamos comprender mejor?                  | ¿Autoriza que se utilicen las respuestas y la grabación según el consentimiento explicado?                      |
@@ -979,19 +979,18 @@ persona propietaria o administradora coordina directamente.
 Las preguntas se enfocan en la coordinación de dos o más sedes, la consolidación de
 información y el control de las diferencias entre establecimientos.
 
-| N.º | Pregunta principal                                                                                         | Pregunta complementaria                                                                                     |
-| --- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| 1   | ¿Cuál es su cargo y qué responsabilidades tiene sobre las sedes de la cadena?                              | ¿Cuántas sedes coordina y desde cuándo realiza esta función?                                                |
+| N.º | Pregunta principal                                                                                                               | Pregunta complementaria                                                                                     |
+| --- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 1   | ¿Qué edad tiene, cuál es su ocupación o cargo y en qué distrito, provincia o ciudad reside?                            | ¿Cuántas sedes coordina y desde cuándo trabaja en hotelería o desempeña esta función?                       |
 | 2   | ¿Cómo obtiene una visión general del estado de las reservas y habitaciones de todas las sedes?             | ¿Qué información recibe de cada sede y con qué frecuencia la revisa?                                        |
 | 3   | ¿Cómo compara actualmente el desempeño o la disponibilidad entre establecimientos?                         | ¿Qué indicadores utiliza y en qué formato los consulta?                                                     |
 | 4   | ¿Cómo se coordinan los movimientos de inventario entre las sedes?                                          | ¿Cómo se registran las entradas, salidas, transferencias y necesidades de reposición?                       |
 | 5   | ¿Cómo se administran los accesos de huéspedes y personal cuando intervienen distintas sedes?               | ¿Quién autoriza los accesos y cómo se revisan los eventos o cambios de permisos?                            |
 | 6   | Cuénteme sobre una situación en la que una reserva, inventario o acceso requirió coordinación entre sedes. | ¿Qué personas participaron, dónde se produjo la dificultad y cómo se resolvió?                              |
 | 7   | ¿Cómo mantiene separada la información de cada sede y, al mismo tiempo, obtiene reportes consolidados?     | ¿Qué roles y permisos tienen los equipos? ¿Quién puede consultar o modificar la información?                |
-| 8   | ¿Qué sistemas, documentos, dispositivos y canales utiliza el equipo de la cadena?                          | ¿Qué diferencias existen entre sedes en cuanto a PMS, hojas de cálculo, dispositivos o cerraduras?          |
-| 9   | ¿Qué debería ofrecer una solución para acompañar el crecimiento de la cadena?                              | ¿Qué configuraciones deberían replicarse y qué procesos deberían mantenerse específicos por sede?           |
-| 10  | ¿Qué cambio mejoraría más la coordinación de las sedes?                                                    | ¿Qué condiciones de costo, soporte, capacitación, seguridad e integración serían necesarias para adoptarlo? |
-| 11  | ¿Hay algún aspecto de la operación multi-sede que debamos comprender mejor?                                | ¿Autoriza que se utilicen las respuestas y la grabación según el consentimiento explicado?                  |
+| 8   | ¿Qué sistemas, dispositivos y canales utiliza el equipo de la cadena?                                                  | ¿Usan PMS, Excel u otra herramienta; teléfono, computadora, laptop o tableta; qué navegador y canal prefieren? |
+| 9   | ¿Qué debería ofrecer una solución para mejorar la coordinación y acompañar el crecimiento de la cadena?          | ¿Qué configuraciones deberían replicarse y qué procesos deberían mantenerse específicos por sede?           |
+| 10  | ¿Qué condiciones de costo, soporte, capacitación, seguridad e integración necesitaría para adoptarla?           | ¿Hay algún aspecto multi-sede que debamos comprender mejor y autoriza el uso de sus respuestas y grabación?  |
 
 ### 2.2.2. Registro de entrevistas
 
