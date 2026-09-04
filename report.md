@@ -79,6 +79,7 @@
   - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
 - [1.2. Solution Profile](#12-solution-profile)
   - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [Técnica de The 5 'W's y 2 'H's](#técnica-de-the-5-ws-y-2-hs)
   - [1.2.2. Lean UX Process](#122-lean-ux-process)
     - [1.2.2.1. Lean UX Problem Statement](#1221-lean-ux-problem-statement)
     - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
@@ -205,15 +206,425 @@ La propuesta de Grafo Verde se centra en construir un ecosistema de gestión hot
 
 ### 1.2.1. Antecedentes y problemática
 
+Esta sección presenta una aproximación preliminar a la problemática que Hostera busca
+atender. El análisis se organizó mediante la técnica 5W+2H, una herramienta para
+describir un problema y concentrarse en sus causas antes de plantear una solución
+[1]. Los hallazgos descritos deberán complementarse y validarse posteriormente con
+entrevistas y otras actividades de needfinding.
+
+#### Técnica de The 5 'W's y 2 'H's
+
+**What (¿Qué?)**
+
+**¿Cuál es el problema?**
+
+Los hoteles necesitan coordinar varias actividades para atender a sus huéspedes y
+mantener la operación diaria: gestionar reservas, conocer la disponibilidad de las
+habitaciones, controlar las existencias del almacén y administrar los accesos a los
+espacios físicos. En la aproximación actual del proyecto, estas actividades pueden
+apoyarse en registros, archivos o herramientas independientes, lo que dificulta
+obtener una visión única y actualizada del estado del hotel.
+
+Cuando la información de una reserva, una habitación, un producto del almacén o un
+acceso no se encuentra sincronizada, el personal puede trabajar con datos distintos
+según el área que consulte. Esto puede provocar duplicidad de registros,
+inconsistencias entre la reserva y la disponibilidad real, demoras en la atención y
+dificultades para rastrear quién ingresó a una habitación. La problemática descrita
+es preliminar y deberá contrastarse con usuarios del sector hotelero.
+
+**When (¿Cuándo?)**
+
+**¿Cuándo se presenta el problema?**
+
+La problemática puede presentarse durante toda la operación diaria del hotel, pero
+se vuelve especialmente relevante cuando se registra una nueva reserva, se modifica
+una reserva existente o se actualiza el estado de una habitación. También puede
+aparecer durante el check-in y el check-out, cuando recepción necesita confirmar
+rápidamente la disponibilidad y autorizar o revocar accesos.
+
+Del mismo modo, el problema puede manifestarse cuando se reciben o consumen
+productos del almacén y cuando se requiere revisar el historial de accesos. En esos
+momentos, la falta de información compartida puede obligar al personal a consultar
+varios registros y conciliarlos manualmente antes de tomar una decisión.
+
+**Where (¿Dónde?)**
+
+**¿En qué lugares o procesos se presenta?**
+
+El problema se ubica principalmente en los procesos administrativos y operativos del
+hotel. Comprende la recepción, donde se registran las reservas y se atiende a los
+huéspedes; la gestión de habitaciones, donde se consulta su disponibilidad; el
+almacén, donde se controla el inventario; y los puntos de acceso donde se validan
+las tarjetas RFID.
+
+La dificultad también puede aumentar cuando el negocio administra más de una sede,
+porque la información debe consolidarse y mantenerse consistente entre diferentes
+hoteles. Por esa razón, el análisis considera tanto la operación de un hotel
+individual como la coordinación básica de varias sedes desde un mismo entorno.
+
+**Who (¿Quién?)**
+
+**¿A quiénes afecta el problema?**
+
+Los usuarios potenciales directamente relacionados con el problema son los
+administradores y responsables de la operación hotelera, el personal de recepción,
+los encargados del almacén y el personal autorizado que gestiona o supervisa los
+accesos. Cada perfil necesita consultar o actualizar una parte diferente de la
+operación, por lo que la ausencia de una fuente común de información puede generar
+trabajo duplicado y dificultades de coordinación.
+
+Los huéspedes pueden verse afectados indirectamente cuando existen inconsistencias
+en la disponibilidad de las habitaciones, demoras durante la atención o problemas
+para acceder a un espacio autorizado. Estos perfiles son una identificación inicial
+del dominio; la segmentación definitiva y las necesidades de cada usuario deberán
+validarse mediante entrevistas y actividades de needfinding.
+
+**Why (¿Por qué?)**
+
+**¿Por qué se presenta el problema?**
+
+La causa preliminar es la ausencia de una gestión centralizada que relacione los
+datos de reservas, habitaciones, inventario y accesos. Cuando cada proceso se
+registra o consulta de manera independiente, las actualizaciones pueden no estar
+disponibles para todas las personas que las necesitan y se reduce la trazabilidad de
+los cambios.
+
+Esta situación puede producir duplicidad de información, diferencias entre el
+estado registrado y el estado real de una habitación, menor visibilidad de las
+existencias y dificultades para revisar los accesos realizados. Como resultado, el
+personal cuenta con menos información para actuar oportunamente y debe invertir
+tiempo en verificar o conciliar datos antes de completar sus tareas.
+
+**How (¿Cómo?)**
+
+**¿Cómo se manifiesta y se diferencia del estado esperado?**
+
+En un estado operativo esperado, una modificación de reserva debería reflejarse en
+la disponibilidad de la habitación y estar disponible para las personas responsables
+de la atención. De forma similar, el consumo o ingreso de productos debería
+actualizar la información del inventario, y un acceso autorizado debería poder
+relacionarse con una tarjeta, una habitación y un usuario o huésped.
+
+En la situación problemática, estos cambios pueden quedar distribuidos en procesos
+independientes. El personal debe buscar información en diferentes registros, comparar
+datos y comunicar manualmente las actualizaciones. La ausencia de un panel común y
+de una relación clara entre habitaciones y accesos RFID dificulta distinguir con
+rapidez el estado actual de la operación y seguir el historial de los eventos.
+
+**How Much (¿Cuánto?)**
+
+**¿Cuánto costará implementar la solución?**
+
+Actualmente no se cuenta con métricas operativas validadas sobre la frecuencia de
+los incidentes, el tiempo dedicado a conciliar información o las pérdidas económicas
+asociadas. Para dimensionar inicialmente el esfuerzo, se plantea el siguiente
+presupuesto referencial para desarrollar un producto mínimo viable de software. Los
+montos son una estimación de planificación y deberán ajustarse después de definir
+los requisitos, la arquitectura y las integraciones necesarias.
+
+**Presupuesto estimado de software:**
+
+| Componente | Costo estimado |
+|---|---:|
+| Diseño UX/UI y prototipo del dashboard web | S/ 2,500 – S/ 4,000 |
+| Desarrollo frontend del dashboard administrativo | S/ 4,000 – S/ 6,000 |
+| Backend, API y base de datos | S/ 4,000 – S/ 6,500 |
+| Integración del software de control de accesos RFID y registro de eventos | S/ 2,500 – S/ 4,000 |
+| Pruebas, documentación y configuración del despliegue | S/ 1,500 – S/ 2,500 |
+| Dominio, hosting y servicios de infraestructura (anual) | S/ 1,200 – S/ 2,000 |
+| **Total estimado de software** | **S/ 15,700 – S/ 25,000** |
+
+Esta estimación no incluye la compra de tarjetas, lectores RFID u otro hardware
+físico, ni costos de operación del hotel. Tampoco representa una cotización
+comercial; su finalidad es mostrar una primera aproximación del costo de software y
+dejar identificados los elementos que deberán precisarse durante las siguientes
+etapas del proyecto.
+
+Los aspectos principales que la solución propuesta debe resolver son los siguientes:
+
+1. **Centralización de la información:** reunir en un único panel la información de reservas, disponibilidad de habitaciones, inventario y accesos.
+2. **Visibilidad operativa:** facilitar la consulta del estado actualizado de la operación para que el personal pueda identificar inconsistencias y actuar oportunamente.
+3. **Coordinación entre procesos:** relacionar la asignación de habitaciones con la autorización y el registro de accesos mediante tarjetas y lectores RFID.
+4. **Control del inventario:** permitir una supervisión más ordenada de las existencias del almacén y de sus cambios.
+5. **Escalabilidad operativa:** permitir que la información de un hotel individual o de varias sedes pueda administrarse desde una plataforma común.
+
+**Objetivo general.** Proponer y validar una plataforma web administrativa que centralice la
+gestión de reservas, disponibilidad de habitaciones, inventario y accesos físicos, con el
+fin de mejorar la visibilidad y la coordinación de la operación hotelera.
+
+**Objetivos específicos.**
+
+- Organizar en un solo espacio la información relevante para la supervisión diaria del hotel.
+- Facilitar el seguimiento de reservas y disponibilidad para reducir inconsistencias operativas y riesgos de sobreventa.
+- Integrar el control de accesos mediante tarjetas y lectores RFID, manteniendo un registro de las entradas autorizadas.
+- Proporcionar una base que pueda adaptarse a la administración de una o varias sedes.
+- Validar posteriormente, con usuarios representativos, si la solución responde a los problemas y necesidades identificados.
+
+**Restricciones y delimitación.**
+
+- El alcance inicial se limita a una plataforma web administrativa para monitorear reservas, habitaciones, inventario y accesos; no contempla reemplazar todos los sistemas comerciales o contables que un hotel pueda utilizar.
+- El control físico de accesos depende de la disponibilidad y configuración de tarjetas y lectores RFID compatibles.
+- La plataforma debe manejar la información de forma centralizada, pero la definición de reglas detalladas para cada hotel o sede deberá establecerse durante el levantamiento de requisitos.
+- No se presentan todavía cifras sobre frecuencia, costos o reducción de incidentes; cualquier beneficio cuantitativo deberá demostrarse mediante validaciones posteriores.
+
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statement
 
+**Enunciado del problema**
+
+Nuestro servicio ofrece una plataforma web administrativa para la gestión y operación
+hotelera. Hostera busca ayudar a los administradores y responsables de la operación a
+coordinar reservas, disponibilidad de habitaciones, inventario y accesos físicos desde
+una visión común. El personal de recepción, los encargados del almacén y el personal
+autorizado también participan en estos procesos, mientras que los huéspedes se
+benefician indirectamente de una atención más coordinada y oportuna.
+
+Hemos observado un factor crítico que afecta la coordinación de la operación
+hotelera: la información necesaria para estos procesos puede encontrarse distribuida
+entre diferentes registros o herramientas independientes. Esta situación puede
+dificultar que los responsables y usuarios operativos conozcan el estado actualizado
+de una reserva o habitación, controlen las existencias del almacén y relacionen los
+accesos autorizados con una habitación y un usuario. También puede obligarlos a
+comparar y conciliar datos manualmente, generando riesgos de duplicidad, demoras en la
+atención y menor trazabilidad, especialmente cuando se coordinan varias sedes. Esta
+observación es preliminar y deberá validarse con usuarios del sector hotelero.
+
+¿Cómo podríamos mejorar la coordinación de la operación hotelera para que sus
+responsables y usuarios operativos trabajen con información actualizada, reduzcan la
+conciliación manual, mantengan la trazabilidad de los eventos y tomen decisiones
+oportunas?
+
+**Domain:** Gestión y operación hotelera, incluyendo reservas, disponibilidad de
+habitaciones, control de inventario y gestión de accesos físicos.
+
+**Customer Segments:**
+
+- Administradores y responsables de la operación hotelera.
+- Personal de recepción.
+- Encargados del almacén.
+- Personal autorizado que gestiona o supervisa accesos.
+- Huéspedes como beneficiarios indirectos de una operación coordinada.
+
+**Pain Points:**
+
+- Dificultad para consultar en un mismo contexto la información de reservas,
+  habitaciones, inventario y accesos.
+- Riesgo de trabajar con datos diferentes entre áreas o registros independientes.
+- Tiempo adicional dedicado a verificar y conciliar información antes de completar
+  tareas operativas.
+- Poca trazabilidad para relacionar los accesos autorizados con una habitación y un
+  usuario o huésped.
+- Mayor dificultad para mantener una visión consistente cuando se coordinan varias
+  sedes.
+
+**Gap:** Los registros y herramientas utilizados en los procesos hoteleros no
+resuelven de manera integrada la necesidad de contar con información centralizada,
+actualizada y relacionada entre reservas, habitaciones, inventario y accesos. Esta
+brecha limita la visibilidad de los responsables de la operación y la coordinación
+entre los usuarios que participan en las tareas diarias.
+
+**Vision/Strategy:** Hostera buscará cerrar esta brecha mediante una solución digital
+administrativa orientada a centralizar la información operativa, facilitar su consulta
+y apoyar la coordinación entre áreas. La estrategia inicial considera la gestión de
+reservas y habitaciones, el seguimiento del inventario y la relación de los accesos
+físicos con tarjetas y lectores RFID. Esta dirección deberá evolucionar según la
+evidencia obtenida durante el descubrimiento y la validación.
+
+**Initial Segment:** El foco inicial serán los **administradores y responsables de la
+operación hotelera**, debido a que necesitan una visión consolidada para supervisar
+los procesos y tomar decisiones. Los demás perfiles se considerarán usuarios
+operativos relacionados o beneficiarios indirectos. Esta priorización es preliminar y
+deberá confirmarse con evidencia de usuarios.
+
+**Success Criteria:** Se considerará que la iniciativa avanza hacia el éxito cuando
+los usuarios puedan completar tareas representativas con información centralizada,
+actualizada y sin depender de la conciliación entre registros independientes. Para
+medir ese comportamiento se proponen los siguientes indicadores, cuyos valores
+iniciales y metas se definirán durante la validación:
+
+- porcentaje de tareas de consulta o actualización de reservas y disponibilidad que
+  se completan desde el entorno administrativo;
+- tiempo promedio que necesita el personal para encontrar el estado actual de una
+  reserva o habitación;
+- porcentaje de movimientos de inventario registrados y consultables en la solución;
+- porcentaje de accesos autorizados relacionados con una tarjeta RFID, una habitación
+  y un usuario o huésped; y
+- número de inconsistencias detectadas durante escenarios de prueba.
+
 #### 1.2.2.2. Lean UX Assumptions
+
+Los siguientes supuestos representan las creencias iniciales del equipo sobre el
+negocio, los usuarios, los resultados esperados y las capacidades que podría ofrecer
+Hostera. Se formulan como afirmaciones que deberán ser contrastadas mediante
+entrevistas, prototipos y experimentos durante las siguientes iteraciones del proceso
+Lean UX.
+
+**Business Assumptions**
+
+1. Creemos que los hoteles que administran sus reservas, habitaciones, inventario y
+   accesos con procesos separados necesitan una visión operativa más centralizada.
+2. Creemos que una plataforma web administrativa enfocada en la coordinación de estos
+   procesos puede ofrecer valor a hoteles individuales y a negocios que administran
+   varias sedes.
+3. Creemos que el principal valor de Hostera para el negocio será facilitar la
+   supervisión diaria y mejorar la consistencia de la información operativa.
+4. Creemos que un modelo de suscripción por hotel o por sede podría ser una
+   alternativa viable para comercializar Hostera, aunque esta posibilidad todavía no
+   ha sido validada con clientes.
+5. Creemos que Grafo Verde puede organizar sus capacidades de diseño y desarrollo
+   para construir y validar un producto mínimo viable dentro del alcance académico
+   definido para Hostera.
+
+**Business Outcome Assumptions**
+
+1. Creemos que los responsables de la operación consultarán el entorno administrativo
+   como una fuente principal para supervisar reservas, habitaciones, inventario y
+   accesos.
+2. Creemos que la centralización de la información reducirá la necesidad de comparar
+   registros independientes antes de tomar decisiones operativas.
+3. Creemos que el personal podrá identificar con mayor rapidez el estado de una
+   reserva o habitación cuando la información se encuentre disponible en un mismo
+   entorno.
+4. Creemos que una mayor trazabilidad de los accesos y movimientos de inventario
+   permitirá a los responsables detectar inconsistencias con mayor oportunidad.
+5. Creemos que estos cambios de comportamiento contribuirán a que Hostera genere
+   valor para los hoteles, aunque las métricas y metas concretas deberán definirse
+   después de establecer una línea base.
+
+**User Assumptions**
+
+1. **¿Quién es el usuario?** Creemos que los usuarios principales serán los
+   administradores y responsables de la operación hotelera. También interactuarán con
+   la solución el personal de recepción, los encargados del almacén y el personal
+   autorizado que gestiona o supervisa los accesos. Los huéspedes serán beneficiarios
+   indirectos y no constituirán el usuario administrativo principal del MVP.
+2. **¿Dónde encaja nuestro producto en su trabajo o vida?** Creemos que Hostera
+   encajará en las actividades diarias de administración y operación del hotel como
+   un entorno común para consultar y actualizar información de reservas, habitaciones,
+   inventario y accesos. Los responsables lo utilizarán para supervisar la operación,
+   mientras que el personal operativo lo empleará como apoyo en sus tareas específicas.
+3. **¿Qué problemas debe resolver nuestro producto?** Creemos que Hostera debe
+   ayudar a resolver la dispersión de información entre registros independientes, las
+   inconsistencias entre reservas y disponibilidad, la poca visibilidad del inventario,
+   la dificultad para rastrear accesos autorizados y la coordinación de información
+   entre varias sedes.
+4. **¿Cuándo y cómo se usará nuestro producto?** Creemos que Hostera se utilizará
+   durante el registro o modificación de reservas, la actualización de la
+   disponibilidad, los procesos de check-in y check-out, el registro de movimientos
+   del almacén, la autorización de accesos y la revisión del historial de eventos. El
+   uso se realizará desde la plataforma web, según las responsabilidades de cada
+   usuario y las necesidades de la operación.
+5. **¿Qué características son importantes?** Creemos que serán importantes la
+   centralización de reservas y disponibilidad, el registro y consulta del inventario,
+   la relación de tarjetas y lectores RFID con habitaciones y usuarios, la trazabilidad
+   de los accesos y la posibilidad de consultar información de una o varias sedes.
+6. **¿Cómo debe verse y comportarse nuestro producto?** Creemos que Hostera debe
+   presentar una interfaz clara, ordenada y fácil de comprender para usuarios con
+   diferentes responsabilidades. La solución debe mostrar información actualizada,
+   mantener una navegación consistente, brindar confirmación de las acciones
+   realizadas y facilitar la identificación de estados, cambios e incidencias sin
+   exigir que el usuario consulte múltiples registros.
+
+**User Outcome and Benefit Assumptions**
+
+1. Creemos que los responsables de la operación desean contar con información
+   actualizada para tomar decisiones sin depender de múltiples registros.
+2. Creemos que el personal de recepción se beneficiará de consultar rápidamente la
+   disponibilidad de las habitaciones y el estado de las reservas.
+3. Creemos que los encargados del almacén se beneficiarán de disponer de un historial
+   organizado de los ingresos, consumos y existencias.
+4. Creemos que el personal autorizado y los responsables del hotel valorarán poder
+   revisar la trazabilidad de los accesos vinculados con tarjetas RFID.
+5. Creemos que los usuarios operativos considerarán valiosa una experiencia que
+   reduzca la conciliación manual y les permita coordinar tareas entre áreas o sedes.
+
+**Feature Assumptions**
+
+1. Creemos que un panel administrativo que centralice reservas, habitaciones,
+   inventario y accesos ayudará a los usuarios a supervisar la operación desde un
+   mismo entorno.
+2. Creemos que las funciones para registrar y consultar reservas y disponibilidad
+   permitirán reducir inconsistencias entre la información reservada y el estado de
+   las habitaciones.
+3. Creemos que el registro de movimientos de inventario permitirá mejorar la
+   visibilidad de las existencias y facilitar su seguimiento.
+4. Creemos que la integración con tarjetas y lectores RFID permitirá asociar accesos
+   autorizados con habitaciones y usuarios, además de conservar un historial de
+   eventos.
+5. Creemos que una estructura de información preparada para una o varias sedes
+   permitirá que Hostera crezca junto con las necesidades de sus clientes.
+
+Estos supuestos no representan requisitos definitivos ni resultados comprobados. Los
+supuestos más riesgosos deberán priorizarse para formular los Hypothesis Statements y
+definir los experimentos que permitan confirmarlos o modificarlos.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+Los Hypothesis Statements representan una evolución de los Assumptions, ya que
+convierten las creencias iniciales del equipo en afirmaciones que pueden medirse y
+comprobarse. Cada hipótesis aplica el formato de Lean UX y relaciona un business
+outcome con un user outcome y una feature específica. Esta estructura permite
+contrastar las ideas con evidencia y comprobar si Hostera contribuye tanto a los
+objetivos del negocio como a las necesidades reales de sus usuarios.
+
+**Hipótesis 1: Panel administrativo centralizado**
+
+Creemos que centralizar la información de reservas, habitaciones, inventario y
+accesos en un panel administrativo reducirá la dependencia de registros
+independientes para supervisar la operación hotelera.
+
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
+tareas de supervisión que los administradores y responsables de la operación
+completan desde el panel sin consultar registros adicionales, respecto a la línea
+base definida durante la validación.
+
+**Hipótesis 2: Gestión de reservas y disponibilidad**
+
+Creemos que ofrecer al personal de recepción y a los administradores información
+actualizada para registrar y consultar reservas y disponibilidad reducirá las
+inconsistencias entre las reservas registradas y el estado de las habitaciones.
+
+**Sabremos que hemos tenido éxito cuando veamos** una reducción de al menos 5% en
+las inconsistencias detectadas entre reservas y disponibilidad, y una disminución del
+tiempo necesario para encontrar el estado de una reserva o habitación, en comparación
+con la línea base de la validación.
+
+**Hipótesis 3: Registro y consulta del inventario**
+
+Creemos que registrar y consultar los movimientos de inventario permitirá a los
+encargados del almacén y a los responsables de la operación mejorar la visibilidad y
+el seguimiento de las existencias.
+
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
+movimientos de inventario registrados y consultables, junto con una reducción de las
+diferencias encontradas durante las pruebas de control de existencias, respecto a la
+línea base.
+
+**Hipótesis 4: Control y trazabilidad de accesos RFID**
+
+Creemos que integrar las tarjetas y lectores RFID con el registro de eventos de
+Hostera permitirá al personal autorizado y a los responsables de la operación mejorar
+la trazabilidad de los accesos a las habitaciones y espacios del hotel.
+
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
+accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un
+usuario o huésped, además de una reducción del tiempo necesario para consultar su
+historial.
+
+**Hipótesis 5: Administración de una o varias sedes**
+
+Creemos que una estructura de información preparada para administrar una o varias
+sedes permitirá a los administradores y responsables de la operación mantener una
+visión consistente sin perder el contexto de cada hotel.
+
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
+tareas de consulta y supervisión completadas correctamente en escenarios de una y
+varias sedes, sin duplicar ni confundir la información operativa.
+
 #### 1.2.2.4. Lean UX Canvas
+
+![Lean UX Canvas de Hostera](assets/chapter-1/hostera-lean-ux-canvas.svg)
 
 ## 1.3. Segmentos objetivo
 
@@ -350,5 +761,11 @@ La propuesta de Grafo Verde se centra en construir un ecosistema de gestión hot
 This is program for AV2 (not in AV1)
 
 # Bibliografía
+
+[1] Progressa Lean. (2021, 13 de mayo). [*5W+2H: Técnica de análisis de problemas*](https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/).
+
+[2] Gothelf, J., & Seiden, J. (2021). *Lean UX: Creating Great Products with Agile Teams* (3rd ed.). O'Reilly Media.
+
+[3] Universidad Peruana de Ciencias Aplicadas. (2021). *Lean & Hypothesis-Driven Development* [Material de clase].
 
 # Anexos
