@@ -1123,7 +1123,137 @@ El Product Backlog puede consultarse en el [Agile Board de Hostera en YouTrack](
 
 ## 4.1. Style Guidelines
 
+El sistema de diseño de Hostera centraliza las decisiones visuales que deben
+mantenerse en el Landing Page y en las aplicaciones web. La propuesta adopta
+Material Design 3 (M3) [10] y lo adapta a la identidad de Hostera mediante tokens de
+color, tipografía, espaciado, forma y elevación compartidos.
+
 ### 4.1.1. General Style Guidelines
+
+#### Branding
+
+La identidad de Hostera utiliza el símbolo **Rising Bridge H**, una composición de
+la letra H cuyas dos estructuras se conectan mediante un trazo ascendente. La marca
+emplea verde evergreen como color principal y verde menta como acento. El símbolo
+dispone de variantes para superficies claras y oscuras; se debe conservar su
+proporción, contraste y área libre, sin deformarlo, rotarlo ni cambiar sus colores de
+forma independiente.
+
+<img src="assets/chapter-4/hostera-logo-variants.svg" alt="Variantes clara y oscura del símbolo de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.1. Variantes del símbolo Rising Bridge H extraídas del Design System de Hostera en Paper.*
+
+| Aspecto | Lineamiento |
+| :--- | :--- |
+| Símbolo principal | Rising Bridge H en verde evergreen `#14523E` con acento menta `#8EDAB8`. |
+| Superficie clara | Utilizar la variante principal sobre superficies blancas o neutras claras. |
+| Superficie oscura | Utilizar la variante inversa clara sobre superficies oscuras para conservar el contraste. |
+| Proporción | Mantener la relación original de ancho y alto; no estirar ni comprimir el símbolo. |
+| Área libre | Mantener espacio alrededor del símbolo para evitar interferencias con texto, bordes u otros elementos. |
+
+#### Color system
+
+La paleta se organiza mediante roles semánticos de M3. Los componentes consumen
+el rol correspondiente y no un tono aislado, lo que permite mantener contraste y
+consistencia en toda la experiencia. El color fuente de la marca es `#14523E`,
+utilizado como ancla del rol Primary. Warning es un color extendido para alertas
+operativas y el rol Tertiary reutiliza Secondary para evitar una jerarquía cromática
+innecesaria.
+
+| Rol | Token | Valor | Uso principal |
+| :--- | :--- | :---: | :--- |
+| Primary | `--md-sys-color-primary` | `#14523E` | Marca, acciones principales y elementos de mayor énfasis. |
+| On Primary | `--md-sys-color-on-primary` | `#FFFFFF` | Texto e iconos colocados sobre Primary. |
+| Primary Container | `--md-sys-color-primary-container` | `#9EF2CC` | Contenedores destacados con menor intensidad que Primary. |
+| On Primary Container | `--md-sys-color-on-primary-container` | `#002115` | Contenido colocado sobre Primary Container. |
+| Secondary | `--md-sys-color-secondary` | `#4E6558` | Acciones y elementos de énfasis secundario. |
+| Secondary Container | `--md-sys-color-secondary-container` | `#CFE9DA` | Contenedores secundarios y selecciones. |
+| Surface | `--md-sys-color-surface` | `#FFFFFF` | Superficie principal de páginas y vistas. |
+| Surface Container | `--md-sys-color-surface-container` | `#F3F6F4` | Agrupación de contenido y diferenciación de niveles. |
+| On Surface | `--md-sys-color-on-surface` | `#0D1613` | Texto e iconos principales sobre superficies. |
+| On Surface Variant | `--md-sys-color-on-surface-variant` | `#5B6862` | Texto secundario, metadatos y contenido de menor énfasis. |
+| Outline | `--md-sys-color-outline` | `#6E7B75` | Bordes y divisores de alta visibilidad. |
+| Outline Variant | `--md-sys-color-outline-variant` | `#C6CFCA` | Separadores y bordes sutiles. |
+| Warning | `--md-extended-color-warning-color` | `#B4650F` | Alertas operativas que requieren atención. |
+| Error | `--md-sys-color-error` | `#A32B22` | Errores, fallos de validación y acciones críticas. |
+
+#### Typography
+
+La familia tipográfica principal es **Geist**, utilizada en títulos, textos y
+controles. **Geist Mono** se reserva para tokens, códigos, cifras y etiquetas que
+requieren una lectura técnica o tabular. La escala mantiene los roles de M3: Display
+y Headline usan peso Regular (`400`), Body usa Regular (`400`) y Title y Label
+utilizan Medium (`500`) cuando requieren mayor énfasis.
+
+| Grupo tipográfico | Roles y tamaños | Altura de línea | Peso |
+| :--- | :--- | :--- | :---: |
+| Display | Large `57px`, Medium `45px`, Small `36px` | `64px`, `52px`, `44px` | 400 |
+| Headline | Large `32px`, Medium `28px`, Small `24px` | `40px`, `36px`, `32px` | 400 |
+| Title | Large `22px`, Medium `16px`, Small `14px` | `28px`, `24px`, `20px` | 400 / 500 |
+| Body | Large `16px`, Medium `14px`, Small `12px` | `24px`, `20px`, `16px` | 400 |
+| Label | Large `14px`, Medium `12px`, Small `11px` | `20px`, `16px`, `16px` | 500 |
+
+#### Spacing
+
+El espaciado se construye sobre una unidad base de `4px`. La escala permite agrupar
+elementos relacionados con separaciones pequeñas y diferenciar secciones mediante
+intervalos mayores, manteniendo un ritmo visual consistente.
+
+| Token | Valor | Aplicación |
+| :--- | :---: | :--- |
+| `--spacing-1` | `4px` | Ajustes mínimos entre elementos estrechamente relacionados. |
+| `--spacing-2` | `8px` | Separación interna compacta. |
+| `--spacing-3` | `12px` | Separación entre iconos, etiquetas y controles. |
+| `--spacing-4` | `16px` | Padding estándar y distancia entre componentes. |
+| `--spacing-6` | `24px` | Agrupación de bloques de contenido. |
+| `--spacing-8` | `32px` | Separación entre grupos o subsecciones. |
+| `--spacing-12` | `48px` | Espaciado amplio dentro de secciones. |
+| `--spacing-16` | `64px` | Separación estructural entre áreas principales. |
+| `--spacing-24` | `96px` | Ritmo vertical de secciones de gran escala. |
+
+#### Shape and elevation
+
+Las formas utilizan la escala de esquinas de M3. Los radios pequeños y medianos se
+aplican en campos, tarjetas y contenedores; el radio Full se reserva para botones,
+chips y controles de forma pill. El sistema dispone de niveles de elevación del 0 al
+5 y utiliza el nivel más bajo que permita comunicar correctamente la jerarquía de
+las superficies.
+
+| Token | Radio | Aplicación principal |
+| :--- | :---: | :--- |
+| `--md-sys-shape-corner-none` | `0px` | Divisiones estructurales sin redondeo. |
+| `--md-sys-shape-corner-extra-small` | `4px` | Elementos compactos. |
+| `--md-sys-shape-corner-small` | `8px` | Chips y controles pequeños. |
+| `--md-sys-shape-corner-medium` | `12px` | Tarjetas, campos y contenedores. |
+| `--md-sys-shape-corner-large` | `16px` | Paneles y superficies destacadas. |
+| `--md-sys-shape-corner-extra-large` | `28px` | Contenedores expresivos y modales. |
+| `--md-sys-shape-corner-full` | `999px` | Botones y controles de forma pill. |
+
+#### Communication tone
+
+La comunicación de Hostera debe transmitir control, confianza y claridad sin perder
+cercanía con los equipos hoteleros. Los mensajes presentan primero la acción o el
+estado relevante y utilizan terminología coherente con el Ubiquitous Language.
+
+| Dimensión | Posición adoptada | Aplicación |
+| :--- | :--- | :--- |
+| Divertido / Serio | Serio | Prioriza información operativa clara y evita expresiones que resten importancia a alertas o decisiones. |
+| Formal / Casual | Formal y cercano | Utiliza lenguaje profesional, directo y fácil de comprender. |
+| Respetuoso / Irreverente | Respetuoso | Evita culpabilizar al usuario y formula errores o alertas con orientación a la solución. |
+| Entusiasta / Sereno | Sereno | Comunica avances y beneficios con seguridad, sin exageraciones ni urgencia innecesaria. |
+
+#### Design principles
+
+- **Jerarquía semántica:** color, tipografía y elevación expresan la importancia y
+  el estado de cada elemento.
+- **Consistencia:** los mismos tokens y patrones mantienen una experiencia coherente
+  entre las vistas web de escritorio y móvil.
+- **Claridad operativa:** cada vista prioriza estados, acciones y datos necesarios
+  para completar una tarea hotelera.
+- **Accesibilidad:** el contenido conserva contraste, legibilidad y estados visibles
+  para interacción mediante puntero, teclado o pantalla táctil.
+- **Uso contenido del énfasis:** los colores Warning y Error se reservan para
+  situaciones que requieren atención y no como decoración.
 
 ### 4.1.2. Web Style Guidelines
 
@@ -1232,5 +1362,7 @@ This is program for AV2 (not in AV1)
 [8] Oracle Hospitality. (s. f.). [_What is a Hotel PMS (Property Management System)?_](https://www.oracle.com/ca-en/hospitality/what-is-hotel-pms/). Recuperado el 5 de septiembre de 2026.
 
 [9] STR. (s. f.). [_How to calculate RevPAR_](https://str.com/sites/default/files/The-Ultimate-Guide-to-Hotel-Benchmarking.pdf). Recuperado el 5 de septiembre de 2026.
+
+[10] Google. (s. f.). [_Material Design 3_](https://m3.material.io/). Recuperado el 5 de septiembre de 2026.
 
 # Anexos
