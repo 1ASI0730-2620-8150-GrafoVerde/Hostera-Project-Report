@@ -1072,7 +1072,16 @@ manera directa a horas de trabajo.
 | 7 | US008 | Use the English and Spanish Landing Page variants | As a visitor, I want to choose English or Spanish, so that I can read the Landing Page in the language I understand best. | 8 |
 | 8 | US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information in the Landing Page, so that I can learn more before choosing a plan. | 8 |
 
-**Pendiente:** captura y URL pública del Product Backlog en la herramienta de gestión.
+La siguiente captura muestra el listado general de issues del proyecto Hostera en
+YouTrack. En él se observan el Epic de Landing Page, las ocho User Stories, sus
+responsables, la asignación al sprint `Sprint 1 — Landing Page Experience` y los
+Story Points.
+
+![Product Backlog de Hostera en YouTrack](assets/chapter-3/youtrack-product-backlog.png)
+
+*Figura 3.1. Listado del Product Backlog del Landing Page en YouTrack.*
+
+El Product Backlog puede consultarse en el [Agile Board de Hostera en YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5).
 
 # Capítulo IV: Product Design
 
