@@ -1048,8 +1048,7 @@ producto. Los Story Points representan una estimación relativa del esfuerzo, la
 complejidad y la incertidumbre mediante la escala Fibonacci de 1, 2, 3, 5 y 8.
 
 La siguiente escala establece el criterio común utilizado para estimar las historias
-del producto digital. Los puntos expresan complejidad relativa y no equivalen de
-manera directa a horas de trabajo.
+del producto digital. Los puntos expresan complejidad relativa.
 
 | Puntos | Nivel de esfuerzo | Características |
 | :---: | :--- | :--- |
