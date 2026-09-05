@@ -1039,13 +1039,13 @@ predeterminado de la experiencia web.
 
 ## 3.3. Product Backlog
 
-El Product Backlog inicial reúne las User Stories del Landing Page asociadas con la
-épica EP001. El orden expresa su valor para el negocio: primero se prioriza que los
-segmentos objetivo comprendan la propuesta de Hostera y encuentren el recorrido
-correspondiente a su operación; luego se incorporan los elementos de conversión,
-evaluación y soporte. Los Story Points representan una estimación relativa del
-esfuerzo, la complejidad y la incertidumbre mediante la escala Fibonacci de 1, 2, 3,
-5 y 8.
+El Product Backlog es una lista priorizada y evolutiva de los requisitos del producto
+digital de Hostera. Reúne las User Stories y, conforme avance el proyecto, podrá
+incorporar Technical Stories, tareas y otros elementos necesarios para desarrollar,
+validar y desplegar la solución. La priorización se establece según el valor para el
+negocio, las necesidades de los User Personas, las dependencias y los riesgos del
+producto. Los Story Points representan una estimación relativa del esfuerzo, la
+complejidad y la incertidumbre mediante la escala Fibonacci de 1, 2, 3, 5 y 8.
 
 La siguiente escala establece el criterio común utilizado para estimar las historias
 del producto digital. Los puntos expresan complejidad relativa y no equivalen de
