@@ -1060,6 +1060,10 @@ del producto digital. Los puntos expresan complejidad relativa.
 
 <div style="page-break-before: always;"></div>
 
+El estado actual del Product Backlog se presenta en la tabla siguiente. Incluye el
+conjunto de User Stories priorizadas para el producto y sirve como referencia para
+organizar el trabajo de las etapas posteriores.
+
 | # Orden | User Story ID | Título | Descripción | Story Points |
 | :---: | :---: | :--- | :--- | :---: |
 | 1 | US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether the Landing Page is relevant to my hotel. | 5 |
@@ -1073,12 +1077,11 @@ del producto digital. Los puntos expresan complejidad relativa.
 
 La siguiente captura muestra el listado general de issues del proyecto Hostera en
 YouTrack. En él se observan el Epic de Landing Page, las ocho User Stories, sus
-responsables, la asignación al sprint `Sprint 1 — Landing Page Experience` y los
-Story Points.
+responsables y los Story Points.
 
 ![Product Backlog de Hostera en YouTrack](assets/chapter-3/youtrack-product-backlog.png)
 
-*Figura 3.1. Listado del Product Backlog del Landing Page en YouTrack.*
+*Figura 3.1. Listado general del Product Backlog de Hostera en YouTrack.*
 
 El Product Backlog puede consultarse en el [Agile Board de Hostera en YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5).
 
