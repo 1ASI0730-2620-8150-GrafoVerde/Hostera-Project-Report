@@ -108,7 +108,7 @@
 
 - [3.1. User Stories](#31-user-stories)
 - [3.2. Impact Mapping](#32-impact-mapping)
-- [3.4. Product Backlog](#34-product-backlog)
+- [3.3. Product Backlog](#33-product-backlog)
 
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
 
@@ -1035,7 +1035,55 @@ predeterminado de la experiencia web.
 
 ## 3.2. Impact Mapping
 
-## 3.4. Product Backlog
+<div style="page-break-before: always;"></div>
+
+## 3.3. Product Backlog
+
+El Product Backlog es una lista priorizada y evolutiva de los requisitos del producto
+digital de Hostera. Reúne las User Stories y, conforme avance el proyecto, podrá
+incorporar Technical Stories, tareas y otros elementos necesarios para desarrollar,
+validar y desplegar la solución. La priorización se establece según el valor para el
+negocio, las necesidades de los User Personas, las dependencias y los riesgos del
+producto. Los Story Points representan una estimación relativa del esfuerzo, la
+complejidad y la incertidumbre mediante la escala Fibonacci de 1, 2, 3, 5 y 8.
+
+La siguiente escala establece el criterio común utilizado para estimar las historias
+del producto digital. Los puntos expresan complejidad relativa.
+
+| Puntos | Nivel de esfuerzo | Características |
+| :---: | :--- | :--- |
+| 1 | Muy bajo | Cambio aislado o contenido estático, sin lógica de negocio ni dependencias externas. |
+| 2 | Bajo | Funcionalidad sencilla con interacción limitada y validaciones básicas. |
+| 3 | Medio | Flujo con manejo de estados, reglas de complejidad media o interacción con servicios. |
+| 5 | Alto | Lógica condicional compleja, integración de datos, comunicación con dispositivos o coordinación entre varios componentes. |
+| 8 | Muy alto | Funcionalidad crítica o transversal que involucra tiempo real, seguridad, alta incertidumbre o gestión compleja entre múltiples componentes. |
+
+<div style="page-break-before: always;"></div>
+
+El estado actual del Product Backlog se presenta en la tabla siguiente. Incluye el
+conjunto de User Stories priorizadas para el producto y sirve como referencia para
+organizar el trabajo de las etapas posteriores.
+
+| # Orden | User Story ID | Título | Descripción | Story Points |
+| :---: | :---: | :--- | :--- | :---: |
+| 1 | US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether the Landing Page is relevant to my hotel. | 5 |
+| 2 | US003 | Find the independent-hotel path | As an independent hotel administrator or owner, I want a path for one property with up to 10 rooms, so that I can identify the entry point intended for my operation. | 3 |
+| 3 | US004 | Find the small-chain path | As a small-chain hotel operations manager, I want a path for coordinating 2 to 5 locations, so that I can identify the plan and next step intended for a multi-property operation. | 3 |
+| 4 | US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and see clear next actions, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | 5 |
+| 5 | US005 | Understand the product benefits and operating flow | As a visitor, I want to understand the benefits and the high-level operating flow described by Hostera, so that I can relate the proposition to hotel work. | 5 |
+| 6 | US002 | Navigate the Landing Page sections and footer | As a visitor, I want clearly labeled navigation, so that I can find the Landing Page content and understand the available next steps. | 5 |
+| 7 | US008 | Use the English and Spanish Landing Page variants | As a visitor, I want to choose English or Spanish, so that I can read the Landing Page in the language I understand best. | 8 |
+| 8 | US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information in the Landing Page, so that I can learn more before choosing a plan. | 8 |
+
+La siguiente captura muestra el listado general de issues del proyecto Hostera en
+YouTrack. En él se visualiza el estado del Product Backlog y los campos utilizados
+para su seguimiento, priorización y estimación.
+
+![Product Backlog de Hostera en YouTrack](assets/chapter-3/youtrack-product-backlog.png)
+
+*Figura 3.1. Listado general del Product Backlog de Hostera en YouTrack.*
+
+El Product Backlog puede consultarse en el [Agile Board de Hostera en YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5).
 
 # Capítulo IV: Product Design
 
