@@ -1076,8 +1076,8 @@ organizar el trabajo de las etapas posteriores.
 | 8 | US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information in the Landing Page, so that I can learn more before choosing a plan. | 8 |
 
 La siguiente captura muestra el listado general de issues del proyecto Hostera en
-YouTrack. En él se observan el Epic de Landing Page, las ocho User Stories, sus
-responsables y los Story Points.
+YouTrack. En él se visualiza el estado del Product Backlog y los campos utilizados
+para su seguimiento, priorización y estimación.
 
 ![Product Backlog de Hostera en YouTrack](assets/chapter-3/youtrack-product-backlog.png)
 
