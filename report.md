@@ -1162,20 +1162,20 @@ innecesaria.
 
 | Rol | Token | Valor | Uso principal |
 | :--- | :--- | :---: | :--- |
-| Primary | `--md-sys-color-primary` | `#14523E` | Marca, acciones principales y elementos de mayor énfasis. |
-| On Primary | `--md-sys-color-on-primary` | `#FFFFFF` | Texto e iconos colocados sobre Primary. |
-| Primary Container | `--md-sys-color-primary-container` | `#9EF2CC` | Contenedores destacados con menor intensidad que Primary. |
-| On Primary Container | `--md-sys-color-on-primary-container` | `#002115` | Contenido colocado sobre Primary Container. |
-| Secondary | `--md-sys-color-secondary` | `#4E6558` | Acciones y elementos de énfasis secundario. |
-| Secondary Container | `--md-sys-color-secondary-container` | `#CFE9DA` | Contenedores secundarios y selecciones. |
-| Surface | `--md-sys-color-surface` | `#FFFFFF` | Superficie principal de páginas y vistas. |
-| Surface Container | `--md-sys-color-surface-container` | `#F3F6F4` | Agrupación de contenido y diferenciación de niveles. |
-| On Surface | `--md-sys-color-on-surface` | `#0D1613` | Texto e iconos principales sobre superficies. |
-| On Surface Variant | `--md-sys-color-on-surface-variant` | `#5B6862` | Texto secundario, metadatos y contenido de menor énfasis. |
-| Outline | `--md-sys-color-outline` | `#6E7B75` | Bordes y divisores de alta visibilidad. |
-| Outline Variant | `--md-sys-color-outline-variant` | `#C6CFCA` | Separadores y bordes sutiles. |
-| Warning | `--md-extended-color-warning-color` | `#B4650F` | Alertas operativas que requieren atención. |
-| Error | `--md-sys-color-error` | `#A32B22` | Errores, fallos de validación y acciones críticas. |
+| Primary | `--md-sys-color-primary` | <img src="assets/chapter-4/color-swatches/primary.svg" alt="Muestra de color Primary" style="width:18px; height:18px; vertical-align:middle;"/> `#14523E` | Marca, acciones principales y elementos de mayor énfasis. |
+| On Primary | `--md-sys-color-on-primary` | <img src="assets/chapter-4/color-swatches/on-primary.svg" alt="Muestra de color On Primary" style="width:18px; height:18px; vertical-align:middle;"/> `#FFFFFF` | Texto e iconos colocados sobre Primary. |
+| Primary Container | `--md-sys-color-primary-container` | <img src="assets/chapter-4/color-swatches/primary-container.svg" alt="Muestra de color Primary Container" style="width:18px; height:18px; vertical-align:middle;"/> `#9EF2CC` | Contenedores destacados con menor intensidad que Primary. |
+| On Primary Container | `--md-sys-color-on-primary-container` | <img src="assets/chapter-4/color-swatches/on-primary-container.svg" alt="Muestra de color On Primary Container" style="width:18px; height:18px; vertical-align:middle;"/> `#002115` | Contenido colocado sobre Primary Container. |
+| Secondary | `--md-sys-color-secondary` | <img src="assets/chapter-4/color-swatches/secondary.svg" alt="Muestra de color Secondary" style="width:18px; height:18px; vertical-align:middle;"/> `#4E6558` | Acciones y elementos de énfasis secundario. |
+| Secondary Container | `--md-sys-color-secondary-container` | <img src="assets/chapter-4/color-swatches/secondary-container.svg" alt="Muestra de color Secondary Container" style="width:18px; height:18px; vertical-align:middle;"/> `#CFE9DA` | Contenedores secundarios y selecciones. |
+| Surface | `--md-sys-color-surface` | <img src="assets/chapter-4/color-swatches/surface.svg" alt="Muestra de color Surface" style="width:18px; height:18px; vertical-align:middle;"/> `#FFFFFF` | Superficie principal de páginas y vistas. |
+| Surface Container | `--md-sys-color-surface-container` | <img src="assets/chapter-4/color-swatches/surface-container.svg" alt="Muestra de color Surface Container" style="width:18px; height:18px; vertical-align:middle;"/> `#F3F6F4` | Agrupación de contenido y diferenciación de niveles. |
+| On Surface | `--md-sys-color-on-surface` | <img src="assets/chapter-4/color-swatches/on-surface.svg" alt="Muestra de color On Surface" style="width:18px; height:18px; vertical-align:middle;"/> `#0D1613` | Texto e iconos principales sobre superficies. |
+| On Surface Variant | `--md-sys-color-on-surface-variant` | <img src="assets/chapter-4/color-swatches/on-surface-variant.svg" alt="Muestra de color On Surface Variant" style="width:18px; height:18px; vertical-align:middle;"/> `#5B6862` | Texto secundario, metadatos y contenido de menor énfasis. |
+| Outline | `--md-sys-color-outline` | <img src="assets/chapter-4/color-swatches/outline.svg" alt="Muestra de color Outline" style="width:18px; height:18px; vertical-align:middle;"/> `#6E7B75` | Bordes y divisores de alta visibilidad. |
+| Outline Variant | `--md-sys-color-outline-variant` | <img src="assets/chapter-4/color-swatches/outline-variant.svg" alt="Muestra de color Outline Variant" style="width:18px; height:18px; vertical-align:middle;"/> `#C6CFCA` | Separadores y bordes sutiles. |
+| Warning | `--md-extended-color-warning-color` | <img src="assets/chapter-4/color-swatches/warning.svg" alt="Muestra de color Warning" style="width:18px; height:18px; vertical-align:middle;"/> `#B4650F` | Alertas operativas que requieren atención. |
+| Error | `--md-sys-color-error` | <img src="assets/chapter-4/color-swatches/error.svg" alt="Muestra de color Error" style="width:18px; height:18px; vertical-align:middle;"/> `#A32B22` | Errores, fallos de validación y acciones críticas. |
 
 #### Typography
 
