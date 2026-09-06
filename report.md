@@ -1655,6 +1655,104 @@ los permisos de la persona autenticada.
 
 ### 4.2.5. Navigation Systems
 
+El sistema de navegación define las acciones y técnicas que permiten recorrer la
+información de Hostera, reconocer la ubicación actual y llegar a la siguiente tarea
+sin perder el contexto. La navegación se diseña de manera distinta para la Landing
+Page y para la aplicación web, porque la primera acompaña el descubrimiento del
+producto y la segunda acompaña la operación hotelera.
+
+#### Tipos de navegación
+
+Hostera combina navegación global, local, contextual y de utilidad. Cada tipo tiene
+una responsabilidad específica y evita que un solo menú tenga que resolver todas las
+necesidades de recorrido.
+
+| Tipo | Aplicación en Hostera | Propósito |
+| :--- | :--- | :--- |
+| **Global** | Encabezado de la Landing Page y menú principal de la aplicación web. | Permite cambiar entre las áreas principales sin importar dónde se encuentra la persona. |
+| **Local** | Enlaces ancla dentro de la Landing Page y pestañas o subsecciones dentro de un área funcional. | Permite recorrer el contenido relacionado con la sección actual. |
+| **Contextual** | Enlaces, tarjetas, botones y acciones que aparecen junto al contenido consultado. | Conduce al siguiente paso relacionado con la decisión o tarea actual. |
+| **De utilidad** | Control de idioma de la Landing Page y acciones de cuenta, ayuda o configuración cuando correspondan a la vista. | Resuelve necesidades transversales sin mezclarlas con los destinos principales. |
+| **De retorno** | Breadcrumbs, acción de volver y retorno al listado después de consultar un detalle. | Permite regresar a un nivel anterior conservando el contexto de la consulta. |
+
+#### Navegación de la Landing Page
+
+La Landing Page utiliza una navegación jerárquica y por anclas. El encabezado
+presenta los destinos principales `Segments`, `Features`, `Pricing`, `Product` y
+`About`. Cada etiqueta lleva a su sección correspondiente dentro de la misma página.
+El pie de página repite los destinos relevantes y añade `Support` y `Terms and
+Conditions` para que la persona pueda continuar el recorrido desde el final del
+contenido.
+
+El recorrido principal sigue esta secuencia:
+
+1. La persona reconoce la propuesta de valor en el hero y elige un siguiente paso.
+2. Revisa segmentos, funciones y planes para comparar la propuesta con su contexto.
+3. Selecciona una llamada a la acción, como `Start for free`, `Explore Professional`
+   o `Talk to sales`.
+4. Puede continuar hacia el producto, el equipo o el soporte mediante los enlaces
+   contextuales y el pie de página.
+
+Los caminos de `Independent hotel` y `Small hotel chain` funcionan como navegación
+contextual. No crean dos productos separados; orientan a la persona hacia el plan y
+la acción que corresponden a su escala operativa.
+
+#### Navegación de la aplicación web
+
+La aplicación web utiliza un menú global persistente para las áreas funcionales de
+Hostera: `Reservations`, `Rooms & availability`, `Inventory`, `Access control` y
+`Reports`. El menú permite cambiar de área sin reiniciar la tarea y comunica la
+sección activa mediante una señal visual y textual.
+
+Dentro de cada área, la navegación local lleva de la lista al detalle y del detalle
+a las acciones relacionadas. Las acciones que cambian el estado de un registro se
+mantienen próximas al contenido que modifican, mientras que la acción de retorno
+permite volver a la lista sin perder los filtros o el contexto de la propiedad.
+
+| Nivel | Ejemplo de recorrido | Regla de navegación |
+| :--- | :--- | :--- |
+| Área funcional | Menú principal → `Reservations` | La persona identifica dónde se encuentra mediante el destino activo. |
+| Colección | `Reservations` → lista de reservas | La lista permite revisar el conjunto y utilizar la búsqueda o los filtros del área. |
+| Detalle | Lista → detalle de una reserva | El detalle conserva el nombre del área y ofrece una acción clara para regresar. |
+| Acción contextual | Detalle → revisar disponibilidad relacionada | La acción aparece junto al dato que explica por qué es relevante. |
+| Cambio de contexto | Selector de propiedad → otra propiedad | El cambio informa qué propiedad está activa antes de actualizar el contenido. |
+
+La aplicación no utiliza enlaces aislados que lleven a una pantalla sin contexto. Cada
+destino conserva una relación visible con el área, la propiedad y el registro desde
+el que se inició el recorrido.
+
+#### Navegación responsive
+
+Las experiencias web de Hostera se adaptan al ancho disponible del navegador. En una
+vista amplia, el menú global puede permanecer visible junto al contenido; en una
+vista reducida se transforma en un control desplegable o panel lateral. La
+transformación cambia la disposición, pero conserva el orden, los nombres y la
+jerarquía de las opciones.
+
+| Situación | Vista amplia | Vista reducida |
+| :--- | :--- | :--- |
+| Navegación global | Menú visible junto al contenido principal. | Menú agrupado en un control que puede abrirse y cerrarse. |
+| Navegación local | Enlaces o pestañas visibles en la sección. | Pestañas desplazables o selector que mantiene la sección activa. |
+| Retorno | Breadcrumbs o acción de volver junto al título. | Acción de volver visible antes del título o en la barra superior. |
+| Filtros y contexto | Panel de filtros y selector de propiedad visibles. | Panel desplegable que muestra los filtros activos y permite retirarlos individualmente. |
+
+Cuando una persona abre un menú responsive, el foco permanece dentro del panel hasta
+que lo cierra o selecciona un destino. Al cambiar de sección, el encabezado, la
+señal de ubicación activa y el contenido principal se actualizan de forma coherente.
+La navegación por teclado conserva el mismo orden lógico que la navegación visual.
+
+#### Señales de ubicación y continuidad
+
+Cada pantalla comunica dónde se encuentra la persona mediante una combinación de
+nombre de sección, estado activo, título de contenido y acción de retorno. Los
+enlaces visitados no sustituyen estas señales, porque la ubicación actual debe ser
+comprensible incluso cuando la persona llega directamente a una vista.
+
+La navegación de Hostera se considera consistente cuando una persona puede responder
+estas tres preguntas en cualquier momento: dónde estoy, qué puedo hacer aquí y cómo
+regreso al contexto anterior. Estas señales mantienen la continuidad entre la
+Landing Page, la selección de segmento y la aplicación web.
+
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
