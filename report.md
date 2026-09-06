@@ -1755,9 +1755,87 @@ Landing Page, la selección de segmento y la aplicación web.
 
 ## 4.3. Landing Page UI Design
 
+La propuesta de interfaz del Landing Page traduce el sistema de diseño y la
+arquitectura de información de Hostera en una experiencia web coherente y
+responsive. La composición establece una jerarquía que inicia con la propuesta de
+valor, orienta a cada visitante hacia su segmento, explica el problema y la solución,
+presenta las capacidades y planes del producto, y culmina con contenido de confianza,
+preguntas frecuentes y acciones de conversión. Este recorrido conserva el mismo orden
+y significado en navegadores de escritorio y móviles, aunque adapta la distribución,
+la navegación y el tamaño de los elementos al espacio disponible.
+
 ### 4.3.1. Landing Page Wireframe
 
+Los wireframes definen la estructura, la prioridad del contenido y las relaciones
+entre los elementos antes de aplicar el acabado visual. Las áreas de texto, imágenes,
+videos, tarjetas, controles y acciones se representan mediante formas simples para
+concentrar la evaluación en la organización de la experiencia. Los labels visibles,
+el orden predecible de lectura y la diferenciación entre contenido y controles
+permiten reconocer cada función sin depender únicamente del color.
+
+#### Desktop Web Browser
+
+La versión de escritorio aprovecha el ancho disponible para mantener la navegación
+global visible, presentar el hero como punto focal y organizar en columnas los
+segmentos, características, pasos, planes y perfiles del equipo. Esta distribución
+facilita la comparación de contenido relacionado y mantiene un ritmo vertical claro
+entre las secciones. Los encabezados, agrupaciones, divisores y llamadas a la acción
+refuerzan la jerarquía definida por los sistemas de organización, etiquetado y
+navegación.
+
+<img src="assets/chapter-4/landing-page-wireframe-desktop.png" alt="Wireframe completo del Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+
+*Figura 4.4. Wireframe del Landing Page de Hostera para Desktop Web Browser.*
+
+#### Mobile Web Browser
+
+La versión móvil conserva el contenido y su secuencia, pero transforma la navegación
+en un control compacto y reorganiza las composiciones en una columna. Las tarjetas y
+los bloques multimedia se apilan para evitar desplazamiento horizontal, mientras que
+los márgenes laterales mantienen una línea de lectura estable. Los controles
+interactivos principales tienen una altura mínima de 48 px y permanecen claramente
+identificados, lo que favorece su uso táctil y mediante tecnologías de asistencia.
+
+<img src="assets/chapter-4/landing-page-wireframe-mobile.png" alt="Wireframe completo del Landing Page de Hostera para navegador web móvil" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+
+*Figura 4.5. Wireframe del Landing Page de Hostera para Mobile Web Browser.*
+
 ### 4.3.2. Landing Page Mock-up
+
+Los mock-ups incorporan el Design System de Hostera sobre la estructura validada en
+los wireframes. La interfaz utiliza la tipografía Geist, los roles de color definidos
+para superficies, contenido, contornos y acciones, así como componentes y patrones de
+Material Design 3. La consistencia de espaciado, forma, contraste y jerarquía permite
+reconocer qué elementos informan, cuáles agrupan contenido y cuáles permiten continuar
+el recorrido.
+
+#### Desktop Web Browser
+
+En escritorio, el mock-up conserva composiciones amplias para comunicar la propuesta
+de valor y mostrar relaciones entre alternativas. Las tarjetas de segmentos y planes
+permiten comparar opciones en paralelo; las secciones de producto, funcionamiento,
+evidencia y equipo alternan texto y contenido visual para mantener el ritmo de lectura.
+Los botones principales emplean un énfasis uniforme y las acciones secundarias se
+distinguen sin competir con el objetivo principal de cada sección.
+
+<img src="assets/chapter-4/landing-page-mockup-desktop.png" alt="Mock-up completo del Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+
+*Figura 4.6. Mock-up del Landing Page de Hostera para Desktop Web Browser.*
+
+#### Mobile Web Browser
+
+En móvil, la propuesta aplica el mismo lenguaje visual con una composición adaptada a
+una sola columna. El encabezado reduce sus opciones visibles a un control de menú, las
+acciones principales ocupan un ancho fácilmente alcanzable y los grupos de tarjetas se
+apilan sin alterar su prioridad. La escala tipográfica, el contraste entre contenido y
+superficie, los labels explícitos y el tamaño de los controles mantienen la lectura y
+la interacción accesibles. De esta manera, la adaptación responsive conserva la
+identidad y la arquitectura de información sin tratar la vista móvil como un producto
+distinto.
+
+<img src="assets/chapter-4/landing-page-mockup-mobile.png" alt="Mock-up completo del Landing Page de Hostera para navegador web móvil" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+
+*Figura 4.7. Mock-up del Landing Page de Hostera para Mobile Web Browser.*
 
 ## 4.4. Web Applications UX/UI Design
 
