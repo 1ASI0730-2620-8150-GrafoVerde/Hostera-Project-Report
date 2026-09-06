@@ -1417,6 +1417,83 @@ reemplazan la organización temática de todo el producto.
 
 ### 4.2.2. Labeling Systems
 
+El sistema de etiquetado define las palabras que Hostera utiliza para representar
+secciones, funciones, datos y acciones. Las etiquetas deben permitir que una
+persona anticipe el contenido de un destino o el resultado de un control sin tener
+que aprender la estructura interna del producto. Por ello, se priorizan términos
+habituales de la operación hotelera, expresiones breves y asociaciones consistentes
+entre la Landing Page y la aplicación web.
+
+#### Principios de etiquetado
+
+| Principio | Aplicación en Hostera |
+| :--- | :--- |
+| **Lenguaje orientado a la persona** | Las etiquetas describen el objetivo o la información que la persona reconoce, no el nombre técnico del componente o del servicio interno. |
+| **Brevedad con significado** | Se utilizan una o pocas palabras cuando el contexto es suficiente. Cuando una etiqueta puede resultar ambigua, se añade una descripción breve en lugar de crear un nombre extenso. |
+| **Consistencia gramatical** | Los destinos y módulos se expresan principalmente como sustantivos; las acciones se expresan como verbos en modo imperativo o infinitivo, según el contexto del control. |
+| **Consistencia de nivel** | Elementos que pertenecen al mismo nivel de la estructura mantienen una granularidad comparable. Un módulo no se mezcla con una acción específica dentro del mismo grupo. |
+| **Correspondencia entre etiqueta y contenido** | El contenido de una sección, página o control debe cumplir la expectativa creada por su etiqueta. No se reutiliza una etiqueta para destinos con objetivos diferentes. |
+| **Asociación visible** | Las etiquetas se mantienen próximas al contenido o control que describen, y los iconos funcionan como apoyo visual, no como sustituto del texto. |
+| **Reutilización controlada** | Un mismo concepto conserva la misma etiqueta en la Landing Page, la aplicación web, los mensajes de estado y los textos de apoyo. |
+
+#### Etiquetas de la Landing Page
+
+La Landing Page utiliza etiquetas de descubrimiento para ayudar a comprender la
+propuesta de valor y elegir un camino. Los destinos se expresan como conceptos del
+producto, mientras que los botones se expresan como siguientes acciones.
+
+| Área | Etiquetas definidas | Tipo de etiqueta | Asociación esperada |
+| :--- | :--- | :--- | :--- |
+| Navegación primaria | `Segments`, `Features`, `Pricing`, `Product`, `About` | Destinos temáticos | La persona anticipa el tipo de información que encontrará en cada sección. |
+| Segmentos objetivo | `Independent hotel`, `Small hotel chain` | Etiquetas de audiencia | La persona identifica el camino que corresponde a su escala de operación. |
+| Propuesta de valor | `Hotel operations, connected.` | Mensaje de posicionamiento | Resume la promesa de conectar la operación hotelera sin presentarse como una función aislada. |
+| Llamadas a la acción | `Start for free`, `Explore Professional`, `Talk to sales` | Acciones | Expresan el siguiente paso y distinguen entre iniciar una experiencia, evaluar un plan o solicitar contacto. |
+| Soporte y contenido complementario | `Support`, `Discover Hostera`, `Meet the team`, `Frequently asked questions` | Destinos y puntos de entrada | Indican si la persona conocerá ayuda, el producto, el equipo o respuestas a dudas frecuentes. |
+
+Las etiquetas de navegación se mantienen como nombres de destinos, mientras que las
+llamadas a la acción se reservan para acciones concretas. Esta diferencia evita que
+una persona confunda, por ejemplo, la sección `Pricing` con el botón que inicia la
+evaluación de un plan.
+
+#### Etiquetas de la aplicación web
+
+En la aplicación web, las etiquetas se organizan alrededor de los dominios que
+Hostera centraliza y de las tareas que una persona responsable debe completar. La
+misma terminología se conserva al cambiar entre una vista amplia y una vista
+reducida del navegador.
+
+| Uso en la interfaz | Etiqueta definida | Qué representa |
+| :--- | :--- | :--- |
+| Entrada de navegación o sección del dashboard | `Reservations` | El conjunto de reservas y sus operaciones. |
+| Entrada de navegación o sección del dashboard | `Rooms & availability` | Las habitaciones y su disponibilidad. |
+| Entrada de navegación o sección del dashboard | `Inventory` | El inventario del almacén y sus movimientos. |
+| Entrada de navegación o sección del dashboard | `Access control` | Las tarjetas, los lectores y los eventos RFID. |
+| Entrada de navegación o sección del dashboard | `Reports` | Los resultados agregados y las comparaciones operativas. |
+| Acción dentro de un área funcional | `Create reservation`, `Check availability` | La operación que la persona puede ejecutar. |
+| Acción dentro de un área funcional | `Add item`, `Review access event` | La operación sobre inventario o registros de acceso. |
+| Estado de un registro o evento | `Available`, `Occupied`, `Pending`, `Access granted` | La condición actual del dato o evento. |
+
+Las entradas de navegación expresan áreas de información y las acciones expresan
+operaciones sobre esa información. Por ejemplo, `Reservations` identifica el
+destino, mientras que `Create reservation` identifica una acción dentro de ese
+destino. Esta relación hace explícita la asociación entre el área funcional, el dato y la
+tarea de la persona.
+
+#### Reglas de consistencia y validación
+
+Antes de incorporar una nueva etiqueta se comprueba que:
+
+- representa una sola idea y no combina un área funcional con una acción;
+- utiliza el mismo término que el resto del producto para el mismo concepto;
+- permite inferir el contenido o resultado sin depender únicamente de un icono;
+- conserva una longitud razonable para no romper la lectura en pantallas reducidas;
+- diferencia estados, acciones y destinos mediante su forma gramatical;
+- mantiene la misma asociación semántica en títulos, botones, tablas, filtros y
+  mensajes de estado.
+
+Estas reglas permiten que el sistema de etiquetas sea reconocible y escalable a
+medida que Hostera incorpore nuevas funciones, propiedades o integraciones.
+
 ### 4.2.3. SEO Tags and Meta Tags
 
 ### 4.2.4. Searching Systems
