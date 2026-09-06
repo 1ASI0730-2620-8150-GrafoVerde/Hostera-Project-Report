@@ -1359,13 +1359,399 @@ táctil.
 
 ### 4.2.1. Organization Systems
 
+Los sistemas de organización definen cómo se agrupa y relaciona la información de
+Hostera para que cada persona pueda reconocer qué contenido está consultando y qué
+acción puede realizar a continuación. Estas decisiones se aplican a la Landing Page
+y a las aplicaciones web responsive, tanto en una ventana amplia como en una vista
+reducida del navegador. La organización se determina por el objetivo de la persona,
+su rol y el contexto operativo; no se basa únicamente en la estructura interna del
+software.
+
+#### Estructuras de información
+
+Hostera combina tres estructuras. La estructura jerárquica permite pasar de una
+visión general a información más específica; la secuencial guía tareas que deben
+completarse en un orden reconocible; y la matricial permite comparar dos
+dimensiones, como el rol de la persona y el dominio operativo.
+
+| Estructura | Aplicación en Hostera | Criterio de uso |
+| :--- | :--- | :--- |
+| **Jerárquica** | La Landing Page parte de la propuesta de valor y conduce hacia segmentos, beneficios, producto, planes y soporte. En la aplicación web, el panel general conduce a módulos y luego al detalle de cada registro. | Se utiliza cuando la persona necesita explorar desde un resumen hasta una información específica sin perder el contexto. |
+| **Secuencial** | Los flujos operativos se organizan como seleccionar el contexto, configurar la información y ejecutar o revisar la operación. Este orden se aplica, por ejemplo, al preparar una operación del hotel antes de consultarla en el panel. | Se utiliza cuando una tarea tiene pasos dependientes y el siguiente paso requiere completar o confirmar el anterior. |
+| **Matricial** | La información se cruza por audiencia y dominio operativo: un responsable de un hotel independiente consulta reservas y habitaciones, mientras que una persona responsable de una cadena consulta inventario, accesos y el estado de varias propiedades. | Se utiliza cuando una misma operación debe consultarse desde más de un rol o dimensión sin duplicar el contenido. |
+
+La combinación de estas estructuras evita que todas las decisiones de organización
+dependan de un único menú. La jerarquía sirve para orientar, la secuencia para
+acompañar una tarea y la matriz para comparar alternativas o contextos de operación.
+
+#### Esquemas de organización
+
+Los esquemas se eligen según el tipo de necesidad. Cuando la persona conoce el
+elemento que busca, se emplean esquemas exactos; cuando todavía está explorando o
+aprendiendo qué puede hacer con Hostera, se emplean esquemas ambiguos y combinados.
+
+| Esquema | Uso en Hostera | Ejemplo de información organizada |
+| :--- | :--- | :--- |
+| **Temático** | Es el esquema principal para presentar la propuesta de valor y los módulos del producto. | Reservas, disponibilidad de habitaciones, inventario y control de accesos. |
+| **Por audiencia** | Organiza las alternativas según las responsabilidades de cada segmento objetivo. | Operación de un hotel independiente frente a la gestión de una cadena pequeña. |
+| **Por tarea** | Agrupa funciones según la acción que la persona desea completar. | Crear o revisar una reserva, consultar disponibilidad o verificar un acceso. |
+| **Cronológico** | Ordena eventos y registros cuando el momento de ocurrencia ayuda a entender la operación. | Historial de reservas, movimientos de inventario y eventos de acceso. |
+| **Alfabético** | Se reserva para listas donde la persona conoce el nombre del elemento y necesita localizarlo rápidamente. | Búsqueda de huéspedes, habitaciones, propiedades o usuarios por nombre. |
+| **Geográfico** | Se utiliza cuando una cadena necesita distinguir propiedades por ubicación. | Comparación de operaciones entre hoteles o sedes. |
+
+El esquema temático se utiliza como punto de partida porque refleja los dominios
+principales de Hostera. El esquema por audiencia conduce a los dos caminos de la
+Landing Page, mientras que el esquema por tarea organiza el trabajo dentro de la
+aplicación. Los esquemas cronológico, alfabético y geográfico se aplican a listas o
+registros cuando aportan una forma más directa de localizar o comparar datos; no
+reemplazan la organización temática de todo el producto.
+
+#### Decisiones de organización por entorno
+
+| Entorno | Persona y objetivo | Estructura dominante | Esquema principal | Resultado esperado |
+| :--- | :--- | :--- | :--- | :--- |
+| Landing Page | Visitante que desea entender la propuesta y elegir un siguiente paso. | Jerárquica | Temático + audiencia | Reconoce el valor de Hostera y encuentra el camino correspondiente a su escala operativa. |
+| Aplicación web | Responsable que necesita ejecutar una operación concreta. | Jerárquica + secuencial | Tarea + audiencia | Accede al módulo adecuado y completa la operación con un orden predecible. |
+| Registros operativos | Persona que revisa información histórica o localiza un registro conocido. | Matricial | Cronológico + tarea, con apoyo alfabético | Encuentra, filtra y compara información según la acción y el momento relevantes. |
+| Gestión de varias propiedades | Responsable de una cadena que compara el mismo dominio entre sedes. | Matricial | Geográfico + temático | Mantiene el mismo modelo operativo y permite distinguir la propiedad involucrada. |
+
 ### 4.2.2. Labeling Systems
+
+El sistema de etiquetado define las palabras que Hostera utiliza para representar
+secciones, funciones, datos y acciones. Las etiquetas deben permitir que una
+persona anticipe el contenido de un destino o el resultado de un control sin tener
+que aprender la estructura interna del producto. Por ello, se priorizan términos
+habituales de la operación hotelera, expresiones breves y asociaciones consistentes
+entre la Landing Page y la aplicación web.
+
+#### Principios de etiquetado
+
+| Principio | Aplicación en Hostera |
+| :--- | :--- |
+| **Lenguaje orientado a la persona** | Las etiquetas describen el objetivo o la información que la persona reconoce, no el nombre técnico del componente o del servicio interno. |
+| **Brevedad con significado** | Se utilizan una o pocas palabras cuando el contexto es suficiente. Cuando una etiqueta puede resultar ambigua, se añade una descripción breve en lugar de crear un nombre extenso. |
+| **Consistencia gramatical** | Los destinos y módulos se expresan principalmente como sustantivos; las acciones se expresan como verbos en modo imperativo o infinitivo, según el contexto del control. |
+| **Consistencia de nivel** | Elementos que pertenecen al mismo nivel de la estructura mantienen una granularidad comparable. Un módulo no se mezcla con una acción específica dentro del mismo grupo. |
+| **Correspondencia entre etiqueta y contenido** | El contenido de una sección, página o control debe cumplir la expectativa creada por su etiqueta. No se reutiliza una etiqueta para destinos con objetivos diferentes. |
+| **Asociación visible** | Las etiquetas se mantienen próximas al contenido o control que describen, y los iconos funcionan como apoyo visual, no como sustituto del texto. |
+| **Reutilización controlada** | Un mismo concepto conserva la misma etiqueta en la Landing Page, la aplicación web, los mensajes de estado y los textos de apoyo. |
+
+#### Etiquetas de la Landing Page
+
+La Landing Page utiliza etiquetas de descubrimiento para ayudar a comprender la
+propuesta de valor y elegir un camino. Los destinos se expresan como conceptos del
+producto, mientras que los botones se expresan como siguientes acciones.
+
+| Área | Etiquetas definidas | Tipo de etiqueta | Asociación esperada |
+| :--- | :--- | :--- | :--- |
+| Navegación primaria | `Segments`, `Features`, `Pricing`, `Product`, `About` | Destinos temáticos | La persona anticipa el tipo de información que encontrará en cada sección. |
+| Segmentos objetivo | `Independent hotel`, `Small hotel chain` | Etiquetas de audiencia | La persona identifica el camino que corresponde a su escala de operación. |
+| Propuesta de valor | `Hotel operations, connected.` | Mensaje de posicionamiento | Resume la promesa de conectar la operación hotelera sin presentarse como una función aislada. |
+| Llamadas a la acción | `Start for free`, `Explore Professional`, `Talk to sales` | Acciones | Expresan el siguiente paso y distinguen entre iniciar una experiencia, evaluar un plan o solicitar contacto. |
+| Soporte y contenido complementario | `Support`, `Discover Hostera`, `Meet the team`, `Frequently asked questions` | Destinos y puntos de entrada | Indican si la persona conocerá ayuda, el producto, el equipo o respuestas a dudas frecuentes. |
+
+Las etiquetas de navegación se mantienen como nombres de destinos, mientras que las
+llamadas a la acción se reservan para acciones concretas. Esta diferencia evita que
+una persona confunda, por ejemplo, la sección `Pricing` con el botón que inicia la
+evaluación de un plan.
+
+#### Etiquetas de la aplicación web
+
+En la aplicación web, las etiquetas se organizan alrededor de los dominios que
+Hostera centraliza y de las tareas que una persona responsable debe completar. La
+misma terminología se conserva al cambiar entre una vista amplia y una vista
+reducida del navegador.
+
+| Uso en la interfaz | Etiqueta definida | Qué representa |
+| :--- | :--- | :--- |
+| Entrada de navegación o sección del dashboard | `Reservations` | El conjunto de reservas y sus operaciones. |
+| Entrada de navegación o sección del dashboard | `Rooms & availability` | Las habitaciones y su disponibilidad. |
+| Entrada de navegación o sección del dashboard | `Inventory` | El inventario del almacén y sus movimientos. |
+| Entrada de navegación o sección del dashboard | `Access control` | Las tarjetas, los lectores y los eventos RFID. |
+| Entrada de navegación o sección del dashboard | `Reports` | Los resultados agregados y las comparaciones operativas. |
+| Acción dentro de un área funcional | `Create reservation`, `Check availability` | La operación que la persona puede ejecutar. |
+| Acción dentro de un área funcional | `Add item`, `Review access event` | La operación sobre inventario o registros de acceso. |
+| Estado de un registro o evento | `Available`, `Occupied`, `Pending`, `Access granted` | La condición actual del dato o evento. |
+
+Las entradas de navegación expresan áreas de información y las acciones expresan
+operaciones sobre esa información. Por ejemplo, `Reservations` identifica el
+destino, mientras que `Create reservation` identifica una acción dentro de ese
+destino. Esta relación hace explícita la asociación entre el área funcional, el dato y la
+tarea de la persona.
+
+#### Reglas de consistencia y validación
+
+Antes de incorporar una nueva etiqueta se comprueba que:
+
+- representa una sola idea y no combina un área funcional con una acción;
+- utiliza el mismo término que el resto del producto para el mismo concepto;
+- permite inferir el contenido o resultado sin depender únicamente de un icono;
+- conserva una longitud razonable para no romper la lectura en pantallas reducidas;
+- diferencia estados, acciones y destinos mediante su forma gramatical;
+- mantiene la misma asociación semántica en títulos, botones, tablas, filtros y
+  mensajes de estado.
+
+Estas reglas permiten que el sistema de etiquetas sea reconocible y escalable a
+medida que Hostera incorpore nuevas funciones, propiedades o integraciones.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
+Los metadatos de Hostera describen cada página de forma consistente para que los
+usuarios y los agentes de búsqueda puedan identificar su propósito. Se definen los
+campos mínimos solicitados para las páginas principales: `Title`, `Description`,
+`Keywords` y `Author`. Los valores se adaptan al contexto de cada página y no se
+reutiliza un título genérico en todo el producto.
+
+#### Criterios para los metadatos
+
+| Campo | Criterio de definición |
+| :--- | :--- |
+| **Title** | Identifica de forma única la página y coloca `Hostera` como referencia de la marca. Debe describir el contenido o la tarea principal de la vista. |
+| **Description** | Resume el valor o propósito de la página en una frase clara. En la Landing Page comunica la propuesta de valor; en la aplicación web describe el espacio operativo. |
+| **Keywords** | Reúne términos relacionados con el dominio hotelero y el contenido de la página. Se mantiene como apoyo semántico y no sustituye el contenido visible ni la estructura de encabezados. |
+| **Author** | Identifica a `Grafo Verde Team` como equipo responsable del producto y del contenido publicado. |
+| **Robots** | La Landing Page puede ser descubierta por buscadores. Las vistas internas de la aplicación web se marcan como `noindex, nofollow` para evitar que un espacio operativo aparezca como resultado público. |
+
+#### Metadatos de la Landing Page
+
+La Landing Page tiene una variante en inglés y otra en español. Cada variante
+conserva el mismo propósito y la misma identidad de producto, pero utiliza valores
+localizados para que el título y la descripción coincidan con el contenido visible.
+
+| Variante | Title | Description | Keywords | Author |
+| :--- | :--- | :--- | :--- | :--- |
+| English | `Hostera — Hotel operations, connected.` | `Hostera connects reservations, room availability, inventory, and RFID access so hotel teams can operate with a clearer view of their properties.` | `hotel operations, hotel management platform, reservations, room availability, inventory, RFID access` | `Grafo Verde Team` |
+| Español | `Hostera — Operación hotelera conectada` | `Hostera conecta reservas, disponibilidad de habitaciones, inventario y accesos RFID para que los equipos hoteleros operen con una visión más clara de sus propiedades.` | `operación hotelera, plataforma de gestión hotelera, reservas, disponibilidad de habitaciones, inventario, accesos RFID` | `Grafo Verde Team` |
+
+El título y la descripción de cada variante reflejan la propuesta de valor sin
+confundir la Landing Page con una pantalla operativa. Los términos de `Keywords`
+se relacionan con las capacidades que el proyecto declara dentro de su alcance
+inicial: reservas, habitaciones, inventario y control de accesos.
+
+#### Metadatos de la aplicación web
+
+La aplicación web tiene un objetivo operativo y no funciona como una página pública
+de adquisición. Sus metadatos identifican el espacio de trabajo y mantienen la
+misma terminología del producto, pero evitan presentarlo como contenido indexable.
+
+| Vista principal | Title | Description | Keywords | Author | Robots |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Hostera web application | `Hostera Dashboard — Hotel operations` | `Administrative workspace to monitor reservations, room availability, inventory, and RFID access for one or more hotel properties.` | `Hostera dashboard, hotel operations, reservations, inventory, RFID access` | `Grafo Verde Team` | `noindex, nofollow` |
+
+#### Implementación mínima
+
+Cada página debe renderizar sus propios valores en el elemento `head`. La Landing
+Page utiliza los valores de su variante correspondiente y la aplicación web utiliza
+los valores operativos definidos anteriormente.
+
+```html
+<title>Hostera | Hotel operations, connected.</title>
+<meta
+  name="description"
+  content="Hostera connects reservations, room availability, inventory, and RFID access so hotel teams can operate with a clearer view of their properties."
+>
+<meta
+  name="keywords"
+  content="hotel operations, hotel management platform, reservations, room availability, inventory, RFID access"
+>
+<meta name="author" content="Grafo Verde Team">
+```
+
+En la aplicación web, el valor de `robots` se añade junto con los metadatos
+anteriores:
+
+```html
+<meta name="robots" content="noindex, nofollow">
+```
+
+Los metadatos se mantienen alineados con el contenido visible, la estructura de
+etiquetas y los nombres definidos en esta arquitectura. Cuando se agregue una nueva
+página principal, deberá contar con un `Title`, `Description`, `Keywords` y `Author`
+propios antes de incorporarse al producto.
+
 ### 4.2.4. Searching Systems
 
+El sistema de búsqueda de Hostera ayuda a localizar información operativa dentro
+de la aplicación web. La búsqueda se organiza por área funcional para conservar el
+contexto del dato, respetar las responsabilidades de cada persona y evitar que una
+consulta mezcle reservas, inventario y eventos de acceso sin una interpretación
+clara. La Landing Page no incorpora un buscador global porque su contenido es breve
+y se encuentra mediante la organización temática, las etiquetas y la navegación
+entre secciones.
+
+#### Zonas de búsqueda
+
+Cada zona utiliza un campo de búsqueda relacionado con los datos que la persona está
+consultando. El texto puede coincidir parcialmente y no depende de diferencias
+entre mayúsculas y minúsculas; cuando corresponda, también se normalizan tildes para
+facilitar la localización de nombres en español.
+
+| Zona | Campos de búsqueda | Filtros complementarios |
+| :--- | :--- | :--- |
+| **Reservations** | Nombre del huésped, código de reserva y contacto asociado. | Propiedad, rango de fechas, estado de la reserva y tipo de habitación. |
+| **Rooms & availability** | Número o nombre de habitación y propiedad. | Fecha de consulta, estado de ocupación, tipo de habitación y disponibilidad. |
+| **Inventory** | Nombre del artículo, código o categoría. | Propiedad, ubicación de almacén, nivel de stock y estado del artículo. |
+| **Access control** | Persona, tarjeta, lector o identificador del evento. | Propiedad, rango de fecha y hora, lector y resultado del acceso. |
+| **Reports** | Nombre del reporte o dominio operativo. | Propiedad, periodo, área funcional y estado del procesamiento. |
+
+La búsqueda libre se utiliza para localizar un elemento conocido o reducir una lista
+grande. Los filtros se utilizan para acotar los resultados cuando la persona conoce
+el contexto operativo, pero no el valor exacto que debe escribir. Ambos mecanismos
+pueden combinarse sin sustituir la información visible del área funcional.
+
+#### Opciones y filtros
+
+La interfaz presenta un campo de texto, una acción para ejecutar la consulta y una
+acción para limpiar los criterios. Los filtros permanecen asociados al área en la
+que fueron aplicados y se pueden retirar individualmente para revisar cómo cambia
+el resultado.
+
+| Opción | Comportamiento definido |
+| :--- | :--- |
+| Consulta por texto | Busca coincidencias parciales en los campos relevantes de la zona activa. |
+| Coincidencia conocida | Permite localizar un código, identificador o nombre exacto cuando la persona ya conoce el elemento. |
+| Filtros combinados | Aplica dos o más condiciones al mismo tiempo, como propiedad, fecha y estado. |
+| Ordenamiento | Permite ordenar los resultados por el criterio útil para la zona, como fecha, nombre o nivel de stock. |
+| Limpiar búsqueda | Elimina el texto y los filtros activos, y devuelve la lista inicial de la zona. |
+| Filtros responsive | En una vista amplia se muestran junto a los resultados; en una vista reducida se agrupan en un control desplegable o panel de filtros. |
+
+Los filtros disponibles deben corresponder a atributos reales de los resultados.
+No se muestran opciones que no puedan modificar la consulta o que no tengan una
+representación comprensible para la persona.
+
+#### Presentación de resultados
+
+Los resultados se muestran dentro de la misma zona de información para conservar el
+contexto de la consulta. Cada resultado presenta primero el dato que permite
+reconocerlo y luego los atributos necesarios para decidir qué hacer con él.
+
+| Tipo de resultado | Información principal | Acción asociada |
+| :--- | :--- | :--- |
+| Reserva | Huésped, código, fechas, habitación y estado. | Abrir el detalle o revisar la disponibilidad relacionada. |
+| Habitación | Número, tipo, propiedad y estado de disponibilidad. | Abrir el detalle o revisar las reservas relacionadas. |
+| Artículo de inventario | Nombre, código, ubicación, stock y estado. | Abrir el detalle o registrar una operación de inventario. |
+| Evento de acceso | Persona o tarjeta, lector, fecha, hora y resultado. | Abrir el detalle y revisar el contexto del evento. |
+| Reporte | Nombre, periodo, propiedad y estado de procesamiento. | Abrir, filtrar o revisar el resultado del reporte. |
+
+La lista de resultados comunica el total encontrado, conserva los criterios activos y
+permite distinguir entre un resultado disponible, una consulta sin coincidencias y
+un error de procesamiento. Cuando no hay coincidencias, se explica qué se buscó y se
+ofrece limpiar o modificar los criterios; no se presenta una lista vacía sin
+contexto.
+
+#### Flujo de búsqueda
+
+El flujo de búsqueda sigue cuatro pasos consistentes:
+
+1. La persona entra al área funcional que contiene el dato que necesita.
+2. Escribe un término o selecciona uno o más filtros.
+3. Ejecuta la consulta y revisa el total, los criterios activos y los resultados.
+4. Abre el registro requerido o modifica los criterios para realizar otra consulta.
+
+Este flujo mantiene la relación entre intención, consulta y resultado. Además, evita
+que la búsqueda se convierta en una navegación paralela que oculte la estructura de
+la aplicación. La información mostrada debe respetar el alcance de la propiedad y
+los permisos de la persona autenticada.
+
 ### 4.2.5. Navigation Systems
+
+El sistema de navegación define las acciones y técnicas que permiten recorrer la
+información de Hostera, reconocer la ubicación actual y llegar a la siguiente tarea
+sin perder el contexto. La navegación se diseña de manera distinta para la Landing
+Page y para la aplicación web, porque la primera acompaña el descubrimiento del
+producto y la segunda acompaña la operación hotelera.
+
+#### Tipos de navegación
+
+Hostera combina navegación global, local, contextual y de utilidad. Cada tipo tiene
+una responsabilidad específica y evita que un solo menú tenga que resolver todas las
+necesidades de recorrido.
+
+| Tipo | Aplicación en Hostera | Propósito |
+| :--- | :--- | :--- |
+| **Global** | Encabezado de la Landing Page y menú principal de la aplicación web. | Permite cambiar entre las áreas principales sin importar dónde se encuentra la persona. |
+| **Local** | Enlaces ancla dentro de la Landing Page y pestañas o subsecciones dentro de un área funcional. | Permite recorrer el contenido relacionado con la sección actual. |
+| **Contextual** | Enlaces, tarjetas, botones y acciones que aparecen junto al contenido consultado. | Conduce al siguiente paso relacionado con la decisión o tarea actual. |
+| **De utilidad** | Control de idioma de la Landing Page y acciones de cuenta, ayuda o configuración cuando correspondan a la vista. | Resuelve necesidades transversales sin mezclarlas con los destinos principales. |
+| **De retorno** | Breadcrumbs, acción de volver y retorno al listado después de consultar un detalle. | Permite regresar a un nivel anterior conservando el contexto de la consulta. |
+
+#### Navegación de la Landing Page
+
+La Landing Page utiliza una navegación jerárquica y por anclas. El encabezado
+presenta los destinos principales `Segments`, `Features`, `Pricing`, `Product` y
+`About`. Cada etiqueta lleva a su sección correspondiente dentro de la misma página.
+El pie de página repite los destinos relevantes y añade `Support` y `Terms and
+Conditions` para que la persona pueda continuar el recorrido desde el final del
+contenido.
+
+El recorrido principal sigue esta secuencia:
+
+1. La persona reconoce la propuesta de valor en el hero y elige un siguiente paso.
+2. Revisa segmentos, funciones y planes para comparar la propuesta con su contexto.
+3. Selecciona una llamada a la acción, como `Start for free`, `Explore Professional`
+   o `Talk to sales`.
+4. Puede continuar hacia el producto, el equipo o el soporte mediante los enlaces
+   contextuales y el pie de página.
+
+Los caminos de `Independent hotel` y `Small hotel chain` funcionan como navegación
+contextual. No crean dos productos separados; orientan a la persona hacia el plan y
+la acción que corresponden a su escala operativa.
+
+#### Navegación de la aplicación web
+
+La aplicación web utiliza un menú global persistente para las áreas funcionales de
+Hostera: `Reservations`, `Rooms & availability`, `Inventory`, `Access control` y
+`Reports`. El menú permite cambiar de área sin reiniciar la tarea y comunica la
+sección activa mediante una señal visual y textual.
+
+Dentro de cada área, la navegación local lleva de la lista al detalle y del detalle
+a las acciones relacionadas. Las acciones que cambian el estado de un registro se
+mantienen próximas al contenido que modifican, mientras que la acción de retorno
+permite volver a la lista sin perder los filtros o el contexto de la propiedad.
+
+| Nivel | Ejemplo de recorrido | Regla de navegación |
+| :--- | :--- | :--- |
+| Área funcional | Menú principal → `Reservations` | La persona identifica dónde se encuentra mediante el destino activo. |
+| Colección | `Reservations` → lista de reservas | La lista permite revisar el conjunto y utilizar la búsqueda o los filtros del área. |
+| Detalle | Lista → detalle de una reserva | El detalle conserva el nombre del área y ofrece una acción clara para regresar. |
+| Acción contextual | Detalle → revisar disponibilidad relacionada | La acción aparece junto al dato que explica por qué es relevante. |
+| Cambio de contexto | Selector de propiedad → otra propiedad | El cambio informa qué propiedad está activa antes de actualizar el contenido. |
+
+La aplicación no utiliza enlaces aislados que lleven a una pantalla sin contexto. Cada
+destino conserva una relación visible con el área, la propiedad y el registro desde
+el que se inició el recorrido.
+
+#### Navegación responsive
+
+Las experiencias web de Hostera se adaptan al ancho disponible del navegador. En una
+vista amplia, el menú global puede permanecer visible junto al contenido; en una
+vista reducida se transforma en un control desplegable o panel lateral. La
+transformación cambia la disposición, pero conserva el orden, los nombres y la
+jerarquía de las opciones.
+
+| Situación | Vista amplia | Vista reducida |
+| :--- | :--- | :--- |
+| Navegación global | Menú visible junto al contenido principal. | Menú agrupado en un control que puede abrirse y cerrarse. |
+| Navegación local | Enlaces o pestañas visibles en la sección. | Pestañas desplazables o selector que mantiene la sección activa. |
+| Retorno | Breadcrumbs o acción de volver junto al título. | Acción de volver visible antes del título o en la barra superior. |
+| Filtros y contexto | Panel de filtros y selector de propiedad visibles. | Panel desplegable que muestra los filtros activos y permite retirarlos individualmente. |
+
+Cuando una persona abre un menú responsive, el foco permanece dentro del panel hasta
+que lo cierra o selecciona un destino. Al cambiar de sección, el encabezado, la
+señal de ubicación activa y el contenido principal se actualizan de forma coherente.
+La navegación por teclado conserva el mismo orden lógico que la navegación visual.
+
+#### Señales de ubicación y continuidad
+
+Cada pantalla comunica dónde se encuentra la persona mediante una combinación de
+nombre de sección, estado activo, título de contenido y acción de retorno. Los
+enlaces visitados no sustituyen estas señales, porque la ubicación actual debe ser
+comprensible incluso cuando la persona llega directamente a una vista.
+
+La navegación de Hostera se considera consistente cuando una persona puede responder
+estas tres preguntas en cualquier momento: dónde estoy, qué puedo hacer aquí y cómo
+regreso al contexto anterior. Estas señales mantienen la continuidad entre la
+Landing Page, la selección de segmento y la aplicación web.
 
 ## 4.3. Landing Page UI Design
 
