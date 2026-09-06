@@ -1359,6 +1359,62 @@ táctil.
 
 ### 4.2.1. Organization Systems
 
+Los sistemas de organización definen cómo se agrupa y relaciona la información de
+Hostera para que cada persona pueda reconocer qué contenido está consultando y qué
+acción puede realizar a continuación. Estas decisiones se aplican a la Landing Page
+y a las aplicaciones web responsive, tanto en una ventana amplia como en una vista
+reducida del navegador. La organización se determina por el objetivo de la persona,
+su rol y el contexto operativo; no se basa únicamente en la estructura interna del
+software.
+
+#### Estructuras de información
+
+Hostera combina tres estructuras. La estructura jerárquica permite pasar de una
+visión general a información más específica; la secuencial guía tareas que deben
+completarse en un orden reconocible; y la matricial permite comparar dos
+dimensiones, como el rol de la persona y el dominio operativo.
+
+| Estructura | Aplicación en Hostera | Criterio de uso |
+| :--- | :--- | :--- |
+| **Jerárquica** | La Landing Page parte de la propuesta de valor y conduce hacia segmentos, beneficios, producto, planes y soporte. En la aplicación web, el panel general conduce a módulos y luego al detalle de cada registro. | Se utiliza cuando la persona necesita explorar desde un resumen hasta una información específica sin perder el contexto. |
+| **Secuencial** | Los flujos operativos se organizan como seleccionar el contexto, configurar la información y ejecutar o revisar la operación. Este orden se aplica, por ejemplo, al preparar una operación del hotel antes de consultarla en el panel. | Se utiliza cuando una tarea tiene pasos dependientes y el siguiente paso requiere completar o confirmar el anterior. |
+| **Matricial** | La información se cruza por audiencia y dominio operativo: un responsable de un hotel independiente consulta reservas y habitaciones, mientras que una persona responsable de una cadena consulta inventario, accesos y el estado de varias propiedades. | Se utiliza cuando una misma operación debe consultarse desde más de un rol o dimensión sin duplicar el contenido. |
+
+La combinación de estas estructuras evita que todas las decisiones de organización
+dependan de un único menú. La jerarquía sirve para orientar, la secuencia para
+acompañar una tarea y la matriz para comparar alternativas o contextos de operación.
+
+#### Esquemas de organización
+
+Los esquemas se eligen según el tipo de necesidad. Cuando la persona conoce el
+elemento que busca, se emplean esquemas exactos; cuando todavía está explorando o
+aprendiendo qué puede hacer con Hostera, se emplean esquemas ambiguos y combinados.
+
+| Esquema | Uso en Hostera | Ejemplo de información organizada |
+| :--- | :--- | :--- |
+| **Temático** | Es el esquema principal para presentar la propuesta de valor y los módulos del producto. | Reservas, disponibilidad de habitaciones, inventario y control de accesos. |
+| **Por audiencia** | Organiza las alternativas según las responsabilidades de cada segmento objetivo. | Operación de un hotel independiente frente a la gestión de una cadena pequeña. |
+| **Por tarea** | Agrupa funciones según la acción que la persona desea completar. | Crear o revisar una reserva, consultar disponibilidad o verificar un acceso. |
+| **Cronológico** | Ordena eventos y registros cuando el momento de ocurrencia ayuda a entender la operación. | Historial de reservas, movimientos de inventario y eventos de acceso. |
+| **Alfabético** | Se reserva para listas donde la persona conoce el nombre del elemento y necesita localizarlo rápidamente. | Búsqueda de huéspedes, habitaciones, propiedades o usuarios por nombre. |
+| **Geográfico** | Se utiliza cuando una cadena necesita distinguir propiedades por ubicación. | Comparación de operaciones entre hoteles o sedes. |
+
+El esquema temático se utiliza como punto de partida porque refleja los dominios
+principales de Hostera. El esquema por audiencia conduce a los dos caminos de la
+Landing Page, mientras que el esquema por tarea organiza el trabajo dentro de la
+aplicación. Los esquemas cronológico, alfabético y geográfico se aplican a listas o
+registros cuando aportan una forma más directa de localizar o comparar datos; no
+reemplazan la organización temática de todo el producto.
+
+#### Decisiones de organización por entorno
+
+| Entorno | Persona y objetivo | Estructura dominante | Esquema principal | Resultado esperado |
+| :--- | :--- | :--- | :--- | :--- |
+| Landing Page | Visitante que desea entender la propuesta y elegir un siguiente paso. | Jerárquica | Temático + audiencia | Reconoce el valor de Hostera y encuentra el camino correspondiente a su escala operativa. |
+| Aplicación web | Responsable que necesita ejecutar una operación concreta. | Jerárquica + secuencial | Tarea + audiencia | Accede al módulo adecuado y completa la operación con un orden predecible. |
+| Registros operativos | Persona que revisa información histórica o localiza un registro conocido. | Matricial | Cronológico + tarea, con apoyo alfabético | Encuentra, filtra y compara información según la acción y el momento relevantes. |
+| Gestión de varias propiedades | Responsable de una cadena que compara el mismo dominio entre sedes. | Matricial | Geográfico + temático | Mantiene el mismo modelo operativo y permite distinguir la propiedad involucrada. |
+
 ### 4.2.2. Labeling Systems
 
 ### 4.2.3. SEO Tags and Meta Tags
