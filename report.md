@@ -1496,6 +1496,79 @@ medida que Hostera incorpore nuevas funciones, propiedades o integraciones.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
+Los metadatos de Hostera describen cada página de forma consistente para que los
+usuarios y los agentes de búsqueda puedan identificar su propósito. Se definen los
+campos mínimos solicitados para las páginas principales: `Title`, `Description`,
+`Keywords` y `Author`. Los valores se adaptan al contexto de cada página y no se
+reutiliza un título genérico en todo el producto.
+
+#### Criterios para los metadatos
+
+| Campo | Criterio de definición |
+| :--- | :--- |
+| **Title** | Identifica de forma única la página y coloca `Hostera` como referencia de la marca. Debe describir el contenido o la tarea principal de la vista. |
+| **Description** | Resume el valor o propósito de la página en una frase clara. En la Landing Page comunica la propuesta de valor; en la aplicación web describe el espacio operativo. |
+| **Keywords** | Reúne términos relacionados con el dominio hotelero y el contenido de la página. Se mantiene como apoyo semántico y no sustituye el contenido visible ni la estructura de encabezados. |
+| **Author** | Identifica a `Grafo Verde Team` como equipo responsable del producto y del contenido publicado. |
+| **Robots** | La Landing Page puede ser descubierta por buscadores. Las vistas internas de la aplicación web se marcan como `noindex, nofollow` para evitar que un espacio operativo aparezca como resultado público. |
+
+#### Metadatos de la Landing Page
+
+La Landing Page tiene una variante en inglés y otra en español. Cada variante
+conserva el mismo propósito y la misma identidad de producto, pero utiliza valores
+localizados para que el título y la descripción coincidan con el contenido visible.
+
+| Variante | Title | Description | Keywords | Author |
+| :--- | :--- | :--- | :--- | :--- |
+| English | `Hostera — Hotel operations, connected.` | `Hostera connects reservations, room availability, inventory, and RFID access so hotel teams can operate with a clearer view of their properties.` | `hotel operations, hotel management platform, reservations, room availability, inventory, RFID access` | `Grafo Verde Team` |
+| Español | `Hostera — Operación hotelera conectada` | `Hostera conecta reservas, disponibilidad de habitaciones, inventario y accesos RFID para que los equipos hoteleros operen con una visión más clara de sus propiedades.` | `operación hotelera, plataforma de gestión hotelera, reservas, disponibilidad de habitaciones, inventario, accesos RFID` | `Grafo Verde Team` |
+
+El título y la descripción de cada variante reflejan la propuesta de valor sin
+confundir la Landing Page con una pantalla operativa. Los términos de `Keywords`
+se relacionan con las capacidades que el proyecto declara dentro de su alcance
+inicial: reservas, habitaciones, inventario y control de accesos.
+
+#### Metadatos de la aplicación web
+
+La aplicación web tiene un objetivo operativo y no funciona como una página pública
+de adquisición. Sus metadatos identifican el espacio de trabajo y mantienen la
+misma terminología del producto, pero evitan presentarlo como contenido indexable.
+
+| Vista principal | Title | Description | Keywords | Author | Robots |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Hostera web application | `Hostera Dashboard — Hotel operations` | `Administrative workspace to monitor reservations, room availability, inventory, and RFID access for one or more hotel properties.` | `Hostera dashboard, hotel operations, reservations, inventory, RFID access` | `Grafo Verde Team` | `noindex, nofollow` |
+
+#### Implementación mínima
+
+Cada página debe renderizar sus propios valores en el elemento `head`. La Landing
+Page utiliza los valores de su variante correspondiente y la aplicación web utiliza
+los valores operativos definidos anteriormente.
+
+```html
+<title>Hostera | Hotel operations, connected.</title>
+<meta
+  name="description"
+  content="Hostera connects reservations, room availability, inventory, and RFID access so hotel teams can operate with a clearer view of their properties."
+>
+<meta
+  name="keywords"
+  content="hotel operations, hotel management platform, reservations, room availability, inventory, RFID access"
+>
+<meta name="author" content="Grafo Verde Team">
+```
+
+En la aplicación web, el valor de `robots` se añade junto con los metadatos
+anteriores:
+
+```html
+<meta name="robots" content="noindex, nofollow">
+```
+
+Los metadatos se mantienen alineados con el contenido visible, la estructura de
+etiquetas y los nombres definidos en esta arquitectura. Cuando se agregue una nueva
+página principal, deberá contar con un `Title`, `Description`, `Keywords` y `Author`
+propios antes de incorporarse al producto.
+
 ### 4.2.4. Searching Systems
 
 ### 4.2.5. Navigation Systems
