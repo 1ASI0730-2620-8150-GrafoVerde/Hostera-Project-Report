@@ -1255,7 +1255,105 @@ estado relevante y utilizan terminología coherente con el Ubiquitous Language.
 - **Uso contenido del énfasis:** los colores Warning y Error se reservan para
   situaciones que requieren atención y no como decoración.
 
+<div style="page-break-before: always;"></div>
+
 ### 4.1.2. Web Style Guidelines
+
+Las interfaces de Hostera se diseñan como una única experiencia web responsive que
+se ejecuta en el navegador. Las vistas de escritorio, tablet y móvil comparten la
+misma estructura semántica, componentes y jerarquía de acciones; únicamente cambia
+su distribución según el ancho disponible. Los estándares visuales y de interacción
+siguen los estados de Material Design 3 [10].
+
+#### Responsive layout
+
+La composición utiliza un enfoque *mobile-first*. El contenido ocupa el ancho
+disponible hasta alcanzar el contenedor máximo de `1240px`; a partir de ese punto se
+mantiene centrado. Las columnas son flexibles y los márgenes exteriores impiden que
+el contenido quede pegado al borde del navegador.
+
+| Rango | Breakpoint | Columnas | Márgenes y separación | Comportamiento |
+| :--- | :---: | :---: | :--- | :--- |
+| Compact | `< 768px` | 4 | `16px` | Contenido apilado y controles principales a ancho disponible. |
+| Medium | `768px–1023px` | 8 | `24px` | Permite agrupaciones de dos columnas cuando conservan legibilidad. |
+| Expanded | `1024px–1279px` | 12 | `32px` exteriores | Distribución multicolumna y navegación expandida. |
+| Large | `≥ 1280px` | 12 | Contenedor centrado | El contenido no supera `1240px`; el espacio restante funciona como margen fluido. |
+
+<img src="assets/chapter-4/web-responsive-interaction-guidelines.png" alt="Guía visual de grids responsive, estados de interacción y accesibilidad de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.2. Estándares responsive, estados de interacción y accesibilidad del sistema web de Hostera elaborados en Paper.*
+
+La adaptación entre rangos sigue estas reglas:
+
+- **Reflow:** las columnas se apilan sin alterar el orden de lectura ni la relación
+  entre etiquetas, datos y acciones.
+- **Wrap:** grupos de controles y filtros pasan a nuevas líneas antes de reducir su
+  tamaño por debajo de una medida legible.
+- **Prioridad:** la acción principal permanece visible; las acciones secundarias
+  pueden agruparse en un menú cuando el ancho es limitado.
+- **Tablas:** conservan encabezados y asociación entre celdas. Cuando no puedan
+  reorganizarse, utilizan desplazamiento horizontal dentro de su propio contenedor,
+  sin provocar desplazamiento en toda la página.
+- **Contenido visual:** imágenes, gráficos y diagramas mantienen su proporción y no
+  exceden el ancho de su contenedor.
+
+#### Web components
+
+Los componentes utilizan los tokens definidos en 4.1.1 y conservan el mismo nombre,
+propósito y comportamiento en todos los rangos responsive. Las variantes se eligen
+según la jerarquía de la tarea y no únicamente por preferencia estética.
+
+| Componente | Estándar visual | Uso |
+| :--- | :--- | :--- |
+| Buttons | Altura visual de `40px`, forma `corner-full` y texto Label Large. | Filled para la acción principal; tonal, outlined o text para acciones de menor jerarquía. |
+| Chips | Altura de `32px` y radio de `8px`. | Filtros, selecciones breves y estados; el texto acompaña siempre al color. |
+| Text fields | Altura de `56px`, etiqueta persistente y texto de apoyo cuando sea necesario. | Captura y validación de datos; el error incluye explicación y forma de corrección. |
+| Cards | Radio de `12px`; la variante outlined es la opción predeterminada. | Agrupación de información relacionada sin convertir toda la interfaz en tarjetas. |
+| List items | Altura base de `72px` para elementos de dos líneas. | Presentación de registros con título, información secundaria y acción o estado final. |
+
+<img src="assets/chapter-4/web-components-m3.png" alt="Catálogo de componentes web M3 de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.3. Catálogo de componentes web aislados del Design System de Hostera en Paper.*
+
+#### Interaction states
+
+Todo control interactivo comunica su estado mediante al menos dos señales, como
+color, contorno, texto, forma o elevación. Esta redundancia permite reconocer el
+estado incluso cuando el color no puede distinguirse por sí solo.
+
+| Estado | Lineamiento |
+| :--- | :--- |
+| Default | Presenta el componente disponible sin énfasis adicional. |
+| Hover | Refuerza visualmente el área bajo el puntero sin modificar su tamaño ni desplazar contenido. |
+| Focus | Muestra un indicador continuo de `2px`, visible alrededor del componente y diferente de sus bordes normales. |
+| Pressed | Confirma de forma inmediata que la acción está siendo activada. |
+| Selected | Mantiene una señal persistente de selección mediante contenedor, icono o texto. |
+| Disabled | Reduce el énfasis y evita la interacción, pero conserva una etiqueta legible que permita identificar el control. |
+| Error | Utiliza el rol Error junto con un mensaje que explique el problema y la corrección esperada. |
+
+Las transiciones deben ser breves y funcionales. No deben bloquear una tarea ni ser
+el único medio para comunicar un cambio. Cuando el navegador indique
+`prefers-reduced-motion`, se eliminan desplazamientos y efectos no esenciales.
+
+#### Accessibility and input methods
+
+Hostera toma como referencia WCAG 2.2 (*Web Content Accessibility Guidelines 2.2*)
+[11] para mantener interfaces perceptibles, operables y comprensibles. Los criterios
+se aplican tanto a la interacción mediante puntero como al teclado y a la pantalla
+táctil.
+
+- El orden de foco coincide con el orden visual y permite alcanzar todas las acciones
+  sin utilizar el mouse.
+- El foco permanece visible y no queda oculto detrás de encabezados, diálogos u otras
+  superficies superpuestas.
+- Los controles tienen un área interactiva mínima de `48px × 48px`, aunque su forma
+  visible pueda ser menor.
+- El texto normal mantiene una relación de contraste mínima de `4.5:1`, y el texto
+  grande una relación mínima de `3:1` respecto de su fondo.
+- Los errores, advertencias y selecciones utilizan texto o iconografía además del
+  color.
+- Las etiquetas visibles se mantienen asociadas a sus controles y los mensajes de
+  estado pueden ser interpretados por tecnologías de asistencia.
 
 ## 4.2. Information Architecture
 
@@ -1364,5 +1462,7 @@ This is program for AV2 (not in AV1)
 [9] STR. (s. f.). [_How to calculate RevPAR_](https://str.com/sites/default/files/The-Ultimate-Guide-to-Hotel-Benchmarking.pdf). Recuperado el 5 de septiembre de 2026.
 
 [10] Google. (s. f.). [_Material Design 3_](https://m3.material.io/). Recuperado el 5 de septiembre de 2026.
+
+[11] World Wide Web Consortium. (2024). [_Web Content Accessibility Guidelines (WCAG) 2.2_](https://www.w3.org/TR/WCAG22/). Recuperado el 5 de septiembre de 2026.
 
 # Anexos
