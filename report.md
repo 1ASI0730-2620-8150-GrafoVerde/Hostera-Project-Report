@@ -1571,7 +1571,7 @@ reducida del navegador.
 | Uso en la interfaz | Etiqueta definida | Qué representa |
 | :--- | :--- | :--- |
 | Entrada de navegación o sección del dashboard | `Reservations` | El conjunto de reservas y sus operaciones. |
-| Entrada de navegación o sección del dashboard | `Rooms & availability` | Las habitaciones y su disponibilidad. |
+| Entrada de navegación o sección del dashboard | `Rooms` | Las habitaciones y su disponibilidad. |
 | Entrada de navegación o sección del dashboard | `Inventory` | El inventario del almacén y sus movimientos. |
 | Entrada de navegación o sección del dashboard | `Access control` | Las tarjetas, los lectores y los eventos RFID. |
 | Entrada de navegación o sección del dashboard | `Reports` | Los resultados agregados y las comparaciones operativas. |
@@ -1695,7 +1695,7 @@ facilitar la localización de nombres en español.
 | Zona | Campos de búsqueda | Filtros complementarios |
 | :--- | :--- | :--- |
 | **Reservations** | Nombre del huésped, código de reserva y contacto asociado. | Propiedad, rango de fechas, estado de la reserva y tipo de habitación. |
-| **Rooms & availability** | Número o nombre de habitación y propiedad. | Fecha de consulta, estado de ocupación, tipo de habitación y disponibilidad. |
+| **Rooms** | Número o nombre de habitación y propiedad. | Fecha de consulta, estado de ocupación, tipo de habitación y disponibilidad. |
 | **Inventory** | Nombre del artículo, código o categoría. | Propiedad, ubicación de almacén, nivel de stock y estado del artículo. |
 | **Access control** | Persona, tarjeta, lector o identificador del evento. | Propiedad, rango de fecha y hora, lector y resultado del acceso. |
 | **Reports** | Nombre del reporte o dominio operativo. | Propiedad, periodo, área funcional y estado del procesamiento. |
@@ -1806,7 +1806,7 @@ la acción que corresponden a su escala operativa.
 #### Navegación de la aplicación web
 
 La aplicación web utiliza un menú global persistente para las áreas funcionales de
-Hostera: `Reservations`, `Rooms & availability`, `Inventory`, `Access control` y
+Hostera: `Reservations`, `Rooms`, `Inventory`, `Access control` y
 `Reports`. El menú permite cambiar de área sin reiniciar la tarea y comunica la
 sección activa mediante una señal visual y textual.
 
