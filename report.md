@@ -1571,6 +1571,88 @@ propios antes de incorporarse al producto.
 
 ### 4.2.4. Searching Systems
 
+El sistema de búsqueda de Hostera ayuda a localizar información operativa dentro
+de la aplicación web. La búsqueda se organiza por área funcional para conservar el
+contexto del dato, respetar las responsabilidades de cada persona y evitar que una
+consulta mezcle reservas, inventario y eventos de acceso sin una interpretación
+clara. La Landing Page no incorpora un buscador global porque su contenido es breve
+y se encuentra mediante la organización temática, las etiquetas y la navegación
+entre secciones.
+
+#### Zonas de búsqueda
+
+Cada zona utiliza un campo de búsqueda relacionado con los datos que la persona está
+consultando. El texto puede coincidir parcialmente y no depende de diferencias
+entre mayúsculas y minúsculas; cuando corresponda, también se normalizan tildes para
+facilitar la localización de nombres en español.
+
+| Zona | Campos de búsqueda | Filtros complementarios |
+| :--- | :--- | :--- |
+| **Reservations** | Nombre del huésped, código de reserva y contacto asociado. | Propiedad, rango de fechas, estado de la reserva y tipo de habitación. |
+| **Rooms & availability** | Número o nombre de habitación y propiedad. | Fecha de consulta, estado de ocupación, tipo de habitación y disponibilidad. |
+| **Inventory** | Nombre del artículo, código o categoría. | Propiedad, ubicación de almacén, nivel de stock y estado del artículo. |
+| **Access control** | Persona, tarjeta, lector o identificador del evento. | Propiedad, rango de fecha y hora, lector y resultado del acceso. |
+| **Reports** | Nombre del reporte o dominio operativo. | Propiedad, periodo, área funcional y estado del procesamiento. |
+
+La búsqueda libre se utiliza para localizar un elemento conocido o reducir una lista
+grande. Los filtros se utilizan para acotar los resultados cuando la persona conoce
+el contexto operativo, pero no el valor exacto que debe escribir. Ambos mecanismos
+pueden combinarse sin sustituir la información visible del área funcional.
+
+#### Opciones y filtros
+
+La interfaz presenta un campo de texto, una acción para ejecutar la consulta y una
+acción para limpiar los criterios. Los filtros permanecen asociados al área en la
+que fueron aplicados y se pueden retirar individualmente para revisar cómo cambia
+el resultado.
+
+| Opción | Comportamiento definido |
+| :--- | :--- |
+| Consulta por texto | Busca coincidencias parciales en los campos relevantes de la zona activa. |
+| Coincidencia conocida | Permite localizar un código, identificador o nombre exacto cuando la persona ya conoce el elemento. |
+| Filtros combinados | Aplica dos o más condiciones al mismo tiempo, como propiedad, fecha y estado. |
+| Ordenamiento | Permite ordenar los resultados por el criterio útil para la zona, como fecha, nombre o nivel de stock. |
+| Limpiar búsqueda | Elimina el texto y los filtros activos, y devuelve la lista inicial de la zona. |
+| Filtros responsive | En una vista amplia se muestran junto a los resultados; en una vista reducida se agrupan en un control desplegable o panel de filtros. |
+
+Los filtros disponibles deben corresponder a atributos reales de los resultados.
+No se muestran opciones que no puedan modificar la consulta o que no tengan una
+representación comprensible para la persona.
+
+#### Presentación de resultados
+
+Los resultados se muestran dentro de la misma zona de información para conservar el
+contexto de la consulta. Cada resultado presenta primero el dato que permite
+reconocerlo y luego los atributos necesarios para decidir qué hacer con él.
+
+| Tipo de resultado | Información principal | Acción asociada |
+| :--- | :--- | :--- |
+| Reserva | Huésped, código, fechas, habitación y estado. | Abrir el detalle o revisar la disponibilidad relacionada. |
+| Habitación | Número, tipo, propiedad y estado de disponibilidad. | Abrir el detalle o revisar las reservas relacionadas. |
+| Artículo de inventario | Nombre, código, ubicación, stock y estado. | Abrir el detalle o registrar una operación de inventario. |
+| Evento de acceso | Persona o tarjeta, lector, fecha, hora y resultado. | Abrir el detalle y revisar el contexto del evento. |
+| Reporte | Nombre, periodo, propiedad y estado de procesamiento. | Abrir, filtrar o revisar el resultado del reporte. |
+
+La lista de resultados comunica el total encontrado, conserva los criterios activos y
+permite distinguir entre un resultado disponible, una consulta sin coincidencias y
+un error de procesamiento. Cuando no hay coincidencias, se explica qué se buscó y se
+ofrece limpiar o modificar los criterios; no se presenta una lista vacía sin
+contexto.
+
+#### Flujo de búsqueda
+
+El flujo de búsqueda sigue cuatro pasos consistentes:
+
+1. La persona entra al área funcional que contiene el dato que necesita.
+2. Escribe un término o selecciona uno o más filtros.
+3. Ejecuta la consulta y revisa el total, los criterios activos y los resultados.
+4. Abre el registro requerido o modifica los criterios para realizar otra consulta.
+
+Este flujo mantiene la relación entre intención, consulta y resultado. Además, evita
+que la búsqueda se convierta en una navegación paralela que oculte la estructura de
+la aplicación. La información mostrada debe respetar el alcance de la propiedad y
+los permisos de la persona autenticada.
+
 ### 4.2.5. Navigation Systems
 
 ## 4.3. Landing Page UI Design
