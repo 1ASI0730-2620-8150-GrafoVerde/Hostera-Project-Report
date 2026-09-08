@@ -1853,6 +1853,15 @@ distinto.
 
 ### 4.6.1. Software Architecture Context Diagram
 
+El diagrama de contexto presenta a Hostera como el sistema central para la gestión
+administrativa del hotel. Identifica la interacción del personal del hotel con la
+plataforma y sus relaciones con el sistema de lectores RFID y el servicio externo de
+notificaciones.
+
+<img src="assets/chapter-4/Context-diagram-Hostera.svg" alt="Diagrama de contexto del sistema Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.8. Diagrama de contexto del sistema Hostera.*
+
 ### 4.6.2. Software Architecture Container Diagrams
 
 ### 4.6.3. Software Architecture Components Diagrams
