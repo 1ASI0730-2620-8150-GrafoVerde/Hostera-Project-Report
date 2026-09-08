@@ -1864,7 +1864,74 @@ notificaciones.
 
 ### 4.6.2. Software Architecture Container Diagrams
 
+El diagrama de contenedores descompone Hostera en sus principales unidades de
+ejecución y almacenamiento. La propuesta incluye la aplicación web, los módulos de
+autenticación, reservas y habitaciones, inventario, accesos RFID y dashboard, además
+de las bases de datos y los sistemas externos con los que se integra la plataforma.
+
+<img src="assets/chapter-4/Container-diagram-Hostera.svg" alt="Diagrama de contenedores del sistema Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.9. Diagrama de contenedores del sistema Hostera.*
+
 ### 4.6.3. Software Architecture Components Diagrams
+
+Los diagramas de componentes detallan la estructura interna de cada contenedor
+principal de Hostera. Se muestran las responsabilidades de sus componentes y las
+interacciones con bases de datos, otros módulos y servicios externos.
+
+#### Aplicación Web
+
+La aplicación web organiza las interfaces para autenticación, reservas, habitaciones,
+inventario, accesos RFID y monitoreo del dashboard en tiempo real.
+
+<img src="assets/chapter-4/Component-diagram-Hostera-web-application.svg" alt="Diagrama de componentes de la aplicación web de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.10. Diagrama de componentes de la aplicación web de Hostera.*
+
+#### Gestión de Autenticación
+
+El contenedor de autenticación separa el registro de usuarios, la validación de
+credenciales, la generación de sesiones y la gestión de roles y permisos.
+
+<img src="assets/chapter-4/Component-diagram-Hostera-authentication.svg" alt="Diagrama de componentes de gestión de autenticación de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.11. Diagrama de componentes de gestión de autenticación de Hostera.*
+
+#### Gestión de Reservas y Habitaciones
+
+Este contenedor coordina la creación de reservas, la verificación de disponibilidad,
+el cálculo de tarifas y la actualización del estado de las habitaciones.
+
+<img src="assets/chapter-4/Component-diagram-Hostera-reservations.svg" alt="Diagrama de componentes de gestión de reservas y habitaciones de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.12. Diagrama de componentes de gestión de reservas y habitaciones de Hostera.*
+
+#### Gestión de Inventario
+
+El contenedor de inventario está compuesto por los módulos de gestión de stock,
+alertas de reposición y registro histórico de movimientos.
+
+<img src="assets/chapter-4/Component-diagram-Hostera-inventory.svg" alt="Diagrama de componentes de gestión de inventario de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.13. Diagrama de componentes de gestión de inventario de Hostera.*
+
+#### Gestión de Accesos RFID
+
+Este contenedor integra la sincronización de eventos IoT, la validación de tarjetas,
+la gestión de permisos y el historial de accesos concedidos o denegados.
+
+<img src="assets/chapter-4/Component-diagram-Hostera-access-control.svg" alt="Diagrama de componentes de gestión de accesos RFID de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.14. Diagrama de componentes de gestión de accesos RFID de Hostera.*
+
+#### Servicio de Dashboard
+
+El servicio de dashboard agrega información de reservas, habitaciones, inventario y
+accesos, y publica las actualizaciones al frontend en tiempo real.
+
+<img src="assets/chapter-4/Component-diagram-Hostera-dashboard.svg" alt="Diagrama de componentes del servicio de dashboard de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.15. Diagrama de componentes del servicio de dashboard de Hostera.*
 
 ## 4.7. Software Object-Oriented Design
 
