@@ -1008,6 +1008,15 @@ información y el control de las diferencias entre establecimientos.
 
 ## 2.4. Big Picture EventStorming
 
+El Big Picture EventStorming permite representar visualmente el dominio hotelero de
+Hostera desde una perspectiva general. El diagrama organiza los eventos significativos
+y sus relaciones para identificar los procesos principales del negocio, así como
+posibles problemas y oportunidades que orientan la definición de la solución.
+
+<img src="assets/chapter-2/big-picture-event-storming-hostera.svg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 2.1. Big Picture EventStorming del dominio de Hostera.*
+
 ## 2.5. Ubiquitous Language
 
 El lenguaje ubicuo define los términos y conceptos del dominio hotelero de Hostera.
