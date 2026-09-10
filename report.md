@@ -137,9 +137,10 @@
   - [4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
 - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
 - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
-  - [4.6.1. Software Architecture Context Diagram](#461-software-architecture-context-diagram)
-  - [4.6.2. Software Architecture Container Diagrams](#462-software-architecture-container-diagrams)
-  - [4.6.3. Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
+  - [4.6.1. Design-Level EventStorming](#461-design-level-eventstorming)
+  - [4.6.2. Software Architecture Context Diagram](#462-software-architecture-context-diagram)
+  - [4.6.3. Software Architecture Container Diagrams](#463-software-architecture-container-diagrams)
+  - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
 - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
   - [4.7.1. Class Diagrams](#471-class-diagrams)
 - [4.8. Database Design](#48-database-design)
@@ -1956,7 +1957,9 @@ distinto.
 
 ## 4.6. Domain-Driven Software Architecture
 
-### 4.6.1. Software Architecture Context Diagram
+### 4.6.1. Design-Level EventStorming
+
+### 4.6.2. Software Architecture Context Diagram
 
 El diagrama de contexto presenta a Hostera como el sistema central para la gestión
 administrativa del hotel. Identifica la interacción del personal del hotel con la
@@ -1967,7 +1970,7 @@ notificaciones.
 
 *Figura 4.8. Diagrama de contexto del sistema Hostera.*
 
-### 4.6.2. Software Architecture Container Diagrams
+### 4.6.3. Software Architecture Container Diagrams
 
 El diagrama de contenedores descompone Hostera en sus principales unidades de
 ejecución y almacenamiento. La propuesta incluye la aplicación web, los módulos de
@@ -1978,7 +1981,7 @@ de las bases de datos y los sistemas externos con los que se integra la platafor
 
 *Figura 4.9. Diagrama de contenedores del sistema Hostera.*
 
-### 4.6.3. Software Architecture Components Diagrams
+### 4.6.4. Software Architecture Components Diagrams
 
 Los diagramas de componentes detallan la estructura interna de cada contenedor
 principal de Hostera. Se muestran las responsabilidades de sus componentes y las
