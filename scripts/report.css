@@ -17,14 +17,17 @@ img {
 .cover {
   text-align: center;
   page-break-after: always;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  line-height: 1.25;
 }
 
-.cover img {
+.cover-logo {
   display: block;
-  width: 300px;
+  width: 60px;
   max-width: none;
   height: auto;
-  margin: 0 auto 1.2em;
+  margin: 0 auto 1.1em;
   border: 0;
 }
 
@@ -34,9 +37,56 @@ table img {
   height: auto;
 }
 
-.cover h3 {
-  margin: 0.22em 0;
+.cover-institution,
+.cover-career {
   font-size: 12pt;
+  line-height: 1.4;
+}
+
+.cover-course-block {
+  margin-top: 3.4em;
+}
+
+.cover-code {
+  margin-bottom: 0.65em;
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.cover-course {
+  margin-bottom: 1.15em;
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.cover-label {
+  margin-bottom: 0.45em;
+  font-size: 11pt;
+}
+
+.cover-nrc {
+  margin-bottom: 1.35em;
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.cover-title {
+  margin-bottom: 1.1em;
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+.cover-value {
+  margin-bottom: 1.2em;
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.cover-members-title {
+  margin-top: 2.15em;
+  margin-bottom: 0.35em;
+  font-size: 12pt;
+  font-weight: 700;
 }
 
 .cover table,
@@ -114,6 +164,41 @@ table td {
 .version-history th,
 .version-history td {
   padding: 0.25em 0.45em;
+}
+
+.cover-members {
+  width: 330px !important;
+  margin: 0 auto;
+  border: 0;
+  border-collapse: collapse;
+  font-size: 11pt;
+  text-align: left;
+}
+
+.cover-members th,
+.cover-members td {
+  padding: 0.2em 0;
+  border: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cover-members th:first-child,
+.cover-members td:first-child {
+  width: 100px;
+  padding-right: 1em;
+}
+
+.cover-period {
+  margin-top: 2.3em;
+  font-size: 13pt;
+  font-weight: 700;
+}
+
+.cover-date {
+  margin-top: 2.25em;
+  font-size: 13pt;
+  font-weight: 700;
 }
 
 .version-history {

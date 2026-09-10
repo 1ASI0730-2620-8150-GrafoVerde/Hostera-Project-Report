@@ -1,38 +1,44 @@
 <div class="cover">
 
-<img src="assets/cover/logo-upc.png" alt="logo-upc" style="width:300px; height:auto;"/>
+<img class="cover-logo" src="assets/cover/logo-upc.png" alt="Logo de la Universidad Peruana de Ciencias Aplicadas"/>
 
-### UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
+<div class="cover-institution">Universidad Peruana de Ciencias Aplicadas</div>
+<div class="cover-career">Carrera de Ingeniería de Software</div>
 
-### Ingeniería de Software
+<div class="cover-course-block">
+  <div class="cover-code">1ASI0730</div>
+  <div class="cover-course">Aplicaciones Web</div>
+  <div class="cover-label">NRC</div>
+  <div class="cover-nrc">8150</div>
+  <div class="cover-title">Informe del Trabajo Final</div>
+  <div class="cover-label">Docente</div>
+  <div class="cover-value">Velásquez Núñez, Ángel Augusto</div>
+  <div class="cover-label">Equipo</div>
+  <div class="cover-value">Grafo Verde</div>
+  <div class="cover-label">Proyecto</div>
+  <div class="cover-value">Hostera</div>
+</div>
 
-### 202620
+<div class="cover-members-title">Integrantes</div>
 
-### Código: 1ASI0730
+<table class="cover-members">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Apellidos y Nombres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>u201621281</td><td>Cuba Pareja, Joaquín Antonio</td></tr>
+    <tr><td>u202410105</td><td>Cuba Vega, Darnell Yadir</td></tr>
+    <tr><td>U20231E443</td><td>Condori Urviola, Mateo Sebastián</td></tr>
+    <tr><td>U202412124</td><td>Flores Rios, Juan Diego</td></tr>
+    <tr><td>U20241E281</td><td>Santana Luna, José Antonio</td></tr>
+  </tbody>
+</table>
 
-### Curso: Desarrollo de Aplicaciones Web - Presencial
-
-### NRC: 8150
-
-### Docente: Velasquez Nuñez Angel Augusto
-
-### Informe de Trabajo Final
-
-### Startup: Grafo Verde
-
-### Producto: Hostera
-
-### Integrantes
-
-|       Apellidos y Nombres        | Código de Alumno |
-| :------------------------------: | :--------------: |
-|   Cuba Pareja, Joaquin Antonio   |    u201621281    |
-|     Cuba Vega, Darnell Yadir     |    u202410105    |
-| Condori Urviola, Mateo Sebastián |    U20231E443    |
-|     Flores Rios, Juan Diego      |    U202412124    |
-|    Santana Luna, José Antonio    |    U20241E281    |
-
-## Setiembre - 2026
+<div class="cover-period">Período 202620</div>
+<div class="cover-date">Septiembre 2026</div>
 
 </div>
 <div class="version-history">
