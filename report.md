@@ -1947,6 +1947,55 @@ distinto.
 
 ### 4.4.1. Web Applications Wireframes
 
+Los wireframes de Hostera representan la estructura de la aplicación web responsive en
+el breakpoint móvil. Aunque la solución se ejecuta en el navegador, esta vista permite
+comprobar cómo se reorganizan los contenidos y controles cuando el ancho disponible es
+reducido. La propuesta conserva la jerarquía de la información y apila los grupos de
+contenido para priorizar la lectura vertical y la interacción táctil.
+
+El conjunto cubre el acceso a la aplicación, el dashboard, las reservas, las
+habitaciones, el inventario, el control de acceso RFID y los reportes operativos. La
+navegación principal se concentra en un drawer móvil, mientras que cada vista mantiene
+el selector de propiedad, un encabezado identificable y acciones relacionadas con el
+contexto actual. Las listas, formularios y áreas de resumen utilizan contenedores
+simples y labels explícitos para diferenciar información, controles y estados sin
+depender únicamente del color.
+
+#### Acceso, dashboard y reservas
+
+Las primeras vistas muestran el acceso, el registro, el resumen operativo, la consulta
+de reservas y el formulario para crear una nueva reserva. La composición mantiene los
+campos y acciones dentro de una sola columna, mientras que el dashboard prioriza el
+resumen de ocupación, el estado de las habitaciones y las próximas llegadas.
+
+<img src="assets/chapter-4/web-application-wireframes-mobile-core.png" alt="Wireframes móviles de acceso, dashboard y reservas de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+
+*Figura 4.8. Wireframes móviles de acceso, dashboard y reservas.*
+
+#### Reservación, habitaciones e inventario
+
+Este grupo representa el detalle de una reserva, el listado de habitaciones, el detalle
+de una habitación, el inventario y el ajuste de stock. La información contextual se
+mantiene cerca de las acciones correspondientes: el estado de la reserva acompaña sus
+datos principales, la habitación expone sus atributos operativos y el ajuste de stock
+separa la cantidad, la ubicación y el motivo de la operación.
+
+<img src="assets/chapter-4/web-application-wireframes-mobile-operations.png" alt="Wireframes móviles de reservación, habitaciones e inventario de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+
+*Figura 4.9. Wireframes móviles de reservación, habitaciones e inventario.*
+
+#### Control de acceso, reportes y navegación
+
+Las últimas vistas cubren las credenciales RFID, los eventos de acceso, la biblioteca de
+reportes, el reporte de ocupación y el drawer de navegación. Los indicadores resumidos
+preceden a los listados para facilitar el escaneo, y los filtros se ubican antes del
+contenido que afectan. El drawer conserva las áreas funcionales principales y permite
+cambiar de contexto sin perder la orientación dentro de la aplicación.
+
+<img src="assets/chapter-4/web-application-wireframes-mobile-access-reporting.png" alt="Wireframes móviles de control de acceso, reportes y navegación de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+
+*Figura 4.10. Wireframes móviles de control de acceso, reportes y navegación.*
+
 ### 4.4.2. Web Applications Wireflow Diagrams
 
 ### 4.4.3. Web Applications Mock-ups
