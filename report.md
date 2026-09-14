@@ -1166,6 +1166,39 @@ Los Business Goals representan los objetivos cuantificables que Grafo Verde espe
 - **BG4** diferencia a Hostera de competidores que no ofrecen RFID integrado o lo ofrecen como opción personalizada de alto costo.
 - **BG5** proporciona evidencia cuantitativa de retorno de inversión para los usuarios potenciales.
 
+## Actores (Actors)
+
+Los Actors identificados corresponden a los User Personas de los dos segmentos objetivo y otros actores relevantes en el ecosistema de Hostera. Cada actor ha sido mapeado a los Business Goals que pueden influenciar directamente.
+
+| # | Actor | Descripción | Segmento | Relación con BG |
+|---|---|---|---|---|
+| **A1** | Administrador/Propietario de Hotel Independiente | Persona responsable de supervisar operaciones completas de un hotel de una sola sede (hasta 10 habitaciones). Participa en decisiones administrativas, controla múltiples áreas y requiere visión consolidada. | Hoteles Independientes | BG1, BG2, BG4, BG5 |
+| **A2** | Gerente de Operaciones de Pequeña Cadena Hotelera | Persona responsable de coordinar operaciones de 2 a 5 sedes hoteleras. Necesita visibilidad consolidada sin perder contexto de cada propiedad. | Pequeñas Cadenas | BG3, BG2, BG4, BG5 |
+| **A3** | Personal de Recepción | Usuario operativo que realiza check-in, check-out, confirmación de reservas y autorización de accesos. Requiere información actualizada en tiempo real. | Ambos Segmentos | BG2, BG5 |
+| **A4** | Encargado de Almacén/Inventario | Usuario operativo responsable de gestionar existencias, registrar movimientos y coordinar reposiciones. Requiere visibilidad de stock y alertas de niveles críticos. | Ambos Segmentos | BG2, BG3, BG5 |
+| **A5** | Personal Autorizado para Gestión de Accesos | Usuario que configura y autoriza tarjetas RFID, revisa historial de accesos y maneja revocaciones. Responsable de seguridad física del establecimiento. | Ambos Segmentos | BG4 |
+ 
+---
+
+## Impacts (Cambios en el Comportamiento de los Actores)
+
+Los Impacts describen cómo esperamos que cambien o se comporten los Actors como resultado de usar Hostera. Cada Impact está formulado como un cambio observable y medible.
+
+| # | Actor | Impact (¿Cómo deben cambiar?) | Métrica Asociada | BG |
+|---|---|---|---|---|
+| **IM1** | A1: Administrador Independiente | Trabaja con información actualizada en un único panel, sin necesidad de consultar múltiples registros o herramientas independientes | % de tareas completas desde el panel de Hostera: ≥ 80% | BG2 |
+| **IM2** | A1: Administrador Independiente | Reduce significativamente el tiempo dedicado a verificar y conciliar información de diferentes fuentes | Tiempo de búsqueda de estado de reserva/habitación: < 30 segundos | BG5 |
+| **IM3** | A1: Administrador Independiente | Autoriza y controla accesos de huéspedes y personal sin depender de procesos manuales con tarjetas físicas o registros en papel | 100% de eventos de acceso registrados automáticamente en el sistema; cero accesos no registrados | BG4 |
+| **IM4** | A1: Administrador Independiente | Adopta Hostera como herramienta principal para operación diaria, permitiendo a Grafo Verde alcanzar la base de usuarios inicial | Adopción activa: ≥ 50 hoteles con al menos 1 operación por mes | BG1 |
+| **IM5** | A2: Gerente Pequeña Cadena | Obtiene visibilidad consolidada de todas sus sedes en un único dashboard, identificando rápidamente diferencias, inconsistencias y oportunidades | Dashboard con datos consolidados accesible en < 5 segundos; información actualizada cada 60 segundos | BG3 |
+| **IM6** | A2: Gerente Pequeña Cadena | Coordina inventario entre múltiples ubicaciones sin necesidad de comunicaciones manuales o inconsistencias por desfase | Sincronización automática de movimientos de inventario entre sedes; exactitud de registros ≥ 95% | BG3 |
+| **IM7** | A2: Gerente Pequeña Cadena | Monitorea trazabilidad de accesos RFID vinculados correctamente con habitaciones y usuarios, mejorando seguridad y cumplimiento | 90% de eventos de acceso con relación completa (tarjeta RFID ↔ habitación ↔ usuario); 0 accesos sin registro | BG4 |
+| **IM8** | A3: Personal de Recepción | Consulta disponibilidad de habitaciones en tiempo real, reduciendo riesgo de overbooking y mejorando precisión en asignaciones | Tasa de overbooking: 0% por información desactualizada; confirmación de disponibilidad: < 10 segundos | BG2, BG5 |
+| **IM9** | A3: Personal de Recepción | Reduce tiempo en procesos de check-in y check-out al integrar autorización de acceso RFID en el mismo panel | Duración de check-in/out: < 2 minutos (vs. 5+ minutos con tarjetas manuales) | BG5 |
+| **IM10** | A4: Encargado Almacén | Mantiene inventario visible y actualizado en tiempo real, facilitando identificación de niveles críticos y reposición proactiva | Acceso real-time a stock de todas las sedes; recibe alertas automáticas cuando inventario alcanza nivel mínimo | BG2, BG3 |
+| **IM11** | A4: Encargado Almacén | Coordina transferencias de inventario entre sedes sin perder trazabilidad de movimientos | 100% de movimientos de inventario registrados y consultables; historial completo por ítem y sede | BG3 |
+| **IM12** | A5: Personal Accesos | Autoriza y revoca accesos de forma rápida y trazable, mejorando respuesta a cambios operativos (check-out anticipado, cancelación de reserva) | Autorización de nueva tarjeta: < 30 segundos; revocación efectiva: inmediata; historial completo de cambios | BG4 |
+
 <div style="page-break-before: always;"></div>
 
 ## 3.3. Product Backlog
