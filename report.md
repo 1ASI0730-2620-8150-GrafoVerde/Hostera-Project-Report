@@ -1199,6 +1199,42 @@ Los Impacts describen cómo esperamos que cambien o se comporten los Actors como
 | **IM11** | A4: Encargado Almacén | Coordina transferencias de inventario entre sedes sin perder trazabilidad de movimientos | 100% de movimientos de inventario registrados y consultables; historial completo por ítem y sede | BG3 |
 | **IM12** | A5: Personal Accesos | Autoriza y revoca accesos de forma rápida y trazable, mejorando respuesta a cambios operativos (check-out anticipado, cancelación de reserva) | Autorización de nueva tarjeta: < 30 segundos; revocación efectiva: inmediata; historial completo de cambios | BG4 |
 
+## Deliverables (Características del Producto)
+
+Los Deliverables son las características específicas de Hostera que se requiere implementar para provocar los Impacts esperados. Cada Deliverable ha sido diseñado para direccionar uno o más Impacts.
+
+| # | Deliverable | Descripción Funcional | Impacta a | BG | Prioridad MVP |
+|---|---|---|---|---|---|
+| **D1** | Panel Administrativo Centralizado | Un único espacio donde administradores y responsables de operación pueden consultar en tiempo real: estado de reservas, disponibilidad de habitaciones, niveles de inventario y eventos de acceso RFID. Interfaz adaptable a Desktop y dispositivos móviles. | IM1, IM2, IM5 | BG2, BG5 | Alta |
+| **D2** | Gestión de Reservas en Tiempo Real | Funcionalidades para crear, editar, consultar y actualizar reservas. Cambios son reflejados instantáneamente en disponibilidad de habitaciones. Soporte para estados de reserva (pendiente, confirmada, completada, cancelada). | IM1, IM2, IM8 | BG2, BG5 | Alta |
+| **D3** | Dashboard de Disponibilidad de Habitaciones | Vista clara y actualizada del estado de cada habitación (disponible, ocupada, sucia, inspeccionada, bloqueada). Filtros por tipo de habitación y período. Reflejación inmediata de cambios de estado. | IM1, IM2, IM8 | BG2, BG5 | Alta |
+| **D4** | Sistema de Control de Inventario | Registro centralizado de ítems de almacén. Funcionalidades para registrar entradas, salidas, transferencias entre sedes y ajustes. Visualización de stock actual por sede y totales. Historial de movimientos. | IM10, IM11 | BG2, BG3 | Media |
+| **D5** | Alertas de Inventario Crítico | Sistema automático de notificaciones cuando el stock de un ítem alcanza el nivel mínimo configurado. Alertas visibles en dashboard y enviadas a correo/SMS según configuración. | IM10 | BG3 | Media |
+| **D6** | Integración RFID y Registro de Accesos | Conexión con tarjetas y lectores RFID. Vinculación de tarjetas con habitaciones, huéspedes y personal autorizado. Registro automático de eventos de acceso (entrada/salida) con timestamp y ubicación. Historial completo de accesos. | IM3, IM7, IM12 | BG4 | Alta |
+| **D7** | Reportes por Sede y Consolidados | Funcionalidad para generar reportes de: ocupación, ADR (Average Daily Rate), RevPAR, movimientos de inventario, eventos de acceso. Reportes filtrados por período, propiedad, o consolidados. Exportación a PDF/Excel. | IM5, IM6 | BG3 | Media |
+| **D8** | Roles y Permisos Diferenciados | Sistema de control de acceso basado en roles. Roles: Administrador, Gerente Cadena, Personal Recepción, Encargado Almacén, Personal Accesos. Cada rol ve solo información relevante y puede ejecutar acciones asignadas a su función. | IM1, IM5 | BG2, BG3 | Alta |
+| **D9** | Perfil de Usuario y Configuración de Propiedades | Funcionalidades para que administradores configuren datos de su(s) propiedad(es): nombre, ubicación, cantidad de habitaciones, tipos de habitación, niveles mínimos de inventario, configuración de RFID. Posibilidad de cambiar entre propiedades en una cadena. | IM1, IM5 | BG1, BG3 | Alta |
+| **D10** | Visualización en Tiempo Real de Eventos | Muro o timeline de eventos operativos recientes: nuevas reservas, check-in/out, cambios de estado de habitación, movimientos de inventario, accesos RFID. Actualización automática cada 30-60 segundos. | IM1, IM2, IM8 | BG2, BG5 | Media |
+
+## Conexión entre Impacts y Deliverables
+
+La siguiente matriz muestra cómo los Deliverables provocan cada uno de los Impacts esperados:
+
+| Impact | Deliverable Primario | Deliverables Secundarios de Apoyo |
+|---|---|---|
+| IM1: Trabajo con información actualizada en panel único | D1: Panel Centralizado | D2, D3, D9, D10 |
+| IM2: Reduce tiempo de búsqueda | D1: Panel Centralizado | D2, D3, D10 |
+| IM3: Autoriza accesos sin procesos manuales | D6: Integración RFID | D1, D9 |
+| IM4: Adopta Hostera como herramienta principal | D1 + D2 + D3 + D8 + D9 | D10 |
+| IM5: Obtiene visibilidad consolidada multi-sede | D1: Panel Centralizado | D7, D9, D10 |
+| IM6: Coordina inventario entre sedes | D4: Control de Inventario | D7, D9 |
+| IM7: Monitorea trazabilidad RFID | D6: Integración RFID | D1, D7 |
+| IM8: Consulta disponibilidad en tiempo real | D3: Dashboard Disponibilidad | D1, D2, D10 |
+| IM9: Reduce tiempo en check-in/out | D2 + D6: Gestión Reservas + RFID | D1, D3 |
+| IM10: Mantiene inventario visible y actualizado | D4 + D5: Control de Inventario + Alertas | D1, D7 |
+| IM11: Coordina transferencias sin perder trazabilidad | D4: Control de Inventario | D7, D9 |
+| IM12: Autoriza y revoca accesos rápidamente | D6: Integración RFID | D1, D8 |
+
 <div style="page-break-before: always;"></div>
 
 ## 3.3. Product Backlog
