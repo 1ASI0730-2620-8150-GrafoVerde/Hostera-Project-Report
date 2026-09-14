@@ -1252,6 +1252,30 @@ Los Deliverables han sido traducidos en User Stories que forman la base del Prod
 | D9 | US-009 | Como propietario de un hotel, deseo configurar los datos de mi propiedad en Hostera (nombre, ubicación, cantidad de habitaciones, tipos de habitación, niveles mínimos de inventario), para establecer la base desde la cual la plataforma gestiona mi operación. |
 | D10 | US-010 | Como administrador de hotel, deseo visualizar en el panel un muro o timeline de eventos operativos recientes (nuevas reservas, check-in/out, cambios de disponibilidad, movimientos de inventario, accesos RFID), para mantenerme informado de cambios en tiempo real sin necesidad de navegar por múltiples secciones. |
 
+## Validación del Impact Mapping contra Hipótesis de Lean UX
+
+El Impact Mapping ha sido diseñado para validar las Hypothesis Statements definidas en la sección 1.2.2.3:
+
+- **Hipótesis 1 (Panel centralizado)**: Los Impacts IM1, IM2, IM5 y los Deliverables D1, D2, D3, D10 buscan validar que centralizar información reduce la dependencia de registros independientes.
+
+- **Hipótesis 2 (Gestión de reservas)**: Los Impacts IM2, IM8, IM9 y los Deliverables D2, D3 buscan validar que información actualizada en tiempo real reduce inconsistencias y tiempos de búsqueda.
+- **Hipótesis 3 (Inventario)**: Los Impacts IM10, IM11 y los Deliverables D4, D5, D7 buscan validar que visibilidad de stock mejora seguimiento de existencias.
+- **Hipótesis 4 (RFID)**: Los Impacts IM3, IM7, IM12 y el Deliverable D6 buscan validar que integración RFID mejora trazabilidad de accesos.
+- **Hipótesis 5 (Multi-sede)**: Los Impacts IM5, IM6 y los Deliverables D1, D4, D7, D9 buscan validar que una estructura preparada para una o varias sedes permite crecimiento sin perder contexto de cada propiedad.
+
+## Resumen Visual
+
+El Impact Mapping de Hostera ha sido elaborado en la herramienta UXPressia, la cual permite visualizar gráficamente la relación entre los Business Goals, Actors, Impacts y Deliverables. La siguiente imagen captura la estructura general del Impact Map:
+
+[INSERTAR CAPTURA DE PANTALLA DE UXPRESSIA]
+
+La estructura del diagrama sigue el modelo estándar de Impact Mapping:
+- **Centro**: Business Goals (5 objetivos SMART identificados)
+- **Nivel 2**: Actors (5 personas que influencian los BG)
+- **Nivel 3**: Impacts (12 cambios esperados en comportamiento)
+- **Nivel 4**: Deliverables (10 características del producto)
+  Esta representación visual facilita la comunicación interna del equipo y la justificación de decisiones de priorización en el Product Backlog.
+
 <div style="page-break-before: always;"></div>
 
 ## 3.3. Product Backlog
