@@ -1131,7 +1131,40 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 | TS015 | Record and query RFID access events through the API | As a developer, I want to record and query RFID access events through the API so that authorized clients can investigate granted and denied access attempts. | **Scenario: Record an access event**<br>**Given** a registered access point submits a valid credential attempt<br>**When** the developer sends `POST /api/v1/access-events`<br>**Then** the API returns `201 Created` with the immutable timestamp, credential, access point, result, and reason information.<br><br>**Scenario: Query property access events**<br>**Given** the requester is authorized for the property<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/access-events` with supported criteria<br>**Then** the API returns `200 OK` with a paginated collection satisfying the date, result, person, credential, and access-point criteria.<br><br>**Scenario: Reject an unregistered access point**<br>**Given** the event source is not registered or authorized<br>**When** the developer attempts to record an event<br>**Then** the API returns `403 Forbidden` and does not create the event. | EP006 |
 | TS016 | Retrieve and export operational reports through the API | As a developer, I want to retrieve and export property-scoped operational reports through the API so that clients can analyze and share consistent results. | **Scenario: Retrieve a calculated report**<br>**Given** the requester is authorized and provides a supported report type and valid period<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/reports/{reportType}`<br>**Then** the API returns `200 OK` with the report scope, generation time, measures, comparison values when applicable, and supporting data.<br><br>**Scenario: Export the current report scope**<br>**Given** a supported export format and valid report criteria<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/reports/{reportType}/export`<br>**Then** the API returns `200 OK` with the exported file and content type for the same authorized scope.<br><br>**Scenario: Reject an unsupported report or format**<br>**Given** the requested report type or export format is not supported<br>**When** the developer requests the report or export<br>**Then** the API returns `400 Bad Request` with the supported values. | EP007 |
 | TS017 | Return standardized API errors | As a developer, I want the API to return consistent validation and domain-error responses so that client applications can handle failures predictably. | **Scenario: Return validation details**<br>**Given** a request contains invalid input<br>**When** the developer sends the request<br>**Then** the API returns `400 Bad Request` using a consistent problem-details structure with field-level information when applicable.<br><br>**Scenario: Return a missing-resource error**<br>**Given** an authorized request targets a resource that does not exist<br>**When** the developer sends the request<br>**Then** the API returns `404 Not Found` using the same problem-details structure.<br><br>**Scenario: Return a domain-conflict error**<br>**Given** a valid request violates a current business-state rule<br>**When** the developer sends the request<br>**Then** the API returns `409 Conflict` with a stable error code and actionable context. | EP008 |
+
 ## 3.2. Impact Mapping
+
+## Introducción
+
+El Impact Mapping es una técnica que conecta los objetivos de negocio con los cambios esperados en el comportamiento de los usuarios (Impacts) y las características del producto (Deliverables) necesarias para lograr esos objetivos. Para Hostera, el Impact Mapping establece la relación entre las metas comerciales del primer año, los actores clave (User Personas de los segmentos objetivo), los comportamientos esperados que deben cambiar y las funcionalidades específicas que provocarán esos cambios.
+
+Esta sección fue elaborada considerando:
+- Los Business Goals identificados para el modelo de negocio de Grafo Verde
+- Los User Personas de los dos segmentos objetivo (hoteles independientes y pequeñas cadenas)
+- Las hipótesis y supuestos validados durante el Lean UX Process
+- Los requisitos preliminares identificados en las entrevistas de needfinding
+- La estrategia competitiva definida para posicionar a Hostera en el mercado peruano
+  El Impact Mapping sirve como guía para la priorización de User Stories en el Product Backlog y para comunicar internamente cómo cada funcionalidad contribuye a los objetivos comerciales de la empresa.
+
+## Business Goals (SMART)
+
+Los Business Goals representan los objetivos cuantificables que Grafo Verde espera alcanzar en el primer año de operación de Hostera. Cada objetivo ha sido formulado siguiendo el criterio SMART (Specific, Measurable, Attainable, Relevant, Time-bound) para asegurar que sean claros, medibles y alcanzables.
+
+| # | Business Goal | Descripción | Métricas de Éxito | Período |
+|---|---|---|---|---|
+| **BG1** | Alcanzar 50 hoteles independientes suscritos al plan Free | Generar base de usuarios iniciales en el segmento de hoteles pequeños (1 propiedad, hasta 10 habitaciones) | 50 hoteles activos con al menos 1 reserva registrada por mes | 6 meses |
+| **BG2** | Lograr que el 80% de usuarios activos completen tareas operativas desde el panel centralizado sin consultar múltiples registros | Demostrar el valor de centralización como propuesta diferenciadora | 80% de sesiones de administrador finalizan sin cambiar de sistema externo | 8 meses |
+| **BG3** | Alcanzar 15 pequeñas cadenas hoteleras suscritas al plan Professional (2-5 sedes) | Expandir a segmento de mayor valor y generar ingresos recurrentes predecibles | 15 cadenas con suscripción activa y operando al menos 2 sedes en la plataforma | 12 meses |
+| **BG4** | Lograr una trazabilidad del 90% en accesos RFID vinculados con habitación y usuario/huésped | Consolidar RFID como capacidad diferenciadora y core de seguridad | 90% de eventos de acceso registrados con relación completa (tarjeta RFID ↔ habitación ↔ usuario) | 8 meses |
+| **BG5** | Reducir el tiempo de búsqueda de información operativa en un 70% respecto a registros manuales | Validar la hipótesis de mejora en productividad del personal hotelero | Tiempo promedio para encontrar estado de reserva/habitación: < 30 segundos (vs. 2 minutos en procesos manuales) | 6 meses |
+
+**Justificación de los objetivos:**
+
+- **BG1** se alinea con la estrategia de entrada gradual mediante demostraciones y validación en usuarios reales del mercado peruano.
+- **BG2** valida la hipótesis central (Hypothesis #1) sobre si la centralización de información efectivamente reduce la dependencia de registros independientes.
+- **BG3** asegura sostenibilidad financiera del modelo de negocio mediante usuarios de mayor valor.
+- **BG4** diferencia a Hostera de competidores que no ofrecen RFID integrado o lo ofrecen como opción personalizada de alto costo.
+- **BG5** proporciona evidencia cuantitativa de retorno de inversión para los usuarios potenciales.
 
 <div style="page-break-before: always;"></div>
 
