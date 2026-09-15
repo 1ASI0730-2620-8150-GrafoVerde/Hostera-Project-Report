@@ -2194,6 +2194,137 @@ disponible en [Hostera — Web Application Wireflows](https://www.figma.com/boar
 
 ### 4.4.3. Web Applications Mock-ups
 
+Los mock-ups de alta fidelidad de la aplicación web representan las vistas y estados
+principales de Hostera para la gestión operativa de una propiedad hotelera. El diseño
+se encuentra organizado en la página `Web Application` del archivo de Paper
+`Grafo-verde` y mantiene una composición consistente entre autenticación, monitoreo,
+reservas, habitaciones, inventario, control de acceso RFID y reportes.
+
+#### Acceso y panorama operativo
+
+Las pantallas de autenticación establecen el punto de entrada para el personal
+autorizado. El formulario se presenta junto con una imagen asociada al contexto de
+hospitalidad, mientras que el dashboard prioriza el estado operativo mediante
+indicadores de ocupación, habitaciones listas, próximas llegadas, ingresos y
+resumen por propiedad.
+
+<img src="assets/chapter-4/web-application-mockups/01-login.png" alt="Mock-up de inicio de sesión de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.36. Mock-up de inicio de sesión.*
+
+<img src="assets/chapter-4/web-application-mockups/02-sign-up.png" alt="Mock-up de registro de cuenta de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.37. Mock-up de registro de cuenta.*
+
+<img src="assets/chapter-4/web-application-mockups/03-dashboard.png" alt="Mock-up del dashboard operativo de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.38. Mock-up del dashboard operativo.*
+
+#### Reservas y operación de estancias
+
+El módulo de reservas utiliza una lista con filtros, estados y acciones claramente
+identificables para facilitar la búsqueda y revisión de una reserva. La creación de
+una reserva se separa en bloques de información del huésped, fechas de estancia,
+habitación, tarifa y solicitudes, con acciones de guardado visibles y estados de
+validación para prevenir errores antes de confirmar la operación.
+
+<img src="assets/chapter-4/web-application-mockups/04-reservations.png" alt="Mock-up de la lista de reservas de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.39. Mock-up de revisión de reservas.*
+
+<img src="assets/chapter-4/web-application-mockups/05-create-reservation.png" alt="Mock-up de creación de una reserva de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.40. Mock-up de creación de una reserva.*
+
+<img src="assets/chapter-4/web-application-mockups/11-check-in.png" alt="Mock-up de verificación para el check-in de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.41. Mock-up de verificación de huésped para check-in.*
+
+<img src="assets/chapter-4/web-application-mockups/12-check-out.png" alt="Mock-up de revisión para el check-out de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.42. Mock-up de revisión de check-out.*
+
+#### Administración de habitaciones, inventario y accesos
+
+Las vistas operativas mantienen una navegación lateral común y un área de trabajo
+con jerarquía consistente. La vista de habitaciones presenta la disponibilidad en un
+calendario, inventario combina indicadores resumidos con una tabla de ítems y
+control de acceso muestra credenciales y permisos en una estructura escaneable.
+Esta reutilización de patrones reduce la carga cognitiva y permite que el personal
+transfiera lo aprendido entre módulos.
+
+<img src="assets/chapter-4/web-application-mockups/06-rooms.png" alt="Mock-up de habitaciones y disponibilidad de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.43. Mock-up de habitaciones y disponibilidad.*
+
+<img src="assets/chapter-4/web-application-mockups/07-inventory.png" alt="Mock-up de inventario de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.44. Mock-up de monitoreo de inventario.*
+
+<img src="assets/chapter-4/web-application-mockups/08-access-control.png" alt="Mock-up de control de acceso RFID de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.45. Mock-up de control de acceso RFID.*
+
+#### Reportes operativos
+
+El módulo de reportes separa la selección del reporte de la visualización de sus
+resultados. La biblioteca permite localizar el reporte requerido y la vista de
+ocupación presenta métricas, series temporales y datos de disponibilidad para apoyar
+la toma de decisiones del administrador.
+
+<img src="assets/chapter-4/web-application-mockups/09-reports-library.png" alt="Mock-up de biblioteca de reportes de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.46. Mock-up de biblioteca de reportes.*
+
+<img src="assets/chapter-4/web-application-mockups/10-occupancy-report.png" alt="Mock-up de reporte de ocupación y disponibilidad de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.47. Mock-up de reporte de ocupación y disponibilidad.*
+
+#### Diseño inclusivo y adaptación responsive
+
+La propuesta contempla diferentes tamaños de pantalla. En móvil, la navegación se
+reduce a una barra superior y los contenidos se reorganizan verticalmente, sin
+eliminar las acciones principales ni los indicadores operativos. Los filtros, estados
+y controles conservan etiquetas textuales además del color, lo que evita depender
+únicamente de diferencias cromáticas para interpretar la información.
+
+<img src="assets/chapter-4/web-application-mockups/13-dashboard-mobile.png" alt="Mock-up móvil del dashboard operativo de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.48. Mock-up móvil del dashboard operativo.*
+
+<img src="assets/chapter-4/web-application-mockups/14-reservations-mobile.png" alt="Mock-up móvil de reservas de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.49. Mock-up móvil de reservas.*
+
+<img src="assets/chapter-4/web-application-mockups/15-rooms-mobile.png" alt="Mock-up móvil de habitaciones de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.50. Mock-up móvil de habitaciones.*
+
+<img src="assets/chapter-4/web-application-mockups/16-occupancy-report-mobile.png" alt="Mock-up móvil del reporte de ocupación de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.51. Mock-up móvil del reporte de ocupación.*
+
+#### Principios visuales y Design System
+
+Estos mock-ups aplican el sistema de diseño definido en [4.1. Style
+Guidelines](#41-style-guidelines), por lo que no introducen una solución visual
+aislada para la aplicación web. En particular, retoman los lineamientos de
+[General Style Guidelines](#411-general-style-guidelines) para branding, color,
+tipografía, espaciado, forma, elevación y principios de diseño, y los patrones de
+[Web Style Guidelines](#412-web-style-guidelines) para layout responsive,
+componentes web, estados de interacción y accesibilidad.
+
+La interfaz utiliza superficies claras, la paleta verde asociada a la identidad de
+Hostera y una jerarquía tipográfica basada en Geist. Los componentes se repiten con
+estados diferenciados para botones, campos, tablas, chips, drawers, diálogos y
+mensajes de validación. La organización de los módulos también se relaciona con la
+[arquitectura de información](#42-information-architecture) definida para Hostera:
+la navegación persistente y las etiquetas de la aplicación web permiten orientar al
+personal entre dashboard, reservas, habitaciones, inventario, accesos y reportes.
+De esta manera, el espaciado, contraste, etiquetado, estados explícitos y adaptación
+responsive se aplican como una extensión del Design System existente y no como
+decisiones independientes de cada pantalla.
+
 ### 4.4.4. Web Applications User Flow Diagrams
 
 ## 4.5. Web Applications Prototyping
