@@ -2327,6 +2327,268 @@ decisiones independientes de cada pantalla.
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
+Esta sección presenta los User Flow Diagrams de la aplicación web de Hostera. Cada
+diagrama incorpora las vistas de los mock-ups de alta fidelidad y muestra la ruta
+esperada (happy path) junto con las rutas alternativas (unhappy paths) que pueden
+ocurrir bajo las condiciones previstas para la operación hotelera. Los flujos se
+organizan alrededor de los objetivos operativos de los administradores, responsables
+de recepción, personal de inventario y personal de control de accesos. Las capturas
+corresponden únicamente al diagrama de flujo y al objetivo que documenta cada
+interacción.
+
+#### Goal: Create an account with an initial property
+
+<img src="assets/chapter-4/web-application-user-flows/01-account-registration.png" alt="User Flow para crear una cuenta con una propiedad inicial" style="width:100%; height:auto;"/>
+
+*Figura 4.52. User Flow para crear una cuenta con una propiedad inicial.*
+
+El flujo inicia en el formulario de registro y termina en el dashboard cuando la
+información es válida. La ruta alternativa muestra los errores de validación para
+campos faltantes, datos inválidos o un correo ya registrado. La persona puede volver
+al formulario, corregir los datos y reenviar la solicitud.
+
+#### Goal: Sign in with an authorized work account
+
+<img src="assets/chapter-4/web-application-user-flows/02-authentication.png" alt="User Flow para iniciar sesión con una cuenta de trabajo autorizada" style="width:100%; height:auto;"/>
+
+*Figura 4.53. User Flow para iniciar sesión con una cuenta de trabajo autorizada.*
+
+Las credenciales autorizadas llevan al dashboard operativo. Si las credenciales no
+son válidas, el sistema conserva al usuario en el contexto de autenticación, muestra
+el error y permite corregir los datos e intentar nuevamente.
+
+#### Goal: Monitor current operations for an assigned property
+
+<img src="assets/chapter-4/web-application-user-flows/03-operational-overview.png" alt="User Flow para monitorear las operaciones de una propiedad asignada" style="width:100%; height:auto;"/>
+
+*Figura 4.54. User Flow para monitorear las operaciones de una propiedad asignada.*
+
+El administrador parte del dashboard, selecciona una propiedad asignada y obtiene el
+contexto operativo correspondiente. La ruta alternativa representa una demora o
+degradación del servicio de datos: el dashboard informa la condición y permite
+continuar con la información disponible o reintentar la consulta.
+
+#### Goal: Navigate to another authorized operational area
+
+<img src="assets/chapter-4/web-application-user-flows/04-operational-navigation.png" alt="User Flow para navegar a otra área operativa autorizada" style="width:100%; height:auto;"/>
+
+*Figura 4.55. User Flow para navegar a otra área operativa autorizada.*
+
+La navegación persistente permite pasar del dashboard a reservas y posteriormente a
+habitaciones. Cuando se intenta abrir un área no autorizada, se muestra el estado de
+restricción y se ofrece el retorno a un área permitida.
+
+#### Goal: Find and review a reservation
+
+<img src="assets/chapter-4/web-application-user-flows/05-reservation-review.png" alt="User Flow para encontrar y revisar una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.56. User Flow para encontrar y revisar una reserva.*
+
+El personal abre la lista de reservas, aplica los criterios de búsqueda y revisa el
+detalle de la reserva encontrada. Si no existen coincidencias, el estado vacío
+indica la condición y permite ajustar los criterios para realizar una nueva búsqueda.
+
+#### Goal: Create a reservation for an available room
+
+<img src="assets/chapter-4/web-application-user-flows/06-reservation-creation.png" alt="User Flow para crear una reserva de una habitación disponible" style="width:100%; height:auto;"/>
+
+*Figura 4.57. User Flow para crear una reserva de una habitación disponible.*
+
+La ruta esperada lleva desde la lista de reservas al formulario de creación y luego al
+detalle de la reserva creada para una habitación disponible. La ruta alternativa
+presenta errores cuando faltan datos o el período no es válido; la operación puede
+corregirse desde el mismo formulario.
+
+#### Goal: Review and update an existing reservation
+
+<img src="assets/chapter-4/web-application-user-flows/07-reservation-update.png" alt="User Flow para revisar y actualizar una reserva existente" style="width:100%; height:auto;"/>
+
+*Figura 4.58. User Flow para revisar y actualizar una reserva existente.*
+
+Desde el detalle, el personal abre el formulario de edición y vuelve al detalle con
+los cambios guardados. Si la habitación o el período seleccionado dejó de estar
+disponible, el flujo muestra el conflicto y permite elegir una alternativa.
+
+#### Goal: Update a reservation according to its pre-arrival outcome
+
+<img src="assets/chapter-4/web-application-user-flows/08-reservation-lifecycle.png" alt="User Flow para actualizar una reserva según su resultado previo a la llegada" style="width:100%; height:auto;"/>
+
+*Figura 4.59. User Flow para actualizar una reserva según su resultado previo a la llegada.*
+
+El detalle de la reserva abre las acciones de ciclo de vida disponibles. Según el
+resultado previo a la llegada, el personal puede cancelar la reserva o marcarla como
+no-show; cada opción se confirma mediante su diálogo correspondiente.
+
+#### Goal: Record a payment received for a reservation
+
+<img src="assets/chapter-4/web-application-user-flows/09-reservation-payment.png" alt="User Flow para registrar un pago recibido de una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.60. User Flow para registrar un pago recibido de una reserva.*
+
+El personal abre el registro de pago desde el detalle, introduce el importe recibido
+y vuelve al detalle con el balance actualizado. Un importe inválido activa el estado
+de error y permite corregir el valor antes de guardar.
+
+#### Goal: Complete guest check-in for a confirmed reservation
+
+<img src="assets/chapter-4/web-application-user-flows/10-guest-check-in.png" alt="User Flow para completar el check-in de un huésped" style="width:100%; height:auto;"/>
+
+*Figura 4.61. User Flow para completar el check-in de un huésped.*
+
+La ruta principal verifica la identidad, revisa el balance, codifica la tarjeta RFID
+y confirma el check-in. Si la identidad no puede resolverse, el proceso se detiene en
+un estado explícito y permite resolver la información antes de reintentar.
+
+#### Goal: Complete guest check-out for an occupied room
+
+<img src="assets/chapter-4/web-application-user-flows/11-guest-check-out.png" alt="User Flow para completar el check-out de una habitación ocupada" style="width:100%; height:auto;"/>
+
+*Figura 4.62. User Flow para completar el check-out de una habitación ocupada.*
+
+El flujo revisa la salida y finaliza el check-out cuando el balance está resuelto. Si
+queda un balance pendiente, se muestra el estado alternativo y se puede registrar el
+pago o la autorización necesaria antes de cerrar la estadía.
+
+#### Goal: Review room availability from a selected date
+
+<img src="assets/chapter-4/web-application-user-flows/12-room-availability.png" alt="User Flow para revisar la disponibilidad de habitaciones desde una fecha" style="width:100%; height:auto;"/>
+
+*Figura 4.63. User Flow para revisar la disponibilidad de habitaciones desde una fecha seleccionada.*
+
+El personal consulta habitaciones usando una fecha seleccionada y revisa el detalle
+de disponibilidad. La condición alternativa indica que una habitación protegida no
+puede modificarse desde ese contexto operativo.
+
+#### Goal: Create a room within an assigned property
+
+<img src="assets/chapter-4/web-application-user-flows/13-room-creation.png" alt="User Flow para crear una habitación dentro de una propiedad asignada" style="width:100%; height:auto;"/>
+
+*Figura 4.64. User Flow para crear una habitación dentro de una propiedad asignada.*
+
+Desde habitaciones se abre el formulario, se registra la información y se vuelve a
+la lista actualizada. Si el número de habitación ya existe, el sistema muestra el
+conflicto y permite corregir el dato antes de crearla.
+
+#### Goal: Review and maintain a room's operational information
+
+<img src="assets/chapter-4/web-application-user-flows/14-room-maintenance.png" alt="User Flow para revisar y mantener información operativa de una habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.65. User Flow para revisar y mantener información operativa de una habitación.*
+
+El flujo abre el detalle de una habitación, permite editar su información operativa y
+regresa a la lista con los cambios guardados. Un estado protegido impide la edición
+cuando la condición operativa no permite modificarla.
+
+#### Goal: Create or update a room type
+
+<img src="assets/chapter-4/web-application-user-flows/15-room-type-management.png" alt="User Flow para crear o actualizar un tipo de habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.66. User Flow para crear o actualizar un tipo de habitación.*
+
+La lista de tipos abre el formulario de creación o actualización y muestra la lista
+con el tipo guardado. Cuando el tipo está en uso, la alternativa comunica las
+restricciones que limitan sus modificaciones.
+
+#### Goal: Define a rate plan and its daily room-type prices
+
+<img src="assets/chapter-4/web-application-user-flows/16-rate-plan-management.png" alt="User Flow para definir un plan tarifario y sus precios diarios" style="width:100%; height:auto;"/>
+
+*Figura 4.67. User Flow para definir un plan tarifario y sus precios diarios.*
+
+El administrador crea el plan tarifario y continúa a la configuración de los precios
+diarios por tipo de habitación. La secuencia termina cuando la matriz de precios
+queda lista para su uso operativo.
+
+#### Goal: Monitor inventory quantities and stock conditions
+
+<img src="assets/chapter-4/web-application-user-flows/17-inventory-monitoring.png" alt="User Flow para monitorear cantidades y condiciones de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.68. User Flow para monitorear cantidades y condiciones de inventario.*
+
+El personal abre inventario, revisa el detalle de un ítem y consulta su condición de
+stock. Cuando la cantidad es insuficiente, el estado alternativo hace visible la
+alerta para que pueda tomarse una acción de reposición.
+
+#### Goal: Create or update an inventory item
+
+<img src="assets/chapter-4/web-application-user-flows/18-inventory-item-management.png" alt="User Flow para crear o actualizar un ítem de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.69. User Flow para crear o actualizar un ítem de inventario.*
+
+La lista de inventario abre el formulario para crear un ítem y permite continuar al
+formulario de actualización de su información. Las dos rutas representan el alta y
+el mantenimiento de los datos del ítem dentro del mismo módulo.
+
+#### Goal: Record a stock adjustment for an inventory item
+
+<img src="assets/chapter-4/web-application-user-flows/19-stock-adjustment.png" alt="User Flow para registrar un ajuste de stock" style="width:100%; height:auto;"/>
+
+*Figura 4.70. User Flow para registrar un ajuste de stock.*
+
+Desde el detalle del ítem se registra el ajuste y se actualiza la cantidad. Si el
+ajuste supera el stock disponible, el sistema muestra la condición de insuficiencia
+y evita confirmar una operación inconsistente.
+
+#### Goal: Create or update an inventory storage location
+
+<img src="assets/chapter-4/web-application-user-flows/20-storage-location-management.png" alt="User Flow para crear o actualizar una ubicación de almacenamiento" style="width:100%; height:auto;"/>
+
+*Figura 4.71. User Flow para crear o actualizar una ubicación de almacenamiento.*
+
+El flujo permite localizar una ubicación, revisar sus detalles y crear una nueva
+ubicación. La eliminación queda bloqueada cuando todavía existen existencias
+asociadas, condición que se muestra como ruta alternativa.
+
+#### Goal: Review and manage an RFID credential
+
+<img src="assets/chapter-4/web-application-user-flows/21-rfid-credential-management.png" alt="User Flow para revisar y administrar una credencial RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.72. User Flow para revisar y administrar una credencial RFID.*
+
+El detalle de la credencial ofrece las acciones de revocar el acceso o reemplazar la
+tarjeta. Las dos rutas representan decisiones operativas distintas ante una
+credencial comprometida, perdida o que requiere renovación.
+
+#### Goal: Encode an RFID key card with an authorized access scope
+
+<img src="assets/chapter-4/web-application-user-flows/22-rfid-key-card-encoding.png" alt="User Flow para codificar una tarjeta RFID con un alcance autorizado" style="width:100%; height:auto;"/>
+
+*Figura 4.73. User Flow para codificar una tarjeta RFID con un alcance autorizado.*
+
+El personal configura el alcance de acceso, inicia la emisión y llega al estado de
+tarjeta codificada. Si el encoder falla, el estado alternativo conserva el contexto
+del proceso y hace visible la necesidad de reintentar o revisar el dispositivo.
+
+#### Goal: Find and review RFID access events
+
+<img src="assets/chapter-4/web-application-user-flows/23-rfid-access-events.png" alt="User Flow para encontrar y revisar eventos de acceso RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.74. User Flow para encontrar y revisar eventos de acceso RFID.*
+
+La lista de eventos permite filtrar los registros y abrir el detalle de un evento
+denegado. La ruta final concentra la evidencia necesaria para revisar el intento de
+acceso y su motivo.
+
+#### Goal: Find and review an operational report for a property and period
+
+<img src="assets/chapter-4/web-application-user-flows/24-operational-report-review.png" alt="User Flow para encontrar y revisar un reporte operativo" style="width:100%; height:auto;"/>
+
+*Figura 4.75. User Flow para encontrar y revisar un reporte operativo para una propiedad y período.*
+
+La biblioteca de reportes conduce al reporte de ocupación y disponibilidad cuando
+existen datos para la propiedad y el período seleccionados. Si el período no contiene
+datos, se presenta un estado vacío en lugar de un resultado engañoso.
+
+#### Goal: Export an operational report for the selected scope
+
+<img src="assets/chapter-4/web-application-user-flows/25-operational-report-export.png" alt="User Flow para exportar un reporte operativo" style="width:100%; height:auto;"/>
+
+*Figura 4.76. User Flow para exportar un reporte operativo para el alcance seleccionado.*
+
+El administrador selecciona el formato de exportación y obtiene la confirmación de
+descarga cuando cuenta con permisos. La ruta alternativa comunica que la exportación
+no está autorizada y evita presentar una operación como completada.
+
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
