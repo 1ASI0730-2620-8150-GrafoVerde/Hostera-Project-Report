@@ -1184,65 +1184,24 @@ Los entregables corresponden a los Epics (EP) definidos en el Product Backlog, l
 | **D6** | API Reliability (EP008) | Generación y exportación de reportes operativos filtrados por propiedad y periodo de tiempo | IM6 |
 | **D7** | API Reliability (EP008) | Estandarización de errores e infraestructura del RESTful API para respuestas consistentes (Technical Stories) | Todos |
 
-## Conexión entre Impacts y Deliverables
-
-La siguiente matriz muestra cómo los Deliverables provocan cada uno de los Impacts esperados:
-
-| Impact | Deliverable Primario | Deliverables Secundarios de Apoyo |
-|---|---|---|
-| IM1: Trabajo con información actualizada en panel único | D1: Panel Centralizado | D2, D3, D9, D10 |
-| IM2: Reduce tiempo de búsqueda | D1: Panel Centralizado | D2, D3, D10 |
-| IM3: Autoriza accesos sin procesos manuales | D6: Integración RFID | D1, D9 |
-| IM4: Adopta Hostera como herramienta principal | D1 + D2 + D3 + D8 + D9 | D10 |
-| IM5: Obtiene visibilidad consolidada multi-sede | D1: Panel Centralizado | D7, D9, D10 |
-| IM6: Coordina inventario entre sedes | D4: Control de Inventario | D7, D9 |
-| IM7: Monitorea trazabilidad RFID | D6: Integración RFID | D1, D7 |
-| IM8: Consulta disponibilidad en tiempo real | D3: Dashboard Disponibilidad | D1, D2, D10 |
-| IM9: Reduce tiempo en check-in/out | D2 + D6: Gestión Reservas + RFID | D1, D3 |
-| IM10: Mantiene inventario visible y actualizado | D4 + D5: Control de Inventario + Alertas | D1, D7 |
-| IM11: Coordina transferencias sin perder trazabilidad | D4: Control de Inventario | D7, D9 |
-| IM12: Autoriza y revoca accesos rápidamente | D6: Integración RFID | D1, D8 |
-
 ## User Stories Derivadas del Impact Mapping
 
-Los Deliverables han sido traducidos en User Stories que forman la base del Product Backlog. A continuación se lista la conexión entre Deliverables y User Stories:
+Las funcionalidades identificadas han sido traducidas a los requerimientos especificados en la sección 3.1. A continuación, se presenta el mapeo de historias representativas y su integración técnica (Technical Stories).
 
-| Deliverable | User Story ID | User Story (Formato estándar) |
+| Deliverable | IDs Relacionados | Historias Representativas (Formato estándar) |
 |---|---|---|
-| D1 | US-001 | Como administrador de hotel independiente, deseo contar con un panel centralizado donde pueda consultar en un solo lugar el estado de reservas, habitaciones, inventario y accesos, para supervisar mi operación sin depender de múltiples registros o herramientas independientes. |
-| D2 | US-002 | Como personal de recepción, deseo crear, editar y consultar reservas en el panel de Hostera, para que los cambios se reflejen instantáneamente en la disponibilidad de habitaciones y evitar conflictos de doble venta. |
-| D3 | US-003 | Como administrador de hotel, deseo visualizar en tiempo real el estado actual de cada habitación (disponible, ocupada, sucia, inspeccionada), para coordinar labores de housekeeping y validar disponibilidad al momento de aceptar reservas. |
-| D4 | US-004 | Como encargado de almacén, deseo registrar entradas, salidas y transferencias de inventario en Hostera, para mantener un historial centralizado de movimientos y facilitar coordinación entre sedes de una cadena. |
-| D5 | US-005 | Como encargado de almacén, deseo recibir alertas automáticas cuando el stock de un producto alcance el nivel mínimo configurado, para solicitar reposición de manera proactiva y evitar quiebres de stock. |
-| D6 | US-006 | Como administrador de hotel, deseo integrar tarjetas y lectores RFID con Hostera, para que cada evento de acceso (entrada/salida) sea registrado automáticamente vinculado con la tarjeta, la habitación y el usuario/huésped, mejorando seguridad y trazabilidad. |
-| D7 | US-007 | Como gerente de operaciones de cadena hotelera, deseo generar reportes de ocupación, inventario y accesos consolidados de todas mis sedes, para identificar patrones, comparar desempeño entre propiedades y tomar decisiones informadas. |
-| D8 | US-008 | Como administrador del sistema, deseo asignar roles y permisos diferenciados a usuarios (Administrador, Gerente Cadena, Recepción, Almacén, Accesos), para asegurar que cada persona solo tenga acceso a la información y funcionalidades correspondientes a su responsabilidad. |
-| D9 | US-009 | Como propietario de un hotel, deseo configurar los datos de mi propiedad en Hostera (nombre, ubicación, cantidad de habitaciones, tipos de habitación, niveles mínimos de inventario), para establecer la base desde la cual la plataforma gestiona mi operación. |
-| D10 | US-010 | Como administrador de hotel, deseo visualizar en el panel un muro o timeline de eventos operativos recientes (nuevas reservas, check-in/out, cambios de disponibilidad, movimientos de inventario, accesos RFID), para mantenerme informado de cambios en tiempo real sin necesidad de navegar por múltiples secciones. |
-
-## Validación del Impact Mapping contra Hipótesis de Lean UX
-
-El Impact Mapping ha sido diseñado para validar las Hypothesis Statements definidas en la sección 1.2.2.3:
-
-- **Hipótesis 1 (Panel centralizado)**: Los Impacts IM1, IM2, IM5 y los Deliverables D1, D2, D3, D10 buscan validar que centralizar información reduce la dependencia de registros independientes.
-
-- **Hipótesis 2 (Gestión de reservas)**: Los Impacts IM2, IM8, IM9 y los Deliverables D2, D3 buscan validar que información actualizada en tiempo real reduce inconsistencias y tiempos de búsqueda.
-- **Hipótesis 3 (Inventario)**: Los Impacts IM10, IM11 y los Deliverables D4, D5, D7 buscan validar que visibilidad de stock mejora seguimiento de existencias.
-- **Hipótesis 4 (RFID)**: Los Impacts IM3, IM7, IM12 y el Deliverable D6 buscan validar que integración RFID mejora trazabilidad de accesos.
-- **Hipótesis 5 (Multi-sede)**: Los Impacts IM5, IM6 y los Deliverables D1, D4, D7, D9 buscan validar que una estructura preparada para una o varias sedes permite crecimiento sin perder contexto de cada propiedad.
+| D1 | US001 - US008 | US003: As an independent hotel administrator, I want a path for one property so that I can identify the entry point intended for my operation. |
+| D2 | US009 - US011 <br/>TS001 - TS004 | US011: As a hotel administrator, I want to monitor current operational information and change the active property so that I can identify conditions that require attention. |
+| D3 | US012 - US023 <br/>TS005 - TS011 | US017: As a front-desk operator, I want to complete guest check-in so that identity, payment, room assignment, and room access are verified before the stay begins. |
+| D4 | US024 - US027 <br/>TS012 - TS013 | US026: As an inventory operator, I want to record stock entering or leaving a storage location so that on-hand quantities and their audit history remain accurate. |
+| D5 | US028 - US030 <br/>TS014 - TS015 | US029: As an authorized operator, I want to encode or replace an RFID key card so that a guest or staff member receives the access authorized for their role. |
+| D6 | US031 - US032 <br/>TS016 | TS016: As a developer, I want to retrieve and export property-scoped operational reports through the API so that clients can analyze consistent results. |
 
 ## Resumen Visual
 
-El Impact Mapping de Hostera ha sido elaborado en la herramienta UXPressia, la cual permite visualizar gráficamente la relación entre los Business Goals, Actors, Impacts y Deliverables. La siguiente imagen captura la estructura general del Impact Map:
+El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la jerarquía completa desde los Business Goals hasta las User Stories establecidas para el producto mínimo viable de Hostera.
 
 [INSERTAR CAPTURA DE PANTALLA DE UXPRESSIA]
-
-La estructura del diagrama sigue el modelo estándar de Impact Mapping:
-- **Centro**: Business Goals (5 objetivos SMART identificados)
-- **Nivel 2**: Actors (5 personas que influencian los BG)
-- **Nivel 3**: Impacts (12 cambios esperados en comportamiento)
-- **Nivel 4**: Deliverables (10 características del producto)
-  Esta representación visual facilita la comunicación interna del equipo y la justificación de decisiones de priorización en el Product Backlog.
 
 <div style="page-break-before: always;"></div>
 
