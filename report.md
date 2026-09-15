@@ -1134,70 +1134,30 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 
 ## 3.2. Impact Mapping
 
-## Introducción
-
-El Impact Mapping es una técnica que conecta los objetivos de negocio con los cambios esperados en el comportamiento de los usuarios (Impacts) y las características del producto (Deliverables) necesarias para lograr esos objetivos. Para Hostera, el Impact Mapping establece la relación entre las metas comerciales del primer año, los actores clave (User Personas de los segmentos objetivo), los comportamientos esperados que deben cambiar y las funcionalidades específicas que provocarán esos cambios.
-
-Esta sección fue elaborada considerando:
-- Los Business Goals identificados para el modelo de negocio de Grafo Verde
-- Los User Personas de los dos segmentos objetivo (hoteles independientes y pequeñas cadenas)
-- Las hipótesis y supuestos validados durante el Lean UX Process
-- Los requisitos preliminares identificados en las entrevistas de needfinding
-- La estrategia competitiva definida para posicionar a Hostera en el mercado peruano
-  El Impact Mapping sirve como guía para la priorización de User Stories en el Product Backlog y para comunicar internamente cómo cada funcionalidad contribuye a los objetivos comerciales de la empresa.
+El Impact Mapping de Hostera conecta las hipótesis estratégicas del modelo de negocio con los cambios de comportamiento esperados en los usuarios y las características del producto digital. Esta sección toma como base los criterios de éxito definidos en el proceso de Lean UX, las definiciones de los segmentos objetivo y los requerimientos funcionales documentados para el Landing Page y la Web Application.
 
 ## Business Goals (SMART)
 
-Los Business Goals representan los objetivos cuantificables que Grafo Verde espera alcanzar en el primer año de operación de Hostera. Cada objetivo ha sido formulado siguiendo el criterio SMART (Specific, Measurable, Attainable, Relevant, Time-bound) para asegurar que sean claros, medibles y alcanzables.
+Los objetivos de negocio reflejan los criterios de éxito ("Success Criteria") establecidos en las Hipótesis de Lean UX para validar la propuesta de valor de Hostera.
 
-| # | Business Goal | Descripción | Métricas de Éxito | Período |
-|---|---|---|---|---|
-| **BG1** | Alcanzar 50 hoteles independientes suscritos al plan Free | Generar base de usuarios iniciales en el segmento de hoteles pequeños (1 propiedad, hasta 10 habitaciones) | 50 hoteles activos con al menos 1 reserva registrada por mes | 6 meses |
-| **BG2** | Lograr que el 80% de usuarios activos completen tareas operativas desde el panel centralizado sin consultar múltiples registros | Demostrar el valor de centralización como propuesta diferenciadora | 80% de sesiones de administrador finalizan sin cambiar de sistema externo | 8 meses |
-| **BG3** | Alcanzar 15 pequeñas cadenas hoteleras suscritas al plan Professional (2-5 sedes) | Expandir a segmento de mayor valor y generar ingresos recurrentes predecibles | 15 cadenas con suscripción activa y operando al menos 2 sedes en la plataforma | 12 meses |
-| **BG4** | Lograr una trazabilidad del 90% en accesos RFID vinculados con habitación y usuario/huésped | Consolidar RFID como capacidad diferenciadora y core de seguridad | 90% de eventos de acceso registrados con relación completa (tarjeta RFID ↔ habitación ↔ usuario) | 8 meses |
-| **BG5** | Reducir el tiempo de búsqueda de información operativa en un 70% respecto a registros manuales | Validar la hipótesis de mejora en productividad del personal hotelero | Tiempo promedio para encontrar estado de reserva/habitación: < 30 segundos (vs. 2 minutos en procesos manuales) | 6 meses |
-
-**Justificación de los objetivos:**
-
-- **BG1** se alinea con la estrategia de entrada gradual mediante demostraciones y validación en usuarios reales del mercado peruano.
-- **BG2** valida la hipótesis central (Hypothesis #1) sobre si la centralización de información efectivamente reduce la dependencia de registros independientes.
-- **BG3** asegura sostenibilidad financiera del modelo de negocio mediante usuarios de mayor valor.
-- **BG4** diferencia a Hostera de competidores que no ofrecen RFID integrado o lo ofrecen como opción personalizada de alto costo.
-- **BG5** proporciona evidencia cuantitativa de retorno de inversión para los usuarios potenciales.
+| # | Business Goal | Descripción y Métricas de Éxito | Epic Relacionado |
+|---|---|---|---|
+| **BG1** | Centralización operativa | Aumentar en al menos 5% las tareas de supervisión completadas desde el panel sin consultar registros adicionales | EP002 |
+| **BG2** | Precisión en reservas y disponibilidad | Reducir en al menos 5% las inconsistencias detectadas entre reservas y disponibilidad de habitaciones | EP003, EP004 |
+| **BG3** | Visibilidad de inventario | Aumentar en al menos 5% los movimientos de inventario registrados y consultables, reduciendo diferencias de stock | EP005 |
+| **BG4** | Trazabilidad RFID | Aumentar en al menos 5% los accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un huésped/usuario | EP006 |
+| **BG5** | Coordinación multi-sede | Aumentar en al menos 5% las tareas de supervisión completadas correctamente en escenarios de varias sedes | EP007 |
+| **BG6** | Adquisición e incorporación | Convertir visitantes en usuarios registrados a través del Landing Page, identificando su escala operativa (hotel independiente o cadena) | EP001 |
 
 ## Actores (Actors)
 
-Los Actors identificados corresponden a los User Personas de los dos segmentos objetivo y otros actores relevantes en el ecosistema de Hostera. Cada actor ha sido mapeado a los Business Goals que pueden influenciar directamente.
+Los actores principales se derivan estrictamente de los segmentos objetivo definidos en la sección 1.3 y los roles base requeridos para la Landing Page. Las tareas del personal operativo (recepción, almacén) se consideran acciones subordinadas a la coordinación de estos responsables
 
-| # | Actor | Descripción | Segmento | Relación con BG |
-|---|---|---|---|---|
-| **A1** | Administrador/Propietario de Hotel Independiente | Persona responsable de supervisar operaciones completas de un hotel de una sola sede (hasta 10 habitaciones). Participa en decisiones administrativas, controla múltiples áreas y requiere visión consolidada. | Hoteles Independientes | BG1, BG2, BG4, BG5 |
-| **A2** | Gerente de Operaciones de Pequeña Cadena Hotelera | Persona responsable de coordinar operaciones de 2 a 5 sedes hoteleras. Necesita visibilidad consolidada sin perder contexto de cada propiedad. | Pequeñas Cadenas | BG3, BG2, BG4, BG5 |
-| **A3** | Personal de Recepción | Usuario operativo que realiza check-in, check-out, confirmación de reservas y autorización de accesos. Requiere información actualizada en tiempo real. | Ambos Segmentos | BG2, BG5 |
-| **A4** | Encargado de Almacén/Inventario | Usuario operativo responsable de gestionar existencias, registrar movimientos y coordinar reposiciones. Requiere visibilidad de stock y alertas de niveles críticos. | Ambos Segmentos | BG2, BG3, BG5 |
-| **A5** | Personal Autorizado para Gestión de Accesos | Usuario que configura y autoriza tarjetas RFID, revisa historial de accesos y maneja revocaciones. Responsable de seguridad física del establecimiento. | Ambos Segmentos | BG4 |
- 
----
+- **A1 - Administrador de Hotel Independiente:** Propietario o administrador que supervisa la operación diaria de una sola sede (hasta 10 habitaciones). Requiere consultar información actualizada sin depender de sistemas separados.
+- **A2 - Gerente de Operaciones de Cadena:** Responsable de coordinar dos o más sedes de una cadena pequeña (2 a 5 locaciones). Necesita comparar información entre establecimientos manteniendo separados los datos de cada sede.
+- **A3 - Visitante:** Usuario que explora la Landing Page para comprender la propuesta de valor, comparar planes y encontrar la ruta adecuada para su escala operativa.
 
-## Impacts (Cambios en el Comportamiento de los Actores)
 
-Los Impacts describen cómo esperamos que cambien o se comporten los Actors como resultado de usar Hostera. Cada Impact está formulado como un cambio observable y medible.
-
-| # | Actor | Impact (¿Cómo deben cambiar?) | Métrica Asociada | BG |
-|---|---|---|---|---|
-| **IM1** | A1: Administrador Independiente | Trabaja con información actualizada en un único panel, sin necesidad de consultar múltiples registros o herramientas independientes | % de tareas completas desde el panel de Hostera: ≥ 80% | BG2 |
-| **IM2** | A1: Administrador Independiente | Reduce significativamente el tiempo dedicado a verificar y conciliar información de diferentes fuentes | Tiempo de búsqueda de estado de reserva/habitación: < 30 segundos | BG5 |
-| **IM3** | A1: Administrador Independiente | Autoriza y controla accesos de huéspedes y personal sin depender de procesos manuales con tarjetas físicas o registros en papel | 100% de eventos de acceso registrados automáticamente en el sistema; cero accesos no registrados | BG4 |
-| **IM4** | A1: Administrador Independiente | Adopta Hostera como herramienta principal para operación diaria, permitiendo a Grafo Verde alcanzar la base de usuarios inicial | Adopción activa: ≥ 50 hoteles con al menos 1 operación por mes | BG1 |
-| **IM5** | A2: Gerente Pequeña Cadena | Obtiene visibilidad consolidada de todas sus sedes en un único dashboard, identificando rápidamente diferencias, inconsistencias y oportunidades | Dashboard con datos consolidados accesible en < 5 segundos; información actualizada cada 60 segundos | BG3 |
-| **IM6** | A2: Gerente Pequeña Cadena | Coordina inventario entre múltiples ubicaciones sin necesidad de comunicaciones manuales o inconsistencias por desfase | Sincronización automática de movimientos de inventario entre sedes; exactitud de registros ≥ 95% | BG3 |
-| **IM7** | A2: Gerente Pequeña Cadena | Monitorea trazabilidad de accesos RFID vinculados correctamente con habitaciones y usuarios, mejorando seguridad y cumplimiento | 90% de eventos de acceso con relación completa (tarjeta RFID ↔ habitación ↔ usuario); 0 accesos sin registro | BG4 |
-| **IM8** | A3: Personal de Recepción | Consulta disponibilidad de habitaciones en tiempo real, reduciendo riesgo de overbooking y mejorando precisión en asignaciones | Tasa de overbooking: 0% por información desactualizada; confirmación de disponibilidad: < 10 segundos | BG2, BG5 |
-| **IM9** | A3: Personal de Recepción | Reduce tiempo en procesos de check-in y check-out al integrar autorización de acceso RFID en el mismo panel | Duración de check-in/out: < 2 minutos (vs. 5+ minutos con tarjetas manuales) | BG5 |
-| **IM10** | A4: Encargado Almacén | Mantiene inventario visible y actualizado en tiempo real, facilitando identificación de niveles críticos y reposición proactiva | Acceso real-time a stock de todas las sedes; recibe alertas automáticas cuando inventario alcanza nivel mínimo | BG2, BG3 |
-| **IM11** | A4: Encargado Almacén | Coordina transferencias de inventario entre sedes sin perder trazabilidad de movimientos | 100% de movimientos de inventario registrados y consultables; historial completo por ítem y sede | BG3 |
-| **IM12** | A5: Personal Accesos | Autoriza y revoca accesos de forma rápida y trazable, mejorando respuesta a cambios operativos (check-out anticipado, cancelación de reserva) | Autorización de nueva tarjeta: < 30 segundos; revocación efectiva: inmediata; historial completo de cambios | BG4 |
 
 ## Deliverables (Características del Producto)
 
