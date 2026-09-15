@@ -1998,6 +1998,200 @@ cambiar de contexto sin perder la orientación dentro de la aplicación.
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+Los Web Application Wireflows representan las rutas principales de interacción de
+Hostera a partir de los User Goals definidos para la Web Application. Cada Wireflow
+considera el User Persona correspondiente, utiliza los Wireframes de las pantallas
+como estados del flujo y agrega un nuevo estado cuando una interacción modifica el
+contenido o la condición de la pantalla. Los estados de validación, ausencia de
+resultados, restricciones y errores se muestran como pasos alternativos dentro del
+recorrido correspondiente.
+
+Los diagramas fueron elaborados en FigJam utilizando las pantallas diseñadas en el
+archivo de Paper `Grafo-verde`. El board editable con los 25 Wireflows se encuentra
+disponible en [Hostera — Web Application Wireflows](https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7).
+
+#### Objetivos de usuario y recorridos especificados
+
+| User Goal | User Persona | Recorrido representado |
+| :--- | :--- | :--- |
+| Create an account with an initial property. | Independent hotel administrator / small-chain operations manager | Sign up → validation errors when the registration data is incomplete or invalid. |
+| Sign in with an authorized work account. | Authorized hotel operator | Login → invalid credentials state when authentication fails. |
+| Monitor current operations for an assigned property. | Hotel administrator / operations manager | Dashboard → property selection → operational search results → no results or partial-data state. |
+| Navigate to another authorized operational area. | Authorized hotel operator | Dashboard context → restricted navigation state that preserves the active property scope. |
+| Find and review a reservation. | Front-desk operator / hotel administrator | Reservations list → empty result state when no reservation matches the criteria. |
+| Create a reservation for an available room. | Front-desk operator | Create reservation → validation errors or invalid-period state when the requested stay cannot be recorded. |
+| Review and update an existing reservation. | Front-desk operator | Reservation detail → edit reservation → availability-conflict state when the proposed change is not valid. |
+| Update a reservation according to its pre-arrival outcome. | Front-desk operator | Pending reservation → status actions → confirmation, no-show, or cancelled state. |
+| Record a payment received for a reservation. | Front-desk operator | Record payment → invalid-amount state when the payment cannot be accepted. |
+| Complete guest check-in for a confirmed reservation. | Front-desk operator | Verify guest → payment → encode key card → encoded card → completed check-in, with an unresolved-identity alternative. |
+| Complete guest check-out for an occupied room. | Front-desk operator | Checked-in reservation → check-out review → completed check-out, with an unresolved-balance alternative. |
+| Review room availability from a selected date. | Front-desk operator / hotel administrator | Rooms list → room detail with the selected-date monthly availability view. |
+| Create a room within an assigned property. | Hotel administrator | Rooms list → new-room drawer → duplicate-number validation state. |
+| Review and maintain a room's operational information. | Hotel administrator / operations manager | Room availability context → room detail → edit room state. |
+| Create or update a room type. | Hotel administrator | Room types list → new room type → edit-in-use type state. |
+| Define a rate plan and its daily room-type prices. | Hotel administrator / operations manager | Rates list → new rate plan → daily rate configuration. |
+| Monitor inventory quantities and stock conditions. | Inventory operator / hotel administrator | Inventory overview with current quantities and stock conditions. |
+| Create or update an inventory item. | Inventory operator | Item detail → add item or edit item drawer. |
+| Record a stock adjustment for an inventory item. | Inventory operator | Item detail → adjust stock drawer → insufficient-stock state when the adjustment is not allowed. |
+| Create or update an inventory storage location. | Hotel administrator / inventory operator | Storage locations → location detail → add or edit location → removal-blocked state when the location is in use. |
+| Review and manage an RFID credential. | Hotel administrator / authorized front-desk operator | Access control → credential detail → revoke or replace card. |
+| Encode an RFID key card with an authorized access scope. | Authorized front-desk operator | Issue staff credential → encoding reference → encoding-failed state when the device operation is unsuccessful. |
+| Find and review RFID access events. | Hotel administrator / security-authorized operator | Access events → denied-event detail for investigation. |
+| Find and review an operational report for a property and period. | Hotel administrator / operations manager | Reports library → occupancy and availability report → empty-period state. |
+| Export an operational report for the selected scope. | Hotel administrator / operations manager | Occupancy report → export options → completed export or unauthorized-export state. |
+
+#### Wireflow diagrams
+
+**User goal: Create an account with an initial property.**
+
+<img src="assets/chapter-4/web-application-wireflow-01-account-registration.png" alt="Wireflow de creación de una cuenta y propiedad inicial" style="width:100%; height:auto;"/>
+
+*Figura 4.11. Wireflow para crear una cuenta con una propiedad inicial.*
+
+**User goal: Sign in with an authorized work account.**
+
+<img src="assets/chapter-4/web-application-wireflow-02-authentication.png" alt="Wireflow de inicio de sesión autorizado" style="width:100%; height:auto;"/>
+
+*Figura 4.12. Wireflow para iniciar sesión con una cuenta de trabajo autorizada.*
+
+**User goal: Monitor current operations for an assigned property.**
+
+<img src="assets/chapter-4/web-application-wireflow-03-operational-overview.png" alt="Wireflow de monitoreo de operaciones de una propiedad" style="width:100%; height:auto;"/>
+
+*Figura 4.13. Wireflow para monitorear las operaciones de una propiedad asignada.*
+
+**User goal: Navigate to another authorized operational area.**
+
+<img src="assets/chapter-4/web-application-wireflow-04-operational-navigation.png" alt="Wireflow de navegación entre áreas operativas autorizadas" style="width:100%; height:auto;"/>
+
+*Figura 4.14. Wireflow para navegar a otra área operativa autorizada.*
+
+**User goal: Find and review a reservation.**
+
+<img src="assets/chapter-4/web-application-wireflow-05-reservation-review.png" alt="Wireflow de búsqueda y revisión de una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.15. Wireflow para encontrar y revisar una reserva.*
+
+**User goal: Create a reservation for an available room.**
+
+<img src="assets/chapter-4/web-application-wireflow-06-reservation-creation.png" alt="Wireflow de creación de una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.16. Wireflow para crear una reserva de habitación disponible.*
+
+**User goal: Review and update an existing reservation.**
+
+<img src="assets/chapter-4/web-application-wireflow-07-reservation-update.png" alt="Wireflow de actualización de una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.17. Wireflow para revisar y actualizar una reserva existente.*
+
+**User goal: Update a reservation according to its pre-arrival outcome.**
+
+<img src="assets/chapter-4/web-application-wireflow-08-reservation-lifecycle.png" alt="Wireflow de resultado previo a la llegada" style="width:100%; height:auto;"/>
+
+*Figura 4.18. Wireflow para actualizar una reserva según el resultado previo a la llegada.*
+
+**User goal: Record a payment received for a reservation.**
+
+<img src="assets/chapter-4/web-application-wireflow-09-reservation-payment.png" alt="Wireflow de registro de pago" style="width:100%; height:auto;"/>
+
+*Figura 4.19. Wireflow para registrar un pago de reserva.*
+
+**User goal: Complete guest check-in for a confirmed reservation.**
+
+<img src="assets/chapter-4/web-application-wireflow-10-guest-check-in.png" alt="Wireflow de check-in" style="width:100%; height:auto;"/>
+
+*Figura 4.20. Wireflow para completar el check-in de un huésped.*
+
+**User goal: Complete guest check-out for an occupied room.**
+
+<img src="assets/chapter-4/web-application-wireflow-11-guest-check-out.png" alt="Wireflow de check-out" style="width:100%; height:auto;"/>
+
+*Figura 4.21. Wireflow para completar el check-out de una habitación ocupada.*
+
+**User goal: Review room availability from a selected date.**
+
+<img src="assets/chapter-4/web-application-wireflow-12-room-availability.png" alt="Wireflow de disponibilidad de habitaciones" style="width:100%; height:auto;"/>
+
+*Figura 4.22. Wireflow para revisar disponibilidad desde una fecha seleccionada.*
+
+**User goal: Create a room within an assigned property.**
+
+<img src="assets/chapter-4/web-application-wireflow-13-room-creation.png" alt="Wireflow de creación de habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.23. Wireflow para crear una habitación dentro de una propiedad asignada.*
+
+**User goal: Review and maintain a room's operational information.**
+
+<img src="assets/chapter-4/web-application-wireflow-14-room-maintenance.png" alt="Wireflow de mantenimiento de información de habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.24. Wireflow para revisar y mantener información operativa de una habitación.*
+
+**User goal: Create or update a room type.**
+
+<img src="assets/chapter-4/web-application-wireflow-15-room-type-management.png" alt="Wireflow de gestión de tipo de habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.25. Wireflow para crear o actualizar un tipo de habitación.*
+
+**User goal: Define a rate plan and its daily room-type prices.**
+
+<img src="assets/chapter-4/web-application-wireflow-16-rate-plan-management.png" alt="Wireflow de configuración de plan tarifario" style="width:100%; height:auto;"/>
+
+*Figura 4.26. Wireflow para definir un plan tarifario y precios diarios.*
+
+**User goal: Monitor inventory quantities and stock conditions.**
+
+<img src="assets/chapter-4/web-application-wireflow-17-inventory-monitoring.png" alt="Wireflow de monitoreo de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.27. Wireflow para monitorear cantidades y condiciones de inventario.*
+
+**User goal: Create or update an inventory item.**
+
+<img src="assets/chapter-4/web-application-wireflow-18-inventory-item-management.png" alt="Wireflow de gestión de ítem de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.28. Wireflow para crear o actualizar un ítem de inventario.*
+
+**User goal: Record a stock adjustment for an inventory item.**
+
+<img src="assets/chapter-4/web-application-wireflow-19-stock-adjustment.png" alt="Wireflow de ajuste de stock" style="width:100%; height:auto;"/>
+
+*Figura 4.29. Wireflow para registrar un ajuste de stock.*
+
+**User goal: Create or update an inventory storage location.**
+
+<img src="assets/chapter-4/web-application-wireflow-20-storage-location-management.png" alt="Wireflow de gestión de ubicación de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.30. Wireflow para crear o actualizar una ubicación de almacenamiento.*
+
+**User goal: Review and manage an RFID credential.**
+
+<img src="assets/chapter-4/web-application-wireflow-21-rfid-credential-management.png" alt="Wireflow de gestión de credencial RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.31. Wireflow para revisar y gestionar una credencial RFID.*
+
+**User goal: Encode an RFID key card with an authorized access scope.**
+
+<img src="assets/chapter-4/web-application-wireflow-22-rfid-card-encoding.png" alt="Wireflow de codificación de tarjeta RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.32. Wireflow para codificar una tarjeta RFID con alcance autorizado.*
+
+**User goal: Find and review RFID access events.**
+
+<img src="assets/chapter-4/web-application-wireflow-23-rfid-event-review.png" alt="Wireflow de revisión de eventos RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.33. Wireflow para encontrar y revisar eventos de acceso RFID.*
+
+**User goal: Find and review an operational report for a property and period.**
+
+<img src="assets/chapter-4/web-application-wireflow-24-operational-report-review.png" alt="Wireflow de revisión de reporte operativo" style="width:100%; height:auto;"/>
+
+*Figura 4.34. Wireflow para encontrar y revisar un reporte operativo.*
+
+**User goal: Export an operational report for the selected scope.**
+
+<img src="assets/chapter-4/web-application-wireflow-25-operational-report-export.png" alt="Wireflow de exportación de reporte operativo" style="width:100%; height:auto;"/>
+
+*Figura 4.35. Wireflow para exportar un reporte operativo del alcance seleccionado.*
+
 ### 4.4.3. Web Applications Mock-ups
 
 ### 4.4.4. Web Applications User Flow Diagrams
