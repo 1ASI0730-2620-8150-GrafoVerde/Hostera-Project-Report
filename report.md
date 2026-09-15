@@ -1157,24 +1157,32 @@ Los actores principales se derivan estrictamente de los segmentos objetivo defin
 - **A2 - Gerente de Operaciones de Cadena:** Responsable de coordinar dos o más sedes de una cadena pequeña (2 a 5 locaciones). Necesita comparar información entre establecimientos manteniendo separados los datos de cada sede.
 - **A3 - Visitante:** Usuario que explora la Landing Page para comprender la propuesta de valor, comparar planes y encontrar la ruta adecuada para su escala operativa.
 
+## Impacts (Cambios en el Comportamiento de los Actores)
 
+Los Impacts describen cómo esperamos que cambien o se comporten los Actors como resultado de usar Hostera. Cada Impact está formulado como un cambio observable y medible.
+
+| # | Actor | Impact (¿Cómo deben cambiar?) | BG |
+|---|---|---|---|
+| **IM1** | A3 | Explora la propuesta de valor en el Landing Page, diferencia los planes y se registra en la plataforma | BG6 |
+| **IM2** | A1, A2 | Inicia sesión y monitorea la operación diaria desde un overview unificado en lugar de usar registros separados | BG1 |
+| **IM3** | A1, A2 | Gestiona el ciclo de vida de las reservas (check-in/check-out) afectando automáticamente la disponibilidad de habitaciones | BG2 |
+| **IM4** | A1, A2 | Registra entradas y salidas de existencias en el almacén mediante ajustes de stock auditables | BG3 |
+| **IM5** | A1, A2 | Codifica credenciales RFID, asocia accesos a las habitaciones y revisa los eventos denegados o concedidos | BG4 |
+| **IM6** | A2 | Navega entre propiedades asignadas y genera reportes consolidados por sede sin mezclar información | BG5 |
 
 ## Deliverables (Características del Producto)
 
-Los Deliverables son las características específicas de Hostera que se requiere implementar para provocar los Impacts esperados. Cada Deliverable ha sido diseñado para direccionar uno o más Impacts.
+Los entregables corresponden a los Epics (EP) definidos en el Product Backlog, los cuales agrupan las User Stories y Technical Stories necesarias para provocar los impactos.
 
-| # | Deliverable | Descripción Funcional | Impacta a | BG | Prioridad MVP |
-|---|---|---|---|---|---|
-| **D1** | Panel Administrativo Centralizado | Un único espacio donde administradores y responsables de operación pueden consultar en tiempo real: estado de reservas, disponibilidad de habitaciones, niveles de inventario y eventos de acceso RFID. Interfaz adaptable a Desktop y dispositivos móviles. | IM1, IM2, IM5 | BG2, BG5 | Alta |
-| **D2** | Gestión de Reservas en Tiempo Real | Funcionalidades para crear, editar, consultar y actualizar reservas. Cambios son reflejados instantáneamente en disponibilidad de habitaciones. Soporte para estados de reserva (pendiente, confirmada, completada, cancelada). | IM1, IM2, IM8 | BG2, BG5 | Alta |
-| **D3** | Dashboard de Disponibilidad de Habitaciones | Vista clara y actualizada del estado de cada habitación (disponible, ocupada, sucia, inspeccionada, bloqueada). Filtros por tipo de habitación y período. Reflejación inmediata de cambios de estado. | IM1, IM2, IM8 | BG2, BG5 | Alta |
-| **D4** | Sistema de Control de Inventario | Registro centralizado de ítems de almacén. Funcionalidades para registrar entradas, salidas, transferencias entre sedes y ajustes. Visualización de stock actual por sede y totales. Historial de movimientos. | IM10, IM11 | BG2, BG3 | Media |
-| **D5** | Alertas de Inventario Crítico | Sistema automático de notificaciones cuando el stock de un ítem alcanza el nivel mínimo configurado. Alertas visibles en dashboard y enviadas a correo/SMS según configuración. | IM10 | BG3 | Media |
-| **D6** | Integración RFID y Registro de Accesos | Conexión con tarjetas y lectores RFID. Vinculación de tarjetas con habitaciones, huéspedes y personal autorizado. Registro automático de eventos de acceso (entrada/salida) con timestamp y ubicación. Historial completo de accesos. | IM3, IM7, IM12 | BG4 | Alta |
-| **D7** | Reportes por Sede y Consolidados | Funcionalidad para generar reportes de: ocupación, ADR (Average Daily Rate), RevPAR, movimientos de inventario, eventos de acceso. Reportes filtrados por período, propiedad, o consolidados. Exportación a PDF/Excel. | IM5, IM6 | BG3 | Media |
-| **D8** | Roles y Permisos Diferenciados | Sistema de control de acceso basado en roles. Roles: Administrador, Gerente Cadena, Personal Recepción, Encargado Almacén, Personal Accesos. Cada rol ve solo información relevante y puede ejecutar acciones asignadas a su función. | IM1, IM5 | BG2, BG3 | Alta |
-| **D9** | Perfil de Usuario y Configuración de Propiedades | Funcionalidades para que administradores configuren datos de su(s) propiedad(es): nombre, ubicación, cantidad de habitaciones, tipos de habitación, niveles mínimos de inventario, configuración de RFID. Posibilidad de cambiar entre propiedades en una cadena. | IM1, IM5 | BG1, BG3 | Alta |
-| **D10** | Visualización en Tiempo Real de Eventos | Muro o timeline de eventos operativos recientes: nuevas reservas, check-in/out, cambios de estado de habitación, movimientos de inventario, accesos RFID. Actualización automática cada 30-60 segundos. | IM1, IM2, IM8 | BG2, BG5 | Media |
+| # | Deliverable | Descripción Funcional | Impactos |
+|---|---|---|---|
+| **D1** | Landing Page Experience (EP001) | Portal con navegación clara, propuesta de valor, selección de planes e inicio de registro para hoteles y cadenas | IM1 |
+| **D2** | Account Access & Overview (EP002) | Autenticación, selección de propiedad y un dashboard administrativo para monitorear el estado actual del hotel | IM2 |
+| **D3** | Reservation & Room Management (EP003, EP004) | Módulos para gestionar disponibilidad, tarifas y el ciclo de la reserva desde la creación hasta el check-out | IM3 |
+| **D4** | Inventory Management (EP005) | Control de artículos, ubicaciones de almacenamiento y registro inmutable de ajustes de stock | IM4 |
+| **D5** | RFID Access Control (EP006) | Integración para codificar, reemplazar y revocar tarjetas RFID, y auditoría de eventos de acceso | IM5 |
+| **D6** | API Reliability (EP008) | Generación y exportación de reportes operativos filtrados por propiedad y periodo de tiempo | IM6 |
+| **D7** | API Reliability (EP008) | Estandarización de errores e infraestructura del RESTful API para respuestas consistentes (Technical Stories) | Todos |
 
 ## Conexión entre Impacts y Deliverables
 
