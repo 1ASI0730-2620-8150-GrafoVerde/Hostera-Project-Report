@@ -1008,6 +1008,51 @@ información y el control de las diferencias entre establecimientos.
 ### 2.3.1. User Personas
 
 ### 2.3.2. User Task Matrix
+En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
+
+Cabe destacar que las tareas analizadas corresponden a las actividades operativas y administrativas reales que Steven lleva a cabo en el hotel para mantener la continuidad del negocio, independientemente de la existencia de la solución de software.
+
+### User Task Matrix — Segmento 1: Steven Huarcaya
+
+| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
+| :--- | :---: | :---: |
+| **Supervisar el estado y la disponibilidad diaria de habitaciones** | Alta *(Diaria)* | Crítica |
+| **Controlar la asignación y entrega de llaves o accesos a los huéspedes** | Alta *(Diaria)* | Crítica |
+| **Verificar el stock e inventario de insumos del almacén** | Media *(Semanal)* | Alta |
+| **Atender o resolver incidencias operativas y sobreventas en recepción** | Media *(Frecuente)* | Crítica |
+| **Registrar y auditar las entradas y salidas del personal autorizado** | Media *(Semanal)* | Alta |
+| **Revisar reportes de costos e insumos consumidos en la operación** | Baja *(Mensual)* | Media |
+
+---
+
+### Análisis del User Task Matrix
+
+* **Tareas de mayor frecuencia e importancia:** Las actividades críticas en el día a día de Steven son la **supervisión de la disponibilidad de habitaciones** y el **control de entrega de accesos**. Al ser el responsable directo de la única sede del hotel, coordinar la recepción en tiempo real es vital para evitar cruces de reservas, demoras en el check-in o reclamos de los huéspedes.
+* **Tareas de gestión y control:** La **verificación del inventario de almacén** y el **registro de accesos del personal** representan tareas de frecuencia media pero de importancia alta. Son fundamentales para prevenir fugas de stock (ropa de cama, artículos de aseo) y mantener el control de seguridad física en las instalaciones.
+* **Tareas de consolidación:** La revisión de reportes consolidados de insumos y costos se realiza con menor frecuencia (mensual o quincenal), pues el foco principal del administrador de una sola sede está volcado a la operatividad inmediata y la atención de incidencias diarias.
+---
+En esta sección se presenta el User Task Matrix correspondiente al **Segmento 2: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**, representado por la User Persona **Anyeli Cárdenas**.
+
+Las tareas identificadas reflejan las actividades estratégicas y de supervisión multisede que Anyeli realiza de forma independiente a la herramienta tecnológica utilizada, enfocándose en la coordinación operativa, el control de recursos y la toma de decisiones.
+
+### User Task Matrix — Segmento 2: Anyeli Cárdenas
+
+| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
+| :--- | :---: | :---: |
+| **Monitorear y consolidar la ocupación y reservas entre múltiples sedes** | Alta *(Diaria)* | Crítica |
+| **Comparar e identificar discrepancias en el inventario de almacén por sede** | Media *(Semanal)* | Alta |
+| **Auditar el cumplimiento de políticas de acceso e incidencias de seguridad física** | Media *(Semanal)* | Alta |
+| **Coordinar la redistribución de insumos y recursos operativos entre establecimientos** | Media *(Quincenal)* | Media |
+| **Evaluar indicadores operativos globales para la toma de decisiones estratégicas** | Baja *(Mensual)* | Crítica |
+| **Supervisar directamente la asignación puntual de habitaciones o entregas de accesos** | Baja *(Ocasional)* | Baja |
+
+---
+
+### Análisis del User Task Matrix
+
+* **Tareas de mayor frecuencia e importancia:** La tarea central de Anyeli es el **monitoreo consolidado de ocupación y reservas**. Al gestionar varias sedes en distintas ubicaciones, necesita comprobar a diario la disponibilidad global para maximizar las ventas y evitar fallos de coordinación entre los equipos de cada establecimiento.
+* **Tareas de control e indicadores estratégicos:** La **comparación de inventarios entre sedes** y la **evaluación mensual de indicadores de rendimiento** tienen una alta importancia estratégica. Permiten identificar qué hotel está consumiendo más recursos o detectar pérdidas imprevistas antes de que afecten la rentabilidad global.
+* **Tareas de baja frecuencia:** A diferencia del administrador de una sola sede, Anyeli realiza de forma muy ocasional la **supervisión directa de entrega de accesos o habitaciones**, ya que estas actividades son delegadas al personal operativo y administradores locales de cada hotel.
 
 ### 2.3.3. User Journey Mapping
 
