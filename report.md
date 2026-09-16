@@ -1083,7 +1083,7 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 | EP008 | API Reliability and Integration | Consistent API errors and other cross-cutting integration behavior shared by the product capabilities. | **Scenario: Process an API request consistently**<br>**Given** a client sends a supported or invalid request to the API<br>**When** the API processes the request<br>**Then** it returns a predictable response with the appropriate result or standardized error information. | — |
 | US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether the Landing Page is relevant to my hotel. | **Scenario: The hero states the product proposition**<br>**Given** the visitor opens the Landing Page<br>**When** the visitor reads the hero section<br>**Then** the page presents the message “HOTEL OPERATIONS, CONNECTED” and the proposition “Run your whole hotel operation from one place.”<br><br>**Scenario: The hero names the covered operational areas**<br>**Given** the visitor is reading the hero description<br>**When** the visitor reviews the supporting text<br>**Then** the page identifies reservations, rooms, inventory, and access across every property.<br><br>**Scenario: The hero CTA opens the Free experience entry point**<br>**Given** the visitor is viewing the hero section<br>**When** the visitor selects “Start for free”<br>**Then** the page takes the visitor to the entry point for starting the Free experience.<br><br>**Scenario: The dashboard preview summarizes hotel operations**<br>**Given** the visitor is viewing the dashboard preview in the hero section<br>**When** the visitor reviews the preview<br>**Then** the Landing Page presents an informational overview of reservations, room status, inventory, and access rather than an interactive dashboard.<br><br>**Scenario: The page explains the problem and solution**<br>**Given** the visitor continues through the Landing Page<br>**When** the visitor reaches the problem-and-solution section<br>**Then** the page explains that hotel operations break when information is kept in different places and presents Hostera as connecting reservations, rooms, inventory, and guest access. | EP001 |
 | US002 | Navigate the Landing Page sections and footer | As a visitor, I want clearly labeled navigation, so that I can find the Landing Page content and understand the available next steps. | **Scenario: The header exposes the primary navigation labels**<br>**Given** the visitor is at the top of the English Landing Page<br>**When** the visitor reviews the header<br>**Then** the page exposes the labels “Solutions”, “Features”, “Pricing”, “Product”, and “About”, together with the “EN / ES” language control and the “Start for free” CTA.<br><br>**Scenario: The footer exposes the secondary navigation and legal entry**<br>**Given** the visitor reaches the footer<br>**When** the visitor reviews the available links and labels<br>**Then** the page exposes “Solutions”, “Benefits”, “Pricing”, “Product”, “About”, “Support”, “Terms and Conditions”, and an “EN / ES” language control.<br><br>**Scenario: The footer identifies the publisher**<br>**Given** the visitor reviews the footer<br>**When** the visitor reads the supporting information<br>**Then** the page identifies Hostera with the statement “Hotel operations, connected.” and shows the copyright notice for Grafo Verde.<br><br>**Scenario: Header navigation takes the visitor to the selected section**<br>**Given** the visitor is viewing the Landing Page<br>**When** the visitor selects “Solutions”, “Features”, “Pricing”, “Product”, or “About” in the header<br>**Then** the page takes the visitor to the corresponding Landing Page section.<br><br>**Scenario: Footer navigation takes the visitor to the selected destination**<br>**Given** the visitor is viewing the footer<br>**When** the visitor selects “Solutions”, “Benefits”, “Pricing”, “Product”, “About”, or “Support”<br>**Then** the page takes the visitor to the corresponding Landing Page section.<br><br>**Scenario: The legal link opens the terms content**<br>**Given** the visitor is viewing the footer<br>**When** the visitor selects “Terms and Conditions”<br>**Then** the page opens the service terms content. | EP001 |
-| US003 | Find the independent-hotel path | As an independent hotel administrator or owner, I want a path for one property with up to 10 rooms, so that I can identify the entry point intended for my operation. | **Scenario: The independent-hotel pathway is distinct**<br>**Given** the visitor operates one independent hotel with up to 10 rooms<br>**When** the visitor reaches the target-segments section<br>**Then** the page presents “1 PROPERTY · UP TO 10 ROOMS”, the title “Independent hotel”, and a description about starting with reservations, availability, and room operations in one place.<br><br>**Scenario: The independent-hotel CTA is visible**<br>**Given** the independent-hotel pathway is visible<br>**When** the visitor looks for the next action<br>**Then** the page presents the “Start for free” CTA for that pathway.<br><br>**Scenario: The free-plan content supports the independent-hotel path**<br>**Given** the visitor evaluates the Free plan<br>**When** the visitor reads its plan details<br>**Then** the page states that the plan is for one property with up to 10 rooms and lists basic reservations and availability, warehouse without automatic alerts, one simulated RFID reader, one administrator, and community and documentation support.<br><br>**Scenario: The independent-hotel CTA opens the appropriate entry point**<br>**Given** the visitor is viewing the independent-hotel pathway<br>**When** the visitor selects “Start for free”<br>**Then** the page takes the visitor to the entry point for starting the Free experience for an independent hotel. | EP001 |
+| US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera pathway for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue to the appropriate entry point. | **Scenario: The independent-hotel pathway is distinct**<br>**Given** the visitor operates one independent hotel with up to 10 rooms<br>**When** the visitor reaches the target-segments section<br>**Then** the page presents “1 PROPERTY · UP TO 10 ROOMS”, the title “Independent hotel”, and a description about starting with reservations, availability, and room operations in one place.<br><br>**Scenario: The independent-hotel CTA is visible**<br>**Given** the independent-hotel pathway is visible<br>**When** the visitor looks for the next action<br>**Then** the page presents the “Start for free” CTA for that pathway.<br><br>**Scenario: The free-plan content supports the independent-hotel path**<br>**Given** the visitor evaluates the Free plan<br>**When** the visitor reads its plan details<br>**Then** the page states that the plan is for one property with up to 10 rooms and lists basic reservations and availability, warehouse without automatic alerts, one simulated RFID reader, one administrator, and community and documentation support.<br><br>**Scenario: The independent-hotel CTA opens the appropriate entry point**<br>**Given** the visitor is viewing the independent-hotel pathway<br>**When** the visitor selects “Start for free”<br>**Then** the page takes the visitor to the entry point for starting the Free experience for an independent hotel. | EP001 |
 | US004 | Find the small-chain path | As a small-chain hotel operations manager, I want a path for coordinating 2 to 5 locations, so that I can identify the plan and next step intended for a multi-property operation. | **Scenario: The small-chain pathway is distinct**<br>**Given** the visitor is responsible for a small chain with 2 to 5 locations<br>**When** the visitor reaches the target-segments section<br>**Then** the page presents “2-5 LOCATIONS”, the title “Small hotel chain”, and a description about coordinating rooms, stock, and reports across every property.<br><br>**Scenario: The small-chain CTA identifies the Professional path**<br>**Given** the small-chain pathway is visible<br>**When** the visitor looks for the next action<br>**Then** the page presents the “Explore Professional” CTA.<br><br>**Scenario: The Professional plan content supports the small-chain path**<br>**Given** the visitor evaluates the Professional plan<br>**When** the visitor reads its plan details<br>**Then** the page states that the plan is for hotel chains with 2 to 5 locations and lists unlimited rooms across locations, automatic critical-stock alerts, up to 25 RFID readers, reports by location, five administrators with roles, and priority chat and email support.<br><br>**Scenario: The small-chain CTA opens the appropriate entry point**<br>**Given** the visitor is viewing the small-chain pathway<br>**When** the visitor selects “Explore Professional”<br>**Then** the page takes the visitor to the entry point for evaluating the Professional experience for a small hotel chain. | EP001 |
 | US005 | Understand the product benefits and operating flow | As a visitor, I want to understand the benefits and the high-level operating flow described by Hostera, so that I can relate the proposition to hotel work. | **Scenario: The benefits section summarizes connected daily operations**<br>**Given** the visitor reaches the benefits section<br>**When** the visitor reads its heading and supporting copy<br>**Then** the page describes daily operations connected across every property and names occupancy, room readiness, inventory, and guest access.<br><br>**Scenario: The page presents the evidenced benefit examples**<br>**Given** the visitor reviews the benefit examples<br>**When** the visitor reads the benefit cards<br>**Then** the page presents “Centralized inventory” with critical-shortage flagging and “Access controls by property” with staff access limited to the properties they need.<br><br>**Scenario: The page presents the four-step operating flow**<br>**Given** the visitor reaches “How Hostera works”<br>**When** the visitor reviews the sequence<br>**Then** the page presents four steps: “Add hotels”, “Set up your team”, “Connect systems”, and “Run operations”.<br><br>**Scenario: Each workflow step has supporting content**<br>**Given** the visitor reads the four workflow steps<br>**When** the visitor reviews their descriptions<br>**Then** the page explains defining rooms, inviting staff and assigning access by role, pairing RFID readers and configuring inventory workflows, and managing reservations, room status, access, and stock from one place. | EP001 |
 | US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and see clear next actions, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | **Scenario: The pricing section shows the operating-scale options**<br>**Given** the visitor reaches the pricing section<br>**When** the visitor reviews the plan comparison<br>**Then** the page presents the “Free”, “Professional”, and “Enterprise” plans with descriptions and capability lists.<br><br>**Scenario: Each plan has a distinct CTA**<br>**Given** the visitor reviews the plan cards<br>**When** the visitor looks for an action on each card<br>**Then** the Free plan presents “Start for free”, the Professional plan presents “Explore Professional”, and the Enterprise plan presents “Talk to sales”.<br><br>**Scenario: The larger hotel-group option is presented as a commercial pathway**<br>**Given** the visitor is evaluating a larger or multi-country hotel operation<br>**When** the visitor reviews the segment pathways and plan comparison<br>**Then** the page presents the “Hotel group” pathway, the “Enterprise” plan, and “Talk to sales” as the next step.<br><br>**Scenario: The Enterprise CTA opens the sales next step**<br>**Given** the visitor is viewing the Enterprise plan<br>**When** the visitor selects “Talk to sales”<br>**Then** the page opens the sales contact next step for the larger hotel-group offering.<br><br>**Scenario: The closing panel repeats the available next steps**<br>**Given** the visitor reaches the closing section<br>**When** the visitor reviews the action group<br>**Then** the page presents “Start for free” and “Talk to sales” alongside the message “Bring every property into one view.”<br><br>**Scenario: A plan CTA takes the visitor to its next step**<br>**Given** the visitor is viewing a plan card<br>**When** the visitor selects a plan CTA<br>**Then** the page takes the visitor to the next step associated with that plan, such as starting the Free experience, evaluating Professional, or contacting sales. | EP001 |
@@ -1241,7 +1241,7 @@ organizar el trabajo de las etapas posteriores.
 | # Orden | User Story ID | Título | Descripción | Story Points |
 | :---: | :---: | :--- | :--- | :---: |
 | 1 | US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether the Landing Page is relevant to my hotel. | 5 |
-| 2 | US003 | Find the independent-hotel path | As an independent hotel administrator or owner, I want a path for one property with up to 10 rooms, so that I can identify the entry point intended for my operation. | 3 |
+| 2 | US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera pathway for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue to the appropriate entry point. | 3 |
 | 3 | US004 | Find the small-chain path | As a small-chain hotel operations manager, I want a path for coordinating 2 to 5 locations, so that I can identify the plan and next step intended for a multi-property operation. | 3 |
 | 4 | US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and see clear next actions, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | 5 |
 | 5 | US005 | Understand the product benefits and operating flow | As a visitor, I want to understand the benefits and the high-level operating flow described by Hostera, so that I can relate the proposition to hotel work. | 5 |
@@ -1647,7 +1647,7 @@ reducida del navegador.
 | Uso en la interfaz | Etiqueta definida | Qué representa |
 | :--- | :--- | :--- |
 | Entrada de navegación o sección del dashboard | `Reservations` | El conjunto de reservas y sus operaciones. |
-| Entrada de navegación o sección del dashboard | `Rooms & availability` | Las habitaciones y su disponibilidad. |
+| Entrada de navegación o sección del dashboard | `Rooms` | Las habitaciones y su disponibilidad. |
 | Entrada de navegación o sección del dashboard | `Inventory` | El inventario del almacén y sus movimientos. |
 | Entrada de navegación o sección del dashboard | `Access control` | Las tarjetas, los lectores y los eventos RFID. |
 | Entrada de navegación o sección del dashboard | `Reports` | Los resultados agregados y las comparaciones operativas. |
@@ -1771,7 +1771,7 @@ facilitar la localización de nombres en español.
 | Zona | Campos de búsqueda | Filtros complementarios |
 | :--- | :--- | :--- |
 | **Reservations** | Nombre del huésped, código de reserva y contacto asociado. | Propiedad, rango de fechas, estado de la reserva y tipo de habitación. |
-| **Rooms & availability** | Número o nombre de habitación y propiedad. | Fecha de consulta, estado de ocupación, tipo de habitación y disponibilidad. |
+| **Rooms** | Número o nombre de habitación y propiedad. | Fecha de consulta, estado de ocupación, tipo de habitación y disponibilidad. |
 | **Inventory** | Nombre del artículo, código o categoría. | Propiedad, ubicación de almacén, nivel de stock y estado del artículo. |
 | **Access control** | Persona, tarjeta, lector o identificador del evento. | Propiedad, rango de fecha y hora, lector y resultado del acceso. |
 | **Reports** | Nombre del reporte o dominio operativo. | Propiedad, periodo, área funcional y estado del procesamiento. |
@@ -1882,7 +1882,7 @@ la acción que corresponden a su escala operativa.
 #### Navegación de la aplicación web
 
 La aplicación web utiliza un menú global persistente para las áreas funcionales de
-Hostera: `Reservations`, `Rooms & availability`, `Inventory`, `Access control` y
+Hostera: `Reservations`, `Rooms`, `Inventory`, `Access control` y
 `Reports`. El menú permite cambiar de área sin reiniciar la tarea y comunica la
 sección activa mediante una señal visual y textual.
 
@@ -2023,11 +2023,647 @@ distinto.
 
 ### 4.4.1. Web Applications Wireframes
 
+Los wireframes de Hostera representan la estructura de la aplicación web responsive en
+el breakpoint móvil. Aunque la solución se ejecuta en el navegador, esta vista permite
+comprobar cómo se reorganizan los contenidos y controles cuando el ancho disponible es
+reducido. La propuesta conserva la jerarquía de la información y apila los grupos de
+contenido para priorizar la lectura vertical y la interacción táctil.
+
+El conjunto cubre el acceso a la aplicación, el dashboard, las reservas, las
+habitaciones, el inventario, el control de acceso RFID y los reportes operativos. La
+navegación principal se concentra en un drawer móvil, mientras que cada vista mantiene
+el selector de propiedad, un encabezado identificable y acciones relacionadas con el
+contexto actual. Las listas, formularios y áreas de resumen utilizan contenedores
+simples y labels explícitos para diferenciar información, controles y estados sin
+depender únicamente del color.
+
+#### Acceso, dashboard y reservas
+
+Las primeras vistas muestran el acceso, el registro, el resumen operativo, la consulta
+de reservas y el formulario para crear una nueva reserva. La composición mantiene los
+campos y acciones dentro de una sola columna, mientras que el dashboard prioriza el
+resumen de ocupación, el estado de las habitaciones y las próximas llegadas.
+
+<img src="assets/chapter-4/web-application-wireframes-mobile-core.png" alt="Wireframes móviles de acceso, dashboard y reservas de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+
+*Figura 4.8. Wireframes móviles de acceso, dashboard y reservas.*
+
+#### Reservación, habitaciones e inventario
+
+Este grupo representa el detalle de una reserva, el listado de habitaciones, el detalle
+de una habitación, el inventario y el ajuste de stock. La información contextual se
+mantiene cerca de las acciones correspondientes: el estado de la reserva acompaña sus
+datos principales, la habitación expone sus atributos operativos y el ajuste de stock
+separa la cantidad, la ubicación y el motivo de la operación.
+
+<img src="assets/chapter-4/web-application-wireframes-mobile-operations.png" alt="Wireframes móviles de reservación, habitaciones e inventario de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+
+*Figura 4.9. Wireframes móviles de reservación, habitaciones e inventario.*
+
+#### Control de acceso, reportes y navegación
+
+Las últimas vistas cubren las credenciales RFID, los eventos de acceso, la biblioteca de
+reportes, el reporte de ocupación y el drawer de navegación. Los indicadores resumidos
+preceden a los listados para facilitar el escaneo, y los filtros se ubican antes del
+contenido que afectan. El drawer conserva las áreas funcionales principales y permite
+cambiar de contexto sin perder la orientación dentro de la aplicación.
+
+<img src="assets/chapter-4/web-application-wireframes-mobile-access-reporting.png" alt="Wireframes móviles de control de acceso, reportes y navegación de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+
+*Figura 4.10. Wireframes móviles de control de acceso, reportes y navegación.*
+
 ### 4.4.2. Web Applications Wireflow Diagrams
+
+Los Web Application Wireflows representan las rutas principales de interacción de
+Hostera a partir de los User Goals definidos para la Web Application. Cada Wireflow
+considera el User Persona correspondiente, utiliza los Wireframes de las pantallas
+como estados del flujo y agrega un nuevo estado cuando una interacción modifica el
+contenido o la condición de la pantalla. Los estados de validación, ausencia de
+resultados, restricciones y errores se muestran como pasos alternativos dentro del
+recorrido correspondiente.
+
+Los diagramas fueron elaborados en FigJam utilizando las pantallas diseñadas en el
+archivo de Paper `Grafo-verde`. El board editable con los 25 Wireflows se encuentra
+disponible en [Hostera — Web Application Wireflows](https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7).
+
+#### Objetivos de usuario y recorridos especificados
+
+| User Goal | User Persona | Recorrido representado |
+| :--- | :--- | :--- |
+| Create an account with an initial property. | Independent hotel administrator / small-chain operations manager | Sign up → validation errors when the registration data is incomplete or invalid. |
+| Sign in with an authorized work account. | Authorized hotel operator | Login → invalid credentials state when authentication fails. |
+| Monitor current operations for an assigned property. | Hotel administrator / operations manager | Dashboard → property selection → operational search results → no results or partial-data state. |
+| Navigate to another authorized operational area. | Authorized hotel operator | Dashboard context → restricted navigation state that preserves the active property scope. |
+| Find and review a reservation. | Front-desk operator / hotel administrator | Reservations list → empty result state when no reservation matches the criteria. |
+| Create a reservation for an available room. | Front-desk operator | Create reservation → validation errors or invalid-period state when the requested stay cannot be recorded. |
+| Review and update an existing reservation. | Front-desk operator | Reservation detail → edit reservation → availability-conflict state when the proposed change is not valid. |
+| Update a reservation according to its pre-arrival outcome. | Front-desk operator | Pending reservation → status actions → confirmation, no-show, or cancelled state. |
+| Record a payment received for a reservation. | Front-desk operator | Record payment → invalid-amount state when the payment cannot be accepted. |
+| Complete guest check-in for a confirmed reservation. | Front-desk operator | Verify guest → payment → encode key card → encoded card → completed check-in, with an unresolved-identity alternative. |
+| Complete guest check-out for an occupied room. | Front-desk operator | Checked-in reservation → check-out review → completed check-out, with an unresolved-balance alternative. |
+| Review room availability from a selected date. | Front-desk operator / hotel administrator | Rooms list → room detail with the selected-date monthly availability view. |
+| Create a room within an assigned property. | Hotel administrator | Rooms list → new-room drawer → duplicate-number validation state. |
+| Review and maintain a room's operational information. | Hotel administrator / operations manager | Room availability context → room detail → edit room state. |
+| Create or update a room type. | Hotel administrator | Room types list → new room type → edit-in-use type state. |
+| Define a rate plan and its daily room-type prices. | Hotel administrator / operations manager | Rates list → new rate plan → daily rate configuration. |
+| Monitor inventory quantities and stock conditions. | Inventory operator / hotel administrator | Inventory overview with current quantities and stock conditions. |
+| Create or update an inventory item. | Inventory operator | Item detail → add item or edit item drawer. |
+| Record a stock adjustment for an inventory item. | Inventory operator | Item detail → adjust stock drawer → insufficient-stock state when the adjustment is not allowed. |
+| Create or update an inventory storage location. | Hotel administrator / inventory operator | Storage locations → location detail → add or edit location → removal-blocked state when the location is in use. |
+| Review and manage an RFID credential. | Hotel administrator / authorized front-desk operator | Access control → credential detail → revoke or replace card. |
+| Encode an RFID key card with an authorized access scope. | Authorized front-desk operator | Issue staff credential → encoding reference → encoding-failed state when the device operation is unsuccessful. |
+| Find and review RFID access events. | Hotel administrator / security-authorized operator | Access events → denied-event detail for investigation. |
+| Find and review an operational report for a property and period. | Hotel administrator / operations manager | Reports library → occupancy and availability report → empty-period state. |
+| Export an operational report for the selected scope. | Hotel administrator / operations manager | Occupancy report → export options → completed export or unauthorized-export state. |
+
+#### Wireflow diagrams
+
+**User goal: Create an account with an initial property.**
+
+<img src="assets/chapter-4/web-application-wireflow-01-account-registration.png" alt="Wireflow de creación de una cuenta y propiedad inicial" style="width:100%; height:auto;"/>
+
+*Figura 4.11. Wireflow para crear una cuenta con una propiedad inicial.*
+
+**User goal: Sign in with an authorized work account.**
+
+<img src="assets/chapter-4/web-application-wireflow-02-authentication.png" alt="Wireflow de inicio de sesión autorizado" style="width:100%; height:auto;"/>
+
+*Figura 4.12. Wireflow para iniciar sesión con una cuenta de trabajo autorizada.*
+
+**User goal: Monitor current operations for an assigned property.**
+
+<img src="assets/chapter-4/web-application-wireflow-03-operational-overview.png" alt="Wireflow de monitoreo de operaciones de una propiedad" style="width:100%; height:auto;"/>
+
+*Figura 4.13. Wireflow para monitorear las operaciones de una propiedad asignada.*
+
+**User goal: Navigate to another authorized operational area.**
+
+<img src="assets/chapter-4/web-application-wireflow-04-operational-navigation.png" alt="Wireflow de navegación entre áreas operativas autorizadas" style="width:100%; height:auto;"/>
+
+*Figura 4.14. Wireflow para navegar a otra área operativa autorizada.*
+
+**User goal: Find and review a reservation.**
+
+<img src="assets/chapter-4/web-application-wireflow-05-reservation-review.png" alt="Wireflow de búsqueda y revisión de una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.15. Wireflow para encontrar y revisar una reserva.*
+
+**User goal: Create a reservation for an available room.**
+
+<img src="assets/chapter-4/web-application-wireflow-06-reservation-creation.png" alt="Wireflow de creación de una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.16. Wireflow para crear una reserva de habitación disponible.*
+
+**User goal: Review and update an existing reservation.**
+
+<img src="assets/chapter-4/web-application-wireflow-07-reservation-update.png" alt="Wireflow de actualización de una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.17. Wireflow para revisar y actualizar una reserva existente.*
+
+**User goal: Update a reservation according to its pre-arrival outcome.**
+
+<img src="assets/chapter-4/web-application-wireflow-08-reservation-lifecycle.png" alt="Wireflow de resultado previo a la llegada" style="width:100%; height:auto;"/>
+
+*Figura 4.18. Wireflow para actualizar una reserva según el resultado previo a la llegada.*
+
+**User goal: Record a payment received for a reservation.**
+
+<img src="assets/chapter-4/web-application-wireflow-09-reservation-payment.png" alt="Wireflow de registro de pago" style="width:100%; height:auto;"/>
+
+*Figura 4.19. Wireflow para registrar un pago de reserva.*
+
+**User goal: Complete guest check-in for a confirmed reservation.**
+
+<img src="assets/chapter-4/web-application-wireflow-10-guest-check-in.png" alt="Wireflow de check-in" style="width:100%; height:auto;"/>
+
+*Figura 4.20. Wireflow para completar el check-in de un huésped.*
+
+**User goal: Complete guest check-out for an occupied room.**
+
+<img src="assets/chapter-4/web-application-wireflow-11-guest-check-out.png" alt="Wireflow de check-out" style="width:100%; height:auto;"/>
+
+*Figura 4.21. Wireflow para completar el check-out de una habitación ocupada.*
+
+**User goal: Review room availability from a selected date.**
+
+<img src="assets/chapter-4/web-application-wireflow-12-room-availability.png" alt="Wireflow de disponibilidad de habitaciones" style="width:100%; height:auto;"/>
+
+*Figura 4.22. Wireflow para revisar disponibilidad desde una fecha seleccionada.*
+
+**User goal: Create a room within an assigned property.**
+
+<img src="assets/chapter-4/web-application-wireflow-13-room-creation.png" alt="Wireflow de creación de habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.23. Wireflow para crear una habitación dentro de una propiedad asignada.*
+
+**User goal: Review and maintain a room's operational information.**
+
+<img src="assets/chapter-4/web-application-wireflow-14-room-maintenance.png" alt="Wireflow de mantenimiento de información de habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.24. Wireflow para revisar y mantener información operativa de una habitación.*
+
+**User goal: Create or update a room type.**
+
+<img src="assets/chapter-4/web-application-wireflow-15-room-type-management.png" alt="Wireflow de gestión de tipo de habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.25. Wireflow para crear o actualizar un tipo de habitación.*
+
+**User goal: Define a rate plan and its daily room-type prices.**
+
+<img src="assets/chapter-4/web-application-wireflow-16-rate-plan-management.png" alt="Wireflow de configuración de plan tarifario" style="width:100%; height:auto;"/>
+
+*Figura 4.26. Wireflow para definir un plan tarifario y precios diarios.*
+
+**User goal: Monitor inventory quantities and stock conditions.**
+
+<img src="assets/chapter-4/web-application-wireflow-17-inventory-monitoring.png" alt="Wireflow de monitoreo de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.27. Wireflow para monitorear cantidades y condiciones de inventario.*
+
+**User goal: Create or update an inventory item.**
+
+<img src="assets/chapter-4/web-application-wireflow-18-inventory-item-management.png" alt="Wireflow de gestión de ítem de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.28. Wireflow para crear o actualizar un ítem de inventario.*
+
+**User goal: Record a stock adjustment for an inventory item.**
+
+<img src="assets/chapter-4/web-application-wireflow-19-stock-adjustment.png" alt="Wireflow de ajuste de stock" style="width:100%; height:auto;"/>
+
+*Figura 4.29. Wireflow para registrar un ajuste de stock.*
+
+**User goal: Create or update an inventory storage location.**
+
+<img src="assets/chapter-4/web-application-wireflow-20-storage-location-management.png" alt="Wireflow de gestión de ubicación de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.30. Wireflow para crear o actualizar una ubicación de almacenamiento.*
+
+**User goal: Review and manage an RFID credential.**
+
+<img src="assets/chapter-4/web-application-wireflow-21-rfid-credential-management.png" alt="Wireflow de gestión de credencial RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.31. Wireflow para revisar y gestionar una credencial RFID.*
+
+**User goal: Encode an RFID key card with an authorized access scope.**
+
+<img src="assets/chapter-4/web-application-wireflow-22-rfid-card-encoding.png" alt="Wireflow de codificación de tarjeta RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.32. Wireflow para codificar una tarjeta RFID con alcance autorizado.*
+
+**User goal: Find and review RFID access events.**
+
+<img src="assets/chapter-4/web-application-wireflow-23-rfid-event-review.png" alt="Wireflow de revisión de eventos RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.33. Wireflow para encontrar y revisar eventos de acceso RFID.*
+
+**User goal: Find and review an operational report for a property and period.**
+
+<img src="assets/chapter-4/web-application-wireflow-24-operational-report-review.png" alt="Wireflow de revisión de reporte operativo" style="width:100%; height:auto;"/>
+
+*Figura 4.34. Wireflow para encontrar y revisar un reporte operativo.*
+
+**User goal: Export an operational report for the selected scope.**
+
+<img src="assets/chapter-4/web-application-wireflow-25-operational-report-export.png" alt="Wireflow de exportación de reporte operativo" style="width:100%; height:auto;"/>
+
+*Figura 4.35. Wireflow para exportar un reporte operativo del alcance seleccionado.*
 
 ### 4.4.3. Web Applications Mock-ups
 
+Los mock-ups de alta fidelidad de la aplicación web representan las vistas y estados
+principales de Hostera para la gestión operativa de una propiedad hotelera. El diseño
+se encuentra organizado en la página `Web Application` del archivo de Paper
+`Grafo-verde` y mantiene una composición consistente entre autenticación, monitoreo,
+reservas, habitaciones, inventario, control de acceso RFID y reportes.
+
+#### Acceso y panorama operativo
+
+Las pantallas de autenticación establecen el punto de entrada para el personal
+autorizado. El formulario se presenta junto con una imagen asociada al contexto de
+hospitalidad, mientras que el dashboard prioriza el estado operativo mediante
+indicadores de ocupación, habitaciones listas, próximas llegadas, ingresos y
+resumen por propiedad.
+
+<img src="assets/chapter-4/web-application-mockups/01-login.png" alt="Mock-up de inicio de sesión de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.36. Mock-up de inicio de sesión.*
+
+<img src="assets/chapter-4/web-application-mockups/02-sign-up.png" alt="Mock-up de registro de cuenta de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.37. Mock-up de registro de cuenta.*
+
+<img src="assets/chapter-4/web-application-mockups/03-dashboard.png" alt="Mock-up del dashboard operativo de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.38. Mock-up del dashboard operativo.*
+
+#### Reservas y operación de estancias
+
+El módulo de reservas utiliza una lista con filtros, estados y acciones claramente
+identificables para facilitar la búsqueda y revisión de una reserva. La creación de
+una reserva se separa en bloques de información del huésped, fechas de estancia,
+habitación, tarifa y solicitudes, con acciones de guardado visibles y estados de
+validación para prevenir errores antes de confirmar la operación.
+
+<img src="assets/chapter-4/web-application-mockups/04-reservations.png" alt="Mock-up de la lista de reservas de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.39. Mock-up de revisión de reservas.*
+
+<img src="assets/chapter-4/web-application-mockups/05-create-reservation.png" alt="Mock-up de creación de una reserva de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.40. Mock-up de creación de una reserva.*
+
+<img src="assets/chapter-4/web-application-mockups/11-check-in.png" alt="Mock-up de verificación para el check-in de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.41. Mock-up de verificación de huésped para check-in.*
+
+<img src="assets/chapter-4/web-application-mockups/12-check-out.png" alt="Mock-up de revisión para el check-out de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.42. Mock-up de revisión de check-out.*
+
+#### Administración de habitaciones, inventario y accesos
+
+Las vistas operativas mantienen una navegación lateral común y un área de trabajo
+con jerarquía consistente. La vista de habitaciones presenta la disponibilidad en un
+calendario, inventario combina indicadores resumidos con una tabla de ítems y
+control de acceso muestra credenciales y permisos en una estructura escaneable.
+Esta reutilización de patrones reduce la carga cognitiva y permite que el personal
+transfiera lo aprendido entre módulos.
+
+<img src="assets/chapter-4/web-application-mockups/06-rooms.png" alt="Mock-up de habitaciones y disponibilidad de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.43. Mock-up de habitaciones y disponibilidad.*
+
+<img src="assets/chapter-4/web-application-mockups/07-inventory.png" alt="Mock-up de inventario de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.44. Mock-up de monitoreo de inventario.*
+
+<img src="assets/chapter-4/web-application-mockups/08-access-control.png" alt="Mock-up de control de acceso RFID de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.45. Mock-up de control de acceso RFID.*
+
+#### Reportes operativos
+
+El módulo de reportes separa la selección del reporte de la visualización de sus
+resultados. La biblioteca permite localizar el reporte requerido y la vista de
+ocupación presenta métricas, series temporales y datos de disponibilidad para apoyar
+la toma de decisiones del administrador.
+
+<img src="assets/chapter-4/web-application-mockups/09-reports-library.png" alt="Mock-up de biblioteca de reportes de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.46. Mock-up de biblioteca de reportes.*
+
+<img src="assets/chapter-4/web-application-mockups/10-occupancy-report.png" alt="Mock-up de reporte de ocupación y disponibilidad de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.47. Mock-up de reporte de ocupación y disponibilidad.*
+
+#### Diseño inclusivo y adaptación responsive
+
+La propuesta contempla diferentes tamaños de pantalla. En móvil, la navegación se
+reduce a una barra superior y los contenidos se reorganizan verticalmente, sin
+eliminar las acciones principales ni los indicadores operativos. Los filtros, estados
+y controles conservan etiquetas textuales además del color, lo que evita depender
+únicamente de diferencias cromáticas para interpretar la información.
+
+<img src="assets/chapter-4/web-application-mockups/13-dashboard-mobile.png" alt="Mock-up móvil del dashboard operativo de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.48. Mock-up móvil del dashboard operativo.*
+
+<img src="assets/chapter-4/web-application-mockups/14-reservations-mobile.png" alt="Mock-up móvil de reservas de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.49. Mock-up móvil de reservas.*
+
+<img src="assets/chapter-4/web-application-mockups/15-rooms-mobile.png" alt="Mock-up móvil de habitaciones de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.50. Mock-up móvil de habitaciones.*
+
+<img src="assets/chapter-4/web-application-mockups/16-occupancy-report-mobile.png" alt="Mock-up móvil del reporte de ocupación de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.51. Mock-up móvil del reporte de ocupación.*
+
+#### Principios visuales y Design System
+
+Estos mock-ups aplican el sistema de diseño definido en [4.1. Style
+Guidelines](#41-style-guidelines), por lo que no introducen una solución visual
+aislada para la aplicación web. En particular, retoman los lineamientos de
+[General Style Guidelines](#411-general-style-guidelines) para branding, color,
+tipografía, espaciado, forma, elevación y principios de diseño, y los patrones de
+[Web Style Guidelines](#412-web-style-guidelines) para layout responsive,
+componentes web, estados de interacción y accesibilidad.
+
+La interfaz utiliza superficies claras, la paleta verde asociada a la identidad de
+Hostera y una jerarquía tipográfica basada en Geist. Los componentes se repiten con
+estados diferenciados para botones, campos, tablas, chips, drawers, diálogos y
+mensajes de validación. La organización de los módulos también se relaciona con la
+[arquitectura de información](#42-information-architecture) definida para Hostera:
+la navegación persistente y las etiquetas de la aplicación web permiten orientar al
+personal entre dashboard, reservas, habitaciones, inventario, accesos y reportes.
+De esta manera, el espaciado, contraste, etiquetado, estados explícitos y adaptación
+responsive se aplican como una extensión del Design System existente y no como
+decisiones independientes de cada pantalla.
+
 ### 4.4.4. Web Applications User Flow Diagrams
+
+Esta sección presenta los User Flow Diagrams de la aplicación web de Hostera. Cada
+diagrama incorpora las vistas de los mock-ups de alta fidelidad y muestra la ruta
+esperada (happy path) junto con las rutas alternativas (unhappy paths) que pueden
+ocurrir bajo las condiciones previstas para la operación hotelera. Los flujos se
+organizan alrededor de los objetivos operativos de los administradores, responsables
+de recepción, personal de inventario y personal de control de accesos. Las capturas
+corresponden únicamente al diagrama de flujo y al objetivo que documenta cada
+interacción.
+
+#### Goal: Create an account with an initial property
+
+<img src="assets/chapter-4/web-application-user-flows/01-account-registration.png" alt="User Flow para crear una cuenta con una propiedad inicial" style="width:100%; height:auto;"/>
+
+*Figura 4.52. User Flow para crear una cuenta con una propiedad inicial.*
+
+El flujo inicia en el formulario de registro y termina en el dashboard cuando la
+información es válida. La ruta alternativa muestra los errores de validación para
+campos faltantes, datos inválidos o un correo ya registrado. La persona puede volver
+al formulario, corregir los datos y reenviar la solicitud.
+
+#### Goal: Sign in with an authorized work account
+
+<img src="assets/chapter-4/web-application-user-flows/02-authentication.png" alt="User Flow para iniciar sesión con una cuenta de trabajo autorizada" style="width:100%; height:auto;"/>
+
+*Figura 4.53. User Flow para iniciar sesión con una cuenta de trabajo autorizada.*
+
+Las credenciales autorizadas llevan al dashboard operativo. Si las credenciales no
+son válidas, el sistema conserva al usuario en el contexto de autenticación, muestra
+el error y permite corregir los datos e intentar nuevamente.
+
+#### Goal: Monitor current operations for an assigned property
+
+<img src="assets/chapter-4/web-application-user-flows/03-operational-overview.png" alt="User Flow para monitorear las operaciones de una propiedad asignada" style="width:100%; height:auto;"/>
+
+*Figura 4.54. User Flow para monitorear las operaciones de una propiedad asignada.*
+
+El administrador parte del dashboard, selecciona una propiedad asignada y obtiene el
+contexto operativo correspondiente. La ruta alternativa representa una demora o
+degradación del servicio de datos: el dashboard informa la condición y permite
+continuar con la información disponible o reintentar la consulta.
+
+#### Goal: Navigate to another authorized operational area
+
+<img src="assets/chapter-4/web-application-user-flows/04-operational-navigation.png" alt="User Flow para navegar a otra área operativa autorizada" style="width:100%; height:auto;"/>
+
+*Figura 4.55. User Flow para navegar a otra área operativa autorizada.*
+
+La navegación persistente permite pasar del dashboard a reservas y posteriormente a
+habitaciones. Cuando se intenta abrir un área no autorizada, se muestra el estado de
+restricción y se ofrece el retorno a un área permitida.
+
+#### Goal: Find and review a reservation
+
+<img src="assets/chapter-4/web-application-user-flows/05-reservation-review.png" alt="User Flow para encontrar y revisar una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.56. User Flow para encontrar y revisar una reserva.*
+
+El personal abre la lista de reservas, aplica los criterios de búsqueda y revisa el
+detalle de la reserva encontrada. Si no existen coincidencias, el estado vacío
+indica la condición y permite ajustar los criterios para realizar una nueva búsqueda.
+
+#### Goal: Create a reservation for an available room
+
+<img src="assets/chapter-4/web-application-user-flows/06-reservation-creation.png" alt="User Flow para crear una reserva de una habitación disponible" style="width:100%; height:auto;"/>
+
+*Figura 4.57. User Flow para crear una reserva de una habitación disponible.*
+
+La ruta esperada lleva desde la lista de reservas al formulario de creación y luego al
+detalle de la reserva creada para una habitación disponible. La ruta alternativa
+presenta errores cuando faltan datos o el período no es válido; la operación puede
+corregirse desde el mismo formulario.
+
+#### Goal: Review and update an existing reservation
+
+<img src="assets/chapter-4/web-application-user-flows/07-reservation-update.png" alt="User Flow para revisar y actualizar una reserva existente" style="width:100%; height:auto;"/>
+
+*Figura 4.58. User Flow para revisar y actualizar una reserva existente.*
+
+Desde el detalle, el personal abre el formulario de edición y vuelve al detalle con
+los cambios guardados. Si la habitación o el período seleccionado dejó de estar
+disponible, el flujo muestra el conflicto y permite elegir una alternativa.
+
+#### Goal: Update a reservation according to its pre-arrival outcome
+
+<img src="assets/chapter-4/web-application-user-flows/08-reservation-lifecycle.png" alt="User Flow para actualizar una reserva según su resultado previo a la llegada" style="width:100%; height:auto;"/>
+
+*Figura 4.59. User Flow para actualizar una reserva según su resultado previo a la llegada.*
+
+El detalle de la reserva abre las acciones de ciclo de vida disponibles. Según el
+resultado previo a la llegada, el personal puede cancelar la reserva o marcarla como
+no-show; cada opción se confirma mediante su diálogo correspondiente.
+
+#### Goal: Record a payment received for a reservation
+
+<img src="assets/chapter-4/web-application-user-flows/09-reservation-payment.png" alt="User Flow para registrar un pago recibido de una reserva" style="width:100%; height:auto;"/>
+
+*Figura 4.60. User Flow para registrar un pago recibido de una reserva.*
+
+El personal abre el registro de pago desde el detalle, introduce el importe recibido
+y vuelve al detalle con el balance actualizado. Un importe inválido activa el estado
+de error y permite corregir el valor antes de guardar.
+
+#### Goal: Complete guest check-in for a confirmed reservation
+
+<img src="assets/chapter-4/web-application-user-flows/10-guest-check-in.png" alt="User Flow para completar el check-in de un huésped" style="width:100%; height:auto;"/>
+
+*Figura 4.61. User Flow para completar el check-in de un huésped.*
+
+La ruta principal verifica la identidad, revisa el balance, codifica la tarjeta RFID
+y confirma el check-in. Si la identidad no puede resolverse, el proceso se detiene en
+un estado explícito y permite resolver la información antes de reintentar.
+
+#### Goal: Complete guest check-out for an occupied room
+
+<img src="assets/chapter-4/web-application-user-flows/11-guest-check-out.png" alt="User Flow para completar el check-out de una habitación ocupada" style="width:100%; height:auto;"/>
+
+*Figura 4.62. User Flow para completar el check-out de una habitación ocupada.*
+
+El flujo revisa la salida y finaliza el check-out cuando el balance está resuelto. Si
+queda un balance pendiente, se muestra el estado alternativo y se puede registrar el
+pago o la autorización necesaria antes de cerrar la estadía.
+
+#### Goal: Review room availability from a selected date
+
+<img src="assets/chapter-4/web-application-user-flows/12-room-availability.png" alt="User Flow para revisar la disponibilidad de habitaciones desde una fecha" style="width:100%; height:auto;"/>
+
+*Figura 4.63. User Flow para revisar la disponibilidad de habitaciones desde una fecha seleccionada.*
+
+El personal consulta habitaciones usando una fecha seleccionada y revisa el detalle
+de disponibilidad. La condición alternativa indica que una habitación protegida no
+puede modificarse desde ese contexto operativo.
+
+#### Goal: Create a room within an assigned property
+
+<img src="assets/chapter-4/web-application-user-flows/13-room-creation.png" alt="User Flow para crear una habitación dentro de una propiedad asignada" style="width:100%; height:auto;"/>
+
+*Figura 4.64. User Flow para crear una habitación dentro de una propiedad asignada.*
+
+Desde habitaciones se abre el formulario, se registra la información y se vuelve a
+la lista actualizada. Si el número de habitación ya existe, el sistema muestra el
+conflicto y permite corregir el dato antes de crearla.
+
+#### Goal: Review and maintain a room's operational information
+
+<img src="assets/chapter-4/web-application-user-flows/14-room-maintenance.png" alt="User Flow para revisar y mantener información operativa de una habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.65. User Flow para revisar y mantener información operativa de una habitación.*
+
+El flujo abre el detalle de una habitación, permite editar su información operativa y
+regresa a la lista con los cambios guardados. Un estado protegido impide la edición
+cuando la condición operativa no permite modificarla.
+
+#### Goal: Create or update a room type
+
+<img src="assets/chapter-4/web-application-user-flows/15-room-type-management.png" alt="User Flow para crear o actualizar un tipo de habitación" style="width:100%; height:auto;"/>
+
+*Figura 4.66. User Flow para crear o actualizar un tipo de habitación.*
+
+La lista de tipos abre el formulario de creación o actualización y muestra la lista
+con el tipo guardado. Cuando el tipo está en uso, la alternativa comunica las
+restricciones que limitan sus modificaciones.
+
+#### Goal: Define a rate plan and its daily room-type prices
+
+<img src="assets/chapter-4/web-application-user-flows/16-rate-plan-management.png" alt="User Flow para definir un plan tarifario y sus precios diarios" style="width:100%; height:auto;"/>
+
+*Figura 4.67. User Flow para definir un plan tarifario y sus precios diarios.*
+
+El administrador crea el plan tarifario y continúa a la configuración de los precios
+diarios por tipo de habitación. La secuencia termina cuando la matriz de precios
+queda lista para su uso operativo.
+
+#### Goal: Monitor inventory quantities and stock conditions
+
+<img src="assets/chapter-4/web-application-user-flows/17-inventory-monitoring.png" alt="User Flow para monitorear cantidades y condiciones de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.68. User Flow para monitorear cantidades y condiciones de inventario.*
+
+El personal abre inventario, revisa el detalle de un ítem y consulta su condición de
+stock. Cuando la cantidad es insuficiente, el estado alternativo hace visible la
+alerta para que pueda tomarse una acción de reposición.
+
+#### Goal: Create or update an inventory item
+
+<img src="assets/chapter-4/web-application-user-flows/18-inventory-item-management.png" alt="User Flow para crear o actualizar un ítem de inventario" style="width:100%; height:auto;"/>
+
+*Figura 4.69. User Flow para crear o actualizar un ítem de inventario.*
+
+La lista de inventario abre el formulario para crear un ítem y permite continuar al
+formulario de actualización de su información. Las dos rutas representan el alta y
+el mantenimiento de los datos del ítem dentro del mismo módulo.
+
+#### Goal: Record a stock adjustment for an inventory item
+
+<img src="assets/chapter-4/web-application-user-flows/19-stock-adjustment.png" alt="User Flow para registrar un ajuste de stock" style="width:100%; height:auto;"/>
+
+*Figura 4.70. User Flow para registrar un ajuste de stock.*
+
+Desde el detalle del ítem se registra el ajuste y se actualiza la cantidad. Si el
+ajuste supera el stock disponible, el sistema muestra la condición de insuficiencia
+y evita confirmar una operación inconsistente.
+
+#### Goal: Create or update an inventory storage location
+
+<img src="assets/chapter-4/web-application-user-flows/20-storage-location-management.png" alt="User Flow para crear o actualizar una ubicación de almacenamiento" style="width:100%; height:auto;"/>
+
+*Figura 4.71. User Flow para crear o actualizar una ubicación de almacenamiento.*
+
+El flujo permite localizar una ubicación, revisar sus detalles y crear una nueva
+ubicación. La eliminación queda bloqueada cuando todavía existen existencias
+asociadas, condición que se muestra como ruta alternativa.
+
+#### Goal: Review and manage an RFID credential
+
+<img src="assets/chapter-4/web-application-user-flows/21-rfid-credential-management.png" alt="User Flow para revisar y administrar una credencial RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.72. User Flow para revisar y administrar una credencial RFID.*
+
+El detalle de la credencial ofrece las acciones de revocar el acceso o reemplazar la
+tarjeta. Las dos rutas representan decisiones operativas distintas ante una
+credencial comprometida, perdida o que requiere renovación.
+
+#### Goal: Encode an RFID key card with an authorized access scope
+
+<img src="assets/chapter-4/web-application-user-flows/22-rfid-key-card-encoding.png" alt="User Flow para codificar una tarjeta RFID con un alcance autorizado" style="width:100%; height:auto;"/>
+
+*Figura 4.73. User Flow para codificar una tarjeta RFID con un alcance autorizado.*
+
+El personal configura el alcance de acceso, inicia la emisión y llega al estado de
+tarjeta codificada. Si el encoder falla, el estado alternativo conserva el contexto
+del proceso y hace visible la necesidad de reintentar o revisar el dispositivo.
+
+#### Goal: Find and review RFID access events
+
+<img src="assets/chapter-4/web-application-user-flows/23-rfid-access-events.png" alt="User Flow para encontrar y revisar eventos de acceso RFID" style="width:100%; height:auto;"/>
+
+*Figura 4.74. User Flow para encontrar y revisar eventos de acceso RFID.*
+
+La lista de eventos permite filtrar los registros y abrir el detalle de un evento
+denegado. La ruta final concentra la evidencia necesaria para revisar el intento de
+acceso y su motivo.
+
+#### Goal: Find and review an operational report for a property and period
+
+<img src="assets/chapter-4/web-application-user-flows/24-operational-report-review.png" alt="User Flow para encontrar y revisar un reporte operativo" style="width:100%; height:auto;"/>
+
+*Figura 4.75. User Flow para encontrar y revisar un reporte operativo para una propiedad y período.*
+
+La biblioteca de reportes conduce al reporte de ocupación y disponibilidad cuando
+existen datos para la propiedad y el período seleccionados. Si el período no contiene
+datos, se presenta un estado vacío en lugar de un resultado engañoso.
+
+#### Goal: Export an operational report for the selected scope
+
+<img src="assets/chapter-4/web-application-user-flows/25-operational-report-export.png" alt="User Flow para exportar un reporte operativo" style="width:100%; height:auto;"/>
+
+*Figura 4.76. User Flow para exportar un reporte operativo para el alcance seleccionado.*
+
+El administrador selecciona el formato de exportación y obtiene la confirmación de
+descarga cuando cuenta con permisos. La ruta alternativa comunica que la exportación
+no está autorizada y evita presentar una operación como completada.
 
 ## 4.5. Web Applications Prototyping
 
