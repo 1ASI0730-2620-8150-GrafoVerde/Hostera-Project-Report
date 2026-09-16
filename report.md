@@ -2591,6 +2591,68 @@ no está autorizada y evita presentar una operación como completada.
 
 ## 4.5. Web Applications Prototyping
 
+El prototipo interactivo de Hostera se elaboró en Figma a partir de los mock-ups de
+alta fidelidad y de los User Flow Diagrams presentados en la sección
+[4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams).
+La propuesta corresponde a una sola Web Application implementada para dos contextos
+de navegación: Desktop Web Browser y Mobile Web Browser. Por ello, ambos contextos
+forman parte de la misma solución y deben demostrarse en el recorrido de
+prototipado.
+
+### Criterios de interacción y navegación
+
+Las decisiones de interacción mantienen la arquitectura de información definida para
+la aplicación. En Desktop, la navegación persistente conserva el contexto de la
+propiedad activa y permite acceder a Overview, Reservations, Rooms, Inventory, Access
+Control y Reports desde cualquier módulo operativo. Las acciones principales de cada
+módulo conducen a las vistas de creación, detalle, edición y confirmación que forman
+parte de los User Flows. Las rutas alternativas representan estados como errores de
+validación, resultados vacíos, conflictos de disponibilidad, restricciones de acceso,
+balances pendientes y fallos de codificación RFID.
+
+En Mobile Web Browser se conserva la misma organización funcional, pero las vistas se
+presentan en una composición vertical y con controles compactos adecuados para la
+navegación táctil. El prototipo permite iniciar el recorrido desde el Dashboard
+Mobile, acceder a Reservations, Rooms y Occupancy Report, y regresar al contexto
+principal. Esta adaptación mantiene las etiquetas y la jerarquía de los módulos sin
+introducir una arquitectura de navegación diferente.
+
+La simulación utiliza interacciones de clic para representar la navegación entre
+frames, transiciones entre vistas y rutas alternativas. De esta manera, el prototipo
+permite demostrar los principales recorridos operativos: autenticación, monitoreo del
+dashboard, gestión de reservas, disponibilidad y habitaciones, inventario, control de
+accesos RFID, check-in, check-out y reportes. Los estados de error se mantienen dentro
+del recorrido correspondiente para evidenciar cómo la interfaz comunica la condición
+y permite continuar, corregir o regresar.
+
+### Prototipo interactivo
+
+El archivo de Figma contiene los dos puntos de inicio de la demostración: Desktop
+flow y Mobile flow. El Desktop flow integra las pantallas principales de la
+aplicación y sus estados de interacción; el Mobile flow presenta el recorrido
+adaptado para navegador móvil.
+
+- [Abrir el prototipo completo en Figma](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes)
+- [Abrir el Desktop flow](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes?node-id=2-2)
+- [Abrir el Mobile flow](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes?node-id=2-3)
+
+### Video de demostración
+
+El video de demostración presenta el prototipo interactivo de Hostera para Desktop y
+Mobile Web Browser. En la grabación se recorren sus principales interacciones y la
+navegación entre las áreas operativas, incluyendo la gestión de reservas, el check-in
+y check-out, el inventario, el control de accesos y los reportes.
+
+<img src="assets/chapter-4/web-application-prototype-video-frame.png" alt="Captura del video de demostración del prototipo web de Hostera en la pantalla de inicio de sesión para Desktop Web Browser" style="width:100%; height:auto;"/>
+
+*Figura 4.77. Captura del video de demostración del prototipo de Hostera en Desktop Web Browser.*
+
+**Enlace al video de Microsoft Stream:** [Ver la demostración del prototipo de Hostera](https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN).
+
+La captura y el enlace anteriores corresponden a la evidencia de navegación exigida
+para esta sección; el enlace de Figma se incluye como referencia directa al prototipo
+interactivo y no sustituye el video solicitado.
+
 ## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level EventStorming
