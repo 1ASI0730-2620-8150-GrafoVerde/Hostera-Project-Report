@@ -1006,12 +1006,89 @@ información y el control de las diferencias entre establecimientos.
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
+Esta sección representa los principales perfiles de usuario que fueron creados en base a los segmentos objetivos. El propósito principal de la creación de estos perfiles es el de reflejar de manera precisa las motivaciones, frustraciones y las necesidades reales de nuestros usuarios finales.
 
+Para ello seleccionamos los siguientes perfiles:
+
+User Persona 1
+![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
+---
+User Persona 2
+![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
 ### 2.3.2. User Task Matrix
+En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
+
+Cabe destacar que las tareas analizadas corresponden a las actividades operativas y administrativas reales que Steven lleva a cabo en el hotel para mantener la continuidad del negocio, independientemente de la existencia de la solución de software.
+
+### User Task Matrix — Segmento 1: Steven Huarcaya
+
+| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
+| :--- | :---: | :---: |
+| **Supervisar el estado y la disponibilidad diaria de habitaciones** | Alta *(Diaria)* | Crítica |
+| **Controlar la asignación y entrega de llaves o accesos a los huéspedes** | Alta *(Diaria)* | Crítica |
+| **Verificar el stock e inventario de insumos del almacén** | Media *(Semanal)* | Alta |
+| **Atender o resolver incidencias operativas y sobreventas en recepción** | Media *(Frecuente)* | Crítica |
+| **Registrar y auditar las entradas y salidas del personal autorizado** | Media *(Semanal)* | Alta |
+| **Revisar reportes de costos e insumos consumidos en la operación** | Baja *(Mensual)* | Media |
+
+---
+
+### Análisis del User Task Matrix
+
+* **Tareas de mayor frecuencia e importancia:** Las actividades críticas en el día a día de Steven son la **supervisión de la disponibilidad de habitaciones** y el **control de entrega de accesos**. Al ser el responsable directo de la única sede del hotel, coordinar la recepción en tiempo real es vital para evitar cruces de reservas, demoras en el check-in o reclamos de los huéspedes.
+* **Tareas de gestión y control:** La **verificación del inventario de almacén** y el **registro de accesos del personal** representan tareas de frecuencia media pero de importancia alta. Son fundamentales para prevenir fugas de stock (ropa de cama, artículos de aseo) y mantener el control de seguridad física en las instalaciones.
+* **Tareas de consolidación:** La revisión de reportes consolidados de insumos y costos se realiza con menor frecuencia (mensual o quincenal), pues el foco principal del administrador de una sola sede está volcado a la operatividad inmediata y la atención de incidencias diarias.
+---
+En esta sección se presenta el User Task Matrix correspondiente al **Segmento 2: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**, representado por la User Persona **Anyeli Cárdenas**.
+
+Las tareas identificadas reflejan las actividades estratégicas y de supervisión multisede que Anyeli realiza de forma independiente a la herramienta tecnológica utilizada, enfocándose en la coordinación operativa, el control de recursos y la toma de decisiones.
+
+### User Task Matrix — Segmento 2: Anyeli Cárdenas
+
+| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
+| :--- | :---: | :---: |
+| **Monitorear y consolidar la ocupación y reservas entre múltiples sedes** | Alta *(Diaria)* | Crítica |
+| **Comparar e identificar discrepancias en el inventario de almacén por sede** | Media *(Semanal)* | Alta |
+| **Auditar el cumplimiento de políticas de acceso e incidencias de seguridad física** | Media *(Semanal)* | Alta |
+| **Coordinar la redistribución de insumos y recursos operativos entre establecimientos** | Media *(Quincenal)* | Media |
+| **Evaluar indicadores operativos globales para la toma de decisiones estratégicas** | Baja *(Mensual)* | Crítica |
+| **Supervisar directamente la asignación puntual de habitaciones o entregas de accesos** | Baja *(Ocasional)* | Baja |
+
+---
+
+### Análisis del User Task Matrix
+
+* **Tareas de mayor frecuencia e importancia:** La tarea central de Anyeli es el **monitoreo consolidado de ocupación y reservas**. Al gestionar varias sedes en distintas ubicaciones, necesita comprobar a diario la disponibilidad global para maximizar las ventas y evitar fallos de coordinación entre los equipos de cada establecimiento.
+* **Tareas de control e indicadores estratégicos:** La **comparación de inventarios entre sedes** y la **evaluación mensual de indicadores de rendimiento** tienen una alta importancia estratégica. Permiten identificar qué hotel está consumiendo más recursos o detectar pérdidas imprevistas antes de que afecten la rentabilidad global.
+* **Tareas de baja frecuencia:** A diferencia del administrador de una sola sede, Anyeli realiza de forma muy ocasional la **supervisión directa de entrega de accesos o habitaciones**, ya que estas actividades son delegadas al personal operativo y administradores locales de cada hotel.
 
 ### 2.3.3. User Journey Mapping
+## As-Is User Journey Maps
+
+En esta sección se presentan los User Journey Maps en su versión **As-Is** (situación actual) para cada uno de los segmentos representados. Estos mapas ilustran el flujo de trabajo de extremo a extremo (*end-to-end journey*) que experimentan los usuarios al gestionar sus operaciones hoteleras cotidianas sin la presencia de la plataforma Hostera, evidenciando los puntos de fricción, ineficiencias y dolores en sus procesos actuales.
+
+###  Segmento 1: Steven Huarcaya
+
+El *journey* actual de Steven abarca desde la recepción de solicitudes de reserva por canales dispersos hasta la revisión del inventario y la entrega física de llaves en el hotel. El proceso se caracteriza por una alta dependencia de registros manuales y una constante interrupción operativa para resolver incidencias.
+
+![As-Is User Journey Map - Steven Huarcaya](assets/chapter-2/StevenHuarcaya_journeymap.png)
+
+---
+
+###  Segmento 2: Anyeli Cárdenas
+
+El *journey* actual de Anyeli contempla el proceso de consolidación y supervisión de la operación de múltiples sedes a la distancia. Las etapas clave incluyen la solicitud de reportes a los administradores locales, la consolidación manual de datos de inventario y la verificación diferida de accesos, lo cual genera retrasos y falta de visibilidad en tiempo real.
+
+![As-Is User Journey Map - Anyeli Cárdenas](assets/chapter-2/AnyeliCardenas_journeymap.png)
 
 ### 2.3.4. Empathy Mapping
+
+Empathy Map 1
+![StevenHuarcaya](assets/chapter-2/Empathy%20map-segmento1.png)
+---
+Empathy Map 2
+![AnyeliCardenas](assets/chapter-2/Empathy%20map-segmento2%20(1).png)
+
 
 ## 2.4. Big Picture EventStorming
 
@@ -2818,6 +2895,8 @@ accesos, y publica las actualizaciones al frontend en tiempo real.
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
+
+
 
 ## 4.8. Database Design
 
