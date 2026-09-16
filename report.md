@@ -1208,7 +1208,83 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 | TS015 | Record and query RFID access events through the API | As a developer, I want to record and query RFID access events through the API so that authorized clients can investigate granted and denied access attempts. | **Scenario: Record an access event**<br>**Given** a registered access point submits a valid credential attempt<br>**When** the developer sends `POST /api/v1/access-events`<br>**Then** the API returns `201 Created` with the immutable timestamp, credential, access point, result, and reason information.<br><br>**Scenario: Query property access events**<br>**Given** the requester is authorized for the property<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/access-events` with supported criteria<br>**Then** the API returns `200 OK` with a paginated collection satisfying the date, result, person, credential, and access-point criteria.<br><br>**Scenario: Reject an unregistered access point**<br>**Given** the event source is not registered or authorized<br>**When** the developer attempts to record an event<br>**Then** the API returns `403 Forbidden` and does not create the event. | EP006 |
 | TS016 | Retrieve and export operational reports through the API | As a developer, I want to retrieve and export property-scoped operational reports through the API so that clients can analyze and share consistent results. | **Scenario: Retrieve a calculated report**<br>**Given** the requester is authorized and provides a supported report type and valid period<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/reports/{reportType}`<br>**Then** the API returns `200 OK` with the report scope, generation time, measures, comparison values when applicable, and supporting data.<br><br>**Scenario: Export the current report scope**<br>**Given** a supported export format and valid report criteria<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/reports/{reportType}/export`<br>**Then** the API returns `200 OK` with the exported file and content type for the same authorized scope.<br><br>**Scenario: Reject an unsupported report or format**<br>**Given** the requested report type or export format is not supported<br>**When** the developer requests the report or export<br>**Then** the API returns `400 Bad Request` with the supported values. | EP007 |
 | TS017 | Return standardized API errors | As a developer, I want the API to return consistent validation and domain-error responses so that client applications can handle failures predictably. | **Scenario: Return validation details**<br>**Given** a request contains invalid input<br>**When** the developer sends the request<br>**Then** the API returns `400 Bad Request` using a consistent problem-details structure with field-level information when applicable.<br><br>**Scenario: Return a missing-resource error**<br>**Given** an authorized request targets a resource that does not exist<br>**When** the developer sends the request<br>**Then** the API returns `404 Not Found` using the same problem-details structure.<br><br>**Scenario: Return a domain-conflict error**<br>**Given** a valid request violates a current business-state rule<br>**When** the developer sends the request<br>**Then** the API returns `409 Conflict` with a stable error code and actionable context. | EP008 |
+
 ## 3.2. Impact Mapping
+
+El Impact Mapping de Hostera conecta las hipótesis estratégicas del modelo de negocio con los cambios de comportamiento esperados en los usuarios y las características del producto digital. Esta sección toma como base los criterios de éxito definidos en el proceso de Lean UX, las definiciones de los segmentos objetivo y los requerimientos funcionales documentados para el Landing Page y la Web Application.
+
+## Business Goals (SMART)
+
+Los objetivos de negocio reflejan los criterios de éxito ("Success Criteria") establecidos en las Hipótesis de Lean UX para validar la propuesta de valor de Hostera.
+
+| # | Business Goal | Descripción y Métricas de Éxito | Epic Relacionado |
+|---|---|---|---|
+| **BG1** | Centralización operativa | Aumentar en al menos 5% las tareas de supervisión completadas desde el panel sin consultar registros adicionales | EP002 |
+| **BG2** | Precisión en reservas y disponibilidad | Reducir en al menos 5% las inconsistencias detectadas entre reservas y disponibilidad de habitaciones | EP003, EP004 |
+| **BG3** | Visibilidad de inventario | Aumentar en al menos 5% los movimientos de inventario registrados y consultables, reduciendo diferencias de stock | EP005 |
+| **BG4** | Trazabilidad RFID | Aumentar en al menos 5% los accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un huésped/usuario | EP006 |
+| **BG5** | Coordinación multi-sede | Aumentar en al menos 5% las tareas de supervisión completadas correctamente en escenarios de varias sedes | EP007 |
+| **BG6** | Adquisición e incorporación | Convertir visitantes en usuarios registrados a través del Landing Page, identificando su escala operativa (hotel independiente o cadena) | EP001 |
+
+## Actores (Actors)
+
+Los actores principales se derivan estrictamente de los segmentos objetivo definidos en la sección 1.3 y los roles base requeridos para la Landing Page. Las tareas del personal operativo (recepción, almacén) se consideran acciones subordinadas a la coordinación de estos responsables
+
+- **A1 - Administrador de Hotel Independiente:** Propietario o administrador que supervisa la operación diaria de una sola sede (hasta 10 habitaciones). Requiere consultar información actualizada sin depender de sistemas separados.
+- **A2 - Gerente de Operaciones de Cadena:** Responsable de coordinar dos o más sedes de una cadena pequeña (2 a 5 locaciones). Necesita comparar información entre establecimientos manteniendo separados los datos de cada sede.
+- **A3 - Visitante:** Usuario que explora la Landing Page para comprender la propuesta de valor, comparar planes y encontrar la ruta adecuada para su escala operativa.
+
+## Impacts (Cambios en el Comportamiento de los Actores)
+
+Los Impacts describen cómo esperamos que cambien o se comporten los Actors como resultado de usar Hostera. Cada Impact está formulado como un cambio observable y medible.
+
+| # | Actor | Impact (¿Cómo deben cambiar?) | BG |
+|---|---|---|---|
+| **IM1** | A3 | Explora la propuesta de valor en el Landing Page, diferencia los planes y se registra en la plataforma | BG6 |
+| **IM2** | A1, A2 | Inicia sesión y monitorea la operación diaria desde un overview unificado en lugar de usar registros separados | BG1 |
+| **IM3** | A1, A2 | Gestiona el ciclo de vida de las reservas (check-in/check-out) afectando automáticamente la disponibilidad de habitaciones | BG2 |
+| **IM4** | A1, A2 | Registra entradas y salidas de existencias en el almacén mediante ajustes de stock auditables | BG3 |
+| **IM5** | A1, A2 | Codifica credenciales RFID, asocia accesos a las habitaciones y revisa los eventos denegados o concedidos | BG4 |
+| **IM6** | A2 | Navega entre propiedades asignadas y genera reportes consolidados por sede sin mezclar información | BG5 |
+
+## Deliverables (Características del Producto)
+
+Los entregables corresponden a los Epics (EP) definidos en el Product Backlog, los cuales agrupan las User Stories y Technical Stories necesarias para provocar los impactos.
+
+| # | Deliverable | Descripción Funcional | Impactos |
+|---|---|---|---|
+| **D1** | Landing Page Experience (EP001) | Portal con navegación clara, propuesta de valor, selección de planes e inicio de registro para hoteles y cadenas | IM1 |
+| **D2** | Account Access & Overview (EP002) | Autenticación, selección de propiedad y un dashboard administrativo para monitorear el estado actual del hotel | IM2 |
+| **D3** | Reservation & Room Management (EP003, EP004) | Módulos para gestionar disponibilidad, tarifas y el ciclo de la reserva desde la creación hasta el check-out | IM3 |
+| **D4** | Inventory Management (EP005) | Control de artículos, ubicaciones de almacenamiento y registro inmutable de ajustes de stock | IM4 |
+| **D5** | RFID Access Control (EP006) | Integración para codificar, reemplazar y revocar tarjetas RFID, y auditoría de eventos de acceso | IM5 |
+| **D6** | API Reliability (EP008) | Generación y exportación de reportes operativos filtrados por propiedad y periodo de tiempo | IM6 |
+| **D7** | API Reliability (EP008) | Estandarización de errores e infraestructura del RESTful API para respuestas consistentes (Technical Stories) | Todos |
+
+## User Stories Derivadas del Impact Mapping
+
+Las funcionalidades identificadas han sido traducidas a los requerimientos especificados en la sección 3.1. A continuación, se presenta el mapeo de historias representativas y su integración técnica (Technical Stories).
+
+| Deliverable | IDs Relacionados | Historias Representativas (Formato estándar) |
+|---|---|---|
+| D1 | US001 - US008 | US003: As an independent hotel administrator, I want a path for one property so that I can identify the entry point intended for my operation. |
+| D2 | US009 - US011 <br/>TS001 - TS004 | US011: As a hotel administrator, I want to monitor current operational information and change the active property so that I can identify conditions that require attention. |
+| D3 | US012 - US023 <br/>TS005 - TS011 | US017: As a front-desk operator, I want to complete guest check-in so that identity, payment, room assignment, and room access are verified before the stay begins. |
+| D4 | US024 - US027 <br/>TS012 - TS013 | US026: As an inventory operator, I want to record stock entering or leaving a storage location so that on-hand quantities and their audit history remain accurate. |
+| D5 | US028 - US030 <br/>TS014 - TS015 | US029: As an authorized operator, I want to encode or replace an RFID key card so that a guest or staff member receives the access authorized for their role. |
+| D6 | US031 - US032 <br/>TS016 | TS016: As a developer, I want to retrieve and export property-scoped operational reports through the API so that clients can analyze consistent results. |
+
+## Resumen Visual
+
+El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la jerarquía completa desde los Business Goals hasta las User Stories establecidas para el producto mínimo viable de Hostera.
+
+### Impact Mapping: Hotel independiente
+
+<img src="assets/chapter-3/uxpressia-impact-mapping-1.png" alt="Imagen de Impact Mapping Hotel Independiente" >
+
+### Impact Mapping: Cadena hotelera pequeña
+
+<img src="assets/chapter-3/uxpressia-impact-mapping-2.png" alt="Imagen de Impact Mapping Hotel Independiente" >
 
 <div style="page-break-before: always;"></div>
 
@@ -2667,6 +2743,68 @@ descarga cuando cuenta con permisos. La ruta alternativa comunica que la exporta
 no está autorizada y evita presentar una operación como completada.
 
 ## 4.5. Web Applications Prototyping
+
+El prototipo interactivo de Hostera se elaboró en Figma a partir de los mock-ups de
+alta fidelidad y de los User Flow Diagrams presentados en la sección
+[4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams).
+La propuesta corresponde a una sola Web Application implementada para dos contextos
+de navegación: Desktop Web Browser y Mobile Web Browser. Por ello, ambos contextos
+forman parte de la misma solución y deben demostrarse en el recorrido de
+prototipado.
+
+### Criterios de interacción y navegación
+
+Las decisiones de interacción mantienen la arquitectura de información definida para
+la aplicación. En Desktop, la navegación persistente conserva el contexto de la
+propiedad activa y permite acceder a Overview, Reservations, Rooms, Inventory, Access
+Control y Reports desde cualquier módulo operativo. Las acciones principales de cada
+módulo conducen a las vistas de creación, detalle, edición y confirmación que forman
+parte de los User Flows. Las rutas alternativas representan estados como errores de
+validación, resultados vacíos, conflictos de disponibilidad, restricciones de acceso,
+balances pendientes y fallos de codificación RFID.
+
+En Mobile Web Browser se conserva la misma organización funcional, pero las vistas se
+presentan en una composición vertical y con controles compactos adecuados para la
+navegación táctil. El prototipo permite iniciar el recorrido desde el Dashboard
+Mobile, acceder a Reservations, Rooms y Occupancy Report, y regresar al contexto
+principal. Esta adaptación mantiene las etiquetas y la jerarquía de los módulos sin
+introducir una arquitectura de navegación diferente.
+
+La simulación utiliza interacciones de clic para representar la navegación entre
+frames, transiciones entre vistas y rutas alternativas. De esta manera, el prototipo
+permite demostrar los principales recorridos operativos: autenticación, monitoreo del
+dashboard, gestión de reservas, disponibilidad y habitaciones, inventario, control de
+accesos RFID, check-in, check-out y reportes. Los estados de error se mantienen dentro
+del recorrido correspondiente para evidenciar cómo la interfaz comunica la condición
+y permite continuar, corregir o regresar.
+
+### Prototipo interactivo
+
+El archivo de Figma contiene los dos puntos de inicio de la demostración: Desktop
+flow y Mobile flow. El Desktop flow integra las pantallas principales de la
+aplicación y sus estados de interacción; el Mobile flow presenta el recorrido
+adaptado para navegador móvil.
+
+- [Abrir el prototipo completo en Figma](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes)
+- [Abrir el Desktop flow](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes?node-id=2-2)
+- [Abrir el Mobile flow](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes?node-id=2-3)
+
+### Video de demostración
+
+El video de demostración presenta el prototipo interactivo de Hostera para Desktop y
+Mobile Web Browser. En la grabación se recorren sus principales interacciones y la
+navegación entre las áreas operativas, incluyendo la gestión de reservas, el check-in
+y check-out, el inventario, el control de accesos y los reportes.
+
+<img src="assets/chapter-4/web-application-prototype-video-frame.png" alt="Captura del video de demostración del prototipo web de Hostera en la pantalla de inicio de sesión para Desktop Web Browser" style="width:100%; height:auto;"/>
+
+*Figura 4.77. Captura del video de demostración del prototipo de Hostera en Desktop Web Browser.*
+
+**Enlace al video de Microsoft Stream:** [Ver la demostración del prototipo de Hostera](https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN).
+
+La captura y el enlace anteriores corresponden a la evidencia de navegación exigida
+para esta sección; el enlace de Figma se incluye como referencia directa al prototipo
+interactivo y no sustituye el video solicitado.
 
 ## 4.6. Domain-Driven Software Architecture
 
