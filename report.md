@@ -1066,6 +1066,13 @@ Las tareas identificadas reflejan las actividades estratégicas y de supervisió
 
 ### 2.3.4. Empathy Mapping
 
+Empathy Map 1
+![StevenHuarcaya](assets/chapter-2/Empathy%20map-segmento1.png)
+---
+Empathy Map 2
+![AnyeliCardenas](assets/chapter-2/Empathy%20map-segmento2%20(1).png)
+
+
 ## 2.4. Big Picture EventStorming
 
 El Big Picture EventStorming permite representar visualmente el dominio hotelero de
