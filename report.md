@@ -1201,7 +1201,13 @@ Las funcionalidades identificadas han sido traducidas a los requerimientos espec
 
 El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la jerarquía completa desde los Business Goals hasta las User Stories establecidas para el producto mínimo viable de Hostera.
 
-[INSERTAR CAPTURA DE PANTALLA DE UXPRESSIA]
+### Impact Mapping: Hotel independiente
+
+<img src="assets/chapter-3/uxpressia-impact-mapping-1.png" alt="Imagen de Impact Mapping Hotel Independiente" >
+
+### Impact Mapping: Cadena hotelera pequeña
+
+<img src="assets/chapter-3/uxpressia-impact-mapping-2.png" alt="Imagen de Impact Mapping Hotel Independiente" >
 
 <div style="page-break-before: always;"></div>
 
