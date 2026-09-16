@@ -1006,7 +1006,15 @@ información y el control de las diferencias entre establecimientos.
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
+Esta sección representa los principales perfiles de usuario que fueron creados en base a los segmentos objetivos. El propósito principal de la creación de estos perfiles es el de reflejar de manera precisa las motivaciones, frustraciones y las necesidades reales de nuestros usuarios finales.
 
+Para ello seleccionamos los siguientes perfiles:
+
+User Persona 1
+![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
+---
+User Persona 2
+![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
 ### 2.3.2. User Task Matrix
 En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
 
