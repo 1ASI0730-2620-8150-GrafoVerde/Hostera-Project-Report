@@ -1067,7 +1067,7 @@ Las tareas identificadas reflejan las actividades estratégicas y de supervisió
 
 En esta sección se presentan los User Journey Maps en su versión **As-Is** (situación actual) para cada uno de los segmentos representados. Estos mapas ilustran el flujo de trabajo de extremo a extremo (*end-to-end journey*) que experimentan los usuarios al gestionar sus operaciones hoteleras cotidianas sin la presencia de la plataforma Hostera, evidenciando los puntos de fricción, ineficiencias y dolores en sus procesos actuales.
 
-### As-Is User Journey Map — Segmento 1: Steven Huarcaya
+###  Segmento 1: Steven Huarcaya
 
 El *journey* actual de Steven abarca desde la recepción de solicitudes de reserva por canales dispersos hasta la revisión del inventario y la entrega física de llaves en el hotel. El proceso se caracteriza por una alta dependencia de registros manuales y una constante interrupción operativa para resolver incidencias.
 
@@ -1075,7 +1075,7 @@ El *journey* actual de Steven abarca desde la recepción de solicitudes de reser
 
 ---
 
-### As-Is User Journey Map — Segmento 2: Anyeli Cárdenas
+###  Segmento 2: Anyeli Cárdenas
 
 El *journey* actual de Anyeli contempla el proceso de consolidación y supervisión de la operación de múltiples sedes a la distancia. Las etapas clave incluyen la solicitud de reportes a los administradores locales, la consolidación manual de datos de inventario y la verificación diferida de accesos, lo cual genera retrasos y falta de visibilidad en tiempo real.
 
