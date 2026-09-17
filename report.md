@@ -2906,13 +2906,223 @@ accesos, y publica las actualizaciones al frontend en tiempo real.
 
 ## 5.1. Software Configuration Management
 
+La Gestión de la Configuración de Software (Software Configuration Management, SCM)
+define las herramientas, los repositorios, las reglas de nomenclatura y los controles
+de entrega que el equipo de Hostera utilizará para mantener la consistencia de la
+solución durante su ciclo de vida. Estas prácticas se aplican a la Landing Page, los
+RESTful Web Services, las Frontend Web Applications, los scripts de base de datos, la
+documentación y los artefactos generados para el informe del proyecto.
+
+El equipo mantendrá visibles en el control de versiones las decisiones relacionadas
+con la configuración. Los cambios en el código fuente, las pruebas, la infraestructura
+y la documentación deberán ser trazables a un ítem de trabajo y revisados antes de
+integrarse en una rama compartida. La configuración descrita a continuación refleja
+las prácticas ya establecidas en el repositorio de este informe; los detalles que
+dependen de los repositorios de implementación o de su proveedor de alojamiento se
+completarán cuando dichos artefactos estén disponibles.
+
 ### 5.1.1. Software Development Environment Configuration
+
+Las siguientes herramientas forman parte del entorno actual de colaboración. Las
+herramientas SaaS se utilizan mediante sus aplicaciones web oficiales, mientras que
+las herramientas locales se instalan desde sus canales oficiales de distribución.
+
+| Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
+| --- | --- | --- | --- |
+| GitHub | Aloja el repositorio del equipo, los repositorios de producto, los issues y el historial de revisiones. | [Repositorio del equipo Grafo Verde](https://github.com/1ASI0730-2620-8150-GrafoVerde) | Los cambios se realizan en ramas de trabajo y se integran mediante el flujo Git Flow descrito en la sección 5.1.2. |
+| YouTrack | Gestiona el Product Backlog y realiza el seguimiento de las historias de usuario y los ítems de trabajo. | [Agile Board de Hostera](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5) | El trabajo se asocia a un ítem del backlog antes de su implementación y revisión. |
+| Figma | Elabora y comparte los wireflows, prototipos y mock-ups de las aplicaciones web. | [Prototipos de las aplicaciones web de Hostera](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes) | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe. |
+| UXPressia | Elabora los artefactos de impact mapping utilizados para relacionar objetivos, actores, impactos e historias de usuario. | — | Los diagramas exportados se versionan junto con el informe cuando se utilizan como evidencia. |
+| Pandoc | Convierte `report.md` y sus recursos locales en el entregable PDF. | Instalación local; la configuración y ejecución están documentadas en `README.md`. | La compilación se ejecuta con `bash scripts/build-pdf.sh`; el archivo generado `report.pdf` permanece sin seguimiento. |
+
+Los repositorios de Landing Page, RESTful Web Services y Frontend Web Applications
+mantendrán una estructura documental común. Cada repositorio incluirá un `README.md`
+con las instrucciones de configuración y ejecución, un `CHANGELOG.md` para registrar
+la evolución del producto y un `LICENSE.md` con la licencia aplicable. Además, cada
+repositorio contará con una carpeta `docs/` que contendrá los siguientes artefactos:
+
+- `adrs.md`: decisiones de arquitectura y las razones que las sustentan.
+- `user-stories.md`: historias de usuario consideradas para el producto y su
+  implementación.
+- `class-diagram.puml`: diagrama de clases en formato PlantUML.
+
+Cuando el gestor de dependencias utilizado por un repositorio genere o requiera un
+lockfile, este se conservará en el control de versiones para favorecer instalaciones
+reproducibles. Las variables de entorno se documentarán sin incluir secretos; las
+configuraciones específicas de cada equipo, credenciales, archivos generados y
+archivos del entorno local se excluirán del control de versiones.
 
 ### 5.1.2. Source Code Management
 
+GitHub es la plataforma de gestión del código fuente requerida para los repositorios
+de producto. Cada producto tendrá un repositorio dedicado para que su implementación,
+pruebas y evidencias de despliegue sean trazables. El repositorio del informe se
+mantiene por separado como fuente de documentación y no se considera uno de los
+repositorios de producto exigidos por el enunciado del proyecto:
+
+| Producto | URL del repositorio | Estado actual |
+| --- | --- | --- |
+| Landing Page | [Repositorio de Landing Page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | Repositorio registrado para la implementación de la Landing Page. |
+| RESTful Web Services | Por registrar | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. |
+| Frontend Web Applications | Por registrar | La URL se añadirá cuando se cree el repositorio de implementación. |
+
+El equipo aplica las siguientes ramas de Git Flow:
+
+| Rama | Propósito | Convención de nomenclatura |
+| --- | --- | --- |
+| `main` | Versiones estables y liberadas del producto. | Nombre fijo. |
+| `develop` | Rama de integración para la siguiente versión. | Nombre fijo. |
+| `feature/*` | Una funcionalidad o cambio aislado del informe. | `feature/<descripción-corta-en-kebab-case>`, por ejemplo `feature/software-configuration-management`. |
+| `release/*` | Estabiliza una candidata a lanzamiento y prepara su documentación. | `release/<MAJOR>.<MINOR>.<PATCH>`. |
+| `hotfix/*` | Corrige un defecto de una versión liberada. | `hotfix/<MAJOR>.<MINOR>.<PATCH>`. |
+
+Las ramas de funcionalidad parten de `develop` y se integran nuevamente en `develop`
+después de revisar los cambios. Las ramas de release se crean desde `develop`,
+mientras que las ramas de hotfix se crean desde `main`. El equipo utiliza los
+comandos de Git Flow para iniciar, integrar y finalizar estas ramas; no utiliza pull
+requests de GitHub como mecanismo de integración. La revisión se realiza sobre la
+rama de trabajo y su historial de commits antes de ejecutar el merge correspondiente.
+El equipo no realizará commits directos en `main` o `develop` para el trabajo normal
+de funcionalidades.
+
+Los releases utilizan [Semantic Versioning 2.0.0](https://semver.org/):
+`MAJOR.MINOR.PATCH`. El primer componente mayor permanece en `0` mientras el
+producto se encuentre en desarrollo inicial; durante esta fase, los cambios
+incompatibles incrementan el componente minor, y las funcionalidades compatibles o
+las correcciones se registran de acuerdo con la política de releases del proyecto.
+
 ### 5.1.3. Source Code Style Guide & Conventions
 
+Esta sección establece las convenciones para nombrar elementos y programar en los
+lenguajes y frameworks utilizados por Hostera. De acuerdo con el Project Statement,
+los identificadores del código fuente se escribirán en inglés, aunque los textos
+visibles para los usuarios podrán presentarse en español o inglés según el idioma de
+la interfaz. Las reglas de Git Flow, Conventional Commits y Semantic Versioning se
+describen en la sección 5.1.2 y no se repiten aquí.
+
+#### Convenciones generales de nomenclatura
+
+Se utilizarán nombres descriptivos en inglés y se evitarán abreviaturas que no sean
+ampliamente conocidas. La elección del formato depende del tipo de elemento:
+
+| Elemento | Convención adoptada | Ejemplo |
+| --- | --- | --- |
+| Archivos y carpetas | Minúsculas; se utiliza `kebab-case` cuando el nombre contiene varias palabras. | `reservation-card.vue`, `user-stories.md` |
+| Variables y funciones de JavaScript | `camelCase`. | `reservationCount`, `calculateTotal()` |
+| Clases y componentes | `PascalCase` cuando representan una clase o un componente de Vue. | `ReservationCard`, `BookingSummary` |
+| Constantes | `UPPER_SNAKE_CASE` cuando son valores globales inmutables. | `MAX_RETRY_COUNT` |
+| Clases CSS, atributos `data-*` e identificadores HTML | Minúsculas en `kebab-case`; las clases CSS siguen el patrón BEM cuando representan bloques, elementos y modificadores. | `site-header__nav`, `plan--professional` |
+| Variables CSS personalizadas | Prefijo `--` seguido de un nombre en `kebab-case`. | `--color-primary`, `--spacing-md` |
+| Rutas y recursos de API | Recursos plurales en minúsculas y versionados bajo `/api/v1/`. | `/api/v1/reservations` |
+| Variables de entorno | Mayúsculas en `SCREAMING_SNAKE_CASE`; los valores secretos nunca se registran. | `DATABASE_CONNECTION_STRING` |
+
+#### Landing Page: HTML, CSS y JavaScript
+
+La Landing Page se implementa con HTML, CSS y JavaScript sin un framework de
+componentes. El HTML utilizará elementos semánticos, atributos en minúsculas y una
+estructura que preserve la accesibilidad, con nombres de clases e identificadores en
+inglés. Los archivos CSS se organizarán por responsabilidad y utilizarán nombres en
+`kebab-case`; cuando corresponda, se aplicará BEM (`block__element--modifier`) para
+mantener una relación clara entre la estructura HTML y sus estilos.
+
+El código JavaScript seguirá el [estándar ECMAScript vigente](https://tc39.es/ecma262/)
+y utilizará `const` y `let` en lugar de `var`. Los módulos se declararán explícitamente mediante
+`<script type="module">` y utilizarán `import` y `export` para compartir funciones o
+valores. Los imports emplearán rutas relativas claras y no se dependerá de variables
+globales para comunicar módulos.
+
+Las funciones, clases y módulos relevantes se documentarán mediante JSDoc. Como
+mínimo, las funciones reutilizables deberán indicar su propósito, parámetros y valor
+de retorno cuando corresponda:
+
+```javascript
+/**
+ * Calculates the total amount for a reservation.
+ * @param {number} nightlyRate - The nightly room rate.
+ * @param {number} nights - The number of nights.
+ * @returns {number} The reservation total.
+ */
+export function calculateReservationTotal(nightlyRate, nights) {
+  return nightlyRate * nights;
+}
+```
+
+#### Frontend Web Application: Vue.js y Vite
+
+La Frontend Web Application se desarrollará con Vue.js y Vite. Vite se utilizará
+como herramienta de desarrollo y build, manteniendo sus scripts y configuración en
+el manifiesto del proyecto. Los componentes se implementarán como Single-File
+Components (`.vue`) y utilizarán Composition API. Se preferirá la sintaxis
+`<script setup>` para declarar imports, estado reactivo, funciones y hooks de ciclo de
+vida de forma concisa.
+
+La lógica reutilizable y con estado se extraerá a composables con nombres que
+comiencen por `use`, por ejemplo `useReservationSearch`. Los componentes utilizarán
+nombres en `PascalCase` y los nombres de props, eventos y variables respetarán las
+convenciones de JavaScript. Cada componente tendrá una responsabilidad clara y se
+evitará colocar lógica de negocio extensa directamente en la plantilla.
+
+#### Backend: ASP.NET Core y C#
+
+El backend se desarrollará con ASP.NET Core utilizando C#. En este contexto, el
+nombre correcto de la tecnología es **ASP.NET Core**. Se aplicarán las convenciones
+de nomenclatura de Microsoft para C#:
+
+| Elemento de C# | Convención | Ejemplo |
+| --- | --- | --- |
+| Namespaces, clases, records, enums y miembros públicos | `PascalCase`. | `ReservationService`, `GetReservation()` |
+| Interfaces | `PascalCase` con prefijo `I`. | `IReservationRepository` |
+| Parámetros y variables locales | `camelCase`. | `reservationId`, `totalAmount` |
+| Campos privados de instancia | `_camelCase`. | `_reservationRepository` |
+| Métodos asíncronos | `PascalCase` con sufijo `Async`. | `GetReservationAsync()` |
+| Archivos de configuración y clases de inicio | Nombres establecidos por ASP.NET Core. | `Program.cs`, `appsettings.json` |
+
+Los endpoints, DTOs, servicios, repositorios y entidades utilizarán nombres en
+inglés y mantendrán una responsabilidad única. Las configuraciones específicas de
+ASP.NET Core, como el registro de servicios y el pipeline de middleware, se
+mantendrán en los archivos correspondientes del proyecto y no se mezclarán con
+secretos o valores propios de un entorno.
+
+Las referencias principales para estas convenciones son la [guía de estilo HTML/CSS
+de Google](https://google.github.io/styleguide/htmlcssguide.html), la [guía de estilo
+de Vue.js](https://vuejs.org/style-guide/), la [documentación de Composition
+API](https://vuejs.org/guide/extras/composition-api-faq), la [guía oficial de
+Vite](https://vite.dev/guide/), la [documentación de JSDoc](https://jsdoc.app/), la
+[guía de módulos JavaScript de MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules),
+la [guía de estilo de JavaScript de Google](https://google.github.io/styleguide/jsguide.html)
+y las [convenciones de nomenclatura de C# de Microsoft](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names) y de [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0).
+
 ### 5.1.4. Software Deployment Configuration
+
+La configuración de despliegue se mantendrá separada de los secretos de la aplicación
+y se versionará junto con el producto que despliega. Cada repositorio de producto
+documentará su entorno objetivo, variables requeridas, comando de build, comando de
+inicio, health check, procedimiento de migración de base de datos y procedimiento de
+rollback. Los secretos serán proporcionados por la plataforma de alojamiento o por
+el entorno local y no se registrarán en GitHub.
+
+Para el entregable del informe, el artefacto reproducible de despliegue es la
+generación del PDF: `scripts/build-pdf.sh` utiliza `report.md`, el directorio local
+`assets/` y el CSS del repositorio para generar `report.pdf`. El PDF es un resultado
+generado y está excluido del control de versiones, mientras que la fuente y el script
+de compilación sí están versionados.
+
+La Landing Page está desplegada mediante GitHub Pages utilizando el repositorio de
+Landing Page registrado en la sección 5.1.2. La configuración de publicación utiliza
+la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en la
+[URL pública de la Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+
+<img src="assets/chapter-5/github-pages-deployment.png" alt="Configuración de GitHub Pages de la Landing Page, publicada desde main y la carpeta raíz" style="width:100%; height:auto;"/>
+
+*Figura 5.1. Configuración y estado del despliegue de la Landing Page en GitHub Pages.*
+
+Los destinos de despliegue de los RESTful Web Services y las Frontend Web Applications
+aún no han sido definidos. Por ello, los nombres de sus proveedores, las URL
+públicas, las variables de entorno, los manifiestos de despliegue y las evidencias de
+ejecución se mantienen intencionalmente pendientes hasta que se definan la
+implementación y las decisiones de alojamiento. En ese momento, esta subsección se
+ampliará con un registro de configuración por producto y un enlace a su evidencia de
+despliegue.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -2965,5 +3175,31 @@ This is program for AV2 (not in AV1)
 [10] Google. (s. f.). [_Material Design 3_](https://m3.material.io/). Recuperado el 5 de septiembre de 2026.
 
 [11] World Wide Web Consortium. (2024). [_Web Content Accessibility Guidelines (WCAG) 2.2_](https://www.w3.org/TR/WCAG22/). Recuperado el 5 de septiembre de 2026.
+
+[12] Driessen, V. (2010). [_A successful Git branching model_](https://nvie.com/posts/a-successful-git-branching-model/). Recuperado el 16 de septiembre de 2026.
+
+[13] Preston-Werner, T. (s. f.). [_Semantic Versioning 2.0.0_](https://semver.org/). Recuperado el 16 de septiembre de 2026.
+
+[14] Conventional Commits. (s. f.). [_Conventional Commits 1.0.0_](https://www.conventionalcommits.org/en/v1.0.0/). Recuperado el 16 de septiembre de 2026.
+
+[15] Google. (s. f.). [_Google HTML/CSS Style Guide_](https://google.github.io/styleguide/htmlcssguide.html). Recuperado el 16 de septiembre de 2026.
+
+[16] Vue.js. (s. f.). [_Style Guide_](https://vuejs.org/style-guide/). Recuperado el 16 de septiembre de 2026.
+
+[17] Vue.js. (s. f.). [_Composition API FAQ_](https://vuejs.org/guide/extras/composition-api-faq). Recuperado el 16 de septiembre de 2026.
+
+[18] Vite. (s. f.). [_Getting Started_](https://vite.dev/guide/). Recuperado el 16 de septiembre de 2026.
+
+[19] JSDoc. (s. f.). [_JSDoc Documentation_](https://jsdoc.app/). Recuperado el 16 de septiembre de 2026.
+
+[20] Mozilla Developer Network. (s. f.). [_JavaScript modules_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). Recuperado el 16 de septiembre de 2026.
+
+[21] ECMA International. (s. f.). [_ECMAScript® Language Specification_](https://tc39.es/ecma262/). Recuperado el 16 de septiembre de 2026.
+
+[22] Google. (s. f.). [_Google JavaScript Style Guide_](https://google.github.io/styleguide/jsguide.html). Recuperado el 16 de septiembre de 2026.
+
+[23] Microsoft. (s. f.). [_Convenciones y reglas de nomenclatura de identificadores de C#_](https://learn.microsoft.com/es-es/dotnet/csharp/fundamentals/coding-style/identifier-names). Recuperado el 16 de septiembre de 2026.
+
+[24] Microsoft. (s. f.). [_ASP.NET Core fundamentals overview_](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0). Recuperado el 16 de septiembre de 2026.
 
 # Anexos
