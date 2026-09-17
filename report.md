@@ -1027,6 +1027,32 @@ En la segunda sede también se encuentra una sala de eventos, cuyos servicios de
 
 Finalmente, considera que una mejora importante para la administración del hotel sería contar con un sistema centralizado de seguridad y control que permita gestionar los accesos de huéspedes y trabajadores, registrar el uso de los diferentes servicios y administrar la información de ambas sedes. Esto le permitiría reducir el trabajo manual, mejorar la seguridad y tener un mayor control sobre las actividades y servicios que se realizan en el hotel.
 
+**Entrevista 2:**
+
+**<img src="assets/chapter-2/interview-03-rafael-prieto.png" alt="Entrevista 2 de Rafael Prieto" style="width:100%; height:auto;"/>**
+
+Entrevistado: Rafael Prieto, Manager del Hotel Intercontinental Lima Miraflores y Hotel Índigo Lima Miraflores
+
+<br>Edad: 40 años
+
+Enlace de entrevista: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105\_upc\_edu\_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I)
+<br>Ocupación: Room Division Manager
+<br>Ubicación: Miraflores, Lima
+
+Resumen:
+
+El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y requerimientos especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
+
+Para la gestión de reservas, el entrevistado señala que esta actividad es realizada principalmente por el departamento de reservas, aunque también puede ser gestionada por el Front Desk Manager o los MODs cuando es necesario. La disponibilidad de habitaciones se analiza estratégicamente mediante reuniones semanales de revenue, donde se revisa el comportamiento del mercado, los hoteles competidores, las tarifas, los eventos de la semana y los niveles de disponibilidad. A partir de esta información, diferentes áreas como ventas, gerencia general, revenue management y reservas establecen estrategias para responder a los cambios entre temporadas de alta y baja ocupación.
+
+En cuanto al almacén, el entrevistado no controla directamente las existencias ni las salidas, ya que esta función corresponde al departamento de almacén. Su responsabilidad consiste principalmente en revisar y aprobar los pedidos de las áreas bajo su cargo, verificando que sean coherentes y que no excedan el presupuesto establecido. Para el control de accesos de huéspedes, participan principalmente los departamentos de seguridad y recepción. Seguridad identifica posibles anomalías durante el ingreso, mientras que recepción verifica en el sistema que las personas que indican tener una reserva efectivamente estén registradas.
+
+Para supervisar el hotel de manera remota, cuenta con una laptop y un celular proporcionados por la organización. Mediante una conexión VPN autorizada puede ingresar al sistema desde su domicilio y revisar información como las llegadas, salidas y movimiento de huéspedes. Utiliza principalmente Opera y la VPN como herramientas para realizar estas tareas. El acceso remoto está restringido a determinados trabajadores según su nivel de responsabilidad dentro del hotel, por lo que no todos cuentan con una laptop corporativa o acceso mediante VPN.
+
+Respecto a las dificultades, considera que no existe un único problema específico, sino diferentes circunstancias que pueden presentarse en una operación hotelera, relacionadas con el personal, la percepción del huésped o descuidos en la atención y preparación de las habitaciones. Por ello, considera que la organización y la capacidad de responder ante estas situaciones son aspectos importantes para la operación. Como cambio para mejorar la administración, destaca la importancia de la mejora continua y de mantener motivado al equipo, especialmente mediante el reconocimiento y proporcionándoles las herramientas necesarias para realizar correctamente su trabajo.
+
+Finalmente, resalta la importancia de comprender mejor el trabajo del área de housekeeping. Señala que su función no se limita a limpiar habitaciones, sino que también implica cumplir estándares, identificar los gustos y preferencias de los huéspedes y cuidar los detalles durante la preparación de las habitaciones. Considera que este departamento tiene un trabajo altamente demandante y que su aporte es fundamental para la experiencia del huésped, razón por la cual algunas cadenas realizan actividades como el Housekeeping Week para reconocer su trabajo.
+
 **Segmento 2: Primer segmento objetivo: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**
 
 **Entrevista 1:**
@@ -1054,32 +1080,6 @@ Como solución complementaria para la administración de habitaciones, comenta q
 Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, facilitando así la gestión y supervisión de las operaciones del hotel.
 
 **Entrevista 2:**
-
-**<img src="assets/chapter-2/interview-03-rafael-prieto.png" alt="Entrevista 2 de Rafael Prieto" style="width:100%; height:auto;"/>**
-
-Entrevistado: Rafael Prieto, Manager del Hotel Intercontinental Lima Miraflores y Hotel Índigo Lima Miraflores
-
-<br>Edad: 40 años
-
-Enlace de entrevista: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105\_upc\_edu\_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I)
-<br>Ocupación: Room Division Manager
-<br>Ubicación: Miraflores, Lima
-
-Resumen:
-
-El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y requerimientos especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
-
-Para la gestión de reservas, el entrevistado señala que esta actividad es realizada principalmente por el departamento de reservas, aunque también puede ser gestionada por el Front Desk Manager o los MODs cuando es necesario. La disponibilidad de habitaciones se analiza estratégicamente mediante reuniones semanales de revenue, donde se revisa el comportamiento del mercado, los hoteles competidores, las tarifas, los eventos de la semana y los niveles de disponibilidad. A partir de esta información, diferentes áreas como ventas, gerencia general, revenue management y reservas establecen estrategias para responder a los cambios entre temporadas de alta y baja ocupación.
-
-En cuanto al almacén, el entrevistado no controla directamente las existencias ni las salidas, ya que esta función corresponde al departamento de almacén. Su responsabilidad consiste principalmente en revisar y aprobar los pedidos de las áreas bajo su cargo, verificando que sean coherentes y que no excedan el presupuesto establecido. Para el control de accesos de huéspedes, participan principalmente los departamentos de seguridad y recepción. Seguridad identifica posibles anomalías durante el ingreso, mientras que recepción verifica en el sistema que las personas que indican tener una reserva efectivamente estén registradas.
-
-Para supervisar el hotel de manera remota, cuenta con una laptop y un celular proporcionados por la organización. Mediante una conexión VPN autorizada puede ingresar al sistema desde su domicilio y revisar información como las llegadas, salidas y movimiento de huéspedes. Utiliza principalmente Opera y la VPN como herramientas para realizar estas tareas. El acceso remoto está restringido a determinados trabajadores según su nivel de responsabilidad dentro del hotel, por lo que no todos cuentan con una laptop corporativa o acceso mediante VPN.
-
-Respecto a las dificultades, considera que no existe un único problema específico, sino diferentes circunstancias que pueden presentarse en una operación hotelera, relacionadas con el personal, la percepción del huésped o descuidos en la atención y preparación de las habitaciones. Por ello, considera que la organización y la capacidad de responder ante estas situaciones son aspectos importantes para la operación. Como cambio para mejorar la administración, destaca la importancia de la mejora continua y de mantener motivado al equipo, especialmente mediante el reconocimiento y proporcionándoles las herramientas necesarias para realizar correctamente su trabajo.
-
-Finalmente, resalta la importancia de comprender mejor el trabajo del área de housekeeping. Señala que su función no se limita a limpiar habitaciones, sino que también implica cumplir estándares, identificar los gustos y preferencias de los huéspedes y cuidar los detalles durante la preparación de las habitaciones. Considera que este departamento tiene un trabajo altamente demandante y que su aporte es fundamental para la experiencia del huésped, razón por la cual algunas cadenas realizan actividades como el Housekeeping Week para reconocer su trabajo.
-
-**Entrevista 3:**
 
 **<img src="assets/chapter-2/interview-04-otto-cuba.png" alt="Entrevista 3 de Otto Cuba" style="width:100%; height:auto;"/>**
 
