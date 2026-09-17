@@ -3354,6 +3354,28 @@ documentación de servicios para el Sprint 1.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
+Durante el Sprint 1 se completó el despliegue de la Landing Page en GitHub Pages.
+El procedimiento consistió en seleccionar **Deploy from a branch** como fuente de
+publicación, elegir la rama `main`, seleccionar la carpeta `/ (root)` y guardar la
+configuración. GitHub Pages ejecutó posteriormente su flujo de build and deployment
+y publicó el sitio en el entorno `github-pages`.
+
+| Product | Repository | Deployment Platform | Source | Public URL | Sprint Status |
+|---|---|---|---|---|---|
+| Landing Page | [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | GitHub Pages | `main` / `/ (root)` | [Open Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/) | Deployed |
+| Web Services | — | — | — | — | Not in Sprint 1 scope |
+| Frontend Web Applications | — | — | — | — | Not in Sprint 1 scope |
+
+La configuración y el estado publicado se evidencian en la siguiente captura:
+
+<img src="assets/chapter-5/github-pages-deployment.png" alt="Configuración de GitHub Pages de la Landing Page publicada desde main y la carpeta raíz" style="width:100%; height:auto;"/>
+
+*Figura 5.5. Evidencia del despliegue de la Landing Page mediante GitHub Pages.*
+
+La Landing Page quedó accesible públicamente en la URL indicada. Los destinos de
+despliegue de Web Services y Frontend Web Applications se documentarán en el sprint
+correspondiente a su implementación.
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
 # Conclusiones
