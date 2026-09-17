@@ -3180,6 +3180,35 @@ Al cierre del Sprint 1, el objetivo se considera cumplido: las ocho User Stories
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
+Durante el Sprint 1, los aspectos de trabajo se organizaron según las ocho User
+Stories de la Epic 1 (`EP001 Landing Page Experience`). Esta organización permitió
+asignar una persona líder para cada funcionalidad y mantener la colaboración del
+resto del equipo durante su implementación, revisión e integración mediante Git Flow.
+
+La asignación de líderes se basa en la persona responsable de la feature branch de
+cada User Story en el [repositorio de Landing Page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+Los cuatro integrantes restantes se registran como colaboradores en cada aspecto,
+de acuerdo con la dinámica de trabajo colaborativo definida para el Sprint 1.
+
+En la matriz Leadership-and-Collaboration (LACX), `L` representa al líder del aspecto
+y `C` representa a un colaborador:
+
+| Team Member | GitHub Username | US001<br>Proposition | US002<br>Navigation | US003<br>Independent Path | US004<br>Small Chain | US005<br>Benefits and Flow | US006<br>Plans | US007<br>Product and Support | US008<br>Language |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Cuba Pareja, Joaquin Antonio | `joacuba` | L | C | C | C | C | C | L | L |
+| Cuba Vega, Darnell Yadir | `darnell1910` | C | L | C | C | C | L | C | C |
+| Condori Urviola, Mateo Sebastián | `BeyaminUv` | C | C | L | C | C | C | C | C |
+| Flores Rios, Juan Diego | `YopoFlores` | C | C | C | L | C | C | C | C |
+| Santana Luna, José Antonio | `JhosBY2005` | C | C | C | C | L | C | C | C |
+
+Los líderes identificados para cada aspecto son Joaquin Cuba para la propuesta de
+valor, el contenido de producto y la variante multilingüe; Darnell Cuba para la
+navegación y la comparación de planes; Mateo Condori para el camino del hotel
+independiente; Juan Diego Flores para el camino de la cadena hotelera pequeña; y José
+Santana para los beneficios y el flujo operativo. La responsabilidad de liderazgo no
+excluye la participación del resto del equipo, que colaboró en los ocho aspectos del
+Sprint.
+
 #### 5.2.1.3. Sprint Backlog 1
 
 #### 5.2.1.4. Development Evidence for Sprint Review
