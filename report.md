@@ -3337,6 +3337,21 @@ español.
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
+El alcance del Sprint 1 estuvo concentrado en la implementación de la Landing
+Page. Por ese motivo, durante este sprint no se implementaron Web Services ni
+endpoints HTTP, y no se generó documentación OpenAPI asociada. El repositorio de
+la Landing Page contiene la experiencia web estática y se encuentra disponible en
+el [repositorio de Landing Page de Hostera](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+La documentación de endpoints y sus evidencias se incorporará en el sprint en
+el que se implemente el repositorio de Web Services.
+
+| Repository | Endpoint | Actions / HTTP Verb | OpenAPI Documentation | Documentation Commit |
+|---|---|---|---|---|
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | — | — | — | — |
+
+Por lo tanto, no corresponde incluir capturas de interacción con Swagger u otra
+documentación de servicios para el Sprint 1.
+
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
