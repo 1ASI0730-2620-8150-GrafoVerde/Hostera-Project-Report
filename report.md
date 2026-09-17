@@ -3378,6 +3378,44 @@ correspondiente a su implementación.
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
+La colaboración del Sprint 1 se organizó alrededor de la implementación de las
+ocho User Stories de `EP001`. Todos los integrantes participaron en la
+implementación de la Landing Page mediante ramas de trabajo y commits asociados
+a las User Stories, mientras que la integración se realizó siguiendo Git Flow.
+La reunión de planificación se realizó de forma virtual el 12 de septiembre de
+2026 y contó con la asistencia de todos los integrantes.
+
+La siguiente relación resume los 20 commits funcionales registrados en la
+sección 5.2.1.4, sin contar los commits de merge ni los commits posteriores de
+release:
+
+| Integrante | User Stories / aspectos implementados | Commits funcionales del Sprint 1 |
+|---|---|---:|
+| Joaquin Cuba (`joacuba`) | US001, US007 y US008: propuesta de valor, contenido de producto y equipo, soporte y variantes de idioma. | 8 |
+| Darnell Cuba (`darnell1910`) | US002 y US006: navegación, términos, caminos comerciales, planes y acciones de cierre. | 6 |
+| Mateo Condori (`BeyaminUv`) | US003: camino del hotel independiente y plan Free. | 2 |
+| Juan Diego Flores (`YopoFlores`) | US004: camino de la cadena pequeña y plan Professional. | 2 |
+| José Santana (`JhosBY2005`) | US005: beneficios de operaciones conectadas y flujo operativo. | 2 |
+| **Total** | **Ocho User Stories de `EP001`** | **20** |
+
+La captura del analítico de GitHub muestra la actividad de contribución del
+repositorio de la Landing Page. El historial de commits permite complementar
+este analítico con la identificación de las ramas, autores y mensajes asociados
+con cada User Story.
+
+<img src="assets/chapter-5/sprint-1-github-contributors.png" alt="Analítico de colaboradores del repositorio de la Landing Page en GitHub" style="width:100%; height:auto;"/>
+
+*Figura 5.6. Analítico de contribuciones del repositorio de la Landing Page en GitHub.*
+
+<img src="assets/chapter-5/sprint-1-github-commits.png" alt="Historial de commits del repositorio de la Landing Page en la rama main" style="width:100%; height:auto;"/>
+
+*Figura 5.7. Historial de commits del repositorio de la Landing Page en la rama `main`.*
+
+La evidencia muestra una distribución de responsabilidades por User Story y
+una integración progresiva de los cambios. La participación de cada integrante
+se mantuvo vinculada con un aspecto funcional concreto y quedó respaldada por
+los commits detallados en la evidencia de desarrollo del Sprint Review.
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
