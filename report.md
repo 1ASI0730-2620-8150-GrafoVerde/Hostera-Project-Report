@@ -3307,6 +3307,34 @@ documentan estos cambios.
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
+Durante el Sprint 1 se completó la experiencia principal de la Landing Page para
+las ocho User Stories de `EP001`. La versión ejecutable está disponible en
+[https://1asi0730-2620-8150-grafoverde.github.io/landing-page/](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+La navegación permite recorrer la propuesta de valor, los caminos según la
+escala del hotel, los beneficios operativos, el flujo de trabajo, los planes,
+la información del producto y del equipo, las preguntas frecuentes y el
+formulario de contacto comercial. También se verificó la disponibilidad de las
+variantes en inglés y español.
+
+Las siguientes capturas muestran las principales vistas alcanzadas en el Sprint
+Review:
+
+<img src="assets/chapter-5/sprint-1-landing-page-hero.png" alt="Vista principal de la Landing Page de Hostera desplegada" style="width:100%; height:auto;"/>
+
+*Figura 5.3. Vista principal de la Landing Page desplegada en GitHub Pages.*
+
+<img src="assets/chapter-5/sprint-1-landing-page-pricing.png" alt="Vista de comparación de planes de la Landing Page de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 5.4. Vista de comparación de planes Free, Professional y Enterprise.*
+
+Como evidencia de navegación, se incorpora el [video de demostración de
+Hostera](https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN).
+El video muestra los principales recorridos de navegación de la Landing Page,
+incluyendo la propuesta de valor, los caminos según la escala del hotel, los
+beneficios, el flujo operativo, la comparación de planes, el contenido del
+producto y del equipo, las preguntas frecuentes y el cambio entre inglés y
+español.
+
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
