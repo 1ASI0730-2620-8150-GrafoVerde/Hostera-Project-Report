@@ -1001,7 +1001,222 @@ información y el control de las diferencias entre establecimientos.
 
 ### 2.2.2. Registro de entrevistas
 
+**Segmento 1: Primer segmento objetivo: administradores y propietarios de hoteles independientes**
+
+Entrevista 1:
+
+<img src="assets/chapter-2/interview-01-wilson.png" alt="Entrevista 1 de Wilson" style="width:100%; height:auto;"/>
+
+Entrevistado: Wilson
+<br>Edad: 46 años
+
+Enlace de entrevista: [https://drive.google.com/file/d/1CLCIVG5evrr4Z0-OdklAttTeY6RAlvJK/view?usp=sharing](https://drive.google.com/file/d/1CLCIVG5evrr4Z0-OdklAttTeY6RAlvJK/view?usp=sharing)
+<br>Ocupación: Ingeniero y administrador de hotel
+<br>Ubicación: Puno, Puno
+
+Resumen:
+Wilson, ingeniero y administrador de un hotel independiente en Puno, comenta sobre los principales desafíos que enfrenta al gestionar las reservas, accesos, disponibilidad e inventario de dos sedes. Actualmente, administra una sede principal de aproximadamente 30 habitaciones y otra de alrededor de 15 habitaciones, que además cuenta con un espacio para eventos. Señala que una de las principales dificultades es centralizar la información de ambas sedes, ya que debe coordinar constantemente con el administrador de la segunda sede para conocer las habitaciones disponibles.
+
+Para gestionar las reservas, recibe información principalmente mediante WhatsApp, correo electrónico, TikTok y aplicaciones de reservas, pero posteriormente debe trasladarla manualmente a un archivo de Excel, que utiliza como herramienta principal para controlar la disponibilidad y las reservas. Para los accesos utiliza tarjetas de identificación, aunque actualmente estas solo permiten controlar la entrada y salida de las habitaciones. También emplea una computadora para administrar el sistema de tarjetas.
+
+Respecto a la seguridad, considera necesario que cada trabajador de limpieza tenga su propia tarjeta de acceso, ya que anteriormente una misma tarjeta podía ser utilizada por diferentes personas, dificultando identificar quién ingresó a una habitación en caso de pérdida de algún objeto. Por ello, considera importante registrar quién entra, a qué hora y si el acceso corresponde con su turno de trabajo. En caso de pérdida de una tarjeta, actualmente esta debe ser anulada y reemplazada por una nueva.
+
+Otro aspecto importante es el control de los diferentes servicios ofrecidos por el hotel. Además de las habitaciones, administra desayunos, almuerzos, productos del minibar, piscina, sauna y gimnasio. Propone que estos servicios puedan registrarse directamente mediante la tarjeta del huésped, utilizando lectores de tarjetas, para evitar que el personal tenga que registrar manualmente quién utiliza cada servicio y facilitar el cobro al finalizar la estadía.
+
+En la segunda sede también se encuentra una sala de eventos, cuyos servicios dependen del tipo de evento contratado, como catering, DJ, iluminación o proyector. Por ello, considera necesario que el sistema pueda registrar diferentes paquetes y servicios adicionales. Asimismo, menciona que próximamente planea incorporar bungalows como una nueva modalidad de alojamiento, con características similares a Airbnb y costos diferentes.
+
+Finalmente, considera que una mejora importante para la administración del hotel sería contar con un sistema centralizado de seguridad y control que permita gestionar los accesos de huéspedes y trabajadores, registrar el uso de los diferentes servicios y administrar la información de ambas sedes. Esto le permitiría reducir el trabajo manual, mejorar la seguridad y tener un mayor control sobre las actividades y servicios que se realizan en el hotel.
+
+**Segmento 2: Primer segmento objetivo: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**
+
+**Entrevista 1:**
+
+**<img src="assets/chapter-2/interview-02-melia-general-manager.png" alt="Entrevista 1 del gerente general del Hotel Meliá Lima Miraflores" style="width:100%; height:auto;"/>**
+
+Entrevistado: Gerente general del Hotel Meliá Lima Miraflores
+<br>Edad: 40 años
+
+Enlace de entrevista: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105\_upc\_edu\_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni)
+<br>Ocupación: Administrador de negocios turísticos y hoteleros / Gerente general
+<br>Ubicación: Miraflores, Lima
+
+Resumen:
+El entrevistado, administrador de negocios turísticos y hoteleros y gerente general de un hotel en Miraflores, comenta sobre los principales procesos y herramientas que utiliza para supervisar las reservas, habitaciones e información de las propiedades que administra. Diariamente recibe informes de recepción, entre ellos el *Flash Manager* y el *History and Forecast*, que le permiten revisar información consolidada, histórica y proyectada. Además, el supervisor de recepción, el área de Experience y el agente de reservas realizan un seguimiento diario de las reservas y sus observaciones, considerando aspectos como el tipo de habitación, tarifa, plan de alimentación y procedencia de la reserva mediante plataformas como Booking y Expedia.
+
+Para la gestión de reservas e inventario utiliza principalmente Opera Cloud, integrado con el CRM. El sistema permite administrar el inventario de habitaciones y realizar seguimiento de las reservas. También facilita el trabajo del *revenue manager*, quien puede modificar las tarifas de acuerdo con la disponibilidad de cada tipo de habitación. Como medida de seguridad, cada trabajador cuenta con un usuario y contraseña personal e intransferible, lo que permite realizar un *tracking* de los movimientos efectuados en las reservas, como cambios de tarifas o incorporación de información.
+
+En situaciones de sobreventa u *overbooking*, se realiza una coordinación entre los responsables de las diferentes propiedades para derivar a los huéspedes a otra sede. Para mantener separada la información de cada hotel, cada propiedad cuenta con informes y un centro de costos o código propio. De esta manera, los usuarios autorizados pueden acceder únicamente a la información correspondiente a las sedes que tienen bajo su responsabilidad. Opera también permite realizar comparaciones entre diferentes informes y propiedades.
+
+Respecto a la seguridad de la información, señala que Opera está configurado de acuerdo con el código de cada propiedad, evitando que otras sedes o personas externas puedan acceder a información que no les corresponde. También menciona que Opera Cloud representa una versión más moderna del sistema, utilizando almacenamiento en la nube en lugar de depender de la misma infraestructura de centros de datos.
+
+Como solución complementaria para la administración de habitaciones, comenta que propuso implementar una plataforma destinada al área de ama de llaves. Actualmente, esta plataforma permite visualizar en tiempo real el estado de las habitaciones y realizar seguimiento de trabajos de mantenimiento y pendientes relacionados con las áreas de *Room Divisions*, incluyendo ama de llaves, recepción y mantenimiento. El costo aproximado es de 1.500 dólares anuales por propiedad, e incluye soporte 24/7 desde España. Las capacitaciones se realizan constantemente y también forman parte de la inducción de los nuevos trabajadores que utilizarán la plataforma.
+
+Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, facilitando así la gestión y supervisión de las operaciones del hotel.
+
+**Entrevista 2:**
+
+**<img src="assets/chapter-2/interview-03-rafael-prieto.png" alt="Entrevista 2 de Rafael Prieto" style="width:100%; height:auto;"/>**
+
+Entrevistado: Rafael Prieto, Manager del Hotel Intercontinental Lima Miraflores y Hotel Índigo Lima Miraflores
+
+<br>Edad: 40 años
+
+Enlace de entrevista: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105\_upc\_edu\_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I)
+<br>Ocupación: Room Division Manager
+<br>Ubicación: Miraflores, Lima
+
+Resumen:
+
+El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y requerimientos especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
+
+Para la gestión de reservas, el entrevistado señala que esta actividad es realizada principalmente por el departamento de reservas, aunque también puede ser gestionada por el Front Desk Manager o los MODs cuando es necesario. La disponibilidad de habitaciones se analiza estratégicamente mediante reuniones semanales de revenue, donde se revisa el comportamiento del mercado, los hoteles competidores, las tarifas, los eventos de la semana y los niveles de disponibilidad. A partir de esta información, diferentes áreas como ventas, gerencia general, revenue management y reservas establecen estrategias para responder a los cambios entre temporadas de alta y baja ocupación.
+
+En cuanto al almacén, el entrevistado no controla directamente las existencias ni las salidas, ya que esta función corresponde al departamento de almacén. Su responsabilidad consiste principalmente en revisar y aprobar los pedidos de las áreas bajo su cargo, verificando que sean coherentes y que no excedan el presupuesto establecido. Para el control de accesos de huéspedes, participan principalmente los departamentos de seguridad y recepción. Seguridad identifica posibles anomalías durante el ingreso, mientras que recepción verifica en el sistema que las personas que indican tener una reserva efectivamente estén registradas.
+
+Para supervisar el hotel de manera remota, cuenta con una laptop y un celular proporcionados por la organización. Mediante una conexión VPN autorizada puede ingresar al sistema desde su domicilio y revisar información como las llegadas, salidas y movimiento de huéspedes. Utiliza principalmente Opera y la VPN como herramientas para realizar estas tareas. El acceso remoto está restringido a determinados trabajadores según su nivel de responsabilidad dentro del hotel, por lo que no todos cuentan con una laptop corporativa o acceso mediante VPN.
+
+Respecto a las dificultades, considera que no existe un único problema específico, sino diferentes circunstancias que pueden presentarse en una operación hotelera, relacionadas con el personal, la percepción del huésped o descuidos en la atención y preparación de las habitaciones. Por ello, considera que la organización y la capacidad de responder ante estas situaciones son aspectos importantes para la operación. Como cambio para mejorar la administración, destaca la importancia de la mejora continua y de mantener motivado al equipo, especialmente mediante el reconocimiento y proporcionándoles las herramientas necesarias para realizar correctamente su trabajo.
+
+Finalmente, resalta la importancia de comprender mejor el trabajo del área de housekeeping. Señala que su función no se limita a limpiar habitaciones, sino que también implica cumplir estándares, identificar los gustos y preferencias de los huéspedes y cuidar los detalles durante la preparación de las habitaciones. Considera que este departamento tiene un trabajo altamente demandante y que su aporte es fundamental para la experiencia del huésped, razón por la cual algunas cadenas realizan actividades como el Housekeeping Week para reconocer su trabajo.
+
+**Entrevista 3:**
+
+**<img src="assets/chapter-2/interview-04-otto-cuba.png" alt="Entrevista 3 de Otto Cuba" style="width:100%; height:auto;"/>**
+
+Entrevistado: Otto Cuba
+
+<br>Edad: 50 años
+
+Enlace de entrevista: [https://upcedupe-my.sharepoint.com/personal/u202410105\_upc\_edu\_pe/\_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105\_upc\_edu\_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12](https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12)
+<br>Ocupación: Accionista del Hotel Bahía de Cuba
+<br>Ubicación: Playa de Tokio, Huarmey, Áncash
+
+Resumen:
+
+Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en la playa de Tokio, Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
+
+Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja conjuntamente con la administradora, quienes bloquean y gestionan las reservas de acuerdo con la disponibilidad. Posteriormente, el personal operativo se encarga de direccionar las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se realizan registros manuales que posteriormente son trasladados a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
+
+Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación entre el equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, siendo estos los principales canales utilizados para coordinar las actividades del hospedaje.
+
+Como solución para mejorar la coordinación y acompañar el crecimiento del negocio, considera necesario implementar un sistema que permita automatizar las reservas y brindar una mayor visibilidad del hospedaje mediante una página web. Actualmente se encuentran evaluando un proyecto de implementación de este tipo de sistema debido a las necesidades que han surgido con el crecimiento del establecimiento.
+
+Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que están evaluando financiar la implementación mediante una entidad bancaria, con el objetivo de concretar el proyecto para la nueva temporada del año 2027. De esta manera, buscan avanzar desde una gestión principalmente manual hacia una administración más automatizada de las reservas y con mayor presencia digital.
+
 ### 2.2.3. Análisis de entrevistas
+
+**Segmento 1: Primer segmento objetivo: administradores y propietarios de hoteles independientes**
+
+
+
+**Perfil del entrevistado:**
+Ingeniero de profesión, 46 años, propietario y administrador de un hotel en la ciudad de Puno desde hace 2 años (previamente trabajó 5 años como empleado en otro hotel). Actualmente gestiona dos sedes: la principal (~30 habitaciones) y una secundaria (~15 habitaciones más un ambiente para eventos).
+
+* **Motivación para participar:**
+  El entrevistado accede a colaborar principalmente porque el proyecto le ofrece acceso anticipado a un producto de gestión de acceso físico a habitaciones, aplicable a una o varias sedes hoteleras — es decir, una motivación directamente ligada a resolver un problema operativo propio, no solo altruista.
+* **Dificultades actuales:**
+  Se identifican varias barreras recurrentes:
+  * Fragmentación de la información: las reservas llegan por WhatsApp, TikTok, correo y aplicativos de reserva, y todo debe consolidarse manualmente en Excel.
+  * Falta de trazabilidad en los accesos: el sistema de tarjetas actual solo registra entrada/salida de habitaciones, sin identificar con certeza qué persona específica ingresó, lo que ha generado casos de objetos perdidos sin poder atribuir responsabilidad.
+  * Coordinación entre sedes: debe recibir reportes diarios del administrador de la segunda sede para poder redistribuir disponibilidad (por ejemplo, ante grupos grandes o promociones).
+  * Gestión de servicios adicionales dispersos: desayuno, almuerzo, frigobar, eventos (catering, DJ, proyector) se registran de forma manual y descentralizada.
+* **Procesos y herramientas actuales:**
+  Uso intensivo de Excel como herramienta central de control de reservas y disponibilidad, complementado con un sistema de tarjetas tipo PID (solo para apertura de puertas y ascensor por piso). No usa un PMS formal ni navegador específico; la coordinación con clientes es mayormente vía WhatsApp.
+* **Funcionalidades deseadas (mejoras):**
+  * Tarjetas de acceso individualizadas por empleado (no compartidas), para poder identificar quién ingresó a cada habitación y en qué turno.
+  * Extensión del control de acceso a otras zonas: piscina, sauna, gimnasio en la sede principal.
+  * Registro automático de consumo de servicios (desayuno, almuerzo) mediante lectores de tarjeta, para evitar que el personal deba anotar manualmente quién usa cada servicio.
+  * Manejo diferenciado de tarjetas para el nuevo local de eventos (paquetes por tipo de evento: fiesta, reunión, conferencia).
+  * A futuro, incorporar bungalows tipo "experiencia vivencial" (modelo Airbnb) como una nueva línea de servicio con su propio esquema de costos.
+* **Factores para la adopción (costo, seguridad, soporte):**
+  Valora que el sistema permita centralizar el cobro de servicios adicionales bajo el ID de la tarjeta/habitación, reduciendo la necesidad de personal dedicado a registrar manualmente cada consumo. La seguridad y la trazabilidad de accesos (saber quién entra y cuándo) aparecen como el criterio más importante para justificar la inversión.
+* **Impacto percibido:**
+  El entrevistado reconoce que un mejor control de accesos y servicios simplificaría significativamente su carga operativa como propietario único, permitiéndole manejar de forma más eficiente el inventario de servicios (habitación, alimentación, eventos) tanto para el personal de limpieza como para los huéspedes en ambas sedes.
+* **Propuestas de mejora:**
+  * Tarjetas nominativas por trabajador para trazabilidad de responsabilidad.
+  * Ampliación del alcance del sistema de tarjetas a zonas comunes (piscina, sauna, gimnasio).
+  * Registro automatizado de consumo de servicios adicionales vinculado a la tarjeta del huésped.
+  * Gestión diferenciada por tipo de evento en la sede secundaria.
+
+En conjunto, la entrevista evidencia que el segmento de administradores hoteleros independientes con múltiples sedes valora sobre todo la trazabilidad de accesos y la automatización del registro de servicios adicionales, por encima de la simple apertura de puertas. Su adopción del producto dependerá de que este permita centralizar el control de ambas sedes, identificar responsables individuales por acceso y reducir la carga manual de registro que hoy recae en Excel y WhatsApp.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Segmento 2: Primer segmento objetivo: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**
+
+
+
+
+
+**Perfiles de los entrevistados:**
+
+* Entrevistado 1: 40 años, administrador de negocios turísticos y hoteleros, Gerente General del Hotel Meliá Lima Miraflores, reside en Miraflores, a cargo de dos sedes (Meliá Lima Miraflores y Meliá Lima San Isidro).
+* Entrevistado 2: Room Division Manager de un complejo de dos hoteles (Intercontinental Lima Miraflores, 321 habitaciones, e Índigo Lima Miraflores, 76 habitaciones), a cargo de recepción, SPA, seguridad y housekeeping.
+* **Motivación / rol frente a la gestión:**
+  A diferencia del segmento 1 (dueños-administradores independientes), aquí los entrevistados no son propietarios sino gestores profesionales dentro de cadenas hoteleras estructuradas, con responsabilidades divididas por departamentos (reservas, recepción, seguridad, housekeeping, almacén) y bajo sistemas corporativos estandarizados.
+* **Herramientas y sistemas actuales:**
+  Ambos hoteles utilizan **Opera / Opera Cloud** como PMS y CRM principal, el mismo sistema que usan cadenas internacionales (Hilton, Marriott, Intercontinental, Mandarin Oriental). Destacan:
+  * Informes diarios consolidados (Flash Manager, History and Forecast) para visión general de ocupación y proyecciones.
+  * Usuario y contraseña individual por empleado para trazabilidad de cambios en reservas (por seguridad, no transferible).
+  * Cada sede tiene un código/centro de costos propio (ej. 58.50 y 52.20) que segrega la información entre propiedades, incluso dentro de la misma cadena.
+  * Uso de una plataforma adicional (Easy) para housekeeping y mantenimiento, con seguimiento en tiempo real del estado de habitaciones — costo aprox. USD 1,500 anuales por propiedad, con soporte 24/7 desde España.
+  * Acceso remoto vía VPN + laptop/celular corporativo para supervisión fuera del hotel (solo personal autorizado según nivel jerárquico).
+* **Dificultades identificadas:**
+  * Gestión de overbooking/sobreventa: se resuelve derivando huéspedes a otra propiedad de la misma cadena, trasladando el valor de la tarifa.
+  * Circunstancias operativas variables (personal, percepción del huésped, descuidos puntuales) más que "problemas" fijos — se percibe como parte normal de la operación, no como una dificultad estructural.
+  * Separación estricta de responsabilidades: el Room Division Manager no controla directamente accesos ni almacén, sino que aprueba/supervisa procesos que ejecutan otros departamentos (seguridad, recepción, almacén).
+* **Procesos de control de accesos:**
+  A diferencia del segmento 1, el acceso de huéspedes y personal no depende de un solo responsable, sino de la coordinación entre **seguridad** (detecta anomalías) y **recepción** (verifica reserva en sistema). La supervisión es "macro": el gerente confía en que el proceso ya se cumplió antes de intervenir directamente.
+* **Reuniones y toma de decisiones (revenue management):**
+  Reuniones semanales de revenue (todos los martes) donde participan gerente general, revenue manager, ventas y reservas para ajustar tarifas según comportamiento del set competitivo, eventos en la zona y disponibilidad de la competencia.
+* **Factores de adopción (costo, soporte, seguridad):**
+  * Costo conocido y presupuestado por propiedad (referencia: USD 1,500/año para plataforma de housekeeping).
+  * Soporte internacional 24/7 y capacitaciones continuas, incluidas en la inducción de nuevo personal.
+  * Seguridad enmarcada en cumplimiento normativo (Ley de Protección de Datos Personales) y en accesos individualizados por usuario.
+  * Fuerte énfasis en que la información de cada propiedad/cadena esté "blindada" — aislamiento total entre marcas competidoras dentro del mismo sistema (Opera).
+* **Cambios/mejoras propuestas:**
+  * Mejora continua y reconocimiento del personal como eje central (filosofía "el trabajador es más importante que el huésped, porque cuida al huésped").
+  * Mayor visibilidad y valoración del departamento de housekeeping, más allá de la limpieza: identificación de preferencias de huéspedes, estándares de detalle, iniciativas como el "housekeeping week".
+* **Aspectos a comprender mejor:**
+  Ambos entrevistados destacan que la operación hotelera tiende a centralizarse en la percepción de "recepción", pero que housekeeping es un departamento crítico y subvalorado que requiere mayor entendimiento por su carga operativa y su impacto directo en la experiencia del huésped.
+
+En conjunto, este segmento evidencia un perfil mucho más estructurado y tecnificado que el segmento 1: no gestionan por Excel/WhatsApp sino mediante PMS corporativos (Opera/Opera Cloud) con roles y permisos individualizados, procesos departamentales bien delimitados y mecanismos formales de soporte, capacitación y seguridad de datos. Su interés no está en digitalizar procesos básicos (como en el segmento 1), sino en la integración, trazabilidad fina y optimización continua de sistemas que ya son robustos, además de la valoración del capital humano como palanca de mejora operativa.
 
 ## 2.3. Needfinding
 
