@@ -3130,19 +3130,291 @@ despliegue.
 
 #### 5.2.1.1. Sprint Planning 1
 
+El Sprint Planning 1 se realizó para organizar la implementación de la Landing Page
+de Hostera. El alcance del sprint comprende la Epic 1, `EP001 Landing Page
+Experience`, y sus ocho User Stories asociadas. El equipo definió como resultado
+esperado entregar la experiencia completa de la Landing Page, incluyendo su
+publicación en GitHub Pages.
+
+| Campo | Resumen |
+| --- | --- |
+| Sprint # | Sprint 1 |
+| Sprint Planning Background | Planificación de la implementación de la Landing Page de Hostera y de las User Stories pertenecientes a la Epic 1 (`EP001`). |
+| Date | 2026-09-12 |
+| Time | 12:00 PM |
+| Location | Virtual |
+| Prepared By | Cuba Pareja, Joaquin Antonio (`joacuba`) |
+| Attendees (to planning meeting) | Cuba Pareja, Joaquin Antonio (`joacuba`); Cuba Vega, Darnell Yadir (`darnell1910`); Condori Urviola, Mateo Sebastián (`BeyaminUv`); Flores Rios, Juan Diego (`YopoFlores`); Santana Luna, José Antonio (`JhosBY2005`). |
+| Sprint 0 Review Summary | No aplica, porque este es el primer sprint del proyecto. |
+| Sprint 0 Retrospective Summary | No aplica, porque este es el primer sprint del proyecto. |
+| Sprint 1 Goal | Nuestro enfoque está en ofrecer a los visitantes una experiencia completa y clara de la Landing Page de Hostera. Creemos que esto les permitirá comprender la propuesta de valor, identificar la alternativa adecuada según la escala de su operación y elegir el siguiente paso. Esto se confirmará cuando las 8 User Stories de `EP001` estén implementadas y la Landing Page se encuentre publicada y accesible en GitHub Pages. |
+| Sprint 1 Goal Metric | El objetivo se considerará cumplido cuando las 8 de 8 User Stories de `EP001` estén implementadas (`100 %`) y la Landing Page se encuentre publicada y accesible en GitHub Pages. |
+| Sprint 1 Velocity | 42 Story Points comprometidos para el sprint. |
+| Sum of Story Points | 42 Story Points. |
+
+El Sprint Goal se definió desde la perspectiva del visitante y del resultado del
+producto: entregar una Landing Page funcional y públicamente accesible que comunique
+la propuesta de valor de Hostera y sus alternativas de operación. La métrica combina
+el avance funcional con la disponibilidad del producto publicado, por lo que no se
+considera suficiente completar únicamente el código fuente sin publicar la Landing
+Page.
+
+Las User Stories incluidas en el Sprint 1 son las siguientes. Los Story Points
+corresponden a la estimación registrada en el Product Backlog de Hostera.
+
+| User Story ID | User Story | Story Points | Estado al cierre del sprint |
+| --- | --- | :---: | --- |
+| US001 | Understand the hotel-operations proposition | 5 | Implementada |
+| US002 | Navigate the Landing Page sections and footer | 5 | Implementada |
+| US003 | Find the independent-hotel path | 3 | Implementada |
+| US004 | Find the small-chain path | 3 | Implementada |
+| US005 | Understand the product benefits and operating flow | 5 | Implementada |
+| US006 | Compare plans and choose a next step | 5 | Implementada |
+| US007 | Explore product, team, and support content | 8 | Implementada |
+| US008 | Use the English and Spanish Landing Page variants | 8 | Implementada |
+| **Total** | **Epic 1: Landing Page Experience** | **42** | **8/8 implementadas** |
+
+Al cierre del Sprint 1, el objetivo se considera cumplido: las ocho User Stories de
+`EP001` fueron implementadas y la Landing Page se encuentra publicada en
+[GitHub Pages](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+
 #### 5.2.1.2. Aspect Leaders and Collaborators
+
+Durante el Sprint 1, los aspectos de trabajo se organizaron según las ocho User
+Stories de la Epic 1 (`EP001 Landing Page Experience`). Esta organización permitió
+asignar una persona líder para cada funcionalidad y mantener la colaboración del
+resto del equipo durante su implementación, revisión e integración mediante Git Flow.
+
+La asignación de líderes se basa en la persona responsable de la feature branch de
+cada User Story en el [repositorio de Landing Page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+Los cuatro integrantes restantes se registran como colaboradores en cada aspecto,
+de acuerdo con la dinámica de trabajo colaborativo definida para el Sprint 1.
+
+En la matriz Leadership-and-Collaboration (LACX), `L` representa al líder del aspecto
+y `C` representa a un colaborador:
+
+| Team Member | GitHub Username | US001<br>Proposition | US002<br>Navigation | US003<br>Independent Path | US004<br>Small Chain | US005<br>Benefits and Flow | US006<br>Plans | US007<br>Product and Support | US008<br>Language |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Cuba Pareja, Joaquin Antonio | `joacuba` | L | C | C | C | C | C | L | L |
+| Cuba Vega, Darnell Yadir | `darnell1910` | C | L | C | C | C | L | C | C |
+| Condori Urviola, Mateo Sebastián | `BeyaminUv` | C | C | L | C | C | C | C | C |
+| Flores Rios, Juan Diego | `YopoFlores` | C | C | C | L | C | C | C | C |
+| Santana Luna, José Antonio | `JhosBY2005` | C | C | C | C | L | C | C | C |
+
+Los líderes identificados para cada aspecto son Joaquin Cuba para la propuesta de
+valor, el contenido de producto y la variante multilingüe; Darnell Cuba para la
+navegación y la comparación de planes; Mateo Condori para el camino del hotel
+independiente; Juan Diego Flores para el camino de la cadena hotelera pequeña; y José
+Santana para los beneficios y el flujo operativo. La responsabilidad de liderazgo no
+excluye la participación del resto del equipo, que colaboró en los ocho aspectos del
+Sprint.
 
 #### 5.2.1.3. Sprint Backlog 1
 
+El Sprint Backlog 1 descompone el objetivo de implementar la experiencia completa de
+la Landing Page en tareas concretas para las ocho User Stories de `EP001`. El Board
+de YouTrack se utilizó para registrar las historias, sus responsables, los Story
+Points y su pertenencia al Sprint 1. La [vista pública del Board de Hostera en
+YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5) contiene el
+seguimiento de estas User Stories.
+
+<img src="assets/chapter-5/sprint-1-youtrack-board.png" alt="Board de YouTrack con las User Stories de la Epic 1 asignadas al Sprint 1 de la Landing Page" style="width:100%; height:auto;"/>
+
+*Figura 5.2. Board de YouTrack con las User Stories asignadas al Sprint 1 de la Landing Page.*
+
+La captura corresponde al seguimiento del Board durante el sprint. La tabla siguiente
+presenta la descomposición de trabajo y el estado al cierre del Sprint 1. Las horas
+indicadas son estimaciones de planificación para cada Work-Item/Task y no sustituyen
+la estimación relativa en Story Points de cada User Story.
+
+<table>
+  <thead>
+    <tr>
+      <th>Sprint #</th>
+      <td colspan="7">Sprint 1</td>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Story Id</th>
+      <th>Story Title</th>
+      <th>Task Id</th>
+      <th>Task Title</th>
+      <th>Task Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status<br>(To-do / In-Process / To-Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.1</td><td>Build hero proposition</td><td>Implementar el hero con el mensaje principal, la propuesta de valor, las áreas operativas y el CTA inicial.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.2</td><td>Add dashboard preview</td><td>Incorporar la vista informativa del dashboard para representar reservas, habitaciones, inventario y accesos.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.3</td><td>Explain the problem and solution</td><td>Implementar la sección que explica la fragmentación de la operación hotelera y la respuesta de Hostera.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Navigate the Landing Page sections and footer</td><td>T002.1</td><td>Implement primary navigation</td><td>Crear el encabezado, las etiquetas de navegación, el control de idioma y el CTA principal.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Navigate the Landing Page sections and footer</td><td>T002.2</td><td>Implement footer navigation</td><td>Crear la navegación secundaria, el aviso de Grafo Verde y los enlaces hacia las secciones y términos.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Navigate the Landing Page sections and footer</td><td>T002.3</td><td>Add mobile navigation and terms page</td><td>Implementar el menú de navegación responsive y la página de términos y condiciones.</td><td>8</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.1</td><td>Add independent-hotel pathway</td><td>Implementar la tarjeta y el contenido del camino para un hotel independiente con hasta 10 habitaciones.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.2</td><td>Add Free plan details</td><td>Incorporar la información del plan Free y su CTA para iniciar la experiencia correspondiente.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US004</td><td>Find the small-chain path</td><td>T004.1</td><td>Add small-chain pathway</td><td>Implementar la tarjeta y el contenido del camino para una cadena hotelera pequeña de 2 a 5 ubicaciones.</td><td>4</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US004</td><td>Find the small-chain path</td><td>T004.2</td><td>Add Professional plan details</td><td>Incorporar la información del plan Professional y su CTA para explorar la experiencia correspondiente.</td><td>4</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US005</td><td>Understand the product benefits and operating flow</td><td>T005.1</td><td>Add connected-operations benefits</td><td>Implementar la sección de beneficios y las tarjetas de inventario centralizado y control de accesos.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US005</td><td>Understand the product benefits and operating flow</td><td>T005.2</td><td>Add four-step operating flow</td><td>Implementar el flujo de cuatro pasos: añadir hoteles, configurar el equipo, conectar sistemas y operar.</td><td>4</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.1</td><td>Add hotel-group pathway</td><td>Implementar el camino comercial para grupos hoteleros y la opción Enterprise.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.2</td><td>Add plan comparison</td><td>Completar la comparación de planes, capacidades y CTA para Free, Professional y Enterprise.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.3</td><td>Add closing actions and sales contact</td><td>Implementar el panel de cierre, las acciones principales y el siguiente paso de contacto comercial.</td><td>4</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.1</td><td>Add product discovery content</td><td>Implementar el área de producto y el punto de entrada para descubrir Hostera.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.2</td><td>Add team content</td><td>Implementar la sección del equipo, sus integrantes y el punto de entrada para conocerlo.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.3</td><td>Add support FAQ</td><td>Implementar las preguntas frecuentes con estados expandido y contraído.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US008</td><td>Use the English and Spanish Landing Page variants</td><td>T008.1</td><td>Implement English and Spanish content</td><td>Incorporar las variantes de contenido, navegación, caminos, planes y CTA en inglés y español.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US008</td><td>Use the English and Spanish Landing Page variants</td><td>T008.2</td><td>Preserve language selection</td><td>Mantener el idioma seleccionado al navegar hacia los términos y corregir la transición visual del cambio de idioma.</td><td>4</td><td>Joaquin Cuba</td><td>Done</td></tr>
+  </tbody>
+</table>
+
 #### 5.2.1.4. Development Evidence for Sprint Review
+
+La evidencia de desarrollo del Sprint 1 corresponde al repositorio público de la
+[Landing Page de Hostera](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+Los commits funcionales se organizaron en ramas `feature/US001` a
+`feature/US008`, siguiendo el flujo Git Flow del equipo. La tabla registra los
+commits de implementación asociados con las ocho User Stories del sprint; los
+commits de merge y de release no se repiten porque únicamente integran o
+documentan estos cambios.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`0e1282b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/0e1282b6460c4e5e7dbb73ddff9b775bf8ca046a) | `chore(styles): add Hostera color and type tokens` | Add shared CSS custom properties and document base styles so later sections can reuse the same surface, primary, and type scale. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`000a4ca`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/000a4ca8d5d4e3e48bdb4ad86ea6d9e904eae0b8) | `feat(hero): add hotel-operations proposition and dashboard preview` | Show the English hero copy, Start for free action, and an informational dashboard overview of reservations, rooms, inventory, and access. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`529c650`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/529c6503a79f06e6e69477d8408485b620ca106c) | `feat(problem): add fragmented-operations story and photo` | Explain that hotel operations break when information lives in different places and present Hostera as connecting reservations, rooms, inventory, and guest access. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`1010a38`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/1010a38394db1095275670857ace7e2041772440) | `feat(header): add primary navigation and Hostera mark` | Expose Solutions, Features, Pricing, Product, About, EN / ES, and Start for free at the top of the English landing page. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`5325b63`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/5325b63c41fac5df4db333954d827c3cef6370e2) | `feat(footer): add secondary navigation and Grafo Verde notice` | Expose Solutions, Benefits, Pricing, Product, About, Support, EN / ES, Terms and Conditions, and the Hostera publisher line in the footer. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`a39ca3f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/a39ca3f4bc5a0d51692dace477d7439d2b44441a) | `feat(nav): add terms page and mobile navigation menu` | Open Terms and Conditions as a dedicated page and let smaller screens use the header menu for the same destinations. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US003` | [`6f2139d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/6f2139dc92ce06e3b1e462d4834f576cebccba8) | `feat(solutions): add independent-hotel pathway` | Present the one-property path with up to 10 rooms and a Start for free action into the Free experience. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US003` | [`493d8f2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/493d8f2b29f0abe96f0dff847cdea770a03d0975) | `feat(plans): add Free plan for one property` | State the Free plan is for one property with up to 10 rooms and list reservations, warehouse, RFID, administrator, and community support. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US004` | [`331de56`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/331de560a1823b6b0627bea31ac13c2ca7961976) | `feat(solutions): add small-chain pathway` | Present the 2-5 locations path and an Explore Professional action into the Professional plan. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US004` | [`750f65d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/750f65d1acaf4e8c86fb92b0adabe6bfece408e4) | `feat(plans): add Professional plan for small chains` | State the Professional plan is for 2 to 5 locations and list rooms, stock alerts, RFID, reports, roles, and priority support. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US005` | [`ca17547`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/ca1754785c33f9fc7c2899ac5eef9e44895398c9) | `feat(benefits): add connected operations and example cards` | Describe occupancy, room readiness, inventory, and guest access, and show centralized inventory and property access controls. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US005` | [`bd10bc3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/bd10bc3d18d037daaa69f085b9ce388419beb95e) | `feat(workflow): add four-step operating flow` | Present Add hotels, Set up your team, Connect systems, and Run operations with supporting descriptions. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`4f46e7c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/4f46e7cf7a2c9169317c831f26ba2c266527e115) | `feat(solutions): add hotel group commercial pathway` | Present the multi-country Hotel group path and a Talk to sales action into the Enterprise contact step. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`699014f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/699014fa134d41ae5378b5eae27fe728f3a8e946) | `feat(plans): add Enterprise plan to the comparison` | Show Free, Professional, and Enterprise with Talk to sales as the next step for large or multinational hotel groups. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`c9ce586`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/c9ce586a38d9040ce778557e43b1cd607e04d64e) | `feat(close): add closing actions and sales contact` | Repeat Start for free and Talk to sales, and open a sales contact step for the Enterprise hotel-group path. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`2cc1173`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/2cc11730b8228da920bc92735d80c76584d6f1) | `feat(product): add Discover Hostera video entry` | Present the product media area with a play control that starts the daily hotel-operations demonstration. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`f8a5a88`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/f8a5a8801dcd969c3d7f8ede4a90f4c5dff21f07) | `feat(team): add engineering team and Meet the team video` | Identify Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana and start the team video from the play control. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`8293970`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/829397088f4f645039caf0ce4fd547c81ed6b4de) | `feat(support): add expandable FAQ answers` | Answer starting with one hotel, what changes with Professional, and English and Spanish availability. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US008` | [`a5046a5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/a5046a5b2a77522f9f5368486b329dd2859bebe1) | `feat(i18n): switch English and Spanish copy in place` | Keep a single landing page and swap navigation, hero, paths, plans, and CTAs when the visitor chooses EN or ES. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US008` | [`6d6ede6`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/6d6ede63f2a98a35bd21be2c4fa300f3eef2a9d6) | `feat(i18n): keep language when returning from terms` | Send EN and ES from the terms page back to the same landing page with the selected language. | 2026-09-16 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
+Durante el Sprint 1 se completó la experiencia principal de la Landing Page para
+las ocho User Stories de `EP001`. La versión ejecutable está disponible en
+[https://1asi0730-2620-8150-grafoverde.github.io/landing-page/](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+La navegación permite recorrer la propuesta de valor, los caminos según la
+escala del hotel, los beneficios operativos, el flujo de trabajo, los planes,
+la información del producto y del equipo, las preguntas frecuentes y el
+formulario de contacto comercial. También se verificó la disponibilidad de las
+variantes en inglés y español.
+
+Las siguientes capturas muestran las principales vistas alcanzadas en el Sprint
+Review:
+
+<img src="assets/chapter-5/sprint-1-landing-page-hero.png" alt="Vista principal de la Landing Page de Hostera desplegada" style="width:100%; height:auto;"/>
+
+*Figura 5.3. Vista principal de la Landing Page desplegada en GitHub Pages.*
+
+<img src="assets/chapter-5/sprint-1-landing-page-pricing.png" alt="Vista de comparación de planes de la Landing Page de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 5.4. Vista de comparación de planes Free, Professional y Enterprise.*
+
+Como evidencia de navegación, se incorpora el [video de demostración de
+Hostera](https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN).
+El video muestra los principales recorridos de navegación de la Landing Page,
+incluyendo la propuesta de valor, los caminos según la escala del hotel, los
+beneficios, el flujo operativo, la comparación de planes, el contenido del
+producto y del equipo, las preguntas frecuentes y el cambio entre inglés y
+español.
+
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+El alcance del Sprint 1 estuvo concentrado en la implementación de la Landing
+Page. Por ese motivo, durante este sprint no se implementaron Web Services ni
+endpoints HTTP, y no se generó documentación OpenAPI asociada. El repositorio de
+la Landing Page contiene la experiencia web estática y se encuentra disponible en
+el [repositorio de Landing Page de Hostera](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+La documentación de endpoints y sus evidencias se incorporará en el sprint en
+el que se implemente el repositorio de Web Services.
+
+| Repository | Endpoint | Actions / HTTP Verb | OpenAPI Documentation | Documentation Commit |
+|---|---|---|---|---|
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | — | — | — | — |
+
+Por lo tanto, no corresponde incluir capturas de interacción con Swagger u otra
+documentación de servicios para el Sprint 1.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
+Durante el Sprint 1 se completó el despliegue de la Landing Page en GitHub Pages.
+El procedimiento consistió en seleccionar **Deploy from a branch** como fuente de
+publicación, elegir la rama `main`, seleccionar la carpeta `/ (root)` y guardar la
+configuración. GitHub Pages ejecutó posteriormente su flujo de build and deployment
+y publicó el sitio en el entorno `github-pages`.
+
+| Product | Repository | Deployment Platform | Source | Public URL | Sprint Status |
+|---|---|---|---|---|---|
+| Landing Page | [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | GitHub Pages | `main` / `/ (root)` | [Open Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/) | Deployed |
+| Web Services | — | — | — | — | Not in Sprint 1 scope |
+| Frontend Web Applications | — | — | — | — | Not in Sprint 1 scope |
+
+La configuración y el estado publicado se evidencian en la siguiente captura:
+
+<img src="assets/chapter-5/github-pages-deployment.png" alt="Configuración de GitHub Pages de la Landing Page publicada desde main y la carpeta raíz" style="width:100%; height:auto;"/>
+
+*Figura 5.5. Evidencia del despliegue de la Landing Page mediante GitHub Pages.*
+
+La Landing Page quedó accesible públicamente en la URL indicada. Los destinos de
+despliegue de Web Services y Frontend Web Applications se documentarán en el sprint
+correspondiente a su implementación.
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
+
+La colaboración del Sprint 1 se organizó alrededor de la implementación de las
+ocho User Stories de `EP001`. Todos los integrantes participaron en la
+implementación de la Landing Page mediante ramas de trabajo y commits asociados
+a las User Stories, mientras que la integración se realizó siguiendo Git Flow.
+La reunión de planificación se realizó de forma virtual el 12 de septiembre de
+2026 y contó con la asistencia de todos los integrantes.
+
+La siguiente relación resume los 20 commits funcionales registrados en la
+sección 5.2.1.4, sin contar los commits de merge ni los commits posteriores de
+release:
+
+| Integrante | User Stories / aspectos implementados | Commits funcionales del Sprint 1 |
+|---|---|---:|
+| Joaquin Cuba (`joacuba`) | US001, US007 y US008: propuesta de valor, contenido de producto y equipo, soporte y variantes de idioma. | 8 |
+| Darnell Cuba (`darnell1910`) | US002 y US006: navegación, términos, caminos comerciales, planes y acciones de cierre. | 6 |
+| Mateo Condori (`BeyaminUv`) | US003: camino del hotel independiente y plan Free. | 2 |
+| Juan Diego Flores (`YopoFlores`) | US004: camino de la cadena pequeña y plan Professional. | 2 |
+| José Santana (`JhosBY2005`) | US005: beneficios de operaciones conectadas y flujo operativo. | 2 |
+| **Total** | **Ocho User Stories de `EP001`** | **20** |
+
+La captura del analítico de GitHub muestra la actividad de contribución del
+repositorio de la Landing Page. El historial de commits permite complementar
+este analítico con la identificación de las ramas, autores y mensajes asociados
+con cada User Story.
+
+<img src="assets/chapter-5/sprint-1-github-contributors.png" alt="Analítico de colaboradores del repositorio de la Landing Page en GitHub" style="width:100%; height:auto;"/>
+
+*Figura 5.6. Analítico de contribuciones del repositorio de la Landing Page en GitHub.*
+
+<img src="assets/chapter-5/sprint-1-github-commits.png" alt="Historial de commits del repositorio de la Landing Page en la rama main" style="width:100%; height:auto;"/>
+
+*Figura 5.7. Historial de commits del repositorio de la Landing Page en la rama `main`.*
+
+La evidencia muestra una distribución de responsabilidades por User Story y
+una integración progresiva de los cambios. La participación de cada integrante
+se mantuvo vinculada con un aspecto funcional concreto y quedó respaldada por
+los commits detallados en la evidencia de desarrollo del Sprint Review.
 
 # Conclusiones
 
