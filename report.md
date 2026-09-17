@@ -3218,6 +3218,8 @@ los datos.
 
 ### 4.8.1. Database Diagrams
 
+General database diagram
+![general Databse diagram](assets/chapter-4/database-diagram-hostera.JPG)
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
