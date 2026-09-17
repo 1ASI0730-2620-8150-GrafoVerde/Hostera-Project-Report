@@ -2906,13 +2906,156 @@ accesos, y publica las actualizaciones al frontend en tiempo real.
 
 ## 5.1. Software Configuration Management
 
+La Gestión de la Configuración de Software (Software Configuration Management, SCM)
+define las herramientas, los repositorios, las reglas de nomenclatura y los controles
+de entrega que el equipo de Hostera utilizará para mantener la consistencia de la
+solución durante su ciclo de vida. Estas prácticas se aplican a la Landing Page, los
+RESTful Web Services, las Frontend Web Applications, los scripts de base de datos, la
+documentación y los artefactos generados para el informe del proyecto.
+
+El equipo mantendrá visibles en el control de versiones las decisiones relacionadas
+con la configuración. Los cambios en el código fuente, las pruebas, la infraestructura
+y la documentación deberán ser trazables a un ítem de trabajo y revisados antes de
+integrarse en una rama compartida. La configuración descrita a continuación refleja
+las prácticas ya establecidas en el repositorio de este informe; los detalles que
+dependen de los repositorios de implementación o de su proveedor de alojamiento se
+completarán cuando dichos artefactos estén disponibles.
+
 ### 5.1.1. Software Development Environment Configuration
+
+Las siguientes herramientas forman parte del entorno actual de colaboración. Las
+herramientas SaaS se utilizan mediante sus aplicaciones web oficiales, mientras que
+las herramientas locales se instalan desde sus canales oficiales de distribución.
+
+| Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
+| --- | --- | --- | --- |
+| GitHub | Aloja el repositorio del equipo, los repositorios de producto, los issues y el historial de revisiones. | [Repositorio del equipo Grafo Verde](https://github.com/1ASI0730-2620-8150-GrafoVerde) | Los cambios se realizan en ramas de trabajo y se integran mediante el flujo Git Flow descrito en la sección 5.1.2. |
+| YouTrack | Gestiona el Product Backlog y realiza el seguimiento de las historias de usuario y los ítems de trabajo. | [Agile Board de Hostera](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5) | El trabajo se asocia a un ítem del backlog antes de su implementación y revisión. |
+| Figma | Elabora y comparte los wireflows, prototipos y mock-ups de las aplicaciones web. | [Prototipos de las aplicaciones web de Hostera](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes) | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe. |
+| UXPressia | Elabora los artefactos de impact mapping utilizados para relacionar objetivos, actores, impactos e historias de usuario. | — | Los diagramas exportados se versionan junto con el informe cuando se utilizan como evidencia. |
+| Pandoc | Convierte `report.md` y sus recursos locales en el entregable PDF. | Instalación local; la configuración y ejecución están documentadas en `README.md`. | La compilación se ejecuta con `bash scripts/build-pdf.sh`; el archivo generado `report.pdf` permanece sin seguimiento. |
+
+Los repositorios de Landing Page, RESTful Web Services y Frontend Web Applications
+mantendrán una estructura documental común. Cada repositorio incluirá un `README.md`
+con las instrucciones de configuración y ejecución, un `CHANGELOG.md` para registrar
+la evolución del producto y un `LICENSE.md` con la licencia aplicable. Además, cada
+repositorio contará con una carpeta `docs/` que contendrá los siguientes artefactos:
+
+- `adrs.md`: decisiones de arquitectura y las razones que las sustentan.
+- `user-stories.md`: historias de usuario consideradas para el producto y su
+  implementación.
+- `class-diagram.puml`: diagrama de clases en formato PlantUML.
+
+Cuando el gestor de dependencias utilizado por un repositorio genere o requiera un
+lockfile, este se conservará en el control de versiones para favorecer instalaciones
+reproducibles. Las variables de entorno se documentarán sin incluir secretos; las
+configuraciones específicas de cada equipo, credenciales, archivos generados y
+archivos del entorno local se excluirán del control de versiones.
 
 ### 5.1.2. Source Code Management
 
+GitHub es la plataforma de gestión del código fuente requerida para los repositorios
+de producto. Cada producto tendrá un repositorio dedicado para que su implementación,
+pruebas y evidencias de despliegue sean trazables. El repositorio del informe se
+mantiene por separado como fuente de documentación y no se considera uno de los
+repositorios de producto exigidos por el enunciado del proyecto:
+
+| Producto | URL del repositorio | Estado actual |
+| --- | --- | --- |
+| Landing Page | [Repositorio de Landing Page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | Repositorio registrado para la implementación de la Landing Page. |
+| RESTful Web Services | Por registrar | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. |
+| Frontend Web Applications | Por registrar | La URL se añadirá cuando se cree el repositorio de implementación. |
+
+El equipo aplica las siguientes ramas de Git Flow:
+
+| Rama | Propósito | Convención de nomenclatura |
+| --- | --- | --- |
+| `main` | Versiones estables y liberadas del producto. | Nombre fijo. |
+| `develop` | Rama de integración para la siguiente versión. | Nombre fijo. |
+| `feature/*` | Una funcionalidad o cambio aislado del informe. | `feature/<descripción-corta-en-kebab-case>`, por ejemplo `feature/software-configuration-management`. |
+| `release/*` | Estabiliza una candidata a lanzamiento y prepara su documentación. | `release/<MAJOR>.<MINOR>.<PATCH>`. |
+| `hotfix/*` | Corrige un defecto de una versión liberada. | `hotfix/<MAJOR>.<MINOR>.<PATCH>`. |
+
+Las ramas de funcionalidad parten de `develop` y se integran nuevamente en `develop`
+después de revisar los cambios. Las ramas de release se crean desde `develop`,
+mientras que las ramas de hotfix se crean desde `main`. El equipo utiliza los
+comandos de Git Flow para iniciar, integrar y finalizar estas ramas; no utiliza pull
+requests de GitHub como mecanismo de integración. La revisión se realiza sobre la
+rama de trabajo y su historial de commits antes de ejecutar el merge correspondiente.
+El equipo no realizará commits directos en `main` o `develop` para el trabajo normal
+de funcionalidades.
+
+Los releases utilizan [Semantic Versioning 2.0.0](https://semver.org/):
+`MAJOR.MINOR.PATCH`. El primer componente mayor permanece en `0` mientras el
+producto se encuentre en desarrollo inicial; durante esta fase, los cambios
+incompatibles incrementan el componente minor, y las funcionalidades compatibles o
+las correcciones se registran de acuerdo con la política de releases del proyecto.
+
 ### 5.1.3. Source Code Style Guide & Conventions
 
+El equipo utiliza [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
+para los mensajes de commit. Un commit sigue la forma
+`<type>(<scope>): <description>`. Los tipos principales son `feat`, `fix`, `docs`,
+`refactor`, `test`, `build`, `ci` y `chore`. La descripción se redacta de manera
+imperativa, es concisa y explica el cambio visible para el usuario o a nivel del
+repositorio. Los cambios incompatibles se marcan con `!` o con un pie
+`BREAKING CHANGE:`.
+
+Entre los ejemplos utilizados en este repositorio se encuentran `docs(report): Add
+assets related to classes diagrams of Hostera` y `docs(prototyping): document web
+application prototype`. Los commits del informe utilizan el tipo `docs`; los
+repositorios de implementación utilizarán como scope el bounded context o componente
+de producto afectado.
+
+Las siguientes convenciones se aplican en todo el producto:
+
+| Elemento | Convención |
+| --- | --- |
+| Ramas | Kebab case en minúsculas después del prefijo de Git Flow: `feature/<description>`. |
+| Mensajes de commit | Conventional Commits, con el tipo en minúsculas y una descripción imperativa y concisa. |
+| Archivos y carpetas fuente | Siguen la convención de nomenclatura establecida por el lenguaje o framework seleccionado; se evitan abreviaturas sin explicación. |
+| Rutas de API | Nombres de recursos plurales en minúsculas, con versionado bajo `/api/v1/`, como se muestra en los requerimientos. |
+| Variables de entorno | Mayúsculas en formato `SCREAMING_SNAKE_CASE`; se documentan los nombres requeridos y nunca se registran valores ni secretos. |
+| Identificadores de base de datos | Formato consistente `snake_case` en minúsculas, con constraints explícitos de primary key, foreign key y unicidad. |
+| Documentación | Encabezados y tablas GFM, rutas relativas estables para los recursos y enlaces al artefacto o herramienta fuente. |
+| Pruebas | Sus nombres describen el comportamiento o escenario verificado; los cambios en servicios incluyen cobertura unitaria y de integración/aceptación. |
+
+Las reglas de formateo, linting y análisis estático se almacenarán en cada repositorio
+de implementación y se ejecutarán antes de integrar una rama mediante Git Flow. La
+herramienta y versión exactas se registrarán en el manifiesto de paquetes
+correspondiente cuando los repositorios de implementación estén disponibles.
+
 ### 5.1.4. Software Deployment Configuration
+
+La configuración de despliegue se mantendrá separada de los secretos de la aplicación
+y se versionará junto con el producto que despliega. Cada repositorio de producto
+documentará su entorno objetivo, variables requeridas, comando de build, comando de
+inicio, health check, procedimiento de migración de base de datos y procedimiento de
+rollback. Los secretos serán proporcionados por la plataforma de alojamiento o por
+el entorno local y no se registrarán en GitHub.
+
+Para el entregable del informe, el artefacto reproducible de despliegue es la
+generación del PDF: `scripts/build-pdf.sh` utiliza `report.md`, el directorio local
+`assets/` y el CSS del repositorio para generar `report.pdf`. El PDF es un resultado
+generado y está excluido del control de versiones, mientras que la fuente y el script
+de compilación sí están versionados.
+
+La Landing Page está desplegada mediante GitHub Pages utilizando el repositorio de
+Landing Page registrado en la sección 5.1.2. La configuración de publicación utiliza
+la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en la
+[URL pública de la Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+
+<img src="assets/chapter-5/github-pages-deployment.png" alt="Configuración de GitHub Pages de la Landing Page, publicada desde main y la carpeta raíz" style="width:100%; height:auto;"/>
+
+*Figura 5.1. Configuración y estado del despliegue de la Landing Page en GitHub Pages.*
+
+Los destinos de despliegue de los RESTful Web Services y las Frontend Web Applications
+aún no han sido definidos. Por ello, los nombres de sus proveedores, las URL
+públicas, las variables de entorno, los manifiestos de despliegue y las evidencias de
+ejecución se mantienen intencionalmente pendientes hasta que se definan la
+implementación y las decisiones de alojamiento. En ese momento, esta subsección se
+ampliará con un registro de configuración por producto y un enlace a su evidencia de
+despliegue.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -2965,5 +3108,11 @@ This is program for AV2 (not in AV1)
 [10] Google. (s. f.). [_Material Design 3_](https://m3.material.io/). Recuperado el 5 de septiembre de 2026.
 
 [11] World Wide Web Consortium. (2024). [_Web Content Accessibility Guidelines (WCAG) 2.2_](https://www.w3.org/TR/WCAG22/). Recuperado el 5 de septiembre de 2026.
+
+[12] Driessen, V. (2010). [_A successful Git branching model_](https://nvie.com/posts/a-successful-git-branching-model/). Recuperado el 16 de septiembre de 2026.
+
+[13] Preston-Werner, T. (s. f.). [_Semantic Versioning 2.0.0_](https://semver.org/). Recuperado el 16 de septiembre de 2026.
+
+[14] Conventional Commits. (s. f.). [_Conventional Commits 1.0.0_](https://www.conventionalcommits.org/en/v1.0.0/). Recuperado el 16 de septiembre de 2026.
 
 # Anexos
