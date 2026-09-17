@@ -3130,6 +3130,54 @@ despliegue.
 
 #### 5.2.1.1. Sprint Planning 1
 
+El Sprint Planning 1 se realizó para organizar la implementación de la Landing Page
+de Hostera. El alcance del sprint comprende la Epic 1, `EP001 Landing Page
+Experience`, y sus ocho User Stories asociadas. El equipo definió como resultado
+esperado entregar la experiencia completa de la Landing Page, incluyendo su
+publicación en GitHub Pages.
+
+| Campo | Resumen |
+| --- | --- |
+| Sprint # | Sprint 1 |
+| Sprint Planning Background | Planificación de la implementación de la Landing Page de Hostera y de las User Stories pertenecientes a la Epic 1 (`EP001`). |
+| Date | 2026-09-12 |
+| Time | 12:00 PM |
+| Location | Virtual |
+| Prepared By | Cuba Pareja, Joaquin Antonio (`joacuba`) |
+| Attendees (to planning meeting) | Cuba Pareja, Joaquin Antonio (`joacuba`); Cuba Vega, Darnell Yadir (`darnell1910`); Condori Urviola, Mateo Sebastián (`BeyaminUv`); Flores Rios, Juan Diego (`YopoFlores`); Santana Luna, José Antonio (`JhosBY2005`). |
+| Sprint 0 Review Summary | No aplica, porque este es el primer sprint del proyecto. |
+| Sprint 0 Retrospective Summary | No aplica, porque este es el primer sprint del proyecto. |
+| Sprint 1 Goal | Nuestro enfoque está en ofrecer a los visitantes una experiencia completa y clara de la Landing Page de Hostera. Creemos que esto les permitirá comprender la propuesta de valor, identificar la alternativa adecuada según la escala de su operación y elegir el siguiente paso. Esto se confirmará cuando las 8 User Stories de `EP001` estén implementadas y la Landing Page se encuentre publicada y accesible en GitHub Pages. |
+| Sprint 1 Goal Metric | El objetivo se considerará cumplido cuando las 8 de 8 User Stories de `EP001` estén implementadas (`100 %`) y la Landing Page se encuentre publicada y accesible en GitHub Pages. |
+| Sprint 1 Velocity | 42 Story Points comprometidos para el sprint. |
+| Sum of Story Points | 42 Story Points. |
+
+El Sprint Goal se definió desde la perspectiva del visitante y del resultado del
+producto: entregar una Landing Page funcional y públicamente accesible que comunique
+la propuesta de valor de Hostera y sus alternativas de operación. La métrica combina
+el avance funcional con la disponibilidad del producto publicado, por lo que no se
+considera suficiente completar únicamente el código fuente sin publicar la Landing
+Page.
+
+Las User Stories incluidas en el Sprint 1 son las siguientes. Los Story Points
+corresponden a la estimación registrada en el Product Backlog de Hostera.
+
+| User Story ID | User Story | Story Points | Estado al cierre del sprint |
+| --- | --- | :---: | --- |
+| US001 | Understand the hotel-operations proposition | 5 | Implementada |
+| US002 | Navigate the Landing Page sections and footer | 5 | Implementada |
+| US003 | Find the independent-hotel path | 3 | Implementada |
+| US004 | Find the small-chain path | 3 | Implementada |
+| US005 | Understand the product benefits and operating flow | 5 | Implementada |
+| US006 | Compare plans and choose a next step | 5 | Implementada |
+| US007 | Explore product, team, and support content | 8 | Implementada |
+| US008 | Use the English and Spanish Landing Page variants | 8 | Implementada |
+| **Total** | **Epic 1: Landing Page Experience** | **42** | **8/8 implementadas** |
+
+Al cierre del Sprint 1, el objetivo se considera cumplido: las ocho User Stories de
+`EP001` fueron implementadas y la Landing Page se encuentra publicada en
+[GitHub Pages](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
 #### 5.2.1.3. Sprint Backlog 1
