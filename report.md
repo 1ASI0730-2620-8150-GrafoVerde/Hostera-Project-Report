@@ -3025,6 +3025,31 @@ interactivo y no sustituye el video solicitado.
 
 ### 4.6.1. Design-Level EventStorming
 
+El Design-Level EventStorming profundiza el modelado del dominio de Hostera a partir
+del Big Picture EventStorming. La sesión organiza los principales bounded contexts y
+detalla, para cada flujo, los actores, comandos, modelos de lectura, reglas de
+negocio, eventos de dominio y agregados involucrados. También se identifican las
+políticas y los sistemas externos que participan en determinados procesos.
+
+El resultado permite revisar el dominio desde una perspectiva orientada al diseño y
+relacionar las acciones de los usuarios con los cambios de estado del negocio. El
+tablero distingue los contextos de gestión de propiedades y accesos, reservas y
+estadías, habitaciones, inventario, control de accesos RFID y reporting y analytics.
+En cada contexto se representan flujos como registrar una propiedad, crear y
+modificar una reserva, verificar la identidad del huésped, asignar una habitación,
+actualizar el estado de una habitación, recibir o ajustar stock, emitir credenciales
+de personal y generar reportes operativos.
+
+La notación visual utilizada diferencia los actores, comandos, modelos de lectura,
+reglas de negocio, eventos de dominio, agregados, políticas y sistemas externos. Esta
+organización facilita identificar las responsabilidades de cada bounded context y
+sirve como base para los diagramas de arquitectura y los modelos orientados a objetos
+presentados en las siguientes secciones.
+
+<img src="assets/chapter-4/design-level-eventstorming-hostera.png" alt="Design-Level EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.78. Design-Level EventStorming del dominio de Hostera.*
+
 ### 4.6.2. Software Architecture Context Diagram
 
 El diagrama de contexto presenta a Hostera como el sistema central para la gestión
@@ -3034,7 +3059,7 @@ notificaciones.
 
 <img src="assets/chapter-4/Context-diagram-Hostera.svg" alt="Diagrama de contexto del sistema Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.8. Diagrama de contexto del sistema Hostera.*
+*Figura 4.79. Diagrama de contexto del sistema Hostera.*
 
 ### 4.6.3. Software Architecture Container Diagrams
 
@@ -3045,7 +3070,7 @@ de las bases de datos y los sistemas externos con los que se integra la platafor
 
 <img src="assets/chapter-4/Container-diagram-Hostera.svg" alt="Diagrama de contenedores del sistema Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.9. Diagrama de contenedores del sistema Hostera.*
+*Figura 4.80. Diagrama de contenedores del sistema Hostera.*
 
 ### 4.6.4. Software Architecture Components Diagrams
 
@@ -3060,7 +3085,7 @@ inventario, accesos RFID y monitoreo del dashboard en tiempo real.
 
 <img src="assets/chapter-4/Component-diagram-Hostera-web-application.svg" alt="Diagrama de componentes de la aplicación web de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.10. Diagrama de componentes de la aplicación web de Hostera.*
+*Figura 4.81. Diagrama de componentes de la aplicación web de Hostera.*
 
 #### Gestión de Autenticación
 
@@ -3069,7 +3094,7 @@ credenciales, la generación de sesiones y la gestión de roles y permisos.
 
 <img src="assets/chapter-4/Component-diagram-Hostera-authentication.svg" alt="Diagrama de componentes de gestión de autenticación de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.11. Diagrama de componentes de gestión de autenticación de Hostera.*
+*Figura 4.82. Diagrama de componentes de gestión de autenticación de Hostera.*
 
 #### Gestión de Reservas y Habitaciones
 
@@ -3078,7 +3103,7 @@ el cálculo de tarifas y la actualización del estado de las habitaciones.
 
 <img src="assets/chapter-4/Component-diagram-Hostera-reservations.svg" alt="Diagrama de componentes de gestión de reservas y habitaciones de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.12. Diagrama de componentes de gestión de reservas y habitaciones de Hostera.*
+*Figura 4.83. Diagrama de componentes de gestión de reservas y habitaciones de Hostera.*
 
 #### Gestión de Inventario
 
@@ -3087,7 +3112,7 @@ alertas de reposición y registro histórico de movimientos.
 
 <img src="assets/chapter-4/Component-diagram-Hostera-inventory.svg" alt="Diagrama de componentes de gestión de inventario de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.13. Diagrama de componentes de gestión de inventario de Hostera.*
+*Figura 4.84. Diagrama de componentes de gestión de inventario de Hostera.*
 
 #### Gestión de Accesos RFID
 
@@ -3096,7 +3121,7 @@ la gestión de permisos y el historial de accesos concedidos o denegados.
 
 <img src="assets/chapter-4/Component-diagram-Hostera-access-control.svg" alt="Diagrama de componentes de gestión de accesos RFID de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.14. Diagrama de componentes de gestión de accesos RFID de Hostera.*
+*Figura 4.85. Diagrama de componentes de gestión de accesos RFID de Hostera.*
 
 #### Servicio de Dashboard
 
@@ -3105,7 +3130,7 @@ accesos, y publica las actualizaciones al frontend en tiempo real.
 
 <img src="assets/chapter-4/Component-diagram-Hostera-dashboard.svg" alt="Diagrama de componentes del servicio de dashboard de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.15. Diagrama de componentes del servicio de dashboard de Hostera.*
+*Figura 4.86. Diagrama de componentes del servicio de dashboard de Hostera.*
 
 ## 4.7. Software Object-Oriented Design
 
@@ -3128,7 +3153,7 @@ cómo se abre una sesión y cómo el servicio coordina los repositorios.
 
 <img src="assets/chapter-4/class-diagram-identity-and-access-management.jpeg" alt="Diagrama de clases de Identity and Access Management de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.16. Diagrama de clases de Identity and Access Management de Hostera.*
+*Figura 4.87. Diagrama de clases de Identity and Access Management de Hostera.*
 
 El diagrama de Reservations and Stay Management organiza el ciclo de una reserva
 desde el huésped hasta la estadía. Incluye las clases `Guest`, `Reservation`,
@@ -3139,7 +3164,7 @@ la asociación entre huéspedes y reservas, reservas y pagos, y reservas y estad
 
 <img src="assets/chapter-4/class-diagram-reservations-and-stay-management.jpeg" alt="Diagrama de clases de Reservations and Stay Management de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.17. Diagrama de clases de Reservations and Stay Management de Hostera.*
+*Figura 4.88. Diagrama de clases de Reservations and Stay Management de Hostera.*
 
 El diagrama de Rooms, Availability and Rates muestra la relación entre los tipos
 de habitación, las habitaciones, los planes tarifarios y las tarifas diarias.
@@ -3151,7 +3176,7 @@ las relaciones del modelo.
 
 <img src="assets/chapter-4/class-diagram-rooms-availability-and-rates.jpeg" alt="Diagrama de clases de habitaciones, disponibilidad y tarifas de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.18. Diagrama de clases de habitaciones, disponibilidad y tarifas de Hostera.*
+*Figura 4.89. Diagrama de clases de habitaciones, disponibilidad y tarifas de Hostera.*
 
 El diagrama de Inventory Management modela las ubicaciones de almacenamiento,
 los ítems de inventario y los ajustes de stock. `InventoryService` coordina la
@@ -3163,7 +3188,7 @@ relaciones muestran la ubicación de cada ítem y la trazabilidad de sus ajustes
 
 <img src="assets/chapter-4/class-diagram-inventory-management.jpeg" alt="Diagrama de clases de gestión de inventario de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.19. Diagrama de clases de gestión de inventario de Hostera.*
+*Figura 4.90. Diagrama de clases de gestión de inventario de Hostera.*
 
 El diagrama de RFID Access Control representa las credenciales RFID, los puntos
 de acceso, los alcances autorizados y los eventos de acceso. La clase
@@ -3174,7 +3199,7 @@ fue concedido o denegado.
 
 <img src="assets/chapter-4/class-diagram-rfid-access-control.jpeg" alt="Diagrama de clases de control de acceso RFID de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.20. Diagrama de clases de control de acceso RFID de Hostera.*
+*Figura 4.91. Diagrama de clases de control de acceso RFID de Hostera.*
 
 El diagrama de Dashboard and Operational Analytics presenta la generación de
 resúmenes operativos a partir de proveedores especializados para reservas,
@@ -3186,7 +3211,7 @@ los datos.
 
 <img src="assets/chapter-4/class-diagram-dashboard-operational-analytics.jpeg" alt="Diagrama de clases de dashboard y analítica operativa de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.21. Diagrama de clases de dashboard y analítica operativa de Hostera.*
+*Figura 4.92. Diagrama de clases de dashboard y analítica operativa de Hostera.*
 
 
 ## 4.8. Database Design
