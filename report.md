@@ -47,6 +47,7 @@
 
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  0.3.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)                                                                          | Se incorporó la sección Project Report Collaboration Insights para AV1, con el enlace al repositorio, la explicación del trabajo colaborativo y las capturas de analíticos y commits de GitHub. |
 |  0.2.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Mateo Urviola (`BeyaminUv`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>José Antonio Santana Luna (`JhosBY2005`) | Se amplió el informe con la documentación de descubrimiento, diseño, arquitectura e implementación de Hostera; se incorporó la evidencia del Sprint 1, el despliegue de la Landing Page en GitHub Pages, los Student Outcomes AV1, los perfiles del equipo y los anexos. |
 |  0.1.1  | 03/09/2026 | Joaquin Cuba (`joacuba`)                                                                          | Se agregó la documentación del repositorio, el script para generar el PDF y la licencia MIT. Se corrigió el diseño de la portada, el tamaño de las imágenes y los bordes de las tablas. |
 |  0.1.0  | 03/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Juan Diego Flores Rios (`YopoFlores`) | Se creó la estructura inicial del informe del proyecto Hostera, se incorporaron los recursos gráficos y se agregó la descripción de la startup.                                         |
@@ -79,13 +80,17 @@ La captura de analíticos confirma la participación de **Joaquin Cuba** (`joacu
 Flores Rios** (`YopoFlores`) y **José Antonio Santana Luna** (`JhosBY2005`) durante
 el periodo mostrado. La captura del historial de commits muestra la evolución de
 la rama `main`, incluyendo los cambios de documentación, la preparación del
-changelog y la integración de la release `v0.2.0`. Esta evidencia es coherente
+changelog y la integración de la release `v0.3.0`. Esta evidencia es coherente
 con el Registro de Versiones del Informe y demuestra que la elaboración del reporte
 fue una actividad compartida.
+
+<div style="page-break-before: always;"></div>
 
 <img src="assets/project-report-collaboration-insights/av1-github-contributors.png" alt="Analíticos de colaboradores del repositorio del Project Report en GitHub" style="width:100%; height:auto;"/>
 
 *Evidencia 1. Analíticos de colaboradores del repositorio del Project Report en GitHub durante AV1.*
+
+<div style="page-break-before: always;"></div>
 
 <img src="assets/project-report-collaboration-insights/av1-github-commits.png" alt="Historial de commits de la rama main del repositorio del Project Report en GitHub" style="width:100%; height:auto;"/>
 
@@ -96,6 +101,8 @@ fue una actividad compartida.
 ## AV2
 
 ## TB2
+
+<div style="page-break-before: always;"></div>
 
 # Contenido
 
@@ -200,6 +207,8 @@ fue una actividad compartida.
 - [Anexos](#anexos)
   - [Anexo A. Videos de exposiciones](#anexo-a-videos-de-exposiciones)
   - [Anexo B. Documentos y artefactos complementarios](#anexo-b-documentos-y-artefactos-complementarios)
+
+<div style="page-break-before: always;"></div>
 
 # Student Outcome
 
