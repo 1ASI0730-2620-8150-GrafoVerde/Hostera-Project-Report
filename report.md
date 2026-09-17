@@ -2993,37 +2993,104 @@ las correcciones se registran de acuerdo con la política de releases del proyec
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
-El equipo utiliza [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
-para los mensajes de commit. Un commit sigue la forma
-`<type>(<scope>): <description>`. Los tipos principales son `feat`, `fix`, `docs`,
-`refactor`, `test`, `build`, `ci` y `chore`. La descripción se redacta de manera
-imperativa, es concisa y explica el cambio visible para el usuario o a nivel del
-repositorio. Los cambios incompatibles se marcan con `!` o con un pie
-`BREAKING CHANGE:`.
+Esta sección establece las convenciones para nombrar elementos y programar en los
+lenguajes y frameworks utilizados por Hostera. De acuerdo con el Project Statement,
+los identificadores del código fuente se escribirán en inglés, aunque los textos
+visibles para los usuarios podrán presentarse en español o inglés según el idioma de
+la interfaz. Las reglas de Git Flow, Conventional Commits y Semantic Versioning se
+describen en la sección 5.1.2 y no se repiten aquí.
 
-Entre los ejemplos utilizados en este repositorio se encuentran `docs(report): Add
-assets related to classes diagrams of Hostera` y `docs(prototyping): document web
-application prototype`. Los commits del informe utilizan el tipo `docs`; los
-repositorios de implementación utilizarán como scope el bounded context o componente
-de producto afectado.
+#### Convenciones generales de nomenclatura
 
-Las siguientes convenciones se aplican en todo el producto:
+Se utilizarán nombres descriptivos en inglés y se evitarán abreviaturas que no sean
+ampliamente conocidas. La elección del formato depende del tipo de elemento:
 
-| Elemento | Convención |
-| --- | --- |
-| Ramas | Kebab case en minúsculas después del prefijo de Git Flow: `feature/<description>`. |
-| Mensajes de commit | Conventional Commits, con el tipo en minúsculas y una descripción imperativa y concisa. |
-| Archivos y carpetas fuente | Siguen la convención de nomenclatura establecida por el lenguaje o framework seleccionado; se evitan abreviaturas sin explicación. |
-| Rutas de API | Nombres de recursos plurales en minúsculas, con versionado bajo `/api/v1/`, como se muestra en los requerimientos. |
-| Variables de entorno | Mayúsculas en formato `SCREAMING_SNAKE_CASE`; se documentan los nombres requeridos y nunca se registran valores ni secretos. |
-| Identificadores de base de datos | Formato consistente `snake_case` en minúsculas, con constraints explícitos de primary key, foreign key y unicidad. |
-| Documentación | Encabezados y tablas GFM, rutas relativas estables para los recursos y enlaces al artefacto o herramienta fuente. |
-| Pruebas | Sus nombres describen el comportamiento o escenario verificado; los cambios en servicios incluyen cobertura unitaria y de integración/aceptación. |
+| Elemento | Convención adoptada | Ejemplo |
+| --- | --- | --- |
+| Archivos y carpetas | Minúsculas; se utiliza `kebab-case` cuando el nombre contiene varias palabras. | `reservation-card.vue`, `user-stories.md` |
+| Variables y funciones de JavaScript | `camelCase`. | `reservationCount`, `calculateTotal()` |
+| Clases y componentes | `PascalCase` cuando representan una clase o un componente de Vue. | `ReservationCard`, `BookingSummary` |
+| Constantes | `UPPER_SNAKE_CASE` cuando son valores globales inmutables. | `MAX_RETRY_COUNT` |
+| Clases CSS, atributos `data-*` e identificadores HTML | Minúsculas en `kebab-case`; las clases CSS siguen el patrón BEM cuando representan bloques, elementos y modificadores. | `site-header__nav`, `plan--professional` |
+| Variables CSS personalizadas | Prefijo `--` seguido de un nombre en `kebab-case`. | `--color-primary`, `--spacing-md` |
+| Rutas y recursos de API | Recursos plurales en minúsculas y versionados bajo `/api/v1/`. | `/api/v1/reservations` |
+| Variables de entorno | Mayúsculas en `SCREAMING_SNAKE_CASE`; los valores secretos nunca se registran. | `DATABASE_CONNECTION_STRING` |
 
-Las reglas de formateo, linting y análisis estático se almacenarán en cada repositorio
-de implementación y se ejecutarán antes de integrar una rama mediante Git Flow. La
-herramienta y versión exactas se registrarán en el manifiesto de paquetes
-correspondiente cuando los repositorios de implementación estén disponibles.
+#### Landing Page: HTML, CSS y JavaScript
+
+La Landing Page se implementa con HTML, CSS y JavaScript sin un framework de
+componentes. El HTML utilizará elementos semánticos, atributos en minúsculas y una
+estructura que preserve la accesibilidad, con nombres de clases e identificadores en
+inglés. Los archivos CSS se organizarán por responsabilidad y utilizarán nombres en
+`kebab-case`; cuando corresponda, se aplicará BEM (`block__element--modifier`) para
+mantener una relación clara entre la estructura HTML y sus estilos.
+
+El código JavaScript seguirá el [estándar ECMAScript vigente](https://tc39.es/ecma262/)
+y utilizará `const` y `let` en lugar de `var`. Los módulos se declararán explícitamente mediante
+`<script type="module">` y utilizarán `import` y `export` para compartir funciones o
+valores. Los imports emplearán rutas relativas claras y no se dependerá de variables
+globales para comunicar módulos.
+
+Las funciones, clases y módulos relevantes se documentarán mediante JSDoc. Como
+mínimo, las funciones reutilizables deberán indicar su propósito, parámetros y valor
+de retorno cuando corresponda:
+
+```javascript
+/**
+ * Calculates the total amount for a reservation.
+ * @param {number} nightlyRate - The nightly room rate.
+ * @param {number} nights - The number of nights.
+ * @returns {number} The reservation total.
+ */
+export function calculateReservationTotal(nightlyRate, nights) {
+  return nightlyRate * nights;
+}
+```
+
+#### Frontend Web Application: Vue.js y Vite
+
+La Frontend Web Application se desarrollará con Vue.js y Vite. Vite se utilizará
+como herramienta de desarrollo y build, manteniendo sus scripts y configuración en
+el manifiesto del proyecto. Los componentes se implementarán como Single-File
+Components (`.vue`) y utilizarán Composition API. Se preferirá la sintaxis
+`<script setup>` para declarar imports, estado reactivo, funciones y hooks de ciclo de
+vida de forma concisa.
+
+La lógica reutilizable y con estado se extraerá a composables con nombres que
+comiencen por `use`, por ejemplo `useReservationSearch`. Los componentes utilizarán
+nombres en `PascalCase` y los nombres de props, eventos y variables respetarán las
+convenciones de JavaScript. Cada componente tendrá una responsabilidad clara y se
+evitará colocar lógica de negocio extensa directamente en la plantilla.
+
+#### Backend: ASP.NET Core y C#
+
+El backend se desarrollará con ASP.NET Core utilizando C#. En este contexto, el
+nombre correcto de la tecnología es **ASP.NET Core**. Se aplicarán las convenciones
+de nomenclatura de Microsoft para C#:
+
+| Elemento de C# | Convención | Ejemplo |
+| --- | --- | --- |
+| Namespaces, clases, records, enums y miembros públicos | `PascalCase`. | `ReservationService`, `GetReservation()` |
+| Interfaces | `PascalCase` con prefijo `I`. | `IReservationRepository` |
+| Parámetros y variables locales | `camelCase`. | `reservationId`, `totalAmount` |
+| Campos privados de instancia | `_camelCase`. | `_reservationRepository` |
+| Métodos asíncronos | `PascalCase` con sufijo `Async`. | `GetReservationAsync()` |
+| Archivos de configuración y clases de inicio | Nombres establecidos por ASP.NET Core. | `Program.cs`, `appsettings.json` |
+
+Los endpoints, DTOs, servicios, repositorios y entidades utilizarán nombres en
+inglés y mantendrán una responsabilidad única. Las configuraciones específicas de
+ASP.NET Core, como el registro de servicios y el pipeline de middleware, se
+mantendrán en los archivos correspondientes del proyecto y no se mezclarán con
+secretos o valores propios de un entorno.
+
+Las referencias principales para estas convenciones son la [guía de estilo HTML/CSS
+de Google](https://google.github.io/styleguide/htmlcssguide.html), la [guía de estilo
+de Vue.js](https://vuejs.org/style-guide/), la [documentación de Composition
+API](https://vuejs.org/guide/extras/composition-api-faq), la [guía oficial de
+Vite](https://vite.dev/guide/), la [documentación de JSDoc](https://jsdoc.app/), la
+[guía de módulos JavaScript de MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules),
+la [guía de estilo de JavaScript de Google](https://google.github.io/styleguide/jsguide.html)
+y las [convenciones de nomenclatura de C# de Microsoft](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names) y de [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0).
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -3114,5 +3181,25 @@ This is program for AV2 (not in AV1)
 [13] Preston-Werner, T. (s. f.). [_Semantic Versioning 2.0.0_](https://semver.org/). Recuperado el 16 de septiembre de 2026.
 
 [14] Conventional Commits. (s. f.). [_Conventional Commits 1.0.0_](https://www.conventionalcommits.org/en/v1.0.0/). Recuperado el 16 de septiembre de 2026.
+
+[15] Google. (s. f.). [_Google HTML/CSS Style Guide_](https://google.github.io/styleguide/htmlcssguide.html). Recuperado el 16 de septiembre de 2026.
+
+[16] Vue.js. (s. f.). [_Style Guide_](https://vuejs.org/style-guide/). Recuperado el 16 de septiembre de 2026.
+
+[17] Vue.js. (s. f.). [_Composition API FAQ_](https://vuejs.org/guide/extras/composition-api-faq). Recuperado el 16 de septiembre de 2026.
+
+[18] Vite. (s. f.). [_Getting Started_](https://vite.dev/guide/). Recuperado el 16 de septiembre de 2026.
+
+[19] JSDoc. (s. f.). [_JSDoc Documentation_](https://jsdoc.app/). Recuperado el 16 de septiembre de 2026.
+
+[20] Mozilla Developer Network. (s. f.). [_JavaScript modules_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). Recuperado el 16 de septiembre de 2026.
+
+[21] ECMA International. (s. f.). [_ECMAScript® Language Specification_](https://tc39.es/ecma262/). Recuperado el 16 de septiembre de 2026.
+
+[22] Google. (s. f.). [_Google JavaScript Style Guide_](https://google.github.io/styleguide/jsguide.html). Recuperado el 16 de septiembre de 2026.
+
+[23] Microsoft. (s. f.). [_Convenciones y reglas de nomenclatura de identificadores de C#_](https://learn.microsoft.com/es-es/dotnet/csharp/fundamentals/coding-style/identifier-names). Recuperado el 16 de septiembre de 2026.
+
+[24] Microsoft. (s. f.). [_ASP.NET Core fundamentals overview_](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0). Recuperado el 16 de septiembre de 2026.
 
 # Anexos
