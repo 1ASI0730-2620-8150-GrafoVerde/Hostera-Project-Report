@@ -63,9 +63,33 @@
 | Flores Rios, Juan Diego          | `YopoFlores`      |
 | Santana Luna, José Antonio       | `JhosBY2005`      |
 
-**Repositorio del proyecto:** [Ver repositorio en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-report)
+**Repositorio del proyecto:** [Ver repositorio en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report)
 
 ## AV1
+
+Durante AV1, el equipo elaboró el informe de forma colaborativa en el repositorio
+del proyecto. El trabajo se organizó mediante ramas de features y commits con
+mensajes Conventional Commits; la integración y evolución del informe siguieron
+Git Flow. Cada integrante aportó contenido, artefactos o evidencias en distintas
+secciones del reporte, y estos cambios quedaron registrados en el historial de
+GitHub.
+
+La captura de analíticos confirma la participación de **Joaquin Cuba** (`joacuba`),
+**Darnell Cuba** (`darnell1910`), **Mateo Urviola** (`BeyaminUv`), **Juan Diego
+Flores Rios** (`YopoFlores`) y **José Antonio Santana Luna** (`JhosBY2005`) durante
+el periodo mostrado. La captura del historial de commits muestra la evolución de
+la rama `main`, incluyendo los cambios de documentación, la preparación del
+changelog y la integración de la release `v0.2.0`. Esta evidencia es coherente
+con el Registro de Versiones del Informe y demuestra que la elaboración del reporte
+fue una actividad compartida.
+
+<img src="assets/project-report-collaboration-insights/av1-github-contributors.png" alt="Analíticos de colaboradores del repositorio del Project Report en GitHub" style="width:100%; height:auto;"/>
+
+*Evidencia 1. Analíticos de colaboradores del repositorio del Project Report en GitHub durante AV1.*
+
+<img src="assets/project-report-collaboration-insights/av1-github-commits.png" alt="Historial de commits de la rama main del repositorio del Project Report en GitHub" style="width:100%; height:auto;"/>
+
+*Evidencia 2. Historial de commits de la rama `main` del repositorio del Project Report durante AV1.*
 
 ## TB1
 
@@ -76,6 +100,8 @@
 # Contenido
 
 ## Tabla de Contenidos
+
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
 
 - [Student Outcome](#student-outcome)
 
