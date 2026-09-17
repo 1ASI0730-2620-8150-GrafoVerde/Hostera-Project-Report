@@ -1428,76 +1428,76 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 
 El Impact Mapping de Hostera conecta las hipótesis estratégicas del modelo de negocio con los cambios de comportamiento esperados en los usuarios y las características del producto digital. Esta sección toma como base los criterios de éxito definidos en el proceso de Lean UX, las definiciones de los segmentos objetivo y los requerimientos funcionales documentados para el Landing Page y la Web Application.
 
-## Business Goals (SMART)
+### Business Goals (SMART)
 
-Los objetivos de negocio reflejan los criterios de éxito ("Success Criteria") establecidos en las Hipótesis de Lean UX para validar la propuesta de valor de Hostera.
+Los objetivos de negocio reflejan los criterios de éxito ("Success Criteria") establecidos en las Hipótesis de Lean UX para validar la propuesta de valor de Hostera, definidos bajo la estructura SMART.
 
 | # | Business Goal | Descripción y Métricas de Éxito | Epic Relacionado |
 |---|---|---|---|
-| **BG1** | Centralización operativa | Aumentar en al menos 5% las tareas de supervisión completadas desde el panel sin consultar registros adicionales | EP002 |
-| **BG2** | Precisión en reservas y disponibilidad | Reducir en al menos 5% las inconsistencias detectadas entre reservas y disponibilidad de habitaciones | EP003, EP004 |
-| **BG3** | Visibilidad de inventario | Aumentar en al menos 5% los movimientos de inventario registrados y consultables, reduciendo diferencias de stock | EP005 |
-| **BG4** | Trazabilidad RFID | Aumentar en al menos 5% los accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un huésped/usuario | EP006 |
-| **BG5** | Coordinación multi-sede | Aumentar en al menos 5% las tareas de supervisión completadas correctamente en escenarios de varias sedes | EP007 |
-| **BG6** | Adquisición e incorporación | Convertir visitantes en usuarios registrados a través del Landing Page, identificando su escala operativa (hotel independiente o cadena) | EP001 |
+| **BG1** | Centralización operativa | Aumentar en al menos 5% las tareas de supervisión completadas desde el panel sin consultar registros adicionales durante los primeros 6 meses de despliegue. | EP002 |
+| **BG2** | Precisión en reservas y disponibilidad | Reducir en al menos 5% las inconsistencias detectadas entre reservas y disponibilidad de habitaciones en el lapso de los primeros 6 meses de uso. | EP003, EP004 |
+| **BG3** | Visibilidad de inventario | Aumentar en al menos 5% los movimientos de inventario registrados y consultables, reduciendo diferencias de stock en un periodo de 3 meses tras la implementación. | EP005 |
+| **BG4** | Trazabilidad RFID | Aumentar en al menos 5% los accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un huésped/usuario en los primeros 6 meses de operación. | EP006 |
+| **BG5** | Coordinación multi-sede | Aumentar en al menos 5% las tareas de supervisión completadas correctamente en escenarios de varias sedes en el transcurso de 6 meses. | EP007 |
+| **BG6** | Adquisición e incorporación | Convertir el 10% de los visitantes de la Landing Page en usuarios registrados a través de la web, identificando su escala operativa (hotel independiente o cadena) durante los primeros 3 meses de publicación. | EP001 |
 
-## Actores (Actors)
+### Actores (Actors)
 
-Los actores principales se derivan estrictamente de los segmentos objetivo definidos en la sección 1.3 y los roles base requeridos para la Landing Page. Las tareas del personal operativo (recepción, almacén) se consideran acciones subordinadas a la coordinación de estos responsables
+Los actores principales se derivan estrictamente de los User Personas definidos en la sección de Needfinding y los roles base requeridos para la Landing Page. Las tareas del personal operativo (recepción, almacén) se consideran acciones subordinadas a la coordinación de estos responsables.
 
-- **A1 - Administrador de Hotel Independiente:** Propietario o administrador que supervisa la operación diaria de una sola sede (hasta 10 habitaciones). Requiere consultar información actualizada sin depender de sistemas separados.
-- **A2 - Gerente de Operaciones de Cadena:** Responsable de coordinar dos o más sedes de una cadena pequeña (2 a 5 locaciones). Necesita comparar información entre establecimientos manteniendo separados los datos de cada sede.
-- **A3 - Visitante:** Usuario que explora la Landing Page para comprender la propuesta de valor, comparar planes y encontrar la ruta adecuada para su escala operativa.
+- **A1 - Steven Huarcaya (Administrador de Hotel Independiente):** Propietario o administrador que supervisa la operación diaria de una sola sede (hasta 10 habitaciones). Requiere consultar información actualizada sin depender de sistemas separados.
+- **A2 - Anyeli Cárdenas (Gerente de Operaciones de Cadena):** Responsable de coordinar dos o más sedes de una cadena pequeña (2 a 5 locaciones). Necesita comparar información entre establecimientos manteniendo separados los datos de cada sede.
+- **A3 - Visitantes (Perfiles afines a Steven y Anyeli):** Usuarios que exploran la Landing Page para comprender la propuesta de valor, comparar planes y encontrar la ruta adecuada para su escala operativa.
 
-## Impacts (Cambios en el Comportamiento de los Actores)
+### Impacts (Cambios en el Comportamiento de los Actores)
 
-Los Impacts describen cómo esperamos que cambien o se comporten los Actors como resultado de usar Hostera. Cada Impact está formulado como un cambio observable y medible.
+Los Impacts describen cómo esperamos que cambien o se comporten los User Personas como resultado de usar Hostera. Cada Impact está formulado como un cambio observable y medible.
 
 | # | Actor | Impact (¿Cómo deben cambiar?) | BG |
 |---|---|---|---|
-| **IM1** | A3 | Explora la propuesta de valor en el Landing Page, diferencia los planes y se registra en la plataforma | BG6 |
-| **IM2** | A1, A2 | Inicia sesión y monitorea la operación diaria desde un overview unificado en lugar de usar registros separados | BG1 |
-| **IM3** | A1, A2 | Gestiona el ciclo de vida de las reservas (check-in/check-out) afectando automáticamente la disponibilidad de habitaciones | BG2 |
-| **IM4** | A1, A2 | Registra entradas y salidas de existencias en el almacén mediante ajustes de stock auditables | BG3 |
-| **IM5** | A1, A2 | Codifica credenciales RFID, asocia accesos a las habitaciones y revisa los eventos denegados o concedidos | BG4 |
-| **IM6** | A2 | Navega entre propiedades asignadas y genera reportes consolidados por sede sin mezclar información | BG5 |
+| **IM1** | A3 | Explora la propuesta de valor en el Landing Page, diferencia los planes y se registra en la plataforma. | BG6 |
+| **IM2** | A1, A2 | Inician sesión y monitorean la operación diaria desde un overview unificado en lugar de usar registros separados. | BG1 |
+| **IM3** | A1, A2 | Gestionan el ciclo de vida de las reservas (check-in/check-out) afectando automáticamente la disponibilidad de habitaciones. | BG2 |
+| **IM4** | A1, A2 | Registran entradas y salidas de existencias en el almacén mediante ajustes de stock auditables. | BG3 |
+| **IM5** | A1, A2 | Codifican credenciales RFID, asocian accesos a las habitaciones y revisan los eventos denegados o concedidos. | BG4 |
+| **IM6** | A2 | Navega entre propiedades asignadas y genera reportes consolidados por sede sin mezclar información. | BG5 |
 
-## Deliverables (Características del Producto)
+### Deliverables (Características del Producto)
 
 Los entregables corresponden a los Epics (EP) definidos en el Product Backlog, los cuales agrupan las User Stories y Technical Stories necesarias para provocar los impactos.
 
 | # | Deliverable | Descripción Funcional | Impactos |
 |---|---|---|---|
-| **D1** | Landing Page Experience (EP001) | Portal con navegación clara, propuesta de valor, selección de planes e inicio de registro para hoteles y cadenas | IM1 |
-| **D2** | Account Access & Overview (EP002) | Autenticación, selección de propiedad y un dashboard administrativo para monitorear el estado actual del hotel | IM2 |
-| **D3** | Reservation & Room Management (EP003, EP004) | Módulos para gestionar disponibilidad, tarifas y el ciclo de la reserva desde la creación hasta el check-out | IM3 |
-| **D4** | Inventory Management (EP005) | Control de artículos, ubicaciones de almacenamiento y registro inmutable de ajustes de stock | IM4 |
-| **D5** | RFID Access Control (EP006) | Integración para codificar, reemplazar y revocar tarjetas RFID, y auditoría de eventos de acceso | IM5 |
-| **D6** | API Reliability (EP008) | Generación y exportación de reportes operativos filtrados por propiedad y periodo de tiempo | IM6 |
-| **D7** | API Reliability (EP008) | Estandarización de errores e infraestructura del RESTful API para respuestas consistentes (Technical Stories) | Todos |
+| **D1** | Landing Page Experience (EP001) | Portal con navegación clara, propuesta de valor, selección de planes e inicio de registro para hoteles y cadenas. | IM1 |
+| **D2** | Account Access & Overview (EP002) | Autenticación, selección de propiedad y un dashboard administrativo para monitorear el estado actual del hotel. | IM2 |
+| **D3** | Reservation & Room Management (EP003, EP004) | Módulos para gestionar disponibilidad, tarifas y el ciclo de la reserva desde la creación hasta el check-out. | IM3 |
+| **D4** | Inventory Management (EP005) | Control de artículos, ubicaciones de almacenamiento y registro inmutable de ajustes de stock. | IM4 |
+| **D5** | RFID Access Control (EP006) | Integración para codificar, reemplazar y revocar tarjetas RFID, y auditoría de eventos de acceso. | IM5 |
+| **D6** | Operational Reporting (EP007) | Generación y exportación de reportes operativos filtrados por propiedad y periodo de tiempo. | IM6 |
+| **D7** | API Reliability (EP008) | Estandarización de errores e infraestructura del RESTful API para respuestas consistentes (Technical Stories). | Todos |
 
-## User Stories Derivadas del Impact Mapping
+### User Stories Derivadas del Impact Mapping
 
-Las funcionalidades identificadas han sido traducidas a los requerimientos especificados en la sección 3.1. A continuación, se presenta el mapeo de historias representativas y su integración técnica (Technical Stories).
+Las funcionalidades identificadas han sido traducidas a los requerimientos especificados en la sección 3.1. A continuación, se presenta el mapeo de historias representativas y su integración técnica (Technical Stories) redactadas en el formato "Como... deseo... para...".
 
 | Deliverable | IDs Relacionados | Historias Representativas (Formato estándar) |
 |---|---|---|
-| D1 | US001 - US008 | US003: As an independent hotel administrator, I want a path for one property so that I can identify the entry point intended for my operation. |
-| D2 | US009 - US011 <br/>TS001 - TS004 | US011: As a hotel administrator, I want to monitor current operational information and change the active property so that I can identify conditions that require attention. |
-| D3 | US012 - US023 <br/>TS005 - TS011 | US017: As a front-desk operator, I want to complete guest check-in so that identity, payment, room assignment, and room access are verified before the stay begins. |
-| D4 | US024 - US027 <br/>TS012 - TS013 | US026: As an inventory operator, I want to record stock entering or leaving a storage location so that on-hand quantities and their audit history remain accurate. |
-| D5 | US028 - US030 <br/>TS014 - TS015 | US029: As an authorized operator, I want to encode or replace an RFID key card so that a guest or staff member receives the access authorized for their role. |
-| D6 | US031 - US032 <br/>TS016 | TS016: As a developer, I want to retrieve and export property-scoped operational reports through the API so that clients can analyze consistent results. |
+| D1 | US001 - US008 | **US003:** Como administrador de un hotel independiente, deseo encontrar un camino para una sola propiedad para poder identificar el punto de entrada previsto para mi operación. |
+| D2 | US009 - US011 <br/>TS001 - TS004 | **US011:** Como administrador de hotel, deseo monitorear la información operativa actual y cambiar la propiedad activa para poder identificar condiciones que requieren atención. |
+| D3 | US012 - US023 <br/>TS005 - TS011 | **US017:** Como operador de recepción, deseo completar el check-in del huésped para que la identidad, el pago, la asignación de habitación y el acceso sean verificados antes de que comience la estancia. |
+| D4 | US024 - US027 <br/>TS012 - TS013 | **US026:** Como operador de inventario, deseo registrar el stock que entra o sale de una ubicación de almacenamiento para que las cantidades disponibles y su historial de auditoría permanezcan precisos. |
+| D5 | US028 - US030 <br/>TS014 - TS015 | **US029:** Como operador autorizado, deseo codificar o reemplazar una tarjeta de acceso RFID para que un huésped o miembro del personal reciba el acceso autorizado para su rol. |
+| D6 | US031 - US032 <br/>TS016 | **TS016:** Como desarrollador, deseo recuperar y exportar reportes operativos limitados por propiedad a través de la API para que los clientes puedan analizar resultados consistentes. |
 
 ## Resumen Visual
 
 El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la jerarquía completa desde los Business Goals hasta las User Stories establecidas para el producto mínimo viable de Hostera.
 
-### Impact Mapping: Hotel independiente
+### Impact Mapping: Segmento 1 - Hotel independiente
 
 <img src="assets/chapter-3/uxpressia-impact-mapping-1.png" alt="Imagen de Impact Mapping Hotel Independiente" >
 
-### Impact Mapping: Cadena hotelera pequeña
+### Impact Mapping: Segmento 2 - Cadena hotelera pequeña
 
 <img src="assets/chapter-3/uxpressia-impact-mapping-2.png" alt="Imagen de Impact Mapping Hotel Independiente" >
 
