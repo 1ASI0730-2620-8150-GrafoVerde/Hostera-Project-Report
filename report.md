@@ -79,7 +79,7 @@ La captura de analíticos confirma la participación de **Joaquin Cuba** (`joacu
 Flores Rios** (`YopoFlores`) y **José Antonio Santana Luna** (`JhosBY2005`) durante
 el periodo mostrado. La captura del historial de commits muestra la evolución de
 la rama `main`, incluyendo los cambios de documentación, la preparación del
-changelog y la integración de la release `v0.2.0`. Esta evidencia es coherente
+changelog y la integración de la release `v0.3.0`. Esta evidencia es coherente
 con el Registro de Versiones del Informe y demuestra que la elaboración del reporte
 fue una actividad compartida.
 
