@@ -3420,6 +3420,75 @@ los commits detallados en la evidencia de desarrollo del Sprint Review.
 
 ## Conclusiones y recomendaciones
 
+El trabajo realizado permitió convertir la propuesta inicial de Hostera en una
+Landing Page funcional y públicamente accesible. Al cierre del Sprint 1 se
+implementaron las ocho User Stories de `EP001`, con 42 Story Points completados,
+y se publicó la Landing Page mediante GitHub Pages. La entrega comunica la
+propuesta de valor, diferencia los caminos para hoteles independientes, cadenas
+pequeñas y grupos hoteleros, presenta los beneficios y planes de Hostera, y
+ofrece navegación en inglés y español.
+
+**Conclusión sobre el Problem Statement.** La Landing Page responde al problema
+identificado al comunicar la necesidad de coordinar reservas, habitaciones,
+inventario y accesos desde una visión común. También hace explícita la promesa de
+Hostera de conectar estas áreas. Sin embargo, esta entrega demuestra la
+comunicación de la solución y no todavía la resolución operativa del problema:
+la reducción de conciliación manual, la actualización de datos, la trazabilidad
+RFID y la coordinación entre sedes deberán comprobarse cuando estén disponibles
+la Web Application, los Web Services y los escenarios de validación.
+
+**Conclusión sobre los segmentos y assumptions.** La estructura de la Landing
+Page refleja los segmentos priorizados en el proyecto: hoteles independientes,
+cadenas pequeñas y grupos hoteleros. Esta decisión permitió organizar una
+experiencia de descubrimiento y orientar cada segmento hacia un siguiente paso.
+No obstante, los supuestos sobre las necesidades, hábitos de trabajo, disposición
+de pago y valor percibido por cada segmento deben mantenerse como hipótesis de
+negocio que se seguirán contrastando durante la evolución del producto. La
+priorización actual ofrece una base coherente para organizar el roadmap y definir
+los siguientes experimentos de producto.
+
+**Conclusión sobre los Hypothesis Statements.** Las hipótesis relacionadas con
+el panel centralizado, la gestión de reservas, el inventario, la trazabilidad RFID
+y la administración de una o varias sedes reciben respaldo inicial en la propuesta
+de valor y en la organización de los recorridos del producto. La Landing Page
+presenta estos beneficios, pero todavía se necesitan la interacción operativa y
+los datos de uso de las aplicaciones para comparar una línea base. Por tanto, los
+umbrales de mejora del 5 % definidos en los Hypothesis Statements permanecen
+pendientes de medición.
+
+| Hypothesis Statement | Resultado al cierre del Sprint 1 | Evidencia necesaria para evaluarlo |
+|---|---|---|
+| Panel administrativo centralizado | La propuesta comunica el valor de una visión común, pero el panel operativo aún forma parte del roadmap. | Web Application funcional, tareas representativas y comparación con una línea base. |
+| Gestión de reservas y disponibilidad | La necesidad está reflejada en la propuesta; faltan los servicios y flujos operativos para medir el resultado. | Escenarios de consulta y actualización, tiempo de tarea e inconsistencias detectadas. |
+| Registro y consulta del inventario | La Landing Page comunica el beneficio de la centralización, mientras que la operación de inventario se implementará posteriormente. | Movimientos registrados, consultas de existencias y pruebas de control. |
+| Control y trazabilidad de accesos RFID | La propuesta reconoce la trazabilidad como capacidad prioritaria; la integración RFID aún no forma parte del Sprint 1. | Eventos relacionados con tarjeta, habitación y usuario, además del tiempo de consulta. |
+| Administración de una o varias sedes | Los caminos y planes de la Landing Page representan distintas escalas; falta comprobar la operación multi-sede. | Escenarios de una y varias sedes sin duplicidad ni pérdida de contexto. |
+
+**Conclusión sobre los criterios de éxito.** El criterio de entrega definido para
+el Sprint 1 se cumplió: las ocho User Stories de `EP001` fueron implementadas y
+la Landing Page quedó publicada y accesible. Este resultado confirma el avance de
+implementación del producto y del trabajo colaborativo, pero no sustituye los
+criterios de éxito del Lean UX, que requieren observar tareas reales con
+información centralizada, actualizada y relacionada. Esos indicadores deberán
+medirse después de implementar los productos operativos y realizar las
+evaluaciones de uso correspondientes.
+
+**Recomendaciones para el roadmap.**
+
+| Prioridad | Siguiente paso recomendado | Resultado esperado |
+|---:|---|---|
+| 1 | Implementar la primera versión de la Web Application a partir de las User Stories de acceso y operación, comenzando por registro, autenticación, dashboard y navegación operacional (`US009`, `US010`, `US011` y `US033`). | Permitir que un usuario autorizado consulte la operación y conserve el contexto de su propiedad. |
+| 2 | Implementar los Web Services correspondientes y documentar cada endpoint con OpenAPI, incluyendo acciones, verbos HTTP, parámetros y respuestas. | Proporcionar una base verificable para la Web Application y para futuras integraciones. |
+| 3 | Incorporar progresivamente reservas, habitaciones, inventario, reportes y control de accesos RFID con pruebas de escenarios normales y alternativos. | Generar la evidencia necesaria para evaluar las cinco hipótesis y sus metas del 5 %. |
+| 4 | Conectar los CTA de la Landing Page con las experiencias implementadas y desplegar los productos en sus entornos correspondientes. | Mantener una experiencia consistente entre el descubrimiento en la Landing Page y la operación en las aplicaciones. |
+| 5 | Mantener Git Flow, Conventional Commits, documentación en cada repositorio y analíticos de colaboración por sprint. | Conservar trazabilidad de cambios, responsabilidades, integración y evolución del producto. |
+
+En síntesis, el Sprint 1 logró una primera entrega publicable y coherente con la
+propuesta de Hostera. La principal conclusión del ciclo actual es que la
+comunicación del producto ya puede ser evaluada públicamente, mientras que el
+valor operativo y las hipótesis de negocio todavía requieren implementación y
+validación con usuarios reales.
+
 ## Video About-the-Team
 
 This is program for AV2 (not in AV1)
