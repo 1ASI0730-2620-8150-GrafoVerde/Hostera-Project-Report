@@ -47,6 +47,7 @@
 
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  0.2.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Mateo Urviola (`BeyaminUv`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>José Antonio Santana Luna (`JhosBY2005`) | Se amplió el informe con la documentación de descubrimiento, diseño, arquitectura e implementación de Hostera; se incorporó la evidencia del Sprint 1, el despliegue de la Landing Page en GitHub Pages, los Student Outcomes AV1, los perfiles del equipo y los anexos. |
 |  0.1.1  | 03/09/2026 | Joaquin Cuba (`joacuba`)                                                                          | Se agregó la documentación del repositorio, el script para generar el PDF y la licencia MIT. Se corrigió el diseño de la portada, el tamaño de las imágenes y los bordes de las tablas. |
 |  0.1.0  | 03/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Juan Diego Flores Rios (`YopoFlores`) | Se creó la estructura inicial del informe del proyecto Hostera, se incorporaron los recursos gráficos y se agregó la descripción de la startup.                                         |
 
@@ -171,6 +172,8 @@
 - [Bibliografía](#bibliografía)
 
 - [Anexos](#anexos)
+  - [Anexo A. Videos de exposiciones](#anexo-a-videos-de-exposiciones)
+  - [Anexo B. Documentos y artefactos complementarios](#anexo-b-documentos-y-artefactos-complementarios)
 
 # Student Outcome
 
@@ -632,6 +635,7 @@ varias sedes, sin duplicar ni confundir la información operativa.
 #### 1.2.2.4. Lean UX Canvas
 
 ![Lean UX Canvas de Hostera](assets/chapter-1/hostera-lean-ux-canvas.svg)
+*Figura 1.1. Lean UX Canvas de Hostera.*
 
 ## 1.3. Segmentos objetivo
 
@@ -1006,6 +1010,7 @@ información y el control de las diferencias entre establecimientos.
 Entrevista 1:
 
 <img src="assets/chapter-2/interview-01-wilson.png" alt="Entrevista 1 de Wilson" style="width:100%; height:auto;"/>
+*Figura 2.1. Entrevista a Wilson, ingeniero y administrador de hotel.*
 
 Entrevistado: Wilson
 <br>Edad: 46 años
@@ -1030,6 +1035,7 @@ Finalmente, considera que una mejora importante para la administración del hote
 **Entrevista 2:**
 
 **<img src="assets/chapter-2/interview-03-rafael-prieto.png" alt="Entrevista 2 de Rafael Prieto" style="width:100%; height:auto;"/>**
+*Figura 2.2. Entrevista a Rafael Prieto, Room Division Manager.*
 
 Entrevistado: Rafael Prieto, Manager del Hotel Intercontinental Lima Miraflores y Hotel Índigo Lima Miraflores
 
@@ -1058,6 +1064,7 @@ Finalmente, resalta la importancia de comprender mejor el trabajo del área de h
 **Entrevista 1:**
 
 **<img src="assets/chapter-2/interview-02-melia-general-manager.png" alt="Entrevista 1 del gerente general del Hotel Meliá Lima Miraflores" style="width:100%; height:auto;"/>**
+*Figura 2.3. Entrevista al gerente general del Hotel Meliá Lima Miraflores.*
 
 Entrevistado: Gerente general del Hotel Meliá Lima Miraflores
 <br>Edad: 40 años
@@ -1082,6 +1089,7 @@ Finalmente, considera importantes aspectos como la seguridad de los datos person
 **Entrevista 2:**
 
 **<img src="assets/chapter-2/interview-04-otto-cuba.png" alt="Entrevista 3 de Otto Cuba" style="width:100%; height:auto;"/>**
+*Figura 2.4. Entrevista a Otto Cuba, accionista del Hotel Bahía de Cuba.*
 
 Entrevistado: Otto Cuba
 
@@ -1227,9 +1235,11 @@ Para ello seleccionamos los siguientes perfiles:
 
 User Persona 1
 ![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
+*Figura 2.5. User Persona de Steven Huarcaya.*
 ---
 User Persona 2
 ![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
+*Figura 2.6. User Persona de Anyeli Cárdenas.*
 ### 2.3.2. User Task Matrix
 En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
 
@@ -1287,6 +1297,7 @@ En esta sección se presentan los User Journey Maps en su versión **As-Is** (si
 El *journey* actual de Steven abarca desde la recepción de solicitudes de reserva por canales dispersos hasta la revisión del inventario y la entrega física de llaves en el hotel. El proceso se caracteriza por una alta dependencia de registros manuales y una constante interrupción operativa para resolver incidencias.
 
 ![As-Is User Journey Map - Steven Huarcaya](assets/chapter-2/StevenHuarcaya_journeymap.png)
+*Figura 2.7. As-Is User Journey Map de Steven Huarcaya.*
 
 ---
 
@@ -1295,14 +1306,17 @@ El *journey* actual de Steven abarca desde la recepción de solicitudes de reser
 El *journey* actual de Anyeli contempla el proceso de consolidación y supervisión de la operación de múltiples sedes a la distancia. Las etapas clave incluyen la solicitud de reportes a los administradores locales, la consolidación manual de datos de inventario y la verificación diferida de accesos, lo cual genera retrasos y falta de visibilidad en tiempo real.
 
 ![As-Is User Journey Map - Anyeli Cárdenas](assets/chapter-2/AnyeliCardenas_journeymap.png)
+*Figura 2.8. As-Is User Journey Map de Anyeli Cárdenas.*
 
 ### 2.3.4. Empathy Mapping
 
 Empathy Map 1
 ![StevenHuarcaya](assets/chapter-2/Empathy%20map-segmento1.png)
+*Figura 2.9. Empathy Map de Steven Huarcaya.*
 ---
 Empathy Map 2
 ![AnyeliCardenas](assets/chapter-2/Empathy%20map-segmento2%20(1).png)
+*Figura 2.10. Empathy Map de Anyeli Cárdenas.*
 
 
 ## 2.4. Big Picture EventStorming
@@ -1314,7 +1328,7 @@ posibles problemas y oportunidades que orientan la definición de la solución.
 
 <img src="assets/chapter-2/big-picture-event-storming-hostera.svg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 2.1. Big Picture EventStorming del dominio de Hostera.*
+*Figura 2.11. Big Picture EventStorming del dominio de Hostera.*
 
 ## 2.5. Ubiquitous Language
 
@@ -1496,10 +1510,12 @@ El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la je
 ### Impact Mapping: Segmento 1 - Hotel independiente
 
 <img src="assets/chapter-3/uxpressia-impact-mapping-1.png" alt="Imagen de Impact Mapping Hotel Independiente" >
+*Figura 3.1. Impact Mapping del segmento de hoteles independientes.*
 
 ### Impact Mapping: Segmento 2 - Cadena hotelera pequeña
 
 <img src="assets/chapter-3/uxpressia-impact-mapping-2.png" alt="Imagen de Impact Mapping Hotel Independiente" >
+*Figura 3.2. Impact Mapping del segmento de pequeñas cadenas hoteleras.*
 
 <div style="page-break-before: always;"></div>
 
@@ -1589,7 +1605,7 @@ para su seguimiento, priorización y estimación.
 
 ![Product Backlog de Hostera en YouTrack](assets/chapter-3/youtrack-product-backlog.png)
 
-*Figura 3.1. Listado general del Product Backlog de Hostera en YouTrack.*
+*Figura 3.3. Listado general del Product Backlog de Hostera en YouTrack.*
 
 El Product Backlog puede consultarse en el [Agile Board de Hostera en YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5).
 
@@ -3220,6 +3236,7 @@ los datos.
 
 General database diagram
 ![general Databse diagram](assets/chapter-4/database-diagram-hostera.JPG)
+*Figura 4.93. Diagrama general de base de datos de Hostera.*
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
@@ -3861,4 +3878,22 @@ This is program for AV2 (not in AV1)
 
 [24] Microsoft. (s. f.). [_ASP.NET Core fundamentals overview_](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0). Recuperado el 16 de septiembre de 2026.
 
+<div style="page-break-before: always;"></div>
+
 # Anexos
+
+## Anexo A. Videos de exposiciones
+
+- **AV1 – Sprint Review – Semana 4.** Exposición del informe y revisión del Sprint 1. [Enlace al video de exposición](https://1drv.ms/f/c/8d4ae682dbad6a14/IgCXbQYBxh5ZQLSHCeblDgTkAbiAPQvF9cBxkcFff5XFl_A?e=BxNv39).
+
+<div style="page-break-before: always;"></div>
+
+## Anexo B. Documentos y artefactos complementarios
+
+- **Final Project Individual Member Performance Report (by Team Leader).** Documento independiente que debe enviarse junto con la entrega.
+- **Final Project Keynote.** Archivo independiente de la presentación de la entrega.
+- **Repositorio del informe.** [Hostera Report en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-report)
+- **Repositorio de la Landing Page.** [Landing Page de Hostera en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page)
+- **Landing Page desplegada.** [Abrir Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/)
+- **Board de seguimiento.** [Hostera en YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5)
+- **Prototipo de Web Application.** [Hostera · Web Application Prototypes en Figma](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes)
