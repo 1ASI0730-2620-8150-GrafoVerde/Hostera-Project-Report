@@ -84,9 +84,13 @@ changelog y la integración de la release `v0.3.0`. Esta evidencia es coherente
 con el Registro de Versiones del Informe y demuestra que la elaboración del reporte
 fue una actividad compartida.
 
+<div style="page-break-before: always;"></div>
+
 <img src="assets/project-report-collaboration-insights/av1-github-contributors.png" alt="Analíticos de colaboradores del repositorio del Project Report en GitHub" style="width:100%; height:auto;"/>
 
 *Evidencia 1. Analíticos de colaboradores del repositorio del Project Report en GitHub durante AV1.*
+
+<div style="page-break-before: always;"></div>
 
 <img src="assets/project-report-collaboration-insights/av1-github-commits.png" alt="Historial de commits de la rama main del repositorio del Project Report en GitHub" style="width:100%; height:auto;"/>
 
@@ -97,6 +101,8 @@ fue una actividad compartida.
 ## AV2
 
 ## TB2
+
+<div style="page-break-before: always;"></div>
 
 # Contenido
 
@@ -201,6 +207,8 @@ fue una actividad compartida.
 - [Anexos](#anexos)
   - [Anexo A. Videos de exposiciones](#anexo-a-videos-de-exposiciones)
   - [Anexo B. Documentos y artefactos complementarios](#anexo-b-documentos-y-artefactos-complementarios)
+
+<div style="page-break-before: always;"></div>
 
 # Student Outcome
 
