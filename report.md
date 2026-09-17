@@ -3211,6 +3211,67 @@ Sprint.
 
 #### 5.2.1.3. Sprint Backlog 1
 
+El Sprint Backlog 1 descompone el objetivo de implementar la experiencia completa de
+la Landing Page en tareas concretas para las ocho User Stories de `EP001`. El Board
+de YouTrack se utilizó para registrar las historias, sus responsables, los Story
+Points y su pertenencia al Sprint 1. La [vista pública del Board de Hostera en
+YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5) contiene el
+seguimiento de estas User Stories.
+
+<img src="assets/chapter-5/sprint-1-youtrack-board.png" alt="Board de YouTrack con las User Stories de la Epic 1 asignadas al Sprint 1 de la Landing Page" style="width:100%; height:auto;"/>
+
+*Figura 5.2. Board de YouTrack con las User Stories asignadas al Sprint 1 de la Landing Page.*
+
+La captura corresponde al seguimiento del Board durante el sprint. La tabla siguiente
+presenta la descomposición de trabajo y el estado al cierre del Sprint 1. Las horas
+indicadas son estimaciones de planificación para cada Work-Item/Task y no sustituyen
+la estimación relativa en Story Points de cada User Story.
+
+<table>
+  <thead>
+    <tr>
+      <th>Sprint #</th>
+      <td colspan="7">Sprint 1</td>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Story Id</th>
+      <th>Story Title</th>
+      <th>Task Id</th>
+      <th>Task Title</th>
+      <th>Task Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status<br>(To-do / In-Process / To-Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.1</td><td>Build hero proposition</td><td>Implementar el hero con el mensaje principal, la propuesta de valor, las áreas operativas y el CTA inicial.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.2</td><td>Add dashboard preview</td><td>Incorporar la vista informativa del dashboard para representar reservas, habitaciones, inventario y accesos.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.3</td><td>Explain the problem and solution</td><td>Implementar la sección que explica la fragmentación de la operación hotelera y la respuesta de Hostera.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Navigate the Landing Page sections and footer</td><td>T002.1</td><td>Implement primary navigation</td><td>Crear el encabezado, las etiquetas de navegación, el control de idioma y el CTA principal.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Navigate the Landing Page sections and footer</td><td>T002.2</td><td>Implement footer navigation</td><td>Crear la navegación secundaria, el aviso de Grafo Verde y los enlaces hacia las secciones y términos.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Navigate the Landing Page sections and footer</td><td>T002.3</td><td>Add mobile navigation and terms page</td><td>Implementar el menú de navegación responsive y la página de términos y condiciones.</td><td>8</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.1</td><td>Add independent-hotel pathway</td><td>Implementar la tarjeta y el contenido del camino para un hotel independiente con hasta 10 habitaciones.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.2</td><td>Add Free plan details</td><td>Incorporar la información del plan Free y su CTA para iniciar la experiencia correspondiente.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US004</td><td>Find the small-chain path</td><td>T004.1</td><td>Add small-chain pathway</td><td>Implementar la tarjeta y el contenido del camino para una cadena hotelera pequeña de 2 a 5 ubicaciones.</td><td>4</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US004</td><td>Find the small-chain path</td><td>T004.2</td><td>Add Professional plan details</td><td>Incorporar la información del plan Professional y su CTA para explorar la experiencia correspondiente.</td><td>4</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US005</td><td>Understand the product benefits and operating flow</td><td>T005.1</td><td>Add connected-operations benefits</td><td>Implementar la sección de beneficios y las tarjetas de inventario centralizado y control de accesos.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US005</td><td>Understand the product benefits and operating flow</td><td>T005.2</td><td>Add four-step operating flow</td><td>Implementar el flujo de cuatro pasos: añadir hoteles, configurar el equipo, conectar sistemas y operar.</td><td>4</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.1</td><td>Add hotel-group pathway</td><td>Implementar el camino comercial para grupos hoteleros y la opción Enterprise.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.2</td><td>Add plan comparison</td><td>Completar la comparación de planes, capacidades y CTA para Free, Professional y Enterprise.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.3</td><td>Add closing actions and sales contact</td><td>Implementar el panel de cierre, las acciones principales y el siguiente paso de contacto comercial.</td><td>4</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.1</td><td>Add product discovery content</td><td>Implementar el área de producto y el punto de entrada para descubrir Hostera.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.2</td><td>Add team content</td><td>Implementar la sección del equipo, sus integrantes y el punto de entrada para conocerlo.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.3</td><td>Add support FAQ</td><td>Implementar las preguntas frecuentes con estados expandido y contraído.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US008</td><td>Use the English and Spanish Landing Page variants</td><td>T008.1</td><td>Implement English and Spanish content</td><td>Incorporar las variantes de contenido, navegación, caminos, planes y CTA en inglés y español.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US008</td><td>Use the English and Spanish Landing Page variants</td><td>T008.2</td><td>Preserve language selection</td><td>Mantener el idioma seleccionado al navegar hacia los términos y corregir la transición visual del cambio de idioma.</td><td>4</td><td>Joaquin Cuba</td><td>Done</td></tr>
+  </tbody>
+</table>
+
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
