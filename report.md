@@ -2664,7 +2664,7 @@ alerta para que pueda tomarse una acción de reposición.
 
 #### Goal: Create or update an inventory item
 
-<img src="assets/chapter-4/web-application-user-flows/18-inventory-item-management.png" alt="User Flow para crear o actualizar un ítem de inventario" style="width:100%; height:auto;"/>
+<img src="assets/chapter-4/web-application-user-flows/class-diagram-inventory-item-management.png" alt="User Flow para crear o actualizar un ítem de inventario" style="width:100%; height:auto;"/>
 
 *Figura 4.69. User Flow para crear o actualizar un ítem de inventario.*
 
@@ -2896,6 +2896,82 @@ accesos, y publica las actualizaciones al frontend en tiempo real.
 
 ### 4.7.1. Class Diagrams
 
+Los diagramas de clases detallan la implementación orientada a objetos de los
+bounded contexts de Hostera. Cada diagrama identifica las clases de dominio y de
+servicio, las interfaces utilizadas para acceder a persistencia o servicios
+externos, las enumeraciones que representan estados y las relaciones entre sus
+elementos. También se especifican los atributos, métodos, visibilidad y
+multiplicidad de las relaciones para hacer explícitas las responsabilidades de
+cada componente.
+
+El diagrama de Identity and Access Management representa las entidades
+`Property`, `Account`, `PropertyAccess` y `Session`, junto con
+`AuthenticationService` y sus repositorios. Las enumeraciones `RoleType`,
+`Permission` y `AccountStatus` delimitan los roles, permisos y estados de las
+cuentas. Las relaciones muestran cómo una cuenta obtiene acceso a una propiedad,
+cómo se abre una sesión y cómo el servicio coordina los repositorios.
+
+<img src="assets/chapter-4/class-diagram-identity-and-access-management.jpeg" alt="Diagrama de clases de Identity and Access Management de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.16. Diagrama de clases de Identity and Access Management de Hostera.*
+
+El diagrama de Reservations and Stay Management organiza el ciclo de una reserva
+desde el huésped hasta la estadía. Incluye las clases `Guest`, `Reservation`,
+`Payment` y `Stay`, los estados de reserva, pago y estadía, además de
+`ReservationService`, sus repositorios y las interfaces de disponibilidad,
+tarifación y credenciales. Las multiplicidades documentan, entre otras relaciones,
+la asociación entre huéspedes y reservas, reservas y pagos, y reservas y estadías.
+
+<img src="assets/chapter-4/class-diagram-reservations-and-stay-management.jpeg" alt="Diagrama de clases de Reservations and Stay Management de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.17. Diagrama de clases de Reservations and Stay Management de Hostera.*
+
+El diagrama de Rooms, Availability and Rates muestra la relación entre los tipos
+de habitación, las habitaciones, los planes tarifarios y las tarifas diarias.
+`RoomManagementService` coordina las operaciones mediante los repositorios de
+habitaciones y planes tarifarios, así como la referencia a las reservas para
+proteger los estados controlados por estas. Las enumeraciones de configuración y
+estado de habitación complementan las reglas expresadas mediante los métodos y
+las relaciones del modelo.
+
+<img src="assets/chapter-4/class-diagram-rooms-availability-and-rates.jpeg" alt="Diagrama de clases de habitaciones, disponibilidad y tarifas de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.18. Diagrama de clases de habitaciones, disponibilidad y tarifas de Hostera.*
+
+El diagrama de Inventory Management modela las ubicaciones de almacenamiento,
+los ítems de inventario y los ajustes de stock. `InventoryService` coordina la
+creación y actualización de ítems, el registro de movimientos y la gestión de
+ubicaciones mediante `IInventoryItemRepository` e
+`IStorageLocationRepository`. `StockCondition` y `StockMovementType` representan
+las condiciones calculadas del inventario y los tipos de movimiento; además, las
+relaciones muestran la ubicación de cada ítem y la trazabilidad de sus ajustes.
+
+<img src="assets/chapter-4/class-diagram-inventory-management.jpeg" alt="Diagrama de clases de gestión de inventario de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.19. Diagrama de clases de gestión de inventario de Hostera.*
+
+El diagrama de RFID Access Control representa las credenciales RFID, los puntos
+de acceso, los alcances autorizados y los eventos de acceso. La clase
+`RFIDAccessService` coordina el codificador y los repositorios de credenciales y
+eventos. Las enumeraciones de estado de credencial, tipo de asignado y resultado
+de acceso permiten distinguir el ciclo de vida de una credencial y si un intento
+fue concedido o denegado.
+
+<img src="assets/chapter-4/class-diagram-rfid-access-control.jpeg" alt="Diagrama de clases de control de acceso RFID de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.20. Diagrama de clases de control de acceso RFID de Hostera.*
+
+El diagrama de Dashboard and Operational Analytics presenta la generación de
+resúmenes operativos a partir de proveedores especializados para reservas,
+habitaciones, inventario y accesos. `ReportService` construye el dashboard y los
+reportes operativos, mientras que `IReportExporter` define la exportación del
+resultado. El modelo incluye `OperationalDashboard`, `OperationalReport` y
+`OccupancyReport`, junto con los tipos de reporte y el estado de disponibilidad de
+los datos.
+
+<img src="assets/chapter-4/class-diagram-dashboard-operational-analytics.jpeg" alt="Diagrama de clases de dashboard y analítica operativa de Hostera" style="width:100%; height:auto;"/>
+
+*Figura 4.21. Diagrama de clases de dashboard y analítica operativa de Hostera.*
 
 
 ## 4.8. Database Design
