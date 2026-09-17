@@ -171,6 +171,8 @@
 - [Bibliografía](#bibliografía)
 
 - [Anexos](#anexos)
+  - [Anexo A. Videos de exposiciones](#anexo-a-videos-de-exposiciones)
+  - [Anexo B. Documentos y artefactos complementarios](#anexo-b-documentos-y-artefactos-complementarios)
 
 # Student Outcome
 
@@ -3875,4 +3877,22 @@ This is program for AV2 (not in AV1)
 
 [24] Microsoft. (s. f.). [_ASP.NET Core fundamentals overview_](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0). Recuperado el 16 de septiembre de 2026.
 
+<div style="page-break-before: always;"></div>
+
 # Anexos
+
+## Anexo A. Videos de exposiciones
+
+- **AV1 – Sprint Review – Semana 4.** Exposición del informe y revisión del Sprint 1. [Enlace al video de exposición](https://1drv.ms/f/c/8d4ae682dbad6a14/IgCXbQYBxh5ZQLSHCeblDgTkAbiAPQvF9cBxkcFff5XFl_A?e=BxNv39).
+
+<div style="page-break-before: always;"></div>
+
+## Anexo B. Documentos y artefactos complementarios
+
+- **Final Project Individual Member Performance Report (by Team Leader).** Documento independiente que debe enviarse junto con la entrega.
+- **Final Project Keynote.** Archivo independiente de la presentación de la entrega.
+- **Repositorio del informe.** [Hostera Report en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-report)
+- **Repositorio de la Landing Page.** [Landing Page de Hostera en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page)
+- **Landing Page desplegada.** [Abrir Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/)
+- **Board de seguimiento.** [Hostera en YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5)
+- **Prototipo de Web Application.** [Hostera · Web Application Prototypes en Figma](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes)
