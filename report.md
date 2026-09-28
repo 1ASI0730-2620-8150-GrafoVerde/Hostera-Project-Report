@@ -64,7 +64,7 @@
 | Flores Rios, Juan Diego          | `YopoFlores`      |
 | Santana Luna, José Antonio       | `JhosBY2005`      |
 
-**Repositorio del proyecto:** [Ver repositorio en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report)
+**Repositorio del proyecto:** https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report
 
 ## AV1
 
@@ -1050,7 +1050,7 @@ Entrevista 1:
 Entrevistado: Wilson
 <br>Edad: 46 años
 
-Enlace de entrevista: [https://drive.google.com/file/d/1CLCIVG5evrr4Z0-OdklAttTeY6RAlvJK/view?usp=sharing](https://drive.google.com/file/d/1CLCIVG5evrr4Z0-OdklAttTeY6RAlvJK/view?usp=sharing)
+Enlace de entrevista: https://drive.google.com/file/d/1CLCIVG5evrr4Z0-OdklAttTeY6RAlvJK/view?usp=sharing
 <br>Ocupación: Ingeniero y administrador de hotel
 <br>Ubicación: Puno, Puno
 
@@ -1076,7 +1076,7 @@ Entrevistado: Rafael Prieto, Manager del Hotel Intercontinental Lima Miraflores 
 
 <br>Edad: 40 años
 
-Enlace de entrevista: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105\_upc\_edu\_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I)
+Enlace de entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I
 <br>Ocupación: Room Division Manager
 <br>Ubicación: Miraflores, Lima
 
@@ -1104,7 +1104,7 @@ Finalmente, resalta la importancia de comprender mejor el trabajo del área de h
 Entrevistado: Gerente general del Hotel Meliá Lima Miraflores
 <br>Edad: 40 años
 
-Enlace de entrevista: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105\_upc\_edu\_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni)
+Enlace de entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni
 <br>Ocupación: Administrador de negocios turísticos y hoteleros / Gerente general
 <br>Ubicación: Miraflores, Lima
 
@@ -1130,7 +1130,7 @@ Entrevistado: Otto Cuba
 
 <br>Edad: 50 años
 
-Enlace de entrevista: [https://upcedupe-my.sharepoint.com/personal/u202410105\_upc\_edu\_pe/\_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105\_upc\_edu\_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12](https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12)
+Enlace de entrevista: https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12
 <br>Ocupación: Accionista del Hotel Bahía de Cuba
 <br>Ubicación: Playa de Tokio, Huarmey, Áncash
 
@@ -1642,7 +1642,7 @@ para su seguimiento, priorización y estimación.
 
 *Figura 3.3. Listado general del Product Backlog de Hostera en YouTrack.*
 
-El Product Backlog puede consultarse en el [Agile Board de Hostera en YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5).
+El Product Backlog puede consultarse en el https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5.
 
 # Capítulo IV: Product Design
 
@@ -2427,7 +2427,7 @@ recorrido correspondiente.
 
 Los diagramas fueron elaborados en FigJam utilizando las pantallas diseñadas en el
 archivo de Paper `Grafo-verde`. El board editable con los 25 Wireflows se encuentra
-disponible en [Hostera — Web Application Wireflows](https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7).
+disponible en https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7.
 
 #### Objetivos de usuario y recorridos especificados
 
@@ -3051,9 +3051,9 @@ flow y Mobile flow. El Desktop flow integra las pantallas principales de la
 aplicación y sus estados de interacción; el Mobile flow presenta el recorrido
 adaptado para navegador móvil.
 
-- [Abrir el prototipo completo en Figma](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes)
-- [Abrir el Desktop flow](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes?node-id=2-2)
-- [Abrir el Mobile flow](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes?node-id=2-3)
+- https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes
+- https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes?node-id=2-2
+- https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes?node-id=2-3
 
 ### Video de demostración
 
@@ -3066,7 +3066,7 @@ y check-out, el inventario, el control de accesos y los reportes.
 
 *Figura 4.77. Captura del video de demostración del prototipo de Hostera en Desktop Web Browser.*
 
-**Enlace al video de Microsoft Stream:** [Ver la demostración del prototipo de Hostera](https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN).
+**Enlace al video de Microsoft Stream:** https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN.
 
 La captura y el enlace anteriores corresponden a la evidencia de navegación exigida
 para esta sección; el enlace de Figma se incluye como referencia directa al prototipo
@@ -3299,9 +3299,9 @@ las herramientas locales se instalan desde sus canales oficiales de distribució
 
 | Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
 | --- | --- | --- | --- |
-| GitHub | Aloja el repositorio del equipo, los repositorios de producto, los issues y el historial de revisiones. | [Repositorio del equipo Grafo Verde](https://github.com/1ASI0730-2620-8150-GrafoVerde) | Los cambios se realizan en ramas de trabajo y se integran mediante el flujo Git Flow descrito en la sección 5.1.2. |
-| YouTrack | Gestiona el Product Backlog y realiza el seguimiento de las historias de usuario y los ítems de trabajo. | [Agile Board de Hostera](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5) | El trabajo se asocia a un ítem del backlog antes de su implementación y revisión. |
-| Figma | Elabora y comparte los wireflows, prototipos y mock-ups de las aplicaciones web. | [Prototipos de las aplicaciones web de Hostera](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes) | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe. |
+| GitHub | Aloja el repositorio del equipo, los repositorios de producto, los issues y el historial de revisiones. | https://github.com/1ASI0730-2620-8150-GrafoVerde | Los cambios se realizan en ramas de trabajo y se integran mediante el flujo Git Flow descrito en la sección 5.1.2. |
+| YouTrack | Gestiona el Product Backlog y realiza el seguimiento de las historias de usuario y los ítems de trabajo. | https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5 | El trabajo se asocia a un ítem del backlog antes de su implementación y revisión. |
+| Figma | Elabora y comparte los wireflows, prototipos y mock-ups de las aplicaciones web. | https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe. |
 | UXPressia | Elabora los artefactos de impact mapping utilizados para relacionar objetivos, actores, impactos e historias de usuario. | — | Los diagramas exportados se versionan junto con el informe cuando se utilizan como evidencia. |
 | Pandoc | Convierte `report.md` y sus recursos locales en el entregable PDF. | Instalación local; la configuración y ejecución están documentadas en `README.md`. | La compilación se ejecuta con `bash scripts/build-pdf.sh`; el archivo generado `report.pdf` permanece sin seguimiento. |
 
@@ -3332,7 +3332,7 @@ repositorios de producto exigidos por el enunciado del proyecto:
 
 | Producto | URL del repositorio | Estado actual |
 | --- | --- | --- |
-| Landing Page | [Repositorio de Landing Page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | Repositorio registrado para la implementación de la Landing Page. |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Repositorio registrado para la implementación de la Landing Page. |
 | RESTful Web Services | Por registrar | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. |
 | Frontend Web Applications | Por registrar | La URL se añadirá cuando se cree el repositorio de implementación. |
 
@@ -3355,7 +3355,7 @@ rama de trabajo y su historial de commits antes de ejecutar el merge correspondi
 El equipo no realizará commits directos en `main` o `develop` para el trabajo normal
 de funcionalidades.
 
-Los releases utilizan [Semantic Versioning 2.0.0](https://semver.org/):
+Los releases utilizan https://semver.org/:
 `MAJOR.MINOR.PATCH`. El primer componente mayor permanece en `0` mientras el
 producto se encuentre en desarrollo inicial; durante esta fase, los cambios
 incompatibles incrementan el componente minor, y las funcionalidades compatibles o
@@ -3395,7 +3395,7 @@ inglés. Los archivos CSS se organizarán por responsabilidad y utilizarán nomb
 `kebab-case`; cuando corresponda, se aplicará BEM (`block__element--modifier`) para
 mantener una relación clara entre la estructura HTML y sus estilos.
 
-El código JavaScript seguirá el [estándar ECMAScript vigente](https://tc39.es/ecma262/)
+El código JavaScript seguirá el https://tc39.es/ecma262/
 y utilizará `const` y `let` en lugar de `var`. Los módulos se declararán explícitamente mediante
 `<script type="module">` y utilizarán `import` y `export` para compartir funciones o
 valores. Los imports emplearán rutas relativas claras y no se dependerá de variables
@@ -3453,14 +3453,10 @@ ASP.NET Core, como el registro de servicios y el pipeline de middleware, se
 mantendrán en los archivos correspondientes del proyecto y no se mezclarán con
 secretos o valores propios de un entorno.
 
-Las referencias principales para estas convenciones son la [guía de estilo HTML/CSS
-de Google](https://google.github.io/styleguide/htmlcssguide.html), la [guía de estilo
-de Vue.js](https://vuejs.org/style-guide/), la [documentación de Composition
-API](https://vuejs.org/guide/extras/composition-api-faq), la [guía oficial de
-Vite](https://vite.dev/guide/), la [documentación de JSDoc](https://jsdoc.app/), la
-[guía de módulos JavaScript de MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules),
-la [guía de estilo de JavaScript de Google](https://google.github.io/styleguide/jsguide.html)
-y las [convenciones de nomenclatura de C# de Microsoft](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names) y de [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0).
+Las referencias principales para estas convenciones son la https://google.github.io/styleguide/htmlcssguide.html, la https://vuejs.org/style-guide/, la https://vuejs.org/guide/extras/composition-api-faq, la https://vite.dev/guide/, la https://jsdoc.app/, la
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules,
+la https://google.github.io/styleguide/jsguide.html
+y las https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names y de https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0.
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -3480,7 +3476,7 @@ de compilación sí están versionados.
 La Landing Page está desplegada mediante GitHub Pages utilizando el repositorio de
 Landing Page registrado en la sección 5.1.2. La configuración de publicación utiliza
 la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en la
-[URL pública de la Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+https://1asi0730-2620-8150-grafoverde.github.io/landing-page/.
 
 <img src="assets/chapter-5/github-pages-deployment.png" alt="Configuración de GitHub Pages de la Landing Page, publicada desde main y la carpeta raíz" style="width:100%; height:auto;"/>
 
@@ -3546,7 +3542,7 @@ corresponden a la estimación registrada en el Product Backlog de Hostera.
 
 Al cierre del Sprint 1, el objetivo se considera cumplido: las ocho User Stories de
 `EP001` fueron implementadas y la Landing Page se encuentra publicada en
-[GitHub Pages](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+https://1asi0730-2620-8150-grafoverde.github.io/landing-page/.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
@@ -3556,7 +3552,7 @@ asignar una persona líder para cada funcionalidad y mantener la colaboración d
 resto del equipo durante su implementación, revisión e integración mediante Git Flow.
 
 La asignación de líderes se basa en la persona responsable de la feature branch de
-cada User Story en el [repositorio de Landing Page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+cada User Story en el https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page.
 Los cuatro integrantes restantes se registran como colaboradores en cada aspecto,
 de acuerdo con la dinámica de trabajo colaborativo definida para el Sprint 1.
 
@@ -3584,8 +3580,7 @@ Sprint.
 El Sprint Backlog 1 descompone el objetivo de implementar la experiencia completa de
 la Landing Page en tareas concretas para las ocho User Stories de `EP001`. El Board
 de YouTrack se utilizó para registrar las historias, sus responsables, los Story
-Points y su pertenencia al Sprint 1. La [vista pública del Board de Hostera en
-YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5) contiene el
+Points y su pertenencia al Sprint 1. La https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5 contiene el
 seguimiento de estas User Stories.
 
 <img src="assets/chapter-5/sprint-1-youtrack-board.png" alt="Board de YouTrack con las User Stories de la Epic 1 asignadas al Sprint 1 de la Landing Page" style="width:100%; height:auto;"/>
@@ -3645,7 +3640,7 @@ la estimación relativa en Story Points de cada User Story.
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 La evidencia de desarrollo del Sprint 1 corresponde al repositorio público de la
-[Landing Page de Hostera](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page.
 Los commits funcionales se organizaron en ramas `feature/US001` a
 `feature/US008`, siguiendo el flujo Git Flow del equipo. La tabla registra los
 commits de implementación asociados con las ocho User Stories del sprint; los
@@ -3679,7 +3674,7 @@ documentan estos cambios.
 
 Durante el Sprint 1 se completó la experiencia principal de la Landing Page para
 las ocho User Stories de `EP001`. La versión ejecutable está disponible en
-[https://1asi0730-2620-8150-grafoverde.github.io/landing-page/](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+https://1asi0730-2620-8150-grafoverde.github.io/landing-page/.
 La navegación permite recorrer la propuesta de valor, los caminos según la
 escala del hotel, los beneficios operativos, el flujo de trabajo, los planes,
 la información del producto y del equipo, las preguntas frecuentes y el
@@ -3697,8 +3692,7 @@ Review:
 
 *Figura 5.4. Vista de comparación de planes Free, Professional y Enterprise.*
 
-Como evidencia de navegación, se incorpora el [video de demostración de
-Hostera](https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN).
+Como evidencia de navegación, se incorpora el https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN.
 El video muestra los principales recorridos de navegación de la Landing Page,
 incluyendo la propuesta de valor, los caminos según la escala del hotel, los
 beneficios, el flujo operativo, la comparación de planes, el contenido del
@@ -3711,13 +3705,13 @@ El alcance del Sprint 1 estuvo concentrado en la implementación de la Landing
 Page. Por ese motivo, durante este sprint no se implementaron Web Services ni
 endpoints HTTP, y no se generó documentación OpenAPI asociada. El repositorio de
 la Landing Page contiene la experiencia web estática y se encuentra disponible en
-el [repositorio de Landing Page de Hostera](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+el https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page.
 La documentación de endpoints y sus evidencias se incorporará en el sprint en
 el que se implemente el repositorio de Web Services.
 
 | Repository | Endpoint | Actions / HTTP Verb | OpenAPI Documentation | Documentation Commit |
 |---|---|---|---|---|
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | — | — | — | — |
+| https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | — | — | — | — |
 
 Por lo tanto, no corresponde incluir capturas de interacción con Swagger u otra
 documentación de servicios para el Sprint 1.
@@ -3732,7 +3726,7 @@ y publicó el sitio en el entorno `github-pages`.
 
 | Product | Repository | Deployment Platform | Source | Public URL | Sprint Status |
 |---|---|---|---|---|---|
-| Landing Page | [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | GitHub Pages | `main` / `/ (root)` | [Open Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/) | Deployed |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | Deployed |
 | Web Services | — | — | — | — | Not in Sprint 1 scope |
 | Frontend Web Applications | — | — | — | — | Not in Sprint 1 scope |
 
@@ -3865,53 +3859,53 @@ This is program for AV2 (not in AV1)
 
 # Bibliografía
 
-[1] Progressa Lean. (2021, 13 de mayo). [_5W+2H: Técnica de análisis de problemas_](https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/).
+[1] Progressa Lean. (2021, 13 de mayo). _5W+2H: Técnica de análisis de problemas_. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/.
 
 [2] Gothelf, J., & Seiden, J. (2021). _Lean UX: Creating Great Products with Agile Teams_ (3rd ed.). O'Reilly Media.
 
 [3] Universidad Peruana de Ciencias Aplicadas. (2021). _Lean & Hypothesis-Driven Development_ [Material de clase].
 
-[4] Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). [_Perú: Oferta y Demanda de Establecimientos de Hospedaje - Año 2024_](https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024).
+[4] Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). _Perú: Oferta y Demanda de Establecimientos de Hospedaje - Año 2024_. https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024.
 
-[5] HotelClick. (s. f.). [_Sistema de Administración y Gestión Hotelera para Perú: Nexus PMS_](https://hotelclick.net.pe/). Recuperado el 4 de septiembre de 2026.
+[5] HotelClick. (s. f.). _Sistema de Administración y Gestión Hotelera para Perú: Nexus PMS_. https://hotelclick.net.pe/. Recuperado el 4 de septiembre de 2026.
 
-[6] Montalvo Soluciones Tecnológicas S.A.C. (s. f.). [_Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac_](https://okfac.pe/sistema-hotelero-peru). Recuperado el 4 de septiembre de 2026.
+[6] Montalvo Soluciones Tecnológicas S.A.C. (s. f.). _Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac_. https://okfac.pe/sistema-hotelero-peru. Recuperado el 4 de septiembre de 2026.
 
-[7] SysHotel. (s. f.). [_PMS hotelero en Perú: software de gestión hotelera_](https://syshotel.app/). Recuperado el 4 de septiembre de 2026.
+[7] SysHotel. (s. f.). _PMS hotelero en Perú: software de gestión hotelera_. https://syshotel.app/. Recuperado el 4 de septiembre de 2026.
 
-[8] Oracle Hospitality. (s. f.). [_What is a Hotel PMS (Property Management System)?_](https://www.oracle.com/ca-en/hospitality/what-is-hotel-pms/). Recuperado el 5 de septiembre de 2026.
+[8] Oracle Hospitality. (s. f.). _What is a Hotel PMS (Property Management System)?_. https://www.oracle.com/ca-en/hospitality/what-is-hotel-pms/. Recuperado el 5 de septiembre de 2026.
 
-[9] STR. (s. f.). [_How to calculate RevPAR_](https://str.com/sites/default/files/The-Ultimate-Guide-to-Hotel-Benchmarking.pdf). Recuperado el 5 de septiembre de 2026.
+[9] STR. (s. f.). _How to calculate RevPAR_. https://str.com/sites/default/files/The-Ultimate-Guide-to-Hotel-Benchmarking.pdf. Recuperado el 5 de septiembre de 2026.
 
-[10] Google. (s. f.). [_Material Design 3_](https://m3.material.io/). Recuperado el 5 de septiembre de 2026.
+[10] Google. (s. f.). _Material Design 3_. https://m3.material.io/. Recuperado el 5 de septiembre de 2026.
 
-[11] World Wide Web Consortium. (2024). [_Web Content Accessibility Guidelines (WCAG) 2.2_](https://www.w3.org/TR/WCAG22/). Recuperado el 5 de septiembre de 2026.
+[11] World Wide Web Consortium. (2024). _Web Content Accessibility Guidelines (WCAG) 2.2_. https://www.w3.org/TR/WCAG22/. Recuperado el 5 de septiembre de 2026.
 
-[12] Driessen, V. (2010). [_A successful Git branching model_](https://nvie.com/posts/a-successful-git-branching-model/). Recuperado el 16 de septiembre de 2026.
+[12] Driessen, V. (2010). _A successful Git branching model_. https://nvie.com/posts/a-successful-git-branching-model/. Recuperado el 16 de septiembre de 2026.
 
-[13] Preston-Werner, T. (s. f.). [_Semantic Versioning 2.0.0_](https://semver.org/). Recuperado el 16 de septiembre de 2026.
+[13] Preston-Werner, T. (s. f.). _Semantic Versioning 2.0.0_. https://semver.org/. Recuperado el 16 de septiembre de 2026.
 
-[14] Conventional Commits. (s. f.). [_Conventional Commits 1.0.0_](https://www.conventionalcommits.org/en/v1.0.0/). Recuperado el 16 de septiembre de 2026.
+[14] Conventional Commits. (s. f.). _Conventional Commits 1.0.0_. https://www.conventionalcommits.org/en/v1.0.0/. Recuperado el 16 de septiembre de 2026.
 
-[15] Google. (s. f.). [_Google HTML/CSS Style Guide_](https://google.github.io/styleguide/htmlcssguide.html). Recuperado el 16 de septiembre de 2026.
+[15] Google. (s. f.). _Google HTML/CSS Style Guide_. https://google.github.io/styleguide/htmlcssguide.html. Recuperado el 16 de septiembre de 2026.
 
-[16] Vue.js. (s. f.). [_Style Guide_](https://vuejs.org/style-guide/). Recuperado el 16 de septiembre de 2026.
+[16] Vue.js. (s. f.). _Style Guide_. https://vuejs.org/style-guide/. Recuperado el 16 de septiembre de 2026.
 
-[17] Vue.js. (s. f.). [_Composition API FAQ_](https://vuejs.org/guide/extras/composition-api-faq). Recuperado el 16 de septiembre de 2026.
+[17] Vue.js. (s. f.). _Composition API FAQ_. https://vuejs.org/guide/extras/composition-api-faq. Recuperado el 16 de septiembre de 2026.
 
-[18] Vite. (s. f.). [_Getting Started_](https://vite.dev/guide/). Recuperado el 16 de septiembre de 2026.
+[18] Vite. (s. f.). _Getting Started_. https://vite.dev/guide/. Recuperado el 16 de septiembre de 2026.
 
-[19] JSDoc. (s. f.). [_JSDoc Documentation_](https://jsdoc.app/). Recuperado el 16 de septiembre de 2026.
+[19] JSDoc. (s. f.). _JSDoc Documentation_. https://jsdoc.app/. Recuperado el 16 de septiembre de 2026.
 
-[20] Mozilla Developer Network. (s. f.). [_JavaScript modules_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). Recuperado el 16 de septiembre de 2026.
+[20] Mozilla Developer Network. (s. f.). _JavaScript modules_. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules. Recuperado el 16 de septiembre de 2026.
 
-[21] ECMA International. (s. f.). [_ECMAScript® Language Specification_](https://tc39.es/ecma262/). Recuperado el 16 de septiembre de 2026.
+[21] ECMA International. (s. f.). _ECMAScript® Language Specification_. https://tc39.es/ecma262/. Recuperado el 16 de septiembre de 2026.
 
-[22] Google. (s. f.). [_Google JavaScript Style Guide_](https://google.github.io/styleguide/jsguide.html). Recuperado el 16 de septiembre de 2026.
+[22] Google. (s. f.). _Google JavaScript Style Guide_. https://google.github.io/styleguide/jsguide.html. Recuperado el 16 de septiembre de 2026.
 
-[23] Microsoft. (s. f.). [_Convenciones y reglas de nomenclatura de identificadores de C#_](https://learn.microsoft.com/es-es/dotnet/csharp/fundamentals/coding-style/identifier-names). Recuperado el 16 de septiembre de 2026.
+[23] Microsoft. (s. f.). _Convenciones y reglas de nomenclatura de identificadores de C#_. https://learn.microsoft.com/es-es/dotnet/csharp/fundamentals/coding-style/identifier-names. Recuperado el 16 de septiembre de 2026.
 
-[24] Microsoft. (s. f.). [_ASP.NET Core fundamentals overview_](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0). Recuperado el 16 de septiembre de 2026.
+[24] Microsoft. (s. f.). _ASP.NET Core fundamentals overview_. https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0. Recuperado el 16 de septiembre de 2026.
 
 <div style="page-break-before: always;"></div>
 
@@ -3919,7 +3913,7 @@ This is program for AV2 (not in AV1)
 
 ## Anexo A. Videos de exposiciones
 
-- **AV1 – Sprint Review – Semana 4.** Exposición del informe y revisión del Sprint 1. [Enlace al video de exposición](https://1drv.ms/f/c/8d4ae682dbad6a14/IgCXbQYBxh5ZQLSHCeblDgTkAbiAPQvF9cBxkcFff5XFl_A?e=BxNv39).
+- **AV1 – Sprint Review – Semana 4.** Exposición del informe y revisión del Sprint 1. https://1drv.ms/f/c/8d4ae682dbad6a14/IgCXbQYBxh5ZQLSHCeblDgTkAbiAPQvF9cBxkcFff5XFl_A?e=BxNv39.
 
 <div style="page-break-before: always;"></div>
 
@@ -3927,8 +3921,8 @@ This is program for AV2 (not in AV1)
 
 - **Final Project Individual Member Performance Report (by Team Leader).** Documento independiente que debe enviarse junto con la entrega.
 - **Final Project Keynote.** Archivo independiente de la presentación de la entrega.
-- **Repositorio del informe.** [Hostera Report en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-report)
-- **Repositorio de la Landing Page.** [Landing Page de Hostera en GitHub](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page)
-- **Landing Page desplegada.** [Abrir Landing Page](https://1asi0730-2620-8150-grafoverde.github.io/landing-page/)
-- **Board de seguimiento.** [Hostera en YouTrack](https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5)
-- **Prototipo de Web Application.** [Hostera · Web Application Prototypes en Figma](https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes)
+- **Repositorio del informe.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-report
+- **Repositorio de la Landing Page.** https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page
+- **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/landing-page/
+- **Board de seguimiento.** https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5
+- **Prototipo de Web Application.** https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes
