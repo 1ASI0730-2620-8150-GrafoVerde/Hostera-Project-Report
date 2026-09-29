@@ -1345,12 +1345,14 @@ El *journey* actual de Anyeli contempla el proceso de consolidación y supervisi
 
 ### 2.3.4. Empathy Mapping
 
-Empathy Map 1
-![StevenHuarcaya](assets/chapter-2/Empathy%20map-segmento1.png)
+<img src="assets/chapter-2/Empathy%20map-segmento1.png" alt="Empathy Map del segmento 1, Steven Huarcaya" style="display:block; width:65%; height:auto; margin:0 auto;"/>
+
 *Figura 2.9. Empathy Map de Steven Huarcaya.*
+
 ---
-Empathy Map 2
-![AnyeliCardenas](assets/chapter-2/Empathy%20map-segmento2%20(1).png)
+
+<img src="assets/chapter-2/Empathy%20map-segmento2%20(1).png" alt="Empathy Map del segmento 2, Anyeli Cárdenas" style="display:block; width:65%; height:auto; margin:0 auto;"/>
+
 *Figura 2.10. Empathy Map de Anyeli Cárdenas.*
 
 
@@ -2321,9 +2323,9 @@ los márgenes laterales mantienen una línea de lectura estable. Los controles
 interactivos principales tienen una altura mínima de 48 px y permanecen claramente
 identificados, lo que favorece su uso táctil y mediante tecnologías de asistencia.
 
-<img src="assets/chapter-4/landing-page-wireframe-mobile.png" alt="Wireframe completo del Landing Page de Hostera para navegador web móvil" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/landing-page-wireframe-mobile-contact-sheet.png" alt="Wireframe completo del Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
 
-*Figura 4.5. Wireframe del Landing Page de Hostera para Mobile Web Browser.*
+*Figura 4.5. Wireframe del Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
 
 ### 4.3.2. Landing Page Mock-up
 
@@ -2358,9 +2360,9 @@ la interacción accesibles. De esta manera, la adaptación responsive conserva l
 identidad y la arquitectura de información sin tratar la vista móvil como un producto
 distinto.
 
-<img src="assets/chapter-4/landing-page-mockup-mobile.png" alt="Mock-up completo del Landing Page de Hostera para navegador web móvil" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/landing-page-mockup-mobile-contact-sheet.png" alt="Mock-up completo del Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
 
-*Figura 4.7. Mock-up del Landing Page de Hostera para Mobile Web Browser.*
+*Figura 4.7. Mock-up del Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
 
 ## 4.4. Web Applications UX/UI Design
 
@@ -2387,7 +2389,7 @@ de reservas y el formulario para crear una nueva reserva. La composición mantie
 campos y acciones dentro de una sola columna, mientras que el dashboard prioriza el
 resumen de ocupación, el estado de las habitaciones y las próximas llegadas.
 
-<img src="assets/chapter-4/web-application-wireframes-mobile-core.png" alt="Wireframes móviles de acceso, dashboard y reservas de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/web-application-wireframes-mobile-core.png" alt="Wireframes móviles de acceso, dashboard y reservas de Hostera" style="display:block; width:25%; height:auto; margin:0 auto;"/>
 
 *Figura 4.8. Wireframes móviles de acceso, dashboard y reservas.*
 
@@ -2399,7 +2401,7 @@ mantiene cerca de las acciones correspondientes: el estado de la reserva acompa�
 datos principales, la habitación expone sus atributos operativos y el ajuste de stock
 separa la cantidad, la ubicación y el motivo de la operación.
 
-<img src="assets/chapter-4/web-application-wireframes-mobile-operations.png" alt="Wireframes móviles de reservación, habitaciones e inventario de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/web-application-wireframes-mobile-operations.png" alt="Wireframes móviles de reservación, habitaciones e inventario de Hostera" style="display:block; width:35%; height:auto; margin:0 auto;"/>
 
 *Figura 4.9. Wireframes móviles de reservación, habitaciones e inventario.*
 
@@ -2411,7 +2413,7 @@ preceden a los listados para facilitar el escaneo, y los filtros se ubican antes
 contenido que afectan. El drawer conserva las áreas funcionales principales y permite
 cambiar de contexto sin perder la orientación dentro de la aplicación.
 
-<img src="assets/chapter-4/web-application-wireframes-mobile-access-reporting.png" alt="Wireframes móviles de control de acceso, reportes y navegación de Hostera" style="width:100%; max-height:1200px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/web-application-wireframes-mobile-access-reporting.png" alt="Wireframes móviles de control de acceso, reportes y navegación de Hostera" style="display:block; width:35%; height:auto; margin:0 auto;"/>
 
 *Figura 4.10. Wireframes móviles de control de acceso, reportes y navegación.*
 
@@ -2707,19 +2709,19 @@ eliminar las acciones principales ni los indicadores operativos. Los filtros, es
 y controles conservan etiquetas textuales además del color, lo que evita depender
 únicamente de diferencias cromáticas para interpretar la información.
 
-<img src="assets/chapter-4/web-application-mockups/13-dashboard-mobile.png" alt="Mock-up móvil del dashboard operativo de Hostera" style="width:100%; height:auto;"/>
+<img src="assets/chapter-4/web-application-mockups/13-dashboard-mobile.png" alt="Mock-up móvil del dashboard operativo de Hostera" style="display:block; width:33%; height:auto; margin:0 auto;"/>
 
 *Figura 4.48. Mock-up móvil del dashboard operativo.*
 
-<img src="assets/chapter-4/web-application-mockups/14-reservations-mobile.png" alt="Mock-up móvil de reservas de Hostera" style="width:100%; height:auto;"/>
+<img src="assets/chapter-4/web-application-mockups/14-reservations-mobile.png" alt="Mock-up móvil de reservas de Hostera" style="display:block; width:42%; height:auto; margin:0 auto;"/>
 
 *Figura 4.49. Mock-up móvil de reservas.*
 
-<img src="assets/chapter-4/web-application-mockups/15-rooms-mobile.png" alt="Mock-up móvil de habitaciones de Hostera" style="width:100%; height:auto;"/>
+<img src="assets/chapter-4/web-application-mockups/15-rooms-mobile.png" alt="Mock-up móvil de habitaciones de Hostera" style="display:block; width:42%; height:auto; margin:0 auto;"/>
 
 *Figura 4.50. Mock-up móvil de habitaciones.*
 
-<img src="assets/chapter-4/web-application-mockups/16-occupancy-report-mobile.png" alt="Mock-up móvil del reporte de ocupación de Hostera" style="width:100%; height:auto;"/>
+<img src="assets/chapter-4/web-application-mockups/16-occupancy-report-mobile.png" alt="Mock-up móvil del reporte de ocupación de Hostera" style="display:block; width:42%; height:auto; margin:0 auto;"/>
 
 *Figura 4.51. Mock-up móvil del reporte de ocupación.*
 
