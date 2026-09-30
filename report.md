@@ -1050,7 +1050,7 @@ Entrevista 1:
 Entrevistado: Wilson
 <br>Edad: 46 años
 
-Enlace de entrevista: https://drive.google.com/file/d/1CLCIVG5evrr4Z0-OdklAttTeY6RAlvJK/view?usp=sharing
+
 <br>Ocupación: Ingeniero y administrador de hotel
 <br>Ubicación: Puno, Puno
 
