@@ -3565,13 +3565,45 @@ la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en GitHu
 
 *Figura 5.1. Configuración y estado del despliegue de la Landing Page en GitHub Pages.*
 
-Los destinos de despliegue de los RESTful Web Services y las Frontend Web Applications
-aún no han sido definidos. Por ello, los nombres de sus proveedores, las URL
-públicas, las variables de entorno, los manifiestos de despliegue y las evidencias de
-ejecución se mantienen intencionalmente pendientes hasta que se definan la
-implementación y las decisiones de alojamiento. En ese momento, esta subsección se
-ampliará con un registro de configuración por producto y un enlace a su evidencia de
-despliegue.
+El destino de despliegue de la Frontend Web Application y de la API de datos de
+demostración que esta consume quedó definido para el Sprint 2. La Frontend Web
+Application se publica en Firebase Hosting, porque atiende las rutas del lado del
+cliente de una aplicación de página única sin configuración adicional de reescrituras;
+la API de datos de demostración se publica como servicio web en Render, ejecutando
+json-server sobre los archivos versionados del repositorio del frontend. El siguiente
+registro resume la configuración de despliegue de cada producto:
+
+| Producto | Entorno objetivo | Fuente | Comando de build | Comando de publicación | URL pública |
+| --- | --- | --- | --- | --- | --- |
+| Landing Page | GitHub Pages | Rama `main` y carpeta `/ (root)` de `landing-page` | No requiere build: el sitio se sirve como HTML, CSS y JavaScript estáticos. | Publicación automática del flujo de GitHub Pages al integrar en `main`. | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ |
+| Frontend Web Application | Firebase Hosting | Rama `main` de `hostera-frontend` | `npm run build`, que genera el directorio `dist/`. | `firebase deploy --only hosting` | Se registrará al completar el despliegue del Sprint 2. |
+| API de datos de demostración | Render (Web Service) | Rama `main` de `hostera-frontend`, directorio `server/` | `npm install` | `npm run server`, que expone los recursos definidos en `server/db.json` y `server/routes.json`. | Se registrará al completar el despliegue del Sprint 2. |
+| RESTful Web Services | Por definir | Repositorio por registrar | Por definir con la implementación. | Por definir con la implementación. | Se definirá junto con la implementación de los Web Services. |
+
+Las variables de entorno de la Frontend Web Application se declaran en el archivo
+`.env` del repositorio del frontend, se documentan en su `README.md` mediante un
+archivo de ejemplo sin valores reales y se registran en la plataforma de alojamiento
+como variables del proyecto. La variable `VITE_API_BASE_URL` apunta a la URL pública
+de la API de datos de demostración, de modo que el mismo build puede resolverse contra
+el entorno local o contra el entorno publicado sin modificar el código. La clave de
+licencia de la biblioteca de componentes se provee en `VITE_PRIME_UI_LICENSE_KEY` y no
+se registra en GitHub.
+
+La verificación posterior a cada despliegue consiste en comprobar que la ruta raíz de
+la Frontend Web Application responde con la aplicación cargada y que un recurso de
+lectura de la API de datos de demostración responde con el código `200 OK` y su
+colección de datos. Si alguna de las dos comprobaciones falla, el procedimiento de
+rollback consiste en volver a publicar la versión anterior: Firebase Hosting conserva
+el historial de versiones del sitio y permite restituir la inmediatamente anterior,
+Render permite volver a desplegar un commit previo de la misma rama, y GitHub Pages se
+republica desde el último tag estable de `main`. Como los despliegues se realizan
+siempre desde `main`, la versión restituida corresponde a un tag registrado en el
+`CHANGELOG.md` del repositorio.
+
+Los procedimientos de migración de base de datos se documentarán junto con los
+RESTful Web Services, porque la API de datos de demostración no utiliza un motor de
+base de datos: su estado se define por completo en los archivos versionados del
+repositorio del frontend.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
