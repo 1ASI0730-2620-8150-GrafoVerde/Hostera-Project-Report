@@ -96,12 +96,6 @@ fue una actividad compartida.
 
 *Evidencia 2. Historial de commits de la rama `main` del repositorio del Project Report durante AV1.*
 
-## TB1
-
-## AV2
-
-## TB2
-
 <div style="page-break-before: always;"></div>
 
 # Contenido
@@ -200,7 +194,6 @@ fue una actividad compartida.
 
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-  - [Video About-the-Team](#video-about-the-team)
 
 - [Bibliografía](#bibliografía)
 
@@ -3868,10 +3861,6 @@ propuesta de Hostera. La principal conclusión del ciclo actual es que la
 comunicación del producto ya puede ser evaluada públicamente, mientras que el
 valor operativo y las hipótesis de negocio todavía requieren implementación y
 validación con usuarios reales.
-
-## Video About-the-Team
-
-This is program for AV2 (not in AV1)
 
 # Bibliografía
 
