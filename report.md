@@ -38,7 +38,7 @@
 </table>
 
 <div class="cover-period">Período 202620</div>
-<div class="cover-date">Septiembre 2026</div>
+<div class="cover-date">Octubre 2026</div>
 
 </div>
 <div class="version-history">
@@ -245,7 +245,7 @@ La propuesta de Grafo Verde se centra en construir un ecosistema de gestión hot
 | <img src="assets/chapter-1/joaquin-cuba-image-profile.png" alt="Foto de Joaquin Antonio Cuba Pareja" width="100"> | Cuba Pareja, Joaquin Antonio     | u201621281 | Ingeniería de Software | JavaScript, TypeScript, Python, HTML, CSS y C++. Dispuesto a trabajar y aprender en equipo. Tiene facilidad para aprender rápidamente nuevas tecnologías y lenguajes de programación. |
 | <img src="assets/chapter-1/darnell-cuba-image-profile.png" alt="Foto de Darnell Yadir Cuba Vega" width="100">   | Cuba Vega, Darnell Yadir         | u202410105 | Ingeniería de Software |   Python, HTML, CSS y C++. Dispuesto a trabajar, apoyar y aprender en equipo.                                                                                                                                                                                     |
 | <img src="assets/chapter-1/mateo-condori-image-profile.png" alt="Foto de Mateo Sebastián Condori Urviola" width="100"> | Condori Urviola, Mateo Sebastián | U20231E443 | Ingeniería de Software | Lean UX, análisis de usuarios, diseño de interfaces, wireframes, wireflows y User Stories. Colaborativo y orientado a convertir necesidades en flujos claros. |
-| <img src="assets/chapter-1/juan-flores-image-profile.png" alt="Foto de Juan Diego Flores Rios" width="100">      | Flores Rios, Juan Diego          | U202412124 | Ingeniería de Software | HTML, CSS y C++. Me adapto a cualquier entorno de trabajo, siempre brindando el mayor apoyo posible.                                                                                |
+| <img src="assets/chapter-1/juan-flores-image-profile.png" alt="Foto de Juan Diego Flores Rios" width="100">      | Flores Rios, Juan Diego          | U202412124 | Ingeniería de Software | HTML, CSS y C++. Se adapta a cualquier entorno de trabajo y brinda el mayor apoyo posible al equipo.                                                                                |
 | <img src="assets/chapter-1/jose-santana-image-profile.png" alt="Foto de José Antonio Santana Luna" width="100"> | Santana Luna, José Antonio       | U20241E281 | Ingeniería de Software | Lean UX, análisis de entrevistas, arquitectura de software, EventStorming, diseño de APIs y documentación técnica. Organizado y orientado a la colaboración y la trazabilidad. |
 
 ## 1.2. Solution Profile
@@ -819,7 +819,7 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
   <td colspan="4">Comparar las alternativas digitales disponibles para la operación hotelera peruana y definir una posible ventaja competitiva para Hostera.</td>
 </tr>
 <tr>
-  <th colspan="2">(En la cabecera colocar por cada competidor nombre y logo)</th>
+  <th colspan="2">Criterio</th>
   <th>Su startup<br><strong>Hostera</strong></th>
   <th>Competidor 1<br><strong>Nexus PMS</strong><br>HotelClick [5]</th>
   <th>Competidor 2<br><strong>OkFac</strong> [6]</th>
@@ -879,7 +879,7 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
 </tr>
 <tr>
   <td class="group-label" rowspan="5"><span class="vertical-label">Análisis SWOT</span></td>
-  <td colspan="5">Realice esto para su startup y sus competidores. Sus fortalezas deberían apoyar sus oportunidades y contribuir a lo que ustedes definan como su posible ventaja competitiva.</td>
+  <td colspan="5">Fortalezas, debilidades, oportunidades y amenazas de Hostera y de cada competidor. Las fortalezas de Hostera sustentan su ventaja competitiva frente a las oportunidades identificadas.</td>
 </tr>
 <tr>
   <td>Fortalezas</td>
@@ -1083,7 +1083,7 @@ Enlace de entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u2024101
 
 Resumen:
 
-El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y requerimientos especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
+El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y solicitudes especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
 
 Para la gestión de reservas, el entrevistado señala que esta actividad es realizada principalmente por el departamento de reservas, aunque también puede ser gestionada por el Front Desk Manager o los MODs cuando es necesario. La disponibilidad de habitaciones se analiza estratégicamente mediante reuniones semanales de revenue, donde se revisa el comportamiento del mercado, los hoteles competidores, las tarifas, los eventos de la semana y los niveles de disponibilidad. A partir de esta información, diferentes áreas como ventas, gerencia general, revenue management y reservas establecen estrategias para responder a los cambios entre temporadas de alta y baja ocupación.
 
@@ -1160,7 +1160,7 @@ Ingeniero de profesión, 46 años, propietario y administrador de un hotel en la
   El entrevistado accede a colaborar principalmente porque el proyecto le ofrece acceso anticipado a un producto de gestión de acceso físico a habitaciones, aplicable a una o varias sedes hoteleras — es decir, una motivación directamente ligada a resolver un problema operativo propio, no solo altruista.
 * **Dificultades actuales:**
   Se identifican varias barreras recurrentes:
-  * Fragmentación de la información: las reservas llegan por WhatsApp, TikTok, correo y aplicativos de reserva, y todo debe consolidarse manualmente en Excel.
+  * Fragmentación de la información: las reservas llegan por WhatsApp, TikTok, correo y aplicaciones de reserva, y todo debe consolidarse manualmente en Excel.
   * Falta de trazabilidad en los accesos: el sistema de tarjetas actual solo registra entrada/salida de habitaciones, sin identificar con certeza qué persona específica ingresó, lo que ha generado casos de objetos perdidos sin poder atribuir responsabilidad.
   * Coordinación entre sedes: debe recibir reportes diarios del administrador de la segunda sede para poder redistribuir disponibilidad (por ejemplo, ante grupos grandes o promociones).
   * Gestión de servicios adicionales dispersos: desayuno, almuerzo, frigobar, eventos (catering, DJ, proyector) se registran de forma manual y descentralizada.
@@ -1478,7 +1478,7 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 
 ## 3.2. Impact Mapping
 
-El Impact Mapping de Hostera conecta las hipótesis estratégicas del modelo de negocio con los cambios de comportamiento esperados en los usuarios y las características del producto digital. Esta sección toma como base los criterios de éxito definidos en el proceso de Lean UX, las definiciones de los segmentos objetivo y los requerimientos funcionales documentados para el Landing Page y la Web Application.
+El Impact Mapping de Hostera conecta las hipótesis estratégicas del modelo de negocio con los cambios de comportamiento esperados en los usuarios y las características del producto digital. Esta sección toma como base los criterios de éxito definidos en el proceso de Lean UX, las definiciones de los segmentos objetivo y los requisitos funcionales documentados para el Landing Page y la Web Application.
 
 ### Business Goals (SMART)
 
@@ -1530,7 +1530,7 @@ Los entregables corresponden a los Epics (EP) definidos en el Product Backlog, l
 
 ### User Stories Derivadas del Impact Mapping
 
-Las funcionalidades identificadas han sido traducidas a los requerimientos especificados en la sección 3.1. A continuación, se presenta el mapeo de historias representativas y su integración técnica (Technical Stories) redactadas en el formato "Como... deseo... para...".
+Las funcionalidades identificadas han sido traducidas a los requisitos especificados en la sección 3.1. A continuación, se presenta el mapeo de historias representativas y su integración técnica (Technical Stories) redactadas en el formato "Como... deseo... para...".
 
 | Deliverable | IDs Relacionados | Historias Representativas (Formato estándar) |
 |---|---|---|
@@ -1649,7 +1649,7 @@ para su seguimiento, priorización y estimación.
 
 *Figura 3.3. Listado general del Product Backlog de Hostera en YouTrack.*
 
-El Product Backlog puede consultarse en el https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5.
+El Product Backlog puede consultarse en el tablero de YouTrack del proyecto (https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5).
 
 # Capítulo IV: Product Design
 
@@ -3362,7 +3362,7 @@ rama de trabajo y su historial de commits antes de ejecutar el merge correspondi
 El equipo no realizará commits directos en `main` o `develop` para el trabajo normal
 de funcionalidades.
 
-Los releases utilizan https://semver.org/:
+Los releases utilizan Semantic Versioning 2.0.0 (https://semver.org/):
 `MAJOR.MINOR.PATCH`. El primer componente mayor permanece en `0` mientras el
 producto se encuentre en desarrollo inicial; durante esta fase, los cambios
 incompatibles incrementan el componente minor, y las funcionalidades compatibles o
@@ -3402,7 +3402,7 @@ inglés. Los archivos CSS se organizarán por responsabilidad y utilizarán nomb
 `kebab-case`; cuando corresponda, se aplicará BEM (`block__element--modifier`) para
 mantener una relación clara entre la estructura HTML y sus estilos.
 
-El código JavaScript seguirá el https://tc39.es/ecma262/
+El código JavaScript seguirá la especificación ECMAScript (https://tc39.es/ecma262/)
 y utilizará `const` y `let` en lugar de `var`. Los módulos se declararán explícitamente mediante
 `<script type="module">` y utilizarán `import` y `export` para compartir funciones o
 valores. Los imports emplearán rutas relativas claras y no se dependerá de variables
@@ -3460,10 +3460,17 @@ ASP.NET Core, como el registro de servicios y el pipeline de middleware, se
 mantendrán en los archivos correspondientes del proyecto y no se mezclarán con
 secretos o valores propios de un entorno.
 
-Las referencias principales para estas convenciones son la https://google.github.io/styleguide/htmlcssguide.html, la https://vuejs.org/style-guide/, la https://vuejs.org/guide/extras/composition-api-faq, la https://vite.dev/guide/, la https://jsdoc.app/, la
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules,
-la https://google.github.io/styleguide/jsguide.html
-y las https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names y de https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0.
+Las referencias principales para estas convenciones son las siguientes:
+
+- Google HTML/CSS Style Guide (https://google.github.io/styleguide/htmlcssguide.html).
+- Vue.js Style Guide (https://vuejs.org/style-guide/).
+- Vue.js Composition API FAQ (https://vuejs.org/guide/extras/composition-api-faq).
+- Guía de inicio de Vite (https://vite.dev/guide/).
+- Documentación de JSDoc (https://jsdoc.app/).
+- Guía de módulos de JavaScript de MDN (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
+- Google JavaScript Style Guide (https://google.github.io/styleguide/jsguide.html).
+- Convenciones de nomenclatura de identificadores de C# (https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names).
+- Fundamentos de ASP.NET Core (https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0).
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -3482,8 +3489,8 @@ de compilación sí están versionados.
 
 La Landing Page está desplegada mediante GitHub Pages utilizando el repositorio de
 Landing Page registrado en la sección 5.1.2. La configuración de publicación utiliza
-la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en la
-https://1asi0730-2620-8150-grafoverde.github.io/landing-page/.
+la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en GitHub Pages
+(https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
 
 <img src="assets/chapter-5/github-pages-deployment.png" alt="Configuración de GitHub Pages de la Landing Page, publicada desde main y la carpeta raíz" style="width:100%; height:auto;"/>
 
@@ -3559,7 +3566,7 @@ asignar una persona líder para cada funcionalidad y mantener la colaboración d
 resto del equipo durante su implementación, revisión e integración mediante Git Flow.
 
 La asignación de líderes se basa en la persona responsable de la feature branch de
-cada User Story en el https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page.
+cada User Story en el repositorio de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
 Los cuatro integrantes restantes se registran como colaboradores en cada aspecto,
 de acuerdo con la dinámica de trabajo colaborativo definida para el Sprint 1.
 
@@ -3587,7 +3594,7 @@ Sprint.
 El Sprint Backlog 1 descompone el objetivo de implementar la experiencia completa de
 la Landing Page en tareas concretas para las ocho User Stories de `EP001`. El Board
 de YouTrack se utilizó para registrar las historias, sus responsables, los Story
-Points y su pertenencia al Sprint 1. La https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5 contiene el
+Points y su pertenencia al Sprint 1. El tablero del Sprint 1 en YouTrack (https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5) contiene el
 seguimiento de estas User Stories.
 
 <img src="assets/chapter-5/sprint-1-youtrack-board.png" alt="Board de YouTrack con las User Stories de la Epic 1 asignadas al Sprint 1 de la Landing Page" style="width:100%; height:auto;"/>
@@ -3647,7 +3654,7 @@ la estimación relativa en Story Points de cada User Story.
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 La evidencia de desarrollo del Sprint 1 corresponde al repositorio público de la
-https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page.
+Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
 Los commits funcionales se organizaron en ramas `feature/US001` a
 `feature/US008`, siguiendo el flujo Git Flow del equipo. La tabla registra los
 commits de implementación asociados con las ocho User Stories del sprint; los
@@ -3699,7 +3706,7 @@ Review:
 
 *Figura 5.4. Vista de comparación de planes Free, Professional y Enterprise.*
 
-Como evidencia de navegación, se incorpora el https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN.
+Como evidencia de navegación, se incorpora el video del recorrido de la Landing Page (https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN).
 El video muestra los principales recorridos de navegación de la Landing Page,
 incluyendo la propuesta de valor, los caminos según la escala del hotel, los
 beneficios, el flujo operativo, la comparación de planes, el contenido del
@@ -3712,7 +3719,7 @@ El alcance del Sprint 1 estuvo concentrado en la implementación de la Landing
 Page. Por ese motivo, durante este sprint no se implementaron Web Services ni
 endpoints HTTP, y no se generó documentación OpenAPI asociada. El repositorio de
 la Landing Page contiene la experiencia web estática y se encuentra disponible en
-el https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page.
+su repositorio (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
 La documentación de endpoints y sus evidencias se incorporará en el sprint en
 el que se implemente el repositorio de Web Services.
 
@@ -3926,7 +3933,7 @@ validación con usuarios reales.
 
 - **Final Project Individual Member Performance Report (by Team Leader).** Documento independiente que debe enviarse junto con la entrega.
 - **Final Project Keynote.** Archivo independiente de la presentación de la entrega.
-- **Repositorio del informe.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-report
+- **Repositorio del informe.** https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report
 - **Repositorio de la Landing Page.** https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page
 - **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/landing-page/
 - **Board de seguimiento.** https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5
