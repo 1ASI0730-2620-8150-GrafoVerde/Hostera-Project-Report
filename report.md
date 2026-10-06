@@ -1050,10 +1050,9 @@ Entrevista 1:
 
 Entrevistado: Wilson
 <br>Edad: 46 años
-
-
 <br>Ocupación: Ingeniero y administrador de hotel
 <br>Ubicación: Puno, Puno
+<br>URL de la entrevista: https://1drv.ms/v/c/888b77ed7e85f778/IQB3J3HBJMqLSKvJshn-oZCJAba2jLzRmQtVCD109pJ820c?e=dTzLYR
 
 Resumen:
 Wilson, ingeniero y administrador de un hotel independiente en Puno, comenta sobre los principales desafíos que enfrenta al gestionar las reservas, accesos, disponibilidad e inventario de dos sedes. Actualmente, administra una sede principal de aproximadamente 30 habitaciones y otra de alrededor de 15 habitaciones, que además cuenta con un espacio para eventos. Señala que una de las principales dificultades es centralizar la información de ambas sedes, ya que debe coordinar constantemente con el administrador de la segunda sede para conocer las habitaciones disponibles.
