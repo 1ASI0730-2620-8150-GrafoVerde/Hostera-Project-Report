@@ -204,3 +204,9 @@ table td {
 .version-history {
   page-break-after: always;
 }
+
+.references p {
+  padding-left: 1.27cm;
+  text-indent: -1.27cm;
+  overflow-wrap: anywhere;
+}
