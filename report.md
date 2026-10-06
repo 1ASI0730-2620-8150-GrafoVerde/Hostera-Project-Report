@@ -3104,6 +3104,10 @@ organización facilita identificar las responsabilidades de cada bounded context
 sirve como base para los diagramas de arquitectura y los modelos orientados a objetos
 presentados en las siguientes secciones.
 
+El tablero completo de la sesión se encuentra disponible en modo de solo lectura en
+Miro (https://miro.com/app/board/uXjVHlikyWU=/?share_link_id=425970004522), organizado
+en un frame por flujo y con la leyenda de la notación utilizada.
+
 <img src="assets/chapter-4/design-level-eventstorming-hostera.png" alt="Design-Level EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
 
 *Figura 4.78. Design-Level EventStorming del dominio de Hostera.*
@@ -3321,7 +3325,7 @@ verificación del software, y publicación de evidencias.
 
 | Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
 | --- | --- | --- | --- |
-| Miro | Documenta las sesiones de Big Picture EventStorming y de Design-Level EventStorming. | (enlace del tablero por confirmar) | El tablero se comparte en modo de solo lectura y cada etapa de la sesión se conserva en un frame independiente con su leyenda de colores. |
+| Miro | Documenta la sesión de Design-Level EventStorming del dominio de Hostera. | https://miro.com/app/board/uXjVHlikyWU=/?share_link_id=425970004522 | El tablero se comparte en modo de solo lectura y cada flujo de la sesión se conserva en un frame independiente con su leyenda de colores. |
 | Paper | Elabora el Design System, los wireframes y los mock-ups de la Landing Page y de la aplicación web. | (enlace del archivo `Grafo-verde` por confirmar) | Las pantallas se organizan por página según el producto y se exportan como imágenes versionadas en `assets/`. |
 | FigJam | Elabora los wireflow diagrams que conectan las pantallas con los recorridos de usuario. | https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7 | El board editable conserva los wireflows completos y cada recorrido se exporta como imagen independiente. |
 | Figma | Elabora y comparte el prototipo navegable de la aplicación web, con sus puntos de inicio para escritorio y para navegador móvil. | https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe. |
