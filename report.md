@@ -1828,13 +1828,7 @@ El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la je
 
 **Impact Mapping: Segmento 1 - Hotel independiente**
 
-<img src="assets/chapter-3/uxpressia-impact-mapping-1.png" alt="Imagen de Impact Mapping Hotel Independiente" style="width:100%; height:auto;"/>
-*Figura 3.1. Impact Mapping del segmento de hoteles independientes.*
-
-**Impact Mapping: Segmento 2 - Cadena hotelera pequeña**
-
-<img src="assets/chapter-3/uxpressia-impact-mapping-2.png" alt="Imagen de Impact Mapping Cadena hotelera pequeña" style="width:100%; height:auto;"/>
-*Figura 3.2. Impact Mapping del segmento de pequeñas cadenas hoteleras.*
+<img src="assets/chapter-3/uxpressia-impact-mapping.png" alt="Imagen de Impact Mapping Hotel Independiente" style="width:100%; height:auto;"/>
 
 <div style="page-break-before: always;"></div>
 
