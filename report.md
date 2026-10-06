@@ -3527,17 +3527,16 @@ publicación en GitHub Pages.
 | Attendees (to planning meeting) | Cuba Pareja, Joaquin Antonio (`joacuba`); Cuba Vega, Darnell Yadir (`darnell1910`); Condori Urviola, Mateo Sebastián (`BeyaminUv`); Flores Rios, Juan Diego (`YopoFlores`); Santana Luna, José Antonio (`JhosBY2005`). |
 | Sprint 0 Review Summary | No aplica, porque este es el primer sprint del proyecto. |
 | Sprint 0 Retrospective Summary | No aplica, porque este es el primer sprint del proyecto. |
-| Sprint 1 Goal | Nuestro enfoque está en ofrecer a los visitantes una experiencia completa y clara de la Landing Page de Hostera. Creemos que esto les permitirá comprender la propuesta de valor, identificar la alternativa adecuada según la escala de su operación y elegir el siguiente paso. Esto se confirmará cuando las 8 User Stories de `EP001` estén implementadas y la Landing Page se encuentre publicada y accesible en GitHub Pages. |
-| Sprint 1 Goal Metric | El objetivo se considerará cumplido cuando las 8 de 8 User Stories de `EP001` estén implementadas (`100 %`) y la Landing Page se encuentre publicada y accesible en GitHub Pages. |
+| Sprint 1 Goal | Nuestro enfoque está en que los administradores de hoteles independientes y los responsables de operaciones de pequeñas cadenas hoteleras encuentren en la Landing Page la opción de Hostera que corresponde a la escala de su operación. Creemos que esto les permite entender cómo Hostera conecta reservas, habitaciones, inventario y accesos, y decidir su siguiente paso con información clara sobre los planes. Esto se confirmará cuando, en la Landing Page publicada, un visitante de cada segmento pueda recorrer el camino desde la propuesta de valor hasta la llamada a la acción del plan que corresponde a su operación. |
+| Sprint 1 Goal Metric | El objetivo se considerará cumplido cuando los dos caminos por segmento (hotel independiente y cadena hotelera pequeña) lleven desde la propuesta de valor hasta la llamada a la acción de su plan en la Landing Page publicada en GitHub Pages. Como condición de entrega, las 8 User Stories de `EP001` deben estar implementadas. |
 | Sprint 1 Velocity | 42 Story Points comprometidos para el sprint. |
 | Sum of Story Points | 42 Story Points. |
 
-El Sprint Goal se definió desde la perspectiva del visitante y del resultado del
-producto: entregar una Landing Page funcional y públicamente accesible que comunique
-la propuesta de valor de Hostera y sus alternativas de operación. La métrica combina
-el avance funcional con la disponibilidad del producto publicado, por lo que no se
-considera suficiente completar únicamente el código fuente sin publicar la Landing
-Page.
+El Sprint Goal se definió desde la perspectiva de los segmentos objetivo y del
+beneficio que obtienen: identificar la opción de Hostera adecuada para su operación
+y llegar a la llamada a la acción del plan correspondiente. La implementación de las
+ocho User Stories y la publicación de la Landing Page son condiciones necesarias
+para ese resultado, pero no constituyen el objetivo en sí mismas.
 
 Las User Stories incluidas en el Sprint 1 son las siguientes. Los Story Points
 corresponden a la estimación registrada en el Product Backlog de Hostera.
@@ -3554,9 +3553,11 @@ corresponden a la estimación registrada en el Product Backlog de Hostera.
 | US008 | Use the English and Spanish Landing Page variants | 8 | Implementada |
 | **Total** | **Epic 1: Landing Page Experience** | **42** | **8/8 implementadas** |
 
-Al cierre del Sprint 1, el objetivo se considera cumplido: las ocho User Stories de
-`EP001` fueron implementadas y la Landing Page se encuentra publicada en
-https://1asi0730-2620-8150-grafoverde.github.io/landing-page/.
+Al cierre del Sprint 1, el objetivo se considera cumplido: la Landing Page se
+encuentra publicada en https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ y, según la evidencia
+de ejecución de la sección 5.2.1.5, permite recorrer desde la propuesta de valor
+hasta los caminos por escala de operación y los planes con su siguiente paso. Las
+ocho User Stories de `EP001` fueron implementadas.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
@@ -3842,9 +3843,10 @@ pendientes de medición.
 | Control y trazabilidad de accesos RFID | La propuesta reconoce la trazabilidad como capacidad prioritaria; la integración RFID aún no forma parte del Sprint 1. | Eventos relacionados con tarjeta, habitación y usuario, además del tiempo de consulta. |
 | Administración de una o varias sedes | Los caminos y planes de la Landing Page representan distintas escalas; falta comprobar la operación multi-sede. | Escenarios de una y varias sedes sin duplicidad ni pérdida de contexto. |
 
-**Conclusión sobre los criterios de éxito.** El criterio de entrega definido para
-el Sprint 1 se cumplió: las ocho User Stories de `EP001` fueron implementadas y
-la Landing Page quedó publicada y accesible. Este resultado confirma el avance de
+**Conclusión sobre los criterios de éxito.** El Sprint Goal del Sprint 1 se
+cumplió: la Landing Page publicada permite que cada segmento llegue desde la
+propuesta de valor hasta el siguiente paso de su plan, y las ocho User Stories de
+`EP001` fueron implementadas. Este resultado confirma el avance de
 implementación del producto y del trabajo colaborativo, pero no sustituye los
 criterios de éxito del Lean UX, que requieren observar tareas reales con
 información centralizada, actualizada y relacionada. Esos indicadores deberán
