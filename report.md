@@ -255,7 +255,7 @@ La propuesta de Grafo Verde se centra en construir un ecosistema de gestión hot
 Esta sección presenta una aproximación preliminar a la problemática que Hostera busca
 atender. El análisis se organizó mediante la técnica 5W+2H, una herramienta para
 describir un problema y concentrarse en sus causas antes de plantear una solución
-[1]. Los hallazgos descritos deberán complementarse y validarse posteriormente con
+(Progressa Lean, 2021). Los hallazgos descritos deberán complementarse y validarse posteriormente con
 entrevistas y otras actividades de needfinding.
 
 #### Técnica de The 5 'W's y 2 'H's
@@ -688,7 +688,7 @@ Como contexto del mercado peruano, el Ministerio de Comercio Exterior y Turismo
 hospedaje, 329 340 habitaciones y 567 292 plazas-cama. El 85,1 % de los
 establecimientos no estaba categorizado y el 14,9 % estaba categorizado. Durante el
 mismo año se registraron 57,6 millones de arribos, de los cuales el 88,4 % correspondió
-a visitantes nacionales [4]. Estas cifras muestran la amplitud y diversidad del
+a visitantes nacionales (Ministerio de Comercio Exterior y Turismo [MINCETUR], 2025). Estas cifras muestran la amplitud y diversidad del
 sector, pero no clasifican directamente los establecimientos según propiedad
 independiente o pertenencia a una cadena.
 
@@ -712,7 +712,7 @@ Entre sus características relevantes se encuentran las siguientes:
 
 La importancia de este segmento se relaciona con la composición de la oferta peruana:
 MINCETUR registró que el 85,1 % de los establecimientos de hospedaje no estaba
-categorizado en 2024 [4]. Este indicador describe la estructura de categorización del
+categorizado en 2024 (MINCETUR, 2025). Este indicador describe la estructura de categorización del
 sector y no demuestra por sí solo que todos esos establecimientos sean independientes;
 por ello, la relación entre esta característica y el tipo de propiedad deberá
 validarse mediante entrevistas con administradores y propietarios en el mercado
@@ -739,7 +739,7 @@ Entre sus características relevantes se encuentran las siguientes:
 Este segmento se relaciona con la concentración geográfica de la oferta hotelera
 peruana. En 2024, Lima concentró el 27,6 % de los establecimientos de hospedaje,
 seguida por Cusco (8,1 %), Arequipa (5,9 %), Junín (5,7 %) y La Libertad (4,6 %); estas
-cinco regiones reunieron el 52,0 % de la oferta nacional [4]. La concentración no
+cinco regiones reunieron el 52,0 % de la oferta nacional (MINCETUR, 2025). La concentración no
 confirma por sí misma la existencia de cadenas pequeñas, pero evidencia un contexto
 en el que la coordinación entre sedes puede ser relevante y deberá validarse con
 gerentes o responsables de operaciones del sector hotelero peruano.
@@ -768,27 +768,27 @@ incluye la gestión de reservas, check-in y check-out, la sincronización con ca
 como Booking.com, Airbnb, Expedia y Agoda, y la facturación electrónica integrada con
 SUNAT. También ofrece control de inventarios con registro de entradas y salidas,
 alertas de stock mínimo, usuarios con permisos y acceso desde computadoras y
-dispositivos móviles [5].
+dispositivos móviles (HotelClick, s.f.).
 
 El proveedor ofrece una demostración inicial y contratación mediante un pago anual
 que incluye los módulos, las actualizaciones y el soporte técnico. La plataforma
 integra facturación, POS y distribución por OTAs, de acuerdo con la información
-pública del proveedor [5].
+pública del proveedor (HotelClick, s.f.).
 
 **OkFac.**
 
 OkFac se presenta como un PMS hecho para hoteles peruanos. Incluye un calendario de
 reservas, vista del estado de las habitaciones, check-in y check-out, housekeeping,
-conexión con OTAs y emisión de comprobantes electrónicos mediante SUNAT [6]. En su
+conexión con OTAs y emisión de comprobantes electrónicos mediante SUNAT (Montalvo Soluciones Tecnológicas S.A.C., s.f.). En su
 plan Pro incorpora inventario, compras y gastos; el plan Enterprise añade reportes y
-operación multi-sucursal, además de roles y permisos avanzados [6]. Estas funciones
+operación multi-sucursal, además de roles y permisos avanzados (Montalvo Soluciones Tecnológicas S.A.C., s.f.). Estas funciones
 se ofrecen para hoteles y hostales de distintos tamaños.
 
 Su modelo comercial es de suscripción mensual o anual por planes. El proveedor
 publica planes para hoteles y hostales pequeños, medianos y grandes, desde S/ 140 al
 mes, con implementación y capacitación incluidas; el plan Enterprise contempla
-funciones multi-sucursal [6]. También ofrece facturación electrónica y módulos de
-restaurante dentro de la misma cuenta [6].
+funciones multi-sucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.). También ofrece facturación electrónica y módulos de
+restaurante dentro de la misma cuenta (Montalvo Soluciones Tecnológicas S.A.C., s.f.).
 
 **SysHotel.**
 
@@ -796,13 +796,13 @@ SysHotel es una plataforma PMS y ERP desarrollada para el mercado peruano, dirig
 desde hostales pequeños hasta cadenas con varias sedes. Su oferta pública incluye
 reservas, check-in y check-out, disponibilidad de habitaciones, housekeeping,
 facturación electrónica SUNAT, channel manager y un ERP con inventario
-multi-almacén y kardex [7]. Además, el proveedor declara que puede cotizar
+multi-almacén y kardex (SysHotel, s.f.). Además, el proveedor declara que puede cotizar
 integraciones con cerraduras inteligentes y sistemas de control de acceso, aunque no
-especifica que estas integraciones utilicen RFID [7].
+especifica que estas integraciones utilicen RFID (SysHotel, s.f.).
 
 El servicio se comercializa como suscripción con precios publicados desde S/ 100 al
 mes, demostración guiada e integraciones personalizadas según el alcance. SysHotel
-declara tener más de 150 hoteles activos en Perú [7].
+declara tener más de 150 hoteles activos en Perú (SysHotel, s.f.).
 
 ### 2.1.1. Análisis competitivo
 
@@ -821,9 +821,9 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
 <tr>
   <th colspan="2">Criterio</th>
   <th>Su startup<br><strong>Hostera</strong></th>
-  <th>Competidor 1<br><strong>Nexus PMS</strong><br>HotelClick [5]</th>
-  <th>Competidor 2<br><strong>OkFac</strong> [6]</th>
-  <th>Competidor 3<br><strong>SysHotel</strong> [7]</th>
+  <th>Competidor 1<br><strong>Nexus PMS</strong><br>(HotelClick, s.f.)</th>
+  <th>Competidor 2<br><strong>OkFac</strong> (Montalvo Soluciones Tecnológicas S.A.C., s.f.)</th>
+  <th>Competidor 3<br><strong>SysHotel</strong> (SysHotel, s.f.)</th>
 </tr>
 <tr>
   <td class="group-label" rowspan="2"><span class="vertical-label">Perfil</span></td>
@@ -931,17 +931,17 @@ deberán validarse con administradores y responsables de operaciones hoteleras.
 | **Enfoque en la coordinación operativa y la trazabilidad RFID**  | Nexus PMS, OkFac y SysHotel cubren buena parte de las reservas, habitaciones e inventarios. Hostera puede diferenciarse al relacionar esos procesos con la autorización y el historial de accesos RFID en un mismo contexto.                       | Priorizar en el MVP el panel de operación, la relación entre habitación, usuario y tarjeta, y la consulta del historial de eventos. Comunicar la propuesta como coordinación operativa y seguridad, sin afirmar todavía una ventaja comprobada.                                                         |
 | **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multi-sede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel.                                                    |
 | **Producto modular e interoperable**                             | Nexus, OkFac y SysHotel ya ofrecen facturación, OTAs, POS u otros módulos. Hostera no debe asumir que reemplazará todas las herramientas comerciales y contables que utiliza un hotel.                                                             | Mantener el alcance inicial en reservas, disponibilidad, inventario y accesos RFID. Levantar como requisitos de integración los sistemas de facturación, canales de reserva y cerraduras que los hoteles ya utilicen, empezando por los escenarios de mayor valor.                                      |
-| **Entrada gradual mediante demostraciones y pilotos**            | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación [5][6][7].                                                                                         | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
-| **Precio y despliegue transparentes**                            | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio [5][6][7]. Hostera aún no tiene precios definidos.                                                                                   | Validar si la suscripción por hotel o por sede resulta comprensible para los segmentos objetivo. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto.                                                                   |
-| **Confianza mediante adaptación local y soporte**                | Los competidores resaltan SUNAT, soporte en español y conocimiento del mercado peruano [5][6][7]. Esa expectativa debe considerarse aunque la facturación no forme parte del MVP de Hostera.                                                       | Usar terminología y flujos comprensibles para equipos hoteleros peruanos, documentar la compatibilidad del hardware RFID y ofrecer acompañamiento inicial. Cuando una función dependa de un sistema externo, explicitar esa dependencia en lugar de prometer cobertura no validada.                     |
+| **Entrada gradual mediante demostraciones y pilotos**            | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.).                                                                                         | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
+| **Precio y despliegue transparentes**                            | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Hostera aún no tiene precios definidos.                                                                                   | Validar si la suscripción por hotel o por sede resulta comprensible para los segmentos objetivo. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto.                                                                   |
+| **Confianza mediante adaptación local y soporte**                | Los competidores resaltan SUNAT, soporte en español y conocimiento del mercado peruano (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Esa expectativa debe considerarse aunque la facturación no forme parte del MVP de Hostera.                                                       | Usar terminología y flujos comprensibles para equipos hoteleros peruanos, documentar la compatibilidad del hardware RFID y ofrecer acompañamiento inicial. Cuando una función dependa de un sistema externo, explicitar esa dependencia en lugar de prometer cobertura no validada.                     |
 
 #### Tácticas frente a los competidores seleccionados
 
 | Competidor    | Fortaleza a afrontar                                                                                         | Táctica de Hostera                                                                                                                                                                                                                                                                             |
 | ------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nexus PMS** | Plataforma en la nube con reservas, inventario, facturación SUNAT, POS y channel manager [5].                | Evitar una comparación basada en amplitud de módulos. Mostrar cómo Hostera añade la relación entre reserva, habitación, tarjeta RFID y evento de acceso, y evaluar integraciones para que el hotel no tenga que reemplazar sus herramientas de facturación o distribución desde el primer día. |
-| **OkFac**     | Planes escalables, implementación incluida, housekeeping, inventario y operación multi-sucursal [6].         | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren.                                  |
-| **SysHotel**  | PMS + ERP con inventario multi-almacén, kardex y posibilidad de integrar cerraduras o control de acceso [7]. | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee.                                                |
+| **Nexus PMS** | Plataforma en la nube con reservas, inventario, facturación SUNAT, POS y channel manager (HotelClick, s.f.).                | Evitar una comparación basada en amplitud de módulos. Mostrar cómo Hostera añade la relación entre reserva, habitación, tarjeta RFID y evento de acceso, y evaluar integraciones para que el hotel no tenga que reemplazar sus herramientas de facturación o distribución desde el primer día. |
+| **OkFac**     | Planes escalables, implementación incluida, housekeeping, inventario y operación multi-sucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.).         | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren.                                  |
+| **SysHotel**  | PMS + ERP con inventario multi-almacén, kardex y posibilidad de integrar cerraduras o control de acceso (SysHotel, s.f.). | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee.                                                |
 
 #### Criterios para validar la estrategia
 
@@ -1397,12 +1397,12 @@ actores, recursos y procesos.
 | **Rate Plan** | Plan tarifario | A set of pricing and selling conditions associated with a room or accommodation offer, such as dates, restrictions and included services. |
 | **Inventory** | Inventario | The supplies, assets and operational resources that a property needs to monitor, replenish and use during its activities. |
 | **Folio** | Cuenta del huésped | The account associated with a guest stay that records charges, payments, adjustments and the balance to be settled. |
-| **Property Management System (PMS)** | Sistema de gestión hotelera | A business operations system used by a hotel or hotel group to manage reservations, check-in and check-out, room assignment, rates, billing and related operational information. Its traditional hotel scope is described by Oracle Hospitality [8]. |
+| **Property Management System (PMS)** | Sistema de gestión hotelera | A business operations system used by a hotel or hotel group to manage reservations, check-in and check-out, room assignment, rates, billing and related operational information. Its traditional hotel scope is described by Oracle Hospitality (s.f.). |
 | **Online Travel Agency (OTA)** | Agencia de viajes en línea | A third-party booking channel through which guests can search for and reserve accommodation offered by a property. |
 | **Access Control** | Control de acceso | The set of operational rules and actions that determine who can enter a property, room or restricted area and under what conditions. |
-| **Occupancy** | Ocupación | The percentage of available rooms that are occupied or sold during a specified period. It is calculated by dividing rooms sold by rooms available [9]. |
-| **Average Daily Rate (ADR)** | Tarifa diaria promedio | The average room rate paid for rooms sold during a specified period, calculated by dividing room revenue by rooms sold [9]. |
-| **Revenue per Available Room (RevPAR)** | Ingreso por habitación disponible | A hotel performance measure calculated by dividing room revenue by the total number of available rooms for a specified period [9]. |
+| **Occupancy** | Ocupación | The percentage of available rooms that are occupied or sold during a specified period. It is calculated by dividing rooms sold by rooms available (STR, s.f.). |
+| **Average Daily Rate (ADR)** | Tarifa diaria promedio | The average room rate paid for rooms sold during a specified period, calculated by dividing room revenue by rooms sold (STR, s.f.). |
+| **Revenue per Available Room (RevPAR)** | Ingreso por habitación disponible | A hotel performance measure calculated by dividing room revenue by the total number of available rooms for a specified period (STR, s.f.). |
 
 # Capítulo III: Requirements Specification
 
@@ -1657,7 +1657,7 @@ El Product Backlog puede consultarse en el tablero de YouTrack del proyecto (htt
 
 El sistema de diseño de Hostera centraliza las decisiones visuales que deben
 mantenerse en el Landing Page y en las aplicaciones web. La propuesta adopta
-Material Design 3 (M3) [10] y lo adapta a la identidad de Hostera mediante tokens de
+Material Design 3 (M3) (Google, s.f.-c) y lo adapta a la identidad de Hostera mediante tokens de
 color, tipografía, espaciado, forma y elevación compartidos.
 
 ### 4.1.1. General Style Guidelines
@@ -1795,7 +1795,7 @@ Las interfaces de Hostera se diseñan como una única experiencia web responsive
 se ejecuta en el navegador. Las vistas de escritorio, tablet y móvil comparten la
 misma estructura semántica, componentes y jerarquía de acciones; únicamente cambia
 su distribución según el ancho disponible. Los estándares visuales y de interacción
-siguen los estados de Material Design 3 [10].
+siguen los estados de Material Design 3 (Google, s.f.-c).
 
 #### Responsive layout
 
@@ -1870,7 +1870,7 @@ el único medio para comunicar un cambio. Cuando el navegador indique
 #### Accessibility and input methods
 
 Hostera toma como referencia WCAG 2.2 (*Web Content Accessibility Guidelines 2.2*)
-[11] para mantener interfaces perceptibles, operables y comprensibles. Los criterios
+(World Wide Web Consortium [W3C], 2024) para mantener interfaces perceptibles, operables y comprensibles. Los criterios
 se aplican tanto a la interacción mediante puntero como al teclado y a la pantalla
 táctil.
 
@@ -3871,53 +3871,57 @@ validación con usuarios reales.
 
 # Bibliografía
 
-[1] Progressa Lean. (2021, 13 de mayo). _5W+2H: Técnica de análisis de problemas_. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/.
+<div class="references">
 
-[2] Gothelf, J., & Seiden, J. (2021). _Lean UX: Creating Great Products with Agile Teams_ (3rd ed.). O'Reilly Media.
+Conventional Commits. (s.f.). _Conventional Commits 1.0.0_. Recuperado el 16 de septiembre de 2026, de https://www.conventionalcommits.org/en/v1.0.0/
 
-[3] Universidad Peruana de Ciencias Aplicadas. (2021). _Lean & Hypothesis-Driven Development_ [Material de clase].
+Driessen, V. (2010). _A successful Git branching model_. https://nvie.com/posts/a-successful-git-branching-model/
 
-[4] Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). _Perú: Oferta y Demanda de Establecimientos de Hospedaje - Año 2024_. https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024.
+ECMA International. (s.f.). _ECMAScript® language specification_. Recuperado el 16 de septiembre de 2026, de https://tc39.es/ecma262/
 
-[5] HotelClick. (s. f.). _Sistema de Administración y Gestión Hotelera para Perú: Nexus PMS_. https://hotelclick.net.pe/. Recuperado el 4 de septiembre de 2026.
+Google. (s.f.-a). _Google HTML/CSS style guide_. Recuperado el 16 de septiembre de 2026, de https://google.github.io/styleguide/htmlcssguide.html
 
-[6] Montalvo Soluciones Tecnológicas S.A.C. (s. f.). _Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac_. https://okfac.pe/sistema-hotelero-peru. Recuperado el 4 de septiembre de 2026.
+Google. (s.f.-b). _Google JavaScript style guide_. Recuperado el 16 de septiembre de 2026, de https://google.github.io/styleguide/jsguide.html
 
-[7] SysHotel. (s. f.). _PMS hotelero en Perú: software de gestión hotelera_. https://syshotel.app/. Recuperado el 4 de septiembre de 2026.
+Google. (s.f.-c). _Material Design 3_. Recuperado el 5 de septiembre de 2026, de https://m3.material.io/
 
-[8] Oracle Hospitality. (s. f.). _What is a Hotel PMS (Property Management System)?_. https://www.oracle.com/ca-en/hospitality/what-is-hotel-pms/. Recuperado el 5 de septiembre de 2026.
+Gothelf, J., & Seiden, J. (2021). _Lean UX: Creating great products with agile teams_ (3a. ed.). O'Reilly Media.
 
-[9] STR. (s. f.). _How to calculate RevPAR_. https://str.com/sites/default/files/The-Ultimate-Guide-to-Hotel-Benchmarking.pdf. Recuperado el 5 de septiembre de 2026.
+HotelClick. (s.f.). _Sistema de administración y gestión hotelera para Perú: Nexus PMS_. Recuperado el 4 de septiembre de 2026, de https://hotelclick.net.pe/
 
-[10] Google. (s. f.). _Material Design 3_. https://m3.material.io/. Recuperado el 5 de septiembre de 2026.
+JSDoc. (s.f.). _JSDoc documentation_. Recuperado el 16 de septiembre de 2026, de https://jsdoc.app/
 
-[11] World Wide Web Consortium. (2024). _Web Content Accessibility Guidelines (WCAG) 2.2_. https://www.w3.org/TR/WCAG22/. Recuperado el 5 de septiembre de 2026.
+Microsoft. (s.f.-a). _ASP.NET Core fundamentals overview_. Recuperado el 16 de septiembre de 2026, de https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0
 
-[12] Driessen, V. (2010). _A successful Git branching model_. https://nvie.com/posts/a-successful-git-branching-model/. Recuperado el 16 de septiembre de 2026.
+Microsoft. (s.f.-b). _Convenciones y reglas de nomenclatura de identificadores de C#_. Recuperado el 16 de septiembre de 2026, de https://learn.microsoft.com/es-es/dotnet/csharp/fundamentals/coding-style/identifier-names
 
-[13] Preston-Werner, T. (s. f.). _Semantic Versioning 2.0.0_. https://semver.org/. Recuperado el 16 de septiembre de 2026.
+Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). _Perú: Oferta y demanda de establecimientos de hospedaje - Año 2024_. https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024
 
-[14] Conventional Commits. (s. f.). _Conventional Commits 1.0.0_. https://www.conventionalcommits.org/en/v1.0.0/. Recuperado el 16 de septiembre de 2026.
+Montalvo Soluciones Tecnológicas S.A.C. (s.f.). _Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac_. Recuperado el 4 de septiembre de 2026, de https://okfac.pe/sistema-hotelero-peru
 
-[15] Google. (s. f.). _Google HTML/CSS Style Guide_. https://google.github.io/styleguide/htmlcssguide.html. Recuperado el 16 de septiembre de 2026.
+Mozilla Developer Network. (s.f.). _JavaScript modules_. Recuperado el 16 de septiembre de 2026, de https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[16] Vue.js. (s. f.). _Style Guide_. https://vuejs.org/style-guide/. Recuperado el 16 de septiembre de 2026.
+Oracle Hospitality. (s.f.). _What is a hotel PMS (property management system)?_ Recuperado el 5 de septiembre de 2026, de https://www.oracle.com/ca-en/hospitality/what-is-hotel-pms/
 
-[17] Vue.js. (s. f.). _Composition API FAQ_. https://vuejs.org/guide/extras/composition-api-faq. Recuperado el 16 de septiembre de 2026.
+Preston-Werner, T. (s.f.). _Semantic Versioning 2.0.0_. Recuperado el 16 de septiembre de 2026, de https://semver.org/
 
-[18] Vite. (s. f.). _Getting Started_. https://vite.dev/guide/. Recuperado el 16 de septiembre de 2026.
+Progressa Lean. (2021, 13 de mayo). _5W+2H: Técnica de análisis de problemas_. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
 
-[19] JSDoc. (s. f.). _JSDoc Documentation_. https://jsdoc.app/. Recuperado el 16 de septiembre de 2026.
+STR. (s.f.). _How to calculate RevPAR_. Recuperado el 5 de septiembre de 2026, de https://str.com/sites/default/files/The-Ultimate-Guide-to-Hotel-Benchmarking.pdf
 
-[20] Mozilla Developer Network. (s. f.). _JavaScript modules_. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules. Recuperado el 16 de septiembre de 2026.
+SysHotel. (s.f.). _PMS hotelero en Perú: Software de gestión hotelera_. Recuperado el 4 de septiembre de 2026, de https://syshotel.app/
 
-[21] ECMA International. (s. f.). _ECMAScript® Language Specification_. https://tc39.es/ecma262/. Recuperado el 16 de septiembre de 2026.
+Universidad Peruana de Ciencias Aplicadas. (2021). _Lean & hypothesis-driven development_ [Material de clase].
 
-[22] Google. (s. f.). _Google JavaScript Style Guide_. https://google.github.io/styleguide/jsguide.html. Recuperado el 16 de septiembre de 2026.
+Vite. (s.f.). _Getting started_. Recuperado el 16 de septiembre de 2026, de https://vite.dev/guide/
 
-[23] Microsoft. (s. f.). _Convenciones y reglas de nomenclatura de identificadores de C#_. https://learn.microsoft.com/es-es/dotnet/csharp/fundamentals/coding-style/identifier-names. Recuperado el 16 de septiembre de 2026.
+Vue.js. (s.f.-a). _Composition API FAQ_. Recuperado el 16 de septiembre de 2026, de https://vuejs.org/guide/extras/composition-api-faq
 
-[24] Microsoft. (s. f.). _ASP.NET Core fundamentals overview_. https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-9.0. Recuperado el 16 de septiembre de 2026.
+Vue.js. (s.f.-b). _Style guide_. Recuperado el 16 de septiembre de 2026, de https://vuejs.org/style-guide/
+
+World Wide Web Consortium. (2024). _Web Content Accessibility Guidelines (WCAG) 2.2_. https://www.w3.org/TR/WCAG22/
+
+</div>
 
 <div style="page-break-before: always;"></div>
 
