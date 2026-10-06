@@ -1147,6 +1147,226 @@ Como solución para mejorar la coordinación y acompañar el crecimiento del neg
 
 Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que están evaluando financiar la implementación mediante una entidad bancaria, con el objetivo de concretar el proyecto para la nueva temporada del año 2027. De esta manera, buscan avanzar desde una gestión principalmente manual hacia una administración más automatizada de las reservas y con mayor presencia digital.
 
+#### Entrevistas complementarias por formulario
+
+Para completar el mínimo de tres entrevistas por segmento que exige el enunciado del
+proyecto, el equipo complementó las entrevistas en video con entrevistas aplicadas
+mediante un formulario estructurado, medio autorizado para esta entrega. El
+formulario traslada el protocolo de la sección 2.2.1 a preguntas cerradas y abiertas,
+conserva la secuencia de temas y añade una pregunta filtro sobre la cantidad de
+establecimientos que la persona administra, que determina el segmento al que
+pertenece y el bloque de preguntas operativas que responde.
+
+La primera pregunta del formulario solicita el consentimiento para que el nombre, la
+edad, el distrito, el cargo y las respuestas aparezcan en este informe académico. Los
+seis respondientes registrados a continuación lo otorgaron de forma expresa; las
+respuestas sin consentimiento no se incorporan al informe. Los datos de contacto
+recogidos para coordinar una videollamada posterior se mantienen fuera del
+repositorio público.
+
+Los criterios de validez son los mismos que delimitan los segmentos objetivo de la
+sección 1.3: el segmento 1 corresponde a operaciones de un solo establecimiento y el
+segmento 2 a operaciones de dos a cinco sedes. Una de las respuestas recibidas
+proviene de una franquicia internacional con seis o más establecimientos; se registra
+como evidencia de la convocatoria, pero queda excluida del análisis del segmento y de
+los porcentajes de la sección 2.2.3.
+
+**Segmento 1: administradores y propietarios de hoteles independientes**
+
+**Entrevista complementaria 1 (F1).**
+
+Entrevistado: Diego Castillo
+<br>Edad: 42 años
+<br>Ubicación: Cusco, Cusco
+<br>Ocupación: Gerente de operaciones, entre 6 y 10 años de experiencia en hotelería
+<br>Formación: Turismo y hotelería
+<br>Establecimiento: hotel independiente de una sede, entre 21 y 50 habitaciones, con
+un equipo de 6 a 15 personas en recepción, limpieza y almacén
+<br>Medio: entrevista complementaria por formulario
+
+Resumen:
+
+Diego administra un hotel independiente de una sola sede en Cusco. Trabaja la mayor
+parte del día desde una PC de escritorio, complementada con un celular Android, y usa
+Edge como navegador principal. Registra las reservas combinando las extranets de
+Booking, Expedia y Airbnb con un sistema hotelero integrado, mientras que el control
+del almacén lo reparte entre ese mismo sistema y hojas de Excel. Las habitaciones se
+abren con tarjeta magnética. Las reservas le llegan por Booking, Expedia, la web
+propia y agencias, y coordina con su equipo por WhatsApp, llamadas y en persona.
+
+Valora que su sistema le muestre la ocupación al momento, pero señala que los
+reportes de almacén lo obligan a exportar datos para poder usarlos. Declara doble
+reserva y descuadres de almacén con frecuencia mensual, y demoras en el check-in con
+frecuencia semanal; en cambio, nunca ha perdido una tarjeta ni ha tenido que
+averiguar quién entró a una habitación. Dedica entre 30 y 60 minutos diarios a cuadrar
+reservas, caja e inventario. Su último incidente fue un huésped al que se le entregó
+una habitación todavía en limpieza, que resolvió cambiando la asignación y
+coordinando con recepción. La tarea que más le gustaría dejar de hacer a mano es
+actualizar el inventario de artículos de limpieza al cierre del turno. Ordena como
+prioridad las reservas y la disponibilidad, seguidas del control de acceso; pagaría
+entre S/51 y S/150 al mes, y para confiar en una herramienta nueva necesita probarla
+antes, recibir capacitación y que se conecte con lo que ya usa.
+
+**Entrevista complementaria 2 (F2).**
+
+Entrevistado: Valeria Rojas
+<br>Edad: 29 años
+<br>Ubicación: San Isidro, Lima
+<br>Ocupación: Jefa de recepción, entre 2 y 5 años de experiencia en hotelería
+<br>Formación: Gestión hotelera
+<br>Establecimiento: hotel boutique de una sede perteneciente a una cadena peruana,
+entre 51 y 100 habitaciones, con un equipo de 16 a 40 personas
+<br>Medio: entrevista complementaria por formulario
+
+Resumen:
+
+Valeria dirige la recepción de un hotel boutique de una sola sede que forma parte de
+una cadena peruana. Trabaja principalmente desde una laptop, y utiliza además un
+iPhone y una tablet, con Chrome como navegador habitual. Registra las reservas
+apoyándose en las extranets de las agencias en línea, un channel manager y un sistema
+hotelero integrado; el almacén se controla desde un sistema contable y desde ese
+mismo sistema hotelero. Las habitaciones se abren con tarjeta RFID. Las reservas
+llegan por Booking, Airbnb, la web propia y las redes sociales, y la coordinación
+diaria ocurre por WhatsApp, correo y en persona.
+
+Señala que la disponibilidad se comparte con rapidez, pero que le falta una vista
+simple de incidencias por habitación. Nunca ha tenido una doble reserva ni una
+tarjeta perdida; en cambio, declara descuadres de almacén, demoras en el check-in y
+accesos sin registro de quién entró con frecuencia mensual. Dedica menos de 30
+minutos diarios a tareas de conciliación. Su último incidente fue una tarjeta RFID
+que falló en el ingreso: se emitió otra y se registró el caso para mantenimiento. La
+tarea que querría automatizar es preparar el reporte diario de incidencias y accesos
+de habitaciones. Su primera prioridad es el control de acceso a las habitaciones,
+seguido de las reservas; pagaría entre S/151 y S/300 al mes, y para adoptar una
+herramienta nueva pide probarla antes, soporte en español e integración con lo que ya
+utiliza.
+
+**Entrevista complementaria 3 (F3).**
+
+Entrevistado: Mariana Torres
+<br>Edad: 34 años
+<br>Ubicación: Barranco, Lima
+<br>Ocupación: Administradora general, entre 2 y 5 años de experiencia en hotelería
+<br>Formación: Administración hotelera
+<br>Establecimiento: hostal independiente de una sede, hasta 20 habitaciones, con un
+equipo de 1 a 5 personas
+<br>Medio: entrevista complementaria por formulario
+
+Resumen:
+
+Mariana administra un hostal independiente de una sola sede en Barranco, con un
+equipo reducido. Trabaja desde una laptop y un celular Android, y usa Chrome. No
+utiliza ningún PMS: registra las reservas entre un cuaderno, hojas de Google Sheets y
+WhatsApp, y controla el almacén con el mismo cuaderno y las mismas hojas de cálculo.
+Las habitaciones se abren con llave física. Las reservas le llegan por teléfono,
+WhatsApp y Booking, y una parte de los huéspedes llega sin reserva previa. La
+coordinación con su equipo ocurre por WhatsApp y en persona.
+
+Describe las hojas de cálculo como flexibles, pero advierte que el cambio de turno
+deja registros inconsistentes. Es la respondiente con mayor carga de incidencias del
+segmento: declara descuadres de almacén y demoras en el check-in con frecuencia
+semanal, y doble reserva y pérdida de llaves con frecuencia mensual. Dedica entre una
+y dos horas diarias a cuadrar reservas, caja e inventario. Su último incidente fue una
+doble reserva sobre la misma habitación, que resolvió ofreciendo otra disponible y
+corrigiendo la hoja de reservas. La tarea que más querría dejar de hacer a mano es
+conciliar las reservas recibidas por WhatsApp con la hoja de disponibilidad. Ordena
+como prioridad las reservas y el inventario de almacén; pagaría hasta S/50 al mes, y
+para confiar en una herramienta nueva necesita probarla antes, soporte en español y
+un precio claro.
+
+**Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras**
+
+**Entrevista complementaria 4 (F4).**
+
+Entrevistado: José Ramírez
+<br>Edad: 46 años
+<br>Ubicación: Cercado, Arequipa
+<br>Ocupación: Propietario, más de 10 años de experiencia en hotelería
+<br>Formación: Gestión de empresas
+<br>Establecimiento: operación independiente multisede de 2 a 5 hostales, entre 21 y
+50 habitaciones en total, con un equipo de 6 a 15 personas
+<br>Medio: entrevista complementaria por formulario
+
+Resumen:
+
+José es propietario de una operación independiente de varias sedes en Arequipa.
+Trabaja la mayor parte del día desde un celular Android, apoyado en una laptop, y usa
+Chrome. No utiliza un PMS: registra las reservas entre hojas de Excel, WhatsApp y las
+extranets de las agencias, y controla el almacén de todas las sedes con esas mismas
+hojas y un cuaderno. Las habitaciones se abren con llave física. Las reservas llegan
+por Booking, WhatsApp y agencias, y coordina con los encargados de cada sede por
+WhatsApp y llamadas.
+
+Identifica como su problema central que cada sede use hojas distintas, lo que
+dificulta conciliar la disponibilidad y el inventario. La información consolidada le
+llega por WhatsApp y por correo con archivos de Excel; consolida una vez por semana y
+armar ese consolidado le toma medio día. Declara reportes desactualizados y
+descuadres de insumos entre sedes con frecuencia semanal, y procesos distintos entre
+sedes a diario. Su último incidente grave fue una sede que informó tarde un faltante
+de ropa de cama, que obligó a un traslado urgente y a ajustar el inventario. Ordena
+como prioridad las reservas centralizadas y el inventario entre sedes, y sitúa el
+control de accesos en último lugar; pagaría entre S/51 y S/150 al mes, y para adoptar
+una herramienta nueva pide una demostración previa y capacitación.
+
+**Entrevista complementaria 5 (F5).**
+
+Entrevistado: Andrea Salazar
+<br>Edad: 38 años
+<br>Ubicación: Miraflores, Lima
+<br>Ocupación: Gerente de operaciones, entre 6 y 10 años de experiencia en hotelería
+<br>Formación: Administración hotelera
+<br>Establecimiento: cadena peruana de 2 a 5 hoteles y hoteles boutique, entre 51 y
+100 habitaciones en total, con un equipo de 16 a 40 personas
+<br>Medio: entrevista complementaria por formulario
+
+Resumen:
+
+Andrea supervisa la operación de una cadena peruana de varias sedes desde Miraflores.
+Trabaja desde una laptop y un celular Android, con Chrome como navegador. Registra las
+reservas con un channel manager, un sistema hotelero integrado y las extranets de las
+agencias, y controla el almacén entre un ERP contable y ese mismo sistema hotelero.
+Las habitaciones se abren con tarjeta RFID. Las reservas llegan por Booking, la web
+propia y WhatsApp, y coordina con los encargados de cada sede por WhatsApp y correo.
+
+Señala que los reportes entre sedes se actualizan con retraso y exigen conciliación
+manual. La información consolidada le llega por correo con archivos de Excel y por un
+sistema compartido; consolida a diario y armar el consolidado le toma entre una y tres
+horas. Declara reportes desactualizados y procesos distintos entre sedes con
+frecuencia semanal, y descuadres de insumos y traslados urgentes con frecuencia
+mensual; nunca ha tenido accesos sin registro. Su último incidente fue una reserva
+duplicada que llegó a recepción, que el equipo resolvió reasignando la habitación y
+actualizando el registro central. Ordena como prioridad las reservas centralizadas y
+los reportes consolidados en tiempo real, y sitúa el control de accesos en último
+lugar; pagaría entre S/151 y S/300 al mes, y para adoptar una herramienta nueva pide
+una demostración previa, integración con lo existente y capacitación.
+
+**Respuesta fuera del segmento (F6).**
+
+Entrevistado: Claudia Vargas
+<br>Edad: 51 años
+<br>Ubicación: San Isidro, Lima
+<br>Ocupación: Gerente general, más de 10 años de experiencia en hotelería
+<br>Formación: Administración y turismo
+<br>Establecimiento: franquicia internacional de seis o más hoteles y apart-hoteles,
+más de 100 habitaciones en total, con un equipo de más de 40 personas
+<br>Medio: entrevista complementaria por formulario
+
+Resumen:
+
+Claudia dirige una franquicia internacional con seis o más establecimientos. Su
+respuesta excede el límite superior del segmento 2, definido entre dos y cinco sedes,
+por lo que se registra como evidencia de la convocatoria y queda excluida del análisis
+del segmento. Su operación ya cuenta con un sistema compartido entre sedes que le
+permite consolidar a diario en menos de una hora, controla el almacén con un ERP
+contable integrado al sistema hotelero y abre las habitaciones con tarjeta magnética.
+Coordina con los encargados por correo y por Teams o Slack. Identifica como punto
+débil que el control de accesos no se integre con los reportes consolidados, sitúa el
+control de accesos como su primera prioridad y pagaría más de S/300 al mes. Su
+respuesta resulta útil como contraste: confirma que el problema que Hostera aborda
+pierde intensidad cuando la operación ya dispone de un sistema compartido entre
+sedes, y por eso el producto se concentra en operaciones de menor escala.
+
+
 ### 2.2.3. Análisis de entrevistas
 
 **Segmento 1: Primer segmento objetivo: administradores y propietarios de hoteles independientes**
@@ -1262,6 +1482,103 @@ En conjunto, la entrevista evidencia que el segmento de administradores hotelero
 
 En conjunto, este segmento evidencia un perfil mucho más estructurado y tecnificado que el segmento 1: no gestionan por Excel/WhatsApp sino mediante PMS corporativos (Opera/Opera Cloud) con roles y permisos individualizados, procesos departamentales bien delimitados y mecanismos formales de soporte, capacitación y seguridad de datos. Su interés no está en digitalizar procesos básicos (como en el segmento 1), sino en la integración, trazabilidad fina y optimización continua de sistemas que ya son robustos, además de la valoración del capital humano como palanca de mejora operativa.
 
+#### Análisis de las entrevistas complementarias
+
+Este análisis se construye sobre las entrevistas complementarias por formulario
+registradas en la sección 2.2.2 y expresa con porcentajes las características
+objetivas y subjetivas que se repiten en cada segmento. Las fuentes se identifican
+con el código asignado a cada entrevista complementaria: `F1` a `F3` para el segmento
+1 y `F4` y `F5` para el segmento 2. La respuesta `F6` queda excluida de los
+porcentajes por exceder el límite del segmento. Cada rasgo que se incorpora a las
+fichas de User Persona de la sección 2.3.1 debe poder rastrearse a una fila de estas
+tablas.
+
+**Segmento 1: administradores y propietarios de hoteles independientes (n = 3)**
+
+| Característica | Resultado | % | Fuente |
+| :--- | :---: | :---: | :--- |
+| Coordina con su equipo por WhatsApp | 3 de 3 | 100 % | F1, F2, F3 |
+| Declara descuadres de almacén al menos una vez al mes | 3 de 3 | 100 % | F1, F2, F3 |
+| Declara demoras en el check-in al menos una vez al mes | 3 de 3 | 100 % | F1, F2, F3 |
+| Sitúa las reservas y la disponibilidad entre sus dos prioridades | 3 de 3 | 100 % | F1, F2, F3 |
+| Necesita probar la herramienta antes de adoptarla | 3 de 3 | 100 % | F1, F2, F3 |
+| Recibe reservas desde extranets de agencias en línea | 2 de 3 | 67 % | F1, F2 |
+| Registra las reservas con un PMS o un channel manager | 2 de 3 | 67 % | F1, F2 |
+| Concilia reservas o almacén en hojas de cálculo o en cuaderno | 2 de 3 | 67 % | F1, F3 |
+| Abre las habitaciones con tarjeta magnética o RFID | 2 de 3 | 67 % | F1, F2 |
+| Usa Chrome como navegador principal | 2 de 3 | 67 % | F2, F3 |
+| Trabaja principalmente desde una laptop | 2 de 3 | 67 % | F2, F3 |
+| Declara doble reserva o sobreventa al menos una vez al mes | 2 de 3 | 67 % | F1, F3 |
+| Dedica 30 minutos o más al día a cuadrar reservas, caja e inventario | 2 de 3 | 67 % | F1, F3 |
+| Pagaría S/51 o más al mes por una herramienta integrada | 2 de 3 | 67 % | F1, F2 |
+
+**Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 2)**
+
+| Característica | Resultado | % | Fuente |
+| :--- | :---: | :---: | :--- |
+| Recibe reservas desde extranets de agencias en línea y por WhatsApp | 2 de 2 | 100 % | F4, F5 |
+| Coordina con los encargados de cada sede por WhatsApp o correo | 2 de 2 | 100 % | F4, F5 |
+| Recibe información de las sedes en archivos de Excel | 2 de 2 | 100 % | F4, F5 |
+| Tarda una hora o más en armar el consolidado de todas las sedes | 2 de 2 | 100 % | F4, F5 |
+| Declara reportes desactualizados al menos una vez por semana | 2 de 2 | 100 % | F4, F5 |
+| Declara procesos distintos entre sedes al menos una vez por semana | 2 de 2 | 100 % | F4, F5 |
+| Declara descuadres de insumos entre sedes al menos una vez al mes | 2 de 2 | 100 % | F4, F5 |
+| Sitúa las reservas centralizadas como su primera prioridad | 2 de 2 | 100 % | F4, F5 |
+| Sitúa el control de accesos como su última prioridad | 2 de 2 | 100 % | F4, F5 |
+| Pagaría S/51 o más al mes por una solución centralizada | 2 de 2 | 100 % | F4, F5 |
+| Pide una demostración o prueba previa y capacitación al equipo | 2 de 2 | 100 % | F4, F5 |
+| Registra las reservas con un PMS o un channel manager | 1 de 2 | 50 % | F5 |
+| Abre las habitaciones con tarjeta magnética o RFID | 1 de 2 | 50 % | F5 |
+| Trabaja principalmente desde una laptop | 1 de 2 | 50 % | F5 |
+
+El perfil tecnológico declarado por cada respondiente permite verificar que las
+características anteriores provienen de respuestas individuales y no de una
+generalización del segmento.
+
+<img src="assets/chapter-2/encuesta-perfil-tecnologico.svg" alt="Perfil tecnológico declarado por cada respondiente de las entrevistas complementarias" style="width:100%; height:auto;"/>
+
+*Figura 2.5. Perfil tecnológico declarado por cada respondiente de las entrevistas complementarias.*
+
+La frecuencia con la que ocurren las incidencias operativas separa a los dos
+segmentos. En el segmento 1 las incidencias se concentran en la operación de una sola
+sede: descuadres de almacén y demoras en el check-in aparecen en las tres respuestas,
+mientras que la trazabilidad de accesos es la preocupación menos frecuente. En el
+segmento 2 las incidencias se desplazan hacia la coordinación entre sedes: los
+reportes desactualizados y los procesos distintos entre sedes se declaran con
+frecuencia semanal o diaria.
+
+<img src="assets/chapter-2/encuesta-frecuencia-incidencias.svg" alt="Frecuencia declarada de incidencias operativas en cada segmento" style="width:100%; height:auto;"/>
+
+*Figura 2.6. Frecuencia declarada de incidencias operativas en cada segmento.*
+
+La prioridad que cada segmento asigna a las capacidades de la operación confirma esa
+separación y ofrece un criterio para ordenar el Product Backlog. Ambos segmentos
+sitúan las reservas y la disponibilidad en primer lugar, pero difieren en el resto: el
+segmento 1 coloca el control de acceso a las habitaciones en segundo lugar, mientras
+que el segmento 2 lo sitúa en el último y adelanta los reportes consolidados.
+
+<img src="assets/chapter-2/encuesta-prioridad-capacidades.svg" alt="Prioridad promedio que cada segmento asigna a las capacidades de la operación" style="width:100%; height:auto;"/>
+
+*Figura 2.7. Prioridad promedio que cada segmento asigna a las capacidades de la operación.*
+
+En conjunto, las entrevistas complementarias sostienen tres conclusiones. La primera
+es que la fragmentación de la información se manifiesta de forma distinta en cada
+segmento: en el segmento 1 aparece dentro de una sede, entre el canal por el que llega
+la reserva y la hoja o el sistema donde se registra; en el segmento 2 aparece entre
+sedes, en el tiempo que cuesta consolidar y en la desactualización de los reportes. La
+segunda es que las reservas y la disponibilidad son la capacidad más valorada por
+ambos segmentos, lo que respalda su posición en el Product Backlog. La tercera es que
+la disposición a pagar se concentra entre S/51 y S/300 mensuales en cuatro de los
+cinco respondientes válidos, y que la condición de adopción más repetida es poder
+probar la herramienta antes de comprometerse.
+
+El tamaño de la muestra limita el alcance de estos porcentajes, en especial en el
+segmento 2, donde solo dos de las tres respuestas recibidas corresponden a operaciones
+de dos a cinco sedes. Por ello, estas entrevistas complementan y no sustituyen a las
+entrevistas en video registradas en la sección 2.2.2, y los rasgos que se trasladen a
+las fichas de User Persona deben apoyarse en ambas fuentes.
+
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
@@ -1271,11 +1588,11 @@ Para ello seleccionamos los siguientes perfiles:
 
 User Persona 1
 ![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
-*Figura 2.5. User Persona de Steven Huarcaya.*
+*Figura 2.8. User Persona de Steven Huarcaya.*
 ---
 User Persona 2
 ![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
-*Figura 2.6. User Persona de Anyeli Cárdenas.*
+*Figura 2.9. User Persona de Anyeli Cárdenas.*
 ### 2.3.2. User Task Matrix
 En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
 
@@ -1333,7 +1650,7 @@ En esta sección se presentan los User Journey Maps en su versión **As-Is** (si
 El *journey* actual de Steven abarca desde la recepción de solicitudes de reserva por canales dispersos hasta la revisión del inventario y la entrega física de llaves en el hotel. El proceso se caracteriza por una alta dependencia de registros manuales y una constante interrupción operativa para resolver incidencias.
 
 ![As-Is User Journey Map - Steven Huarcaya](assets/chapter-2/StevenHuarcaya_journeymap.png)
-*Figura 2.7. As-Is User Journey Map de Steven Huarcaya.*
+*Figura 2.10. As-Is User Journey Map de Steven Huarcaya.*
 
 ---
 
@@ -1342,19 +1659,19 @@ El *journey* actual de Steven abarca desde la recepción de solicitudes de reser
 El *journey* actual de Anyeli contempla el proceso de consolidación y supervisión de la operación de múltiples sedes a la distancia. Las etapas clave incluyen la solicitud de reportes a los administradores locales, la consolidación manual de datos de inventario y la verificación diferida de accesos, lo cual genera retrasos y falta de visibilidad en tiempo real.
 
 ![As-Is User Journey Map - Anyeli Cárdenas](assets/chapter-2/AnyeliCardenas_journeymap.png)
-*Figura 2.8. As-Is User Journey Map de Anyeli Cárdenas.*
+*Figura 2.11. As-Is User Journey Map de Anyeli Cárdenas.*
 
 ### 2.3.4. Empathy Mapping
 
 <img src="assets/chapter-2/Empathy%20map-segmento1.png" alt="Empathy Map del segmento 1, Steven Huarcaya" style="display:block; width:65%; height:auto; margin:0 auto;"/>
 
-*Figura 2.9. Empathy Map de Steven Huarcaya.*
+*Figura 2.12. Empathy Map de Steven Huarcaya.*
 
 ---
 
 <img src="assets/chapter-2/Empathy%20map-segmento2%20(1).png" alt="Empathy Map del segmento 2, Anyeli Cárdenas" style="display:block; width:65%; height:auto; margin:0 auto;"/>
 
-*Figura 2.10. Empathy Map de Anyeli Cárdenas.*
+*Figura 2.13. Empathy Map de Anyeli Cárdenas.*
 
 
 ## 2.4. Big Picture EventStorming
@@ -1366,7 +1683,7 @@ posibles problemas y oportunidades que orientan la definición de la solución.
 
 <img src="assets/chapter-2/big-picture-event-storming-hostera.svg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 2.11. Big Picture EventStorming del dominio de Hostera.*
+*Figura 2.14. Big Picture EventStorming del dominio de Hostera.*
 
 ## 2.5. Ubiquitous Language
 
