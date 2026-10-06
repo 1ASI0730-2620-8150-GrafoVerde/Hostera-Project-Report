@@ -1041,21 +1041,71 @@ información y el control de las diferencias entre establecimientos.
 
 ### 2.2.2. Registro de entrevistas
 
-**Segmento 1: Primer segmento objetivo: administradores y propietarios de hoteles independientes**
+Se registraron cuatro entrevistas en video con responsables de la operación hotelera.
+Cada entrevista se asignó al segmento según la definición de la sección 1.3: el
+segmento 1 reúne a quienes administran un hotel independiente de una sola sede y el
+segmento 2 a quienes supervisan dos o más establecimientos. Con este criterio, el
+segmento 1 cuenta con una entrevista en video y el segmento 2 con tres.
 
-Entrevista 1:
+| Código | Entrevistado | Edad | Distrito y ciudad | Cargo | Segmento |
+| :---: | --- | :---: | --- | --- | :---: |
+| E1 | Otto Cuba | 50 | Huarmey, Áncash | Accionista del Hotel Bahía de Cuba | 1 |
+| E2 | Wilson | 46 | Puno, Puno | Propietario y administrador de hotel | 2 |
+| E3 | Rafael Prieto | 40 | Miraflores, Lima | Room Division Manager | 2 |
+| E4 | Gerente general del Hotel Meliá Lima Miraflores | 40 | Miraflores, Lima | Gerente general | 2 |
 
-<img src="assets/chapter-2/interview-01-wilson.png" alt="Entrevista 1 de Wilson" style="width:100%; height:auto;"/>
-*Figura 2.1. Entrevista a Wilson, ingeniero y administrador de hotel.*
+#### Segmento 1: administradores y propietarios de hoteles independientes
 
-Entrevistado: Wilson
-<br>Edad: 46 años
+**Entrevista E1: Otto Cuba**
 
+<img src="assets/chapter-2/interview-04-otto-cuba.png" alt="Captura de la entrevista a Otto Cuba" style="display:block; width:60%; height:auto; margin:0 auto;"/>
 
-<br>Ocupación: Ingeniero y administrador de hotel
-<br>Ubicación: Puno, Puno
+*Figura 2.1. Captura de la entrevista a Otto Cuba, accionista del Hotel Bahía de Cuba.*
 
-Resumen:
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Otto Cuba |
+| Edad | 50 años |
+| Distrito y ciudad | Huarmey (playa de Tokio), Áncash |
+| Ocupación | Accionista del Hotel Bahía de Cuba |
+| Establecimiento | Hospedaje independiente de una sede con cerca de cuatro años de operación |
+| URL de la entrevista | https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12 |
+| Inicio y duración en el video | Por completar |
+
+**Resumen.**
+
+Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en la playa de Tokio, Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
+
+Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja conjuntamente con la administradora, quienes bloquean y gestionan las reservas de acuerdo con la disponibilidad. Posteriormente, el personal operativo se encarga de direccionar las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se realizan registros manuales que posteriormente son trasladados a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
+
+Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación entre el equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, siendo estos los principales canales utilizados para coordinar las actividades del hospedaje.
+
+Como solución para mejorar la coordinación y acompañar el crecimiento del negocio, considera necesario implementar un sistema que permita automatizar las reservas y brindar una mayor visibilidad del hospedaje mediante una página web. Actualmente se encuentran evaluando un proyecto de implementación de este tipo de sistema debido a las necesidades que han surgido con el crecimiento del establecimiento.
+
+Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que están evaluando financiar la implementación mediante una entidad bancaria, con el objetivo de concretar el proyecto para la nueva temporada del año 2027. De esta manera, buscan avanzar desde una gestión principalmente manual hacia una administración más automatizada de las reservas y con mayor presencia digital.
+
+**Tecnología y canales.** Registra los accesos de huéspedes y personal de forma manual y luego los traslada a una tabla de Excel. El equipo se coordina mediante grupos de WhatsApp y llamadas telefónicas, y los huéspedes llegan principalmente por redes sociales. No utiliza un sistema de reservas y evalúa implementar uno con página web para la temporada 2027.
+
+#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras
+
+**Entrevista E2: Wilson**
+
+<img src="assets/chapter-2/interview-01-wilson.png" alt="Captura de la entrevista a Wilson" style="display:block; width:60%; height:auto; margin:0 auto;"/>
+
+*Figura 2.2. Captura de la entrevista a Wilson, propietario y administrador de hotel.*
+
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Wilson (apellido: por completar) |
+| Edad | 46 años |
+| Distrito y ciudad | Puno, Puno |
+| Ocupación | Ingeniero; propietario y administrador de hotel |
+| Establecimiento | Hotel independiente con dos sedes: una de unas 30 habitaciones y otra de unas 15 con sala de eventos |
+| URL de la entrevista | https://1drv.ms/v/c/888b77ed7e85f778/IQB3J3HBJMqLSKvJshn-oZCJAba2jLzRmQtVCD109pJ820c?e=dTzLYR |
+| Inicio y duración en el video | Por completar |
+
+**Resumen.**
+
 Wilson, ingeniero y administrador de un hotel independiente en Puno, comenta sobre los principales desafíos que enfrenta al gestionar las reservas, accesos, disponibilidad e inventario de dos sedes. Actualmente, administra una sede principal de aproximadamente 30 habitaciones y otra de alrededor de 15 habitaciones, que además cuenta con un espacio para eventos. Señala que una de las principales dificultades es centralizar la información de ambas sedes, ya que debe coordinar constantemente con el administrador de la segunda sede para conocer las habitaciones disponibles.
 
 Para gestionar las reservas, recibe información principalmente mediante WhatsApp, correo electrónico, TikTok y aplicaciones de reservas, pero posteriormente debe trasladarla manualmente a un archivo de Excel, que utiliza como herramienta principal para controlar la disponibilidad y las reservas. Para los accesos utiliza tarjetas de identificación, aunque actualmente estas solo permiten controlar la entrada y salida de las habitaciones. También emplea una computadora para administrar el sistema de tarjetas.
@@ -1068,20 +1118,25 @@ En la segunda sede también se encuentra una sala de eventos, cuyos servicios de
 
 Finalmente, considera que una mejora importante para la administración del hotel sería contar con un sistema centralizado de seguridad y control que permita gestionar los accesos de huéspedes y trabajadores, registrar el uso de los diferentes servicios y administrar la información de ambas sedes. Esto le permitiría reducir el trabajo manual, mejorar la seguridad y tener un mayor control sobre las actividades y servicios que se realizan en el hotel.
 
-**Entrevista 2:**
+**Tecnología y canales.** Usa Excel como herramienta principal para controlar reservas y disponibilidad. Las reservas le llegan por WhatsApp, correo, TikTok y aplicaciones de reserva. Administra desde una computadora un sistema de tarjetas de identificación que solo controla la entrada y salida de las habitaciones. No usa un PMS.
 
-**<img src="assets/chapter-2/interview-03-rafael-prieto.png" alt="Entrevista 2 de Rafael Prieto" style="width:100%; height:auto;"/>**
-*Figura 2.2. Entrevista a Rafael Prieto, Room Division Manager.*
+**Entrevista E3: Rafael Prieto**
 
-Entrevistado: Rafael Prieto, Manager del Hotel Intercontinental Lima Miraflores y Hotel Índigo Lima Miraflores
+<img src="assets/chapter-2/interview-03-rafael-prieto.png" alt="Captura de la entrevista a Rafael Prieto" style="display:block; width:60%; height:auto; margin:0 auto;"/>
 
-<br>Edad: 40 años
+*Figura 2.3. Captura de la entrevista a Rafael Prieto, Room Division Manager.*
 
-Enlace de entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I
-<br>Ocupación: Room Division Manager
-<br>Ubicación: Miraflores, Lima
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Rafael Prieto |
+| Edad | 40 años |
+| Distrito y ciudad | Miraflores, Lima |
+| Ocupación | Room Division Manager del Hotel Intercontinental Lima Miraflores y del Hotel Índigo Lima Miraflores |
+| Establecimiento | Complejo de dos hoteles de marca internacional (321 y 76 habitaciones) |
+| URL de la entrevista | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I |
+| Inicio y duración en el video | Por completar |
 
-Resumen:
+**Resumen.**
 
 El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y solicitudes especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
 
@@ -1095,21 +1150,26 @@ Respecto a las dificultades, considera que no existe un único problema específ
 
 Finalmente, resalta la importancia de comprender mejor el trabajo del área de housekeeping. Señala que su función no se limita a limpiar habitaciones, sino que también implica cumplir estándares, identificar los gustos y preferencias de los huéspedes y cuidar los detalles durante la preparación de las habitaciones. Considera que este departamento tiene un trabajo altamente demandante y que su aporte es fundamental para la experiencia del huésped, razón por la cual algunas cadenas realizan actividades como el Housekeeping Week para reconocer su trabajo.
 
-**Segmento 2: Primer segmento objetivo: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**
+**Tecnología y canales.** Utiliza Opera como sistema de gestión hotelera. Revisa llegadas, salidas y movimiento de huéspedes desde su domicilio con una laptop y un celular corporativos mediante una VPN autorizada; el acceso remoto está restringido según el cargo.
 
-**Entrevista 1:**
+**Entrevista E4: Gerente general del Hotel Meliá Lima Miraflores**
 
-**<img src="assets/chapter-2/interview-02-melia-general-manager.png" alt="Entrevista 1 del gerente general del Hotel Meliá Lima Miraflores" style="width:100%; height:auto;"/>**
-*Figura 2.3. Entrevista al gerente general del Hotel Meliá Lima Miraflores.*
+<img src="assets/chapter-2/interview-02-melia-general-manager.png" alt="Captura de la entrevista al gerente general del Hotel Meliá Lima Miraflores" style="display:block; width:60%; height:auto; margin:0 auto;"/>
 
-Entrevistado: Gerente general del Hotel Meliá Lima Miraflores
-<br>Edad: 40 años
+*Figura 2.4. Captura de la entrevista al gerente general del Hotel Meliá Lima Miraflores.*
 
-Enlace de entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni
-<br>Ocupación: Administrador de negocios turísticos y hoteleros / Gerente general
-<br>Ubicación: Miraflores, Lima
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Por completar |
+| Edad | 40 años |
+| Distrito y ciudad | Miraflores, Lima |
+| Ocupación | Administrador de negocios turísticos y hoteleros; gerente general |
+| Establecimiento | Dos sedes de una cadena internacional: Meliá Lima Miraflores y Meliá Lima San Isidro |
+| URL de la entrevista | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni |
+| Inicio y duración en el video | Por completar |
 
-Resumen:
+**Resumen.**
+
 El entrevistado, administrador de negocios turísticos y hoteleros y gerente general de un hotel en Miraflores, comenta sobre los principales procesos y herramientas que utiliza para supervisar las reservas, habitaciones e información de las propiedades que administra. Diariamente recibe informes de recepción, entre ellos el *Flash Manager* y el *History and Forecast*, que le permiten revisar información consolidada, histórica y proyectada. Además, el supervisor de recepción, el área de Experience y el agente de reservas realizan un seguimiento diario de las reservas y sus observaciones, considerando aspectos como el tipo de habitación, tarifa, plan de alimentación y procedencia de la reserva mediante plataformas como Booking y Expedia.
 
 Para la gestión de reservas e inventario utiliza principalmente Opera Cloud, integrado con el CRM. El sistema permite administrar el inventario de habitaciones y realizar seguimiento de las reservas. También facilita el trabajo del *revenue manager*, quien puede modificar las tarifas de acuerdo con la disponibilidad de cada tipo de habitación. Como medida de seguridad, cada trabajador cuenta con un usuario y contraseña personal e intransferible, lo que permite realizar un *tracking* de los movimientos efectuados en las reservas, como cambios de tarifas o incorporación de información.
@@ -1122,30 +1182,7 @@ Como solución complementaria para la administración de habitaciones, comenta q
 
 Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, facilitando así la gestión y supervisión de las operaciones del hotel.
 
-**Entrevista 2:**
-
-**<img src="assets/chapter-2/interview-04-otto-cuba.png" alt="Entrevista 3 de Otto Cuba" style="width:100%; height:auto;"/>**
-*Figura 2.4. Entrevista a Otto Cuba, accionista del Hotel Bahía de Cuba.*
-
-Entrevistado: Otto Cuba
-
-<br>Edad: 50 años
-
-Enlace de entrevista: https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12
-<br>Ocupación: Accionista del Hotel Bahía de Cuba
-<br>Ubicación: Playa de Tokio, Huarmey, Áncash
-
-Resumen:
-
-Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en la playa de Tokio, Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
-
-Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja conjuntamente con la administradora, quienes bloquean y gestionan las reservas de acuerdo con la disponibilidad. Posteriormente, el personal operativo se encarga de direccionar las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se realizan registros manuales que posteriormente son trasladados a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
-
-Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación entre el equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, siendo estos los principales canales utilizados para coordinar las actividades del hospedaje.
-
-Como solución para mejorar la coordinación y acompañar el crecimiento del negocio, considera necesario implementar un sistema que permita automatizar las reservas y brindar una mayor visibilidad del hospedaje mediante una página web. Actualmente se encuentran evaluando un proyecto de implementación de este tipo de sistema debido a las necesidades que han surgido con el crecimiento del establecimiento.
-
-Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que están evaluando financiar la implementación mediante una entidad bancaria, con el objetivo de concretar el proyecto para la nueva temporada del año 2027. De esta manera, buscan avanzar desde una gestión principalmente manual hacia una administración más automatizada de las reservas y con mayor presencia digital.
+**Tecnología y canales.** Utiliza Opera Cloud integrado con el CRM y recibe a diario los informes *Flash Manager* y *History and Forecast*. Las reservas llegan, entre otros canales, desde Booking y Expedia. Cada trabajador tiene usuario y contraseña personales, y el hotel usa una plataforma complementaria para housekeeping que cuesta cerca de USD 1 500 al año por propiedad, con soporte 24/7.
 
 #### Entrevistas complementarias por formulario
 
@@ -1369,215 +1406,193 @@ sedes, y por eso el producto se concentra en operaciones de menor escala.
 
 ### 2.2.3. Análisis de entrevistas
 
-**Segmento 1: Primer segmento objetivo: administradores y propietarios de hoteles independientes**
+Este análisis reúne en un solo lugar las nueve entrevistas registradas en la sección
+2.2.2 y es la base sobre la que se construyen los arquetipos de la sección 2.3. Las
+fuentes se identifican con el código asignado a cada entrevista: `E1` a `E4` para las
+entrevistas en video y `F1` a `F5` para las entrevistas complementarias por
+formulario. La respuesta `F6` queda fuera de todos los porcentajes por corresponder a
+una franquicia internacional de seis o más establecimientos, por encima del límite del
+segmento 2.
 
+Con la asignación por escala de operación, el segmento 1 reúne cuatro entrevistas
+(`E1`, `F1`, `F2`, `F3`) y el segmento 2 reúne cinco (`E2`, `E3`, `E4`, `F4`, `F5`).
+Ambos quedan dentro del rango de tres a cinco entrevistas por segmento que exige el
+enunciado del proyecto.
 
+Las dos fuentes aportan información de distinta naturaleza y por eso se tratan de
+forma explícita. Las entrevistas en video permiten describir el contexto, el
+razonamiento y las decisiones de cada responsable; las entrevistas complementarias por
+formulario permiten contar cuántas veces se repite una característica y con qué
+frecuencia ocurre una incidencia. Cuando una característica solo puede medirse en las
+respuestas estructuradas, la fila correspondiente indica su base entre paréntesis en
+lugar del total del segmento.
 
-**Perfil del entrevistado:**
-Ingeniero de profesión, 46 años, propietario y administrador de un hotel en la ciudad de Puno desde hace 2 años (previamente trabajó 5 años como empleado en otro hotel). Actualmente gestiona dos sedes: la principal (~30 habitaciones) y una secundaria (~15 habitaciones más un ambiente para eventos).
-
-* **Motivación para participar:**
-  El entrevistado accede a colaborar principalmente porque el proyecto le ofrece acceso anticipado a un producto de gestión de acceso físico a habitaciones, aplicable a una o varias sedes hoteleras — es decir, una motivación directamente ligada a resolver un problema operativo propio, no solo altruista.
-* **Dificultades actuales:**
-  Se identifican varias barreras recurrentes:
-  * Fragmentación de la información: las reservas llegan por WhatsApp, TikTok, correo y aplicaciones de reserva, y todo debe consolidarse manualmente en Excel.
-  * Falta de trazabilidad en los accesos: el sistema de tarjetas actual solo registra entrada/salida de habitaciones, sin identificar con certeza qué persona específica ingresó, lo que ha generado casos de objetos perdidos sin poder atribuir responsabilidad.
-  * Coordinación entre sedes: debe recibir reportes diarios del administrador de la segunda sede para poder redistribuir disponibilidad (por ejemplo, ante grupos grandes o promociones).
-  * Gestión de servicios adicionales dispersos: desayuno, almuerzo, frigobar, eventos (catering, DJ, proyector) se registran de forma manual y descentralizada.
-* **Procesos y herramientas actuales:**
-  Uso intensivo de Excel como herramienta central de control de reservas y disponibilidad, complementado con un sistema de tarjetas tipo PID (solo para apertura de puertas y ascensor por piso). No usa un PMS formal ni navegador específico; la coordinación con clientes es mayormente vía WhatsApp.
-* **Funcionalidades deseadas (mejoras):**
-  * Tarjetas de acceso individualizadas por empleado (no compartidas), para poder identificar quién ingresó a cada habitación y en qué turno.
-  * Extensión del control de acceso a otras zonas: piscina, sauna, gimnasio en la sede principal.
-  * Registro automático de consumo de servicios (desayuno, almuerzo) mediante lectores de tarjeta, para evitar que el personal deba anotar manualmente quién usa cada servicio.
-  * Manejo diferenciado de tarjetas para el nuevo local de eventos (paquetes por tipo de evento: fiesta, reunión, conferencia).
-  * A futuro, incorporar bungalows tipo "experiencia vivencial" (modelo Airbnb) como una nueva línea de servicio con su propio esquema de costos.
-* **Factores para la adopción (costo, seguridad, soporte):**
-  Valora que el sistema permita centralizar el cobro de servicios adicionales bajo el ID de la tarjeta/habitación, reduciendo la necesidad de personal dedicado a registrar manualmente cada consumo. La seguridad y la trazabilidad de accesos (saber quién entra y cuándo) aparecen como el criterio más importante para justificar la inversión.
-* **Impacto percibido:**
-  El entrevistado reconoce que un mejor control de accesos y servicios simplificaría significativamente su carga operativa como propietario único, permitiéndole manejar de forma más eficiente el inventario de servicios (habitación, alimentación, eventos) tanto para el personal de limpieza como para los huéspedes en ambas sedes.
-* **Propuestas de mejora:**
-  * Tarjetas nominativas por trabajador para trazabilidad de responsabilidad.
-  * Ampliación del alcance del sistema de tarjetas a zonas comunes (piscina, sauna, gimnasio).
-  * Registro automatizado de consumo de servicios adicionales vinculado a la tarjeta del huésped.
-  * Gestión diferenciada por tipo de evento en la sede secundaria.
-
-En conjunto, la entrevista evidencia que el segmento de administradores hoteleros independientes con múltiples sedes valora sobre todo la trazabilidad de accesos y la automatización del registro de servicios adicionales, por encima de la simple apertura de puertas. Su adopción del producto dependerá de que este permita centralizar el control de ambas sedes, identificar responsables individuales por acceso y reducir la carga manual de registro que hoy recae en Excel y WhatsApp.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Segmento 2: Primer segmento objetivo: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**
-
-
-
-
-
-**Perfiles de los entrevistados:**
-
-* Entrevistado 1: 40 años, administrador de negocios turísticos y hoteleros, Gerente General del Hotel Meliá Lima Miraflores, reside en Miraflores, a cargo de dos sedes (Meliá Lima Miraflores y Meliá Lima San Isidro).
-* Entrevistado 2: Room Division Manager de un complejo de dos hoteles (Intercontinental Lima Miraflores, 321 habitaciones, e Índigo Lima Miraflores, 76 habitaciones), a cargo de recepción, SPA, seguridad y housekeeping.
-* **Motivación / rol frente a la gestión:**
-  A diferencia del segmento 1 (dueños-administradores independientes), aquí los entrevistados no son propietarios sino gestores profesionales dentro de cadenas hoteleras estructuradas, con responsabilidades divididas por departamentos (reservas, recepción, seguridad, housekeeping, almacén) y bajo sistemas corporativos estandarizados.
-* **Herramientas y sistemas actuales:**
-  Ambos hoteles utilizan **Opera / Opera Cloud** como PMS y CRM principal, el mismo sistema que usan cadenas internacionales (Hilton, Marriott, Intercontinental, Mandarin Oriental). Destacan:
-  * Informes diarios consolidados (Flash Manager, History and Forecast) para visión general de ocupación y proyecciones.
-  * Usuario y contraseña individual por empleado para trazabilidad de cambios en reservas (por seguridad, no transferible).
-  * Cada sede tiene un código/centro de costos propio (ej. 58.50 y 52.20) que segrega la información entre propiedades, incluso dentro de la misma cadena.
-  * Uso de una plataforma adicional (Easy) para housekeeping y mantenimiento, con seguimiento en tiempo real del estado de habitaciones — costo aprox. USD 1,500 anuales por propiedad, con soporte 24/7 desde España.
-  * Acceso remoto vía VPN + laptop/celular corporativo para supervisión fuera del hotel (solo personal autorizado según nivel jerárquico).
-* **Dificultades identificadas:**
-  * Gestión de overbooking/sobreventa: se resuelve derivando huéspedes a otra propiedad de la misma cadena, trasladando el valor de la tarifa.
-  * Circunstancias operativas variables (personal, percepción del huésped, descuidos puntuales) más que "problemas" fijos — se percibe como parte normal de la operación, no como una dificultad estructural.
-  * Separación estricta de responsabilidades: el Room Division Manager no controla directamente accesos ni almacén, sino que aprueba/supervisa procesos que ejecutan otros departamentos (seguridad, recepción, almacén).
-* **Procesos de control de accesos:**
-  A diferencia del segmento 1, el acceso de huéspedes y personal no depende de un solo responsable, sino de la coordinación entre **seguridad** (detecta anomalías) y **recepción** (verifica reserva en sistema). La supervisión es "macro": el gerente confía en que el proceso ya se cumplió antes de intervenir directamente.
-* **Reuniones y toma de decisiones (revenue management):**
-  Reuniones semanales de revenue (todos los martes) donde participan gerente general, revenue manager, ventas y reservas para ajustar tarifas según comportamiento del set competitivo, eventos en la zona y disponibilidad de la competencia.
-* **Factores de adopción (costo, soporte, seguridad):**
-  * Costo conocido y presupuestado por propiedad (referencia: USD 1,500/año para plataforma de housekeeping).
-  * Soporte internacional 24/7 y capacitaciones continuas, incluidas en la inducción de nuevo personal.
-  * Seguridad enmarcada en cumplimiento normativo (Ley de Protección de Datos Personales) y en accesos individualizados por usuario.
-  * Fuerte énfasis en que la información de cada propiedad/cadena esté "blindada" — aislamiento total entre marcas competidoras dentro del mismo sistema (Opera).
-* **Cambios/mejoras propuestas:**
-  * Mejora continua y reconocimiento del personal como eje central (filosofía "el trabajador es más importante que el huésped, porque cuida al huésped").
-  * Mayor visibilidad y valoración del departamento de housekeeping, más allá de la limpieza: identificación de preferencias de huéspedes, estándares de detalle, iniciativas como el "housekeeping week".
-* **Aspectos a comprender mejor:**
-  Ambos entrevistados destacan que la operación hotelera tiende a centralizarse en la percepción de "recepción", pero que housekeeping es un departamento crítico y subvalorado que requiere mayor entendimiento por su carga operativa y su impacto directo en la experiencia del huésped.
-
-En conjunto, este segmento evidencia un perfil mucho más estructurado y tecnificado que el segmento 1: no gestionan por Excel/WhatsApp sino mediante PMS corporativos (Opera/Opera Cloud) con roles y permisos individualizados, procesos departamentales bien delimitados y mecanismos formales de soporte, capacitación y seguridad de datos. Su interés no está en digitalizar procesos básicos (como en el segmento 1), sino en la integración, trazabilidad fina y optimización continua de sistemas que ya son robustos, además de la valoración del capital humano como palanca de mejora operativa.
-
-#### Análisis de las entrevistas complementarias
-
-Este análisis se construye sobre las entrevistas complementarias por formulario
-registradas en la sección 2.2.2 y expresa con porcentajes las características
-objetivas y subjetivas que se repiten en cada segmento. Las fuentes se identifican
-con el código asignado a cada entrevista complementaria: `F1` a `F3` para el segmento
-1 y `F4` y `F5` para el segmento 2. La respuesta `F6` queda excluida de los
-porcentajes por exceder el límite del segmento. Cada rasgo que se incorpora a las
-fichas de User Persona de la sección 2.3.1 debe poder rastrearse a una fila de estas
-tablas.
-
-**Segmento 1: administradores y propietarios de hoteles independientes (n = 3)**
+#### Segmento 1: administradores y propietarios de hoteles independientes (n = 4)
 
 | Característica | Resultado | % | Fuente |
 | :--- | :---: | :---: | :--- |
-| Coordina con su equipo por WhatsApp | 3 de 3 | 100 % | F1, F2, F3 |
-| Declara descuadres de almacén al menos una vez al mes | 3 de 3 | 100 % | F1, F2, F3 |
-| Declara demoras en el check-in al menos una vez al mes | 3 de 3 | 100 % | F1, F2, F3 |
-| Sitúa las reservas y la disponibilidad entre sus dos prioridades | 3 de 3 | 100 % | F1, F2, F3 |
-| Necesita probar la herramienta antes de adoptarla | 3 de 3 | 100 % | F1, F2, F3 |
-| Recibe reservas desde extranets de agencias en línea | 2 de 3 | 67 % | F1, F2 |
-| Registra las reservas con un PMS o un channel manager | 2 de 3 | 67 % | F1, F2 |
-| Concilia reservas o almacén en hojas de cálculo o en cuaderno | 2 de 3 | 67 % | F1, F3 |
-| Abre las habitaciones con tarjeta magnética o RFID | 2 de 3 | 67 % | F1, F2 |
-| Usa Chrome como navegador principal | 2 de 3 | 67 % | F2, F3 |
-| Trabaja principalmente desde una laptop | 2 de 3 | 67 % | F2, F3 |
-| Declara doble reserva o sobreventa al menos una vez al mes | 2 de 3 | 67 % | F1, F3 |
-| Dedica 30 minutos o más al día a cuadrar reservas, caja e inventario | 2 de 3 | 67 % | F1, F3 |
-| Pagaría S/51 o más al mes por una herramienta integrada | 2 de 3 | 67 % | F1, F2 |
+| Usa WhatsApp en la coordinación diaria de la operación | 4 de 4 | 100 % | E1, F1, F2, F3 |
+| Concilia reservas, accesos o almacén en Excel, Google Sheets o cuaderno | 3 de 4 | 75 % | E1, F1, F3 |
+| Declara que trasladar registros a mano es una carga de su operación | 3 de 4 | 75 % | E1, F1, F3 |
+| Registra las reservas con un PMS o un channel manager | 2 de 4 | 50 % | F1, F2 |
+| Recibe reservas desde extranets de agencias en línea | 2 de 4 | 50 % | F1, F2 |
+| Recibe reservas o huéspedes por canales directos: teléfono, WhatsApp o redes sociales | 2 de 4 | 50 % | E1, F3 |
+| Abre las habitaciones con tarjeta magnética o RFID | 2 de 4 | 50 % | F1, F2 |
+| Trabaja principalmente desde una laptop | 2 de 3 (con dato) | 67 % | F2, F3 |
+| Usa Chrome como navegador principal | 2 de 3 (formulario) | 67 % | F2, F3 |
+| Declara descuadres de almacén al menos una vez al mes | 3 de 3 (formulario) | 100 % | F1, F2, F3 |
+| Declara demoras en el check-in al menos una vez al mes | 3 de 3 (formulario) | 100 % | F1, F2, F3 |
+| Declara doble reserva o sobreventa al menos una vez al mes | 2 de 3 (formulario) | 67 % | F1, F3 |
+| Dedica 30 minutos o más al día a cuadrar reservas, caja e inventario | 2 de 3 (formulario) | 67 % | F1, F3 |
+| Sitúa las reservas y la disponibilidad entre sus dos prioridades | 3 de 3 (formulario) | 100 % | F1, F2, F3 |
+| Pagaría S/51 o más al mes por una herramienta integrada | 2 de 3 (formulario) | 67 % | F1, F2 |
+| Necesita probar la herramienta antes de adoptarla | 3 de 3 (formulario) | 100 % | F1, F2, F3 |
 
-**Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 2)**
+El segmento está formado por quienes responden por la operación completa de un solo
+establecimiento, con cargos de accionista, propietario, administrador general o jefe
+de recepción, edades entre 29 y 50 años y equipos que van de 1 a 40 personas. Su rasgo
+común no es la herramienta que utilizan, sino el punto donde la información se rompe:
+la reserva llega por un canal y se registra en otro. Otto Cuba (`E1`) traslada a mano
+los registros de acceso a una tabla de Excel y obtiene sus reportes recién en el cierre
+de caja; Mariana Torres (`F3`) concilia en una hoja de cálculo las reservas que recibe
+por WhatsApp y por teléfono; Diego Castillo (`F1`) tiene un sistema hotelero que le
+muestra la ocupación al momento, pero debe exportar datos para poder usar los reportes
+de almacén. En los tres casos el trabajo manual aparece como consecuencia de la
+desconexión entre el canal de entrada y el registro operativo, no de la ausencia total
+de herramientas.
+
+El nivel de digitalización dentro del segmento es desigual y conviene no promediarlo.
+La mitad de los entrevistados registra las reservas con un PMS o un channel manager y
+abre las habitaciones con tarjeta, mientras que la otra mitad opera con cuaderno,
+hojas de cálculo y llave física. Esa diferencia marca dos puntos de partida distintos
+para el producto: para unos, Hostera sustituye un registro manual; para otros, debe
+convivir con un sistema que ya está instalado y resolver lo que ese sistema no cubre.
+
+Las incidencias que el segmento declara se concentran dentro de la sede. Los descuadres
+de almacén y las demoras en el check-in aparecen en todas las respuestas estructuradas
+con frecuencia mensual o semanal, y la doble reserva aparece en dos de tres. En
+cambio, la trazabilidad de los accesos es la preocupación menos frecuente: la pérdida
+de una tarjeta y el desconocimiento de quién entró a una habitación se declaran como
+nunca ocurridos en dos de tres respuestas. Esto ordena el valor que el segmento espera
+del producto: primero la disponibilidad y las reservas, después el inventario, y el
+control de accesos como una capacidad deseable más que urgente.
+
+Las condiciones de adopción son homogéneas. Los tres respondientes del formulario
+coinciden en que necesitan probar la herramienta antes de comprometerse, y dos de tres
+pagarían S/51 o más al mes. Otto Cuba (`E1`) refuerza ese punto desde el video: su
+decisión de incorporar un sistema está condicionada a un financiamiento bancario y
+proyectada para una temporada concreta, lo que confirma que en este segmento la
+inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
+
+#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 5)
 
 | Característica | Resultado | % | Fuente |
 | :--- | :---: | :---: | :--- |
-| Recibe reservas desde extranets de agencias en línea y por WhatsApp | 2 de 2 | 100 % | F4, F5 |
-| Coordina con los encargados de cada sede por WhatsApp o correo | 2 de 2 | 100 % | F4, F5 |
-| Recibe información de las sedes en archivos de Excel | 2 de 2 | 100 % | F4, F5 |
-| Tarda una hora o más en armar el consolidado de todas las sedes | 2 de 2 | 100 % | F4, F5 |
-| Declara reportes desactualizados al menos una vez por semana | 2 de 2 | 100 % | F4, F5 |
-| Declara procesos distintos entre sedes al menos una vez por semana | 2 de 2 | 100 % | F4, F5 |
-| Declara descuadres de insumos entre sedes al menos una vez al mes | 2 de 2 | 100 % | F4, F5 |
-| Sitúa las reservas centralizadas como su primera prioridad | 2 de 2 | 100 % | F4, F5 |
-| Sitúa el control de accesos como su última prioridad | 2 de 2 | 100 % | F4, F5 |
-| Pagaría S/51 o más al mes por una solución centralizada | 2 de 2 | 100 % | F4, F5 |
-| Pide una demostración o prueba previa y capacitación al equipo | 2 de 2 | 100 % | F4, F5 |
-| Registra las reservas con un PMS o un channel manager | 1 de 2 | 50 % | F5 |
-| Abre las habitaciones con tarjeta magnética o RFID | 1 de 2 | 50 % | F5 |
-| Trabaja principalmente desde una laptop | 1 de 2 | 50 % | F5 |
+| Supervisa dos o más establecimientos | 5 de 5 | 100 % | E2, E3, E4, F4, F5 |
+| Recibe reservas desde extranets o plataformas de agencias en línea | 4 de 5 | 80 % | E2, E4, F4, F5 |
+| Usa un PMS o sistema hotelero corporativo | 3 de 5 | 60 % | E3, E4, F5 |
+| Declara que consolidar la información entre sedes es una dificultad central | 3 de 5 | 60 % | E2, F4, F5 |
+| Recibe reservas o coordina la operación por WhatsApp | 3 de 5 | 60 % | E2, F4, F5 |
+| Concilia la información de las sedes en Excel o en cuaderno | 2 de 5 | 40 % | E2, F4 |
+| Controla el acceso a las habitaciones con tarjeta | 2 de 5 | 40 % | E2, F5 |
+| Cuenta con usuario y permisos individuales por trabajador | 1 de 5 | 20 % | E4 |
+| Señala la trazabilidad de los accesos como una necesidad no cubierta | 1 de 5 | 20 % | E2 |
+| Consolida la información de todas las sedes al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
+| Tarda una hora o más en armar ese consolidado | 2 de 2 (formulario) | 100 % | F4, F5 |
+| Declara reportes desactualizados al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
+| Declara procesos distintos entre sedes al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
+| Sitúa las reservas centralizadas como su primera prioridad | 2 de 2 (formulario) | 100 % | F4, F5 |
+| Sitúa el control de accesos en el último lugar de sus prioridades | 2 de 2 (formulario) | 100 % | F4, F5 |
+| Pagaría S/51 o más al mes y pide una demostración previa | 2 de 2 (formulario) | 100 % | F4, F5 |
 
-El perfil tecnológico declarado por cada respondiente permite verificar que las
-características anteriores provienen de respuestas individuales y no de una
-generalización del segmento.
+El segmento reúne a quienes responden por más de una sede, con cargos de propietario
+multisede, gerente de operaciones, gerente general y Room Division Manager. A
+diferencia del segmento 1, aquí la operación diaria está repartida entre departamentos
+—reservas, recepción, seguridad, almacén y housekeeping— y el entrevistado supervisa
+en lugar de ejecutar. Rafael Prieto (`E3`) describe que no controla directamente las
+existencias del almacén, sino que aprueba los pedidos de las áreas a su cargo; el
+gerente general del Meliá (`E4`) recibe a diario los informes consolidados en lugar de
+revisar reserva por reserva.
 
-<img src="assets/chapter-2/encuesta-perfil-tecnologico.svg" alt="Perfil tecnológico declarado por cada respondiente de las entrevistas complementarias" style="width:100%; height:auto;"/>
+La dificultad que define al segmento no es registrar, sino consolidar. Tres de los
+cinco entrevistados la declaran de forma explícita: Wilson (`E2`) debe coordinar
+constantemente con el administrador de su segunda sede para conocer la disponibilidad;
+José Ramírez (`F4`) describe que cada sede usa hojas distintas y que armar el
+consolidado semanal le toma medio día; Andrea Salazar (`F5`) señala que los reportes
+entre sedes se actualizan con retraso y exigen conciliación manual. En las respuestas
+estructuradas, los reportes desactualizados y los procesos distintos entre sedes
+aparecen con frecuencia semanal o diaria en los dos casos.
 
-*Figura 2.5. Perfil tecnológico declarado por cada respondiente de las entrevistas complementarias.*
+La madurez tecnológica también es desigual, pero se distribuye de otra manera que en
+el segmento 1. Tres de cinco trabajan sobre un PMS corporativo —Opera en el caso de
+`E3` y Opera Cloud integrado con el CRM en el de `E4`—, mientras que `E2` y `F4`
+sostienen operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
+conviven dentro del mismo segmento, y la diferencia tiene consecuencias de producto:
+donde ya existe un PMS corporativo el problema se desplaza hacia la integración entre
+sistemas, y el propio `E4` señala que su plataforma complementaria de housekeeping
+cuesta cerca de USD 1 500 anuales por propiedad, lo que fija una referencia de precio
+para la categoría.
 
-La frecuencia con la que ocurren las incidencias operativas separa a los dos
-segmentos. En el segmento 1 las incidencias se concentran en la operación de una sola
-sede: descuadres de almacén y demoras en el check-in aparecen en las tres respuestas,
-mientras que la trazabilidad de accesos es la preocupación menos frecuente. En el
-segmento 2 las incidencias se desplazan hacia la coordinación entre sedes: los
-reportes desactualizados y los procesos distintos entre sedes se declaran con
-frecuencia semanal o diaria.
+El control de accesos ocupa posiciones opuestas dentro del segmento y conviene
+registrarlo como tal. Las dos respuestas estructuradas lo sitúan en el último lugar de
+sus prioridades, mientras que Wilson (`E2`) lo plantea como su necesidad principal:
+pide tarjetas nominativas por trabajador para poder identificar quién entró a una
+habitación y en qué turno. La diferencia se explica por el punto de partida. Donde ya
+existe un control por usuario individual, como describe `E4` para las operaciones
+sobre reservas, la trazabilidad deja de percibirse como un problema; donde las tarjetas
+se comparten entre personas, se convierte en el motivo principal para adoptar un
+sistema.
 
-<img src="assets/chapter-2/encuesta-frecuencia-incidencias.svg" alt="Frecuencia declarada de incidencias operativas en cada segmento" style="width:100%; height:auto;"/>
+#### Comparación entre los dos segmentos
 
-*Figura 2.6. Frecuencia declarada de incidencias operativas en cada segmento.*
+El perfil tecnológico declarado en cada entrevista permite verificar que las
+características de las tablas anteriores provienen de respuestas individuales y no de
+una generalización del segmento. Las marcas vacías indican que la persona declaró no
+utilizar ese recurso, y los guiones que la entrevista no registró el dato.
 
-La prioridad que cada segmento asigna a las capacidades de la operación confirma esa
+<img src="assets/chapter-2/entrevistas-perfil-tecnologico.svg" alt="Perfil tecnológico declarado en cada una de las nueve entrevistas" style="width:100%; height:auto;"/>
+
+*Figura 2.5. Perfil tecnológico declarado en cada entrevista, agrupado por segmento.*
+
+La frecuencia con la que ocurren las incidencias operativas separa a los dos segmentos
+con claridad. En el segmento 1 las incidencias se concentran dentro de una sede:
+descuadres de almacén y demoras en el check-in aparecen en todas las respuestas. En el
+segmento 2 se desplazan hacia la coordinación entre sedes: reportes desactualizados y
+procesos distintos entre sedes se declaran con frecuencia semanal o diaria. Esta
+figura solo puede construirse con las entrevistas complementarias, porque son las que
+recogieron la frecuencia de cada incidencia en una escala comparable.
+
+<img src="assets/chapter-2/entrevistas-frecuencia-incidencias.svg" alt="Frecuencia de incidencias operativas declarada en las entrevistas complementarias" style="width:100%; height:auto;"/>
+
+*Figura 2.6. Frecuencia de incidencias operativas declarada en las entrevistas complementarias.*
+
+La prioridad que cada segmento asigna a las capacidades del producto confirma esa
 separación y ofrece un criterio para ordenar el Product Backlog. Ambos segmentos
 sitúan las reservas y la disponibilidad en primer lugar, pero difieren en el resto: el
 segmento 1 coloca el control de acceso a las habitaciones en segundo lugar, mientras
 que el segmento 2 lo sitúa en el último y adelanta los reportes consolidados.
 
-<img src="assets/chapter-2/encuesta-prioridad-capacidades.svg" alt="Prioridad promedio que cada segmento asigna a las capacidades de la operación" style="width:100%; height:auto;"/>
+<img src="assets/chapter-2/entrevistas-prioridad-capacidades.svg" alt="Prioridad promedio que cada segmento asigna a las capacidades de la operación" style="width:100%; height:auto;"/>
 
 *Figura 2.7. Prioridad promedio que cada segmento asigna a las capacidades de la operación.*
 
-En conjunto, las entrevistas complementarias sostienen tres conclusiones. La primera
-es que la fragmentación de la información se manifiesta de forma distinta en cada
-segmento: en el segmento 1 aparece dentro de una sede, entre el canal por el que llega
-la reserva y la hoja o el sistema donde se registra; en el segmento 2 aparece entre
-sedes, en el tiempo que cuesta consolidar y en la desactualización de los reportes. La
-segunda es que las reservas y la disponibilidad son la capacidad más valorada por
-ambos segmentos, lo que respalda su posición en el Product Backlog. La tercera es que
-la disposición a pagar se concentra entre S/51 y S/300 mensuales en cuatro de los
-cinco respondientes válidos, y que la condición de adopción más repetida es poder
-probar la herramienta antes de comprometerse.
+De este análisis se desprenden cuatro conclusiones que alimentan directamente los
+arquetipos de la sección 2.3. La primera es que la fragmentación de la información se
+manifiesta de forma distinta en cada segmento: dentro de la sede en el segmento 1,
+entre sedes en el segmento 2. La segunda es que las reservas y la disponibilidad son
+la capacidad más valorada por ambos, lo que sostiene su posición en el Product
+Backlog. La tercera es que el nivel de digitalización es desigual dentro de cada
+segmento, de modo que el producto debe funcionar tanto para quien parte de un cuaderno
+como para quien ya trabaja con un PMS. La cuarta es que el control de accesos no es una
+prioridad declarada de forma uniforme: resulta decisivo para quien comparte tarjetas
+entre trabajadores y secundario para quien ya cuenta con permisos individuales.
 
-El tamaño de la muestra limita el alcance de estos porcentajes, en especial en el
-segmento 2, donde solo dos de las tres respuestas recibidas corresponden a operaciones
-de dos a cinco sedes. Por ello, estas entrevistas complementan y no sustituyen a las
-entrevistas en video registradas en la sección 2.2.2, y los rasgos que se trasladen a
-las fichas de User Persona deben apoyarse en ambas fuentes.
-
+Dos limitaciones acotan el alcance de estos porcentajes. La primera es el tamaño de la
+muestra: con cuatro y cinco entrevistas por segmento, los porcentajes describen a los
+entrevistados y no permiten inferir proporciones de la población hotelera peruana. La
+segunda es que las dos fuentes no recogen exactamente la misma información, por lo que
+las filas basadas solo en el formulario indican su base. Ambas limitaciones se reducen
+a medida que se incorporen nuevas entrevistas en los siguientes sprints.
 
 ## 2.3. Needfinding
 
