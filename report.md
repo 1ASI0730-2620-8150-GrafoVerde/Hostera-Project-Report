@@ -1049,10 +1049,10 @@ segmento 1 cuenta con una entrevista en video y el segmento 2 con tres.
 
 | Código | Entrevistado | Edad | Distrito y ciudad | Cargo | Segmento |
 | :---: | --- | :---: | --- | --- | :---: |
-| E1 | Otto Cuba | 50 | Huarmey, Áncash | Accionista del Hotel Bahía de Cuba | 1 |
-| E2 | Wilson | 46 | Puno, Puno | Propietario y administrador de hotel | 2 |
+| E1 | Otto Cuba | 50 | Huarmey, Huarmey | Accionista del Hotel Bahía de Cuba | 1 |
+| E2 | Wilson Zapata | 46 | Puno, Puno | Propietario y administrador de hotel | 2 |
 | E3 | Rafael Prieto | 40 | Miraflores, Lima | Room Division Manager | 2 |
-| E4 | Gerente general del Hotel Meliá Lima Miraflores | 40 | Miraflores, Lima | Gerente general | 2 |
+| E4 | Pier Paolo Spigno | 40 | Miraflores, Lima | Gerente general | 2 |
 
 #### Segmento 1: administradores y propietarios de hoteles independientes
 
@@ -1066,15 +1066,14 @@ segmento 1 cuenta con una entrevista en video y el segmento 2 con tres.
 | --- | --- |
 | Nombres y apellidos | Otto Cuba |
 | Edad | 50 años |
-| Distrito y ciudad | Huarmey (playa de Tokio), Áncash |
+| Distrito y ciudad | Huarmey, Huarmey |
 | Ocupación | Accionista del Hotel Bahía de Cuba |
 | Establecimiento | Hospedaje independiente de una sede con cerca de cuatro años de operación |
 | URL de la entrevista | https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12 |
-| Inicio y duración en el video | Por completar |
 
 **Resumen.**
 
-Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en la playa de Tokio, Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
+Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
 
 Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja conjuntamente con la administradora, quienes bloquean y gestionan las reservas de acuerdo con la disponibilidad. Posteriormente, el personal operativo se encarga de direccionar las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se realizan registros manuales que posteriormente son trasladados a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
 
@@ -1088,21 +1087,21 @@ Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que e
 
 #### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras
 
-**Entrevista E2: Wilson**
+**Entrevista E2: Wilson Zapata**
 
-<img src="assets/chapter-2/interview-01-wilson.png" alt="Captura de la entrevista a Wilson" style="display:block; width:60%; height:auto; margin:0 auto;"/>
+<img src="assets/chapter-2/interview-01-wilson.png" alt="Captura de la entrevista a Wilson Zapata" style="display:block; width:60%; height:auto; margin:0 auto;"/>
 
-*Figura 2.2. Captura de la entrevista a Wilson, propietario y administrador de hotel.*
+*Figura 2.2. Captura de la entrevista a Wilson Zapata, propietario y administrador de hotel.*
 
 | Dato | Detalle |
 | --- | --- |
-| Nombres y apellidos | Wilson (apellido: por completar) |
+| Nombres y apellidos | Wilson Zapata |
 | Edad | 46 años |
 | Distrito y ciudad | Puno, Puno |
 | Ocupación | Ingeniero; propietario y administrador de hotel |
 | Establecimiento | Hotel independiente con dos sedes: una de unas 30 habitaciones y otra de unas 15 con sala de eventos |
 | URL de la entrevista | https://1drv.ms/v/c/888b77ed7e85f778/IQB3J3HBJMqLSKvJshn-oZCJAba2jLzRmQtVCD109pJ820c?e=dTzLYR |
-| Inicio y duración en el video | Por completar |
+| Inicio y duración en el video | Inicio en 0:00 · duración 18:10 |
 
 **Resumen.**
 
@@ -1134,7 +1133,7 @@ Finalmente, considera que una mejora importante para la administración del hote
 | Ocupación | Room Division Manager del Hotel Intercontinental Lima Miraflores y del Hotel Índigo Lima Miraflores |
 | Establecimiento | Complejo de dos hoteles de marca internacional (321 y 76 habitaciones) |
 | URL de la entrevista | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I |
-| Inicio y duración en el video | Por completar |
+| Inicio y duración en el video | Inicio en 0:00 · duración 11:38 |
 
 **Resumen.**
 
@@ -1152,21 +1151,21 @@ Finalmente, resalta la importancia de comprender mejor el trabajo del área de h
 
 **Tecnología y canales.** Utiliza Opera como sistema de gestión hotelera. Revisa llegadas, salidas y movimiento de huéspedes desde su domicilio con una laptop y un celular corporativos mediante una VPN autorizada; el acceso remoto está restringido según el cargo.
 
-**Entrevista E4: Gerente general del Hotel Meliá Lima Miraflores**
+**Entrevista E4: Pier Paolo Spigno**
 
-<img src="assets/chapter-2/interview-02-melia-general-manager.png" alt="Captura de la entrevista al gerente general del Hotel Meliá Lima Miraflores" style="display:block; width:60%; height:auto; margin:0 auto;"/>
+<img src="assets/chapter-2/interview-02-melia-general-manager.png" alt="Captura de la entrevista a Pier Paolo Spigno" style="display:block; width:60%; height:auto; margin:0 auto;"/>
 
-*Figura 2.4. Captura de la entrevista al gerente general del Hotel Meliá Lima Miraflores.*
+*Figura 2.4. Captura de la entrevista a Pier Paolo Spigno, gerente general del Hotel Meliá Lima Miraflores.*
 
 | Dato | Detalle |
 | --- | --- |
-| Nombres y apellidos | Por completar |
+| Nombres y apellidos | Pier Paolo Spigno |
 | Edad | 40 años |
 | Distrito y ciudad | Miraflores, Lima |
 | Ocupación | Administrador de negocios turísticos y hoteleros; gerente general |
 | Establecimiento | Dos sedes de una cadena internacional: Meliá Lima Miraflores y Meliá Lima San Isidro |
 | URL de la entrevista | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni |
-| Inicio y duración en el video | Por completar |
+| Inicio y duración en el video | Inicio en 0:00 · duración 9:03 |
 
 **Resumen.**
 
