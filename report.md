@@ -1041,20 +1041,73 @@ información y el control de las diferencias entre establecimientos.
 
 ### 2.2.2. Registro de entrevistas
 
-**Segmento 1: Primer segmento objetivo: administradores y propietarios de hoteles independientes**
+Se registraron cuatro entrevistas en video con responsables de la operación hotelera.
+Cada entrevista se asignó al segmento según la definición de la sección 1.3: el
+segmento 1 reúne a quienes administran un hotel independiente de una sola sede y el
+segmento 2 a quienes supervisan dos o más establecimientos. Con este criterio, el
+segmento 1 cuenta con una entrevista y el segmento 2 con tres. Las entrevistas que
+faltan para completar el mínimo de tres por segmento se registrarán en esta sección
+conforme se realicen.
 
-Entrevista 1:
+| Código | Entrevistado | Edad | Distrito y ciudad | Cargo | Segmento |
+| :---: | --- | :---: | --- | --- | :---: |
+| E1 | Otto Cuba | 50 | Huarmey, Áncash | Accionista del Hotel Bahía de Cuba | 1 |
+| E2 | Wilson | 46 | Puno, Puno | Propietario y administrador de hotel | 2 |
+| E3 | Rafael Prieto | 40 | Miraflores, Lima | Room Division Manager | 2 |
+| E4 | Gerente general del Hotel Meliá Lima Miraflores | 40 | Miraflores, Lima | Gerente general | 2 |
 
-<img src="assets/chapter-2/interview-01-wilson.png" alt="Entrevista 1 de Wilson" style="width:100%; height:auto;"/>
-*Figura 2.1. Entrevista a Wilson, ingeniero y administrador de hotel.*
+#### Segmento 1: administradores y propietarios de hoteles independientes
 
-Entrevistado: Wilson
-<br>Edad: 46 años
-<br>Ocupación: Ingeniero y administrador de hotel
-<br>Ubicación: Puno, Puno
-<br>URL de la entrevista: https://1drv.ms/v/c/888b77ed7e85f778/IQB3J3HBJMqLSKvJshn-oZCJAba2jLzRmQtVCD109pJ820c?e=dTzLYR
+**Entrevista E1: Otto Cuba**
 
-Resumen:
+<img src="assets/chapter-2/interview-04-otto-cuba.png" alt="Captura de la entrevista a Otto Cuba" style="display:block; width:60%; height:auto; margin:0 auto;"/>
+
+*Figura 2.1. Captura de la entrevista a Otto Cuba, accionista del Hotel Bahía de Cuba.*
+
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Otto Cuba |
+| Edad | 50 años |
+| Distrito y ciudad | Huarmey (playa de Tokio), Áncash |
+| Ocupación | Accionista del Hotel Bahía de Cuba |
+| Establecimiento | Hospedaje independiente de una sede con cerca de cuatro años de operación |
+| URL de la entrevista | https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12 |
+| Inicio y duración en el video | Por completar |
+
+**Resumen.**
+
+Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en la playa de Tokio, Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
+
+Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja conjuntamente con la administradora, quienes bloquean y gestionan las reservas de acuerdo con la disponibilidad. Posteriormente, el personal operativo se encarga de direccionar las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se realizan registros manuales que posteriormente son trasladados a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
+
+Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación entre el equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, siendo estos los principales canales utilizados para coordinar las actividades del hospedaje.
+
+Como solución para mejorar la coordinación y acompañar el crecimiento del negocio, considera necesario implementar un sistema que permita automatizar las reservas y brindar una mayor visibilidad del hospedaje mediante una página web. Actualmente se encuentran evaluando un proyecto de implementación de este tipo de sistema debido a las necesidades que han surgido con el crecimiento del establecimiento.
+
+Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que están evaluando financiar la implementación mediante una entidad bancaria, con el objetivo de concretar el proyecto para la nueva temporada del año 2027. De esta manera, buscan avanzar desde una gestión principalmente manual hacia una administración más automatizada de las reservas y con mayor presencia digital.
+
+**Tecnología y canales.** Registra los accesos de huéspedes y personal de forma manual y luego los traslada a una tabla de Excel. El equipo se coordina mediante grupos de WhatsApp y llamadas telefónicas, y los huéspedes llegan principalmente por redes sociales. No utiliza un sistema de reservas y evalúa implementar uno con página web para la temporada 2027.
+
+#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras
+
+**Entrevista E2: Wilson**
+
+<img src="assets/chapter-2/interview-01-wilson.png" alt="Captura de la entrevista a Wilson" style="display:block; width:60%; height:auto; margin:0 auto;"/>
+
+*Figura 2.2. Captura de la entrevista a Wilson, propietario y administrador de hotel.*
+
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Wilson (apellido: por completar) |
+| Edad | 46 años |
+| Distrito y ciudad | Puno, Puno |
+| Ocupación | Ingeniero; propietario y administrador de hotel |
+| Establecimiento | Hotel independiente con dos sedes: una de unas 30 habitaciones y otra de unas 15 con sala de eventos |
+| URL de la entrevista | https://1drv.ms/v/c/888b77ed7e85f778/IQB3J3HBJMqLSKvJshn-oZCJAba2jLzRmQtVCD109pJ820c?e=dTzLYR |
+| Inicio y duración en el video | Por completar |
+
+**Resumen.**
+
 Wilson, ingeniero y administrador de un hotel independiente en Puno, comenta sobre los principales desafíos que enfrenta al gestionar las reservas, accesos, disponibilidad e inventario de dos sedes. Actualmente, administra una sede principal de aproximadamente 30 habitaciones y otra de alrededor de 15 habitaciones, que además cuenta con un espacio para eventos. Señala que una de las principales dificultades es centralizar la información de ambas sedes, ya que debe coordinar constantemente con el administrador de la segunda sede para conocer las habitaciones disponibles.
 
 Para gestionar las reservas, recibe información principalmente mediante WhatsApp, correo electrónico, TikTok y aplicaciones de reservas, pero posteriormente debe trasladarla manualmente a un archivo de Excel, que utiliza como herramienta principal para controlar la disponibilidad y las reservas. Para los accesos utiliza tarjetas de identificación, aunque actualmente estas solo permiten controlar la entrada y salida de las habitaciones. También emplea una computadora para administrar el sistema de tarjetas.
@@ -1067,20 +1120,25 @@ En la segunda sede también se encuentra una sala de eventos, cuyos servicios de
 
 Finalmente, considera que una mejora importante para la administración del hotel sería contar con un sistema centralizado de seguridad y control que permita gestionar los accesos de huéspedes y trabajadores, registrar el uso de los diferentes servicios y administrar la información de ambas sedes. Esto le permitiría reducir el trabajo manual, mejorar la seguridad y tener un mayor control sobre las actividades y servicios que se realizan en el hotel.
 
-**Entrevista 2:**
+**Tecnología y canales.** Usa Excel como herramienta principal para controlar reservas y disponibilidad. Las reservas le llegan por WhatsApp, correo, TikTok y aplicaciones de reserva. Administra desde una computadora un sistema de tarjetas de identificación que solo controla la entrada y salida de las habitaciones. No usa un PMS.
 
-**<img src="assets/chapter-2/interview-03-rafael-prieto.png" alt="Entrevista 2 de Rafael Prieto" style="width:100%; height:auto;"/>**
-*Figura 2.2. Entrevista a Rafael Prieto, Room Division Manager.*
+**Entrevista E3: Rafael Prieto**
 
-Entrevistado: Rafael Prieto, Manager del Hotel Intercontinental Lima Miraflores y Hotel Índigo Lima Miraflores
+<img src="assets/chapter-2/interview-03-rafael-prieto.png" alt="Captura de la entrevista a Rafael Prieto" style="display:block; width:60%; height:auto; margin:0 auto;"/>
 
-<br>Edad: 40 años
+*Figura 2.3. Captura de la entrevista a Rafael Prieto, Room Division Manager.*
 
-Enlace de entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I
-<br>Ocupación: Room Division Manager
-<br>Ubicación: Miraflores, Lima
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Rafael Prieto |
+| Edad | 40 años |
+| Distrito y ciudad | Miraflores, Lima |
+| Ocupación | Room Division Manager del Hotel Intercontinental Lima Miraflores y del Hotel Índigo Lima Miraflores |
+| Establecimiento | Complejo de dos hoteles de marca internacional (321 y 76 habitaciones) |
+| URL de la entrevista | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC901DA6BjRSKuU5x3JudJLAa2SeS-YUguP5l7-N93o1b8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=J85c3I |
+| Inicio y duración en el video | Por completar |
 
-Resumen:
+**Resumen.**
 
 El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y solicitudes especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
 
@@ -1094,21 +1152,26 @@ Respecto a las dificultades, considera que no existe un único problema específ
 
 Finalmente, resalta la importancia de comprender mejor el trabajo del área de housekeeping. Señala que su función no se limita a limpiar habitaciones, sino que también implica cumplir estándares, identificar los gustos y preferencias de los huéspedes y cuidar los detalles durante la preparación de las habitaciones. Considera que este departamento tiene un trabajo altamente demandante y que su aporte es fundamental para la experiencia del huésped, razón por la cual algunas cadenas realizan actividades como el Housekeeping Week para reconocer su trabajo.
 
-**Segmento 2: Primer segmento objetivo: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**
+**Tecnología y canales.** Utiliza Opera como sistema de gestión hotelera. Revisa llegadas, salidas y movimiento de huéspedes desde su domicilio con una laptop y un celular corporativos mediante una VPN autorizada; el acceso remoto está restringido según el cargo.
 
-**Entrevista 1:**
+**Entrevista E4: Gerente general del Hotel Meliá Lima Miraflores**
 
-**<img src="assets/chapter-2/interview-02-melia-general-manager.png" alt="Entrevista 1 del gerente general del Hotel Meliá Lima Miraflores" style="width:100%; height:auto;"/>**
-*Figura 2.3. Entrevista al gerente general del Hotel Meliá Lima Miraflores.*
+<img src="assets/chapter-2/interview-02-melia-general-manager.png" alt="Captura de la entrevista al gerente general del Hotel Meliá Lima Miraflores" style="display:block; width:60%; height:auto; margin:0 auto;"/>
 
-Entrevistado: Gerente general del Hotel Meliá Lima Miraflores
-<br>Edad: 40 años
+*Figura 2.4. Captura de la entrevista al gerente general del Hotel Meliá Lima Miraflores.*
 
-Enlace de entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni
-<br>Ocupación: Administrador de negocios turísticos y hoteleros / Gerente general
-<br>Ubicación: Miraflores, Lima
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Por completar |
+| Edad | 40 años |
+| Distrito y ciudad | Miraflores, Lima |
+| Ocupación | Administrador de negocios turísticos y hoteleros; gerente general |
+| Establecimiento | Dos sedes de una cadena internacional: Meliá Lima Miraflores y Meliá Lima San Isidro |
+| URL de la entrevista | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQCvOeF36LNrRIzEPxPdq4GpAR6at3G-kDTtjlDdXhdzrUY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1IQwni |
+| Inicio y duración en el video | Por completar |
 
-Resumen:
+**Resumen.**
+
 El entrevistado, administrador de negocios turísticos y hoteleros y gerente general de un hotel en Miraflores, comenta sobre los principales procesos y herramientas que utiliza para supervisar las reservas, habitaciones e información de las propiedades que administra. Diariamente recibe informes de recepción, entre ellos el *Flash Manager* y el *History and Forecast*, que le permiten revisar información consolidada, histórica y proyectada. Además, el supervisor de recepción, el área de Experience y el agente de reservas realizan un seguimiento diario de las reservas y sus observaciones, considerando aspectos como el tipo de habitación, tarifa, plan de alimentación y procedencia de la reserva mediante plataformas como Booking y Expedia.
 
 Para la gestión de reservas e inventario utiliza principalmente Opera Cloud, integrado con el CRM. El sistema permite administrar el inventario de habitaciones y realizar seguimiento de las reservas. También facilita el trabajo del *revenue manager*, quien puede modificar las tarifas de acuerdo con la disponibilidad de cada tipo de habitación. Como medida de seguridad, cada trabajador cuenta con un usuario y contraseña personal e intransferible, lo que permite realizar un *tracking* de los movimientos efectuados en las reservas, como cambios de tarifas o incorporación de información.
@@ -1121,30 +1184,7 @@ Como solución complementaria para la administración de habitaciones, comenta q
 
 Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, facilitando así la gestión y supervisión de las operaciones del hotel.
 
-**Entrevista 2:**
-
-**<img src="assets/chapter-2/interview-04-otto-cuba.png" alt="Entrevista 3 de Otto Cuba" style="width:100%; height:auto;"/>**
-*Figura 2.4. Entrevista a Otto Cuba, accionista del Hotel Bahía de Cuba.*
-
-Entrevistado: Otto Cuba
-
-<br>Edad: 50 años
-
-Enlace de entrevista: https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2Fentrevista%20elvis%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E922c884b-726d-4027-b0b8-4c17dee11c12
-<br>Ocupación: Accionista del Hotel Bahía de Cuba
-<br>Ubicación: Playa de Tokio, Huarmey, Áncash
-
-Resumen:
-
-Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en la playa de Tokio, Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
-
-Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja conjuntamente con la administradora, quienes bloquean y gestionan las reservas de acuerdo con la disponibilidad. Posteriormente, el personal operativo se encarga de direccionar las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se realizan registros manuales que posteriormente son trasladados a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
-
-Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación entre el equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, siendo estos los principales canales utilizados para coordinar las actividades del hospedaje.
-
-Como solución para mejorar la coordinación y acompañar el crecimiento del negocio, considera necesario implementar un sistema que permita automatizar las reservas y brindar una mayor visibilidad del hospedaje mediante una página web. Actualmente se encuentran evaluando un proyecto de implementación de este tipo de sistema debido a las necesidades que han surgido con el crecimiento del establecimiento.
-
-Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que están evaluando financiar la implementación mediante una entidad bancaria, con el objetivo de concretar el proyecto para la nueva temporada del año 2027. De esta manera, buscan avanzar desde una gestión principalmente manual hacia una administración más automatizada de las reservas y con mayor presencia digital.
+**Tecnología y canales.** Utiliza Opera Cloud integrado con el CRM y recibe a diario los informes *Flash Manager* y *History and Forecast*. Las reservas llegan, entre otros canales, desde Booking y Expedia. Cada trabajador tiene usuario y contraseña personales, y el hotel usa una plataforma complementaria para housekeeping que cuesta cerca de USD 1 500 al año por propiedad, con soporte 24/7.
 
 ### 2.2.3. Análisis de entrevistas
 
