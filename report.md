@@ -1045,9 +1045,7 @@ Se registraron cuatro entrevistas en video con responsables de la operación hot
 Cada entrevista se asignó al segmento según la definición de la sección 1.3: el
 segmento 1 reúne a quienes administran un hotel independiente de una sola sede y el
 segmento 2 a quienes supervisan dos o más establecimientos. Con este criterio, el
-segmento 1 cuenta con una entrevista y el segmento 2 con tres. Las entrevistas que
-faltan para completar el mínimo de tres por segmento se registrarán en esta sección
-conforme se realicen.
+segmento 1 cuenta con una entrevista en video y el segmento 2 con tres.
 
 | Código | Entrevistado | Edad | Distrito y ciudad | Cargo | Segmento |
 | :---: | --- | :---: | --- | --- | :---: |
