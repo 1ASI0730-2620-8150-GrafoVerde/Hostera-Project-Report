@@ -3304,12 +3304,47 @@ Las siguientes herramientas forman parte del entorno actual de colaboración. La
 herramientas SaaS se utilizan mediante sus aplicaciones web oficiales, mientras que
 las herramientas locales se instalan desde sus canales oficiales de distribución.
 
+Las herramientas se agrupan por el propósito que cumplen en el proyecto: gestión del
+código y seguimiento del trabajo, diseño y modelado de la solución, construcción y
+verificación del software, y publicación de evidencias.
+
+**Gestión del código fuente y seguimiento del trabajo**
+
 | Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
 | --- | --- | --- | --- |
+| Git | Controla las versiones locales del informe y de cada producto, y ejecuta el modelo de ramas del equipo. | Instalación local desde el canal oficial de distribución (https://git-scm.com/). | Cada integrante configura su nombre y su correo antes de su primer commit; las ramas siguen el modelo descrito en la sección 5.1.2. |
 | GitHub | Aloja el repositorio del equipo, los repositorios de producto, los issues y el historial de revisiones. | https://github.com/1ASI0730-2620-8150-GrafoVerde | Los cambios se realizan en ramas de trabajo y se integran mediante el flujo Git Flow descrito en la sección 5.1.2. |
+| GitHub Pages | Publica la Landing Page del equipo como sitio estático accesible públicamente. | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | La publicación se realiza desde la rama `main` y la carpeta `/ (root)`; la configuración se detalla en la sección 5.1.4. |
 | YouTrack | Gestiona el Product Backlog y realiza el seguimiento de las historias de usuario y los ítems de trabajo. | https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5 | El trabajo se asocia a un ítem del backlog antes de su implementación y revisión. |
-| Figma | Elabora y comparte los wireflows, prototipos y mock-ups de las aplicaciones web. | https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe. |
-| UXPressia | Elabora los artefactos de impact mapping utilizados para relacionar objetivos, actores, impactos e historias de usuario. | — | Los diagramas exportados se versionan junto con el informe cuando se utilizan como evidencia. |
+
+**Diseño, modelado y documentación de la solución**
+
+| Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
+| --- | --- | --- | --- |
+| Miro | Documenta las sesiones de Big Picture EventStorming y de Design-Level EventStorming. | (enlace del tablero por confirmar) | El tablero se comparte en modo de solo lectura y cada etapa de la sesión se conserva en un frame independiente con su leyenda de colores. |
+| Paper | Elabora el Design System, los wireframes y los mock-ups de la Landing Page y de la aplicación web. | (enlace del archivo `Grafo-verde` por confirmar) | Las pantallas se organizan por página según el producto y se exportan como imágenes versionadas en `assets/`. |
+| FigJam | Elabora los wireflow diagrams que conectan las pantallas con los recorridos de usuario. | https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7 | El board editable conserva los wireflows completos y cada recorrido se exporta como imagen independiente. |
+| Figma | Elabora y comparte el prototipo navegable de la aplicación web, con sus puntos de inicio para escritorio y para navegador móvil. | https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe. |
+| UXPressia | Elabora las User Personas, los journey maps, los empathy maps y el impact mapping que relaciona objetivos, actores, impactos e historias de usuario. | (enlaces públicos por artefacto por confirmar) | Cada artefacto se publica con un enlace de solo lectura y sus exportaciones se versionan junto con el informe cuando se utilizan como evidencia. |
+| Structurizr | Renderiza y exporta las vistas del modelo C4 a partir del DSL versionado en el repositorio del informe. | https://structurizr.com/dsl | El archivo `docs/hostera-structurizr.dsl` es la única fuente de verdad del modelo; las vistas se exportan desde Structurizr y se versionan como imágenes en `assets/`. |
+
+**Construcción y verificación del software**
+
+| Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
+| --- | --- | --- | --- |
+| WebStorm y Visual Studio Code | Editan el código de la Landing Page y de la Frontend Web Application. | Instalación local desde los canales oficiales de distribución. | Las carpetas de configuración local del editor se excluyen del control de versiones; el formato del código se rige por las convenciones de la sección 5.1.3. |
+| Node.js y npm | Ejecutan el entorno de construcción de la Frontend Web Application y la API de datos de demostración. | Instalación local desde https://nodejs.org/ | Las dependencias se declaran en `package.json` y el lockfile generado se conserva en el control de versiones para favorecer instalaciones reproducibles. |
+| Vite | Provee el servidor de desarrollo y el empaquetado de producción de la Frontend Web Application. | https://vite.dev/guide/ | La configuración se mantiene en `vite.config.js`; las variables de entorno se declaran con el prefijo `VITE_` y sin incluir secretos. |
+| json-server | Expone la API de datos de demostración que consume la Frontend Web Application mientras los RESTful Web Services no están implementados. | https://github.com/typicode/json-server | Los datos y las rutas se versionan en `server/db.json` y `server/routes.json` dentro del repositorio del frontend. |
+| .NET SDK | Compila y ejecuta los RESTful Web Services de Hostera en ASP.NET Core. | Instalación local desde https://dotnet.microsoft.com/ | La versión del SDK se fija en el archivo de configuración del repositorio de Web Services; las cadenas de conexión se leen desde variables de entorno. |
+| Postman | Verifica manualmente los endpoints HTTP de los RESTful Web Services y de la API de datos de demostración. | https://www.postman.com/ | Las colecciones de solicitudes se exportan al repositorio de Web Services para que cualquier integrante reproduzca las pruebas. |
+| MySQL | Provee el motor de base de datos relacional de la solución. | https://dev.mysql.com/doc/ | Los scripts de esquema y de datos de ejemplo se versionan en el repositorio de Web Services; las credenciales se proveen mediante variables de entorno. |
+
+**Publicación de evidencias y del entregable**
+
+| Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
+| --- | --- | --- | --- |
+| Microsoft Stream | Aloja los videos de exposición, de entrevistas y de demostración del producto. | Cuenta institucional de la UPC en Microsoft 365. | Cada video se enlaza desde el informe indicando su duración y la marca de tiempo en la que inicia el contenido referido. |
 | Pandoc | Convierte `report.md` y sus recursos locales en el entregable PDF. | Instalación local; la configuración y ejecución están documentadas en `README.md`. | La compilación se ejecuta con `bash scripts/build-pdf.sh`; el archivo generado `report.pdf` permanece sin seguimiento. |
 
 Los repositorios de Landing Page, RESTful Web Services y Frontend Web Applications
@@ -3339,9 +3374,14 @@ repositorios de producto exigidos por el enunciado del proyecto:
 
 | Producto | URL del repositorio | Estado actual |
 | --- | --- | --- |
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Repositorio registrado para la implementación de la Landing Page. |
-| RESTful Web Services | Por registrar | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. |
-| Frontend Web Applications | Por registrar | La URL se añadirá cuando se cree el repositorio de implementación. |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.3.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
+| Frontend Web Applications | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend | Registrado con las ramas `main` y `develop` creadas. Su implementación y su despliegue corresponden al Sprint 2. |
+| RESTful Web Services | Por registrar | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. Mientras no esté implementado, la Frontend Web Application consume la API de datos de demostración descrita en la sección 5.1.1. |
+
+El repositorio del informe (https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report)
+aplica las mismas reglas de ramas, mensajes de commit y versionado que los
+repositorios de producto, de modo que la documentación es trazable con el mismo
+criterio que el código.
 
 El equipo aplica las siguientes ramas de Git Flow:
 
@@ -3366,7 +3406,36 @@ Los releases utilizan Semantic Versioning 2.0.0 (https://semver.org/):
 `MAJOR.MINOR.PATCH`. El primer componente mayor permanece en `0` mientras el
 producto se encuentre en desarrollo inicial; durante esta fase, los cambios
 incompatibles incrementan el componente minor, y las funcionalidades compatibles o
-las correcciones se registran de acuerdo con la política de releases del proyecto.
+las correcciones se registran de acuerdo con la política de releases del proyecto. Cada
+release liberada se marca con un tag anotado `v<MAJOR>.<MINOR>.<PATCH>` sobre el
+commit de merge en `main` y se describe en el archivo `CHANGELOG.md` del repositorio,
+con el formato Keep a Changelog y las secciones `Added`, `Changed`, `Fixed` y
+`Removed`.
+
+Los mensajes de commit siguen la especificación Conventional Commits 1.0.0
+(https://www.conventionalcommits.org/en/v1.0.0/). El mensaje se escribe en inglés,
+con la estructura `<tipo>(<alcance>): <descripción>`, en modo imperativo, con
+inicial minúscula, sin punto final y con un máximo de 72 caracteres en la primera
+línea. El alcance es opcional e identifica la parte del producto afectada, por
+ejemplo `hero`, `nav`, `i18n`, `report` o `release`. Cuando el cambio necesita
+explicación, esta se agrega en el cuerpo del mensaje, separado por una línea en
+blanco.
+
+| Tipo | Se utiliza para | Ejemplo tomado del historial del equipo |
+| --- | --- | --- |
+| `feat` | Incorporar una funcionalidad al producto. | `feat(header): add primary navigation and Hostera mark` |
+| `fix` | Corregir un defecto del comportamiento implementado. | `fix(nav): restore in-page section links on GitHub Pages` |
+| `docs` | Cambiar documentación, incluido el contenido del informe. | `docs(report): add project annexes` |
+| `chore` | Cambiar configuración, dependencias o tareas de soporte que no alteran el comportamiento. | `chore(styles): add Hostera color and type tokens` |
+| `refactor` | Reorganizar el código sin cambiar su comportamiento observable. | `refactor(report): split chapter assets by product` |
+| `test` | Agregar o modificar pruebas automatizadas. | `test(reservations): cover overlapping stay validation` |
+
+Las ramas de funcionalidad se nombran en kebab-case y describen el cambio, no al
+integrante que lo realiza, por ejemplo `feature/scm-development-environment`. Cuando
+una rama atiende un ítem del backlog, su identificador se incorpora al inicio del
+nombre, por ejemplo `feature/us006-starter-plan`. Estas mismas reglas de
+nomenclatura, mensajes y versionado son las que la sección 5.1.3 referencia para los
+repositorios de producto.
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
