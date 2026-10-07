@@ -977,11 +977,12 @@ información y el control de las diferencias entre establecimientos.
 
 ### 2.2.2. Registro de entrevistas
 
-Se registraron cuatro entrevistas en video con responsables de la operación hotelera.
+Se registraron cinco entrevistas en video con responsables de la operación hotelera.
 Cada entrevista se asignó al segmento según la definición de la sección 1.3: el
 segmento 1 reúne a quienes administran un hotel independiente de una sola sede y el
-segmento 2 a quienes supervisan dos o más establecimientos. Con este criterio, el
-segmento 1 cuenta con una entrevista en video y el segmento 2 con tres.
+segmento 2 a quienes supervisan dos o más establecimientos o coordinan su operación
+con otras sedes de una cadena. Con este criterio, el segmento 1 cuenta con una
+entrevista en video y el segmento 2 con cuatro.
 
 | Código | Entrevistado | Edad | Distrito y ciudad | Cargo | Segmento |
 | :---: | --- | :---: | --- | --- | :---: |
@@ -989,6 +990,7 @@ segmento 1 cuenta con una entrevista en video y el segmento 2 con tres.
 | E2 | Wilson Zapata | 46 | Puno, Puno | Propietario y administrador de hotel | 2 |
 | E3 | Rafael Prieto | 40 | Miraflores, Lima | Room Division Manager | 2 |
 | E4 | Pier Paolo Spigno | 40 | Miraflores, Lima | Gerente general | 2 |
+| E5 | Roy Ríos | 38 | Trujillo, Trujillo | Subgerente del Hotel Ibis Trujillo | 2 |
 
 #### Segmento 1: administradores y propietarios de hoteles independientes
 
@@ -1119,6 +1121,70 @@ Como solución complementaria para la administración de habitaciones, comenta q
 Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, facilitando así la gestión y supervisión de las operaciones del hotel.
 
 **Tecnología y canales.** Utiliza Opera Cloud integrado con el CRM y recibe a diario los informes *Flash Manager* y *History and Forecast*. Las reservas llegan, entre otros canales, desde Booking y Expedia. Cada trabajador tiene usuario y contraseña personales, y el hotel usa una plataforma complementaria para housekeeping que cuesta cerca de USD 1 500 al año por propiedad, con soporte 24/7.
+
+**Entrevista E5: Roy Ríos**
+
+<img src="assets/chapter-2/interview-05-roy-rios.png" alt="Captura de la entrevista a Roy Ríos" style="display:block; width:60%; height:auto; margin:0 auto;"/>
+
+*Figura 2.5. Captura de la entrevista a Roy Ríos, subgerente del Hotel Ibis Trujillo.*
+
+| Dato | Detalle |
+| --- | --- |
+| Nombres y apellidos | Roy Ríos |
+| Edad | 38 años |
+| Distrito y ciudad | Trujillo, Trujillo |
+| Ocupación | Subgerente del Hotel Ibis Trujillo, cadena Accor |
+| Establecimiento | Hotel de 112 habitaciones que forma parte de un grupo de tres hoteles Ibis en el Perú (Ibis Estadio San Isidro, Ibis Budget Miraflores e Ibis Trujillo) del inversionista Latin Sur |
+| URL de la entrevista | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQBXkmw7_ruBTJOmqXxAJKrYATbAXyGpF2SWSbsb_yy0aZ0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=i1f2oE |
+| Inicio y duración en el video | Inicio en 0:51 · duración del video 16:23 |
+
+**Resumen.**
+
+Roy Ríos, subgerente del Hotel Ibis Trujillo, explica cómo se gestionan las reservas,
+los accesos y la información de su hotel dentro de la cadena Accor. Tiene 38 años y
+reside en Trujillo, su ciudad natal. Supervisa solo la sede de Trujillo, que cuenta con
+112 habitaciones y es uno de los hoteles con mayor inventario de la ciudad, donde la
+mayoría de hoteles tiene entre 45 y 62 habitaciones. Su ocupación fue de alrededor de
+65 % en el último año y de 71 % el año anterior.
+
+Señala que los responsables de cada hotel no tienen acceso a los ingresos de los otros
+hoteles de la cadena, por lo que no pueden comparar su desempeño. El presupuesto y las
+metas financieras de Trujillo son menores que los de Lima. Tampoco hay movimientos de
+inventario entre sedes: Accor tiene alrededor de 13 hoteles en el Perú y cada uno tiene
+una razón social propia, incluso cuando pertenecen al mismo inversionista. La
+información de cada hotel se mantiene separada; el hotel conserva en un archivo
+interno cinco años de tarjetas de registro, comprobantes de pago y comprobantes de
+proveedores, y no la comparte con otras sedes.
+
+Para el acceso, los huéspedes se registran previamente y los extranjeros también se
+registran ante Migraciones. Las habitaciones usan tarjetas magnéticas: la tarjeta
+activa el ascensor solo hasta el piso asignado y abre únicamente la habitación del
+huésped. Cuando apoyan reservas de otros hoteles, las derivan por correo electrónico
+usando una base de correos genéricos identificados con el código de cada hotel dentro
+de Accor; hoy los correos son nominativos, pero los genéricos siguen funcionando cuando
+no conocen al responsable del área.
+
+Sobre el crecimiento, explica que depende del contexto político, social y de
+seguridad, y de los resultados de los hoteles, porque muchos propietarios son
+inversionistas extranjeros, principalmente chilenos y colombianos. Su hotel forma parte
+del grupo del inversionista Latin Sur, que tiene además cinco hoteles en Chile. Como
+colaboradores de Accor, los gerentes pueden postular a aperturas en otros países.
+
+Respecto a las condiciones para adoptar una solución, indica que los costos se evalúan
+frente a márgenes establecidos en la industria: alrededor de 85 % en alojamiento, entre
+40 % y 45 % en alimentos y bebidas, y una ganancia operativa de 30 % a 35 % de los
+ingresos para el inversionista. En capacitación, el hotel cumple las capacitaciones
+obligatorias que exige la SUNAFIL (hostigamiento, manejo de quejas y reclamaciones, y
+primeros auxilios) y usa las plataformas de Accor para liderazgo, trabajo en equipo,
+manejo del tiempo y procesos operativos como el check-in y la atención en restaurante.
+
+**Tecnología y canales.** Usa Opera Cloud como PMS y Oracle Symphony en las terminales
+táctiles del restaurante. Las reservas se crean y se derivan a otros hoteles de la
+cadena mediante ResaWeb, el portal interno de Accor, que también contiene las tarifas
+confidenciales para empresas. En recepción trabajan con laptops y una tablet para
+afiliar huéspedes al programa de fidelidad. La coordinación con otras sedes se hace por
+correo electrónico, y los accesos se controlan con tarjetas magnéticas vinculadas al
+ascensor y a la habitación.
 
 #### Entrevistas complementarias por formulario
 
@@ -1488,7 +1554,7 @@ utilizar ese recurso, y los guiones que la entrevista no registró el dato.
 
 <img src="assets/chapter-2/entrevistas-perfil-tecnologico.svg" alt="Perfil tecnológico declarado en cada una de las nueve entrevistas" style="width:100%; height:auto;"/>
 
-*Figura 2.5. Perfil tecnológico declarado en cada entrevista, agrupado por segmento.*
+*Figura 2.6. Perfil tecnológico declarado en cada entrevista, agrupado por segmento.*
 
 La frecuencia con la que ocurren las incidencias operativas separa a los dos segmentos
 con claridad. En el segmento 1 las incidencias se concentran dentro de una sede:
@@ -1500,7 +1566,7 @@ recogieron la frecuencia de cada incidencia en una escala comparable.
 
 <img src="assets/chapter-2/entrevistas-frecuencia-incidencias.svg" alt="Frecuencia de incidencias operativas declarada en las entrevistas complementarias" style="width:100%; height:auto;"/>
 
-*Figura 2.6. Frecuencia de incidencias operativas declarada en las entrevistas complementarias.*
+*Figura 2.7. Frecuencia de incidencias operativas declarada en las entrevistas complementarias.*
 
 La prioridad que cada segmento asigna a las capacidades del producto confirma esa
 separación y ofrece un criterio para ordenar el Product Backlog. Ambos segmentos
@@ -1510,7 +1576,7 @@ que el segmento 2 lo sitúa en el último y adelanta los reportes consolidados.
 
 <img src="assets/chapter-2/entrevistas-prioridad-capacidades.svg" alt="Prioridad promedio que cada segmento asigna a las capacidades de la operación" style="width:100%; height:auto;"/>
 
-*Figura 2.7. Prioridad promedio que cada segmento asigna a las capacidades de la operación.*
+*Figura 2.8. Prioridad promedio que cada segmento asigna a las capacidades de la operación.*
 
 De este análisis se desprenden cuatro conclusiones que alimentan directamente los
 arquetipos de la sección 2.3. La primera es que la fragmentación de la información se
@@ -1539,11 +1605,11 @@ Para ello seleccionamos los siguientes perfiles:
 
 User Persona 1
 ![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
-*Figura 2.8. User Persona de Steven Huarcaya.*
+*Figura 2.9. User Persona de Steven Huarcaya.*
 ---
 User Persona 2
 ![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
-*Figura 2.9. User Persona de Anyeli Cárdenas.*
+*Figura 2.10. User Persona de Anyeli Cárdenas.*
 ### 2.3.2. User Task Matrix
 En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
 
@@ -1601,7 +1667,7 @@ En esta sección se presentan los User Journey Maps en su versión **As-Is** (si
 El *journey* actual de Steven abarca desde la recepción de solicitudes de reserva por canales dispersos hasta la revisión del inventario y la entrega física de llaves en el hotel. El proceso se caracteriza por una alta dependencia de registros manuales y una constante interrupción operativa para resolver incidencias.
 
 ![As-Is User Journey Map - Steven Huarcaya](assets/chapter-2/StevenHuarcaya_journeymap.png)
-*Figura 2.10. As-Is User Journey Map de Steven Huarcaya.*
+*Figura 2.11. As-Is User Journey Map de Steven Huarcaya.*
 
 ---
 
@@ -1610,19 +1676,19 @@ El *journey* actual de Steven abarca desde la recepción de solicitudes de reser
 El *journey* actual de Anyeli contempla el proceso de consolidación y supervisión de la operación de múltiples sedes a la distancia. Las etapas clave incluyen la solicitud de reportes a los administradores locales, la consolidación manual de datos de inventario y la verificación diferida de accesos, lo cual genera retrasos y falta de visibilidad en tiempo real.
 
 ![As-Is User Journey Map - Anyeli Cárdenas](assets/chapter-2/AnyeliCardenas_journeymap.png)
-*Figura 2.11. As-Is User Journey Map de Anyeli Cárdenas.*
+*Figura 2.12. As-Is User Journey Map de Anyeli Cárdenas.*
 
 ### 2.3.4. Empathy Mapping
 
 <img src="assets/chapter-2/Empathy%20map-segmento1.png" alt="Empathy Map del segmento 1, Steven Huarcaya" style="display:block; width:65%; height:auto; margin:0 auto;"/>
 
-*Figura 2.12. Empathy Map de Steven Huarcaya.*
+*Figura 2.13. Empathy Map de Steven Huarcaya.*
 
 ---
 
 <img src="assets/chapter-2/Empathy%20map-segmento2%20(1).png" alt="Empathy Map del segmento 2, Anyeli Cárdenas" style="display:block; width:65%; height:auto; margin:0 auto;"/>
 
-*Figura 2.13. Empathy Map de Anyeli Cárdenas.*
+*Figura 2.14. Empathy Map de Anyeli Cárdenas.*
 
 
 ## 2.4. Big Picture EventStorming
@@ -1634,7 +1700,7 @@ posibles problemas y oportunidades que orientan la definición de la solución.
 
 <img src="assets/chapter-2/big-picture-event-storming-hostera.svg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 2.14. Big Picture EventStorming del dominio de Hostera.*
+*Figura 2.15. Big Picture EventStorming del dominio de Hostera.*
 
 ## 2.5. Ubiquitous Language
 
