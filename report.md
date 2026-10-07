@@ -734,15 +734,16 @@ Entre sus características relevantes se encuentran las siguientes:
 La importancia de este segmento se relaciona con la composición de la oferta peruana:
 MINCETUR registró que el 85,1 % de los establecimientos de hospedaje no estaba
 categorizado en 2024 (MINCETUR, 2025). Este indicador describe la estructura de categorización del
-sector y no demuestra por sí solo que todos esos establecimientos sean independientes;
-por ello, la relación entre esta característica y el tipo de propiedad deberá
-validarse mediante entrevistas con administradores y propietarios en el mercado
-peruano.
+sector y no demuestra por sí solo que todos esos establecimientos sean independientes.
+Las entrevistas muestran el perfil del segmento: Otto Cuba (`E1`), accionista de un
+hospedaje de una sola sede en Huarmey, gestiona reservas, habitaciones y accesos con
+registros manuales que luego traslada a Excel, y coordina a su equipo por WhatsApp y
+llamadas.
 
 ### 1.3.2. Gerentes o responsables de operaciones de pequeñas cadenas hoteleras
 
 Este segmento está conformado por personas que supervisan la operación de una cadena
-hotelera pequeña con dos o más sedes. Su responsabilidad consiste en coordinar y
+hotelera pequeña de dos a cinco sedes. Su responsabilidad consiste en coordinar y
 comparar información de reservas, disponibilidad, inventario y accesos entre los
 establecimientos, manteniendo la visibilidad de cada sede y una visión consolidada
 del negocio.
@@ -769,8 +770,10 @@ peruana. En 2024, Lima concentró el 27,6 % de los establecimientos de hospedaje
 seguida por Cusco (8,1 %), Arequipa (5,9 %), Junín (5,7 %) y La Libertad (4,6 %); estas
 cinco regiones reunieron el 52,0 % de la oferta nacional (MINCETUR, 2025). La concentración no
 confirma por sí misma la existencia de cadenas pequeñas, pero evidencia un contexto
-en el que la coordinación entre sedes puede ser relevante y deberá validarse con
-gerentes o responsables de operaciones del sector hotelero peruano.
+en el que la coordinación entre sedes es relevante. Las entrevistas lo confirman:
+Wilson Zapata (`E2`) administra dos sedes en Puno y debe coordinar constantemente con
+el administrador de la segunda para conocer la disponibilidad, y el gerente general
+del Meliá (`E4`) deriva huéspedes entre sus dos sedes cuando hay sobreventa.
 
 Los perfiles de recepción, almacén y control de accesos se consideran usuarios
 operativos relacionados con estos dos segmentos. Los huéspedes son beneficiarios
@@ -1006,7 +1009,7 @@ no participen en la operación del establecimiento.
 | Segmento                                                                 | Criterios de selección del participante                                                                                                        | Contexto que se buscará cubrir                                                                                                                     |
 | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Administradores y propietarios de hoteles independientes**             | Propietario, administrador o responsable de un hotel de una sola sede que participe directamente en decisiones y supervisión operativa.        | Gestión de reservas, disponibilidad, almacén y accesos desde la perspectiva de quien coordina varias áreas en un establecimiento individual.       |
-| **Gerentes o responsables de operaciones de pequeñas cadenas hoteleras** | Persona que coordine o supervise dos o más sedes de una cadena hotelera pequeña y que compare información o resultados entre establecimientos. | Consolidación de reservas, disponibilidad, inventario y accesos; coordinación de equipos y necesidad de mantener separados los datos de cada sede. |
+| **Gerentes o responsables de operaciones de pequeñas cadenas hoteleras** | Persona que coordine o supervise de dos a cinco sedes de una cadena hotelera pequeña y que compare información o resultados entre establecimientos. | Consolidación de reservas, disponibilidad, inventario y accesos; coordinación de equipos y necesidad de mantener separados los datos de cada sede. |
 
 La participación será voluntaria. Antes de iniciar se explicará el propósito académico,
 la duración, el uso del registro y la posibilidad de no responder cualquier pregunta o
@@ -1051,7 +1054,7 @@ persona propietaria o administradora coordina directamente.
 
 #### 2. Segundo segmento objetivo: gerentes o responsables de operaciones de pequeñas cadenas hoteleras
 
-Las preguntas se enfocan en la coordinación de dos o más sedes, la consolidación de
+Las preguntas se enfocan en la coordinación de dos a cinco sedes, la consolidación de
 información y el control de las diferencias entre establecimientos.
 
 | N.º | Pregunta principal                                                                                                               | Pregunta complementaria                                                                                     |
