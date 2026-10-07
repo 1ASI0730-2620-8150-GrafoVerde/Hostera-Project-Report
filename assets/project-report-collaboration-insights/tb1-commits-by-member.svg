@@ -1,235 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="544.912pt" height="208.998984pt" viewBox="0 0 544.912 208.998984" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-06T22:30:37.118365</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 208.998984 
-L 544.912 208.998984 
-L 544.912 0 
-L 0 0 
-z
-" style="fill: #fcfcfb"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 164.112 176.878359 
-L 537.712 176.878359 
-L 537.712 27.178359 
-L 164.112 27.178359 
-z
-" style="fill: #fcfcfb"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <path d="M 164.112 176.878359 
-L 164.112 27.178359 
-" clip-path="url(#pb623a80105)" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_2"/>
-     <g id="text_1">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="164.112" y="187.216953" transform="rotate(-0 164.112 187.216953)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_3">
-      <path d="M 211.886936 176.878359 
-L 211.886936 27.178359 
-" clip-path="url(#pb623a80105)" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_4"/>
-     <g id="text_2">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="211.886936" y="187.216953" transform="rotate(-0 211.886936 187.216953)">5</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_5">
-      <path d="M 259.661872 176.878359 
-L 259.661872 27.178359 
-" clip-path="url(#pb623a80105)" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_6"/>
-     <g id="text_3">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="259.661872" y="187.216953" transform="rotate(-0 259.661872 187.216953)">10</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_7">
-      <path d="M 307.436808 176.878359 
-L 307.436808 27.178359 
-" clip-path="url(#pb623a80105)" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_8"/>
-     <g id="text_4">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="307.436808" y="187.216953" transform="rotate(-0 307.436808 187.216953)">15</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_9">
-      <path d="M 355.211744 176.878359 
-L 355.211744 27.178359 
-" clip-path="url(#pb623a80105)" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_10"/>
-     <g id="text_5">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="355.211744" y="187.216953" transform="rotate(-0 355.211744 187.216953)">20</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_11">
-      <path d="M 402.98668 176.878359 
-L 402.98668 27.178359 
-" clip-path="url(#pb623a80105)" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_12"/>
-     <g id="text_6">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="402.98668" y="187.216953" transform="rotate(-0 402.98668 187.216953)">25</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_13">
-      <path d="M 450.761616 176.878359 
-L 450.761616 27.178359 
-" clip-path="url(#pb623a80105)" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_14"/>
-     <g id="text_7">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="450.761616" y="187.216953" transform="rotate(-0 450.761616 187.216953)">30</text>
-     </g>
-    </g>
-    <g id="xtick_8">
-     <g id="line2d_15">
-      <path d="M 498.536552 176.878359 
-L 498.536552 27.178359 
-" clip-path="url(#pb623a80105)" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linecap: square"/>
-     </g>
-     <g id="line2d_16"/>
-     <g id="text_8">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="498.536552" y="187.216953" transform="rotate(-0 498.536552 187.216953)">35</text>
-     </g>
-    </g>
-    <g id="text_9">
-     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="350.912" y="199.927266" transform="rotate(-0 350.912 199.927266)">Commits en develop entre el 18/09 y el 06/10/2026, sin commits de merge</text>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_17"/>
-     <g id="text_10">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="160.612" y="165.136651" transform="rotate(-0 160.612 165.136651)">Mateo Condori (BeyaminUv)</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_18"/>
-     <g id="text_11">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="160.612" y="135.292154" transform="rotate(-0 160.612 135.292154)">Juan Diego Flores (YopoFlores)</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_19"/>
-     <g id="text_12">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="160.612" y="105.447656" transform="rotate(-0 160.612 105.447656)">Joaquin Cuba (joacuba)</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_20"/>
-     <g id="text_13">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="160.612" y="75.748002" transform="rotate(-0 160.612 75.748002)">José Santana (JhosBY2005)</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_21"/>
-     <g id="text_14">
-      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="160.612" y="45.758661" transform="rotate(-0 160.612 45.758661)">Darnell Cuba (darnell1910)</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_3">
-    <path d="M 164.112 170.073814 
-L 173.666987 170.073814 
-L 173.666987 153.360895 
-L 164.112 153.360895 
-z
-" clip-path="url(#pb623a80105)" style="fill: #2a78d6"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 164.112 140.229316 
-L 202.331949 140.229316 
-L 202.331949 123.516398 
-L 164.112 123.516398 
-z
-" clip-path="url(#pb623a80105)" style="fill: #2a78d6"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 164.112 110.384819 
-L 202.331949 110.384819 
-L 202.331949 93.6719 
-L 164.112 93.6719 
-z
-" clip-path="url(#pb623a80105)" style="fill: #2a78d6"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 164.112 80.540321 
-L 316.991795 80.540321 
-L 316.991795 63.827402 
-L 164.112 63.827402 
-z
-" clip-path="url(#pb623a80105)" style="fill: #2a78d6"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 164.112 50.695823 
-L 488.981565 50.695823 
-L 488.981565 33.982905 
-L 164.112 33.982905 
-z
-" clip-path="url(#pb623a80105)" style="fill: #2a78d6"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 164.112 176.878359 
-L 537.712 176.878359 
-" style="fill: none; stroke: #e3e2de; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="text_15">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="185.132972" y="164.200792" transform="rotate(-0 185.132972 164.200792)">1</text>
-   </g>
-   <g id="text_16">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="213.797934" y="134.356294" transform="rotate(-0 213.797934 134.356294)">4</text>
-   </g>
-   <g id="text_17">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="213.797934" y="104.511797" transform="rotate(-0 213.797934 104.511797)">4</text>
-   </g>
-   <g id="text_18">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="328.45778" y="74.667299" transform="rotate(-0 328.45778 74.667299)">16</text>
-   </g>
-   <g id="text_19">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="500.44755" y="44.822802" transform="rotate(-0 500.44755 44.822802)">34</text>
-   </g>
-   <g id="text_20">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="7.2" y="15.178359" transform="rotate(-0 7.2 15.178359)">Commits por integrante en el repositorio del informe · TB1 (59 commits)</text>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pb623a80105">
-   <rect x="164.112" y="27.178359" width="373.6" height="149.7"/>
-  </clipPath>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="544.912pt" height="208.999pt" viewBox="0 0 544.912 208.999" version="1.1">
+<rect x="0" y="0" width="544.912" height="208.999" fill="#fcfcfb"/>
+<text x="350.8" y="16" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:10.5px;fill:#0b0b0b">Commits por integrante en el repositorio del informe · TB1 (73 commits)</text>
+<line x1="164.00" y1="27.2" x2="164.00" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="164.00" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">0</text>
+<line x1="210.70" y1="27.2" x2="210.70" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="210.70" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">5</text>
+<line x1="257.40" y1="27.2" x2="257.40" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="257.40" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">10</text>
+<line x1="304.10" y1="27.2" x2="304.10" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="304.10" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">15</text>
+<line x1="350.80" y1="27.2" x2="350.80" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="350.80" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">20</text>
+<line x1="397.50" y1="27.2" x2="397.50" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="397.50" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">25</text>
+<line x1="444.20" y1="27.2" x2="444.20" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="444.20" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">30</text>
+<line x1="490.90" y1="27.2" x2="490.90" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="490.90" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">35</text>
+<line x1="537.60" y1="27.2" x2="537.60" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="537.60" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">40</text>
+<rect x="164.0" y="33.19" width="345.58" height="17.96" fill="#2a78d6"/>
+<text x="158.0" y="45.17" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Darnell Cuba (darnell1910)</text>
+<text x="513.58" y="45.17" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">37</text>
+<rect x="164.0" y="63.13" width="252.18" height="17.96" fill="#2a78d6"/>
+<text x="158.0" y="75.11" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">José Santana (JhosBY2005)</text>
+<text x="420.18" y="75.11" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">27</text>
+<rect x="164.0" y="93.07" width="37.36" height="17.96" fill="#2a78d6"/>
+<text x="158.0" y="105.05" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Joaquin Cuba (joacuba)</text>
+<text x="205.36" y="105.05" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">4</text>
+<rect x="164.0" y="123.01" width="37.36" height="17.96" fill="#2a78d6"/>
+<text x="158.0" y="134.99" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Juan Diego Flores (YopoFlores)</text>
+<text x="205.36" y="134.99" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">4</text>
+<rect x="164.0" y="152.95" width="9.34" height="17.96" fill="#2a78d6"/>
+<text x="158.0" y="164.93" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Mateo Condori (BeyaminUv)</text>
+<text x="177.34" y="164.93" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">1</text>
+<line x1="164.0" y1="27.2" x2="164.0" y2="176.90" stroke="#52514e" stroke-width="0.8"/>
+<text x="350.8" y="204.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Commits en develop entre el 18/09 y el 06/10/2026, sin commits de merge</text>
 </svg>
