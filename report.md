@@ -520,8 +520,7 @@ las entrevistas registradas en la sección 2.2, identificadas con sus códigos `
 
 1. El mercado objetivo de Grafo Verde son operaciones hoteleras pequeñas: de los
    28 050 establecimientos de hospedaje del país, el 85,1 % no está categorizado
-   (MINCETUR, 2025), y las diez entrevistas corresponden a operaciones de entre 20 y
-   100 habitaciones.
+   (MINCETUR, 2025).
 2. Estas operaciones pagan por software de gestión: cuatro de los cinco respondientes
    válidos del formulario declaran que pagarían S/51 o más al mes, y el gerente general
    entrevistado (`E4`) ya paga cerca de USD 1 500 anuales por propiedad por una
@@ -532,9 +531,10 @@ las entrevistas registradas en la sección 2.2, identificadas con sus códigos `
 4. La decisión de compra se concentra en el responsable de la operación: en los dos
    segmentos, quien administra o supervisa el establecimiento es también quien evalúa
    y aprueba la herramienta.
-5. Grafo Verde puede construir y validar el producto mínimo viable dentro del alcance
-   académico definido, apoyándose en el flujo de trabajo y las convenciones descritas
-   en la sección 5.1.
+5. Grafo Verde cuenta con la capacidad organizativa para construir y validar el
+   producto por sprints: un equipo de cinco ingenieros de software, el flujo de trabajo
+   y las convenciones de la sección 5.1, y una Landing Page publicada desde el
+   Sprint 1.
 
 **Business Outcome Assumptions**
 
@@ -641,7 +641,8 @@ mes completo de operación.
 
 **Hipótesis 3: Control de existencias por ubicación de almacén**
 
-Creemos que lograremos **que el uso diario sostenga la renovación del plan Starter**
+Creemos que lograremos **una retención mensual del 90 % de los clientes del plan
+Starter**
 si **Steven** obtiene **la alerta de un insumo por debajo de su umbral antes de que
 falte** con **el control de existencias por ubicación de almacén**.
 
@@ -663,8 +664,8 @@ reportes desactualizados dejan de declararse con frecuencia semanal.
 
 **Hipótesis 5: Trazabilidad de los accesos con credenciales RFID**
 
-Creemos que lograremos **que los clientes con tarjetas compartidas entre trabajadores
-contraten Hostera en lugar de una solución de control de acceso por separado** si
+Creemos que lograremos **una retención mensual del 90 % con uso diario del control
+de accesos RFID** si
 **Steven y el personal autorizado** obtienen **la identificación de quién accedió a
 una habitación y en qué momento** con **la relación entre credencial RFID, habitación
 y persona y su historial de eventos**.
@@ -744,6 +745,13 @@ hotelera pequeña con dos o más sedes. Su responsabilidad consiste en coordinar
 comparar información de reservas, disponibilidad, inventario y accesos entre los
 establecimientos, manteniendo la visibilidad de cada sede y una visión consolidada
 del negocio.
+
+Para clasificar a los entrevistados se considera el grupo de establecimientos en
+cuya operación participa la persona, y no el tamaño total de la marca. Forman parte
+del segmento quienes trabajan en un grupo de dos a cinco establecimientos de un mismo
+propietario, complejo o grupo inversionista, aunque esos hoteles lleven la marca de
+una cadena internacional. Quedan fuera quienes administran seis o más
+establecimientos, como las franquicias de gran tamaño.
 
 Entre sus características relevantes se encuentran las siguientes:
 
@@ -1063,9 +1071,9 @@ información y el control de las diferencias entre establecimientos.
 Se registraron cinco entrevistas en video con responsables de la operación hotelera.
 Cada entrevista se asignó al segmento según la definición de la sección 1.3: el
 segmento 1 reúne a quienes administran un hotel independiente de una sola sede y el
-segmento 2 a quienes supervisan dos o más establecimientos o coordinan su operación
-con otras sedes de una cadena. Con este criterio, el segmento 1 cuenta con una
-entrevista en video y el segmento 2 con cuatro.
+segmento 2 a quienes trabajan en un grupo de dos a cinco establecimientos de un mismo
+propietario, complejo o grupo inversionista. Con este criterio, el segmento 1 cuenta
+con una entrevista en video y el segmento 2 con cuatro.
 
 | Código | Entrevistado | Edad | Distrito y ciudad | Cargo | Segmento |
 | :---: | --- | :---: | --- | --- | :---: |
