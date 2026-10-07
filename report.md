@@ -1616,63 +1616,124 @@ a medida que se incorporen nuevas entrevistas en los siguientes sprints.
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
-Esta sección representa los principales perfiles de usuario que fueron creados en base a los segmentos objetivos. El propósito principal de la creación de estos perfiles es el de reflejar de manera precisa las motivaciones, frustraciones y las necesidades reales de nuestros usuarios finales.
 
-Para ello seleccionamos los siguientes perfiles:
+Los User Personas son los arquetipos con los que el equipo representa a cada segmento
+objetivo durante el diseño del producto. Se elabora una ficha por segmento y cada
+rasgo de esas fichas proviene del análisis de entrevistas de la sección 2.2.3 o del
+análisis competitivo de la sección 2.1, de modo que ninguna característica se apoya en
+una suposición del equipo.
+
+Del análisis de entrevistas se toman el contexto de operación, las herramientas y los
+canales que cada segmento utiliza hoy, las frustraciones que declara con mayor
+frecuencia, los objetivos que sitúa en los primeros lugares de sus prioridades y la
+disposición a pagar. Del análisis competitivo se toma el conjunto de alternativas que
+estas personas ya conocen o evalúan, que define el punto de comparación con el que
+recibirán a Hostera. La siguiente tabla indica el origen de los rasgos principales de
+cada ficha.
+
+| Rasgo de la ficha | Resultado del análisis | Fuente |
+| :--- | :--- | :--- |
+| Contexto de operación del segmento 1: un solo establecimiento, con responsabilidad directa sobre la operación completa | 4 de 4 entrevistas del segmento | E1, F1, F2, F3 |
+| Canal de coordinación del segmento 1: WhatsApp | 4 de 4 — 100 % | E1, F1, F2, F3 |
+| Herramienta de registro del segmento 1: hoja de cálculo o cuaderno | 3 de 4 — 75 % | E1, F1, F3 |
+| Dispositivo y navegador del segmento 1: laptop y Chrome | 2 de 3 con dato — 67 % | F2, F3 |
+| Frustraciones del segmento 1: descuadres de almacén y demoras en el check-in, al menos una vez al mes | 3 de 3 — 100 % | F1, F2, F3 |
+| Objetivo del segmento 1: mantener al día las reservas y la disponibilidad | 3 de 3 lo sitúan entre sus dos prioridades | F1, F2, F3 |
+| Contexto de operación del segmento 2: dos o más establecimientos, con responsabilidad de supervisión | 5 de 5 entrevistas del segmento | E2, E3, E4, F4, F5 |
+| Frustración del segmento 2: consolidar la información entre sedes | 3 de 5 — 60 % | E2, F4, F5 |
+| Objetivo del segmento 2: disponer de reservas y reportes centralizados | 2 de 2 lo sitúan en primer lugar | F4, F5 |
+| Disposición a pagar: S/51 o más al mes | 4 de 5 respondientes válidos — 80 % | F1, F2, F4, F5 |
+| Alternativas que ya conocen o evalúan | Análisis competitivo de la sección 2.1 | Nexus PMS, OkFac, SysHotel |
+
+Las fichas se elaboraron en UXPressia, la herramienta indicada para este artefacto, y
+se presentan a continuación.
 
 User Persona 1
+
 ![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
-*Figura 2.8. User Persona de Steven Huarcaya.*
----
+
+*Figura 2.8. User Persona de Steven Huarcaya, segmento de hoteles independientes de una sede.*
+
 User Persona 2
+
 ![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
-*Figura 2.9. User Persona de Anyeli Cárdenas.*
+
+*Figura 2.9. User Persona de Anyeli Cárdenas, segmento de cadenas hoteleras pequeñas.*
+
 ### 2.3.2. User Task Matrix
-En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
 
-Cabe destacar que las tareas analizadas corresponden a las actividades operativas y administrativas reales que Steven lleva a cabo en el hotel para mantener la continuidad del negocio, independientemente de la existencia de la solución de software.
+El User Task Matrix reúne las tareas que los User Personas realizan para sostener la
+operación de su hotel y compara, para cada tarea, con qué frecuencia la ejecutan y qué
+importancia le asignan. Las tareas corresponden a actividades que ambas personas
+llevan a cabo con independencia de que exista Hostera, no a opciones de la solución, y
+su frecuencia e importancia se derivan de lo declarado en las entrevistas de la
+sección 2.2.
 
-### User Task Matrix — Segmento 1: Steven Huarcaya
+Se presenta una sola matriz con una columna por persona, de modo que las coincidencias
+y las diferencias entre los dos segmentos puedan leerse en la misma vista.
 
-| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
-| :--- | :---: | :---: |
-| **Supervisar el estado y la disponibilidad diaria de habitaciones** | Alta *(Diaria)* | Crítica |
-| **Controlar la asignación y entrega de llaves o accesos a los huéspedes** | Alta *(Diaria)* | Crítica |
-| **Verificar el stock e inventario de insumos del almacén** | Media *(Semanal)* | Alta |
-| **Atender o resolver incidencias operativas y sobreventas en recepción** | Media *(Frecuente)* | Crítica |
-| **Registrar y auditar las entradas y salidas del personal autorizado** | Media *(Semanal)* | Alta |
-| **Revisar reportes de costos e insumos consumidos en la operación** | Baja *(Mensual)* | Media |
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Tarea del usuario (<em>User Task</em>)</th>
+      <th colspan="2">Steven Huarcaya<br>Segmento 1 · una sede</th>
+      <th colspan="2">Anyeli Cárdenas<br>Segmento 2 · 2 a 5 sedes</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Supervisar el estado y la disponibilidad de las habitaciones</td><td>Alta (diaria)</td><td>Crítica</td><td>Alta (diaria)</td><td>Crítica</td></tr>
+    <tr><td>Registrar y actualizar las reservas que llegan por distintos canales</td><td>Alta (diaria)</td><td>Crítica</td><td>Media (semanal)</td><td>Alta</td></tr>
+    <tr><td>Atender incidencias de recepción, sobreventas y cambios de habitación</td><td>Alta (diaria)</td><td>Crítica</td><td>Baja (ocasional)</td><td>Media</td></tr>
+    <tr><td>Controlar la asignación y entrega de llaves o credenciales a los huéspedes</td><td>Alta (diaria)</td><td>Crítica</td><td>Baja (ocasional)</td><td>Baja</td></tr>
+    <tr><td>Verificar las existencias de insumos del almacén</td><td>Media (semanal)</td><td>Alta</td><td>Media (semanal)</td><td>Alta</td></tr>
+    <tr><td>Registrar y auditar los accesos del personal autorizado</td><td>Media (semanal)</td><td>Alta</td><td>Media (semanal)</td><td>Alta</td></tr>
+    <tr><td>Consolidar la información operativa de todas las sedes</td><td>No aplica</td><td>No aplica</td><td>Alta (diaria)</td><td>Crítica</td></tr>
+    <tr><td>Coordinar el traslado de insumos o huéspedes entre establecimientos</td><td>No aplica</td><td>No aplica</td><td>Media (quincenal)</td><td>Media</td></tr>
+    <tr><td>Revisar reportes de costos, consumos e indicadores del negocio</td><td>Baja (mensual)</td><td>Media</td><td>Baja (mensual)</td><td>Crítica</td></tr>
+  </tbody>
+</table>
 
----
+**Coincidencias entre los dos segmentos.** Las dos personas sitúan en el primer lugar
+la supervisión del estado y la disponibilidad de las habitaciones, con frecuencia
+diaria e importancia crítica, lo que coincide con que los cinco respondientes del
+formulario coloquen las reservas y la disponibilidad entre sus primeras prioridades.
+Ambas verifican las existencias del almacén y auditan los accesos del personal con
+frecuencia semanal e importancia alta: son tareas de control que ninguna de las dos
+puede abandonar, pero que tampoco ocupan su jornada. La revisión de reportes es
+mensual en los dos casos.
 
-### Análisis del User Task Matrix
+**Diferencias entre los dos segmentos.** La diferencia principal no está en qué tareas
+realizan, sino en quién las ejecuta. Steven registra las reservas, atiende la recepción
+y entrega las credenciales él mismo, con frecuencia diaria e importancia crítica;
+Anyeli delega esas mismas tareas en los administradores de cada sede y las realiza de
+forma ocasional. Esto reproduce lo que describen las entrevistas: Rafael Prieto (`E3`)
+aprueba los pedidos del almacén en lugar de controlar las existencias, y el gerente
+general del Meliá (`E4`) recibe informes consolidados en lugar de revisar reserva por
+reserva.
 
-* **Tareas de mayor frecuencia e importancia:** Las actividades críticas en el día a día de Steven son la **supervisión de la disponibilidad de habitaciones** y el **control de entrega de accesos**. Al ser el responsable directo de la única sede del hotel, coordinar la recepción en tiempo real es vital para evitar cruces de reservas, demoras en el check-in o reclamos de los huéspedes.
-* **Tareas de gestión y control:** La **verificación del inventario de almacén** y el **registro de accesos del personal** representan tareas de frecuencia media pero de importancia alta. Son fundamentales para prevenir fugas de stock (ropa de cama, artículos de aseo) y mantener el control de seguridad física en las instalaciones.
-* **Tareas de consolidación:** La revisión de reportes consolidados de insumos y costos se realiza con menor frecuencia (mensual o quincenal), pues el foco principal del administrador de una sola sede está volcado a la operatividad inmediata y la atención de incidencias diarias.
----
-En esta sección se presenta el User Task Matrix correspondiente al **Segmento 2: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**, representado por la User Persona **Anyeli Cárdenas**.
+A cambio, Anyeli asume dos tareas que no existen en la operación de Steven: consolidar
+la información de todas las sedes, con frecuencia diaria e importancia crítica, y
+coordinar el traslado de insumos o huéspedes entre establecimientos. La primera es la
+tarea más costosa de su jornada —`F4` declara medio día por consolidado semanal y `F5`
+entre una y tres horas diarias— y es la que explica por qué este segmento sitúa los
+reportes consolidados por encima del control de accesos en sus prioridades.
 
-Las tareas identificadas reflejan las actividades estratégicas y de supervisión multisede que Anyeli realiza de forma independiente a la herramienta tecnológica utilizada, enfocándose en la coordinación operativa, el control de recursos y la toma de decisiones.
+La última diferencia está en la importancia de los reportes. Para Steven son una
+revisión mensual de importancia media, porque su foco está en la operación inmediata;
+para Anyeli tienen importancia crítica pese a su baja frecuencia, porque son el insumo
+con el que decide sobre varias sedes a la vez.
 
-### User Task Matrix — Segmento 2: Anyeli Cárdenas
-
-| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
-| :--- | :---: | :---: |
-| **Monitorear y consolidar la ocupación y reservas entre múltiples sedes** | Alta *(Diaria)* | Crítica |
-| **Comparar e identificar discrepancias en el inventario de almacén por sede** | Media *(Semanal)* | Alta |
-| **Auditar el cumplimiento de políticas de acceso e incidencias de seguridad física** | Media *(Semanal)* | Alta |
-| **Coordinar la redistribución de insumos y recursos operativos entre establecimientos** | Media *(Quincenal)* | Media |
-| **Evaluar indicadores operativos globales para la toma de decisiones estratégicas** | Baja *(Mensual)* | Crítica |
-| **Supervisar directamente la asignación puntual de habitaciones o entregas de accesos** | Baja *(Ocasional)* | Baja |
-
----
-
-### Análisis del User Task Matrix
-
-* **Tareas de mayor frecuencia e importancia:** La tarea central de Anyeli es el **monitoreo consolidado de ocupación y reservas**. Al gestionar varias sedes en distintas ubicaciones, necesita comprobar a diario la disponibilidad global para maximizar las ventas y evitar fallos de coordinación entre los equipos de cada establecimiento.
-* **Tareas de control e indicadores estratégicos:** La **comparación de inventarios entre sedes** y la **evaluación mensual de indicadores de rendimiento** tienen una alta importancia estratégica. Permiten identificar qué hotel está consumiendo más recursos o detectar pérdidas imprevistas antes de que afecten la rentabilidad global.
-* **Tareas de baja frecuencia:** A diferencia del administrador de una sola sede, Anyeli realiza de forma muy ocasional la **supervisión directa de entrega de accesos o habitaciones**, ya que estas actividades son delegadas al personal operativo y administradores locales de cada hotel.
+**Consecuencia para el producto.** La matriz indica que las capacidades diarias de
+Hostera deben resolverse primero para el perfil de Steven, que ejecuta todas las tareas
+críticas en persona, mientras que para Anyeli la capacidad decisiva es la consolidación
+entre sedes. Esto sostiene el orden del Product Backlog de la sección 3.3, que sitúa el
+panorama operativo y las reservas antes que los reportes y el control de accesos.
 
 ### 2.3.3. User Journey Mapping
 ## As-Is User Journey Maps
