@@ -191,6 +191,15 @@ fue una actividad compartida.
     - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
     - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
     - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+  - [5.2.2. Sprint 2](#522-sprint-2)
+    - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+    - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+    - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+    - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+    - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+    - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+    - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+    - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -4316,6 +4325,594 @@ La evidencia muestra una distribución de responsabilidades por User Story y
 una integración progresiva de los cambios. La participación de cada integrante
 se mantuvo vinculada con un aspecto funcional concreto y quedó respaldada por
 los commits detallados en la evidencia de desarrollo del Sprint Review.
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+El Sprint 2 se planificó para construir la primera versión de la Frontend Web
+Application de Hostera y publicar una nueva versión de la Landing Page. El alcance
+reúne 21 user stories de las epics `EP002` a `EP006`: el panorama operativo, las
+reservas, las habitaciones, el inventario y el control de accesos. Los RESTful Web
+Services corresponden a una entrega posterior, así que la aplicación trabaja sobre una
+API de datos de demostración construida con json-server.
+
+| Campo | Resumen |
+| --- | --- |
+| Sprint # | Sprint 2 |
+| Sprint Planning Background | Planificación de la primera versión de la Frontend Web Application, organizada por bounded context, y de la versión `v0.4.0` de la Landing Page. |
+| Date | Por completar |
+| Time | Por completar |
+| Location | Por completar |
+| Prepared By | Por completar |
+| Attendees (to planning meeting) | Por completar |
+| Sprint 1 Review Summary | El Sprint 1 cerró con la Landing Page publicada en GitHub Pages y las ocho user stories de `EP001` implementadas. Tras la revisión, el docente observó que las user stories describían la interfaz, que la propuesta mantenía un plan gratuito y que el Sprint Goal se medía por historias terminadas y no por lo que logra el visitante. Esas observaciones se atendieron en el informe y en la versión `v0.3.0` de la Landing Page. |
+| Sprint 1 Retrospective Summary | Por completar |
+| Sprint 2 Goal | Nuestro enfoque está en que el responsable de operaciones de un hotel independiente o de una cadena pequeña pueda llevar desde una sola aplicación web las reservas, las habitaciones, el inventario y las credenciales de acceso de la propiedad con la que trabaja. Creemos que esto le permite dejar de reconstruir el estado de su hotel a partir de registros separados. Esto se confirmará cuando, en la aplicación publicada, una persona pueda pasar del panorama de la propiedad a registrar una reserva, completar el check-in con la emisión de la tarjeta de acceso y registrar un ajuste de existencias sin salir de la aplicación. |
+| Sprint 2 Goal Metric | El objetivo se considera cumplido cuando ese recorrido se completa en la aplicación desplegada en Firebase Hosting, con los datos de demostración publicados en Render. Como condición de entrega, las 21 user stories del sprint deben estar implementadas. |
+| Sprint 2 Velocity | 109 Story Points comprometidos para el sprint. |
+| Sum of Story Points | 109 Story Points. |
+
+La velocity pasó de 42 a 109 story points. El Sprint 1 se resolvió en una sola
+jornada de integración, mientras que el Sprint 2 duró dos semanas, del 23 de
+septiembre al 6 de octubre de 2026, y el trabajo se repartió en ramas paralelas, una
+por bounded context.
+
+Las user stories incluidas en el Sprint 2 son las siguientes. Los story points
+corresponden a la estimación registrada en el Product Backlog.
+
+| User Story ID | User Story | Bounded Context | Story Points | Estado al cierre del sprint |
+| --- | --- | --- | :---: | --- |
+| US011 | Monitor operations across properties | Panorama operativo | 8 | Implementada |
+| US033 | Navigate between operational areas | Navegación compartida | 3 | Implementada |
+| US012 | Find and review bookings | Reservas | 3 | Implementada |
+| US013 | Create a booking | Reservas | 8 | Implementada |
+| US014 | Review and update a booking | Reservas | 5 | Implementada |
+| US015 | Manage the booking lifecycle | Reservas | 5 | Implementada |
+| US016 | Record a booking payment | Reservas | 3 | Implementada |
+| US017 | Complete guest check-in | Reservas | 8 | Implementada |
+| US018 | Complete guest check-out | Reservas | 5 | Implementada |
+| US019 | Review room availability for a selected date | Habitaciones | 5 | Implementada |
+| US020 | Create a room | Habitaciones | 3 | Implementada |
+| US021 | Maintain room information and operational status | Habitaciones | 5 | Implementada |
+| US022 | Manage room types | Habitaciones | 5 | Implementada |
+| US023 | Manage rate plans and daily rates | Habitaciones | 5 | Implementada |
+| US024 | Monitor property inventory | Inventario | 5 | Implementada |
+| US025 | Manage inventory item records | Inventario | 5 | Implementada |
+| US026 | Adjust inventory stock | Inventario | 5 | Implementada |
+| US027 | Manage storage locations | Inventario | 5 | Implementada |
+| US028 | Review and manage RFID credentials | Control de accesos | 5 | Implementada |
+| US029 | Encode or replace an RFID key card | Control de accesos | 8 | Implementada |
+| US030 | Review RFID access events | Control de accesos | 5 | Implementada |
+| **Total** | **21 user stories** | | **109** | **21/21 implementadas** |
+
+Al cierre del sprint, en la aplicación publicada se puede recorrer el flujo que define el
+objetivo: desde el panorama de la propiedad se llega al registro de una reserva, al
+check-in con la emisión de las tarjetas del huésped y al ajuste de existencias del
+almacén. La evidencia está en la sección 5.2.2.5.
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+En el Sprint 2 cada aspecto corresponde a un bounded context de la aplicación, más
+dos aspectos técnicos: la configuración inicial del proyecto y el despliegue con su
+documentación. La matriz se obtuvo del historial del repositorio del frontend. El
+líder de cada aspecto es quien integró su rama en `develop` y concentra la mayor
+parte de sus commits; un colaborador es quien también hizo commits en esa rama.
+
+En la matriz Leadership-and-Collaboration (LACX), `L` representa al líder del aspecto,
+`C` a un colaborador y `—` indica que el integrante no participó en ese aspecto.
+
+| Team Member | GitHub Username | Project Setup | Inventory | Rooms | Bookings | Access Control | Overview and Navigation | Deployment and Documentation |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Cuba Pareja, Joaquin Antonio | `joacuba` | L | — | — | L | C | C | L |
+| Cuba Vega, Darnell Yadir | `darnell1910` | C | L | C | — | C | — | — |
+| Condori Urviola, Mateo Sebastián | `BeyaminUv` | — | C | L | — | — | C | — |
+| Flores Rios, Juan Diego | `YopoFlores` | — | C | C | C | — | L | — |
+| Santana Luna, José Antonio | `JhosBY2005` | — | — | — | C | L | — | — |
+
+Cada integrante lideró al menos un aspecto y todos colaboraron en al menos uno más.
+Darnell Cuba lideró el inventario, Mateo Condori las habitaciones, José Santana el
+control de accesos y Juan Diego Flores el panorama operativo y la navegación. Joaquin
+Cuba lideró las reservas, que es el contexto con más commits, y además la
+configuración inicial y el despliegue.
+
+#### 5.2.2.3. Sprint Backlog 2
+
+El Sprint Backlog 2 descompone las 21 user stories en el trabajo implementado en cada
+bounded context de la aplicación. El tablero del Sprint 2 en YouTrack registra las
+historias, sus responsables y sus story points.
+
+Por completar: captura del tablero del Sprint 2 en YouTrack y su URL pública.
+
+La tabla siguiente presenta el trabajo de cada user story y su estado al cierre del
+sprint. El responsable de cada tarea es el integrante con más commits sobre los
+componentes que implementan la historia, según la matriz de trazabilidad del archivo
+`docs/user-stories.md` del repositorio del frontend.
+
+<table>
+  <thead>
+    <tr>
+      <th>Sprint #</th>
+      <td colspan="7">Sprint 2</td>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Story Id</th>
+      <th>Story Title</th>
+      <th>Task Id</th>
+      <th>Task Title</th>
+      <th>Task Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status<br>(To-do / In-Process / To-Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.1</td><td>Build the operational overview</td><td>Panorama de la propiedad activa con ingresos, ocupación, llegadas del día y estado de las habitaciones, y comparación entre propiedades.</td><td>Por completar</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US033</td><td>Navigate between operational areas</td><td>T033.1</td><td>Build the navigation shell</td><td>Layout de la aplicación, barra lateral y rutas entre las áreas operativas conservando la propiedad activa.</td><td>Por completar</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US012</td><td>Find and review bookings</td><td>T012.1</td><td>Build the booking list and filters</td><td>Listado de reservas con búsqueda por huésped o código y filtros por periodo y estado.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US013</td><td>Create a booking</td><td>T013.1</td><td>Build the booking creation form</td><td>Registro de una reserva con validación de disponibilidad, periodo, capacidad y plan tarifario.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US014</td><td>Review and update a booking</td><td>T014.1</td><td>Build the booking detail and edition</td><td>Detalle de la reserva y edición de sus datos antes de la llegada del huésped.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US015</td><td>Manage the booking lifecycle</td><td>T015.1</td><td>Implement the booking lifecycle</td><td>Confirmación, cancelación con motivo y registro de no-show de una reserva.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US016</td><td>Record a booking payment</td><td>T016.1</td><td>Record booking payments</td><td>Registro de pagos y cálculo del saldo pendiente de cada reserva.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US017</td><td>Complete guest check-in</td><td>T017.1</td><td>Implement guest check-in</td><td>Check-in con verificación del documento del huésped y emisión de sus tarjetas de acceso.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US018</td><td>Complete guest check-out</td><td>T018.1</td><td>Implement guest check-out</td><td>Check-out con cierre del saldo, condición de la habitación y vencimiento de las tarjetas.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US019</td><td>Review room availability for a selected date</td><td>T019.1</td><td>Build the room availability view</td><td>Disponibilidad diaria de las habitaciones a partir de una fecha seleccionada.</td><td>Por completar</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US020</td><td>Create a room</td><td>T020.1</td><td>Build the room creation form</td><td>Registro de habitaciones a partir de su tipo, capacidad y camas.</td><td>Por completar</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US021</td><td>Maintain room information and operational status</td><td>T021.1</td><td>Maintain room details and status</td><td>Detalle de la habitación, calendario mensual y periodos de estado operativo.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US022</td><td>Manage room types</td><td>T022.1</td><td>Manage room types</td><td>Creación, edición y eliminación de tipos de habitación sin uso.</td><td>Por completar</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US023</td><td>Manage rate plans and daily rates</td><td>T023.1</td><td>Manage rate plans and daily rates</td><td>Planes tarifarios y tarifas por noche de cada tipo de habitación.</td><td>Por completar</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US024</td><td>Monitor property inventory</td><td>T024.1</td><td>Build the inventory overview</td><td>Listado de artículos con su condición de stock y sus existencias por ubicación.</td><td>Por completar</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US025</td><td>Manage inventory item records</td><td>T025.1</td><td>Manage inventory item records</td><td>Creación y edición de artículos con su código, categoría, unidad y umbrales.</td><td>Por completar</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US026</td><td>Adjust inventory stock</td><td>T026.1</td><td>Record stock adjustments</td><td>Entradas, salidas y transferencias de stock con su historial de ajustes.</td><td>Por completar</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US027</td><td>Manage storage locations</td><td>T027.1</td><td>Manage storage locations</td><td>Ubicaciones de almacén de la propiedad y los artículos asignados a cada una.</td><td>Por completar</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US028</td><td>Review and manage RFID credentials</td><td>T028.1</td><td>Review and revoke RFID credentials</td><td>Listado y detalle de credenciales RFID con su vigencia y su revocación.</td><td>Por completar</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US029</td><td>Encode or replace an RFID key card</td><td>T029.1</td><td>Encode and replace RFID cards</td><td>Emisión de credenciales de personal y reemplazo de tarjetas con el codificador simulado.</td><td>Por completar</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US030</td><td>Review RFID access events</td><td>T030.1</td><td>Review RFID access events</td><td>Consulta de los eventos de acceso concedidos y denegados por habitación y persona.</td><td>Por completar</td><td>José Santana</td><td>Done</td></tr>
+  </tbody>
+</table>
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2 se trabajó en dos repositorios. En el de la Frontend Web
+Application (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) se construyó la primera versión de la aplicación, publicada como
+`v0.1.0`. En el de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) se agregó el acceso a la aplicación y se
+publicó la versión `v0.4.0`.
+
+El repositorio del frontend se organizó con una rama de funcionalidad por bounded
+context, integradas en `develop` mediante Git Flow. La tabla resume cada rama antes
+del detalle de los commits.
+
+| Rama | Contenido | Líder | Commits | Periodo |
+|---|---|---|---:|---|
+| `feature/project-setup` | Estructura del proyecto con Vue 3, Vite, PrimeVue, Pinia, Vue Router y vue-i18n. | Joaquin Cuba | 6 | 2026-09-23 |
+| `feature/inventory` | Bounded context de inventario: artículos, existencias por ubicación y ajustes. | Darnell Cuba | 34 | 2026-09-23 a 2026-09-25 |
+| `feature/rooms` | Bounded context de habitaciones: disponibilidad, tipos, tarifas y estados. | Mateo Condori | 60 | 2026-09-25 a 2026-09-28 |
+| `feature/bookings` | Bounded context de reservas: registro, ciclo de vida, pagos, check-in y check-out. | Joaquin Cuba | 90 | 2026-09-28 a 2026-10-02 |
+| `feature/access-control` | Bounded context de control de accesos: credenciales RFID y eventos de acceso. | José Santana | 31 | 2026-10-02 a 2026-10-04 |
+| `feature/overview` | Panorama operativo de la propiedad activa y comparación entre propiedades. | Juan Diego Flores | 15 | 2026-10-04 a 2026-10-05 |
+| `feature/interface-refinement` | Ajustes de interfaz y de navegación entre áreas. | Juan Diego Flores | 4 | 2026-10-05 |
+| `feature/documentation` | README, diagrama de clases y user stories del repositorio. | Joaquin Cuba | 7 | 2026-10-06 |
+| `feature/firebase-deployment` | Configuración del despliegue en Firebase Hosting. | Joaquin Cuba | 2 | 2026-10-06 |
+| `feature/render-api-deployment` | Documentación del despliegue de la API de demostración en Render. | Joaquin Cuba | 1 | 2026-10-06 |
+| `release/0.1.0` | Preparación del CHANGELOG y de la versión 0.1.0. | Joaquin Cuba | 1 | 2026-10-06 |
+
+La tabla siguiente registra los 251 commits de implementación del frontend y los
+2 de la Landing Page, sin los commits de merge ni el commit inicial que crea el
+repositorio. Solo dos commits del frontend
+incluyen un cuerpo de mensaje; en los demás la columna queda vacía.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/login-button` | [`2cc618a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/2cc618aa44363f2f040de04169a4c802da91f9d4) | `feat(header): add responsive login link with EN/ES translations` | — | 2026-10-06 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `release/0.4.0` | [`72f46d9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/72f46d9c4c56969563d5ae7d18b24187b31f206d) | `docs(release): prepare changelog for 0.4.0` | — | 2026-10-06 |
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/project-setup` | [`1ff09cf`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1ff09cffc092a1bf1de6233c0ed3d6989152bc06) | `docs: add CHANGELOG.md file` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/project-setup` | [`375c951`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/375c9514ff14758bd713b6067f76c4a76ed9f020) | `build(deps): install project dependencies and lock versions` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/project-setup` | [`5b3c679`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5b3c679e6720f8ee5ba0d0f6b2b9a25a24a2b7d8) | `feat(app): initialize PrimeVue, Pinia, router and i18n` | Replace the starter view with a localized Hostera home page and remove unused template assets. | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/project-setup` | [`edd48e4`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/edd48e4830e152b819c512c0629abd531af17324) | `chore(lint): configure ESLint for JavaScript and Vue` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/project-setup` | [`538320d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/538320d1cce8547a164423615e457f20c7956cbf) | `chore(format): configure Prettier` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/project-setup` | [`572825a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/572825a7025d6f4d71b803868f7dcbf1df1c9e57) | `chore(server): set up development mock API` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`73486ae`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/73486ae4900c403d50b7c60327b568168204462e) | `chore(env): add API environment configuration template` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`4664688`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/4664688f08058ff315b8fecf4241167fee3182e1) | `feat(shared): add reusable HTTP client and CRUD endpoints` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`1464a48`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1464a48c8ad9bd3e9f81ac231f76509528ee22f8) | `chore(server): add property and storage location fixtures` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`074a90d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/074a90d69071354f44dbf22754b3c769ecf57aff) | `chore(server): add inventory items and stock history fixtures` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`11eb6f2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/11eb6f214a473d47fb6b062a06e59cc12ad81b19) | `feat(inventory): add property and storage location models` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`3dca941`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3dca94110502cf547a11f63f8fb8377bbb14a66a) | `feat(inventory): add inventory item model and validation` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`afe2a8a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/afe2a8ac8686030b3fd2a83ede36c1f953c2d9cc) | `feat(inventory): add stock adjustment and transfer rules` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`4adb622`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/4adb6229ff840554154f91e0e4fdb30d4e90c4c5) | `feat(inventory): add property and storage location assemblers` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`2a5cb6d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/2a5cb6dc29316ece3c9adb6f3cafd0d4ce307e8b) | `feat(inventory): add inventory item and stock adjustment assemblers` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`1c8e1a1`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1c8e1a138c89f925a1f885f0ffcf7ea3d24e3c91) | `feat(inventory): add inventory API client` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`6c12751`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6c12751e94517a6109a55ad3cbcee271fe6b2105) | `feat(inventory): add application store and inventory operations` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`b98dc6f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b98dc6f0f4df1bcd53993e7fd7837639997c0f24) | `feat(branding): add Hostera logo and favicon` | — | 2026-09-23 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`0c799a3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0c799a3de86dd52b46767039b64116a609bda592) | `style(app): configure typography and global styles` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`796acad`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/796acade6cca19ebc9cd775c81c9627409e10839) | `feat(theme): configure Hostera theme and PrimeVue components` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`fdcbb91`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/fdcbb91053dea529222f05b6214b9ec5abd5d6af) | `refactor(i18n): organize shared translations by component` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`7437894`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/74378941d52458c5f2b6fe180be17488a7280c72) | `feat(i18n): add English and Spanish inventory translations` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`074b470`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/074b4701bb8a2925aa8428ad313ce583496fb341) | `feat(shared): add reusable brand logo component` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`4d211b4`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/4d211b4af68a60f8711519c3424e19467e57231c) | `feat(shared): add language switcher` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`072672e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/072672e154bbc2272af502bfcd5a886bb6beae81) | `feat(shared): add accessible sidebar toggle` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`71868d0`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/71868d0bd7ea963f78b6d3016562f036381e0e3f) | `feat(inventory): add inventory item avatar` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`1b5c10d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1b5c10d3577dd4b7d2a30f1bf2119ef81f1ce1fc) | `feat(inventory): add storage location avatar` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`1bdcde0`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1bdcde0bd2d2534c678588862f2a5fd589a342ac) | `feat(inventory): add stock condition tag` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`d91a044`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d91a0440902ae0848736a068aaa5f34afc2ce4e3) | `feat(inventory): add inventory item form` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`52c0f84`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/52c0f8404e8d46e2679abeb47bfdb6a146071436) | `feat(inventory): add storage location form` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`aa29bac`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/aa29bac8eecd221b593f35db1994b93f25830286) | `feat(inventory): add stock adjustment form` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`dd8f11a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/dd8f11acb4c244ae690c106a6880aa16e24374b1) | `feat(inventory): add workspace layout and property selector` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`8447afb`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/8447afbde598eedaadfb08ba7ef39e42afa167fb) | `feat(inventory): add storage location list with search and filters` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`b44ffe3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b44ffe341b709aaa7f2a50fa92d88bd1f21d20d2) | `feat(inventory): add storage location detail view` | — | 2026-09-24 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`37fd3b7`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/37fd3b778780392916b84d2253528d169fd969e6) | `feat(inventory): add inventory item list with search and filters` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`59361e9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/59361e98bcddfecf8ef63a55665e286ab614e315) | `feat(inventory): add inventory item detail with stock history` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`260904d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/260904d6b7078885fe2af27b44a13f006d3ba891) | `feat(router): register inventory routes and redirects` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`38edfd4`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/38edfd486c84bfff47cd26165b76adaaa0e47c76) | `feat(shared): add responsive application layout` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`dfd3e8b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/dfd3e8b1717a9f3ea3ed339d68051e89baceee00) | `docs(server): document inventory resources and mock limitations` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory` | [`40504fd`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/40504fdf14dbf62175956094095d70536515ef6c) | `docs: document inventory workspace and environment setup` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`e03b455`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/e03b455c5614215b8efd03e07cae09977204fe8f) | `chore(env): configure Rooms API endpoint variables` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`bb0f550`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/bb0f550f8ffd3d71739dcab578e635c1e1225135) | `chore(server): add room type fixtures and property currencies` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`f21a25a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/f21a25a711b8dc719e64f7e33ca793b69528f362) | `chore(server): add room fixtures` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`598265e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/598265e3ea88948348c8d46d13ae41819ad4b4e8) | `chore(server): add operational status period fixtures` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`b8a13b7`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b8a13b704a665905a29d2671d11e71a6ab66de87) | `chore(server): add reservation and occupancy assignment fixtures` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`280d50d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/280d50ddba191f9621b9bb19ab7d4db3ddca6096) | `feat(rooms): add property model and domain errors` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`532cc15`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/532cc152895571b40b631103f59497138e2e419c) | `feat(rooms): add room type model and validation` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`7ef3299`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/7ef3299fd5de9795c7df77a15e4b21eb448d5149) | `feat(rooms): add room model and day status resolution` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`c9710c4`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c9710c4a4385f67074696b7ebad75f28a266f214) | `feat(rooms): add read-only room assignment model` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`c768935`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c7689354507296c4e5422e75109bc4602239d5ea) | `feat(rooms): add status period rules and status command` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`c24ee04`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c24ee04da3c538da254b45681af8ed8118b3d5bf) | `feat(rooms): add property, room type and room assemblers` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`fe91b9c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/fe91b9ca4f48bc99092993a7bb799c239f8c1252) | `feat(rooms): add status period and assignment assemblers` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`307dd67`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/307dd672b65f1804e8f825aa60af7ba4020cf952) | `feat(rooms): add Rooms API client` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`b50b17a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b50b17ad43a11b57cc049027a6691c06d9072b65) | `feat(rooms): add application store and room management` | — | 2026-09-25 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`1bbcdab`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1bbcdab534e14a044d97129e6e9e595e216f91ba) | `feat(rooms): implement operational status changes and release` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`0a4ce3c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0a4ce3cbf998879e2aebd33b4fddf5569055e436) | `feat(rooms): add calendar navigation and formatting helpers` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`9a38b4e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/9a38b4e14cd245d110039a0b4016e2836664fe9c) | `feat(ui): register calendar controls and extend status tag colors` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`53e7961`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/53e79617b66ca35ad66a4a2bfeb73bc9ab94adfa) | `feat(i18n): add Rooms terminology and workspace translations` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`9c02714`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/9c027149a5cd2ed07726146d0c97574294fd3bdd) | `feat(i18n): add Rooms form, calendar and view translations` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`c939e49`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c939e49a6b609471cbb5074aa625f608798b8cbe) | `feat(rooms): add room avatar component` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`3dd18b4`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3dd18b4777228274664d7e692d1432058f1034fc) | `feat(rooms): add day status tag component` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`d8893f9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d8893f91b236268f4b4af36a52b7d1aae7fe6d27) | `feat(rooms): add workspace layout and property selector` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`d42dae2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d42dae2b1c8f9c9d7d531d41e6eb28c0e0c5b44e) | `feat(rooms): add room type form` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`2889afa`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/2889afaa57bc8372b19a5aa17c43cf0a7b824b3f) | `feat(rooms): add room form` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`f411eb2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/f411eb2fb87c18acb1310563ced55986d80edcb9) | `feat(rooms): add operational status form` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`7ba104e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/7ba104e52ad2239d4898cd24206b546c6eec2aa0) | `feat(rooms): add reservation-controlled day dialog` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`b09d1ed`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b09d1ed1e6e328bad920bc7cd9c16a469177a948) | `feat(rooms): add monthly room calendar` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`b5b4295`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b5b42951fddfbc7b7f6d1ae2e73b592b104a9f0f) | `feat(rooms): add room type list with search and management actions` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`3261702`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3261702ad48b40c22beb4d7c8af3213d7862a485) | `feat(rooms): add weekly availability view and mobile day list` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`60d01ec`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/60d01ecddda502c14461497c69e0d098d5fd011f) | `feat(rooms): add room detail view with monthly status calendar` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`20bb64f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/20bb64f60bf009cb3b9c3997e4d91b3c73066aa3) | `feat(router): register Rooms routes` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`ee1a0f5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/ee1a0f54bd32701f35659501dd57ed64270b57e5) | `feat(shared): add Rooms navigation entry` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`f31c91a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/f31c91a0a71ae021a564b83bbc2cbeb6f2508b0c) | `docs(server): document Rooms resources and status update behavior` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`dbf8fa5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/dbf8fa5fe648f3a7f1cee4a1d417ba45f09078f1) | `docs: document Rooms workspace and environment configuration` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`09b04af`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/09b04af77995e01f0657d84747e852599c722f4b) | `chore(env): configure rate plan and daily rate endpoints` | — | 2026-09-26 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`bff866d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/bff866db20f535c4ac9d1adb7b95cb5e7dc53e05) | `chore(server): add rate plan fixtures` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`8e98c71`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/8e98c71b9157d14a6237bf0f069dbf28c6a97422) | `chore(server): add daily rate fixtures` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`6e21f8b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6e21f8b8b697d91a623b80d50dac46b1e4af7df0) | `refactor(rooms): encapsulate status period date helpers` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`e32917e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/e32917eea8c21263fdd60c10931bfb30c6e37f5a) | `feat(rooms): add rate plan model and validation` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`295c842`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/295c84235d05517b7b14f08346041433446199c4) | `feat(rooms): add daily rate model and date range validation` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`2a90cb0`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/2a90cb011d9808fbe68f1c81b091e2e1e5b0dbb8) | `feat(rooms): add command for setting daily rates` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`6f04289`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6f042890ae2c9a76857ddaed237a5c2514001060) | `feat(rooms): resolve nightly prices with base rate fallback` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`b7f3faf`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b7f3fafed1ad9410868c0e4a02b53b1e1adab9b4) | `feat(rooms): add rate plan resource assembler` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`2af3ea3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/2af3ea3dc2642a4235d8ddbefaaea18fec1c9c4c) | `feat(rooms): add daily rate resource assembler` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`d8dd99e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d8dd99e05efa28035c247194152068ca23eec5b5) | `feat(rooms): add rate plan API operations` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`e52e98a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/e52e98a5b946f8183d36478ba2d192b4c87a8368) | `feat(rooms): add daily rate API operations` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`d594c8f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d594c8fbb27bfd90353062baf92820cc929431dd) | `feat(rooms): load property rates and expose pricing queries` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`c759cfd`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c759cfd4092bc63c60f443cdc75c1da96b5e7c5a) | `feat(rooms): create and update rate plans` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`c2f26d9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c2f26d96f515009e1cb9c6d84dec2af713443193) | `feat(rooms): apply daily rates and restore base prices` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`7e9a2dc`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/7e9a2dcdc800cbc7006c160ff6711a8ca328f686) | `fix(rooms): display local currency symbols consistently` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`3da016a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3da016a219641a9537ab2419c55bc35269c3b055) | `fix(i18n): synchronize PrimeVue texts and date formats with locale` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`b8dc02c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b8dc02ce40c95fc210c0619967597ef4f3675e0c) | `feat(ui): register PrimeVue MultiSelect` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`3c32f72`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3c32f72bfc3922c3b8f69826b12dbd86ee3c80a9) | `feat(i18n): add rate plan terminology and validation messages` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`0d912ba`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0d912ba7044683e56cb8df324a9550984bbee649) | `feat(rooms): add rate plan form with services and cancellation policy` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`22648f5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/22648f56a517344207ff58cbe18e1458b50696f1) | `feat(rooms): add daily rate form with date ranges and base rate reset` | — | 2026-09-27 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`58f9944`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/58f99440d979ed9e360d31fde76b3f9b01d0b5b2) | `feat(rooms): add weekly rates view with plan selection and mobile layout` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`4cdb2d2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/4cdb2d21d0446e87056505f992e3df74f291af33) | `feat(router): register room rates route` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`c83f3c0`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c83f3c099e2f6130176c4884bd19a0a3bfca5d6a) | `feat(rooms): add Rates tab and wait for pricing data` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`85df06a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/85df06ad6d20b9009a642c535e04b83d0cb89cc8) | `docs(server): document rate resources and partial update behavior` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/rooms` | [`cc51043`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/cc51043f7d430cc2a913b530f2def28ccce20796) | `docs: document room rates workspace and endpoint configuration` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`83de5ea`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/83de5ea1562ad63b8618a1447a3f9a613238ecbb) | `refactor(rooms): rename reservation terminology to booking` | Booking is the domain term for a planned guest stay, so Rooms now uses it in code and English UI text. The day status Reserved becomes Booked, room assignments expose bookingCode, the booking-controlled error and dialog replace their reservation names, and demonstration codes use the BKG- prefix. Spanish translations keep "reserva" as the natural term. | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`4b6e106`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/4b6e1060592f5452f886d8724421d8774b1e6d71) | `docs: refer to bookings in Rooms and mock API documentation` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`03535b3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/03535b3e7b11b29102a3fe7bce180edcdcf46ccd) | `chore(env): configure bookings endpoint` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`f0dc12a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/f0dc12acdafeb38a58ecde3e98da0d9e46b17735) | `refactor(shared): share calendar and currency helpers across contexts` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`6c0fb59`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6c0fb5981b48394303ae629ab780f6385aa97538) | `chore(server): add booking fixtures` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`bba6966`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/bba6966301a45e042d6a2c0f631095898ffe39a0) | `feat(bookings): add domain errors` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`c95244c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c95244c911668531a3232430c0a50d7f294d899e) | `feat(bookings): add booking model and attribute validation` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`cd2329c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/cd2329c451473e0e282211caf2fd75a96bec3e17) | `feat(bookings): add stay overlap and pricing comparison rules` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`42a0820`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/42a0820553e9d09cf35600c5ba47680a14cbf04d) | `feat(bookings): generate sequential booking codes per property` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`602bc7a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/602bc7a010ef8ee839a3b5a40777c850c971bcac) | `feat(bookings): add booking resource assembler` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`33524b1`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/33524b193a56414c2864b0ec785df03ac4c48635) | `feat(bookings): add booking API operations` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`ee1af1a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/ee1af1a88e90be98765e6160c45b6c75176b405a) | `feat(rooms): expose operational booking restrictions` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`e61ad1d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/e61ad1d75979f3b0f5e44e923c3faf685129d9d0) | `feat(rooms): link room assignments to bookings` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`8e0a8f4`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/8e0a8f43b79a0526b2e8446f1e5f72d29a10a413) | `refactor(rooms): derive room assignments from bookings` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`69634e9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/69634e9a3cf4fde7e6b19ddbaa7336364567f924) | `feat(bookings): load bookings for the active property` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`5fba935`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5fba9350e8ee0b880655a2043d8da17a7ff1d58d) | `feat(bookings): quote stays and validate room availability` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`cd3a4be`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/cd3a4befa7569ea5a23a80855ab5a127264a6be4) | `feat(bookings): create pending bookings and refresh room availability` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`6a68750`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6a6875067c298e5849bb4399632083cb51e8e88c) | `feat(bookings): update editable bookings and preserve saved prices` | — | 2026-09-28 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`59d2fcf`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/59d2fcfc9520888fbe737b29ed04a72ee2e30af9) | `feat(i18n): add booking terminology and workspace translations` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`0179f6f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0179f6fd09d8ec1008c4e37c5f6ccad562456c78) | `feat(i18n): add booking list, detail and form translations` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`b4bad85`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b4bad8546bbccc6bb9ccf2f5914ac3f4cbc48502) | `feat(bookings): add booking status tag component` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`a581511`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/a581511266cb0234a007f67c24da4e2f51261257) | `feat(bookings): add workspace layout and property selector` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`db2541b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/db2541bb92ec184b3573c5430f2f609d904e9eb5) | `feat(bookings): add searchable booking list with filters and mobile layout` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`dde386f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/dde386f03a5d62cad6fd1fac6bd8959aa33a5b90) | `feat(bookings): add booking detail with guest, stay and price information` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`947a737`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/947a7379338057d39e1064a8757fcbbea66280f9) | `feat(bookings): add booking form with room availability and stay pricing` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`fb4587e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/fb4587e5c4cc1e01a1cf3ea70c2565fc112ac611) | `feat(router): register booking list, detail and form routes` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`ab59f7e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/ab59f7e1fbdf064ed954df1ec8c7efe85494981c) | `feat(shared): add Bookings navigation entry` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`829e74a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/829e74abecce8229dbe0ecf94ad2a80379ff35d0) | `feat(rooms): open controlling bookings from room status dialog` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`e7c9568`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/e7c956893db62e88878f4a54ea73dd5507e53cb8) | `docs(server): document booking resources and availability rules` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`0da1f29`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0da1f298dfee9c633861938b788af47a1d257a2f) | `docs: document Bookings workspace and Rooms integration` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`35ba89d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/35ba89d81b43b020faf2e3d8e8c462ea214f95b7) | `feat(bookings): add booking status audit fields` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`9ca9a2d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/9ca9a2d627e8e31be63224dc5d7cfc754e3ea623) | `feat(bookings): add pending booking confirmation rules` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`e7806ba`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/e7806ba35c96bd437c45857d164ffd21840ba779) | `feat(bookings): add cancellation reasons and command` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`d41ac5b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d41ac5b238e42b5070acebb68cba6fa2cc4172ee) | `feat(bookings): add no-show transition rules` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`ebbd80d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/ebbd80d89e0d8af41562b5f1858a8bd16951afba) | `feat(bookings): add cancelled booking restoration rules` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`1d5ce50`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1d5ce50e25a8bad444a522ac084ef0d888def34b) | `refactor(bookings): share booking update persistence` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`50871fe`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/50871fe4cb1ae1cdced1977aca927f2765531420) | `feat(bookings): persist booking confirmations` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`3b76b8e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3b76b8e322f493942bc8285fbbd70f0627a5e8ee) | `feat(bookings): persist booking cancellations` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`d97732e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d97732ec1e1235c5d56aa4de65b076bca6d37214) | `feat(bookings): persist booking no-show changes` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`bafbcfc`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/bafbcfc812dc68321dff41ff245588c84c209e98) | `feat(bookings): restore bookings when rooms remain available` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`50d769f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/50d769fc05cf2b9017e113bf072016d4a6cc8e2e) | `chore(server): add booking status audit fixtures` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`e85e4d0`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/e85e4d06f8a7c7daf0421aa9eb63f988a19f18df) | `feat(shared): add localized date-time formatting` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`aba0539`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/aba053980a53e67743ba9585300e8cd22a22c166) | `feat(i18n): add booking cancellation reasons and status errors` | — | 2026-09-29 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`11cbe57`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/11cbe574c228744cc21495b68c9df258b1a4671d) | `feat(i18n): add booking status dialog translations` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`8a250e3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/8a250e3be8d3a3e27c2bb712c091cee1e5d68d18) | `feat(i18n): add booking cancellation dialog translations` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`58440e4`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/58440e42a839e1e97ccffd4e73af0d71ec445aed) | `feat(bookings): add confirmation and no-show dialog` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`05ade8b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/05ade8bea698440a8cc695706b43a73d455396f5) | `feat(bookings): add cancellation dialog with reason and note` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`a543680`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/a5436800dada3cb324484e197334164af8753652) | `feat(bookings): add status actions to booking detail` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`033b85a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/033b85a4c1df6472748d3de8fbffe0e475bf8484) | `feat(bookings): show status audit information in booking detail` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`619d1cf`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/619d1cf3ea940b3c773973b40014e09e2cac6fc8) | `feat(bookings): restore cancelled bookings from booking detail` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`345cad2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/345cad250522bc4f493aec663fadf86952f0f89d) | `feat(bookings): prefill new booking forms from existing bookings` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`676e3c2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/676e3c2cfedf443a9715b238f256744656249fea) | `feat(bookings): duplicate cancelled and no-show bookings from detail` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`6fb81ca`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6fb81ca3721617813f2e9e097d6b2bd081ce0758) | `docs(server): document booking status changes and audit fields` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`bb68ae7`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/bb68ae7cb89266c11dd3b76a9c369aaeaf8847c2) | `docs: document booking status and duplication workflows` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`b2c32c8`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b2c32c8844092b3a1560af8077c866fac26b95a4) | `chore(env): configure payments endpoint` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`302c5f9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/302c5f93a396227a862ee87b0d65252a62962beb) | `feat(bookings): add payment model and validation` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`1f2da17`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1f2da17f8dc40e21dda79b3344e98b072a65c1f3) | `feat(bookings): derive booking balance and payment status` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`97b0b3e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/97b0b3eea1d40051055f6f8e3b42c5fe416f3a07) | `feat(bookings): add arrival and departure audit fields` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`cae4916`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/cae4916271b91b0acf911c8d11a10f6adce0ae19) | `feat(bookings): add check-in rules and command` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`cc56f13`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/cc56f13bc1a5793eaf74656922475cb4147a13ad) | `feat(bookings): add check-out rules and command` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`0d71947`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0d719479c83c62d4615146c1cbe15042cb8a6e19) | `feat(bookings): add payment resource assembler` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`813886b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/813886b77fbed0327de68cd00e1974134a360fd0) | `feat(bookings): add payment API operations` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`51522be`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/51522be5092b132d83b5873ad96cf6e763ba66fc) | `refactor(bookings): share property collection loading` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`fe456ba`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/fe456ba6d53120f0cabc06adb2f3480742aec0c7) | `feat(bookings): load payments with property bookings` | — | 2026-09-30 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`a289db9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/a289db91219fdd89f1cca7d599e97f3286143a3c) | `feat(bookings): expose payment history and balance queries` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`b964b46`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b964b464da5aaf5f732d63166613503e04e351ae) | `feat(bookings): record payments within the outstanding balance` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`64e50c1`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/64e50c196ed8ce2fff50d5acd0fb51f529a7dfe2) | `feat(bookings): persist guest check-in` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`b5451e5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b5451e5f7066be441e978935ed9e354c8186cb3c) | `feat(bookings): persist guest check-out` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`52dee13`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/52dee1397c024deeea9a801eb070c47f4f3d43e5) | `chore(server): add arrival and departure booking fixtures` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`a26e540`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/a26e540ace8e7b20dc5e2814f7df0d67b91335f3) | `chore(server): add booking payment fixtures` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`6a4956e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6a4956e480d8d6f760d53285cfa12710b5a8fba6) | `feat(shared): register PrimeVue stepper components` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`9348b35`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/9348b3599ad1ce7112ee47dede13d11145a39609) | `feat(i18n): add payment terminology and validation errors` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`82ee43a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/82ee43a939292827fa1df3fdf79373b5e104249b) | `feat(i18n): add identity and departure terminology` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`59cb8f5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/59cb8f550f279c577bbc181c5914e8dbb578cd1a) | `feat(i18n): add payment form translations` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`6cd54ad`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6cd54add8d90c02bae008f3cf1348e12e5edae1e) | `feat(i18n): add booking payment summary translations` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`eb9ce16`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/eb9ce16a475f22af84a7063f057b768e23e865cb) | `feat(i18n): add check-in workflow translations` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`eaf5938`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/eaf5938bf2d1a353617b8635f3b51a86e5f1efca) | `feat(i18n): add check-out workflow translations` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`3781a88`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3781a88dc07118aa84604c30bc667fb98aebc0bf) | `feat(bookings): add payment status tag component` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`9a961bc`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/9a961bc8b27c74255fd55b8ccad45864c1d5d905) | `feat(bookings): add payment recording drawer` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`2ec5bc8`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/2ec5bc86dfbe7155c4acde80296d15cf7f5de0a3) | `feat(bookings): add payment summary and history component` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`4bb6870`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/4bb6870247a555d0184afa569d09c3a79ea75e7b) | `feat(bookings): show payment status in booking list` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`cf2e42c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/cf2e42cdbadde8bced309ec5114b9fb714dba948) | `feat(bookings): integrate payment summary into booking detail` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`7ecdbc9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/7ecdbc935a71c594717e9986b5293b4829ee9193) | `feat(bookings): add check-in identity verification step` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`3013b78`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3013b78b09b5b44d21dde77b233432a3743c7059) | `feat(bookings): complete check-in after payment review` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`4d79ffd`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/4d79ffdf0a6eb54fee56820a35c38f6217a74b12) | `feat(bookings): add departure review and room condition form` | — | 2026-10-01 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`12c80e0`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/12c80e09a962bf157e8b77a1336d63fc057a420a) | `feat(bookings): show outstanding payments and departure effects` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`83eef92`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/83eef92707a46791256c579c01be4aee86997272) | `feat(bookings): show arrival and departure audit details` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`f2dfd1e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/f2dfd1ec407c06b1da26a2d528173e8c62d6e6aa) | `feat(bookings): register and link check-in and check-out routes` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`5c14ae9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5c14ae92b2b324953f3c9ae1387a25c6467d7eab) | `docs(server): document payments and stay lifecycle updates` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/bookings` | [`7e8cd74`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/7e8cd74ba55fda618e41c4ca1ad54c16ec1d5941) | `docs: document payments and guest arrival workflows` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`1d434c5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1d434c5261f847b45c2a6614186df02a631a77d0) | `feat(access-control): model RFID credentials and access rules` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`9ec71a2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/9ec71a233f48d6cbdc5e822c2001d618593ae923) | `feat(access-control): introduce the property staff catalog` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`cb06a3f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/cb06a3f5764f9e202d91800f34e60add993d8970) | `feat(access-control): connect credential and staff API resources` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`b78cba8`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b78cba855854b45e5831369e2c7fdb49deebfc90) | `feat(access-control): load credentials and staff for the selected property` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`2a326b7`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/2a326b7e515bc6015a6cc104f5d096e0dc51d84a) | `feat(access-control): display credential states with status tags` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`8b1cebe`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/8b1cebe57edcb1d4c78fc59b1178454aceef51ba) | `feat(access-control): simulate RFID card writing and verification` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`5be8380`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5be8380ad8659a95d31514b9941d498004b80ec7) | `feat(access-control): track encoding states and generate unique card IDs` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`0b1bf62`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0b1bf624add47a48594884b2189ff8b4adfc368b) | `feat(access-control): show RFID encoding progress and retry controls` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`850fcff`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/850fcff29e6be22a10238f69b520593c51940ed5) | `feat(access-control): issue one usable credential per staff member` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`f8280f9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/f8280f9dcb09c51b3f8a97ab026d9b39fc1030c6) | `feat(access-control): provide staff credential issuance drawer` | — | 2026-10-02 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`8befd03`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/8befd0346dc10f106b01a69236e44b23115bed1f) | `feat(access-control): provide property selection and loading feedback` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`d1b74fd`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d1b74fd04cfd38ddf770611d7808f76642e53bf2) | `feat(access-control): show credential holder and access period` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`5e05000`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5e05000b9dbfb542490481649608fbc8ed255425) | `feat(access-control): browse credentials with search and status filters` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`6a1de15`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6a1de15e5d45d56fe09cdb9633a194208eafa44a) | `feat(shared): expose access control in application navigation` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`db57e20`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/db57e20f5fc046f9a156d9fd87ea06d7cecb6248) | `feat(access-control): persist credential revocation with operator details` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`caf4469`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/caf44695d69c878b551f0dc32cf80fdbe4723b52) | `feat(access-control): collect revocation reasons in a confirmation dialog` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`5e63a39`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5e63a393c713908030bfb6b7f8df5d2b4b0cad8c) | `feat(access-control): revoke credentials from detail and show audit information` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`03af7f4`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/03af7f4ce8616bd3dba4a796fc7f3b7228378252) | `feat(access-control): replace cards while preserving assigned access` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`16bb564`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/16bb564081bf5dadb96eb16156ea0976098b606a) | `feat(access-control): guide card replacement through an encoding drawer` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`d5bea05`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/d5bea05ecf68079e9bd6a3370b003f359b17ca11) | `feat(access-control): open replacement credentials from the detail view` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`162b784`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/162b784bfcd7c0f3e66eaf87bf25c0703fd46533) | `feat(access-control): introduce read-only access event resources` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`3f41571`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3f415715c3a40192763333ad0c0657d913265204) | `feat(access-control): load access events and query credential history` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`a1c3dc9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/a1c3dc9f7adc70cd161a8e1fa702a83f5584fc6d) | `feat(access-control): inspect granted and denied events in a detail drawer` | — | 2026-10-03 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`7eaf847`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/7eaf84745ca3dca9779bd994198e759cf64e3bc1) | `feat(access-control): browse daily events with result and access point filters` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`19fb0cd`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/19fb0cdebebf7329a9f9c40771411036ef896b50) | `feat(access-control): show recent access events on credential detail` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`dbf3e73`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/dbf3e7399b277148ef95d756b789f2e1b85118a3) | `feat(access-control): manage guest key cards for booking stays` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`3217076`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/321707624415eba6aeb7564403bf15320a2ba861) | `feat(bookings): require encoded key cards when completing check-in` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`0bd0bf3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0bd0bf342cf5e65a8620838d708d6fa9ffa3e78a) | `feat(bookings): encode guest key cards in the check-in workflow` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`9f31bc5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/9f31bc5331a1433fb75f1c80f7dba1625e0583f8) | `feat(bookings): end guest key cards when completing check-out` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`1cd02f9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1cd02f9c16a39be833b597d18f9428279bb399b0) | `feat(bookings): show linked key cards on booking detail` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/access-control` | [`3797f18`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3797f18c4b9127c2854e1291bd68735ec9d45a25) | `docs: describe access control and booking key card workflows` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`7f6510a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/7f6510a34040e780ceb486dbe531b11e35603318) | `build(deps): install Chart.js for dashboard visualizations` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`b50f76b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b50f76b42e81d2afe8e28843568af6089a37c85c) | `feat(overview): provide panels with loading and retry states` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`0f1f9bd`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0f1f9bd249124c040a0677da17c445730f30f5ce) | `feat(overview): derive property summaries from portfolio resources` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`63a5a1b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/63a5a1bc786cbf60f752d6ee6fad8d8cd271a1c5) | `feat(overview): refresh property summaries when bookings change` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`2dbbac3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/2dbbac369eda157e86869b19a9f879c5803a98e5) | `feat(overview): compare property occupancy and available rooms` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`be3b7bf`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/be3b7bf60d587d01d8fd8fe1862bb4ba677e1dd5) | `feat(overview): show today's arrivals with booking actions` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`1147376`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1147376a03561e7b70dbe5355f7bc9ab8019c685) | `feat(overview): use PrimeVue charts and theme colors` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`37f61f7`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/37f61f76298b3f8f821881c1a9e2d67b163ff409) | `feat(overview): summarize room statuses in a doughnut chart` | — | 2026-10-04 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`81f71d2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/81f71d2575e99a98d3dbe67e2cbfcb6024c38206) | `feat(overview): calculate nightly revenue and sold room occupancy` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`dc73036`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/dc7303639083ac29b7b3e147fcbd93014272a908) | `feat(overview): compare performance across reporting periods` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`3b50622`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3b50622f532b0e2eb47252e42f05da99a0da3273) | `feat(overview): chart revenue and occupancy with period selection` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`8647837`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/864783759b8ab3b9cd11105022401462dad4869a) | `feat(overview): search bookings by guest or code with keyboard shortcuts` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`a642533`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/a642533343cab312a37027d9e2d67f60d64b2941) | `feat(overview): make the operations dashboard the default page` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`0dd6018`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0dd601803d4b784506197bccd9987b65e7eeb1bf) | `feat(shared): link the sidebar and brand logo to overview` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/overview` | [`ad6be15`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/ad6be151e4b0de8ebdbca7e412006ee86ddfc126) | `docs: explain overview metrics and booking search` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/interface-refinement` | [`9ceb790`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/9ceb790d53a6f6e6db2740419d0d149d965243ed) | `style(shared): enlarge sidebar navigation and mark the current section` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/interface-refinement` | [`0f3495e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/0f3495e2cb691adead0a5e181de6cbbe449512c4) | `style(overview): match the booking search size to the property selector` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/interface-refinement` | [`468aa41`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/468aa41e7f916754d24813c25e762c67a32909fa) | `style(overview): separate the property overview items` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/interface-refinement` | [`a1616f8`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/a1616f8f62ec56b5c57bdbd3febea3645b01c74e) | `style(overview): center the empty state of today's arrivals` | — | 2026-10-05 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/documentation` | [`3933c80`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3933c80a0f5229e2fe32aadf11e6a0f5fc3d48cf) | `docs: add the MIT license` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/documentation` | [`f7545a9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/f7545a97186d6983675de33a34a7cf2c21368200) | `docs: describe the project and how to run it in the README` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/documentation` | [`edc1e4f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/edc1e4f2a7d48fdac9e2ee147320c5b85d5a77ce) | `docs: record the architecture decisions` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/documentation` | [`79111fc`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/79111fcd7d1250d92ef0a449abb900c5c5b451b2) | `docs: add the class diagram` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/documentation` | [`3d2a99a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3d2a99a46eb71f99ebacd36afa741fdd09bc9b51) | `docs: link the architecture documentation from the README` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/documentation` | [`61320b5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/61320b5c8209cfc27b07ffe18bfda14aed8996dd) | `docs: add the user stories of the application` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/documentation` | [`1bdf6ea`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/1bdf6ea96399576651677cfdce56b96c31bc1966) | `docs: link the user stories from the README` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/firebase-deployment` | [`6185f59`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6185f59d8bc8c33bc0639ad09a5ee0e80c585340) | `build: configure Firebase Hosting deployment` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/firebase-deployment` | [`25a0c54`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/25a0c54d97572adce184d5810cf2d05f66dceb1e) | `docs: explain how to deploy to Firebase Hosting` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/render-api-deployment` | [`c90455b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c90455be152a57923127076189db99131fe21e71) | `docs(server): explain the demonstration deployment on Render` | — | 2026-10-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `release/0.1.0` | [`5b55d45`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5b55d45450e05bcdf6dcb6c003a6dc9e787d76eb) | `docs(release): prepare the 0.1.0 changelog and version` | — | 2026-10-06 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+La primera versión de la Frontend Web Application está disponible en https://hostera-f4116.web.app/ y
+trabaja con los datos de demostración de dos propiedades, Cartagena 04 y Lima 01. Las
+cinco áreas operativas se recorren desde la barra lateral sin perder la propiedad
+activa, y la interfaz se puede usar en inglés o en español.
+
+<img src="assets/chapter-5/sprint-2-web-app-overview.png" alt="Panorama operativo de la propiedad activa en la Frontend Web Application desplegada" style="width:100%; height:auto;"/>
+
+*Figura 5.8. Panorama operativo de la propiedad activa, con ingresos, ocupación, llegadas del día y estado de las habitaciones.*
+
+<img src="assets/chapter-5/sprint-2-web-app-bookings.png" alt="Listado de reservas con su estado y su pago en la Frontend Web Application" style="width:100%; height:auto;"/>
+
+*Figura 5.9. Listado de reservas de la propiedad con su estadía, habitación, estado y pago.*
+
+<img src="assets/chapter-5/sprint-2-web-app-rooms.png" alt="Disponibilidad diaria de las habitaciones en la Frontend Web Application" style="width:100%; height:auto;"/>
+
+*Figura 5.10. Disponibilidad diaria de las habitaciones a partir de la fecha seleccionada.*
+
+<img src="assets/chapter-5/sprint-2-web-app-inventory.png" alt="Listado de artículos de inventario con su condición de stock" style="width:100%; height:auto;"/>
+
+*Figura 5.11. Artículos del inventario con su ubicación principal, existencias y condición de stock.*
+
+<img src="assets/chapter-5/sprint-2-web-app-access-control.png" alt="Credenciales RFID con su titular, acceso, vigencia y estado" style="width:100%; height:auto;"/>
+
+*Figura 5.12. Credenciales RFID de huéspedes y personal con su vigencia y su estado.*
+
+<img src="assets/chapter-5/sprint-2-web-app-bookings-es.png" alt="Vista de reservas en español con el selector de idioma activo" style="width:100%; height:auto;"/>
+
+*Figura 5.13. Vista de reservas en español, con la navegación traducida y el selector de idioma.*
+
+Por completar: URL del video de navegación del Sprint 2 en Microsoft Stream, con su
+duración.
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Los RESTful Web Services de Hostera corresponden a una entrega posterior, por lo que
+en el Sprint 2 la aplicación consume una API de datos de demostración construida con
+json-server y publicada en Render (https://hostera-frontend.onrender.com). json-server no genera documentación
+OpenAPI, de modo que sus endpoints se documentaron en el archivo `server/README.md`
+del repositorio del frontend. La documentación OpenAPI se incorporará junto con los
+Web Services.
+
+La API expone una colección por recurso y admite consultas filtradas por propiedad. La
+tabla resume los endpoints que utiliza la aplicación y las acciones que realiza sobre
+cada uno.
+
+| Endpoint | Acciones / verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+|---|---|---|---|---|
+| `/properties` | `GET` | `GET /properties` | Ninguno. | Arreglo de propiedades con `id`, `organizationId`, `name`, `city` y `currency`. |
+| `/rooms` | `GET`, `POST`, `PUT` | `GET /rooms?propertyId=1`, `POST /rooms`, `PUT /rooms/{id}` | `propertyId` en la consulta; `id` en la ruta. | Habitaciones de la propiedad con su número, tipo, capacidad y camas. |
+| `/room-types` | `GET`, `POST`, `PUT`, `DELETE` | `GET /room-types?propertyId=1`, `DELETE /room-types/{id}` | `propertyId`; `id`. | Tipos de habitación con su capacidad, camas y tarifa base. |
+| `/status-periods` | `GET`, `POST`, `PUT`, `DELETE` | `GET /status-periods?propertyId=1` | `propertyId`; `id`. | Periodos de estado operativo con `startDate` y `endDate` inclusivos. |
+| `/rate-plans` | `GET`, `POST`, `PUT` | `GET /rate-plans?propertyId=1` | `propertyId`; `id`. | Planes tarifarios con los tipos de habitación a los que aplican. |
+| `/daily-rates` | `GET`, `POST`, `PUT`, `DELETE` | `GET /daily-rates?propertyId=1` | `propertyId`; `id`. | Tarifas por noche de cada tipo de habitación y plan. |
+| `/bookings` | `GET`, `POST`, `PUT` | `GET /bookings?propertyId=1`, `GET /bookings/{id}`, `PUT /bookings/{id}` | `propertyId`, `_sort`, `_order` y `_limit` en la consulta; `id`. | Reservas con el huésped, la estadía, la habitación, el plan, el total y los datos de su ciclo de vida, check-in y check-out. |
+| `/payments` | `GET`, `POST` | `GET /payments?propertyId=1`, `POST /payments` | `propertyId`. | Pagos con `bookingId`, `amount`, `method`, `paidAt` y `reference`. |
+| `/inventory-items` | `GET`, `POST`, `PUT` | `GET /inventory-items?propertyId=1`, `PUT /inventory-items/{id}` | `propertyId`; `id`. | Artículos con sus existencias por ubicación y su historial de ajustes. |
+| `/storage-locations` | `GET`, `POST`, `PUT`, `DELETE` | `GET /storage-locations?propertyId=1` | `propertyId`; `id`. | Ubicaciones de almacén de la propiedad. |
+| `/credentials` | `GET`, `POST`, `PUT` | `GET /credentials?propertyId=1`, `PUT /credentials/{id}` | `propertyId`; `id`. | Credenciales RFID con `cardId`, tipo, titular, alcance, vigencia y revocación. |
+| `/staff-members` | `GET` | `GET /staff-members?propertyId=1` | `propertyId`. | Miembros del personal que pueden recibir una credencial. |
+| `/access-events` | `GET` | `GET /access-events?propertyId=1` | `propertyId`. | Eventos de acceso concedidos y denegados en puertas y lectores. |
+
+Los trece endpoints responden en el servicio publicado. La siguiente captura muestra
+la respuesta de `GET /properties` con las dos propiedades de demostración.
+
+<img src="assets/chapter-5/sprint-2-demo-api-render.png" alt="Respuesta JSON del endpoint de propiedades de la API de demostración publicada en Render" style="width:100%; height:auto;"/>
+
+*Figura 5.14. Respuesta de `GET /properties` en la API de demostración publicada en Render.*
+
+La documentación de la API se fue escribiendo por bounded context, a medida que cada
+rama agregaba sus recursos. Los commits correspondientes son
+[`dfd3e8b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/dfd3e8b) para inventario,
+[`f31c91a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/f31c91a) y [`85df06a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/85df06a) para
+habitaciones y tarifas, [`e7c9568`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/e7c9568),
+[`6fb81ca`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/6fb81ca) y [`5c14ae9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5c14ae9) para reservas
+y pagos, y [`c90455b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c90455b) para el despliegue en Render. El
+repositorio que contiene la API es https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+En el Sprint 2 se desplegaron tres productos: la Frontend Web Application, la API de
+datos de demostración que la alimenta y la nueva versión de la Landing Page.
+
+La Frontend Web Application se publica en Firebase Hosting, en el proyecto
+`hostera-f4116`. El archivo `.firebaserc` fija el proyecto y `firebase.json` publica el
+directorio `dist/`, redirige todas las rutas a `index.html` para que Vue Router
+resuelva la navegación y guarda en caché por un año los archivos versionados de
+`dist/assets/`. Antes de publicar, la variable `VITE_HOSTERA_API_URL` del archivo
+`.env.production` se apunta a la API desplegada. El comando `npm run deploy` construye
+la aplicación y la publica con `firebase deploy --only hosting`.
+
+La API de demostración se publica como un Web Service de Render conectado a la rama
+`main` del repositorio del frontend. Se instala con `npm ci` y se inicia con
+`npm run server:start -- --host 0.0.0.0 --port $PORT`, que reconstruye la base de
+datos desde `server/data/` y levanta json-server. Render comprueba el servicio con
+`/properties`. Como cada despliegue reconstruye los datos, los cambios que se hacen
+desde la aplicación duran hasta el siguiente reinicio del servicio.
+
+La Landing Page siguió publicándose en GitHub Pages desde la rama `main`. La versión
+`v0.4.0` agrega en el encabezado, en inglés y en español, el enlace «Sign in» hacia la
+aplicación desplegada.
+
+| Product | Repository | Deployment Platform | Source | Public URL | Version |
+|---|---|---|---|---|---|
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | `v0.4.0` |
+| Frontend Web Application | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Firebase Hosting | `dist/`, construido desde `main` | https://hostera-f4116.web.app/ | `v0.1.0` |
+| API de datos de demostración | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Render (Web Service) | `main`, directorio `server/` | https://hostera-frontend.onrender.com | `v0.1.0` |
+| RESTful Web Services | — | — | — | — | Fuera del alcance del Sprint 2 |
+
+<img src="assets/chapter-5/sprint-2-landing-page-v0-4-0.png" alt="Landing Page publicada en su versión 0.4.0 con el enlace de inicio de sesión en el encabezado" style="width:100%; height:auto;"/>
+
+*Figura 5.15. Landing Page publicada en su versión `v0.4.0`, con el enlace «Sign in» hacia la aplicación.*
+
+La aplicación publicada en Firebase Hosting y la API publicada en Render se muestran
+en las figuras 5.8 a 5.14.
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Los cinco integrantes hicieron commits en el repositorio del frontend durante el
+Sprint 2. El trabajo se organizó por bounded context, con una rama y un líder por
+contexto, y las ramas se integraron en `develop` a medida que se completaban, entre el
+23 de septiembre y el 6 de octubre de 2026.
+
+| Integrante | Aspectos liderados | Commits en el frontend |
+|---|---|---:|
+| Joaquin Cuba (`joacuba`) | Configuración inicial, reservas, despliegue y documentación | 85 |
+| Mateo Condori (`BeyaminUv`) | Habitaciones | 50 |
+| Darnell Cuba (`darnell1910`) | Inventario | 39 |
+| José Santana (`JhosBY2005`) | Control de accesos | 39 |
+| Juan Diego Flores (`YopoFlores`) | Panorama operativo y navegación | 39 |
+| **Total** | | **252** |
+
+El gráfico siguiente se construyó a partir del historial de la rama `develop`, sin
+contar los commits de merge. Incluye el commit inicial del repositorio, por eso suma
+uno más que la tabla de la sección 5.2.2.4.
+
+<img src="assets/chapter-5/sprint-2-commits-by-member.svg" alt="Commits funcionales por integrante en el repositorio del frontend durante el Sprint 2" style="width:100%%; height:auto;"/>
+
+*Figura 5.16. Commits funcionales por integrante en el repositorio del frontend durante el Sprint 2.*
+
+<img src="assets/chapter-5/sprint-2-github-commits.png" alt="Historial de commits del repositorio del frontend en la rama develop" style="width:100%%; height:auto;"/>
+
+*Figura 5.17. Historial de commits del repositorio del frontend en la rama `develop`, con la integración de ramas y de la versión `0.1.0`.*
+
+La distribución es más pareja que en el Sprint 1. Joaquin Cuba concentra más commits
+porque lideró el contexto de reservas, el más extenso del sprint, y la configuración y
+el despliegue; los otros cuatro integrantes suman entre 39 y 50 commits cada uno y
+lideraron un contexto completo.
 
 # Conclusiones
 
