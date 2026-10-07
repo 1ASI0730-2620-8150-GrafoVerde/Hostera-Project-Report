@@ -103,14 +103,14 @@ fue una actividad compartida.
 
 Durante TB1 el informe se trabajó en ramas de funcionalidad que se integraron en
 `develop`, con mensajes Conventional Commits. Entre el 18 de septiembre y el 6 de
-octubre de 2026 se registraron 84 commits sin contar los de merge. Los cinco
+octubre de 2026 se registraron 92 commits sin contar los de merge. Los cinco
 integrantes aportaron al informe; la siguiente tabla resume qué secciones trabajó
 cada uno.
 
 | Integrante | Aportes al informe en TB1 | Commits |
 |---|---|---:|
 | Darnell Cuba (`darnell1910`) | Entorno de desarrollo, control de código y despliegue (5.1); entrevistas complementarias y análisis de entrevistas; Lean UX y su canvas; trazabilidad de las User Personas y matriz de tareas; Sprint 2; conclusiones; registro de versiones. | 37 |
-| José Santana (`JhosBY2005`) | Student Outcome; limpieza de secciones vacías, enlaces y textos de plantilla; bibliografía en APA; user stories sin referencias a la interfaz; objetivo del Sprint 1; registro de entrevistas y criterio del segmento 2; modelo C4; video de navegación del Sprint 2; evidencia de los segmentos, término Booking y herramientas de diseño. | 34 |
+| José Santana (`JhosBY2005`) | Student Outcome; limpieza de secciones vacías, enlaces y textos de plantilla; bibliografía en APA; user stories sin referencias a la interfaz; objetivo del Sprint 1; registro de entrevistas y criterio del segmento 2; modelo C4; video de navegación del Sprint 2; evidencia de los segmentos, término Booking y herramientas de diseño. | 42 |
 | Joaquin Cuba (`joacuba`) | Priorización del Product Backlog; alineación de las user stories con el frontend; formato de enlaces e imágenes en el PDF. | 4 |
 | Juan Diego Flores (`YopoFlores`) | Impact Mapping con objetivos de negocio del modelo SaaS; supuestos del Lean UX. | 4 |
 | Mateo Condori (`BeyaminUv`) | Ajuste del registro de entrevistas; etapas del Big Picture EventStorming e Impact Mapping. | 5 |
