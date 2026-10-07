@@ -11,20 +11,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Added the complementary form interviews, a single interview analysis per segment with percentages and traceable sources, and charts of the respondents' technology profile, incident frequency and capability priority.
 - Added the persona traceability table and a single user task matrix for both personas.
 - Added the Sprint 2 section with the planning, leadership matrix, backlog, development, execution, services documentation, deployment and collaboration evidence of the first frontend version and the landing page `v0.4.0`.
-- Added the deployment configuration of the frontend on Firebase Hosting and of the demonstration API on Render.
+- Added the TB1 version history entry, the TB1 project report collaboration insights and the TB1 student outcome actions and conclusions.
+- Added class diagrams per bounded context with C# conventions and a MySQL database diagram per bounded context, written as Mermaid code in `docs/diagrams`.
+- Added the domain terms used by the event storming and the application to the ubiquitous language.
+- Added the description of the big picture flows, pivotal events and hotspots, and of each design-level event storming frame.
 
 ### Changed
 
 - Rewrote the Lean UX problem statement, assumptions and hypotheses on interview evidence and updated the Lean UX canvas to its second iteration.
+- Grounded the 5W2H analysis on the interview evidence and sized the problem in hours, incident frequency, market size and willingness to pay.
 - Rewrote the landing page and operational user stories without interface wording and reordered the product backlog.
 - Corrected the interview records and their segment assignment, and defined the segment 2 criterion.
 - Replaced the C4 model with the views of the current frontend.
-- Completed the development environment, source code management and deployment configuration sections.
+- Completed the development environment, source code management and deployment configuration sections, and aligned them with the deployed products.
+- Matched the published pricing in the competitor analysis and the landing page metadata in the information architecture.
 - Rewrote the conclusions by product lifecycle stage and formatted the bibliography in APA style.
+- Renamed the chapter 2 images to kebab-case.
 
 ### Removed
 
 - Removed the empty sections reserved for later deliveries.
+- Removed the draft note from the big picture board and the replaced class and database images.
 
 ## [0.3.0] - 2026-09-17
 
