@@ -1621,9 +1621,9 @@ estructuradas, los reportes desactualizados y los procesos distintos entre sedes
 aparecen con frecuencia semanal o diaria en los dos casos.
 
 La madurez tecnológica también es desigual, pero se distribuye de otra manera que en
-el segmento 1. Cuatro de seis trabajan sobre un PMS corporativo —Opera en el caso de
+el segmento 1. Cuatro de seis trabajan sobre un PMS corporativo (Opera en el caso de
 `E3`, Opera Cloud integrado con el CRM en el de `E4` y Opera Cloud con Oracle Symphony
-y el portal interno ResaWeb en el de `E5`—, mientras que `E2` y `F4` sostienen
+y el portal interno ResaWeb en el de `E5`), mientras que `E2` y `F4` sostienen
 operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
 conviven dentro del mismo segmento, y la diferencia tiene consecuencias de producto:
 donde ya existe un PMS corporativo el problema se desplaza hacia la integración entre
@@ -1729,13 +1729,13 @@ cada ficha.
 | Contexto de operación del segmento 1: un solo establecimiento, con responsabilidad directa sobre la operación completa | 4 de 4 entrevistas del segmento | E1, F1, F2, F3 |
 | Canal de coordinación del segmento 1: WhatsApp | 4 de 4 (100 %) | E1, F1, F2, F3 |
 | Herramienta de registro del segmento 1: hoja de cálculo o cuaderno | 3 de 4 (75 %) | E1, F1, F3 |
-| Dispositivo y navegador del segmento 1: laptop y Chrome | 2 de 3 con dato — 67 % | F2, F3 |
+| Dispositivo y navegador del segmento 1: laptop y Chrome | 2 de 3 con dato (67 %) | F2, F3 |
 | Frustraciones del segmento 1: descuadres de almacén y demoras en el check-in, al menos una vez al mes | 3 de 3 (100 %) | F1, F2, F3 |
 | Objetivo del segmento 1: mantener al día las reservas y la disponibilidad | 3 de 3 lo sitúan entre sus dos prioridades | F1, F2, F3 |
 | Contexto de operación del segmento 2: dos o más establecimientos, con responsabilidad de supervisión | 6 de 6 entrevistas del segmento | E2, E3, E4, E5, F4, F5 |
 | Frustración del segmento 2: consolidar la información entre sedes | 3 de 6 (50 %) | E2, F4, F5 |
 | Objetivo del segmento 2: disponer de reservas y reportes centralizados | 2 de 2 lo sitúan en primer lugar | F4, F5 |
-| Disposición a pagar: S/51 o más al mes | 4 de 5 respondientes válidos — 80 % | F1, F2, F4, F5 |
+| Disposición a pagar: S/51 o más al mes | 4 de 5 respondientes válidos (80 %) | F1, F2, F4, F5 |
 | Alternativas que ya conocen o evalúan | Análisis competitivo de la sección 2.1 | Nexus PMS, OkFac, SysHotel |
 
 Las fichas se elaboraron en UXPressia, la herramienta indicada para este artefacto, y
@@ -5304,7 +5304,7 @@ Microsoft. (s.f.-b). _Convenciones y reglas de nomenclatura de identificadores d
 
 Ministerio de Comercio Exterior y Turismo. (2025, 6 de junio). _Perú: Oferta y demanda de establecimientos de hospedaje - Año 2024_. https://www.gob.pe/institucion/mincetur/informes-publicaciones/6844713-informe-peru-oferta-y-demanda-de-establecimientos-de-hospedaje-ano-2024
 
-Montalvo Soluciones Tecnológicas S.A.C. (s.f.). _Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT — OkFac_. Recuperado el 4 de septiembre de 2026, de https://okfac.pe/sistema-hotelero-peru
+Montalvo Soluciones Tecnológicas S.A.C. (s.f.). _Sistema hotelero para hoteles en Perú: PMS con facturación SUNAT | OkFac_. Recuperado el 4 de septiembre de 2026, de https://okfac.pe/sistema-hotelero-peru
 
 Mozilla Developer Network. (s.f.). _JavaScript modules_. Recuperado el 16 de septiembre de 2026, de https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
