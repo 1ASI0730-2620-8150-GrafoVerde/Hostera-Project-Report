@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Added the complementary form interviews, a single interview analysis per segment with percentages and traceable sources, and charts of the respondents' technology profile, incident frequency and capability priority.
+- Added the persona traceability table and a single user task matrix for both personas.
+- Added the Sprint 2 section with the planning, leadership matrix, backlog, development, execution, services documentation, deployment and collaboration evidence of the first frontend version and the landing page `v0.4.0`.
+- Added the deployment configuration of the frontend on Firebase Hosting and of the demonstration API on Render.
+
+### Changed
+
+- Rewrote the Lean UX problem statement, assumptions and hypotheses on interview evidence and updated the Lean UX canvas to its second iteration.
+- Rewrote the landing page and operational user stories without interface wording and reordered the product backlog.
+- Corrected the interview records and their segment assignment, and defined the segment 2 criterion.
+- Replaced the C4 model with the views of the current frontend.
+- Completed the development environment, source code management and deployment configuration sections.
+- Rewrote the conclusions by product lifecycle stage and formatted the bibliography in APA style.
+
+### Removed
+
+- Removed the empty sections reserved for later deliveries.
+
 ## [0.3.0] - 2026-09-17
 
 ### Added
