@@ -3519,85 +3519,97 @@ en un frame por flujo y con la leyenda de la notación utilizada.
 
 ### 4.6.2. Software Architecture Context Diagram
 
-El diagrama de contexto presenta a Hostera como el sistema central para la gestión
-administrativa del hotel. Identifica la interacción del personal del hotel con la
-plataforma y sus relaciones con el sistema de lectores RFID y el servicio externo de
-notificaciones.
+El diagrama de contexto muestra a Hostera como el sistema de software en alcance y a las
+personas y sistemas externos con los que se relaciona. Las tres personas corresponden a
+los segmentos objetivo y a los usuarios operativos: el administrador de un hotel
+independiente, el responsable de operaciones de una pequeña cadena y el personal del
+hotel. Hostera se integra con el sistema de cerraduras RFID del hotel, que codifica las
+tarjetas y reporta los eventos de acceso, y con Twilio SendGrid para enviar las alertas
+de stock bajo.
 
-<img src="assets/chapter-4/Context-diagram-Hostera.svg" alt="Diagrama de contexto del sistema Hostera" style="width:100%; height:auto;"/>
+<img src="assets/chapter-4/c4-context-hostera.svg" alt="Diagrama de contexto de Hostera" style="display:block; width:78%; height:auto; margin:0 auto;"/>
 
-*Figura 4.79. Diagrama de contexto del sistema Hostera.*
+*Figura 4.79. Diagrama de contexto de Hostera.*
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-El diagrama de contenedores descompone Hostera en sus principales unidades de
-ejecución y almacenamiento. La propuesta incluye la aplicación web, los módulos de
-autenticación, reservas y habitaciones, inventario, accesos RFID y dashboard, además
-de las bases de datos y los sistemas externos con los que se integra la plataforma.
+Hostera se compone de cinco contenedores, cada uno desplegable de forma independiente:
 
-<img src="assets/chapter-4/Container-diagram-Hostera.svg" alt="Diagrama de contenedores del sistema Hostera" style="width:100%; height:auto;"/>
+- **Landing Page** (HTML, CSS y JavaScript): presenta los planes a cada segmento y lleva
+  a los visitantes a la aplicación web. Se publica en GitHub Pages.
+- **Web Application** (Vue 3, Pinia y PrimeVue): concentra las funciones de operación
+  del hotel.
+- **Demo API** (Node.js y json-server): sirve los datos de demostración con los mismos
+  recursos que expondrá la RESTful API mientras esta se construye (sección 5.1.4).
+- **RESTful API** (C# y ASP.NET Core): expone la funcionalidad de Hostera organizada por
+  bounded context.
+- **Database** (MySQL): almacena propiedades, reservas, pagos, habitaciones, tarifas,
+  inventario, credenciales y eventos de acceso.
 
-*Figura 4.80. Diagrama de contenedores del sistema Hostera.*
+<img src="assets/chapter-4/c4-containers-hostera.svg" alt="Diagrama de contenedores de Hostera" style="display:block; width:85%; height:auto; margin:0 auto;"/>
+
+*Figura 4.80. Diagrama de contenedores de Hostera.*
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-Los diagramas de componentes detallan la estructura interna de cada contenedor
-principal de Hostera. Se muestran las responsabilidades de sus componentes y las
-interacciones con bases de datos, otros módulos y servicios externos.
+Se presenta un diagrama de componentes para la Web Application y uno por cada bounded
+context de la RESTful API. Los bounded contexts son los mismos en ambos contenedores:
+Overview, Bookings, Rooms, Inventory y Access Control. El modelo completo está escrito
+en Structurizr DSL en el archivo `docs/hostera-structurizr.dsl` del repositorio del
+informe.
 
-#### Aplicación Web
+#### Web Application
 
-La aplicación web organiza las interfaces para autenticación, reservas, habitaciones,
-inventario, accesos RFID y monitoreo del dashboard en tiempo real.
+Los componentes de la Web Application corresponden a la estructura del repositorio
+`hostera-frontend`. Cada bounded context es un módulo (`overview`, `bookings`, `rooms`,
+`inventory` y `access-control`) con sus capas de dominio, aplicación (store de Pinia),
+infraestructura y presentación. El App Shell reúne `app.vue`, `router.js` y el layout
+compartido; Localization agrupa `i18n.js` y los archivos de idioma en inglés y español;
+y Shared Infrastructure contiene la clase base de los clientes HTTP. En esta versión,
+la codificación de tarjetas RFID se simula en el adaptador `rfid-encoder.js` del módulo
+de control de accesos, y los módulos consumen la Demo API.
 
-<img src="assets/chapter-4/Component-diagram-Hostera-web-application.svg" alt="Diagrama de componentes de la aplicación web de Hostera" style="width:100%; height:auto;"/>
+<img src="assets/chapter-4/c4-components-web-application.svg" alt="Diagrama de componentes de la Web Application" style="display:block; width:85%; height:auto; margin:0 auto;"/>
 
-*Figura 4.81. Diagrama de componentes de la aplicación web de Hostera.*
+*Figura 4.81. Diagrama de componentes de la Web Application.*
 
-#### Gestión de Autenticación
+#### RESTful API
 
-El contenedor de autenticación separa el registro de usuarios, la validación de
-credenciales, la generación de sesiones y la gestión de roles y permisos.
+Cada bounded context de la RESTful API sigue la misma estructura: un controlador expone
+los endpoints, los servicios de aplicación separan comandos y consultas, y los
+repositorios implementados con EF Core persisten la información en la base de datos.
+Los contextos que dependen de un sistema externo o de otro contexto lo hacen a través
+de un adaptador de infraestructura.
 
-<img src="assets/chapter-4/Component-diagram-Hostera-authentication.svg" alt="Diagrama de componentes de gestión de autenticación de Hostera" style="width:100%; height:auto;"/>
+**Bounded context Overview.** Reúne en una consulta el estado de la propiedad activa: ocupación, ingresos del día, estado de las habitaciones y llegadas. No modifica datos, por lo que solo tiene servicio de consultas.
 
-*Figura 4.82. Diagrama de componentes de gestión de autenticación de Hostera.*
+<img src="assets/chapter-4/c4-components-api-overview.svg" alt="Diagrama de componentes del bounded context Overview" style="display:block; width:75%; height:auto; margin:0 auto;"/>
 
-#### Gestión de Reservas y Habitaciones
+*Figura 4.82. Diagrama de componentes del bounded context Overview de la RESTful API.*
 
-Este contenedor coordina la creación de reservas, la verificación de disponibilidad,
-el cálculo de tarifas y la actualización del estado de las habitaciones.
+**Bounded context Bookings.** Gestiona el ciclo de vida de la reserva: creación, pago, check-in, check-out y cancelación. Consulta disponibilidad y tarifas al contexto Rooms y solicita las tarjetas del huésped al contexto Access Control mediante gateways.
 
-<img src="assets/chapter-4/Component-diagram-Hostera-reservations.svg" alt="Diagrama de componentes de gestión de reservas y habitaciones de Hostera" style="width:100%; height:auto;"/>
+<img src="assets/chapter-4/c4-components-api-bookings.svg" alt="Diagrama de componentes del bounded context Bookings" style="display:block; width:75%; height:auto; margin:0 auto;"/>
 
-*Figura 4.83. Diagrama de componentes de gestión de reservas y habitaciones de Hostera.*
+*Figura 4.83. Diagrama de componentes del bounded context Bookings de la RESTful API.*
 
-#### Gestión de Inventario
+**Bounded context Rooms.** Administra habitaciones, tipos de habitación, planes de tarifa, tarifas diarias y periodos de estado, y responde las consultas de disponibilidad.
 
-El contenedor de inventario está compuesto por los módulos de gestión de stock,
-alertas de reposición y registro histórico de movimientos.
+<img src="assets/chapter-4/c4-components-api-rooms.svg" alt="Diagrama de componentes del bounded context Rooms" style="display:block; width:75%; height:auto; margin:0 auto;"/>
 
-<img src="assets/chapter-4/Component-diagram-Hostera-inventory.svg" alt="Diagrama de componentes de gestión de inventario de Hostera" style="width:100%; height:auto;"/>
+*Figura 4.84. Diagrama de componentes del bounded context Rooms de la RESTful API.*
 
-*Figura 4.84. Diagrama de componentes de gestión de inventario de Hostera.*
+**Bounded context Inventory.** Registra artículos, ubicaciones de almacén y ajustes de stock. Cuando un artículo baja de su umbral, envía la alerta por correo mediante Twilio SendGrid.
 
-#### Gestión de Accesos RFID
+<img src="assets/chapter-4/c4-components-api-inventory.svg" alt="Diagrama de componentes del bounded context Inventory" style="display:block; width:75%; height:auto; margin:0 auto;"/>
 
-Este contenedor integra la sincronización de eventos IoT, la validación de tarjetas,
-la gestión de permisos y el historial de accesos concedidos o denegados.
+*Figura 4.85. Diagrama de componentes del bounded context Inventory de la RESTful API.*
 
-<img src="assets/chapter-4/Component-diagram-Hostera-access-control.svg" alt="Diagrama de componentes de gestión de accesos RFID de Hostera" style="width:100%; height:auto;"/>
+**Bounded context Access Control.** Emite, reemplaza y revoca las credenciales de huéspedes y personal, y registra los eventos de acceso que reportan los lectores del sistema de cerraduras RFID.
 
-*Figura 4.85. Diagrama de componentes de gestión de accesos RFID de Hostera.*
+<img src="assets/chapter-4/c4-components-api-access.svg" alt="Diagrama de componentes del bounded context Access Control" style="display:block; width:75%; height:auto; margin:0 auto;"/>
 
-#### Servicio de Dashboard
-
-El servicio de dashboard agrega información de reservas, habitaciones, inventario y
-accesos, y publica las actualizaciones al frontend en tiempo real.
-
-<img src="assets/chapter-4/Component-diagram-Hostera-dashboard.svg" alt="Diagrama de componentes del servicio de dashboard de Hostera" style="width:100%; height:auto;"/>
-
-*Figura 4.86. Diagrama de componentes del servicio de dashboard de Hostera.*
+*Figura 4.86. Diagrama de componentes del bounded context Access Control de la RESTful API.*
 
 ## 4.7. Software Object-Oriented Design
 
