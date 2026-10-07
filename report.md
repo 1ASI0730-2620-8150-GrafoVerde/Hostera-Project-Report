@@ -417,261 +417,280 @@ fin de mejorar la visibilidad y la coordinación de la operación hotelera.
 
 #### 1.2.2.1. Lean UX Problem Statement
 
+Hostera es una iniciativa nueva y no la evolución de un producto existente, por lo que
+su enunciado del problema utiliza la plantilla de Lean UX correspondiente a una
+*brand new initiative*. El enunciado se apoya en las diez entrevistas registradas en
+la sección 2.2 y en las cifras del sector publicadas por el Ministerio de Comercio
+Exterior y Turismo.
+
 **Enunciado del problema**
 
-Nuestro servicio ofrece una plataforma web administrativa para la gestión y operación
-hotelera. Hostera busca ayudar a los administradores y responsables de la operación a
-coordinar reservas, disponibilidad de habitaciones, inventario y accesos físicos desde
-una visión común. El personal de recepción, los encargados del almacén y el personal
-autorizado también participan en estos procesos, mientras que los huéspedes se
-benefician indirectamente de una atención más coordinada y oportuna.
+El estado actual de la gestión hotelera en el Perú se ha centrado en resolver por
+separado la captación de la reserva, la ocupación de las habitaciones, el
+abastecimiento del almacén y el acceso físico a las habitaciones. El sector reúne
+28 050 establecimientos de hospedaje y 329 340 habitaciones, y el 85,1 % de esos
+establecimientos no está categorizado (MINCETUR, 2025), lo que describe un mercado
+dominado por operaciones pequeñas que resuelven su gestión con las herramientas que
+tienen a la mano. Las entrevistas lo confirman: los cuatro responsables de un
+establecimiento de una sede coordinan su operación por WhatsApp y tres de ellos
+concilian reservas, accesos o almacén en hojas de cálculo o en un cuaderno.
 
-Hemos observado un factor crítico que afecta la coordinación de la operación
-hotelera: la información necesaria para estos procesos puede encontrarse distribuida
-entre diferentes registros o herramientas independientes. Esta situación puede
-dificultar que los responsables y usuarios operativos conozcan el estado actualizado
-de una reserva o habitación, controlen las existencias del almacén y relacionen los
-accesos autorizados con una habitación y un usuario. También puede obligarlos a
-comparar y conciliar datos manualmente, generando riesgos de duplicidad, demoras en la
-atención y menor trazabilidad, especialmente cuando se coordinan varias sedes. Esta
-observación es preliminar y deberá validarse con usuarios del sector hotelero.
+Lo que las herramientas existentes no resuelven es la conexión entre el canal por el
+que entra la reserva y el registro donde se controla la operación. Los sistemas de
+gestión hotelera disponibles atienden la reserva y la tarifa, pero dejan fuera el
+almacén y el acceso físico, o los resuelven con plataformas separadas que se contratan
+aparte: el gerente general entrevistado paga cerca de USD 1 500 anuales por propiedad
+solo por la plataforma de ama de llaves. En las operaciones de varias sedes, la
+consecuencia es que consolidar la información cuesta entre una hora y medio día cada
+vez, y que los reportes llegan desactualizados con frecuencia semanal.
 
-¿Cómo podríamos mejorar la coordinación de la operación hotelera para que sus
-responsables y usuarios operativos trabajen con información actualizada, reduzcan la
-conciliación manual, mantengan la trazabilidad de los eventos y tomen decisiones
-oportunas?
+Hostera atenderá esta brecha con una plataforma administrativa que mantiene en un
+mismo lugar las reservas, la disponibilidad de habitaciones, el inventario del almacén
+y los accesos con tarjeta RFID, con la propiedad activa como contexto de trabajo, de
+modo que el responsable de la operación deje de reconstruir el estado de su hotel a
+partir de registros separados.
 
-**Domain:** Gestión y operación hotelera, incluyendo reservas, disponibilidad de
-habitaciones, control de inventario y gestión de accesos físicos.
+Nuestro foco inicial serán los administradores y propietarios de hoteles
+independientes de una sede y los responsables de operaciones de cadenas de dos a cinco
+sedes, porque son quienes concentran la decisión de compra y sufren directamente el
+costo de la conciliación manual.
+
+Sabremos que hemos tenido éxito cuando Grafo Verde alcance 50 suscripciones de pago
+activas en el plan Starter durante los primeros cuatro meses de lanzamiento, 20
+cadenas pequeñas en el plan Professional en seis meses y una retención mensual del
+90 % sostenida por el uso de la plataforma al menos cinco días a la semana.
+
+**Domain:** Gestión y operación hotelera de establecimientos independientes y cadenas
+pequeñas, incluyendo reservas, disponibilidad de habitaciones, control de inventario
+del almacén y gestión de accesos físicos.
 
 **Customer Segments:**
 
-- Administradores y responsables de la operación hotelera.
-- Personal de recepción.
-- Encargados del almacén.
-- Personal autorizado que gestiona o supervisa accesos.
-- Huéspedes como beneficiarios indirectos de una operación coordinada.
+- Administradores y propietarios de hoteles independientes de una sede.
+- Responsables de operaciones de cadenas hoteleras de dos a cinco sedes.
+- Personal de recepción, encargados del almacén y personal autorizado que gestiona
+  accesos, como usuarios operativos dentro de esas organizaciones.
 
 **Pain Points:**
 
-- Dificultad para consultar en un mismo contexto la información de reservas,
-  habitaciones, inventario y accesos.
-- Riesgo de trabajar con datos diferentes entre áreas o registros independientes.
-- Tiempo adicional dedicado a verificar y conciliar información antes de completar
-  tareas operativas.
-- Poca trazabilidad para relacionar los accesos autorizados con una habitación y un
-  usuario o huésped.
-- Mayor dificultad para mantener una visión consistente cuando se coordinan varias
-  sedes.
+- La reserva entra por un canal y se registra en otro, lo que obliga a trasladar
+  información a mano. Tres de los cuatro entrevistados de una sede declaran esa carga.
+- Los descuadres de almacén y las demoras en el check-in ocurren al menos una vez al
+  mes en las tres respuestas estructuradas del segmento de una sede.
+- Consolidar la información de varias sedes toma entre una hora y medio día, y los
+  reportes llegan desactualizados con frecuencia semanal.
+- Cuando las tarjetas de acceso se comparten entre trabajadores, no es posible
+  identificar quién entró a una habitación ni en qué turno.
+- Los sistemas hoteleros disponibles cubren reservas y tarifas, pero el almacén y el
+  acceso físico se resuelven con plataformas adicionales que se contratan por separado.
 
-**Gap:** Los registros y herramientas utilizados en los procesos hoteleros no
-resuelven de manera integrada la necesidad de contar con información centralizada,
-actualizada y relacionada entre reservas, habitaciones, inventario y accesos. Esta
-brecha limita la visibilidad de los responsables de la operación y la coordinación
-entre los usuarios que participan en las tareas diarias.
+**Gap:** No existe una plataforma que mantenga relacionadas las reservas, las
+habitaciones, el inventario y los accesos para una operación de una a cinco sedes a un
+precio accesible para ese tamaño de negocio. Las alternativas obligan a elegir entre un
+sistema hotelero que deja fuera el almacén y los accesos, o varias herramientas
+contratadas por separado cuyo costo supera la capacidad de pago declarada por estos
+segmentos.
 
-**Vision/Strategy:** Hostera buscará cerrar esta brecha mediante una solución digital
-administrativa orientada a centralizar la información operativa, facilitar su consulta
-y apoyar la coordinación entre áreas. La estrategia inicial considera la gestión de
-reservas y habitaciones, el seguimiento del inventario y la relación de los accesos
-físicos con tarjetas y lectores RFID. Esta dirección deberá evolucionar según la
-evidencia obtenida durante el descubrimiento y la validación.
+**Vision/Strategy:** Hostera centraliza la operación diaria del hotel alrededor de la
+propiedad activa y comercializa esa capacidad como suscripción mensual, con un plan
+Starter para una sede y un plan Professional por habitación para operaciones de varias
+sedes. La estrategia prioriza primero las reservas y la disponibilidad, después el
+inventario del almacén y los reportes, y finalmente la trazabilidad de los accesos con
+tarjeta RFID.
 
-**Initial Segment:** El foco inicial serán los **administradores y responsables de la
-operación hotelera**, debido a que necesitan una visión consolidada para supervisar
-los procesos y tomar decisiones. Los demás perfiles se considerarán usuarios
-operativos relacionados o beneficiarios indirectos. Esta priorización es preliminar y
-deberá confirmarse con evidencia de usuarios.
+**Initial Segment:** Los administradores y propietarios de hoteles independientes de
+una sede, porque deciden la compra sin intermediarios, declaran la mayor carga de
+conciliación manual y constituyen la base del plan Starter.
 
-**Success Criteria:** Se considerará que la iniciativa avanza hacia el éxito cuando
-los usuarios puedan completar tareas representativas con información centralizada,
-actualizada y sin depender de la conciliación entre registros independientes. Para
-medir ese comportamiento se proponen los siguientes indicadores, cuyos valores
-iniciales y metas se definirán durante la validación:
-
-- porcentaje de tareas de consulta o actualización de reservas y disponibilidad que
-  se completan desde el entorno administrativo;
-- tiempo promedio que necesita el personal para encontrar el estado actual de una
-  reserva o habitación;
-- porcentaje de movimientos de inventario registrados y consultables en la solución;
-- porcentaje de accesos autorizados relacionados con una tarjeta RFID, una habitación
-  y un usuario o huésped; y
-- número de inconsistencias detectadas durante escenarios de prueba.
+**Success Criteria:** Los criterios de éxito de la iniciativa son los objetivos de
+negocio de Grafo Verde definidos en la sección 3.2: 50 suscripciones de pago activas
+en el plan Starter en cuatro meses, 20 cadenas pequeñas en el plan Professional y un
+10 % de clientes Starter que actualicen su plan en seis meses, y una retención mensual
+del 90 % con uso de la plataforma al menos cinco días a la semana.
 
 #### 1.2.2.2. Lean UX Assumptions
 
-Los siguientes supuestos representan las creencias iniciales del equipo sobre el
-negocio, los usuarios, los resultados esperados y las capacidades que podría ofrecer
-Hostera. Se formulan como afirmaciones que deberán ser contrastadas mediante
-entrevistas, prototipos y experimentos durante las siguientes iteraciones del proceso
-Lean UX.
+Los siguientes supuestos declaran lo que el equipo sostiene sobre el negocio, los
+usuarios, los resultados esperados y las capacidades de Hostera. Se redactan como
+afirmaciones y no como preguntas, y cada una indica la evidencia de la que proviene:
+las entrevistas registradas en la sección 2.2, identificadas con sus códigos `E1` a
+`E4` y `F1` a `F5`, las cifras de MINCETUR y los precios publicados en la Landing Page.
 
 **Business Assumptions**
 
-1. Creemos que los hoteles que administran sus reservas, habitaciones, inventario y
-   accesos con procesos separados necesitan una visión operativa más centralizada.
-2. Creemos que una plataforma web administrativa enfocada en la coordinación de estos
-   procesos puede ofrecer valor a hoteles individuales y a negocios que administran
-   varias sedes.
-3. Creemos que el principal valor de Hostera para el negocio será facilitar la
-   supervisión diaria y mejorar la consistencia de la información operativa.
-4. Creemos que un modelo de suscripción por hotel o por sede podría ser una
-   alternativa viable para comercializar Hostera, aunque esta posibilidad todavía no
-   ha sido validada con clientes.
-5. Creemos que Grafo Verde puede organizar sus capacidades de diseño y desarrollo
-   para construir y validar un producto mínimo viable dentro del alcance académico
-   definido para Hostera.
+1. El mercado objetivo de Grafo Verde son operaciones hoteleras pequeñas: de los
+   28 050 establecimientos de hospedaje del país, el 85,1 % no está categorizado
+   (MINCETUR, 2025), y las diez entrevistas corresponden a operaciones de entre 20 y
+   100 habitaciones.
+2. Estas operaciones pagan por software de gestión: cuatro de los cinco respondientes
+   válidos del formulario declaran que pagarían S/51 o más al mes, y el gerente general
+   entrevistado (`E4`) ya paga cerca de USD 1 500 anuales por propiedad por una
+   plataforma complementaria de ama de llaves.
+3. Una suscripción mensual escalonada —Starter a S/39 por una sede y Professional a
+   S/8 por habitación para cadenas— captura esa disposición de pago y permite que el
+   ingreso crezca con el tamaño del cliente.
+4. La decisión de compra se concentra en el responsable de la operación: en los dos
+   segmentos, quien administra o supervisa el establecimiento es también quien evalúa
+   y aprueba la herramienta.
+5. Grafo Verde puede construir y validar el producto mínimo viable dentro del alcance
+   académico definido, apoyándose en el flujo de trabajo y las convenciones descritas
+   en la sección 5.1.
 
 **Business Outcome Assumptions**
 
-1. Creemos que los responsables de la operación consultarán el entorno administrativo
-   como una fuente principal para supervisar reservas, habitaciones, inventario y
-   accesos.
-2. Creemos que la centralización de la información reducirá la necesidad de comparar
-   registros independientes antes de tomar decisiones operativas.
-3. Creemos que el personal podrá identificar con mayor rapidez el estado de una
-   reserva o habitación cuando la información se encuentre disponible en un mismo
-   entorno.
-4. Creemos que una mayor trazabilidad de los accesos y movimientos de inventario
-   permitirá a los responsables detectar inconsistencias con mayor oportunidad.
-5. Creemos que estos cambios de comportamiento contribuirán a que Hostera genere
-   valor para los hoteles, aunque las métricas y metas concretas deberán definirse
-   después de establecer una línea base.
+1. Las suscripciones activas del plan Starter crecen cuando el administrador de una
+   sede completa su operación diaria dentro de Hostera, porque la renovación mensual
+   depende del uso y no de un compromiso anual.
+2. Los clientes del plan Starter actualizan al plan Professional cuando incorporan una
+   segunda sede, porque es el momento en que aparece el costo de consolidar.
+3. La retención mensual se sostiene con el uso diario de las funciones de reservas e
+   inventario, que son las que los entrevistados sitúan en los primeros lugares de sus
+   prioridades.
+4. El tiempo que hoy se dedica a conciliar —de 30 minutos a 2 horas diarias en una
+   sede y de 1 hora a medio día por consolidado en varias sedes— es el indicador que
+   el cliente reconoce como ahorro y el argumento comercial más directo.
+5. La demostración previa es condición de cierre: los cinco respondientes válidos del
+   formulario la piden antes de comprometerse.
 
 **User Assumptions**
 
-1. **¿Quién es el usuario?** Creemos que los usuarios principales serán los
-   administradores y responsables de la operación hotelera. También interactuarán con
-   la solución el personal de recepción, los encargados del almacén y el personal
-   autorizado que gestiona o supervisa los accesos. Los huéspedes serán beneficiarios
-   indirectos y no constituirán el usuario administrativo principal del MVP.
-2. **¿Dónde encaja nuestro producto en su trabajo o vida?** Creemos que Hostera
-   encajará en las actividades diarias de administración y operación del hotel como
-   un entorno común para consultar y actualizar información de reservas, habitaciones,
-   inventario y accesos. Los responsables lo utilizarán para supervisar la operación,
-   mientras que el personal operativo lo empleará como apoyo en sus tareas específicas.
-3. **¿Qué problemas debe resolver nuestro producto?** Creemos que Hostera debe
-   ayudar a resolver la dispersión de información entre registros independientes, las
-   inconsistencias entre reservas y disponibilidad, la poca visibilidad del inventario,
-   la dificultad para rastrear accesos autorizados y la coordinación de información
-   entre varias sedes.
-4. **¿Cuándo y cómo se usará nuestro producto?** Creemos que Hostera se utilizará
-   durante el registro o modificación de reservas, la actualización de la
-   disponibilidad, los procesos de check-in y check-out, el registro de movimientos
-   del almacén, la autorización de accesos y la revisión del historial de eventos. El
-   uso se realizará desde la plataforma web, según las responsabilidades de cada
-   usuario y las necesidades de la operación.
-5. **¿Qué características son importantes?** Creemos que serán importantes la
-   centralización de reservas y disponibilidad, el registro y consulta del inventario,
-   la relación de tarjetas y lectores RFID con habitaciones y usuarios, la trazabilidad
-   de los accesos y la posibilidad de consultar información de una o varias sedes.
-6. **¿Cómo debe verse y comportarse nuestro producto?** Creemos que Hostera debe
-   presentar una interfaz clara, ordenada y fácil de comprender para usuarios con
-   diferentes responsabilidades. La solución debe mostrar información actualizada,
-   mantener una navegación consistente, brindar confirmación de las acciones
-   realizadas y facilitar la identificación de estados, cambios e incidencias sin
-   exigir que el usuario consulte múltiples registros.
+1. **Usuario principal.** El usuario principal es quien responde por la operación
+   completa del establecimiento: propietario, administrador general, gerente de
+   operaciones o jefe de recepción. El personal de recepción, los encargados del
+   almacén y el personal autorizado que gestiona accesos son usuarios operativos, y
+   los huéspedes son beneficiarios indirectos.
+2. **Encaje en su trabajo.** Hostera se usa durante la jornada de operación, entre el
+   momento en que llega una reserva y el cierre de caja, como el lugar donde se
+   consulta y se actualiza el estado de la propiedad activa.
+3. **Problemas que resuelve.** Hostera resuelve el traslado manual de información
+   entre el canal de entrada y el registro operativo, los descuadres entre el almacén
+   y lo registrado, las demoras del check-in por información dispersa y el costo de
+   consolidar varias sedes.
+4. **Momento y forma de uso.** Se usa a diario desde una laptop o una computadora de
+   escritorio, con Chrome como navegador más frecuente, y de forma complementaria
+   desde el celular, que es el dispositivo principal de uno de los entrevistados.
+5. **Características importantes.** Importan la vista del estado actual de la
+   propiedad activa, la consulta y el registro de reservas y disponibilidad, el
+   control de existencias por ubicación de almacén y la relación entre una tarjeta de
+   acceso, una habitación y una persona.
+6. **Apariencia y comportamiento.** Hostera debe mostrar el estado actual sin exigir
+   pasos adicionales, confirmar cada acción realizada y permitir cambiar de propiedad
+   activa sin perder el contexto de trabajo.
 
 **User Outcome and Benefit Assumptions**
 
-1. Creemos que los responsables de la operación desean contar con información
-   actualizada para tomar decisiones sin depender de múltiples registros.
-2. Creemos que el personal de recepción se beneficiará de consultar rápidamente la
-   disponibilidad de las habitaciones y el estado de las reservas.
-3. Creemos que los encargados del almacén se beneficiarán de disponer de un historial
-   organizado de los ingresos, consumos y existencias.
-4. Creemos que el personal autorizado y los responsables del hotel valorarán poder
-   revisar la trazabilidad de los accesos vinculados con tarjetas RFID.
-5. Creemos que los usuarios operativos considerarán valiosa una experiencia que
-   reduzca la conciliación manual y les permita coordinar tareas entre áreas o sedes.
+1. El administrador de una sede deja de reconstruir el estado de su hotel a partir de
+   una hoja de cálculo y lo consulta directamente, lo que reduce el tiempo diario de
+   conciliación.
+2. El responsable de varias sedes deja de armar el consolidado a mano y lo obtiene ya
+   construido, lo que elimina la espera entre el cierre de cada sede y el reporte.
+3. El personal de recepción encuentra la disponibilidad y el estado de una reserva en
+   el momento del check-in, lo que reduce las demoras que los entrevistados declaran
+   con frecuencia semanal.
+4. El encargado del almacén registra los movimientos donde ocurren y evita el
+   descuadre entre lo que hay y lo que está anotado.
+5. El responsable de la operación identifica qué persona accedió a una habitación y en
+   qué momento, lo que convierte la pérdida de un objeto en un hecho rastreable.
 
 **Feature Assumptions**
 
-1. Creemos que un panel administrativo que centralice reservas, habitaciones,
-   inventario y accesos ayudará a los usuarios a supervisar la operación desde un
-   mismo entorno.
-2. Creemos que las funciones para registrar y consultar reservas y disponibilidad
-   permitirán reducir inconsistencias entre la información reservada y el estado de
-   las habitaciones.
-3. Creemos que el registro de movimientos de inventario permitirá mejorar la
-   visibilidad de las existencias y facilitar su seguimiento.
-4. Creemos que la integración con tarjetas y lectores RFID permitirá asociar accesos
-   autorizados con habitaciones y usuarios, además de conservar un historial de
-   eventos.
-5. Creemos que una estructura de información preparada para una o varias sedes
-   permitirá que Hostera crezca junto con las necesidades de sus clientes.
+1. Un panel de la propiedad activa que reúne ocupación, habitaciones, inventario y
+   accesos entrega el estado actual sin consultar otros registros.
+2. La consulta y el registro de reservas y disponibilidad sobre un mismo calendario
+   evitan las dobles reservas que se declaran con frecuencia mensual.
+3. El control de existencias por ubicación de almacén, con umbrales de reposición,
+   anticipa el descuadre en lugar de detectarlo en el inventario siguiente.
+4. La relación entre credencial RFID, habitación y persona, con su historial de
+   eventos, hace rastreable cada acceso.
+5. El cambio de propiedad activa y los reportes por propiedad y periodo sustituyen el
+   consolidado manual de las operaciones de varias sedes.
 
-Estos supuestos no representan requisitos definitivos ni resultados comprobados. Los
-supuestos más riesgosos deberán priorizarse para formular los Hypothesis Statements y
-definir los experimentos que permitan confirmarlos o modificarlos.
+Los supuestos de mayor riesgo son los de resultado de negocio, porque dependen de un
+comportamiento que todavía no se ha observado. Esos son los que se convierten en los
+Hypothesis Statements de la siguiente sección.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-Los Hypothesis Statements representan una evolución de los Assumptions, ya que
-convierten las creencias iniciales del equipo en afirmaciones que pueden medirse y
-comprobarse. Cada hipótesis aplica el formato de Lean UX y relaciona un business
-outcome con un user outcome y una feature específica. Esta estructura permite
-contrastar las ideas con evidencia y comprobar si Hostera contribuye tanto a los
-objetivos del negocio como a las necesidades reales de sus usuarios.
+Cada hipótesis aplica la plantilla de Lean UX: relaciona un resultado de negocio de
+Grafo Verde con la persona que obtiene el beneficio y con la característica que lo
+produce. Las personas corresponden a los arquetipos de la sección 2.3.1 y las métricas
+provienen de los objetivos de negocio de la sección 3.2 y de los tiempos que los
+entrevistados declararon en la sección 2.2.
 
-**Hipótesis 1: Panel administrativo centralizado**
+**Hipótesis 1: Panel de la propiedad activa**
 
-Creemos que centralizar la información de reservas, habitaciones, inventario y
-accesos en un panel administrativo reducirá la dependencia de registros
-independientes para supervisar la operación hotelera.
+Creemos que lograremos **50 suscripciones de pago activas en el plan Starter durante
+los primeros cuatro meses** si **Steven Huarcaya**, administrador de un hotel
+independiente de una sede, obtiene **el estado actual de su propiedad sin abrir su
+hoja de cálculo** con **el panel de la propiedad activa**.
 
-**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
-tareas de supervisión que los administradores y responsables de la operación
-completan desde el panel sin consultar registros adicionales, respecto a la línea
-base definida durante la validación.
+*Señal que lo confirma:* el tiempo diario que Steven dedica a cuadrar reservas, caja e
+inventario baja de la franja de 1 a 2 horas que declara `F3` a menos de 30 minutos,
+que es la franja que ya alcanza `F2` con un sistema instalado.
 
-**Hipótesis 2: Gestión de reservas y disponibilidad**
+**Hipótesis 2: Reservas y disponibilidad sobre un mismo calendario**
 
-Creemos que ofrecer al personal de recepción y a los administradores información
-actualizada para registrar y consultar reservas y disponibilidad reducirá las
-inconsistencias entre las reservas registradas y el estado de las habitaciones.
+Creemos que lograremos **una retención mensual del 90 % con uso de la plataforma al
+menos cinco días a la semana** si **el personal de recepción de Steven** obtiene
+**la disponibilidad y el estado de una reserva en el momento de atender al huésped**
+con **la consulta y el registro de reservas sobre un mismo calendario**.
 
-**Sabremos que hemos tenido éxito cuando veamos** una reducción de al menos 5% en
-las inconsistencias detectadas entre reservas y disponibilidad, y una disminución del
-tiempo necesario para encontrar el estado de una reserva o habitación, en comparación
-con la línea base de la validación.
+*Señal que lo confirma:* las demoras en el check-in y las dobles reservas, que `F1`,
+`F2` y `F3` declaran con frecuencia mensual o semanal, dejan de registrarse durante un
+mes completo de operación.
 
-**Hipótesis 3: Registro y consulta del inventario**
+**Hipótesis 3: Control de existencias por ubicación de almacén**
 
-Creemos que registrar y consultar los movimientos de inventario permitirá a los
-encargados del almacén y a los responsables de la operación mejorar la visibilidad y
-el seguimiento de las existencias.
+Creemos que lograremos **que el uso diario sostenga la renovación del plan Starter**
+si **Steven** obtiene **la alerta de un insumo por debajo de su umbral antes de que
+falte** con **el control de existencias por ubicación de almacén**.
 
-**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
-movimientos de inventario registrados y consultables, junto con una reducción de las
-diferencias encontradas durante las pruebas de control de existencias, respecto a la
-línea base.
+*Señal que lo confirma:* los descuadres de almacén, declarados con frecuencia mensual
+o semanal por los tres respondientes del segmento, dejan de aparecer en el cierre del
+mes.
 
-**Hipótesis 4: Control y trazabilidad de accesos RFID**
+**Hipótesis 4: Reportes por propiedad y cambio de propiedad activa**
 
-Creemos que integrar las tarjetas y lectores RFID con el registro de eventos de
-Hostera permitirá al personal autorizado y a los responsables de la operación mejorar
-la trazabilidad de los accesos a las habitaciones y espacios del hotel.
+Creemos que lograremos **20 cadenas hoteleras pequeñas en el plan Professional y que
+el 10 % de los clientes Starter actualicen su plan en seis meses** si **Anyeli
+Cárdenas**, responsable de operaciones de una cadena de dos a cinco sedes, obtiene
+**el consolidado de todas sus sedes ya construido** con **los reportes por propiedad y
+periodo y el cambio de propiedad activa**.
 
-**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
-accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un
-usuario o huésped, además de una reducción del tiempo necesario para consultar su
-historial.
+*Señal que lo confirma:* el tiempo de armar el consolidado baja del rango de 1 hora a
+medio día que declaran `F4` y `F5` a una consulta dentro de la plataforma, y los
+reportes desactualizados dejan de declararse con frecuencia semanal.
 
-**Hipótesis 5: Administración de una o varias sedes**
+**Hipótesis 5: Trazabilidad de los accesos con credenciales RFID**
 
-Creemos que una estructura de información preparada para administrar una o varias
-sedes permitirá a los administradores y responsables de la operación mantener una
-visión consistente sin perder el contexto de cada hotel.
+Creemos que lograremos **que los clientes con tarjetas compartidas entre trabajadores
+contraten Hostera en lugar de una solución de control de acceso por separado** si
+**Steven y el personal autorizado** obtienen **la identificación de quién accedió a
+una habitación y en qué momento** con **la relación entre credencial RFID, habitación
+y persona y su historial de eventos**.
 
-**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
-tareas de consulta y supervisión completadas correctamente en escenarios de una y
-varias sedes, sin duplicar ni confundir la información operativa.
+*Señal que lo confirma:* la necesidad que Wilson (`E2`) describe como su principal
+motivo para adoptar un sistema queda cubierta, y cada acceso del periodo de prueba
+queda asociado a una credencial, una habitación y una persona identificable.
+
+Las hipótesis 1 y 4 son las de mayor riesgo, porque sostienen directamente los
+objetivos de adquisición y de expansión del negocio. Son las que deben contrastarse
+primero en las sesiones de validación.
 
 #### 1.2.2.4. Lean UX Canvas
 
+El Lean UX Canvas sintetiza en una sola vista el resultado de las secciones
+anteriores. Esta es la segunda iteración del lienzo: la primera se elaboró antes de
+contar con las entrevistas, por lo que sus resultados de negocio todavía describían la
+operación del hotel. La versión actual incorpora el problema dimensionado con datos
+del sector y de las entrevistas, los resultados de negocio de Grafo Verde definidos en
+la sección 3.2, las personas de la sección 2.3.1 y las cinco hipótesis de la sección
+anterior. Las casillas 7 y 8 fijan el aprendizaje pendiente y el experimento mínimo
+para obtenerlo, que corresponde al alcance del Sprint 2.
+
 ![Lean UX Canvas de Hostera](assets/chapter-1/hostera-lean-ux-canvas.svg)
-*Figura 1.1. Lean UX Canvas de Hostera.*
+
+*Figura 1.1. Lean UX Canvas de Hostera, segunda iteración.*
 
 ## 1.3. Segmentos objetivo
 
@@ -1472,18 +1491,18 @@ sedes, y por eso el producto se concentra en operaciones de menor escala.
 
 ### 2.2.3. Análisis de entrevistas
 
-Este análisis reúne en un solo lugar las nueve entrevistas registradas en la sección
+Este análisis reúne en un solo lugar las diez entrevistas registradas en la sección
 2.2.2 y es la base sobre la que se construyen los arquetipos de la sección 2.3. Las
-fuentes se identifican con el código asignado a cada entrevista: `E1` a `E4` para las
+fuentes se identifican con el código asignado a cada entrevista: `E1` a `E5` para las
 entrevistas en video y `F1` a `F5` para las entrevistas complementarias por
 formulario. La respuesta `F6` queda fuera de todos los porcentajes por corresponder a
 una franquicia internacional de seis o más establecimientos, por encima del límite del
 segmento 2.
 
 Con la asignación por escala de operación, el segmento 1 reúne cuatro entrevistas
-(`E1`, `F1`, `F2`, `F3`) y el segmento 2 reúne cinco (`E2`, `E3`, `E4`, `F4`, `F5`).
-Ambos quedan dentro del rango de tres a cinco entrevistas por segmento que exige el
-enunciado del proyecto.
+(`E1`, `F1`, `F2`, `F3`) y el segmento 2 reúne seis (`E2`, `E3`, `E4`, `E5`, `F4`,
+`F5`). Ambos superan el mínimo de tres entrevistas por segmento que exige el enunciado
+del proyecto.
 
 Las dos fuentes aportan información de distinta naturaleza y por eso se tratan de
 forma explícita. Las entrevistas en video permiten describir el contexto, el
@@ -1550,19 +1569,20 @@ decisión de incorporar un sistema está condicionada a un financiamiento bancar
 proyectada para una temporada concreta, lo que confirma que en este segmento la
 inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
 
-#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 5)
+#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 6)
 
 | Característica | Resultado | % | Fuente |
 | :--- | :---: | :---: | :--- |
-| Supervisa dos o más establecimientos | 5 de 5 | 100 % | E2, E3, E4, F4, F5 |
-| Recibe reservas desde extranets o plataformas de agencias en línea | 4 de 5 | 80 % | E2, E4, F4, F5 |
-| Usa un PMS o sistema hotelero corporativo | 3 de 5 | 60 % | E3, E4, F5 |
-| Declara que consolidar la información entre sedes es una dificultad central | 3 de 5 | 60 % | E2, F4, F5 |
-| Recibe reservas o coordina la operación por WhatsApp | 3 de 5 | 60 % | E2, F4, F5 |
-| Concilia la información de las sedes en Excel o en cuaderno | 2 de 5 | 40 % | E2, F4 |
-| Controla el acceso a las habitaciones con tarjeta | 2 de 5 | 40 % | E2, F5 |
-| Cuenta con usuario y permisos individuales por trabajador | 1 de 5 | 20 % | E4 |
-| Señala la trazabilidad de los accesos como una necesidad no cubierta | 1 de 5 | 20 % | E2 |
+| Forma parte de una operación con dos o más establecimientos | 6 de 6 | 100 % | E2, E3, E4, E5, F4, F5 |
+| Usa un PMS o sistema hotelero corporativo | 4 de 6 | 67 % | E3, E4, E5, F5 |
+| Recibe reservas desde extranets o plataformas de agencias en línea | 4 de 6 | 67 % | E2, E4, F4, F5 |
+| Declara que consolidar la información entre sedes es una dificultad central | 3 de 6 | 50 % | E2, F4, F5 |
+| Recibe reservas o coordina la operación por WhatsApp | 3 de 6 | 50 % | E2, F4, F5 |
+| Controla el acceso a las habitaciones con tarjeta | 3 de 6 | 50 % | E2, E5, F5 |
+| Mantiene la información de cada sede separada por decisión de la organización | 2 de 6 | 33 % | E4, E5 |
+| Concilia la información de las sedes en Excel o en cuaderno | 2 de 6 | 33 % | E2, F4 |
+| Cuenta con usuario y permisos individuales por trabajador | 1 de 6 | 17 % | E4 |
+| Señala la trazabilidad de los accesos como una necesidad no cubierta | 1 de 6 | 17 % | E2 |
 | Consolida la información de todas las sedes al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Tarda una hora o más en armar ese consolidado | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Declara reportes desactualizados al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
@@ -1571,14 +1591,14 @@ inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
 | Sitúa el control de accesos en el último lugar de sus prioridades | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Pagaría S/51 o más al mes y pide una demostración previa | 2 de 2 (formulario) | 100 % | F4, F5 |
 
-El segmento reúne a quienes responden por más de una sede, con cargos de propietario
-multisede, gerente de operaciones, gerente general y Room Division Manager. A
-diferencia del segmento 1, aquí la operación diaria está repartida entre departamentos
-—reservas, recepción, seguridad, almacén y housekeeping— y el entrevistado supervisa
-en lugar de ejecutar. Rafael Prieto (`E3`) describe que no controla directamente las
-existencias del almacén, sino que aprueba los pedidos de las áreas a su cargo; el
-gerente general del Meliá (`E4`) recibe a diario los informes consolidados en lugar de
-revisar reserva por reserva.
+El segmento reúne a quienes forman parte de una operación con más de un
+establecimiento, con cargos de propietario multisede, gerente de operaciones, gerente
+general, subgerente y Room Division Manager. A diferencia del segmento 1, aquí la
+operación diaria está repartida entre departamentos —reservas, recepción, seguridad,
+almacén y housekeeping— y el entrevistado supervisa en lugar de ejecutar. Rafael Prieto
+(`E3`) describe que no controla directamente las existencias del almacén, sino que
+aprueba los pedidos de las áreas a su cargo; el gerente general del Meliá (`E4`) recibe
+a diario los informes consolidados en lugar de revisar reserva por reserva.
 
 La dificultad que define al segmento no es registrar, sino consolidar. Tres de los
 cinco entrevistados la declaran de forma explícita: Wilson (`E2`) debe coordinar
@@ -1590,24 +1610,39 @@ estructuradas, los reportes desactualizados y los procesos distintos entre sedes
 aparecen con frecuencia semanal o diaria en los dos casos.
 
 La madurez tecnológica también es desigual, pero se distribuye de otra manera que en
-el segmento 1. Tres de cinco trabajan sobre un PMS corporativo —Opera en el caso de
-`E3` y Opera Cloud integrado con el CRM en el de `E4`—, mientras que `E2` y `F4`
-sostienen operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
+el segmento 1. Cuatro de seis trabajan sobre un PMS corporativo —Opera en el caso de
+`E3`, Opera Cloud integrado con el CRM en el de `E4` y Opera Cloud con Oracle Symphony
+y el portal interno ResaWeb en el de `E5`—, mientras que `E2` y `F4` sostienen
+operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
 conviven dentro del mismo segmento, y la diferencia tiene consecuencias de producto:
 donde ya existe un PMS corporativo el problema se desplaza hacia la integración entre
 sistemas, y el propio `E4` señala que su plataforma complementaria de housekeeping
 cuesta cerca de USD 1 500 anuales por propiedad, lo que fija una referencia de precio
 para la categoría.
 
+La entrevista a Roy Ríos (`E5`) incorpora un caso que conviene leer en contraste con
+el resto. Es subgerente de un hotel que pertenece a un grupo de tres establecimientos
+de la misma cadena internacional, pero cada uno opera con razón social propia y la
+información no se comparte entre ellos: no hay movimientos de inventario entre sedes y
+los responsables de un hotel no acceden a los resultados de los otros. La separación es
+una decisión de la organización, no una limitación de sus herramientas, y el gerente
+general del Meliá (`E4`) describe el mismo criterio cuando explica que cada propiedad
+tiene su centro de costos y su acceso restringido. Para estos dos casos, consolidar
+entre sedes no es un problema por resolver, lo que delimita el alcance de Hostera: la
+capacidad de consolidación es decisiva para las operaciones que comparten
+administración, como las de `E2`, `F4` y `F5`, y resulta irrelevante donde cada
+establecimiento se gestiona como una empresa separada.
+
 El control de accesos ocupa posiciones opuestas dentro del segmento y conviene
 registrarlo como tal. Las dos respuestas estructuradas lo sitúan en el último lugar de
 sus prioridades, mientras que Wilson (`E2`) lo plantea como su necesidad principal:
 pide tarjetas nominativas por trabajador para poder identificar quién entró a una
-habitación y en qué turno. La diferencia se explica por el punto de partida. Donde ya
-existe un control por usuario individual, como describe `E4` para las operaciones
-sobre reservas, la trazabilidad deja de percibirse como un problema; donde las tarjetas
-se comparten entre personas, se convierte en el motivo principal para adoptar un
-sistema.
+habitación y en qué turno. La diferencia se explica por el punto de partida. Donde ya existe un control por usuario
+individual, como describe `E4` para las operaciones sobre reservas, o un control físico
+cerrado, como la tarjeta magnética que en el hotel de `E5` habilita únicamente el piso
+y la habitación del huésped, la trazabilidad deja de percibirse como un problema; donde
+las tarjetas se comparten entre personas, se convierte en el motivo principal para
+adoptar un sistema.
 
 #### Comparación entre los dos segmentos
 
@@ -1616,7 +1651,7 @@ características de las tablas anteriores provienen de respuestas individuales y
 una generalización del segmento. Las marcas vacías indican que la persona declaró no
 utilizar ese recurso, y los guiones que la entrevista no registró el dato.
 
-<img src="assets/chapter-2/entrevistas-perfil-tecnologico.svg" alt="Perfil tecnológico declarado en cada una de las nueve entrevistas" style="width:100%; height:auto;"/>
+<img src="assets/chapter-2/entrevistas-perfil-tecnologico.svg" alt="Perfil tecnológico declarado en cada una de las diez entrevistas" style="width:100%; height:auto;"/>
 
 *Figura 2.6. Perfil tecnológico declarado en cada entrevista, agrupado por segmento.*
 
@@ -1654,7 +1689,7 @@ prioridad declarada de forma uniforme: resulta decisivo para quien comparte tarj
 entre trabajadores y secundario para quien ya cuenta con permisos individuales.
 
 Dos limitaciones acotan el alcance de estos porcentajes. La primera es el tamaño de la
-muestra: con cuatro y cinco entrevistas por segmento, los porcentajes describen a los
+muestra: con cuatro y seis entrevistas por segmento, los porcentajes describen a los
 entrevistados y no permiten inferir proporciones de la población hotelera peruana. La
 segunda es que las dos fuentes no recogen exactamente la misma información, por lo que
 las filas basadas solo en el formulario indican su base. Ambas limitaciones se reducen
@@ -1663,63 +1698,124 @@ a medida que se incorporen nuevas entrevistas en los siguientes sprints.
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
-Esta sección representa los principales perfiles de usuario que fueron creados en base a los segmentos objetivos. El propósito principal de la creación de estos perfiles es el de reflejar de manera precisa las motivaciones, frustraciones y las necesidades reales de nuestros usuarios finales.
 
-Para ello seleccionamos los siguientes perfiles:
+Los User Personas son los arquetipos con los que el equipo representa a cada segmento
+objetivo durante el diseño del producto. Se elabora una ficha por segmento y cada
+rasgo de esas fichas proviene del análisis de entrevistas de la sección 2.2.3 o del
+análisis competitivo de la sección 2.1, de modo que ninguna característica se apoya en
+una suposición del equipo.
+
+Del análisis de entrevistas se toman el contexto de operación, las herramientas y los
+canales que cada segmento utiliza hoy, las frustraciones que declara con mayor
+frecuencia, los objetivos que sitúa en los primeros lugares de sus prioridades y la
+disposición a pagar. Del análisis competitivo se toma el conjunto de alternativas que
+estas personas ya conocen o evalúan, que define el punto de comparación con el que
+recibirán a Hostera. La siguiente tabla indica el origen de los rasgos principales de
+cada ficha.
+
+| Rasgo de la ficha | Resultado del análisis | Fuente |
+| :--- | :--- | :--- |
+| Contexto de operación del segmento 1: un solo establecimiento, con responsabilidad directa sobre la operación completa | 4 de 4 entrevistas del segmento | E1, F1, F2, F3 |
+| Canal de coordinación del segmento 1: WhatsApp | 4 de 4 — 100 % | E1, F1, F2, F3 |
+| Herramienta de registro del segmento 1: hoja de cálculo o cuaderno | 3 de 4 — 75 % | E1, F1, F3 |
+| Dispositivo y navegador del segmento 1: laptop y Chrome | 2 de 3 con dato — 67 % | F2, F3 |
+| Frustraciones del segmento 1: descuadres de almacén y demoras en el check-in, al menos una vez al mes | 3 de 3 — 100 % | F1, F2, F3 |
+| Objetivo del segmento 1: mantener al día las reservas y la disponibilidad | 3 de 3 lo sitúan entre sus dos prioridades | F1, F2, F3 |
+| Contexto de operación del segmento 2: dos o más establecimientos, con responsabilidad de supervisión | 6 de 6 entrevistas del segmento | E2, E3, E4, E5, F4, F5 |
+| Frustración del segmento 2: consolidar la información entre sedes | 3 de 6 — 50 % | E2, F4, F5 |
+| Objetivo del segmento 2: disponer de reservas y reportes centralizados | 2 de 2 lo sitúan en primer lugar | F4, F5 |
+| Disposición a pagar: S/51 o más al mes | 4 de 5 respondientes válidos — 80 % | F1, F2, F4, F5 |
+| Alternativas que ya conocen o evalúan | Análisis competitivo de la sección 2.1 | Nexus PMS, OkFac, SysHotel |
+
+Las fichas se elaboraron en UXPressia, la herramienta indicada para este artefacto, y
+se presentan a continuación.
 
 User Persona 1
+
 ![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
-*Figura 2.9. User Persona de Steven Huarcaya.*
----
+
+*Figura 2.9. User Persona de Steven Huarcaya, segmento de hoteles independientes de una sede.*
+
 User Persona 2
+
 ![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
-*Figura 2.10. User Persona de Anyeli Cárdenas.*
+
+*Figura 2.10. User Persona de Anyeli Cárdenas, segmento de cadenas hoteleras pequeñas.*
+
 ### 2.3.2. User Task Matrix
-En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
 
-Cabe destacar que las tareas analizadas corresponden a las actividades operativas y administrativas reales que Steven lleva a cabo en el hotel para mantener la continuidad del negocio, independientemente de la existencia de la solución de software.
+El User Task Matrix reúne las tareas que los User Personas realizan para sostener la
+operación de su hotel y compara, para cada tarea, con qué frecuencia la ejecutan y qué
+importancia le asignan. Las tareas corresponden a actividades que ambas personas
+llevan a cabo con independencia de que exista Hostera, no a opciones de la solución, y
+su frecuencia e importancia se derivan de lo declarado en las entrevistas de la
+sección 2.2.
 
-### User Task Matrix — Segmento 1: Steven Huarcaya
+Se presenta una sola matriz con una columna por persona, de modo que las coincidencias
+y las diferencias entre los dos segmentos puedan leerse en la misma vista.
 
-| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
-| :--- | :---: | :---: |
-| **Supervisar el estado y la disponibilidad diaria de habitaciones** | Alta *(Diaria)* | Crítica |
-| **Controlar la asignación y entrega de llaves o accesos a los huéspedes** | Alta *(Diaria)* | Crítica |
-| **Verificar el stock e inventario de insumos del almacén** | Media *(Semanal)* | Alta |
-| **Atender o resolver incidencias operativas y sobreventas en recepción** | Media *(Frecuente)* | Crítica |
-| **Registrar y auditar las entradas y salidas del personal autorizado** | Media *(Semanal)* | Alta |
-| **Revisar reportes de costos e insumos consumidos en la operación** | Baja *(Mensual)* | Media |
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Tarea del usuario (<em>User Task</em>)</th>
+      <th colspan="2">Steven Huarcaya<br>Segmento 1 · una sede</th>
+      <th colspan="2">Anyeli Cárdenas<br>Segmento 2 · 2 a 5 sedes</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Supervisar el estado y la disponibilidad de las habitaciones</td><td>Alta (diaria)</td><td>Crítica</td><td>Alta (diaria)</td><td>Crítica</td></tr>
+    <tr><td>Registrar y actualizar las reservas que llegan por distintos canales</td><td>Alta (diaria)</td><td>Crítica</td><td>Media (semanal)</td><td>Alta</td></tr>
+    <tr><td>Atender incidencias de recepción, sobreventas y cambios de habitación</td><td>Alta (diaria)</td><td>Crítica</td><td>Baja (ocasional)</td><td>Media</td></tr>
+    <tr><td>Controlar la asignación y entrega de llaves o credenciales a los huéspedes</td><td>Alta (diaria)</td><td>Crítica</td><td>Baja (ocasional)</td><td>Baja</td></tr>
+    <tr><td>Verificar las existencias de insumos del almacén</td><td>Media (semanal)</td><td>Alta</td><td>Media (semanal)</td><td>Alta</td></tr>
+    <tr><td>Registrar y auditar los accesos del personal autorizado</td><td>Media (semanal)</td><td>Alta</td><td>Media (semanal)</td><td>Alta</td></tr>
+    <tr><td>Consolidar la información operativa de todas las sedes</td><td>No aplica</td><td>No aplica</td><td>Alta (diaria)</td><td>Crítica</td></tr>
+    <tr><td>Coordinar el traslado de insumos o huéspedes entre establecimientos</td><td>No aplica</td><td>No aplica</td><td>Media (quincenal)</td><td>Media</td></tr>
+    <tr><td>Revisar reportes de costos, consumos e indicadores del negocio</td><td>Baja (mensual)</td><td>Media</td><td>Baja (mensual)</td><td>Crítica</td></tr>
+  </tbody>
+</table>
 
----
+**Coincidencias entre los dos segmentos.** Las dos personas sitúan en el primer lugar
+la supervisión del estado y la disponibilidad de las habitaciones, con frecuencia
+diaria e importancia crítica, lo que coincide con que los cinco respondientes del
+formulario coloquen las reservas y la disponibilidad entre sus primeras prioridades.
+Ambas verifican las existencias del almacén y auditan los accesos del personal con
+frecuencia semanal e importancia alta: son tareas de control que ninguna de las dos
+puede abandonar, pero que tampoco ocupan su jornada. La revisión de reportes es
+mensual en los dos casos.
 
-### Análisis del User Task Matrix
+**Diferencias entre los dos segmentos.** La diferencia principal no está en qué tareas
+realizan, sino en quién las ejecuta. Steven registra las reservas, atiende la recepción
+y entrega las credenciales él mismo, con frecuencia diaria e importancia crítica;
+Anyeli delega esas mismas tareas en los administradores de cada sede y las realiza de
+forma ocasional. Esto reproduce lo que describen las entrevistas: Rafael Prieto (`E3`)
+aprueba los pedidos del almacén en lugar de controlar las existencias, y el gerente
+general del Meliá (`E4`) recibe informes consolidados en lugar de revisar reserva por
+reserva.
 
-* **Tareas de mayor frecuencia e importancia:** Las actividades críticas en el día a día de Steven son la **supervisión de la disponibilidad de habitaciones** y el **control de entrega de accesos**. Al ser el responsable directo de la única sede del hotel, coordinar la recepción en tiempo real es vital para evitar cruces de reservas, demoras en el check-in o reclamos de los huéspedes.
-* **Tareas de gestión y control:** La **verificación del inventario de almacén** y el **registro de accesos del personal** representan tareas de frecuencia media pero de importancia alta. Son fundamentales para prevenir fugas de stock (ropa de cama, artículos de aseo) y mantener el control de seguridad física en las instalaciones.
-* **Tareas de consolidación:** La revisión de reportes consolidados de insumos y costos se realiza con menor frecuencia (mensual o quincenal), pues el foco principal del administrador de una sola sede está volcado a la operatividad inmediata y la atención de incidencias diarias.
----
-En esta sección se presenta el User Task Matrix correspondiente al **Segmento 2: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**, representado por la User Persona **Anyeli Cárdenas**.
+A cambio, Anyeli asume dos tareas que no existen en la operación de Steven: consolidar
+la información de todas las sedes, con frecuencia diaria e importancia crítica, y
+coordinar el traslado de insumos o huéspedes entre establecimientos. La primera es la
+tarea más costosa de su jornada —`F4` declara medio día por consolidado semanal y `F5`
+entre una y tres horas diarias— y es la que explica por qué este segmento sitúa los
+reportes consolidados por encima del control de accesos en sus prioridades.
 
-Las tareas identificadas reflejan las actividades estratégicas y de supervisión multisede que Anyeli realiza de forma independiente a la herramienta tecnológica utilizada, enfocándose en la coordinación operativa, el control de recursos y la toma de decisiones.
+La última diferencia está en la importancia de los reportes. Para Steven son una
+revisión mensual de importancia media, porque su foco está en la operación inmediata;
+para Anyeli tienen importancia crítica pese a su baja frecuencia, porque son el insumo
+con el que decide sobre varias sedes a la vez.
 
-### User Task Matrix — Segmento 2: Anyeli Cárdenas
-
-| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
-| :--- | :---: | :---: |
-| **Monitorear y consolidar la ocupación y reservas entre múltiples sedes** | Alta *(Diaria)* | Crítica |
-| **Comparar e identificar discrepancias en el inventario de almacén por sede** | Media *(Semanal)* | Alta |
-| **Auditar el cumplimiento de políticas de acceso e incidencias de seguridad física** | Media *(Semanal)* | Alta |
-| **Coordinar la redistribución de insumos y recursos operativos entre establecimientos** | Media *(Quincenal)* | Media |
-| **Evaluar indicadores operativos globales para la toma de decisiones estratégicas** | Baja *(Mensual)* | Crítica |
-| **Supervisar directamente la asignación puntual de habitaciones o entregas de accesos** | Baja *(Ocasional)* | Baja |
-
----
-
-### Análisis del User Task Matrix
-
-* **Tareas de mayor frecuencia e importancia:** La tarea central de Anyeli es el **monitoreo consolidado de ocupación y reservas**. Al gestionar varias sedes en distintas ubicaciones, necesita comprobar a diario la disponibilidad global para maximizar las ventas y evitar fallos de coordinación entre los equipos de cada establecimiento.
-* **Tareas de control e indicadores estratégicos:** La **comparación de inventarios entre sedes** y la **evaluación mensual de indicadores de rendimiento** tienen una alta importancia estratégica. Permiten identificar qué hotel está consumiendo más recursos o detectar pérdidas imprevistas antes de que afecten la rentabilidad global.
-* **Tareas de baja frecuencia:** A diferencia del administrador de una sola sede, Anyeli realiza de forma muy ocasional la **supervisión directa de entrega de accesos o habitaciones**, ya que estas actividades son delegadas al personal operativo y administradores locales de cada hotel.
+**Consecuencia para el producto.** La matriz indica que las capacidades diarias de
+Hostera deben resolverse primero para el perfil de Steven, que ejecuta todas las tareas
+críticas en persona, mientras que para Anyeli la capacidad decisiva es la consolidación
+entre sedes. Esto sostiene el orden del Product Backlog de la sección 3.3, que sitúa el
+panorama operativo y las reservas antes que los reportes y el control de accesos.
 
 ### 2.3.3. User Journey Mapping
 ## As-Is User Journey Maps
