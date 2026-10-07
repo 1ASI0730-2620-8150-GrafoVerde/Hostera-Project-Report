@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1090" viewBox="0 0 1320 1090">
+<defs><marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#707070"/></marker></defs>
+<rect width="1320" height="1090" fill="#FFFFFF"/>
+<rect x="500" y="20" width="300" height="150" rx="8" fill="#438DD5" stroke="#2E6295"/>
+<text x="650.0" y="44.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Web Application</text>
+<text x="650.0" y="59.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#FFFFFF" text-anchor="middle">[Container: Vue 3, Pinia and PrimeVue]</text>
+<text x="650.0" y="80.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">Single-page application with the overview,</text>
+<text x="650.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">bookings, rooms, inventory and access</text>
+<text x="650.0" y="110.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">control features.</text>
+<rect x="30" y="220" width="1260" height="600" rx="10" fill="none" stroke="#666" stroke-width="1.6" stroke-dasharray="8,5"/>
+<text x="44.0" y="806.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="start">RESTful API [Container: C# and ASP.NET Core] - Bookings bounded context</text>
+<rect x="500" y="260" width="300" height="150" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="650.0" y="284.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Bookings Controller</text>
+<text x="650.0" y="299.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: ASP.NET Core Controller]</text>
+<text x="650.0" y="320.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Endpoints for bookings, payments, check-in,</text>
+<text x="650.0" y="335.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">check-out and cancellation.</text>
+<rect x="80" y="440" width="300" height="150" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="230.0" y="464.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Booking Command Service</text>
+<text x="230.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: C# Application Service]</text>
+<text x="230.0" y="500.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Creates and cancels bookings, records</text>
+<text x="230.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">payments and runs check-in and check-out.</text>
+<rect x="920" y="440" width="300" height="150" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="1070.0" y="464.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Booking Query Service</text>
+<text x="1070.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: C# Application Service]</text>
+<text x="1070.0" y="500.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Finds bookings by guest, stay period, room</text>
+<text x="1070.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">and status.</text>
+<rect x="500" y="640" width="300" height="150" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="650.0" y="664.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Booking Repository</text>
+<text x="650.0" y="679.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: EF Core Repository]</text>
+<text x="650.0" y="700.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Persists bookings and payments.</text>
+<path d="M500,892 L500,998 A150.0,12 0 0 0 800,998 L800,892 A150.0,12 0 0 0 500,892 Z" fill="#438DD5" stroke="#2E6295"/>
+<ellipse cx="650.0" cy="892" rx="150.0" ry="12" fill="none" stroke="#2E6295"/>
+<text x="650.0" y="916.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Database</text>
+<text x="650.0" y="931.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#FFFFFF" text-anchor="middle">[Container: MySQL]</text>
+<text x="650.0" y="952.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">Stores properties, bookings, payments,</text>
+<text x="650.0" y="967.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">rooms, rates, inventory, credentials and</text>
+<text x="650.0" y="982.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">access events.</text>
+<rect x="80" y="640" width="300" height="150" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="230.0" y="664.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Context Gateways</text>
+<text x="230.0" y="679.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: C# Infrastructure Adapter]</text>
+<text x="230.0" y="700.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Ask the Rooms context for availability and</text>
+<text x="230.0" y="715.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">rates, and the Access Control context for</text>
+<text x="230.0" y="730.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">guest key cards.</text>
+<rect x="80" y="880" width="300" height="140" rx="8" fill="#999999" stroke="#6B6B6B"/>
+<text x="230.0" y="904.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Rooms and Access Control</text>
+<text x="230.0" y="919.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#FFFFFF" text-anchor="middle">[Software System]</text>
+<text x="230.0" y="940.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">Bounded contexts of the same API.</text>
+<line x1="650.0" y1="170.0" x2="650.0" y2="260.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="500.0" y1="399.3" x2="380.0" y2="450.7" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="380.0" y1="586.4" x2="500.0" y2="643.6" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="800.0" y1="399.3" x2="920.0" y2="450.7" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="920.0" y1="586.4" x2="800.0" y2="643.6" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="650.0" y1="790.0" x2="650.0" y2="880.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="230.0" y1="590.0" x2="230.0" y2="640.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="230.0" y1="790.0" x2="230.0" y2="880.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<rect x="574.7" y="197.0" width="150.6" height="36" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="650.0" y="212.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Makes API requests to</text>
+<text x="650.0" y="227.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle" font-style="italic">[JSON/HTTPS]</text>
+<rect x="377.9" y="414.5" width="124.2" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="440.0" y="429.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Sends commands to</text>
+<rect x="354.8" y="604.5" width="170.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="440.0" y="619.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Reads and writes through</text>
+<rect x="801.2" y="414.5" width="117.6" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="860.0" y="429.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Sends queries to</text>
+<rect x="811.1" y="604.5" width="97.8" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="860.0" y="619.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Reads through</text>
+<rect x="564.8" y="817.0" width="170.4" height="36" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="650.0" y="832.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Reads from and writes to</text>
+<text x="650.0" y="847.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle" font-style="italic">[MySQL protocol]</text>
+<rect x="210.8" y="604.5" width="38.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="230.0" y="619.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Uses</text>
+<rect x="171.2" y="824.5" width="117.6" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="230.0" y="839.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Calls in process</text>
+<text x="20.0" y="1074.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#222" text-anchor="start">[Component] Hostera - RESTful API - Bookings</text>
+</svg>

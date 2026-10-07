@@ -1,190 +1,191 @@
-workspace "Hostera" "Plataforma web administrativa para gestión hotelera - Grafo Verde" {
+/*
+ * Hostera - C4 model (TB1): system context, containers and components.
+ * The web application components follow the bounded contexts of the hostera-frontend repository.
+ */
+workspace "Hostera" "C4 model of Hostera, the hotel operations platform designed by Grafo Verde." {
 
     model {
-        staff = person "Personal del Hotel" "Administrador o recepcionista que gestiona reservas, habitaciones, inventario y accesos desde el panel web."
-
-        hostera = softwareSystem "HOSTERA" "Plataforma web administrativa que centraliza la gestión de reservas, disponibilidad de habitaciones, inventario y control de accesos físicos mediante RFID, con panel de monitoreo en tiempo real." {
-
-            webapp = container "Aplicación Web" "Interfaz web (SPA) para gestionar reservas, habitaciones, inventario, accesos y visualizar el dashboard en tiempo real." "React / TypeScript" {
-                authUI = component "Autenticación UI" "Pantallas de inicio de sesión y gestión de sesión."
-                reservasUI = component "Reservas UI" "Creación y seguimiento de reservas."
-                habitacionesUI = component "Habitaciones UI" "Visualización y gestión del estado de habitaciones."
-                inventarioUI = component "Inventario UI" "Gestión de stock del almacén."
-                accesosUI = component "Accesos UI" "Administración de tarjetas y permisos RFID."
-                dashboardUI = component "Dashboard UI" "Panel de monitoreo en tiempo real."
+        admin = person "Hotel Administrator" "Owner or administrator of an independent hotel who supervises its daily operation."
+        ops = person "Operations Manager" "Person responsible for the operation of a small hotel chain with two to five properties."
+        staff = person "Hotel Staff" "Front desk, inventory and security operators who run the daily operation of a property."
+        rfid = softwareSystem "RFID Lock System" "Door readers and front desk key-card encoder installed in the hotel." {
+            tags "External"
+        }
+        sendgrid = softwareSystem "Twilio SendGrid" "Cloud e-mail delivery service." {
+            tags "External"
+        }
+        hostera = softwareSystem "Hostera" "Lets independent hotels and small hotel chains manage bookings, rooms, inventory and RFID room access from one web platform." {
+            landing = container "Landing Page" "Static website that presents the plans to each segment and leads visitors to the web application." "HTML, CSS and JavaScript"
+            webapp = container "Web Application" "Single-page application with the overview, bookings, rooms, inventory and access control features." "Vue 3, Pinia and PrimeVue" {
+                shell = component "App Shell" "app.vue, router.js and the shared layout with the sidebar and the language switcher." "Vue Router and PrimeVue"
+                i18n = component "Localization" "i18n.js and the English and Spanish locale files of every module." "Vue I18n"
+                m_overview = component "Overview Module" "Property overview, revenue and occupancy, room status and today's arrivals." "Vue views, Pinia store and API client"
+                m_bookings = component "Bookings Module" "Bookings, payments, check-in, check-out and cancellation." "Vue views, Pinia store and API client"
+                m_rooms = component "Rooms Module" "Rooms, room types, availability calendar, rate plans and daily rates." "Vue views, Pinia store and API client"
+                m_inventory = component "Inventory Module" "Inventory items, storage locations and stock adjustments." "Vue views, Pinia store and API client"
+                m_access = component "Access Control Module" "Guest and staff credentials, key-card encoding and access events." "Vue views, Pinia store and API client"
+                shared = component "Shared Infrastructure" "base-api.js and base-endpoint.js: build every endpoint from the configured API URL." "Axios"
             }
-
-            auth = container "Gestión de Autenticación" "Registra e inicia sesión al personal del hotel y administra roles y permisos." "Node.js / Express" {
-                registro = component "Registro de Usuarios" "Procesa el alta de nuevas cuentas del staff."
-                validadorCred = component "Validador de Credenciales" "Valida usuario y contraseña."
-                sesiones = component "Generador de Sesiones" "Crea y gestiona tokens de sesión (JWT)."
-                roles = component "Gestor de Roles" "Administra permisos según el rol (admin, recepción, almacén)."
+            demoapi = container "Demo API" "Serves demonstration data with the same resources while the RESTful API is built." "Node.js and json-server"
+            api = container "RESTful API" "Provides the hotel operations functionality through a JSON/HTTPS API organised by bounded context." "C# and ASP.NET Core" {
+                group "Overview" {
+                    overviewController = component "Overview Controller" "Endpoints for the property overview, daily performance, room status and arrivals." "ASP.NET Core Controller"
+                    overviewQueries = component "Overview Query Service" "Builds the overview of the active property for a period." "C# Application Service"
+                    overviewRepository = component "Overview Read Models" "Read bookings, rooms, inventory and access data of the property." "EF Core Repository"
+                }
+                group "Bookings" {
+                    bookingsController = component "Bookings Controller" "Endpoints for bookings, payments, check-in, check-out and cancellation." "ASP.NET Core Controller"
+                    bookingsCommands = component "Booking Command Service" "Creates and cancels bookings, records payments and runs check-in and check-out." "C# Application Service"
+                    bookingsQueries = component "Booking Query Service" "Finds bookings by guest, stay period, room and status." "C# Application Service"
+                    bookingsRepository = component "Booking Repository" "Persists bookings and payments." "EF Core Repository"
+                    bookingsAdapter = component "Context Gateways" "Ask the Rooms context for availability and rates, and the Access Control context for guest key cards." "C# Infrastructure Adapter"
+                }
+                group "Rooms" {
+                    roomsController = component "Rooms Controller" "Endpoints for rooms, room types, rate plans, daily rates and status periods." "ASP.NET Core Controller"
+                    roomsCommands = component "Room Command Service" "Creates rooms and room types, sets daily rates and room status." "C# Application Service"
+                    roomsQueries = component "Availability Query Service" "Returns room availability and status for a period." "C# Application Service"
+                    roomsRepository = component "Room Repositories" "Persist rooms, room types, rate plans, daily rates and status periods." "EF Core Repository"
+                }
+                group "Inventory" {
+                    inventoryController = component "Inventory Controller" "Endpoints for inventory items, storage locations and stock adjustments." "ASP.NET Core Controller"
+                    inventoryCommands = component "Inventory Command Service" "Registers items and locations and adjusts stock; detects low stock." "C# Application Service"
+                    inventoryQueries = component "Inventory Query Service" "Returns items and their stock condition by storage location." "C# Application Service"
+                    inventoryRepository = component "Inventory Repositories" "Persist items, storage locations and stock adjustments." "EF Core Repository"
+                    inventoryAdapter = component "Notification Gateway" "Sends low-stock alerts by e-mail." "C# Infrastructure Adapter"
+                }
+                group "Access Control" {
+                    accessController = component "Access Control Controller" "Endpoints for credentials, staff members and access events, including events reported by the readers." "ASP.NET Core Controller"
+                    accessCommands = component "Credential Command Service" "Issues guest key cards and staff credentials, and revokes or replaces them." "C# Application Service"
+                    accessQueries = component "Access Event Query Service" "Returns access events by room, credential and period." "C# Application Service"
+                    accessRepository = component "Access Control Repositories" "Persist credentials, staff members and access events." "EF Core Repository"
+                    accessAdapter = component "RFID Encoder Adapter" "Writes credentials through the front desk encoder." "C# Infrastructure Adapter"
+                }
             }
-
-            reservas = container "Gestión de Reservas y Habitaciones" "Crea y administra reservas; controla la disponibilidad y el estado de las habitaciones." "Node.js / Express" {
-                creadorReservas = component "Creador de Reservas" "Registra nuevas reservas y valida los datos del huésped."
-                verificadorDisp = component "Verificador de Disponibilidad" "Consulta y bloquea habitaciones disponibles para evitar sobreventa."
-                calculadorTarifas = component "Calculador de Tarifas" "Calcula el costo de la reserva según fechas y habitación."
-                estadoHabitaciones = component "Gestor de Estado de Habitaciones" "Actualiza el estado de cada habitación (disponible, ocupada, mantenimiento)."
+            db = container "Database" "Stores properties, bookings, payments, rooms, rates, inventory, credentials and access events." "MySQL" {
+                tags "Database"
             }
-
-            inventario = container "Gestión de Inventario" "Controla el stock del almacén y genera alertas de reposición." "Node.js / Express" {
-                gestorStock = component "Gestor de Stock" "Registra entradas y salidas de insumos del almacén."
-                alertasReposicion = component "Generador de Alertas" "Notifica cuando un insumo alcanza el stock mínimo."
-                movimientos = component "Registro de Movimientos" "Guarda el historial de movimientos de inventario."
-            }
-
-            accesos = container "Gestión de Accesos RFID" "Valida tarjetas RFID, sincroniza eventos con los lectores y mantiene el historial de accesos." "Node.js / Express" {
-                validadorTarjeta = component "Validador de Tarjetas" "Verifica que la tarjeta esté activa y autorizada."
-                sincronizadorIoT = component "Sincronizador de Eventos IoT" "Recibe y traduce las lecturas enviadas por los lectores RFID."
-                permisosAcceso = component "Gestor de Permisos de Acceso" "Asocia tarjetas con habitaciones y define su vigencia."
-                historialAccesos = component "Historial de Accesos" "Registra cada evento de acceso concedido o denegado."
-            }
-
-            dashboard = container "Servicio de Dashboard" "Agrega y expone datos en tiempo real de reservas, habitaciones, inventario y accesos." "Node.js / WebSocket" {
-                agregadorMetricas = component "Agregador de Métricas" "Consulta y combina datos de los demás módulos."
-                publicadorEventos = component "Publicador de Eventos en Tiempo Real" "Envía actualizaciones al frontend vía WebSocket."
-            }
-
-            db = container "Base de Datos" "Almacena usuarios, reservas, habitaciones e inventario." "PostgreSQL" "Database"
-            dbAccesos = container "BD de Accesos" "Almacena el historial de eventos de acceso RFID." "PostgreSQL" "Database"
         }
 
-        rfid = softwareSystem "Sistema de Lectores RFID" "Hardware IoT: lectores y tarjetas RFID instalados en las habitaciones y accesos del hotel." "Existing System"
-        notificaciones = softwareSystem "Servicio de Notificaciones" "Servicio externo de correo/SMS usado para confirmaciones y alertas." "Existing System"
-
-        # Relaciones a nivel de contexto y contenedor
-        staff -> webapp "Usa" "HTTPS"
-
-        authUI -> auth "Inicia sesión / valida token" "JSON/HTTPS"
-        reservasUI -> reservas "Gestiona reservas" "JSON/HTTPS"
-        habitacionesUI -> reservas "Gestiona habitaciones" "JSON/HTTPS"
-        inventarioUI -> inventario "Gestiona inventario" "JSON/HTTPS"
-        accesosUI -> accesos "Gestiona accesos" "JSON/HTTPS"
-        dashboardUI -> dashboard "Consulta métricas en tiempo real" "WebSocket"
-
-        auth -> db "Lee/escribe usuarios y roles" "SQL"
-        reservas -> db "Lee/escribe reservas y habitaciones" "SQL"
-        inventario -> db "Lee/escribe inventario" "SQL"
-        accesos -> dbAccesos "Lee/escribe eventos de acceso" "SQL"
-        dashboard -> db "Consulta datos agregados" "SQL"
-        dashboard -> dbAccesos "Consulta datos agregados" "SQL"
-
-        reservas -> notificaciones "Envía confirmación de reserva" "SMTP/API"
-        accesos -> rfid "Envía comandos de autorización/revocación" "MQTT"
-        rfid -> accesos "Reporta eventos de lectura de tarjeta" "MQTT"
-
-        # Relaciones a nivel de componente (Autenticación)
-        validadorCred -> db "Consulta credenciales" "SQL"
-        registro -> db "Crea usuario" "SQL"
-        sesiones -> db "Guarda sesión" "SQL"
-        validadorCred -> sesiones "Solicita token"
-        registro -> validadorCred "Verifica datos"
-        roles -> db "Consulta permisos" "SQL"
-
-        # Relaciones a nivel de componente (Reservas y Habitaciones)
-        creadorReservas -> verificadorDisp "Verifica disponibilidad"
-        verificadorDisp -> estadoHabitaciones "Consulta estado"
-        creadorReservas -> calculadorTarifas "Calcula costo"
-        creadorReservas -> db "Guarda reserva" "SQL"
-        estadoHabitaciones -> db "Actualiza estado" "SQL"
-        creadorReservas -> notificaciones "Notifica confirmación"
-
-        # Relaciones a nivel de componente (Inventario)
-        gestorStock -> db "Actualiza stock" "SQL"
-        gestorStock -> alertasReposicion "Dispara alerta de stock mínimo"
-        gestorStock -> movimientos "Registra movimiento"
-        movimientos -> db "Guarda historial" "SQL"
-
-        # Relaciones a nivel de componente (Accesos RFID)
-        rfid -> sincronizadorIoT "Envía lectura de tarjeta" "MQTT"
-        sincronizadorIoT -> validadorTarjeta "Solicita validación"
-        validadorTarjeta -> permisosAcceso "Consulta permisos vigentes"
-        validadorTarjeta -> sincronizadorIoT "Autoriza/deniega acceso"
-        sincronizadorIoT -> rfid "Envía comando de apertura/denegación" "MQTT"
-        permisosAcceso -> dbAccesos "Lee/escribe permisos" "SQL"
-        validadorTarjeta -> historialAccesos "Notifica resultado"
-        historialAccesos -> dbAccesos "Registra evento" "SQL"
-
-        # Relaciones a nivel de componente (Dashboard)
-        agregadorMetricas -> db "Consulta reservas, habitaciones e inventario" "SQL"
-        agregadorMetricas -> dbAccesos "Consulta accesos" "SQL"
-        agregadorMetricas -> publicadorEventos "Envía datos actualizados"
+        admin -> hostera "Supervises bookings, rooms, inventory and room access using"
+        ops -> hostera "Monitors every property of the chain using"
+        staff -> hostera "Registers bookings, stays, stock movements and key cards using"
+        hostera -> rfid "Encodes key cards and updates access rights using"
+        rfid -> hostera "Reports door access events to"
+        hostera -> sendgrid "Sends low-stock alerts using"
+        admin -> landing "Reviews the plans in"
+        ops -> landing "Reviews the plans in"
+        admin -> webapp "Supervises the operation using"
+        ops -> webapp "Monitors every property using"
+        staff -> shell "Runs the daily operation using"
+        landing -> webapp "Sends visitors to"
+        shell -> i18n "Translates the labels with"
+        shell -> m_overview "Routes to"
+        m_overview -> shared "Uses"
+        shell -> m_bookings "Routes to"
+        m_bookings -> shared "Uses"
+        shell -> m_rooms "Routes to"
+        m_rooms -> shared "Uses"
+        shell -> m_inventory "Routes to"
+        m_inventory -> shared "Uses"
+        shell -> m_access "Routes to"
+        m_access -> shared "Uses"
+        shared -> demoapi "Sends requests to" "JSON/HTTPS"
+        shared -> api "Sends requests to" "JSON/HTTPS"
+        m_access -> rfid "Encodes key cards through" "Simulated in this version"
+        api -> db "Reads from and writes to" "MySQL protocol"
+        webapp -> overviewController "Makes API requests to" "JSON/HTTPS"
+        overviewController -> overviewQueries "Sends queries to"
+        overviewQueries -> overviewRepository "Reads through"
+        overviewRepository -> db "Reads from and writes to" "MySQL protocol"
+        webapp -> bookingsController "Makes API requests to" "JSON/HTTPS"
+        bookingsController -> bookingsCommands "Sends commands to"
+        bookingsCommands -> bookingsRepository "Reads and writes through"
+        bookingsController -> bookingsQueries "Sends queries to"
+        bookingsQueries -> bookingsRepository "Reads through"
+        bookingsRepository -> db "Reads from and writes to" "MySQL protocol"
+        bookingsCommands -> bookingsAdapter "Uses"
+        webapp -> roomsController "Makes API requests to" "JSON/HTTPS"
+        roomsController -> roomsCommands "Sends commands to"
+        roomsCommands -> roomsRepository "Reads and writes through"
+        roomsController -> roomsQueries "Sends queries to"
+        roomsQueries -> roomsRepository "Reads through"
+        roomsRepository -> db "Reads from and writes to" "MySQL protocol"
+        webapp -> inventoryController "Makes API requests to" "JSON/HTTPS"
+        inventoryController -> inventoryCommands "Sends commands to"
+        inventoryCommands -> inventoryRepository "Reads and writes through"
+        inventoryController -> inventoryQueries "Sends queries to"
+        inventoryQueries -> inventoryRepository "Reads through"
+        inventoryRepository -> db "Reads from and writes to" "MySQL protocol"
+        inventoryCommands -> inventoryAdapter "Uses"
+        inventoryAdapter -> sendgrid "Calls" "HTTPS"
+        webapp -> accessController "Makes API requests to" "JSON/HTTPS"
+        accessController -> accessCommands "Sends commands to"
+        accessCommands -> accessRepository "Reads and writes through"
+        accessController -> accessQueries "Sends queries to"
+        accessQueries -> accessRepository "Reads through"
+        accessRepository -> db "Reads from and writes to" "MySQL protocol"
+        accessCommands -> accessAdapter "Uses"
+        accessAdapter -> rfid "Calls" "HTTPS"
+        rfid -> accessController "Reports access events to" "HTTPS"
     }
 
     views {
-        systemContext hostera "ContextoHostera" {
-            include staff hostera rfid notificaciones
-            autoLayout
-            description "Diagrama de Contexto del sistema HOSTERA"
-        }
-
-        container hostera "ContenedoresHostera" {
-            include staff webapp auth reservas inventario accesos dashboard db dbAccesos rfid notificaciones
-            autoLayout
-            description "Diagrama de Contenedores del sistema HOSTERA"
-        }
-
-        component webapp "ComponentesAplicacionWeb" {
+        systemContext hostera "SystemContext" {
             include *
-            autoLayout
-            description "Componentes de la Aplicación Web"
+            autoLayout tb
         }
-
-        component auth "ComponentesAutenticacion" {
+        container hostera "Containers" {
             include *
-            autoLayout
-            description "Componentes de Gestión de Autenticación"
+            autoLayout tb
         }
-
-        component reservas "ComponentesReservas" {
+        component webapp "WebApplicationComponents" {
             include *
-            autoLayout
-            description "Componentes de Gestión de Reservas y Habitaciones"
+            autoLayout tb
         }
-
-        component inventario "ComponentesInventario" {
-            include *
-            autoLayout
-            description "Componentes de Gestión de Inventario"
+        component api "ApiOverviewComponents" {
+            include ->overviewController-> webapp db
+            autoLayout tb
         }
-
-        component accesos "ComponentesAccesos" {
-            include *
-            autoLayout
-            description "Componentes de Gestión de Accesos RFID"
+        component api "ApiBookingsComponents" {
+            include ->bookingsController-> webapp db
+            autoLayout tb
         }
-
-        component dashboard "ComponentesDashboard" {
-            include *
-            autoLayout
-            description "Componentes del Servicio de Dashboard"
+        component api "ApiRoomsComponents" {
+            include ->roomsController-> webapp db
+            autoLayout tb
         }
-
+        component api "ApiInventoryComponents" {
+            include ->inventoryController-> webapp db
+            autoLayout tb
+        }
+        component api "ApiAccessControlComponents" {
+            include ->accessController-> webapp db
+            autoLayout tb
+        }
         styles {
             element "Person" {
                 shape Person
-                background #1168bd
+                background #08427B
                 color #ffffff
             }
             element "Software System" {
-                background #1168bd
+                background #1168BD
                 color #ffffff
             }
-            element "Existing System" {
+            element "External" {
                 background #999999
                 color #ffffff
             }
             element "Container" {
-                background #438dd5
+                background #438DD5
                 color #ffffff
+            }
+            element "Component" {
+                background #85BBF0
+                color #000000
             }
             element "Database" {
                 shape Cylinder
-            }
-            element "Component" {
-                background #85bbf0
-                color #000000
             }
         }
     }
