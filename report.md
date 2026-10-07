@@ -2562,11 +2562,14 @@ localizados para que el título y la descripción coincidan con el contenido vis
 
 | Variante | Title | Description | Keywords | Author |
 | :--- | :--- | :--- | :--- | :--- |
-| English | `Hostera — Hotel operations, connected.` | `Hostera connects reservations, room availability, inventory, and RFID access so hotel teams can operate with a clearer view of their properties.` | `hotel operations, hotel management platform, reservations, room availability, inventory, RFID access` | `Grafo Verde Team` |
-| Español | `Hostera — Operación hotelera conectada` | `Hostera conecta reservas, disponibilidad de habitaciones, inventario y accesos RFID para que los equipos hoteleros operen con una visión más clara de sus propiedades.` | `operación hotelera, plataforma de gestión hotelera, reservas, disponibilidad de habitaciones, inventario, accesos RFID` | `Grafo Verde Team` |
+| English | `Hostera \| Hotel operations, connected` | `Run reservations, rooms, inventory and access across every property from one place.` | `hotel operations, hotel management platform, reservations, room availability, inventory, RFID access` | `Grafo Verde Team` |
+| Español | `Hostera \| Operación hotelera, conectada` | `Gestiona reservas, habitaciones, inventario y accesos en todos tus hoteles desde un solo lugar.` | `operación hotelera, plataforma de gestión hotelera, reservas, disponibilidad de habitaciones, inventario, accesos RFID` | `Grafo Verde Team` |
 
 El título y la descripción de cada variante reflejan la propuesta de valor sin
-confundir la Landing Page con una pantalla operativa. Los términos de `Keywords`
+confundir la Landing Page con una pantalla operativa. Al cambiar de idioma, la página
+actualiza el título, la descripción y las keywords con los valores de la variante
+elegida. Las páginas de contacto comercial y de términos y condiciones tienen sus
+propios valores, con el mismo autor. Los términos de `Keywords`
 se relacionan con las capacidades que el proyecto declara dentro de su alcance
 inicial: reservas, habitaciones, inventario y control de accesos.
 
@@ -2587,10 +2590,10 @@ Page utiliza los valores de su variante correspondiente y la aplicación web uti
 los valores operativos definidos anteriormente.
 
 ```html
-<title>Hostera | Hotel operations, connected.</title>
+<title>Hostera | Hotel operations, connected</title>
 <meta
   name="description"
-  content="Hostera connects reservations, room availability, inventory, and RFID access so hotel teams can operate with a clearer view of their properties."
+  content="Run reservations, rooms, inventory and access across every property from one place."
 >
 <meta
   name="keywords"
