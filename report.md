@@ -419,7 +419,7 @@ fin de mejorar la visibilidad y la coordinación de la operación hotelera.
 
 Hostera es una iniciativa nueva y no la evolución de un producto existente, por lo que
 su enunciado del problema utiliza la plantilla de Lean UX correspondiente a una
-*brand new initiative*. El enunciado se apoya en las nueve entrevistas registradas en
+*brand new initiative*. El enunciado se apoya en las diez entrevistas registradas en
 la sección 2.2 y en las cifras del sector publicadas por el Ministerio de Comercio
 Exterior y Turismo.
 
@@ -520,7 +520,7 @@ las entrevistas registradas en la sección 2.2, identificadas con sus códigos `
 
 1. El mercado objetivo de Grafo Verde son operaciones hoteleras pequeñas: de los
    28 050 establecimientos de hospedaje del país, el 85,1 % no está categorizado
-   (MINCETUR, 2025), y las nueve entrevistas corresponden a operaciones de entre 20 y
+   (MINCETUR, 2025), y las diez entrevistas corresponden a operaciones de entre 20 y
    100 habitaciones.
 2. Estas operaciones pagan por software de gestión: cuatro de los cinco respondientes
    válidos del formulario declaran que pagarían S/51 o más al mes, y el gerente general
@@ -1491,18 +1491,18 @@ sedes, y por eso el producto se concentra en operaciones de menor escala.
 
 ### 2.2.3. Análisis de entrevistas
 
-Este análisis reúne en un solo lugar las nueve entrevistas registradas en la sección
+Este análisis reúne en un solo lugar las diez entrevistas registradas en la sección
 2.2.2 y es la base sobre la que se construyen los arquetipos de la sección 2.3. Las
-fuentes se identifican con el código asignado a cada entrevista: `E1` a `E4` para las
+fuentes se identifican con el código asignado a cada entrevista: `E1` a `E5` para las
 entrevistas en video y `F1` a `F5` para las entrevistas complementarias por
 formulario. La respuesta `F6` queda fuera de todos los porcentajes por corresponder a
 una franquicia internacional de seis o más establecimientos, por encima del límite del
 segmento 2.
 
 Con la asignación por escala de operación, el segmento 1 reúne cuatro entrevistas
-(`E1`, `F1`, `F2`, `F3`) y el segmento 2 reúne cinco (`E2`, `E3`, `E4`, `F4`, `F5`).
-Ambos quedan dentro del rango de tres a cinco entrevistas por segmento que exige el
-enunciado del proyecto.
+(`E1`, `F1`, `F2`, `F3`) y el segmento 2 reúne seis (`E2`, `E3`, `E4`, `E5`, `F4`,
+`F5`). Ambos superan el mínimo de tres entrevistas por segmento que exige el enunciado
+del proyecto.
 
 Las dos fuentes aportan información de distinta naturaleza y por eso se tratan de
 forma explícita. Las entrevistas en video permiten describir el contexto, el
@@ -1569,19 +1569,20 @@ decisión de incorporar un sistema está condicionada a un financiamiento bancar
 proyectada para una temporada concreta, lo que confirma que en este segmento la
 inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
 
-#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 5)
+#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 6)
 
 | Característica | Resultado | % | Fuente |
 | :--- | :---: | :---: | :--- |
-| Supervisa dos o más establecimientos | 5 de 5 | 100 % | E2, E3, E4, F4, F5 |
-| Recibe reservas desde extranets o plataformas de agencias en línea | 4 de 5 | 80 % | E2, E4, F4, F5 |
-| Usa un PMS o sistema hotelero corporativo | 3 de 5 | 60 % | E3, E4, F5 |
-| Declara que consolidar la información entre sedes es una dificultad central | 3 de 5 | 60 % | E2, F4, F5 |
-| Recibe reservas o coordina la operación por WhatsApp | 3 de 5 | 60 % | E2, F4, F5 |
-| Concilia la información de las sedes en Excel o en cuaderno | 2 de 5 | 40 % | E2, F4 |
-| Controla el acceso a las habitaciones con tarjeta | 2 de 5 | 40 % | E2, F5 |
-| Cuenta con usuario y permisos individuales por trabajador | 1 de 5 | 20 % | E4 |
-| Señala la trazabilidad de los accesos como una necesidad no cubierta | 1 de 5 | 20 % | E2 |
+| Forma parte de una operación con dos o más establecimientos | 6 de 6 | 100 % | E2, E3, E4, E5, F4, F5 |
+| Usa un PMS o sistema hotelero corporativo | 4 de 6 | 67 % | E3, E4, E5, F5 |
+| Recibe reservas desde extranets o plataformas de agencias en línea | 4 de 6 | 67 % | E2, E4, F4, F5 |
+| Declara que consolidar la información entre sedes es una dificultad central | 3 de 6 | 50 % | E2, F4, F5 |
+| Recibe reservas o coordina la operación por WhatsApp | 3 de 6 | 50 % | E2, F4, F5 |
+| Controla el acceso a las habitaciones con tarjeta | 3 de 6 | 50 % | E2, E5, F5 |
+| Mantiene la información de cada sede separada por decisión de la organización | 2 de 6 | 33 % | E4, E5 |
+| Concilia la información de las sedes en Excel o en cuaderno | 2 de 6 | 33 % | E2, F4 |
+| Cuenta con usuario y permisos individuales por trabajador | 1 de 6 | 17 % | E4 |
+| Señala la trazabilidad de los accesos como una necesidad no cubierta | 1 de 6 | 17 % | E2 |
 | Consolida la información de todas las sedes al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Tarda una hora o más en armar ese consolidado | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Declara reportes desactualizados al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
@@ -1590,14 +1591,14 @@ inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
 | Sitúa el control de accesos en el último lugar de sus prioridades | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Pagaría S/51 o más al mes y pide una demostración previa | 2 de 2 (formulario) | 100 % | F4, F5 |
 
-El segmento reúne a quienes responden por más de una sede, con cargos de propietario
-multisede, gerente de operaciones, gerente general y Room Division Manager. A
-diferencia del segmento 1, aquí la operación diaria está repartida entre departamentos
-—reservas, recepción, seguridad, almacén y housekeeping— y el entrevistado supervisa
-en lugar de ejecutar. Rafael Prieto (`E3`) describe que no controla directamente las
-existencias del almacén, sino que aprueba los pedidos de las áreas a su cargo; el
-gerente general del Meliá (`E4`) recibe a diario los informes consolidados en lugar de
-revisar reserva por reserva.
+El segmento reúne a quienes forman parte de una operación con más de un
+establecimiento, con cargos de propietario multisede, gerente de operaciones, gerente
+general, subgerente y Room Division Manager. A diferencia del segmento 1, aquí la
+operación diaria está repartida entre departamentos —reservas, recepción, seguridad,
+almacén y housekeeping— y el entrevistado supervisa en lugar de ejecutar. Rafael Prieto
+(`E3`) describe que no controla directamente las existencias del almacén, sino que
+aprueba los pedidos de las áreas a su cargo; el gerente general del Meliá (`E4`) recibe
+a diario los informes consolidados en lugar de revisar reserva por reserva.
 
 La dificultad que define al segmento no es registrar, sino consolidar. Tres de los
 cinco entrevistados la declaran de forma explícita: Wilson (`E2`) debe coordinar
@@ -1609,24 +1610,39 @@ estructuradas, los reportes desactualizados y los procesos distintos entre sedes
 aparecen con frecuencia semanal o diaria en los dos casos.
 
 La madurez tecnológica también es desigual, pero se distribuye de otra manera que en
-el segmento 1. Tres de cinco trabajan sobre un PMS corporativo —Opera en el caso de
-`E3` y Opera Cloud integrado con el CRM en el de `E4`—, mientras que `E2` y `F4`
-sostienen operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
+el segmento 1. Cuatro de seis trabajan sobre un PMS corporativo —Opera en el caso de
+`E3`, Opera Cloud integrado con el CRM en el de `E4` y Opera Cloud con Oracle Symphony
+y el portal interno ResaWeb en el de `E5`—, mientras que `E2` y `F4` sostienen
+operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
 conviven dentro del mismo segmento, y la diferencia tiene consecuencias de producto:
 donde ya existe un PMS corporativo el problema se desplaza hacia la integración entre
 sistemas, y el propio `E4` señala que su plataforma complementaria de housekeeping
 cuesta cerca de USD 1 500 anuales por propiedad, lo que fija una referencia de precio
 para la categoría.
 
+La entrevista a Roy Ríos (`E5`) incorpora un caso que conviene leer en contraste con
+el resto. Es subgerente de un hotel que pertenece a un grupo de tres establecimientos
+de la misma cadena internacional, pero cada uno opera con razón social propia y la
+información no se comparte entre ellos: no hay movimientos de inventario entre sedes y
+los responsables de un hotel no acceden a los resultados de los otros. La separación es
+una decisión de la organización, no una limitación de sus herramientas, y el gerente
+general del Meliá (`E4`) describe el mismo criterio cuando explica que cada propiedad
+tiene su centro de costos y su acceso restringido. Para estos dos casos, consolidar
+entre sedes no es un problema por resolver, lo que delimita el alcance de Hostera: la
+capacidad de consolidación es decisiva para las operaciones que comparten
+administración, como las de `E2`, `F4` y `F5`, y resulta irrelevante donde cada
+establecimiento se gestiona como una empresa separada.
+
 El control de accesos ocupa posiciones opuestas dentro del segmento y conviene
 registrarlo como tal. Las dos respuestas estructuradas lo sitúan en el último lugar de
 sus prioridades, mientras que Wilson (`E2`) lo plantea como su necesidad principal:
 pide tarjetas nominativas por trabajador para poder identificar quién entró a una
-habitación y en qué turno. La diferencia se explica por el punto de partida. Donde ya
-existe un control por usuario individual, como describe `E4` para las operaciones
-sobre reservas, la trazabilidad deja de percibirse como un problema; donde las tarjetas
-se comparten entre personas, se convierte en el motivo principal para adoptar un
-sistema.
+habitación y en qué turno. La diferencia se explica por el punto de partida. Donde ya existe un control por usuario
+individual, como describe `E4` para las operaciones sobre reservas, o un control físico
+cerrado, como la tarjeta magnética que en el hotel de `E5` habilita únicamente el piso
+y la habitación del huésped, la trazabilidad deja de percibirse como un problema; donde
+las tarjetas se comparten entre personas, se convierte en el motivo principal para
+adoptar un sistema.
 
 #### Comparación entre los dos segmentos
 
@@ -1635,7 +1651,7 @@ características de las tablas anteriores provienen de respuestas individuales y
 una generalización del segmento. Las marcas vacías indican que la persona declaró no
 utilizar ese recurso, y los guiones que la entrevista no registró el dato.
 
-<img src="assets/chapter-2/entrevistas-perfil-tecnologico.svg" alt="Perfil tecnológico declarado en cada una de las nueve entrevistas" style="width:100%; height:auto;"/>
+<img src="assets/chapter-2/entrevistas-perfil-tecnologico.svg" alt="Perfil tecnológico declarado en cada una de las diez entrevistas" style="width:100%; height:auto;"/>
 
 *Figura 2.6. Perfil tecnológico declarado en cada entrevista, agrupado por segmento.*
 
@@ -1673,7 +1689,7 @@ prioridad declarada de forma uniforme: resulta decisivo para quien comparte tarj
 entre trabajadores y secundario para quien ya cuenta con permisos individuales.
 
 Dos limitaciones acotan el alcance de estos porcentajes. La primera es el tamaño de la
-muestra: con cuatro y cinco entrevistas por segmento, los porcentajes describen a los
+muestra: con cuatro y seis entrevistas por segmento, los porcentajes describen a los
 entrevistados y no permiten inferir proporciones de la población hotelera peruana. La
 segunda es que las dos fuentes no recogen exactamente la misma información, por lo que
 las filas basadas solo en el formulario indican su base. Ambas limitaciones se reducen
@@ -1705,8 +1721,8 @@ cada ficha.
 | Dispositivo y navegador del segmento 1: laptop y Chrome | 2 de 3 con dato — 67 % | F2, F3 |
 | Frustraciones del segmento 1: descuadres de almacén y demoras en el check-in, al menos una vez al mes | 3 de 3 — 100 % | F1, F2, F3 |
 | Objetivo del segmento 1: mantener al día las reservas y la disponibilidad | 3 de 3 lo sitúan entre sus dos prioridades | F1, F2, F3 |
-| Contexto de operación del segmento 2: dos o más establecimientos, con responsabilidad de supervisión | 5 de 5 entrevistas del segmento | E2, E3, E4, F4, F5 |
-| Frustración del segmento 2: consolidar la información entre sedes | 3 de 5 — 60 % | E2, F4, F5 |
+| Contexto de operación del segmento 2: dos o más establecimientos, con responsabilidad de supervisión | 6 de 6 entrevistas del segmento | E2, E3, E4, E5, F4, F5 |
+| Frustración del segmento 2: consolidar la información entre sedes | 3 de 6 — 50 % | E2, F4, F5 |
 | Objetivo del segmento 2: disponer de reservas y reportes centralizados | 2 de 2 lo sitúan en primer lugar | F4, F5 |
 | Disposición a pagar: S/51 o más al mes | 4 de 5 respondientes válidos — 80 % | F1, F2, F4, F5 |
 | Alternativas que ya conocen o evalúan | Análisis competitivo de la sección 2.1 | Nexus PMS, OkFac, SysHotel |
