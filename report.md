@@ -4009,7 +4009,7 @@ producto:
 | Landing Page | GitHub Pages | Rama `main` y carpeta `/ (root)` de `landing-page` | No requiere build: el sitio se sirve como HTML, CSS y JavaScript estáticos. | Publicación automática del flujo de GitHub Pages al integrar en `main`. | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ |
 | Frontend Web Application | Firebase Hosting | Copia local de `hostera-frontend-wa`, publicada con la CLI de Firebase | `npm run build`, que genera el directorio `dist/`. | `npm run deploy`, que construye la aplicación y ejecuta `firebase deploy --only hosting`. | https://hostera-f4116.web.app/ |
 | API de datos de demostración | Render (Web Service) | Rama `main` de `hostera-frontend-wa`, desde la raíz del repositorio | `npm ci` | `npm run server:start -- --host 0.0.0.0 --port $PORT`, que reconstruye `server/db.json` desde `server/data/` e inicia json-server. | https://hostera-frontend.onrender.com |
-| RESTful Web Services | Por definir | Repositorio por registrar | Por definir con la implementación. | Por definir con la implementación. | Se definirá junto con la implementación de los Web Services. |
+| RESTful Web Services | Por definir en el Sprint 3 | Repositorio por registrar | `dotnet publish` del proyecto ASP.NET Core. | Por definir junto con el proveedor. | Se registrará al desplegar la primera versión, prevista para el Sprint 3 (AV2). |
 
 Las variables de entorno de la Frontend Web Application se documentan en el archivo
 `.env.example` del repositorio, sin valores reales. Para publicar, se definen en
@@ -4873,7 +4873,7 @@ aplicación desplegada.
 | Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | `v0.4.0` |
 | Frontend Web Application | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Firebase Hosting | `dist/`, generado y publicado con `npm run deploy` | https://hostera-f4116.web.app/ | `v0.1.0` |
 | API de datos de demostración | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Render (Web Service) | `main`, desde la raíz del repositorio con `server/start.sh` | https://hostera-frontend.onrender.com | `v0.1.0` |
-| RESTful Web Services | — | — | — | — | Fuera del alcance del Sprint 2 |
+| RESTful Web Services | Por registrar | Por definir en el Sprint 3 | — | — | Planificado para el Sprint 3 (AV2), con ASP.NET Core, Entity Framework Core y MySQL, documentado con OpenAPI vía Swagger. |
 
 <img src="assets/chapter-5/sprint-2-landing-page-v0-4-0.png" alt="Landing Page publicada en su versión 0.4.0 con el enlace de inicio de sesión en el encabezado" style="width:100%; height:auto;"/>
 
