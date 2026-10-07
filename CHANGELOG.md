@@ -28,7 +28,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Rewrote the conclusions by product lifecycle stage and formatted the bibliography in APA style.
 - Renamed the chapter 2 images to kebab-case.
 - Replaced the two impact maps with a single map for both segments and renumbered the chapter 3 figures.
-- Moved the report to `README.md`, the main file the project statement requires, and the PDF build guide to `docs/pdf-build-guide.md`.
 
 ### Removed
 
