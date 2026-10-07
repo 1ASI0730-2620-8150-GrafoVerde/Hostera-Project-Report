@@ -99,6 +99,44 @@ fue una actividad compartida.
 
 <div style="page-break-before: always;"></div>
 
+## TB1
+
+Durante TB1 el informe se trabajó en ramas de funcionalidad que se integraron en
+`develop`, con mensajes Conventional Commits. Entre el 18 de septiembre y el 6 de
+octubre de 2026 se registraron 45 commits sin contar los de merge. Los cinco
+integrantes aportaron al informe; la siguiente tabla resume qué secciones trabajó
+cada uno.
+
+| Integrante | Aportes al informe en TB1 | Commits |
+|---|---|---:|
+| Darnell Cuba (`darnell1910`) | Entorno de desarrollo, control de código y despliegue (5.1); entrevistas complementarias y análisis de entrevistas; Lean UX y su canvas; trazabilidad de las User Personas y matriz de tareas; Sprint 2; conclusiones; registro de versiones. | 20 |
+| José Santana (`JhosBY2005`) | Student Outcome; limpieza de secciones vacías, enlaces y textos de plantilla; bibliografía en APA; user stories sin referencias a la interfaz; objetivo del Sprint 1; registro de entrevistas y criterio del segmento 2; modelo C4. | 16 |
+| Joaquin Cuba (`joacuba`) | Priorización del Product Backlog; alineación de las user stories con el frontend; formato de enlaces e imágenes en el PDF. | 4 |
+| Juan Diego Flores (`YopoFlores`) | Impact Mapping con objetivos de negocio del modelo SaaS; supuestos del Lean UX. | 4 |
+| Mateo Condori (`BeyaminUv`) | Ajuste del registro de entrevistas. | 1 |
+
+El número de commits en el informe no mide todo el aporte de TB1. En el mismo
+periodo el equipo construyó la Frontend Web Application, donde Mateo Condori fue el
+segundo integrante con más commits y lideró el contexto de habitaciones, como
+muestra la sección 5.2.2.8.
+
+La release de TB1 todavía no se integra en `main`, por lo que el analítico de
+colaboradores de GitHub, que solo cuenta esa rama, aún no refleja este periodo. Por
+eso la evidencia se toma de la rama `develop`: el gráfico se construyó a partir de su
+historial y la captura muestra sus commits más recientes.
+
+<div style="page-break-before: always;"></div>
+
+<img src="assets/project-report-collaboration-insights/tb1-commits-by-member.svg" alt="Commits por integrante en el repositorio del informe durante TB1" style="width:100%; height:auto;"/>
+
+*Evidencia 3. Commits por integrante en la rama `develop` del repositorio del Project Report durante TB1.*
+
+<img src="assets/project-report-collaboration-insights/tb1-github-commits.png" alt="Historial de commits de la rama develop del repositorio del Project Report en GitHub" style="width:100%; height:auto;"/>
+
+*Evidencia 4. Historial de commits de la rama `develop` del repositorio del Project Report durante TB1.*
+
+<div style="page-break-before: always;"></div>
+
 # Contenido
 
 ## Tabla de Contenidos
