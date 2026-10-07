@@ -2061,9 +2061,9 @@ La siguiente matriz detalla cómo cada meta del negocio digital se apoya en un c
 
 El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la jerarquía completa desde los Business Goals hasta las User Stories establecidas para el producto mínimo viable de Hostera.
 
-**Impact Mapping: Segmento 1 - Hotel independiente**
+<img src="assets/chapter-3/uxpressia-impact-mapping.png" alt="Impact Mapping de Hostera con los objetivos de negocio de ambos segmentos" style="width:100%; height:auto;"/>
 
-<img src="assets/chapter-3/uxpressia-impact-mapping.png" alt="Imagen de Impact Mapping Hotel Independiente" style="width:100%; height:auto;"/>
+*Figura 3.1. Impact Mapping de Hostera para los hoteles independientes y las pequeñas cadenas hoteleras.*
 
 <div style="page-break-before: always;"></div>
 
@@ -2157,7 +2157,7 @@ para su seguimiento, priorización y estimación.
 
 ![Product Backlog de Hostera en YouTrack](assets/chapter-3/youtrack-product-backlog.png)
 
-*Figura 3.3. Listado general del Product Backlog de Hostera en YouTrack.*
+*Figura 3.2. Listado general del Product Backlog de Hostera en YouTrack.*
 
 El Product Backlog puede consultarse en el tablero de YouTrack del proyecto (https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5).
 
