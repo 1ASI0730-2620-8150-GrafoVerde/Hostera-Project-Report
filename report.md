@@ -1882,7 +1882,7 @@ negocio, escritos en pasado y en inglés como el resto del Ubiquitous Language, 
 con los actores que los provocan, los sistemas externos que participan y los puntos
 que el equipo no podía resolver todavía. La sesión se desarrolló en tres etapas.
 
-#### Etapa 1: exploración de eventos
+### Etapa 1: exploración de eventos
 
 Solapamiento masivo de información, eventos repetidos con distinta redacción, y un fuerte desorden cronológico que dificulta la lectura global.
 
@@ -1890,7 +1890,7 @@ Solapamiento masivo de información, eventos repetidos con distinta redacción, 
 
 *Figura 2.15. Etapa 1 del Big Picture EventStorming: exploración de eventos.*
 
-#### Etapa 2: línea de tiempo
+### Etapa 2: línea de tiempo
 
 Los eventos dispersos se alinean horizontalmente de izquierda a derecha siguiendo el flujo natural del negocio de Hostera, desde la reserva inicial hasta el check-out y el cierre diario.
 
@@ -1898,7 +1898,7 @@ Los eventos dispersos se alinean horizontalmente de izquierda a derecha siguiend
 
 *Figura 2.16. Etapa 2 del Big Picture EventStorming: eventos ordenados en la línea de tiempo.*
 
-#### Etapa 3: fases, actores y hotspots
+### Etapa 3: fases, actores y hotspots
 
 Se introducen los eventos negativos en rojo (problemas como conflictos de overbooking o fallas de stock) y se sitúan los elementos de control superior (cabeceras amarillas de fases y notas de actores o comandos que desencadenan los eventos), tal como se aprecia organizado en filas horizontales en la imagen.
 
