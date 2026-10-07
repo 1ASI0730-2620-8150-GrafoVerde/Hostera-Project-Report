@@ -4570,11 +4570,11 @@ API de datos de demostración construida con json-server.
 | --- | --- |
 | Sprint # | Sprint 2 |
 | Sprint Planning Background | Planificación de la primera versión de la Frontend Web Application, organizada por bounded context, y de la versión `v0.4.0` de la Landing Page. |
-| Date | Por completar |
-| Time | Por completar |
-| Location | Por completar |
-| Prepared By | Por completar |
-| Attendees (to planning meeting) | Por completar |
+| Date | 2026-09-23 |
+| Time | 12:00 PM |
+| Location | Virtual |
+| Prepared By | Cuba Pareja, Joaquin Antonio (`joacuba`) |
+| Attendees (to planning meeting) | Cuba Pareja, Joaquin Antonio (`joacuba`); Cuba Vega, Darnell Yadir (`darnell1910`); Condori Urviola, Mateo Sebastián (`BeyaminUv`); Flores Rios, Juan Diego (`YopoFlores`); Santana Luna, José Antonio (`JhosBY2005`). |
 | Sprint 1 Review Summary | El Sprint 1 cerró con la Landing Page publicada en GitHub Pages y las ocho user stories de `EP001` implementadas. Tras la revisión, el docente observó que las user stories describían la interfaz, que la propuesta mantenía un plan gratuito y que el Sprint Goal se medía por historias terminadas y no por lo que logra el visitante. Esas observaciones se atendieron en el informe y en la versión `v0.3.0` de la Landing Page. |
 | Sprint 1 Retrospective Summary | Se mantuvo el trabajo con una rama por historia integrada con Git Flow, que permitió cerrar las ocho historias del sprint. Se cambiaron tres prácticas: las historias se integraron en una sola jornada y el aporte quedó desigual (8 commits de un integrante frente a 2 de otros tres), por lo que en el Sprint 2 cada integrante lidera un bounded context completo y su rama se integra en `develop` al terminarlo; las historias pasaron a redactarse por lo que logra el usuario y no por la interfaz; y el Sprint Goal se mide por lo que el usuario consigue en el producto publicado. |
 | Sprint 2 Goal | Nuestro enfoque está en que el responsable de operaciones de un hotel independiente o de una cadena pequeña pueda llevar desde una sola aplicación web las reservas, las habitaciones, el inventario y las credenciales de acceso de la propiedad con la que trabaja. Creemos que esto le permite dejar de reconstruir el estado de su hotel a partir de registros separados. Esto se confirmará cuando, en la aplicación publicada, una persona pueda pasar del panorama de la propiedad a registrar una reserva, completar el check-in con la emisión de la tarjeta de acceso y registrar un ajuste de existencias sin salir de la aplicación. |
@@ -4613,7 +4613,7 @@ corresponden a la estimación registrada en el Product Backlog.
 | US028 | Review and manage RFID credentials | Control de accesos | 5 | Implementada |
 | US029 | Encode or replace an RFID key card | Control de accesos | 8 | Implementada |
 | US030 | Review RFID access events | Control de accesos | 5 | Implementada |
-| **Total** | **21 user stories** | | **109** | **21/21 implementadas** |
+| **Total** | **21 user stories** | **Seis áreas de la aplicación** | **109** | **21/21 implementadas** |
 
 Al cierre del sprint, en la aplicación publicada se puede recorrer el flujo que define el
 objetivo: desde el panorama de la propiedad se llega al registro de una reserva, al
@@ -4648,15 +4648,16 @@ configuración inicial y el despliegue.
 #### 5.2.2.3. Sprint Backlog 2
 
 El Sprint Backlog 2 descompone las 21 user stories en el trabajo implementado en cada
-bounded context de la aplicación. El tablero del Sprint 2 en YouTrack registra las
-historias, sus responsables y sus story points.
-
-Por completar: captura del tablero del Sprint 2 en YouTrack y su URL pública.
+bounded context de la aplicación. Cada historia se trabajó en la rama de su bounded
+context, y el archivo `docs/user-stories.md` del repositorio del frontend relaciona
+cada historia con los componentes que la implementan y con su responsable.
 
 La tabla siguiente presenta el trabajo de cada user story y su estado al cierre del
 sprint. El responsable de cada tarea es el integrante con más commits sobre los
 componentes que implementan la historia, según la matriz de trazabilidad del archivo
-`docs/user-stories.md` del repositorio del frontend.
+`docs/user-stories.md` del repositorio del frontend. La estimación en horas de
+cada tarea se obtuvo de los story points de su historia, a razón de dos horas por
+punto.
 
 <table>
   <thead>
@@ -4680,27 +4681,27 @@ componentes que implementan la historia, según la matriz de trazabilidad del ar
     </tr>
   </thead>
   <tbody>
-    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.1</td><td>Build the operational overview</td><td>Panorama de la propiedad activa con ingresos, ocupación, llegadas del día y estado de las habitaciones, y comparación entre propiedades.</td><td>Por completar</td><td>Juan Diego Flores</td><td>Done</td></tr>
-    <tr><td>US033</td><td>Navigate between operational areas</td><td>T033.1</td><td>Build the navigation shell</td><td>Layout de la aplicación, barra lateral y rutas entre las áreas operativas conservando la propiedad activa.</td><td>Por completar</td><td>Juan Diego Flores</td><td>Done</td></tr>
-    <tr><td>US012</td><td>Find and review bookings</td><td>T012.1</td><td>Build the booking list and filters</td><td>Listado de reservas con búsqueda por huésped o código y filtros por periodo y estado.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US013</td><td>Create a booking</td><td>T013.1</td><td>Build the booking creation form</td><td>Registro de una reserva con validación de disponibilidad, periodo, capacidad y plan tarifario.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US014</td><td>Review and update a booking</td><td>T014.1</td><td>Build the booking detail and edition</td><td>Detalle de la reserva y edición de sus datos antes de la llegada del huésped.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US015</td><td>Manage the booking lifecycle</td><td>T015.1</td><td>Implement the booking lifecycle</td><td>Confirmación, cancelación con motivo y registro de no-show de una reserva.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US016</td><td>Record a booking payment</td><td>T016.1</td><td>Record booking payments</td><td>Registro de pagos y cálculo del saldo pendiente de cada reserva.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US017</td><td>Complete guest check-in</td><td>T017.1</td><td>Implement guest check-in</td><td>Check-in con verificación del documento del huésped y emisión de sus tarjetas de acceso.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US018</td><td>Complete guest check-out</td><td>T018.1</td><td>Implement guest check-out</td><td>Check-out con cierre del saldo, condición de la habitación y vencimiento de las tarjetas.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US019</td><td>Review room availability for a selected date</td><td>T019.1</td><td>Build the room availability view</td><td>Disponibilidad diaria de las habitaciones a partir de una fecha seleccionada.</td><td>Por completar</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US020</td><td>Create a room</td><td>T020.1</td><td>Build the room creation form</td><td>Registro de habitaciones a partir de su tipo, capacidad y camas.</td><td>Por completar</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US021</td><td>Maintain room information and operational status</td><td>T021.1</td><td>Maintain room details and status</td><td>Detalle de la habitación, calendario mensual y periodos de estado operativo.</td><td>Por completar</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US022</td><td>Manage room types</td><td>T022.1</td><td>Manage room types</td><td>Creación, edición y eliminación de tipos de habitación sin uso.</td><td>Por completar</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US023</td><td>Manage rate plans and daily rates</td><td>T023.1</td><td>Manage rate plans and daily rates</td><td>Planes tarifarios y tarifas por noche de cada tipo de habitación.</td><td>Por completar</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US024</td><td>Monitor property inventory</td><td>T024.1</td><td>Build the inventory overview</td><td>Listado de artículos con su condición de stock y sus existencias por ubicación.</td><td>Por completar</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US025</td><td>Manage inventory item records</td><td>T025.1</td><td>Manage inventory item records</td><td>Creación y edición de artículos con su código, categoría, unidad y umbrales.</td><td>Por completar</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US026</td><td>Adjust inventory stock</td><td>T026.1</td><td>Record stock adjustments</td><td>Entradas, salidas y transferencias de stock con su historial de ajustes.</td><td>Por completar</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US027</td><td>Manage storage locations</td><td>T027.1</td><td>Manage storage locations</td><td>Ubicaciones de almacén de la propiedad y los artículos asignados a cada una.</td><td>Por completar</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US028</td><td>Review and manage RFID credentials</td><td>T028.1</td><td>Review and revoke RFID credentials</td><td>Listado y detalle de credenciales RFID con su vigencia y su revocación.</td><td>Por completar</td><td>José Santana</td><td>Done</td></tr>
-    <tr><td>US029</td><td>Encode or replace an RFID key card</td><td>T029.1</td><td>Encode and replace RFID cards</td><td>Emisión de credenciales de personal y reemplazo de tarjetas con el codificador simulado.</td><td>Por completar</td><td>José Santana</td><td>Done</td></tr>
-    <tr><td>US030</td><td>Review RFID access events</td><td>T030.1</td><td>Review RFID access events</td><td>Consulta de los eventos de acceso concedidos y denegados por habitación y persona.</td><td>Por completar</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.1</td><td>Build the operational overview</td><td>Panorama de la propiedad activa con ingresos, ocupación, llegadas del día y estado de las habitaciones, y comparación entre propiedades.</td><td>16</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US033</td><td>Navigate between operational areas</td><td>T033.1</td><td>Build the navigation shell</td><td>Layout de la aplicación, barra lateral y rutas entre las áreas operativas conservando la propiedad activa.</td><td>6</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US012</td><td>Find and review bookings</td><td>T012.1</td><td>Build the booking list and filters</td><td>Listado de reservas con búsqueda por huésped o código y filtros por periodo y estado.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US013</td><td>Create a booking</td><td>T013.1</td><td>Build the booking creation form</td><td>Registro de una reserva con validación de disponibilidad, periodo, capacidad y plan tarifario.</td><td>16</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US014</td><td>Review and update a booking</td><td>T014.1</td><td>Build the booking detail and edition</td><td>Detalle de la reserva y edición de sus datos antes de la llegada del huésped.</td><td>10</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US015</td><td>Manage the booking lifecycle</td><td>T015.1</td><td>Implement the booking lifecycle</td><td>Confirmación, cancelación con motivo y registro de no-show de una reserva.</td><td>10</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US016</td><td>Record a booking payment</td><td>T016.1</td><td>Record booking payments</td><td>Registro de pagos y cálculo del saldo pendiente de cada reserva.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US017</td><td>Complete guest check-in</td><td>T017.1</td><td>Implement guest check-in</td><td>Check-in con verificación del documento del huésped y emisión de sus tarjetas de acceso.</td><td>16</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US018</td><td>Complete guest check-out</td><td>T018.1</td><td>Implement guest check-out</td><td>Check-out con cierre del saldo, condición de la habitación y vencimiento de las tarjetas.</td><td>10</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US019</td><td>Review room availability for a selected date</td><td>T019.1</td><td>Build the room availability view</td><td>Disponibilidad diaria de las habitaciones a partir de una fecha seleccionada.</td><td>10</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US020</td><td>Create a room</td><td>T020.1</td><td>Build the room creation form</td><td>Registro de habitaciones a partir de su tipo, capacidad y camas.</td><td>6</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US021</td><td>Maintain room information and operational status</td><td>T021.1</td><td>Maintain room details and status</td><td>Detalle de la habitación, calendario mensual y periodos de estado operativo.</td><td>10</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US022</td><td>Manage room types</td><td>T022.1</td><td>Manage room types</td><td>Creación, edición y eliminación de tipos de habitación sin uso.</td><td>10</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US023</td><td>Manage rate plans and daily rates</td><td>T023.1</td><td>Manage rate plans and daily rates</td><td>Planes tarifarios y tarifas por noche de cada tipo de habitación.</td><td>10</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US024</td><td>Monitor property inventory</td><td>T024.1</td><td>Build the inventory overview</td><td>Listado de artículos con su condición de stock y sus existencias por ubicación.</td><td>10</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US025</td><td>Manage inventory item records</td><td>T025.1</td><td>Manage inventory item records</td><td>Creación y edición de artículos con su código, categoría, unidad y umbrales.</td><td>10</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US026</td><td>Adjust inventory stock</td><td>T026.1</td><td>Record stock adjustments</td><td>Entradas, salidas y transferencias de stock con su historial de ajustes.</td><td>10</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US027</td><td>Manage storage locations</td><td>T027.1</td><td>Manage storage locations</td><td>Ubicaciones de almacén de la propiedad y los artículos asignados a cada una.</td><td>10</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US028</td><td>Review and manage RFID credentials</td><td>T028.1</td><td>Review and revoke RFID credentials</td><td>Listado y detalle de credenciales RFID con su vigencia y su revocación.</td><td>10</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US029</td><td>Encode or replace an RFID key card</td><td>T029.1</td><td>Encode and replace RFID cards</td><td>Emisión de credenciales de personal y reemplazo de tarjetas con el codificador simulado.</td><td>16</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US030</td><td>Review RFID access events</td><td>T030.1</td><td>Review RFID access events</td><td>Consulta de los eventos de acceso concedidos y denegados por habitación y persona.</td><td>10</td><td>José Santana</td><td>Done</td></tr>
   </tbody>
 </table>
 
@@ -5132,7 +5133,7 @@ contexto, y las ramas se integraron en `develop` a medida que se completaban, en
 | Darnell Cuba (`darnell1910`) | Inventario | 39 |
 | José Santana (`JhosBY2005`) | Control de accesos | 39 |
 | Juan Diego Flores (`YopoFlores`) | Panorama operativo y navegación | 39 |
-| **Total** | | **252** |
+| **Total** | **Cinco integrantes** | **252** |
 
 El gráfico siguiente se construyó a partir del historial del repositorio hasta la
 versión `v0.1.0`, sin contar los commits de merge. Incluye el commit inicial del
