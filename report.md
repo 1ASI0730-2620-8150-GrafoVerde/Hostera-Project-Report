@@ -4988,8 +4988,16 @@ activa, y la interfaz se puede usar en inglés o en español.
 
 *Figura 5.13. Vista de reservas en español, con la navegación traducida y el selector de idioma.*
 
-Por completar: URL del video de navegación del Sprint 2 en Microsoft Stream, con su
-duración.
+El recorrido de esta versión se presenta en el video de navegación del Sprint 2,
+publicado en Microsoft Stream, con una duración de 5:19. El video parte de la Landing
+Page publicada y continúa en la Frontend Web Application desplegada, a la que se
+entra desde el enlace «Sign in», recorriendo sus vistas con los datos de demostración.
+
+<a href="https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2F2026-10-06%2022-29-15%2Emp4&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;ga=1&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Ee514020b-9142-4cb3-81b9-f525e7d44f1c"><img src="assets/chapter-5/sprint-2-navigation-video.png" alt="Captura del video de navegación del Sprint 2 en Microsoft Stream" style="width:100%; height:auto;"/></a>
+
+*Figura 5.14. Captura del video de navegación del Sprint 2, con la Landing Page y la Frontend Web Application (duración 5:19).*
+
+Enlace al video en Microsoft Stream: https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2F2026-10-06%2022-29-15%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee514020b-9142-4cb3-81b9-f525e7d44f1c
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
@@ -5025,7 +5033,7 @@ la respuesta de `GET /properties` con las dos propiedades de demostración.
 
 <img src="assets/chapter-5/sprint-2-demo-api-render.png" alt="Respuesta JSON del endpoint de propiedades de la API de demostración publicada en Render" style="width:100%; height:auto;"/>
 
-*Figura 5.14. Respuesta de `GET /properties` en la API de demostración publicada en Render.*
+*Figura 5.15. Respuesta de `GET /properties` en la API de demostración publicada en Render.*
 
 La documentación de la API se fue escribiendo por bounded context, a medida que cada
 rama agregaba sus recursos. Los commits correspondientes son
@@ -5069,7 +5077,7 @@ aplicación desplegada.
 
 <img src="assets/chapter-5/sprint-2-landing-page-v0-4-0.png" alt="Landing Page publicada en su versión 0.4.0 con el enlace de inicio de sesión en el encabezado" style="width:100%; height:auto;"/>
 
-*Figura 5.15. Landing Page publicada en su versión `v0.4.0`, con el enlace «Sign in» hacia la aplicación.*
+*Figura 5.16. Landing Page publicada en su versión `v0.4.0`, con el enlace «Sign in» hacia la aplicación.*
 
 La aplicación publicada en Firebase Hosting y la API publicada en Render se muestran
 en las figuras 5.8 a 5.14.
@@ -5096,11 +5104,11 @@ repositorio, por eso suma uno más que la tabla de la sección 5.2.2.4.
 
 <img src="assets/chapter-5/sprint-2-commits-by-member.svg" alt="Commits funcionales por integrante en el repositorio del frontend durante el Sprint 2" style="width:100%%; height:auto;"/>
 
-*Figura 5.16. Commits funcionales por integrante en el repositorio del frontend hasta la versión `v0.1.0`.*
+*Figura 5.17. Commits funcionales por integrante en el repositorio del frontend hasta la versión `v0.1.0`.*
 
 <img src="assets/chapter-5/sprint-2-github-commits.png" alt="Historial de commits del repositorio del frontend en la rama develop" style="width:100%%; height:auto;"/>
 
-*Figura 5.17. Historial de commits del repositorio del frontend en la rama `develop`, con la integración de ramas y de la versión `0.1.0`.*
+*Figura 5.18. Historial de commits del repositorio del frontend en la rama `develop`, con la integración de ramas y de la versión `0.1.0`.*
 
 La distribución es más pareja que en el Sprint 1. Joaquin Cuba concentra más commits
 porque lideró el contexto de reservas, el más extenso del sprint, y la configuración y
@@ -5308,5 +5316,6 @@ World Wide Web Consortium. (2024). _Web Content Accessibility Guidelines (WCAG) 
 - **Frontend Web Application desplegada.** https://hostera-f4116.web.app/
 - **API de datos de demostración.** https://hostera-frontend.onrender.com
 - **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/landing-page/
+- **Video de navegación del Sprint 2 (Landing Page y Frontend Web Application, 5:19).** https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2F2026-10-06%2022-29-15%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee514020b-9142-4cb3-81b9-f525e7d44f1c
 - **Board de seguimiento.** https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5
 - **Prototipo de Web Application.** https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes
