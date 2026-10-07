@@ -1741,13 +1741,13 @@ se presentan a continuación.
 
 User Persona 1
 
-![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
+![Steven Huarcaya](assets/chapter-2/user-persona-steven-huarcaya.png)
 
 *Figura 2.9. User Persona de Steven Huarcaya, segmento de hoteles independientes de una sede.*
 
 User Persona 2
 
-![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
+![Anyeli Cardenas](assets/chapter-2/user-persona-anyeli-cardenas.png)
 
 *Figura 2.10. User Persona de Anyeli Cárdenas, segmento de cadenas hoteleras pequeñas.*
 
@@ -1835,7 +1835,7 @@ En esta sección se presentan los User Journey Maps en su versión **As-Is** (si
 
 El *journey* actual de Steven abarca desde la recepción de solicitudes de reserva por canales dispersos hasta la revisión del inventario y la entrega física de llaves en el hotel. El proceso se caracteriza por una alta dependencia de registros manuales y una constante interrupción operativa para resolver incidencias.
 
-![As-Is User Journey Map - Steven Huarcaya](assets/chapter-2/StevenHuarcaya_journeymap.png)
+![As-Is User Journey Map - Steven Huarcaya](assets/chapter-2/journey-map-steven-huarcaya.png)
 *Figura 2.11. As-Is User Journey Map de Steven Huarcaya.*
 
 ---
@@ -1844,18 +1844,18 @@ El *journey* actual de Steven abarca desde la recepción de solicitudes de reser
 
 El *journey* actual de Anyeli contempla el proceso de consolidación y supervisión de la operación de múltiples sedes a la distancia. Las etapas clave incluyen la solicitud de reportes a los administradores locales, la consolidación manual de datos de inventario y la verificación diferida de accesos, lo cual genera retrasos y falta de visibilidad en tiempo real.
 
-![As-Is User Journey Map - Anyeli Cárdenas](assets/chapter-2/AnyeliCardenas_journeymap.png)
+![As-Is User Journey Map - Anyeli Cárdenas](assets/chapter-2/journey-map-anyeli-cardenas.png)
 *Figura 2.12. As-Is User Journey Map de Anyeli Cárdenas.*
 
 ### 2.3.4. Empathy Mapping
 
-<img src="assets/chapter-2/Empathy%20map-segmento1.png" alt="Empathy Map del segmento 1, Steven Huarcaya" style="display:block; width:65%; height:auto; margin:0 auto;"/>
+<img src="assets/chapter-2/empathy-map-steven-huarcaya.png" alt="Empathy Map del segmento 1, Steven Huarcaya" style="display:block; width:65%; height:auto; margin:0 auto;"/>
 
 *Figura 2.13. Empathy Map de Steven Huarcaya.*
 
 ---
 
-<img src="assets/chapter-2/Empathy%20map-segmento2%20(1).png" alt="Empathy Map del segmento 2, Anyeli Cárdenas" style="display:block; width:65%; height:auto; margin:0 auto;"/>
+<img src="assets/chapter-2/empathy-map-anyeli-cardenas.png" alt="Empathy Map del segmento 2, Anyeli Cárdenas" style="display:block; width:65%; height:auto; margin:0 auto;"/>
 
 *Figura 2.14. Empathy Map de Anyeli Cárdenas.*
 
