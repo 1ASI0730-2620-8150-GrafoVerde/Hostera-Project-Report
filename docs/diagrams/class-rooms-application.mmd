@@ -1,0 +1,49 @@
+classDiagram
+    direction LR
+    class IncludedService {
+        <<enumeration>>
+        RoomOnly
+        BreakfastIncluded
+        HalfBoard
+        FullBoard
+    }
+    class RoomCommandService {
+        +CreateRoomAsync(CreateRoomCommand) Task~Room~
+        +CreateRoomTypeAsync(CreateRoomTypeCommand) Task~RoomType~
+        +CreateRatePlanAsync(CreateRatePlanCommand) Task~RatePlan~
+        +SetDailyRatesAsync(SetDailyRatesCommand) Task
+        +SetRoomStatusAsync(SetRoomStatusCommand) Task
+    }
+    class AvailabilityQueryService {
+        +GetAvailabilityAsync(int, DateOnly, int) Task~IReadOnlyList~RoomAvailability~~
+        +IsRoomAvailableAsync(int, DateOnly, DateOnly) Task~bool~
+    }
+    class IRoomRepository {
+        <<interface>>
+        +FindByPropertyAsync(int) Task~IReadOnlyList~Room~~
+        +AddAsync(Room) Task
+        +Update(Room) void
+    }
+    class IRateRepository {
+        <<interface>>
+        +FindRatePlansAsync(int) Task~IReadOnlyList~RatePlan~~
+        +FindDailyRatesAsync(int, DateOnly, DateOnly) Task~IReadOnlyList~DailyRate~~
+        +SaveDailyRatesAsync(IEnumerable~DailyRate~) Task
+    }
+    class IStatusPeriodRepository {
+        <<interface>>
+        +FindByRoomAsync(int) Task~IReadOnlyList~StatusPeriod~~
+        +AddAsync(StatusPeriod) Task
+        +Remove(StatusPeriod) void
+    }
+    class IBookingsContextGateway {
+        <<interface>>
+        +GetRoomAssignmentsAsync(int, DateOnly, DateOnly) Task~IReadOnlyList~RoomAssignment~~
+    }
+    RatePlan --> IncludedService
+    RoomCommandService ..> IRoomRepository
+    RoomCommandService ..> IRateRepository
+    RoomCommandService ..> IStatusPeriodRepository
+    AvailabilityQueryService ..> IRoomRepository
+    AvailabilityQueryService ..> IStatusPeriodRepository
+    AvailabilityQueryService ..> IBookingsContextGateway

@@ -1,0 +1,34 @@
+classDiagram
+    direction LR
+    class InventoryCommandService {
+        +CreateItemAsync(CreateInventoryItemCommand) Task~InventoryItem~
+        +UpdateItemAsync(UpdateInventoryItemCommand) Task
+        +AdjustStockAsync(AdjustStockCommand) Task~StockAdjustment~
+        +CreateLocationAsync(CreateStorageLocationCommand) Task~StorageLocation~
+        +RemoveLocationAsync(int) Task
+    }
+    class InventoryQueryService {
+        +GetItemsAsync(int, int?, StockCondition?) Task~IReadOnlyList~InventoryItem~~
+        +GetLocationsAsync(int) Task~IReadOnlyList~StorageLocation~~
+    }
+    class IInventoryItemRepository {
+        <<interface>>
+        +FindByIdAsync(int) Task~InventoryItem~
+        +FindByPropertyAsync(int) Task~IReadOnlyList~InventoryItem~~
+        +AddAsync(InventoryItem) Task
+        +Update(InventoryItem) void
+    }
+    class IStorageLocationRepository {
+        <<interface>>
+        +FindByPropertyAsync(int) Task~IReadOnlyList~StorageLocation~~
+        +AddAsync(StorageLocation) Task
+        +Remove(StorageLocation) void
+    }
+    class INotificationGateway {
+        <<interface>>
+        +SendLowStockAlertAsync(InventoryItem) Task
+    }
+    InventoryCommandService ..> IInventoryItemRepository
+    InventoryCommandService ..> IStorageLocationRepository
+    InventoryCommandService ..> INotificationGateway
+    InventoryQueryService ..> IInventoryItemRepository
