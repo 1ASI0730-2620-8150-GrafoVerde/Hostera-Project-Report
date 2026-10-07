@@ -1831,27 +1831,40 @@ entre sedes. Esto sostiene el orden del Product Backlog de la sección 3.3, que 
 panorama operativo y las reservas antes que los reportes y el control de accesos.
 
 ### 2.3.3. User Journey Mapping
-## As-Is User Journey Maps
 
 En esta sección se presentan los User Journey Maps en su versión **As-Is** (situación actual) para cada uno de los segmentos representados. Estos mapas ilustran el flujo de trabajo de extremo a extremo (*end-to-end journey*) que experimentan los usuarios al gestionar sus operaciones hoteleras cotidianas sin la presencia de la plataforma Hostera, evidenciando los puntos de fricción, ineficiencias y dolores en sus procesos actuales.
 
-###  Segmento 1: Steven Huarcaya
+#### Segmento 1: Steven Huarcaya
 
 El *journey* actual de Steven abarca desde la recepción de solicitudes de reserva por canales dispersos hasta la revisión del inventario y la entrega física de llaves en el hotel. El proceso se caracteriza por una alta dependencia de registros manuales y una constante interrupción operativa para resolver incidencias.
 
 ![As-Is User Journey Map - Steven Huarcaya](assets/chapter-2/journey-map-steven-huarcaya.png)
+
 *Figura 2.11. As-Is User Journey Map de Steven Huarcaya.*
 
 ---
 
-###  Segmento 2: Anyeli Cárdenas
+#### Segmento 2: Anyeli Cárdenas
 
 El *journey* actual de Anyeli contempla el proceso de consolidación y supervisión de la operación de múltiples sedes a la distancia. Las etapas clave incluyen la solicitud de reportes a los administradores locales, la consolidación manual de datos de inventario y la verificación diferida de accesos, lo cual genera retrasos y falta de visibilidad en tiempo real.
 
 ![As-Is User Journey Map - Anyeli Cárdenas](assets/chapter-2/journey-map-anyeli-cardenas.png)
+
 *Figura 2.12. As-Is User Journey Map de Anyeli Cárdenas.*
 
 ### 2.3.4. Empathy Mapping
+
+Los Empathy Maps muestran, para cada User Persona, lo que dice, piensa, siente, hace,
+ve y escucha en su operación actual, junto con sus dolores y lo que espera ganar. Se
+elaboraron en UXPressia a partir de las fichas de la sección 2.3.1 y de los journey
+maps anteriores.
+
+Los dos mapas comparten el mismo dolor de fondo: la información de la operación está
+repartida en registros distintos. Para Steven ese dolor aparece dentro de su hotel, en
+los descuadres del almacén, el riesgo de sobreventa y la entrega de llaves físicas.
+Para Anyeli aparece entre sedes: recibe reportes en formatos distintos y con días de
+retraso, y no puede comprobar quién entra a las áreas restringidas de las sedes donde
+no está.
 
 <img src="assets/chapter-2/empathy-map-steven-huarcaya.png" alt="Empathy Map del segmento 1, Steven Huarcaya" style="display:block; width:65%; height:auto; margin:0 auto;"/>
 
