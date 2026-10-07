@@ -878,7 +878,7 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
 </tr>
 <tr>
   <td>Estrategias de marketing</td>
-  <td>La estrategia comercial se encuentra por validar durante el desarrollo y el levantamiento de requisitos.</td>
+  <td>Landing Page en inglés y español con un camino por escala de operación, planes y precios publicados, acceso directo a la aplicación y una página de contacto comercial.</td>
   <td>Demo gratuita, cobertura nacional, testimonios de clientes y promoción de una solución 100 % web.</td>
   <td>Demo gratuita, contacto por WhatsApp, planes publicados e implementación y capacitación incluidas.</td>
   <td>Demo guiada, precios de entrada publicados, contenidos comparativos e integraciones a medida.</td>
@@ -893,7 +893,7 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
 </tr>
 <tr>
   <td>Precios &amp; Costos</td>
-  <td>No definidos; se determinarán después de validar necesidades, alcance e implementación.</td>
+  <td>Suscripción mensual publicada: plan Starter a S/ 39 por propiedad para una sede de hasta 10 habitaciones y plan Professional a S/ 8 por habitación para cadenas de 2 a 5 sedes; contacto comercial para grupos mayores.</td>
   <td>Pago anual; el precio no se publica en la página consultada y se solicita una demostración.</td>
   <td>Planes de S/ 140, S/ 210 y S/ 350 mensuales; descuento anual e implementación incluida.</td>
   <td>Suscripción desde S/ 100 mensuales; integraciones específicas cotizadas según alcance.</td>
