@@ -1,0 +1,100 @@
+classDiagram
+    direction LR
+    class Booking {
+        +int Id
+        +int PropertyId
+        +string Code
+        +BookingStatus Status
+        +GuestContact Guest
+        +DateOnly CheckInDate
+        +DateOnly CheckOutDate
+        +int Guests
+        +int RoomTypeId
+        +int? RoomId
+        +int RatePlanId
+        +decimal TotalAmount
+        +string? GuestRequest
+        +DateTimeOffset CreatedAt
+        +int Nights
+        +Confirm(int) void
+        +Cancel(CancellationReason, string, int) void
+        +MarkNoShow(int) void
+        +CheckIn(GuestDocument, int) void
+        +CheckOut(RoomCondition, string, int) void
+        +BalanceDue(IEnumerable~Payment~) decimal
+        +Overlaps(DateOnly, DateOnly) bool
+    }
+    class GuestContact {
+        <<value object>>
+        +string Name
+        +string Email
+        +string Phone
+        +string PreferredLanguage
+    }
+    class GuestDocument {
+        <<value object>>
+        +GuestDocumentType Type
+        +string Number
+    }
+    class StatusChange {
+        <<value object>>
+        +DateTimeOffset At
+        +int OperatorId
+    }
+    class Cancellation {
+        <<value object>>
+        +CancellationReason Reason
+        +string Note
+        +DateTimeOffset At
+        +int OperatorId
+    }
+    class CheckOutRecord {
+        <<value object>>
+        +RoomCondition RoomCondition
+        +string DepartureNote
+        +DateTimeOffset At
+        +int OperatorId
+    }
+    class Payment {
+        +int Id
+        +int PropertyId
+        +int BookingId
+        +decimal Amount
+        +PaymentMethod Method
+        +DateTimeOffset PaidAt
+        +string Reference
+        +int RecordedBy
+    }
+    class BookingStatus {
+        <<enumeration>>
+        Pending
+        Confirmed
+        CheckedIn
+        CheckedOut
+        Cancelled
+        NoShow
+    }
+    class PaymentMethod {
+        <<enumeration>>
+        Cash
+        CardTerminal
+        BankTransfer
+        Other
+    }
+    class CancellationReason {
+        <<enumeration>>
+        GuestRequest
+        ChangeOfPlans
+        DuplicateBooking
+        PropertyUnable
+        Other
+    }
+    Booking *-- GuestContact
+    Booking *-- "0..1" GuestDocument : check-in
+    Booking *-- "0..1" StatusChange : confirmation
+    Booking *-- "0..1" Cancellation
+    Booking *-- "0..1" CheckOutRecord
+    Booking --> BookingStatus
+    Payment --> PaymentMethod
+    Cancellation --> CancellationReason
+    Payment "0..*" --> "1" Booking : BookingId

@@ -1,0 +1,87 @@
+classDiagram
+    direction LR
+    class InventoryItem {
+        +int Id
+        +int PropertyId
+        +string Code
+        +string Name
+        +ItemCategory Category
+        +MeasurementUnit Unit
+        +decimal LowStockThreshold
+        +int? PrimaryLocationId
+        +IReadOnlyList~LocationStock~ Stocks
+        +IReadOnlyList~StockAdjustment~ Adjustments
+        +decimal TotalQuantity
+        +StockCondition Condition
+        +ApplyStockAdjustment(StockAdjustment) void
+        +QuantityAt(int) decimal
+        +AssignStorageLocation(int) void
+    }
+    class LocationStock {
+        <<value object>>
+        +int LocationId
+        +decimal Quantity
+    }
+    class StockAdjustment {
+        +int Id
+        +StockOperation Operation
+        +int LocationId
+        +decimal Quantity
+        +string Reason
+        +string? Note
+        +int? TransferId
+        +DateTimeOffset RecordedAt
+        +int OperatorId
+    }
+    class StorageLocation {
+        +int Id
+        +int PropertyId
+        +string Code
+        +string Name
+        +LocationType Type
+        +string Area
+        +string ResponsibleTeam
+        +string? Description
+        +CanBeRemoved(IEnumerable~InventoryItem~) bool
+    }
+    class StockCondition {
+        <<enumeration>>
+        InStock
+        LowStock
+        OutOfStock
+    }
+    class StockOperation {
+        <<enumeration>>
+        In
+        Out
+        Transfer
+        OperationalConsumption
+    }
+    class ItemCategory {
+        <<enumeration>>
+        Linen
+        GuestAmenities
+        CleaningSupplies
+        AccessSupplies
+    }
+    class MeasurementUnit {
+        <<enumeration>>
+        Units
+        Liters
+        Kilograms
+    }
+    class LocationType {
+        <<enumeration>>
+        Warehouse
+        Closet
+        FrontDesk
+        ServiceArea
+    }
+    InventoryItem "1" *-- "0..*" LocationStock
+    InventoryItem "1" *-- "0..*" StockAdjustment : history
+    StorageLocation "1" --> "0..*" LocationStock
+    InventoryItem --> StockCondition
+    InventoryItem --> ItemCategory
+    InventoryItem --> MeasurementUnit
+    StockAdjustment --> StockOperation
+    StorageLocation --> LocationType

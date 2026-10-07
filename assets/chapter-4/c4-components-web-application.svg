@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1170" viewBox="0 0 1520 1170">
+<defs><marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#707070"/></marker></defs>
+<rect width="1520" height="1170" fill="#FFFFFF"/>
+<circle cx="750.0" cy="46" r="26" fill="#08427B"/>
+<rect x="620" y="61.6" width="260" height="108.4" rx="24" fill="#08427B"/>
+<text x="750.0" y="85.6" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Hotel Staff</text>
+<text x="750.0" y="100.6" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#FFFFFF" text-anchor="middle">[Person]</text>
+<text x="750.0" y="121.6" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">Front desk, inventory and security</text>
+<text x="750.0" y="136.6" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">operators who run the daily operation</text>
+<text x="750.0" y="151.6" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">of a property.</text>
+<rect x="30" y="230" width="1140" height="660" rx="10" fill="none" stroke="#666" stroke-width="1.6" stroke-dasharray="8,5"/>
+<text x="44.0" y="876.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="start">Web Application [Container: Vue 3, Pinia and PrimeVue]</text>
+<rect x="60" y="270" width="240" height="150" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="180.0" y="294.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Localization</text>
+<text x="180.0" y="309.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: Vue I18n]</text>
+<text x="180.0" y="330.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">i18n.js and the English and</text>
+<text x="180.0" y="345.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Spanish locale files of every</text>
+<text x="180.0" y="360.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">module.</text>
+<rect x="500" y="270" width="280" height="150" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="640.0" y="294.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">App Shell</text>
+<text x="640.0" y="309.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: Vue Router and PrimeVue]</text>
+<text x="640.0" y="330.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">app.vue, router.js and the shared layout</text>
+<text x="640.0" y="345.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">with the sidebar and the language</text>
+<text x="640.0" y="360.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">switcher.</text>
+<rect x="50" y="500" width="210" height="175" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="155.0" y="524.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Overview Module</text>
+<text x="155.0" y="539.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: Vue views, Pinia</text>
+<text x="155.0" y="554.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">store and API client]</text>
+<text x="155.0" y="575.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Property overview, revenue</text>
+<text x="155.0" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">and occupancy, room status</text>
+<text x="155.0" y="605.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">and today's arrivals.</text>
+<rect x="274" y="500" width="210" height="175" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="379.0" y="524.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Bookings Module</text>
+<text x="379.0" y="539.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: Vue views, Pinia</text>
+<text x="379.0" y="554.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">store and API client]</text>
+<text x="379.0" y="575.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Bookings, payments, check-in,</text>
+<text x="379.0" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">check-out and cancellation.</text>
+<rect x="498" y="500" width="210" height="175" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="603.0" y="524.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Rooms Module</text>
+<text x="603.0" y="539.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: Vue views, Pinia</text>
+<text x="603.0" y="554.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">store and API client]</text>
+<text x="603.0" y="575.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Rooms, room types,</text>
+<text x="603.0" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">availability calendar, rate</text>
+<text x="603.0" y="605.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">plans and daily rates.</text>
+<rect x="722" y="500" width="210" height="175" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="827.0" y="524.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Inventory Module</text>
+<text x="827.0" y="539.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: Vue views, Pinia</text>
+<text x="827.0" y="554.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">store and API client]</text>
+<text x="827.0" y="575.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Inventory items, storage</text>
+<text x="827.0" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">locations and stock</text>
+<text x="827.0" y="605.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">adjustments.</text>
+<rect x="946" y="500" width="210" height="175" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="1051.0" y="524.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Access Control Module</text>
+<text x="1051.0" y="539.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: Vue views, Pinia</text>
+<text x="1051.0" y="554.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">store and API client]</text>
+<text x="1051.0" y="575.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">Guest and staff credentials,</text>
+<text x="1051.0" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">key-card encoding and access</text>
+<text x="1051.0" y="605.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">events.</text>
+<rect x="500" y="730" width="280" height="140" rx="8" fill="#85BBF0" stroke="#5D82A8"/>
+<text x="640.0" y="754.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Shared Infrastructure</text>
+<text x="640.0" y="769.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#000000" text-anchor="middle">[Component: Axios]</text>
+<text x="640.0" y="790.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">base-api.js and base-endpoint.js: build</text>
+<text x="640.0" y="805.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">every endpoint from the configured API</text>
+<text x="640.0" y="820.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#000000" text-anchor="middle">URL.</text>
+<rect x="300" y="950" width="290" height="150" rx="8" fill="#438DD5" stroke="#2E6295"/>
+<text x="445.0" y="974.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Demo API</text>
+<text x="445.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#FFFFFF" text-anchor="middle">[Container: Node.js and json-server]</text>
+<text x="445.0" y="1010.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">Serves demonstration data with the same</text>
+<text x="445.0" y="1025.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">resources while the RESTful API is built.</text>
+<rect x="680" y="950" width="290" height="150" rx="8" fill="#438DD5" stroke="#2E6295"/>
+<text x="825.0" y="974.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">RESTful API</text>
+<text x="825.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#FFFFFF" text-anchor="middle">[Container: C# and ASP.NET Core]</text>
+<text x="825.0" y="1010.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">Provides the hotel operations</text>
+<text x="825.0" y="1025.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">functionality through a JSON/HTTPS API</text>
+<text x="825.0" y="1040.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">organised by bounded context.</text>
+<rect x="1220" y="760" width="270" height="150" rx="8" fill="#999999" stroke="#6B6B6B"/>
+<text x="1355.0" y="784.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">RFID Lock System</text>
+<text x="1355.0" y="799.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#FFFFFF" text-anchor="middle">[Software System]</text>
+<text x="1355.0" y="820.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">Door readers and front desk key-card</text>
+<text x="1355.0" y="835.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#FFFFFF" text-anchor="middle">encoder installed in the hotel.</text>
+<line x1="717.0" y1="170.0" x2="673.0" y2="270.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="500.0" y1="345.0" x2="300.0" y2="345.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="500.0" y1="415.0" x2="260.0" y2="535.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="260.0" y1="633.5" x2="500.0" y2="738.7" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="559.3" y1="420.0" x2="473.2" y2="500.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="484.0" y1="673.0" x2="554.0" y2="730.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="628.6" y1="420.0" x2="616.4" y2="500.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="618.2" y1="675.0" x2="627.8" y2="730.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="697.8" y1="420.0" x2="759.5" y2="500.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="750.0" y1="675.0" x2="701.6" y2="730.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="767.1" y1="420.0" x2="946.0" y2="525.5" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="946.0" y1="641.8" x2="775.4" y2="730.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="579.3" y1="870.0" x2="510.0" y2="950.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="697.6" y1="870.0" x2="763.3" y2="950.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<line x1="1156.0" y1="673.0" x2="1262.9" y2="760.0" stroke="#707070" stroke-width="1.4" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<rect x="675.8" y="209.5" width="38.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="695.0" y="224.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Uses</text>
+<rect x="308.2" y="334.5" width="183.6" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="400.0" y="349.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Translates the labels with</text>
+<rect x="344.3" y="464.5" width="71.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="380.0" y="479.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Routes to</text>
+<rect x="360.8" y="675.6" width="38.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="380.0" y="690.6" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Uses</text>
+<rect x="480.5" y="449.5" width="71.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="516.2" y="464.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Routes to</text>
+<rect x="499.8" y="691.0" width="38.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="519.0" y="706.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Uses</text>
+<rect x="586.8" y="449.5" width="71.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="622.5" y="464.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Routes to</text>
+<rect x="603.8" y="692.0" width="38.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="623.0" y="707.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Uses</text>
+<rect x="693.0" y="449.5" width="71.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="728.7" y="464.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Routes to</text>
+<rect x="706.6" y="692.0" width="38.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="725.8" y="707.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Uses</text>
+<rect x="820.9" y="462.3" width="71.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="856.6" y="477.3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Routes to</text>
+<rect x="841.5" y="675.4" width="38.4" height="21" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="860.7" y="690.4" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Uses</text>
+<rect x="482.6" y="892.0" width="124.2" height="36" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="544.7" y="907.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Sends requests to</text>
+<text x="544.7" y="922.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle" font-style="italic">[JSON/HTTPS]</text>
+<rect x="668.3" y="892.0" width="124.2" height="36" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="730.4" y="907.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Sends requests to</text>
+<text x="730.4" y="922.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle" font-style="italic">[JSON/HTTPS]</text>
+<rect x="1114.3" y="698.5" width="190.2" height="36" rx="3" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1209.4" y="713.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle">Encodes key cards through</text>
+<text x="1209.4" y="728.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#4A4A4A" text-anchor="middle" font-style="italic">[simulated in this version]</text>
+<text x="20.0" y="1154.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#222" text-anchor="start">[Component] Hostera - Web Application</text>
+</svg>

@@ -1,0 +1,41 @@
+classDiagram
+    direction LR
+    class BookingCommandService {
+        +CreateAsync(CreateBookingCommand) Task~Booking~
+        +ConfirmAsync(int) Task
+        +CancelAsync(CancelBookingCommand) Task
+        +RecordPaymentAsync(RecordPaymentCommand) Task~Payment~
+        +CheckInAsync(CheckInBookingCommand) Task
+        +CheckOutAsync(CheckOutBookingCommand) Task
+    }
+    class BookingQueryService {
+        +FindAsync(BookingSearchQuery) Task~IReadOnlyList~Booking~~
+        +GetByIdAsync(int) Task~Booking~
+    }
+    class IBookingRepository {
+        <<interface>>
+        +FindByIdAsync(int) Task~Booking~
+        +FindByPropertyAsync(int) Task~IReadOnlyList~Booking~~
+        +AddAsync(Booking) Task
+        +Update(Booking) void
+    }
+    class IPaymentRepository {
+        <<interface>>
+        +FindByBookingAsync(int) Task~IReadOnlyList~Payment~~
+        +AddAsync(Payment) Task
+    }
+    class IRoomsContextGateway {
+        <<interface>>
+        +IsRoomAvailableAsync(int, DateOnly, DateOnly) Task~bool~
+        +GetStayPriceAsync(int, int, DateOnly, DateOnly) Task~decimal~
+    }
+    class IAccessControlContextGateway {
+        <<interface>>
+        +IssueGuestKeyCardsAsync(int, int, DateOnly) Task
+        +ExpireGuestKeyCardsAsync(int) Task
+    }
+    BookingCommandService ..> IBookingRepository
+    BookingCommandService ..> IPaymentRepository
+    BookingCommandService ..> IRoomsContextGateway
+    BookingCommandService ..> IAccessControlContextGateway
+    BookingQueryService ..> IBookingRepository

@@ -1,0 +1,99 @@
+classDiagram
+    direction LR
+    class Credential {
+        +int Id
+        +int PropertyId
+        +string CardId
+        +CredentialType Type
+        +string HolderName
+        +int? BookingId
+        +string? BookingCode
+        +int? RoomId
+        +int? StaffMemberId
+        +AccessScope? Scope
+        +DateTimeOffset ValidFrom
+        +DateTimeOffset? ValidUntil
+        +DateTimeOffset IssuedAt
+        +int IssuedBy
+        +IsUsableAt(DateTimeOffset) bool
+        +StatusAt(DateTimeOffset) CredentialStatus
+        +Revoke(RevocationReason, string, int) void
+        +EndAt(DateTimeOffset) void
+    }
+    class Revocation {
+        <<value object>>
+        +RevocationReason Reason
+        +string Note
+        +DateTimeOffset At
+        +int OperatorId
+    }
+    class StaffMember {
+        +int Id
+        +int PropertyId
+        +string Name
+        +string Role
+    }
+    class AccessEvent {
+        +int Id
+        +int PropertyId
+        +int? CredentialId
+        +string CardId
+        +HolderType HolderType
+        +string HolderName
+        +int? RoomId
+        +AccessPoint AccessPoint
+        +AccessResult Result
+        +DenialReason? DenialReason
+        +DateTimeOffset OccurredAt
+    }
+    class CredentialType {
+        <<enumeration>>
+        GuestKeyCard
+        StaffCredential
+    }
+    class CredentialStatus {
+        <<enumeration>>
+        Scheduled
+        Active
+        Expired
+        Revoked
+    }
+    class AccessScope {
+        <<enumeration>>
+        ServiceAreas
+        AllRooms
+        AllAreas
+    }
+    class RevocationReason {
+        <<enumeration>>
+        LostCard
+        DamagedCard
+        SecurityRisk
+        StaffLeft
+        Replaced
+        Other
+    }
+    class AccessPoint {
+        <<enumeration>>
+        MainEntrance
+        RoomDoor
+        Elevator
+        ServiceCorridor
+        StorageRoom
+    }
+    class DenialReason {
+        <<enumeration>>
+        OutsideScope
+        NotActiveYet
+        Expired
+        Revoked
+    }
+    Credential *-- "0..1" Revocation
+    Credential "0..*" --> "0..1" StaffMember
+    AccessEvent "0..*" --> "0..1" Credential
+    Credential --> CredentialType
+    Credential ..> CredentialStatus
+    Credential --> AccessScope
+    Revocation --> RevocationReason
+    AccessEvent --> AccessPoint
+    AccessEvent --> DenialReason

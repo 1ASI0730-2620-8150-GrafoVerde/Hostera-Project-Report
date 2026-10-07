@@ -1,0 +1,86 @@
+classDiagram
+    direction TB
+    class Property {
+        +int Id
+        +int OrganizationId
+        +string Name
+        +string City
+        +string Currency
+    }
+    class RoomType {
+        +int Id
+        +int PropertyId
+        +string Name
+        +int Capacity
+        +string BedConfiguration
+        +decimal BaseNightlyRate
+        +RecordStatus Status
+        +NightlyRateOn(DateOnly, IEnumerable~DailyRate~) decimal
+    }
+    class Room {
+        +int Id
+        +int PropertyId
+        +int RoomTypeId
+        +string Number
+        +int Floor
+        +DayStatusOn(DateOnly, IEnumerable~StatusPeriod~) RoomDayStatus
+    }
+    class RatePlan {
+        +int Id
+        +int PropertyId
+        +string Name
+        +string CancellationPolicy
+        +bool Refundable
+        +IReadOnlyList~IncludedService~ IncludedServices
+        +IReadOnlyList~int~ RoomTypeIds
+        +RecordStatus Status
+        +AppliesTo(int) bool
+    }
+    class DailyRate {
+        +int Id
+        +int PropertyId
+        +int RatePlanId
+        +int RoomTypeId
+        +DateOnly Date
+        +decimal Amount
+    }
+    class StatusPeriod {
+        +int Id
+        +int PropertyId
+        +int RoomId
+        +RoomStatus Status
+        +string Reason
+        +DateOnly StartDate
+        +DateOnly EndDate
+        +bool PreventsBooking
+        +Covers(DateOnly) bool
+        +Overlaps(DateOnly, DateOnly) bool
+    }
+    class RoomStatus {
+        <<enumeration>>
+        Blocked
+        OutOfService
+        NeedsCleaning
+    }
+    class RoomDayStatus {
+        <<enumeration>>
+        Available
+        Booked
+        Occupied
+        NeedsCleaning
+        Blocked
+        OutOfService
+    }
+    class RecordStatus {
+        <<enumeration>>
+        Active
+        Inactive
+    }
+    Property "1" --> "0..*" RoomType
+    RoomType "1" --> "0..*" Room
+    Room "1" --> "0..*" StatusPeriod
+    RatePlan "0..*" --> "1..*" RoomType : applies to
+    DailyRate "0..*" --> "1" RatePlan
+    DailyRate "0..*" --> "1" RoomType
+    StatusPeriod --> RoomStatus
+    Room ..> RoomDayStatus
