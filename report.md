@@ -3602,14 +3602,38 @@ detalla, para cada flujo, los actores, comandos, modelos de lectura, reglas de
 negocio, eventos de dominio y agregados involucrados. También se identifican las
 políticas y los sistemas externos que participan en determinados procesos.
 
-El resultado permite revisar el dominio desde una perspectiva orientada al diseño y
-relacionar las acciones de los usuarios con los cambios de estado del negocio. El
-tablero distingue los contextos de gestión de propiedades y accesos, reservas y
-estadías, habitaciones, inventario, control de accesos RFID y reporting y analytics.
-En cada contexto se representan flujos como registrar una propiedad, crear y
-modificar una reserva, verificar la identidad del huésped, asignar una habitación,
-actualizar el estado de una habitación, recibir o ajustar stock, emitir credenciales
-de personal y generar reportes operativos.
+El tablero se organiza en siete frames, uno por bounded context o por un flujo que
+cruza dos contextos. Cada fila sigue la misma cadena: el actor ejecuta un comando,
+consulta un modelo de lectura, se valida una regla de negocio, ocurre un evento de
+dominio y cambia el estado de un agregado. La tabla resume lo que contiene cada frame.
+
+| Frame | Comandos principales | Agregados | Reglas de negocio que se validan | Sistemas externos |
+| --- | --- | --- | --- | --- |
+| Property Management (Identity & Access) | Agregar propiedad, registrar habitaciones, definir plan tarifario, asignar personal | `Property`, `Room`, `RatePlan`, `PropertyAccess` | El nombre de la propiedad es único, el número de habitación es único dentro de la propiedad y el rol asignado pertenece a la propiedad. | — |
+| Reservations & Stays | Crear, modificar y cancelar una reserva, marcar no-show, asignar habitación | `Reservation` | La habitación está disponible para las fechas, la reserva está en un estado que admite cambios y la política de cancelación se cumple. | — |
+| Reservations & Stays + RFID Access Control | Verificar la identidad del huésped, registrar el pago, codificar la tarjeta, hacer el check-in, acceder a la habitación, hacer el check-out | `Guest`, `Reservation`, `Stay`, `RFIDCredential`, `AccessEvent` | El documento es válido, el pago viene de un canal autorizado, la reserva está confirmada antes de emitir la tarjeta y no quedan cargos pendientes al salir. | Lectores RFID |
+| Room Management | Actualizar el estado, marcar la habitación como limpia, inspeccionada y lista | `Room` | La transición de estado está permitida y la habitación solo queda lista después de inspeccionarse sin observaciones. | — |
+| Inventory Management | Agregar ubicación y artículo, recibir y ajustar stock, detectar stock bajo y quiebre | `StorageLocation`, `InventoryItem`, `StockMovement` | Los códigos son únicos, el stock no puede quedar en negativo y la alerta se dispara al bajar del umbral. | Servicio de notificaciones |
+| RFID Access Control (Staff) | Emitir, activar, validar y revocar la credencial de un miembro del personal | `RFIDCredential`, `AccessEvent` | El miembro del personal tiene un rol activo y la credencial es válida para el área y el horario. | Lectores RFID |
+| Reporting & Analytics | Consolidar datos operativos, generar y revisar reportes, emitir alertas | `OperationalMetric`, `Report` | El periodo y los filtros son válidos, el usuario tiene permiso sobre los datos y la métrica supera su umbral antes de alertar. | Servicio de notificaciones |
+
+El tercer frame es el que reúne más contextos, porque el check-in es el punto donde
+la reserva, el pago y el acceso físico tienen que coincidir. Por eso la emisión de la
+tarjeta exige una reserva confirmada con habitación asignada, y el check-out revoca
+o deja vencer la credencial del huésped.
+
+Los contextos del tablero se corresponden con los módulos de la Frontend Web
+Application: Property Management con la gestión de la propiedad activa, Reservations
+& Stays con `bookings`, Room Management con `rooms`, Inventory Management con
+`inventory`, los dos frames de RFID con `access-control` y Reporting & Analytics con
+el panorama operativo de `overview`. En la implementación, el agregado
+`StockMovement` del tablero se registra como el historial de ajustes de cada artículo.
+
+El tablero no incluye un contexto de suscripciones ni de cobro de los planes que
+publica la Landing Page, y el Product Backlog no tiene historias para ese proceso. En
+esta etapa, la contratación de los planes queda fuera del alcance del MVP: el producto
+cubre la operación del hotel, y la venta del plan se resuelve por el contacto
+comercial.
 
 La notación visual utilizada diferencia los actores, comandos, modelos de lectura,
 reglas de negocio, eventos de dominio, agregados, políticas y sistemas externos. Esta
