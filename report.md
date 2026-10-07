@@ -2183,7 +2183,7 @@ forma independiente.
 
 <img src="assets/chapter-4/hostera-logo-variants.svg" alt="Variantes clara y oscura del símbolo de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.1. Variantes del símbolo Rising Bridge H extraídas del Design System de Hostera en Paper.*
+*Figura 4.1. Variantes del símbolo Rising Bridge H extraídas del Design System de Hostera en Figma.*
 
 | Aspecto | Lineamiento |
 | :--- | :--- |
@@ -2323,7 +2323,7 @@ el contenido quede pegado al borde del navegador.
 
 <img src="assets/chapter-4/web-responsive-interaction-guidelines.png" alt="Guía visual de grids responsive, estados de interacción y accesibilidad de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.2. Estándares responsive, estados de interacción y accesibilidad del sistema web de Hostera elaborados en Paper.*
+*Figura 4.2. Estándares responsive, estados de interacción y accesibilidad del sistema web de Hostera elaborados en Figma.*
 
 La adaptación entre rangos sigue estas reglas:
 
@@ -2355,7 +2355,7 @@ según la jerarquía de la tarea y no únicamente por preferencia estética.
 
 <img src="assets/chapter-4/web-components-m3.png" alt="Catálogo de componentes web M3 de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 4.3. Catálogo de componentes web aislados del Design System de Hostera en Paper.*
+*Figura 4.3. Catálogo de componentes web aislados del Design System de Hostera en Figma.*
 
 #### Interaction states
 
@@ -2946,7 +2946,7 @@ resultados, restricciones y errores se muestran como pasos alternativos dentro d
 recorrido correspondiente.
 
 Los diagramas fueron elaborados en FigJam utilizando las pantallas diseñadas en el
-archivo de Paper `Grafo-verde`. El board editable con los 25 Wireflows se encuentra
+archivo de Figma del proyecto. El board editable con los 25 Wireflows se encuentra
 disponible en https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7.
 
 #### Objetivos de usuario y recorridos especificados
@@ -3135,8 +3135,8 @@ disponible en https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7.
 
 Los mock-ups de alta fidelidad de la aplicación web representan las vistas y estados
 principales de Hostera para la gestión operativa de una propiedad hotelera. El diseño
-se encuentra organizado en la página `Web Application` del archivo de Paper
-`Grafo-verde` y mantiene una composición consistente entre autenticación, monitoreo,
+se encuentra en el archivo de Figma del proyecto
+(https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes) y mantiene una composición consistente entre autenticación, monitoreo,
 reservas, habitaciones, inventario, control de acceso RFID y reportes.
 
 #### Acceso y panorama operativo
@@ -3943,9 +3943,8 @@ verificación del software, y publicación de evidencias.
 | Producto | Propósito en Hostera | Ruta de referencia | Convención de configuración o uso |
 | --- | --- | --- | --- |
 | Miro | Documenta la sesión de Design-Level EventStorming del dominio de Hostera. | https://miro.com/app/board/uXjVHlikyWU=/?share_link_id=425970004522 | El tablero se comparte en modo de solo lectura y cada flujo de la sesión se conserva en un frame independiente con su leyenda de colores. |
-| Paper | Elabora el Design System, los wireframes y los mock-ups de la Landing Page y de la aplicación web. | (enlace del archivo `Grafo-verde` por confirmar) | Las pantallas se organizan por página según el producto y se exportan como imágenes versionadas en `assets/`. |
 | FigJam | Elabora los wireflow diagrams que conectan las pantallas con los recorridos de usuario. | https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7 | El board editable conserva los wireflows completos y cada recorrido se exporta como imagen independiente. |
-| Figma | Elabora y comparte el prototipo navegable de la aplicación web, con sus puntos de inicio para escritorio y para navegador móvil. | https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe. |
+| Figma | Elabora el Design System, los wireframes y los mock-ups de la Landing Page y de la aplicación web, y el prototipo navegable con sus puntos de inicio para escritorio y para navegador móvil. | https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes | Los cambios de diseño se mantienen en los archivos compartidos de Hostera y se referencian desde el informe; las pantallas se exportan como imágenes versionadas en `assets/`. |
 | UXPressia | Elabora las User Personas, los journey maps, los empathy maps y el impact mapping que relaciona objetivos, actores, impactos e historias de usuario. | Workspace del curso, bajo la etiqueta `2620-1ASI0730-8150-GRAFO-VERDE`. | Cada documento se nombra con el artefacto que representa y se etiqueta con la del equipo, de modo que el conjunto sea identificable dentro del workspace; sus exportaciones se versionan junto con el informe cuando se utilizan como evidencia. |
 | Structurizr | Renderiza y exporta las vistas del modelo C4 a partir del DSL versionado en el repositorio del informe. | https://structurizr.com/dsl | El archivo `docs/hostera-structurizr.dsl` es la única fuente de verdad del modelo; las vistas se exportan desde Structurizr y se versionan como imágenes en `assets/`. |
 | Mermaid | Elabora como código los diagramas de clases y de base de datos de cada bounded context. | https://mermaid.js.org/ | Las fuentes se versionan en `docs/diagrams/` del repositorio del informe y se exportan como SVG en `assets/chapter-4/`. |
