@@ -518,6 +518,7 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 2. Creemos que un modelo de monetización escalonado (plan *Starter* de S/39 para 1 sede y plan *Professional* de S/8 por habitación para cadenas) nos permitirá adquirir, rentabilizar y expandir clientes de forma escalable.
 3. Creemos que nuestra principal ventaja competitiva en el mercado será la integración nativa del control de acceso RFID con la gestión de reservas en la nube.
 4. Creemos que el equipo de Grafo Verde posee las capacidades organizativas y técnicas para desarrollar, desplegar y mantener una arquitectura web segura orientada al sector hotelero.
+5. Creemos que adquiriremos la mayoría de los clientes del plan *Starter* a través de la Landing Page, con un flujo de registro automatizado que les permita comprender los planes y configurar su propiedad inicial sin depender de un equipo de ventas.
 
 **Business Outcome Assumptions**
 *Cambios o métricas medibles que indican el éxito de la empresa.*
@@ -542,14 +543,16 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 
 **Feature Assumptions**
 *Soluciones funcionales, herramientas o mejoras del producto a desarrollar.*
-1. Creemos que un **portal de adquisición (Landing Page)** con un flujo de registro automatizado permitirá a los hoteles independientes comprender los planes y configurar su propiedad inicial sin depender de un equipo de ventas.
-2. Creemos que un **módulo integrado de gestión de estancias y API de codificación RFID** permitirá relacionar la identidad del huésped, el pago y su acceso físico a la habitación en un solo paso durante el check-in.
+1. Creemos que un **panel de la propiedad activa** que reúna ocupación, habitaciones, inventario y accesos permitirá a los administradores conocer el estado actual de su hotel sin consultar otros registros.
+2. Creemos que un **módulo de reservas y estancias sobre un mismo calendario** permitirá registrar la reserva, el pago y el check-in del huésped en un mismo flujo y evitará las dobles reservas.
 3. Creemos que un **sistema de control de inventario con alertas automáticas** notificará los niveles críticos de stock a los administradores antes de que afecten la operatividad del hotel.
 4. Creemos que un **módulo de analítica y reportes operativos multi-sede** permitirá a los gerentes de cadenas filtrar y comparar el rendimiento (ocupación, ingresos, accesos) respetando la separación de datos de cada establecimiento.
+5. Creemos que una **API de codificación RFID integrada con la estancia** permitirá relacionar la identidad del huésped, el pago y su acceso físico a la habitación en un solo paso durante el check-in, y conservar el historial de cada acceso.
 
-Estos supuestos no representan requisitos definitivos ni resultados comprobados. Los
-supuestos más riesgosos deberán priorizarse para formular los Hypothesis Statements y
-definir los experimentos que permitan confirmarlos o modificarlos.
+Cada Feature Assumption se convierte en uno de los Hypothesis Statements de la
+siguiente sección, en el mismo orden. Los supuestos de mayor riesgo son los de
+resultado de negocio, porque dependen de un comportamiento que todavía no se ha
+observado.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
