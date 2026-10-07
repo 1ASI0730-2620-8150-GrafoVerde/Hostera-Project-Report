@@ -349,7 +349,8 @@ El problema se ubica en la recepción, donde se registran las reservas y se atie
 huésped; en el almacén, donde los descuadres entre lo que hay y lo anotado aparecen
 al menos una vez al mes en las tres respuestas del segmento de una sede; y en el
 control de acceso a las habitaciones, sobre todo cuando las tarjetas se comparten
-entre trabajadores y no es posible saber quién entró (`E2`).
+entre trabajadores y no es posible saber quién entró, como describe el propietario de
+un hotel de dos sedes (`E2`).
 
 Cuando el negocio tiene más de una sede, el problema se traslada al espacio entre
 ellas. Cada sede usa sus propias hojas y la información llega por WhatsApp o por
@@ -1133,13 +1134,13 @@ Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que e
 | Edad | 46 años |
 | Distrito y ciudad | Puno, Puno |
 | Ocupación | Ingeniero; propietario y administrador de hotel |
-| Establecimiento | Hotel independiente con dos sedes: una de unas 30 habitaciones y otra de unas 15 con sala de eventos |
+| Establecimiento | Operación de dos sedes de un mismo propietario: una de unas 30 habitaciones y otra de unas 15 con sala de eventos |
 | URL de la entrevista | https://1drv.ms/v/c/888b77ed7e85f778/IQB3J3HBJMqLSKvJshn-oZCJAba2jLzRmQtVCD109pJ820c?e=dTzLYR |
 | Inicio y duración en el video | Inicio en 0:00 · duración 18:10 |
 
 **Resumen.**
 
-Wilson, ingeniero y administrador de un hotel independiente en Puno, comenta sobre los principales desafíos que enfrenta al gestionar las reservas, accesos, disponibilidad e inventario de dos sedes. Actualmente, administra una sede principal de aproximadamente 30 habitaciones y otra de alrededor de 15 habitaciones, que además cuenta con un espacio para eventos. Señala que una de las principales dificultades es centralizar la información de ambas sedes, ya que debe coordinar constantemente con el administrador de la segunda sede para conocer las habitaciones disponibles.
+Wilson, ingeniero, propietario y administrador de un hotel con dos sedes en Puno, comenta sobre los principales desafíos que enfrenta al gestionar las reservas, accesos, disponibilidad e inventario de dos sedes. Actualmente, administra una sede principal de aproximadamente 30 habitaciones y otra de alrededor de 15 habitaciones, que además cuenta con un espacio para eventos. Señala que una de las principales dificultades es centralizar la información de ambas sedes, ya que debe coordinar constantemente con el administrador de la segunda sede para conocer las habitaciones disponibles.
 
 Para gestionar las reservas, recibe información principalmente mediante WhatsApp, correo electrónico, TikTok y aplicaciones de reservas, pero posteriormente debe trasladarla manualmente a un archivo de Excel, que utiliza como herramienta principal para controlar la disponibilidad y las reservas. Para los accesos utiliza tarjetas de identificación, aunque actualmente estas solo permiten controlar la entrada y salida de las habitaciones. También emplea una computadora para administrar el sistema de tarjetas.
 
