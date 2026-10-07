@@ -417,280 +417,261 @@ fin de mejorar la visibilidad y la coordinación de la operación hotelera.
 
 #### 1.2.2.1. Lean UX Problem Statement
 
-Hostera es una iniciativa nueva y no la evolución de un producto existente, por lo que
-su enunciado del problema utiliza la plantilla de Lean UX correspondiente a una
-*brand new initiative*. El enunciado se apoya en las diez entrevistas registradas en
-la sección 2.2 y en las cifras del sector publicadas por el Ministerio de Comercio
-Exterior y Turismo.
-
 **Enunciado del problema**
 
-El estado actual de la gestión hotelera en el Perú se ha centrado en resolver por
-separado la captación de la reserva, la ocupación de las habitaciones, el
-abastecimiento del almacén y el acceso físico a las habitaciones. El sector reúne
-28 050 establecimientos de hospedaje y 329 340 habitaciones, y el 85,1 % de esos
-establecimientos no está categorizado (MINCETUR, 2025), lo que describe un mercado
-dominado por operaciones pequeñas que resuelven su gestión con las herramientas que
-tienen a la mano. Las entrevistas lo confirman: los cuatro responsables de un
-establecimiento de una sede coordinan su operación por WhatsApp y tres de ellos
-concilian reservas, accesos o almacén en hojas de cálculo o en un cuaderno.
+Nuestro servicio ofrece una plataforma web administrativa para la gestión y operación
+hotelera. Hostera busca ayudar a los administradores y responsables de la operación a
+coordinar reservas, disponibilidad de habitaciones, inventario y accesos físicos desde
+una visión común. El personal de recepción, los encargados del almacén y el personal
+autorizado también participan en estos procesos, mientras que los huéspedes se
+benefician indirectamente de una atención más coordinada y oportuna.
 
-Lo que las herramientas existentes no resuelven es la conexión entre el canal por el
-que entra la reserva y el registro donde se controla la operación. Los sistemas de
-gestión hotelera disponibles atienden la reserva y la tarifa, pero dejan fuera el
-almacén y el acceso físico, o los resuelven con plataformas separadas que se contratan
-aparte: el gerente general entrevistado paga cerca de USD 1 500 anuales por propiedad
-solo por la plataforma de ama de llaves. En las operaciones de varias sedes, la
-consecuencia es que consolidar la información cuesta entre una hora y medio día cada
-vez, y que los reportes llegan desactualizados con frecuencia semanal.
+Hemos observado un factor crítico que afecta la coordinación de la operación
+hotelera: la información necesaria para estos procesos puede encontrarse distribuida
+entre diferentes registros o herramientas independientes. Esta situación puede
+dificultar que los responsables y usuarios operativos conozcan el estado actualizado
+de una reserva o habitación, controlen las existencias del almacén y relacionen los
+accesos autorizados con una habitación y un usuario. También puede obligarlos a
+comparar y conciliar datos manualmente, generando riesgos de duplicidad, demoras en la
+atención y menor trazabilidad, especialmente cuando se coordinan varias sedes. Esta
+observación es preliminar y deberá validarse con usuarios del sector hotelero.
 
-Hostera atenderá esta brecha con una plataforma administrativa que mantiene en un
-mismo lugar las reservas, la disponibilidad de habitaciones, el inventario del almacén
-y los accesos con tarjeta RFID, con la propiedad activa como contexto de trabajo, de
-modo que el responsable de la operación deje de reconstruir el estado de su hotel a
-partir de registros separados.
+¿Cómo podríamos mejorar la coordinación de la operación hotelera para que sus
+responsables y usuarios operativos trabajen con información actualizada, reduzcan la
+conciliación manual, mantengan la trazabilidad de los eventos y tomen decisiones
+oportunas?
 
-Nuestro foco inicial serán los administradores y propietarios de hoteles
-independientes de una sede y los responsables de operaciones de cadenas de dos a cinco
-sedes, porque son quienes concentran la decisión de compra y sufren directamente el
-costo de la conciliación manual.
-
-Sabremos que hemos tenido éxito cuando Grafo Verde alcance 50 suscripciones de pago
-activas en el plan Starter durante los primeros cuatro meses de lanzamiento, 20
-cadenas pequeñas en el plan Professional en seis meses y una retención mensual del
-90 % sostenida por el uso de la plataforma al menos cinco días a la semana.
-
-**Domain:** Gestión y operación hotelera de establecimientos independientes y cadenas
-pequeñas, incluyendo reservas, disponibilidad de habitaciones, control de inventario
-del almacén y gestión de accesos físicos.
+**Domain:** Gestión y operación hotelera, incluyendo reservas, disponibilidad de
+habitaciones, control de inventario y gestión de accesos físicos.
 
 **Customer Segments:**
 
-- Administradores y propietarios de hoteles independientes de una sede.
-- Responsables de operaciones de cadenas hoteleras de dos a cinco sedes.
-- Personal de recepción, encargados del almacén y personal autorizado que gestiona
-  accesos, como usuarios operativos dentro de esas organizaciones.
+- Administradores y responsables de la operación hotelera.
+- Personal de recepción.
+- Encargados del almacén.
+- Personal autorizado que gestiona o supervisa accesos.
+- Huéspedes como beneficiarios indirectos de una operación coordinada.
 
 **Pain Points:**
 
-- La reserva entra por un canal y se registra en otro, lo que obliga a trasladar
-  información a mano. Tres de los cuatro entrevistados de una sede declaran esa carga.
-- Los descuadres de almacén y las demoras en el check-in ocurren al menos una vez al
-  mes en las tres respuestas estructuradas del segmento de una sede.
-- Consolidar la información de varias sedes toma entre una hora y medio día, y los
-  reportes llegan desactualizados con frecuencia semanal.
-- Cuando las tarjetas de acceso se comparten entre trabajadores, no es posible
-  identificar quién entró a una habitación ni en qué turno.
-- Los sistemas hoteleros disponibles cubren reservas y tarifas, pero el almacén y el
-  acceso físico se resuelven con plataformas adicionales que se contratan por separado.
+- Dificultad para consultar en un mismo contexto la información de reservas,
+  habitaciones, inventario y accesos.
+- Riesgo de trabajar con datos diferentes entre áreas o registros independientes.
+- Tiempo adicional dedicado a verificar y conciliar información antes de completar
+  tareas operativas.
+- Poca trazabilidad para relacionar los accesos autorizados con una habitación y un
+  usuario o huésped.
+- Mayor dificultad para mantener una visión consistente cuando se coordinan varias
+  sedes.
 
-**Gap:** No existe una plataforma que mantenga relacionadas las reservas, las
-habitaciones, el inventario y los accesos para una operación de una a cinco sedes a un
-precio accesible para ese tamaño de negocio. Las alternativas obligan a elegir entre un
-sistema hotelero que deja fuera el almacén y los accesos, o varias herramientas
-contratadas por separado cuyo costo supera la capacidad de pago declarada por estos
-segmentos.
+**Gap:** Los registros y herramientas utilizados en los procesos hoteleros no
+resuelven de manera integrada la necesidad de contar con información centralizada,
+actualizada y relacionada entre reservas, habitaciones, inventario y accesos. Esta
+brecha limita la visibilidad de los responsables de la operación y la coordinación
+entre los usuarios que participan en las tareas diarias.
 
-**Vision/Strategy:** Hostera centraliza la operación diaria del hotel alrededor de la
-propiedad activa y comercializa esa capacidad como suscripción mensual, con un plan
-Starter para una sede y un plan Professional por habitación para operaciones de varias
-sedes. La estrategia prioriza primero las reservas y la disponibilidad, después el
-inventario del almacén y los reportes, y finalmente la trazabilidad de los accesos con
-tarjeta RFID.
+**Vision/Strategy:** Hostera buscará cerrar esta brecha mediante una solución digital
+administrativa orientada a centralizar la información operativa, facilitar su consulta
+y apoyar la coordinación entre áreas. La estrategia inicial considera la gestión de
+reservas y habitaciones, el seguimiento del inventario y la relación de los accesos
+físicos con tarjetas y lectores RFID. Esta dirección deberá evolucionar según la
+evidencia obtenida durante el descubrimiento y la validación.
 
-**Initial Segment:** Los administradores y propietarios de hoteles independientes de
-una sede, porque deciden la compra sin intermediarios, declaran la mayor carga de
-conciliación manual y constituyen la base del plan Starter.
+**Initial Segment:** El foco inicial serán los **administradores y responsables de la
+operación hotelera**, debido a que necesitan una visión consolidada para supervisar
+los procesos y tomar decisiones. Los demás perfiles se considerarán usuarios
+operativos relacionados o beneficiarios indirectos. Esta priorización es preliminar y
+deberá confirmarse con evidencia de usuarios.
 
-**Success Criteria:** Los criterios de éxito de la iniciativa son los objetivos de
-negocio de Grafo Verde definidos en la sección 3.2: 50 suscripciones de pago activas
-en el plan Starter en cuatro meses, 20 cadenas pequeñas en el plan Professional y un
-10 % de clientes Starter que actualicen su plan en seis meses, y una retención mensual
-del 90 % con uso de la plataforma al menos cinco días a la semana.
+**Success Criteria:** Se considerará que la iniciativa avanza hacia el éxito cuando
+los usuarios puedan completar tareas representativas con información centralizada,
+actualizada y sin depender de la conciliación entre registros independientes. Para
+medir ese comportamiento se proponen los siguientes indicadores, cuyos valores
+iniciales y metas se definirán durante la validación:
+
+- porcentaje de tareas de consulta o actualización de reservas y disponibilidad que
+  se completan desde el entorno administrativo;
+- tiempo promedio que necesita el personal para encontrar el estado actual de una
+  reserva o habitación;
+- porcentaje de movimientos de inventario registrados y consultables en la solución;
+- porcentaje de accesos autorizados relacionados con una tarjeta RFID, una habitación
+  y un usuario o huésped; y
+- número de inconsistencias detectadas durante escenarios de prueba.
 
 #### 1.2.2.2. Lean UX Assumptions
 
-Los siguientes supuestos declaran lo que el equipo sostiene sobre el negocio, los
-usuarios, los resultados esperados y las capacidades de Hostera. Se redactan como
-afirmaciones y no como preguntas, y cada una indica la evidencia de la que proviene:
-las entrevistas registradas en la sección 2.2, identificadas con sus códigos `E1` a
-`E4` y `F1` a `F5`, las cifras de MINCETUR y los precios publicados en la Landing Page.
+Los siguientes supuestos representan las creencias iniciales del equipo sobre el
+negocio, los usuarios, los resultados esperados y las capacidades que podría ofrecer
+Hostera. Se formulan como afirmaciones que deberán ser contrastadas mediante
+entrevistas, prototipos y experimentos durante las siguientes iteraciones del proceso
+Lean UX.
 
 **Business Assumptions**
 
-1. El mercado objetivo de Grafo Verde son operaciones hoteleras pequeñas: de los
-   28 050 establecimientos de hospedaje del país, el 85,1 % no está categorizado
-   (MINCETUR, 2025), y las diez entrevistas corresponden a operaciones de entre 20 y
-   100 habitaciones.
-2. Estas operaciones pagan por software de gestión: cuatro de los cinco respondientes
-   válidos del formulario declaran que pagarían S/51 o más al mes, y el gerente general
-   entrevistado (`E4`) ya paga cerca de USD 1 500 anuales por propiedad por una
-   plataforma complementaria de ama de llaves.
-3. Una suscripción mensual escalonada —Starter a S/39 por una sede y Professional a
-   S/8 por habitación para cadenas— captura esa disposición de pago y permite que el
-   ingreso crezca con el tamaño del cliente.
-4. La decisión de compra se concentra en el responsable de la operación: en los dos
-   segmentos, quien administra o supervisa el establecimiento es también quien evalúa
-   y aprueba la herramienta.
-5. Grafo Verde puede construir y validar el producto mínimo viable dentro del alcance
-   académico definido, apoyándose en el flujo de trabajo y las convenciones descritas
-   en la sección 5.1.
+1. Creemos que los hoteles que administran sus reservas, habitaciones, inventario y
+   accesos con procesos separados necesitan una visión operativa más centralizada.
+2. Creemos que una plataforma web administrativa enfocada en la coordinación de estos
+   procesos puede ofrecer valor a hoteles individuales y a negocios que administran
+   varias sedes.
+3. Creemos que el principal valor de Hostera para el negocio será facilitar la
+   supervisión diaria y mejorar la consistencia de la información operativa.
+4. Creemos que un modelo de suscripción por hotel o por sede podría ser una
+   alternativa viable para comercializar Hostera, aunque esta posibilidad todavía no
+   ha sido validada con clientes.
+5. Creemos que Grafo Verde puede organizar sus capacidades de diseño y desarrollo
+   para construir y validar un producto mínimo viable dentro del alcance académico
+   definido para Hostera.
 
 **Business Outcome Assumptions**
 
-1. Las suscripciones activas del plan Starter crecen cuando el administrador de una
-   sede completa su operación diaria dentro de Hostera, porque la renovación mensual
-   depende del uso y no de un compromiso anual.
-2. Los clientes del plan Starter actualizan al plan Professional cuando incorporan una
-   segunda sede, porque es el momento en que aparece el costo de consolidar.
-3. La retención mensual se sostiene con el uso diario de las funciones de reservas e
-   inventario, que son las que los entrevistados sitúan en los primeros lugares de sus
-   prioridades.
-4. El tiempo que hoy se dedica a conciliar —de 30 minutos a 2 horas diarias en una
-   sede y de 1 hora a medio día por consolidado en varias sedes— es el indicador que
-   el cliente reconoce como ahorro y el argumento comercial más directo.
-5. La demostración previa es condición de cierre: los cinco respondientes válidos del
-   formulario la piden antes de comprometerse.
+1. Creemos que los responsables de la operación consultarán el entorno administrativo
+   como una fuente principal para supervisar reservas, habitaciones, inventario y
+   accesos.
+2. Creemos que la centralización de la información reducirá la necesidad de comparar
+   registros independientes antes de tomar decisiones operativas.
+3. Creemos que el personal podrá identificar con mayor rapidez el estado de una
+   reserva o habitación cuando la información se encuentre disponible en un mismo
+   entorno.
+4. Creemos que una mayor trazabilidad de los accesos y movimientos de inventario
+   permitirá a los responsables detectar inconsistencias con mayor oportunidad.
+5. Creemos que estos cambios de comportamiento contribuirán a que Hostera genere
+   valor para los hoteles, aunque las métricas y metas concretas deberán definirse
+   después de establecer una línea base.
 
 **User Assumptions**
 
-1. **Usuario principal.** El usuario principal es quien responde por la operación
-   completa del establecimiento: propietario, administrador general, gerente de
-   operaciones o jefe de recepción. El personal de recepción, los encargados del
-   almacén y el personal autorizado que gestiona accesos son usuarios operativos, y
-   los huéspedes son beneficiarios indirectos.
-2. **Encaje en su trabajo.** Hostera se usa durante la jornada de operación, entre el
-   momento en que llega una reserva y el cierre de caja, como el lugar donde se
-   consulta y se actualiza el estado de la propiedad activa.
-3. **Problemas que resuelve.** Hostera resuelve el traslado manual de información
-   entre el canal de entrada y el registro operativo, los descuadres entre el almacén
-   y lo registrado, las demoras del check-in por información dispersa y el costo de
-   consolidar varias sedes.
-4. **Momento y forma de uso.** Se usa a diario desde una laptop o una computadora de
-   escritorio, con Chrome como navegador más frecuente, y de forma complementaria
-   desde el celular, que es el dispositivo principal de uno de los entrevistados.
-5. **Características importantes.** Importan la vista del estado actual de la
-   propiedad activa, la consulta y el registro de reservas y disponibilidad, el
-   control de existencias por ubicación de almacén y la relación entre una tarjeta de
-   acceso, una habitación y una persona.
-6. **Apariencia y comportamiento.** Hostera debe mostrar el estado actual sin exigir
-   pasos adicionales, confirmar cada acción realizada y permitir cambiar de propiedad
-   activa sin perder el contexto de trabajo.
+1. **¿Quién es el usuario?** Creemos que los usuarios principales serán los
+   administradores y responsables de la operación hotelera. También interactuarán con
+   la solución el personal de recepción, los encargados del almacén y el personal
+   autorizado que gestiona o supervisa los accesos. Los huéspedes serán beneficiarios
+   indirectos y no constituirán el usuario administrativo principal del MVP.
+2. **¿Dónde encaja nuestro producto en su trabajo o vida?** Creemos que Hostera
+   encajará en las actividades diarias de administración y operación del hotel como
+   un entorno común para consultar y actualizar información de reservas, habitaciones,
+   inventario y accesos. Los responsables lo utilizarán para supervisar la operación,
+   mientras que el personal operativo lo empleará como apoyo en sus tareas específicas.
+3. **¿Qué problemas debe resolver nuestro producto?** Creemos que Hostera debe
+   ayudar a resolver la dispersión de información entre registros independientes, las
+   inconsistencias entre reservas y disponibilidad, la poca visibilidad del inventario,
+   la dificultad para rastrear accesos autorizados y la coordinación de información
+   entre varias sedes.
+4. **¿Cuándo y cómo se usará nuestro producto?** Creemos que Hostera se utilizará
+   durante el registro o modificación de reservas, la actualización de la
+   disponibilidad, los procesos de check-in y check-out, el registro de movimientos
+   del almacén, la autorización de accesos y la revisión del historial de eventos. El
+   uso se realizará desde la plataforma web, según las responsabilidades de cada
+   usuario y las necesidades de la operación.
+5. **¿Qué características son importantes?** Creemos que serán importantes la
+   centralización de reservas y disponibilidad, el registro y consulta del inventario,
+   la relación de tarjetas y lectores RFID con habitaciones y usuarios, la trazabilidad
+   de los accesos y la posibilidad de consultar información de una o varias sedes.
+6. **¿Cómo debe verse y comportarse nuestro producto?** Creemos que Hostera debe
+   presentar una interfaz clara, ordenada y fácil de comprender para usuarios con
+   diferentes responsabilidades. La solución debe mostrar información actualizada,
+   mantener una navegación consistente, brindar confirmación de las acciones
+   realizadas y facilitar la identificación de estados, cambios e incidencias sin
+   exigir que el usuario consulte múltiples registros.
 
 **User Outcome and Benefit Assumptions**
 
-1. El administrador de una sede deja de reconstruir el estado de su hotel a partir de
-   una hoja de cálculo y lo consulta directamente, lo que reduce el tiempo diario de
-   conciliación.
-2. El responsable de varias sedes deja de armar el consolidado a mano y lo obtiene ya
-   construido, lo que elimina la espera entre el cierre de cada sede y el reporte.
-3. El personal de recepción encuentra la disponibilidad y el estado de una reserva en
-   el momento del check-in, lo que reduce las demoras que los entrevistados declaran
-   con frecuencia semanal.
-4. El encargado del almacén registra los movimientos donde ocurren y evita el
-   descuadre entre lo que hay y lo que está anotado.
-5. El responsable de la operación identifica qué persona accedió a una habitación y en
-   qué momento, lo que convierte la pérdida de un objeto en un hecho rastreable.
+1. Creemos que los responsables de la operación desean contar con información
+   actualizada para tomar decisiones sin depender de múltiples registros.
+2. Creemos que el personal de recepción se beneficiará de consultar rápidamente la
+   disponibilidad de las habitaciones y el estado de las reservas.
+3. Creemos que los encargados del almacén se beneficiarán de disponer de un historial
+   organizado de los ingresos, consumos y existencias.
+4. Creemos que el personal autorizado y los responsables del hotel valorarán poder
+   revisar la trazabilidad de los accesos vinculados con tarjetas RFID.
+5. Creemos que los usuarios operativos considerarán valiosa una experiencia que
+   reduzca la conciliación manual y les permita coordinar tareas entre áreas o sedes.
 
 **Feature Assumptions**
 
-1. Un panel de la propiedad activa que reúne ocupación, habitaciones, inventario y
-   accesos entrega el estado actual sin consultar otros registros.
-2. La consulta y el registro de reservas y disponibilidad sobre un mismo calendario
-   evitan las dobles reservas que se declaran con frecuencia mensual.
-3. El control de existencias por ubicación de almacén, con umbrales de reposición,
-   anticipa el descuadre en lugar de detectarlo en el inventario siguiente.
-4. La relación entre credencial RFID, habitación y persona, con su historial de
-   eventos, hace rastreable cada acceso.
-5. El cambio de propiedad activa y los reportes por propiedad y periodo sustituyen el
-   consolidado manual de las operaciones de varias sedes.
+1. Creemos que un panel administrativo que centralice reservas, habitaciones,
+   inventario y accesos ayudará a los usuarios a supervisar la operación desde un
+   mismo entorno.
+2. Creemos que las funciones para registrar y consultar reservas y disponibilidad
+   permitirán reducir inconsistencias entre la información reservada y el estado de
+   las habitaciones.
+3. Creemos que el registro de movimientos de inventario permitirá mejorar la
+   visibilidad de las existencias y facilitar su seguimiento.
+4. Creemos que la integración con tarjetas y lectores RFID permitirá asociar accesos
+   autorizados con habitaciones y usuarios, además de conservar un historial de
+   eventos.
+5. Creemos que una estructura de información preparada para una o varias sedes
+   permitirá que Hostera crezca junto con las necesidades de sus clientes.
 
-Los supuestos de mayor riesgo son los de resultado de negocio, porque dependen de un
-comportamiento que todavía no se ha observado. Esos son los que se convierten en los
-Hypothesis Statements de la siguiente sección.
+Estos supuestos no representan requisitos definitivos ni resultados comprobados. Los
+supuestos más riesgosos deberán priorizarse para formular los Hypothesis Statements y
+definir los experimentos que permitan confirmarlos o modificarlos.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-Cada hipótesis aplica la plantilla de Lean UX: relaciona un resultado de negocio de
-Grafo Verde con la persona que obtiene el beneficio y con la característica que lo
-produce. Las personas corresponden a los arquetipos de la sección 2.3.1 y las métricas
-provienen de los objetivos de negocio de la sección 3.2 y de los tiempos que los
-entrevistados declararon en la sección 2.2.
+Los Hypothesis Statements representan una evolución de los Assumptions, ya que
+convierten las creencias iniciales del equipo en afirmaciones que pueden medirse y
+comprobarse. Cada hipótesis aplica el formato de Lean UX y relaciona un business
+outcome con un user outcome y una feature específica. Esta estructura permite
+contrastar las ideas con evidencia y comprobar si Hostera contribuye tanto a los
+objetivos del negocio como a las necesidades reales de sus usuarios.
 
-**Hipótesis 1: Panel de la propiedad activa**
+**Hipótesis 1: Panel administrativo centralizado**
 
-Creemos que lograremos **50 suscripciones de pago activas en el plan Starter durante
-los primeros cuatro meses** si **Steven Huarcaya**, administrador de un hotel
-independiente de una sede, obtiene **el estado actual de su propiedad sin abrir su
-hoja de cálculo** con **el panel de la propiedad activa**.
+Creemos que centralizar la información de reservas, habitaciones, inventario y
+accesos en un panel administrativo reducirá la dependencia de registros
+independientes para supervisar la operación hotelera.
 
-*Señal que lo confirma:* el tiempo diario que Steven dedica a cuadrar reservas, caja e
-inventario baja de la franja de 1 a 2 horas que declara `F3` a menos de 30 minutos,
-que es la franja que ya alcanza `F2` con un sistema instalado.
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
+tareas de supervisión que los administradores y responsables de la operación
+completan desde el panel sin consultar registros adicionales, respecto a la línea
+base definida durante la validación.
 
-**Hipótesis 2: Reservas y disponibilidad sobre un mismo calendario**
+**Hipótesis 2: Gestión de reservas y disponibilidad**
 
-Creemos que lograremos **una retención mensual del 90 % con uso de la plataforma al
-menos cinco días a la semana** si **el personal de recepción de Steven** obtiene
-**la disponibilidad y el estado de una reserva en el momento de atender al huésped**
-con **la consulta y el registro de reservas sobre un mismo calendario**.
+Creemos que ofrecer al personal de recepción y a los administradores información
+actualizada para registrar y consultar reservas y disponibilidad reducirá las
+inconsistencias entre las reservas registradas y el estado de las habitaciones.
 
-*Señal que lo confirma:* las demoras en el check-in y las dobles reservas, que `F1`,
-`F2` y `F3` declaran con frecuencia mensual o semanal, dejan de registrarse durante un
-mes completo de operación.
+**Sabremos que hemos tenido éxito cuando veamos** una reducción de al menos 5% en
+las inconsistencias detectadas entre reservas y disponibilidad, y una disminución del
+tiempo necesario para encontrar el estado de una reserva o habitación, en comparación
+con la línea base de la validación.
 
-**Hipótesis 3: Control de existencias por ubicación de almacén**
+**Hipótesis 3: Registro y consulta del inventario**
 
-Creemos que lograremos **que el uso diario sostenga la renovación del plan Starter**
-si **Steven** obtiene **la alerta de un insumo por debajo de su umbral antes de que
-falte** con **el control de existencias por ubicación de almacén**.
+Creemos que registrar y consultar los movimientos de inventario permitirá a los
+encargados del almacén y a los responsables de la operación mejorar la visibilidad y
+el seguimiento de las existencias.
 
-*Señal que lo confirma:* los descuadres de almacén, declarados con frecuencia mensual
-o semanal por los tres respondientes del segmento, dejan de aparecer en el cierre del
-mes.
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
+movimientos de inventario registrados y consultables, junto con una reducción de las
+diferencias encontradas durante las pruebas de control de existencias, respecto a la
+línea base.
 
-**Hipótesis 4: Reportes por propiedad y cambio de propiedad activa**
+**Hipótesis 4: Control y trazabilidad de accesos RFID**
 
-Creemos que lograremos **20 cadenas hoteleras pequeñas en el plan Professional y que
-el 10 % de los clientes Starter actualicen su plan en seis meses** si **Anyeli
-Cárdenas**, responsable de operaciones de una cadena de dos a cinco sedes, obtiene
-**el consolidado de todas sus sedes ya construido** con **los reportes por propiedad y
-periodo y el cambio de propiedad activa**.
+Creemos que integrar las tarjetas y lectores RFID con el registro de eventos de
+Hostera permitirá al personal autorizado y a los responsables de la operación mejorar
+la trazabilidad de los accesos a las habitaciones y espacios del hotel.
 
-*Señal que lo confirma:* el tiempo de armar el consolidado baja del rango de 1 hora a
-medio día que declaran `F4` y `F5` a una consulta dentro de la plataforma, y los
-reportes desactualizados dejan de declararse con frecuencia semanal.
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
+accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un
+usuario o huésped, además de una reducción del tiempo necesario para consultar su
+historial.
 
-**Hipótesis 5: Trazabilidad de los accesos con credenciales RFID**
+**Hipótesis 5: Administración de una o varias sedes**
 
-Creemos que lograremos **que los clientes con tarjetas compartidas entre trabajadores
-contraten Hostera en lugar de una solución de control de acceso por separado** si
-**Steven y el personal autorizado** obtienen **la identificación de quién accedió a
-una habitación y en qué momento** con **la relación entre credencial RFID, habitación
-y persona y su historial de eventos**.
+Creemos que una estructura de información preparada para administrar una o varias
+sedes permitirá a los administradores y responsables de la operación mantener una
+visión consistente sin perder el contexto de cada hotel.
 
-*Señal que lo confirma:* la necesidad que Wilson (`E2`) describe como su principal
-motivo para adoptar un sistema queda cubierta, y cada acceso del periodo de prueba
-queda asociado a una credencial, una habitación y una persona identificable.
-
-Las hipótesis 1 y 4 son las de mayor riesgo, porque sostienen directamente los
-objetivos de adquisición y de expansión del negocio. Son las que deben contrastarse
-primero en las sesiones de validación.
+**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
+tareas de consulta y supervisión completadas correctamente en escenarios de una y
+varias sedes, sin duplicar ni confundir la información operativa.
 
 #### 1.2.2.4. Lean UX Canvas
 
-El Lean UX Canvas sintetiza en una sola vista el resultado de las secciones
-anteriores. Esta es la segunda iteración del lienzo: la primera se elaboró antes de
-contar con las entrevistas, por lo que sus resultados de negocio todavía describían la
-operación del hotel. La versión actual incorpora el problema dimensionado con datos
-del sector y de las entrevistas, los resultados de negocio de Grafo Verde definidos en
-la sección 3.2, las personas de la sección 2.3.1 y las cinco hipótesis de la sección
-anterior. Las casillas 7 y 8 fijan el aprendizaje pendiente y el experimento mínimo
-para obtenerlo, que corresponde al alcance del Sprint 2.
-
 ![Lean UX Canvas de Hostera](assets/chapter-1/hostera-lean-ux-canvas.svg)
-
-*Figura 1.1. Lean UX Canvas de Hostera, segunda iteración.*
+*Figura 1.1. Lean UX Canvas de Hostera.*
 
 ## 1.3. Segmentos objetivo
 
@@ -1491,18 +1472,18 @@ sedes, y por eso el producto se concentra en operaciones de menor escala.
 
 ### 2.2.3. Análisis de entrevistas
 
-Este análisis reúne en un solo lugar las diez entrevistas registradas en la sección
+Este análisis reúne en un solo lugar las nueve entrevistas registradas en la sección
 2.2.2 y es la base sobre la que se construyen los arquetipos de la sección 2.3. Las
-fuentes se identifican con el código asignado a cada entrevista: `E1` a `E5` para las
+fuentes se identifican con el código asignado a cada entrevista: `E1` a `E4` para las
 entrevistas en video y `F1` a `F5` para las entrevistas complementarias por
 formulario. La respuesta `F6` queda fuera de todos los porcentajes por corresponder a
 una franquicia internacional de seis o más establecimientos, por encima del límite del
 segmento 2.
 
 Con la asignación por escala de operación, el segmento 1 reúne cuatro entrevistas
-(`E1`, `F1`, `F2`, `F3`) y el segmento 2 reúne seis (`E2`, `E3`, `E4`, `E5`, `F4`,
-`F5`). Ambos superan el mínimo de tres entrevistas por segmento que exige el enunciado
-del proyecto.
+(`E1`, `F1`, `F2`, `F3`) y el segmento 2 reúne cinco (`E2`, `E3`, `E4`, `F4`, `F5`).
+Ambos quedan dentro del rango de tres a cinco entrevistas por segmento que exige el
+enunciado del proyecto.
 
 Las dos fuentes aportan información de distinta naturaleza y por eso se tratan de
 forma explícita. Las entrevistas en video permiten describir el contexto, el
@@ -1569,20 +1550,19 @@ decisión de incorporar un sistema está condicionada a un financiamiento bancar
 proyectada para una temporada concreta, lo que confirma que en este segmento la
 inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
 
-#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 6)
+#### Segmento 2: gerentes o responsables de operaciones de pequeñas cadenas hoteleras (n = 5)
 
 | Característica | Resultado | % | Fuente |
 | :--- | :---: | :---: | :--- |
-| Forma parte de una operación con dos o más establecimientos | 6 de 6 | 100 % | E2, E3, E4, E5, F4, F5 |
-| Usa un PMS o sistema hotelero corporativo | 4 de 6 | 67 % | E3, E4, E5, F5 |
-| Recibe reservas desde extranets o plataformas de agencias en línea | 4 de 6 | 67 % | E2, E4, F4, F5 |
-| Declara que consolidar la información entre sedes es una dificultad central | 3 de 6 | 50 % | E2, F4, F5 |
-| Recibe reservas o coordina la operación por WhatsApp | 3 de 6 | 50 % | E2, F4, F5 |
-| Controla el acceso a las habitaciones con tarjeta | 3 de 6 | 50 % | E2, E5, F5 |
-| Mantiene la información de cada sede separada por decisión de la organización | 2 de 6 | 33 % | E4, E5 |
-| Concilia la información de las sedes en Excel o en cuaderno | 2 de 6 | 33 % | E2, F4 |
-| Cuenta con usuario y permisos individuales por trabajador | 1 de 6 | 17 % | E4 |
-| Señala la trazabilidad de los accesos como una necesidad no cubierta | 1 de 6 | 17 % | E2 |
+| Supervisa dos o más establecimientos | 5 de 5 | 100 % | E2, E3, E4, F4, F5 |
+| Recibe reservas desde extranets o plataformas de agencias en línea | 4 de 5 | 80 % | E2, E4, F4, F5 |
+| Usa un PMS o sistema hotelero corporativo | 3 de 5 | 60 % | E3, E4, F5 |
+| Declara que consolidar la información entre sedes es una dificultad central | 3 de 5 | 60 % | E2, F4, F5 |
+| Recibe reservas o coordina la operación por WhatsApp | 3 de 5 | 60 % | E2, F4, F5 |
+| Concilia la información de las sedes en Excel o en cuaderno | 2 de 5 | 40 % | E2, F4 |
+| Controla el acceso a las habitaciones con tarjeta | 2 de 5 | 40 % | E2, F5 |
+| Cuenta con usuario y permisos individuales por trabajador | 1 de 5 | 20 % | E4 |
+| Señala la trazabilidad de los accesos como una necesidad no cubierta | 1 de 5 | 20 % | E2 |
 | Consolida la información de todas las sedes al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Tarda una hora o más en armar ese consolidado | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Declara reportes desactualizados al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
@@ -1591,14 +1571,14 @@ inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
 | Sitúa el control de accesos en el último lugar de sus prioridades | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Pagaría S/51 o más al mes y pide una demostración previa | 2 de 2 (formulario) | 100 % | F4, F5 |
 
-El segmento reúne a quienes forman parte de una operación con más de un
-establecimiento, con cargos de propietario multisede, gerente de operaciones, gerente
-general, subgerente y Room Division Manager. A diferencia del segmento 1, aquí la
-operación diaria está repartida entre departamentos —reservas, recepción, seguridad,
-almacén y housekeeping— y el entrevistado supervisa en lugar de ejecutar. Rafael Prieto
-(`E3`) describe que no controla directamente las existencias del almacén, sino que
-aprueba los pedidos de las áreas a su cargo; el gerente general del Meliá (`E4`) recibe
-a diario los informes consolidados en lugar de revisar reserva por reserva.
+El segmento reúne a quienes responden por más de una sede, con cargos de propietario
+multisede, gerente de operaciones, gerente general y Room Division Manager. A
+diferencia del segmento 1, aquí la operación diaria está repartida entre departamentos
+—reservas, recepción, seguridad, almacén y housekeeping— y el entrevistado supervisa
+en lugar de ejecutar. Rafael Prieto (`E3`) describe que no controla directamente las
+existencias del almacén, sino que aprueba los pedidos de las áreas a su cargo; el
+gerente general del Meliá (`E4`) recibe a diario los informes consolidados en lugar de
+revisar reserva por reserva.
 
 La dificultad que define al segmento no es registrar, sino consolidar. Tres de los
 cinco entrevistados la declaran de forma explícita: Wilson (`E2`) debe coordinar
@@ -1610,39 +1590,24 @@ estructuradas, los reportes desactualizados y los procesos distintos entre sedes
 aparecen con frecuencia semanal o diaria en los dos casos.
 
 La madurez tecnológica también es desigual, pero se distribuye de otra manera que en
-el segmento 1. Cuatro de seis trabajan sobre un PMS corporativo —Opera en el caso de
-`E3`, Opera Cloud integrado con el CRM en el de `E4` y Opera Cloud con Oracle Symphony
-y el portal interno ResaWeb en el de `E5`—, mientras que `E2` y `F4` sostienen
-operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
+el segmento 1. Tres de cinco trabajan sobre un PMS corporativo —Opera en el caso de
+`E3` y Opera Cloud integrado con el CRM en el de `E4`—, mientras que `E2` y `F4`
+sostienen operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
 conviven dentro del mismo segmento, y la diferencia tiene consecuencias de producto:
 donde ya existe un PMS corporativo el problema se desplaza hacia la integración entre
 sistemas, y el propio `E4` señala que su plataforma complementaria de housekeeping
 cuesta cerca de USD 1 500 anuales por propiedad, lo que fija una referencia de precio
 para la categoría.
 
-La entrevista a Roy Ríos (`E5`) incorpora un caso que conviene leer en contraste con
-el resto. Es subgerente de un hotel que pertenece a un grupo de tres establecimientos
-de la misma cadena internacional, pero cada uno opera con razón social propia y la
-información no se comparte entre ellos: no hay movimientos de inventario entre sedes y
-los responsables de un hotel no acceden a los resultados de los otros. La separación es
-una decisión de la organización, no una limitación de sus herramientas, y el gerente
-general del Meliá (`E4`) describe el mismo criterio cuando explica que cada propiedad
-tiene su centro de costos y su acceso restringido. Para estos dos casos, consolidar
-entre sedes no es un problema por resolver, lo que delimita el alcance de Hostera: la
-capacidad de consolidación es decisiva para las operaciones que comparten
-administración, como las de `E2`, `F4` y `F5`, y resulta irrelevante donde cada
-establecimiento se gestiona como una empresa separada.
-
 El control de accesos ocupa posiciones opuestas dentro del segmento y conviene
 registrarlo como tal. Las dos respuestas estructuradas lo sitúan en el último lugar de
 sus prioridades, mientras que Wilson (`E2`) lo plantea como su necesidad principal:
 pide tarjetas nominativas por trabajador para poder identificar quién entró a una
-habitación y en qué turno. La diferencia se explica por el punto de partida. Donde ya existe un control por usuario
-individual, como describe `E4` para las operaciones sobre reservas, o un control físico
-cerrado, como la tarjeta magnética que en el hotel de `E5` habilita únicamente el piso
-y la habitación del huésped, la trazabilidad deja de percibirse como un problema; donde
-las tarjetas se comparten entre personas, se convierte en el motivo principal para
-adoptar un sistema.
+habitación y en qué turno. La diferencia se explica por el punto de partida. Donde ya
+existe un control por usuario individual, como describe `E4` para las operaciones
+sobre reservas, la trazabilidad deja de percibirse como un problema; donde las tarjetas
+se comparten entre personas, se convierte en el motivo principal para adoptar un
+sistema.
 
 #### Comparación entre los dos segmentos
 
@@ -1651,7 +1616,7 @@ características de las tablas anteriores provienen de respuestas individuales y
 una generalización del segmento. Las marcas vacías indican que la persona declaró no
 utilizar ese recurso, y los guiones que la entrevista no registró el dato.
 
-<img src="assets/chapter-2/entrevistas-perfil-tecnologico.svg" alt="Perfil tecnológico declarado en cada una de las diez entrevistas" style="width:100%; height:auto;"/>
+<img src="assets/chapter-2/entrevistas-perfil-tecnologico.svg" alt="Perfil tecnológico declarado en cada una de las nueve entrevistas" style="width:100%; height:auto;"/>
 
 *Figura 2.6. Perfil tecnológico declarado en cada entrevista, agrupado por segmento.*
 
@@ -1689,7 +1654,7 @@ prioridad declarada de forma uniforme: resulta decisivo para quien comparte tarj
 entre trabajadores y secundario para quien ya cuenta con permisos individuales.
 
 Dos limitaciones acotan el alcance de estos porcentajes. La primera es el tamaño de la
-muestra: con cuatro y seis entrevistas por segmento, los porcentajes describen a los
+muestra: con cuatro y cinco entrevistas por segmento, los porcentajes describen a los
 entrevistados y no permiten inferir proporciones de la población hotelera peruana. La
 segunda es que las dos fuentes no recogen exactamente la misma información, por lo que
 las filas basadas solo en el formulario indican su base. Ambas limitaciones se reducen
@@ -1698,124 +1663,63 @@ a medida que se incorporen nuevas entrevistas en los siguientes sprints.
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
+Esta sección representa los principales perfiles de usuario que fueron creados en base a los segmentos objetivos. El propósito principal de la creación de estos perfiles es el de reflejar de manera precisa las motivaciones, frustraciones y las necesidades reales de nuestros usuarios finales.
 
-Los User Personas son los arquetipos con los que el equipo representa a cada segmento
-objetivo durante el diseño del producto. Se elabora una ficha por segmento y cada
-rasgo de esas fichas proviene del análisis de entrevistas de la sección 2.2.3 o del
-análisis competitivo de la sección 2.1, de modo que ninguna característica se apoya en
-una suposición del equipo.
-
-Del análisis de entrevistas se toman el contexto de operación, las herramientas y los
-canales que cada segmento utiliza hoy, las frustraciones que declara con mayor
-frecuencia, los objetivos que sitúa en los primeros lugares de sus prioridades y la
-disposición a pagar. Del análisis competitivo se toma el conjunto de alternativas que
-estas personas ya conocen o evalúan, que define el punto de comparación con el que
-recibirán a Hostera. La siguiente tabla indica el origen de los rasgos principales de
-cada ficha.
-
-| Rasgo de la ficha | Resultado del análisis | Fuente |
-| :--- | :--- | :--- |
-| Contexto de operación del segmento 1: un solo establecimiento, con responsabilidad directa sobre la operación completa | 4 de 4 entrevistas del segmento | E1, F1, F2, F3 |
-| Canal de coordinación del segmento 1: WhatsApp | 4 de 4 — 100 % | E1, F1, F2, F3 |
-| Herramienta de registro del segmento 1: hoja de cálculo o cuaderno | 3 de 4 — 75 % | E1, F1, F3 |
-| Dispositivo y navegador del segmento 1: laptop y Chrome | 2 de 3 con dato — 67 % | F2, F3 |
-| Frustraciones del segmento 1: descuadres de almacén y demoras en el check-in, al menos una vez al mes | 3 de 3 — 100 % | F1, F2, F3 |
-| Objetivo del segmento 1: mantener al día las reservas y la disponibilidad | 3 de 3 lo sitúan entre sus dos prioridades | F1, F2, F3 |
-| Contexto de operación del segmento 2: dos o más establecimientos, con responsabilidad de supervisión | 6 de 6 entrevistas del segmento | E2, E3, E4, E5, F4, F5 |
-| Frustración del segmento 2: consolidar la información entre sedes | 3 de 6 — 50 % | E2, F4, F5 |
-| Objetivo del segmento 2: disponer de reservas y reportes centralizados | 2 de 2 lo sitúan en primer lugar | F4, F5 |
-| Disposición a pagar: S/51 o más al mes | 4 de 5 respondientes válidos — 80 % | F1, F2, F4, F5 |
-| Alternativas que ya conocen o evalúan | Análisis competitivo de la sección 2.1 | Nexus PMS, OkFac, SysHotel |
-
-Las fichas se elaboraron en UXPressia, la herramienta indicada para este artefacto, y
-se presentan a continuación.
+Para ello seleccionamos los siguientes perfiles:
 
 User Persona 1
-
 ![Steven Huarcaya](assets/chapter-2/Steven%20Huarcaya%20(1).png)
-
-*Figura 2.9. User Persona de Steven Huarcaya, segmento de hoteles independientes de una sede.*
-
+*Figura 2.9. User Persona de Steven Huarcaya.*
+---
 User Persona 2
-
 ![Anyeli Cardenas](assets/chapter-2/Anyeli%20C%C3%A1rdenas.png)
-
-*Figura 2.10. User Persona de Anyeli Cárdenas, segmento de cadenas hoteleras pequeñas.*
-
+*Figura 2.10. User Persona de Anyeli Cárdenas.*
 ### 2.3.2. User Task Matrix
+En esta sección se presenta el User Task Matrix correspondiente al **Segmento 1: Propietarios o administradores de hoteles independientes de una sola sede**, representado por el User Persona **Steven Huarcaya**.
 
-El User Task Matrix reúne las tareas que los User Personas realizan para sostener la
-operación de su hotel y compara, para cada tarea, con qué frecuencia la ejecutan y qué
-importancia le asignan. Las tareas corresponden a actividades que ambas personas
-llevan a cabo con independencia de que exista Hostera, no a opciones de la solución, y
-su frecuencia e importancia se derivan de lo declarado en las entrevistas de la
-sección 2.2.
+Cabe destacar que las tareas analizadas corresponden a las actividades operativas y administrativas reales que Steven lleva a cabo en el hotel para mantener la continuidad del negocio, independientemente de la existencia de la solución de software.
 
-Se presenta una sola matriz con una columna por persona, de modo que las coincidencias
-y las diferencias entre los dos segmentos puedan leerse en la misma vista.
+### User Task Matrix — Segmento 1: Steven Huarcaya
 
-<table>
-  <thead>
-    <tr>
-      <th rowspan="2">Tarea del usuario (<em>User Task</em>)</th>
-      <th colspan="2">Steven Huarcaya<br>Segmento 1 · una sede</th>
-      <th colspan="2">Anyeli Cárdenas<br>Segmento 2 · 2 a 5 sedes</th>
-    </tr>
-    <tr>
-      <th>Frecuencia</th>
-      <th>Importancia</th>
-      <th>Frecuencia</th>
-      <th>Importancia</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Supervisar el estado y la disponibilidad de las habitaciones</td><td>Alta (diaria)</td><td>Crítica</td><td>Alta (diaria)</td><td>Crítica</td></tr>
-    <tr><td>Registrar y actualizar las reservas que llegan por distintos canales</td><td>Alta (diaria)</td><td>Crítica</td><td>Media (semanal)</td><td>Alta</td></tr>
-    <tr><td>Atender incidencias de recepción, sobreventas y cambios de habitación</td><td>Alta (diaria)</td><td>Crítica</td><td>Baja (ocasional)</td><td>Media</td></tr>
-    <tr><td>Controlar la asignación y entrega de llaves o credenciales a los huéspedes</td><td>Alta (diaria)</td><td>Crítica</td><td>Baja (ocasional)</td><td>Baja</td></tr>
-    <tr><td>Verificar las existencias de insumos del almacén</td><td>Media (semanal)</td><td>Alta</td><td>Media (semanal)</td><td>Alta</td></tr>
-    <tr><td>Registrar y auditar los accesos del personal autorizado</td><td>Media (semanal)</td><td>Alta</td><td>Media (semanal)</td><td>Alta</td></tr>
-    <tr><td>Consolidar la información operativa de todas las sedes</td><td>No aplica</td><td>No aplica</td><td>Alta (diaria)</td><td>Crítica</td></tr>
-    <tr><td>Coordinar el traslado de insumos o huéspedes entre establecimientos</td><td>No aplica</td><td>No aplica</td><td>Media (quincenal)</td><td>Media</td></tr>
-    <tr><td>Revisar reportes de costos, consumos e indicadores del negocio</td><td>Baja (mensual)</td><td>Media</td><td>Baja (mensual)</td><td>Crítica</td></tr>
-  </tbody>
-</table>
+| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
+| :--- | :---: | :---: |
+| **Supervisar el estado y la disponibilidad diaria de habitaciones** | Alta *(Diaria)* | Crítica |
+| **Controlar la asignación y entrega de llaves o accesos a los huéspedes** | Alta *(Diaria)* | Crítica |
+| **Verificar el stock e inventario de insumos del almacén** | Media *(Semanal)* | Alta |
+| **Atender o resolver incidencias operativas y sobreventas en recepción** | Media *(Frecuente)* | Crítica |
+| **Registrar y auditar las entradas y salidas del personal autorizado** | Media *(Semanal)* | Alta |
+| **Revisar reportes de costos e insumos consumidos en la operación** | Baja *(Mensual)* | Media |
 
-**Coincidencias entre los dos segmentos.** Las dos personas sitúan en el primer lugar
-la supervisión del estado y la disponibilidad de las habitaciones, con frecuencia
-diaria e importancia crítica, lo que coincide con que los cinco respondientes del
-formulario coloquen las reservas y la disponibilidad entre sus primeras prioridades.
-Ambas verifican las existencias del almacén y auditan los accesos del personal con
-frecuencia semanal e importancia alta: son tareas de control que ninguna de las dos
-puede abandonar, pero que tampoco ocupan su jornada. La revisión de reportes es
-mensual en los dos casos.
+---
 
-**Diferencias entre los dos segmentos.** La diferencia principal no está en qué tareas
-realizan, sino en quién las ejecuta. Steven registra las reservas, atiende la recepción
-y entrega las credenciales él mismo, con frecuencia diaria e importancia crítica;
-Anyeli delega esas mismas tareas en los administradores de cada sede y las realiza de
-forma ocasional. Esto reproduce lo que describen las entrevistas: Rafael Prieto (`E3`)
-aprueba los pedidos del almacén en lugar de controlar las existencias, y el gerente
-general del Meliá (`E4`) recibe informes consolidados en lugar de revisar reserva por
-reserva.
+### Análisis del User Task Matrix
 
-A cambio, Anyeli asume dos tareas que no existen en la operación de Steven: consolidar
-la información de todas las sedes, con frecuencia diaria e importancia crítica, y
-coordinar el traslado de insumos o huéspedes entre establecimientos. La primera es la
-tarea más costosa de su jornada —`F4` declara medio día por consolidado semanal y `F5`
-entre una y tres horas diarias— y es la que explica por qué este segmento sitúa los
-reportes consolidados por encima del control de accesos en sus prioridades.
+* **Tareas de mayor frecuencia e importancia:** Las actividades críticas en el día a día de Steven son la **supervisión de la disponibilidad de habitaciones** y el **control de entrega de accesos**. Al ser el responsable directo de la única sede del hotel, coordinar la recepción en tiempo real es vital para evitar cruces de reservas, demoras en el check-in o reclamos de los huéspedes.
+* **Tareas de gestión y control:** La **verificación del inventario de almacén** y el **registro de accesos del personal** representan tareas de frecuencia media pero de importancia alta. Son fundamentales para prevenir fugas de stock (ropa de cama, artículos de aseo) y mantener el control de seguridad física en las instalaciones.
+* **Tareas de consolidación:** La revisión de reportes consolidados de insumos y costos se realiza con menor frecuencia (mensual o quincenal), pues el foco principal del administrador de una sola sede está volcado a la operatividad inmediata y la atención de incidencias diarias.
+---
+En esta sección se presenta el User Task Matrix correspondiente al **Segmento 2: Gerentes o responsables de operaciones de pequeñas cadenas hoteleras**, representado por la User Persona **Anyeli Cárdenas**.
 
-La última diferencia está en la importancia de los reportes. Para Steven son una
-revisión mensual de importancia media, porque su foco está en la operación inmediata;
-para Anyeli tienen importancia crítica pese a su baja frecuencia, porque son el insumo
-con el que decide sobre varias sedes a la vez.
+Las tareas identificadas reflejan las actividades estratégicas y de supervisión multisede que Anyeli realiza de forma independiente a la herramienta tecnológica utilizada, enfocándose en la coordinación operativa, el control de recursos y la toma de decisiones.
 
-**Consecuencia para el producto.** La matriz indica que las capacidades diarias de
-Hostera deben resolverse primero para el perfil de Steven, que ejecuta todas las tareas
-críticas en persona, mientras que para Anyeli la capacidad decisiva es la consolidación
-entre sedes. Esto sostiene el orden del Product Backlog de la sección 3.3, que sitúa el
-panorama operativo y las reservas antes que los reportes y el control de accesos.
+### User Task Matrix — Segmento 2: Anyeli Cárdenas
+
+| Tareas del Usuario (*User Tasks*) | Frecuencia | Importancia |
+| :--- | :---: | :---: |
+| **Monitorear y consolidar la ocupación y reservas entre múltiples sedes** | Alta *(Diaria)* | Crítica |
+| **Comparar e identificar discrepancias en el inventario de almacén por sede** | Media *(Semanal)* | Alta |
+| **Auditar el cumplimiento de políticas de acceso e incidencias de seguridad física** | Media *(Semanal)* | Alta |
+| **Coordinar la redistribución de insumos y recursos operativos entre establecimientos** | Media *(Quincenal)* | Media |
+| **Evaluar indicadores operativos globales para la toma de decisiones estratégicas** | Baja *(Mensual)* | Crítica |
+| **Supervisar directamente la asignación puntual de habitaciones o entregas de accesos** | Baja *(Ocasional)* | Baja |
+
+---
+
+### Análisis del User Task Matrix
+
+* **Tareas de mayor frecuencia e importancia:** La tarea central de Anyeli es el **monitoreo consolidado de ocupación y reservas**. Al gestionar varias sedes en distintas ubicaciones, necesita comprobar a diario la disponibilidad global para maximizar las ventas y evitar fallos de coordinación entre los equipos de cada establecimiento.
+* **Tareas de control e indicadores estratégicos:** La **comparación de inventarios entre sedes** y la **evaluación mensual de indicadores de rendimiento** tienen una alta importancia estratégica. Permiten identificar qué hotel está consumiendo más recursos o detectar pérdidas imprevistas antes de que afecten la rentabilidad global.
+* **Tareas de baja frecuencia:** A diferencia del administrador de una sola sede, Anyeli realiza de forma muy ocasional la **supervisión directa de entrega de accesos o habitaciones**, ya que estas actividades son delegadas al personal operativo y administradores locales de cada hotel.
 
 ### 2.3.3. User Journey Mapping
 ## As-Is User Journey Maps
@@ -1913,45 +1817,45 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 | :--- | :--- | :--- | :--- | :--- |
 | EP001 | Landing Page Experience | As a visitor, I want to explore Hostera's value proposition, operating-scale pathways, plans, and supporting content, so that I can identify the experience that fits my hotel operation and choose an appropriate next step. | **Scenario: Complete Landing Page experience**<br>**Given** a visitor accesses the Landing Page<br>**When** the visitor explores the product proposition, operating-scale options, plans, supporting content, and available actions<br>**Then** the visitor obtains the information needed to evaluate Hostera and continue with the plan or contact that fits the operation. | — |
 | EP002 | Account Access and Operational Overview | As a hotel administrator or operations manager, I want to register, sign in, select a property, and review its operational overview, so that I can start working with the information of the property I am responsible for. | **Scenario: Access the operational application**<br>**Given** a user has valid account information and access to at least one property<br>**When** the user completes account access and selects a property<br>**Then** the application opens the operational overview scoped to the selected property. | — |
-| EP003 | Booking and Stay Management | As a front-desk operator, I want to find, create, update, and complete bookings, including payments, check-in, and check-out, so that each guest stay is recorded consistently from booking to departure. | **Scenario: Manage a guest stay**<br>**Given** an operator is working within the active property<br>**When** the user manages a booking through its supported stay operations<br>**Then** the system preserves the booking details, payment state, and applicable lifecycle status. | — |
-| EP004 | Room, Room Type, and Rate Management | As a hotel administrator, I want to manage rooms, room types, rate plans, availability, and operational room status, so that accommodation information stays accurate for bookings and daily operations. | **Scenario: Manage accommodation configuration**<br>**Given** an authorized user is working within a selected property<br>**When** the user views or updates rooms, room types, rates, availability, or operational status<br>**Then** the application presents and retains the accommodation information needed for room operations. | — |
+| EP003 | Reservation and Stay Management | As a front-desk operator, I want to find, create, update, and complete reservations, including payments, check-in, and check-out, so that each guest stay is recorded consistently from booking to departure. | **Scenario: Manage a guest stay**<br>**Given** an authorized user is working within a selected property<br>**When** the user manages a reservation through its supported stay operations<br>**Then** the system preserves the reservation details, payment state, and applicable lifecycle status. | — |
+| EP004 | Room, Room Type, and Rate Management | As a hotel administrator, I want to manage rooms, room types, rate plans, availability, and operational room status, so that accommodation information stays accurate for reservations and daily operations. | **Scenario: Manage accommodation configuration**<br>**Given** an authorized user is working within a selected property<br>**When** the user views or updates rooms, room types, rates, availability, or operational status<br>**Then** the application presents and retains the accommodation information needed for room operations. | — |
 | EP005 | Inventory Management | As an inventory operator or hotel administrator, I want to monitor items, record stock adjustments, and manage storage locations, so that supplies remain available and their movements are traceable. | **Scenario: Maintain property inventory**<br>**Given** an authorized user is working within a selected property<br>**When** the user monitors items, records a stock adjustment, or manages a storage location<br>**Then** the application reflects the current quantities and valid storage assignments for the property. | — |
 | EP006 | RFID Access Control | As a hotel administrator or authorized front-desk operator, I want to encode, replace, revoke, and review RFID credentials and access events, so that room and operational access remains valid only for authorized people and periods. | **Scenario: Control property access credentials**<br>**Given** an authorized user is working within a selected property<br>**When** the user manages RFID credentials or reviews access events<br>**Then** the system applies the configured access scope and makes the resulting credential activity available for review. | — |
 | EP007 | Operational Reporting | As a hotel administrator or operations manager, I want to find, analyze, and export operational reports by property and period, so that I can evaluate hotel performance and share the results. | **Scenario: Analyze operational information**<br>**Given** an authorized user selects a property, report type, and supported period<br>**When** the user views or exports the report<br>**Then** the application provides results corresponding to the selected scope and period. | — |
 | EP008 | API Reliability and Integration | As a developer integrating with Hostera, I want the API to apply consistent errors and shared integration behavior, so that every client can handle the product capabilities in a predictable way. | **Scenario: Process an API request consistently**<br>**Given** a client sends a supported or invalid request to the API<br>**When** the API processes the request<br>**Then** it returns a predictable response with the appropriate result or standardized error information. | — |
-| US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether Hostera is relevant to my hotel. | **Scenario: The visitor identifies the value proposition**<br>**Given** a visitor evaluates Hostera for the first time<br>**When** the visitor requests the value proposition<br>**Then** the visitor learns that Hostera allows running the whole hotel operation from one place.<br><br>**Scenario: The visitor identifies the operational areas covered**<br>**Given** the visitor is reviewing the value proposition<br>**When** the visitor looks for the scope of the product<br>**Then** the visitor finds that Hostera covers reservations, rooms, inventory, and access across every property.<br><br>**Scenario: The visitor recognizes the problem Hostera addresses**<br>**Given** the visitor continues reviewing the content<br>**When** the visitor reads about current hotel operations<br>**Then** the visitor learns that operations break when information is kept in different places and that Hostera connects reservations, rooms, inventory, and guest access in the same operational picture.<br><br>**Scenario: The visitor continues to the entry plan**<br>**Given** the visitor wants to evaluate Hostera after reading the value proposition<br>**When** the visitor chooses to continue<br>**Then** the system provides the Starter plan information. | EP001 |
-| US002 | Find information about Hostera | As a visitor, I want to request information about the topic I am interested in, so that I can learn about Hostera and understand the available next steps. | **Scenario: The visitor requests information about a topic**<br>**Given** a visitor wants information about a specific topic<br>**When** the visitor chooses solutions, features, pricing, product, or team information<br>**Then** the system provides information about the requested topic.<br><br>**Scenario: The visitor changes topic from any point**<br>**Given** the visitor is consulting information about Hostera<br>**When** the visitor wants to consult another topic<br>**Then** the system provides the requested topic independently of the topic previously consulted.<br><br>**Scenario: The visitor finds support and the service terms**<br>**Given** the visitor has reviewed the main content<br>**When** the visitor looks for support or for the conditions of the service<br>**Then** the visitor finds the frequently asked questions and the Terms and Conditions of Hostera.<br><br>**Scenario: The visitor identifies who offers the product**<br>**Given** the visitor wants to know who is responsible for Hostera<br>**When** the visitor reviews the company information<br>**Then** the visitor identifies Hostera, its statement “Hotel operations, connected.”, and Grafo Verde as the copyright holder. | EP001 |
-| US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera option for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue with the corresponding plan. | **Scenario: The visitor identifies the independent-hotel option**<br>**Given** a visitor operates one independent hotel with up to 10 rooms<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Independent hotel” option for one property with up to 10 rooms, focused on reservations, availability, and room operations with consistent operational information.<br><br>**Scenario: The visitor reviews the Starter plan conditions**<br>**Given** the visitor evaluates the Starter plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it costs S/39 per property per month and includes basic reservations and availability, inventory without automatic alerts, one simulated RFID reader, one administrator, and community and documentation support.<br><br>**Scenario: The visitor continues with the Starter plan**<br>**Given** the visitor considers that the independent-hotel option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Starter plan information. | EP001 |
-| US004 | Find the small-chain path | As a small-chain hotel operations manager, I want an option for coordinating 2 to 5 locations, so that I can identify the plan and estimated cost intended for a multi-property operation. | **Scenario: The visitor identifies the small-chain option**<br>**Given** the visitor is responsible for a hotel chain with 2 to 5 locations<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Small hotel chain” option for coordinating rooms, stock, and reports across every property.<br><br>**Scenario: The visitor reviews the Professional plan conditions**<br>**Given** the visitor evaluates the Professional plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it is intended for hotel chains with 2 to 5 locations, costs S/8 per room per month, and includes unlimited rooms across locations, automatic critical-stock alerts, up to 25 RFID readers, reports by location, five administrators with roles, and priority chat and email support.<br><br>**Scenario: The visitor estimates the monthly cost**<br>**Given** the visitor knows the total number of rooms across the chain's hotels<br>**When** the visitor provides that number of rooms<br>**Then** the system calculates the estimated monthly cost at S/8 per room, so 25 rooms correspond to S/200.<br><br>**Scenario: The visitor provides an invalid number of rooms**<br>**Given** the visitor provides a value that is not a whole number of 1 or more<br>**When** the estimate is calculated<br>**Then** the system does not calculate the cost and indicates that a whole number of rooms of 1 or more is required.<br><br>**Scenario: The visitor continues with the Professional plan**<br>**Given** the visitor considers that the small-chain option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Professional plan information. | EP001 |
-| US005 | Understand the product benefits and operating flow | As a visitor, I want to understand the benefits and the high-level operating flow described by Hostera, so that I can relate the proposition to hotel work. | **Scenario: The visitor learns the benefit of connected operations**<br>**Given** the visitor wants to know the benefits of Hostera<br>**When** the visitor reviews them<br>**Then** the visitor learns that Hostera coordinates occupancy, room readiness, inventory, and guest access across every property with consistent operational information.<br><br>**Scenario: The visitor reviews specific benefits**<br>**Given** the visitor looks for examples of those benefits<br>**When** the visitor reviews them<br>**Then** the visitor finds RFID guest access designed for hospitality, centralized inventory by property with automatic flagging of critical shortages, and access controls that give staff access only to the properties they need.<br><br>**Scenario: The visitor learns how to start operating**<br>**Given** the visitor wants to know how a hotel starts using Hostera<br>**When** the visitor reviews the operating flow<br>**Then** the visitor learns the four steps: add hotels and define their rooms, set up the team and assign access by role, connect RFID readers and configure inventory workflows, and manage reservations, room status, access, and stock from one place. | EP001 |
-| US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and understand the available next steps, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | **Scenario: The visitor compares the plans by operating scale**<br>**Given** the visitor wants to compare the available plans<br>**When** the visitor reviews the pricing information<br>**Then** the visitor finds Starter for one property with up to 10 rooms at S/39 per property per month, Professional for chains with 2 to 5 locations at S/8 per room per month, and Enterprise for large or multinational hotel groups, each with its included capabilities.<br><br>**Scenario: The visitor reviews the Enterprise conditions**<br>**Given** the visitor manages a large or multi-country hotel group<br>**When** the visitor evaluates the Enterprise plan<br>**Then** the visitor learns that it includes unlimited locations and RFID readers, an open API for PMS integrations, dedicated onboarding, unlimited users and roles, a guaranteed availability SLA, and dedicated 24/7 support, and that it is requested through the sales team.<br><br>**Scenario: Each plan leads to its next step**<br>**Given** the visitor has chosen a plan<br>**When** the visitor decides to continue<br>**Then** Starter and Professional lead to the information of each plan, and Enterprise leads to the sales contact.<br><br>**Scenario: The visitor contacts the sales team**<br>**Given** a visitor from a hotel group wants to talk to sales<br>**When** the visitor sends their name, the hotel or group they represent, and a message<br>**Then** the request is registered and the visitor is informed that a Hostera teammate will follow up.<br><br>**Scenario: The visitor leaves a sales request incomplete**<br>**Given** the visitor wants to contact the sales team<br>**When** the visitor tries to send the request without the name, the hotel or group, or the message<br>**Then** the request is not sent and the visitor is asked to complete the missing information.<br><br>**Scenario: The visitor decides after reviewing all the content**<br>**Given** the visitor has reviewed the information of Hostera<br>**When** the visitor is ready to choose<br>**Then** the visitor can continue with the Starter plan or contact the sales team. | EP001 |
-| US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information about Hostera, so that I can learn more before choosing a plan. | **Scenario: The visitor watches the product presentation**<br>**Given** the visitor wants to understand how Hostera operates<br>**When** the visitor requests the product presentation<br>**Then** the system provides the product video explaining how Hostera works in daily hotel operations.<br><br>**Scenario: The visitor watches the team presentation**<br>**Given** the visitor wants to know who is building Hostera<br>**When** the visitor requests the team presentation<br>**Then** the system provides the team video explaining who builds Hostera and the reasons behind the product.<br><br>**Scenario: The visitor identifies the engineering team**<br>**Given** the visitor wants to know the people behind Hostera<br>**When** the visitor reviews the team information<br>**Then** the visitor identifies Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana as software engineers, with a short description of each person's contribution.<br><br>**Scenario: The visitor resolves questions before choosing a plan**<br>**Given** the visitor has questions about the service<br>**When** the visitor consults the frequently asked questions<br>**Then** the visitor finds answers about starting with one hotel, what changes with Professional, and the availability of Hostera in English and Latin American Spanish. | EP001 |
-| US008 | Consult Hostera information in English or Spanish | As a visitor, I want to choose English or Spanish, so that I can understand Hostera information in the language I understand best. | **Scenario: The visitor chooses the language**<br>**Given** a visitor prefers to read in English or in Spanish<br>**When** the visitor chooses that language<br>**Then** the topics, value proposition, options by operating scale, plans, next steps, and support content are presented in the selected language.<br><br>**Scenario: The Spanish variant preserves the offer**<br>**Given** the visitor consults Hostera information in Spanish<br>**When** the visitor reviews the options and plans<br>**Then** the visitor finds the options “Hotel independiente”, “Cadena hotelera pequeña”, and “Grupo hotelero”, and the plans “Starter”, “Profesional”, and “Empresarial”, with the same prices and conditions as the English variant.<br><br>**Scenario: The visitor changes language at any moment**<br>**Given** the visitor is reading either language variant<br>**When** the visitor chooses the other language<br>**Then** the content the visitor was consulting is presented in the newly selected language. | EP001 |
+| US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether the Landing Page is relevant to my hotel. | **Scenario: The visitor identifies the value proposition**<br>**Given** a visitor arrives at the Landing Page for the first time<br>**When** the visitor reviews the opening information<br>**Then** the visitor learns that Hostera allows running the whole hotel operation from one place.<br><br>**Scenario: The visitor identifies the operational areas covered**<br>**Given** the visitor is reviewing the value proposition<br>**When** the visitor looks for the scope of the product<br>**Then** the visitor finds that Hostera covers reservations, rooms, inventory, and access across every property.<br><br>**Scenario: The visitor recognizes the problem Hostera addresses**<br>**Given** the visitor continues reviewing the content<br>**When** the visitor reads about current hotel operations<br>**Then** the visitor learns that operations break when information is kept in different places and that Hostera connects reservations, rooms, inventory, and guest access in the same operational picture.<br><br>**Scenario: The visitor continues to the entry plan**<br>**Given** the visitor wants to evaluate Hostera after reading the value proposition<br>**When** the visitor chooses to continue<br>**Then** the visitor is taken to the Starter plan information. | EP001 |
+| US002 | Find the Landing Page topics | As a visitor, I want to go directly to the topic I am interested in, so that I can find the Landing Page content and understand the available next steps. | **Scenario: The visitor goes directly to a topic**<br>**Given** a visitor wants information about a specific topic<br>**When** the visitor chooses solutions, features, pricing, product, or team information<br>**Then** the Landing Page takes the visitor to the content of that topic.<br><br>**Scenario: The visitor changes topic from any point**<br>**Given** the visitor is reviewing any part of the Landing Page<br>**When** the visitor wants to consult another topic<br>**Then** the visitor can move to any main topic without returning to the beginning.<br><br>**Scenario: The visitor finds support and the service terms**<br>**Given** the visitor has reviewed the main content<br>**When** the visitor looks for support or for the conditions of the service<br>**Then** the visitor finds the frequently asked questions and the Terms and Conditions of Hostera.<br><br>**Scenario: The visitor identifies who offers the product**<br>**Given** the visitor wants to know who is responsible for Hostera<br>**When** the visitor reviews the company information<br>**Then** the visitor identifies Hostera, its statement “Hotel operations, connected.”, and Grafo Verde as the copyright holder. | EP001 |
+| US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera option for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue with the corresponding plan. | **Scenario: The visitor identifies the independent-hotel option**<br>**Given** a visitor operates one independent hotel with up to 10 rooms<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Independent hotel” option for one property with up to 10 rooms, focused on reservations, availability, and room operations in one workspace.<br><br>**Scenario: The visitor reviews the Starter plan conditions**<br>**Given** the visitor evaluates the Starter plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it costs S/39 per property per month and includes basic reservations and availability, inventory without automatic alerts, one simulated RFID reader, one administrator, and community and documentation support.<br><br>**Scenario: The visitor continues with the Starter plan**<br>**Given** the visitor considers that the independent-hotel option fits the operation<br>**When** the visitor decides to continue<br>**Then** the visitor is taken to the Starter plan information. | EP001 |
+| US004 | Find the small-chain path | As a small-chain hotel operations manager, I want an option for coordinating 2 to 5 locations, so that I can identify the plan and estimated cost intended for a multi-property operation. | **Scenario: The visitor identifies the small-chain option**<br>**Given** the visitor is responsible for a hotel chain with 2 to 5 locations<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Small hotel chain” option for coordinating rooms, stock, and reports across every property.<br><br>**Scenario: The visitor reviews the Professional plan conditions**<br>**Given** the visitor evaluates the Professional plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it is intended for hotel chains with 2 to 5 locations, costs S/8 per room per month, and includes unlimited rooms across locations, automatic critical-stock alerts, up to 25 RFID readers, reports by location, five administrators with roles, and priority chat and email support.<br><br>**Scenario: The visitor estimates the monthly cost**<br>**Given** the visitor knows the total number of rooms across the chain's hotels<br>**When** the visitor enters that number of rooms<br>**Then** the Landing Page calculates the estimated monthly cost at S/8 per room, so 25 rooms correspond to S/200.<br><br>**Scenario: The visitor enters an invalid number of rooms**<br>**Given** the visitor enters a value that is not a whole number of 1 or more<br>**When** the estimate is calculated<br>**Then** the Landing Page does not calculate the cost and indicates that a whole number of rooms of 1 or more is required.<br><br>**Scenario: The visitor continues with the Professional plan**<br>**Given** the visitor considers that the small-chain option fits the operation<br>**When** the visitor decides to continue<br>**Then** the visitor is taken to the Professional plan information. | EP001 |
+| US005 | Understand the product benefits and operating flow | As a visitor, I want to understand the benefits and the high-level operating flow described by Hostera, so that I can relate the proposition to hotel work. | **Scenario: The visitor learns the benefit of connected operations**<br>**Given** the visitor wants to know the benefits of Hostera<br>**When** the visitor reviews them<br>**Then** the visitor learns that Hostera coordinates occupancy, room readiness, inventory, and guest access across every property without switching between tools.<br><br>**Scenario: The visitor reviews specific benefits**<br>**Given** the visitor looks for examples of those benefits<br>**When** the visitor reviews them<br>**Then** the visitor finds RFID guest access designed for hospitality, centralized inventory by property with automatic flagging of critical shortages, and access controls that give staff access only to the properties they need.<br><br>**Scenario: The visitor learns how to start operating**<br>**Given** the visitor wants to know how a hotel starts using Hostera<br>**When** the visitor reviews the operating flow<br>**Then** the visitor learns the four steps: add hotels and define their rooms, set up the team and assign access by role, connect RFID readers and configure inventory workflows, and manage reservations, room status, access, and stock from one place. | EP001 |
+| US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and see clear next actions, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | **Scenario: The visitor compares the plans by operating scale**<br>**Given** the visitor wants to compare the available plans<br>**When** the visitor reviews the pricing information<br>**Then** the visitor finds Starter for one property with up to 10 rooms at S/39 per property per month, Professional for chains with 2 to 5 locations at S/8 per room per month, and Enterprise for large or multinational hotel groups, each with its included capabilities.<br><br>**Scenario: The visitor reviews the Enterprise conditions**<br>**Given** the visitor manages a large or multi-country hotel group<br>**When** the visitor evaluates the Enterprise plan<br>**Then** the visitor learns that it includes unlimited locations and RFID readers, an open API for PMS integrations, dedicated onboarding, unlimited users and roles, a guaranteed availability SLA, and dedicated 24/7 support, and that it is requested through the sales team.<br><br>**Scenario: Each plan leads to its next step**<br>**Given** the visitor has chosen a plan<br>**When** the visitor decides to continue<br>**Then** Starter and Professional lead to the information of each plan, and Enterprise leads to the sales contact.<br><br>**Scenario: The visitor contacts the sales team**<br>**Given** a visitor from a hotel group wants to talk to sales<br>**When** the visitor sends their name, the hotel or group they represent, and a message<br>**Then** the request is registered and the visitor is informed that a Hostera teammate will follow up.<br><br>**Scenario: The visitor leaves a sales request incomplete**<br>**Given** the visitor wants to contact the sales team<br>**When** the visitor tries to send the request without the name, the hotel or group, or the message<br>**Then** the request is not sent and the visitor is asked to complete the missing information.<br><br>**Scenario: The visitor decides after reviewing all the content**<br>**Given** the visitor has reviewed the information of Hostera<br>**When** the visitor is ready to choose<br>**Then** the visitor can continue with the Starter plan or contact the sales team. | EP001 |
+| US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information in the Landing Page, so that I can learn more before choosing a plan. | **Scenario: The visitor watches the product presentation**<br>**Given** the visitor wants to see Hostera in use<br>**When** the visitor requests the product presentation<br>**Then** the product video starts and shows how Hostera works in daily hotel operations.<br><br>**Scenario: The visitor watches the team presentation**<br>**Given** the visitor wants to know who is building Hostera<br>**When** the visitor requests the team presentation<br>**Then** the team video starts and presents the team and the reasons behind the product.<br><br>**Scenario: The visitor identifies the engineering team**<br>**Given** the visitor wants to know the people behind Hostera<br>**When** the visitor reviews the team information<br>**Then** the visitor identifies Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana as software engineers, with a short description of each person's contribution.<br><br>**Scenario: The visitor resolves questions before choosing a plan**<br>**Given** the visitor has questions about the service<br>**When** the visitor consults the frequently asked questions<br>**Then** the visitor finds answers about starting with one hotel, what changes with Professional, and the availability of Hostera in English and Latin American Spanish. | EP001 |
+| US008 | Use the English and Spanish Landing Page variants | As a visitor, I want to choose English or Spanish, so that I can read the Landing Page in the language I understand best. | **Scenario: The visitor chooses the language**<br>**Given** a visitor prefers to read in English or in Spanish<br>**When** the visitor chooses that language<br>**Then** the topics, value proposition, options by operating scale, plans, next steps, and support content are presented in the selected language.<br><br>**Scenario: The Spanish variant preserves the offer**<br>**Given** the visitor reads the Landing Page in Spanish<br>**When** the visitor reviews the options and plans<br>**Then** the visitor finds the options “Hotel independiente”, “Cadena hotelera pequeña”, and “Grupo hotelero”, and the plans “Starter”, “Profesional”, and “Empresarial”, with the same prices and conditions as the English variant.<br><br>**Scenario: The visitor changes language at any moment**<br>**Given** the visitor is reading either language variant<br>**When** the visitor chooses the other language<br>**Then** the content the visitor was consulting is presented in the newly selected language. | EP001 |
 | US009 | Register a hotel operation | As an independent hotel administrator or small-chain operations manager, I want to create an account with an initial property so that I can begin configuring my hotel operation in Hostera. | **Scenario: Register with valid information**<br>**Given** the administrator provides a name, a unique work email, a property name, and a valid password<br>**When** the administrator submits the registration<br>**Then** the system creates the account, associates the initial property, and identifies the administrator as its first authorized operator.<br><br>**Scenario: Reject an email that is already registered**<br>**Given** an account already exists for the provided work email<br>**When** the administrator submits the registration<br>**Then** the system rejects the request and indicates that the email is already associated with an account.<br><br>**Scenario: Reject incomplete or invalid registration data**<br>**Given** one or more required registration values are missing or invalid<br>**When** the administrator submits the registration<br>**Then** the system does not create the account and identifies the values that require correction. | EP002 |
 | US010 | Sign in to Hostera | As an authorized hotel operator, I want to sign in with my work account so that I can access the properties and operational information assigned to me. | **Scenario: Sign in with valid credentials**<br>**Given** the operator has an active account<br>**When** the operator provides valid credentials<br>**Then** the system starts an authenticated session and grants access to the assigned properties.<br><br>**Scenario: Reject invalid credentials**<br>**Given** the provided email or password does not match an active account<br>**When** the operator attempts to sign in<br>**Then** the system denies access without revealing which credential is incorrect.<br><br>**Scenario: Keep an authenticated session**<br>**Given** the operator chooses to remain signed in on a trusted device<br>**When** the operator returns before the persistent session expires or is revoked<br>**Then** the system restores the authorized session. | EP002 |
-| US011 | Monitor operations across properties | As a hotel administrator or operations manager, I want to monitor room revenue, occupancy, arrivals, and room conditions across properties and change the active property so that I can identify operational conditions that require attention. | **Scenario: Review the active property's performance**<br>**Given** the active property has room and booking records<br>**When** the operator requests the last 7 days, last 30 days, or next 30 days<br>**Then** the system provides room revenue and occupancy for each day, period totals, and variation against the preceding period of equal duration, counting confirmed, checked-in, and checked-out bookings as room revenue.<br><br>**Scenario: Compare properties tonight**<br>**Given** properties have room and booking records<br>**When** the operator requests tonight's property comparison<br>**Then** the system provides occupancy, available rooms, and rooms requiring attention because they are needs cleaning, blocked, or out of service for each property tonight.<br><br>**Scenario: Review today's arrivals**<br>**Given** pending, confirmed, or checked-in bookings have a check-in date of today<br>**When** the operator requests today's arrivals<br>**Then** the system provides the active property's qualifying bookings and indicates whether each guest has arrived, the booking awaits confirmation, an outstanding balance remains, or the booking is ready for check-in.<br><br>**Scenario: Review today's room statuses**<br>**Given** rooms exist for the active property<br>**When** the operator requests today's room conditions<br>**Then** the system provides the number of rooms that are available, booked, occupied, needs cleaning, blocked, or out of service today.<br><br>**Scenario: Change the active property**<br>**Given** more than one property exists<br>**When** the operator chooses another property<br>**Then** the system updates the operational information for that property without combining records from other properties.<br><br>**Scenario: Find a booking**<br>**Given** bookings exist for the active property<br>**When** the operator searches by guest name or booking code<br>**Then** the system returns matching bookings from the active property.<br><br>**Scenario: Report unavailable information**<br>**Given** one or more operational data sources do not respond<br>**When** the operator requests operational information<br>**Then** the system identifies the affected information, preserves the available information, and accepts a renewed request for the affected information. | EP002 |
-| US012 | Find and review bookings | As a front-desk operator or hotel administrator, I want to find bookings by guest name or booking code, stay period, and status so that I can review the correct booking before taking an operational action. | **Scenario: Review bookings for a property**<br>**Given** bookings exist for the active property<br>**When** the operator requests the booking collection<br>**Then** the system provides each booking's guest, code, stay period, assigned room, lifecycle status, and payment status of unpaid, partially paid, or paid.<br><br>**Scenario: Find bookings by operational criteria**<br>**Given** bookings have different guests, codes, stay periods, and statuses<br>**When** the operator searches by guest name or booking code and applies a current, upcoming, or past stay-period criterion and a lifecycle-status criterion<br>**Then** the system returns only bookings that satisfy all active criteria.<br><br>**Scenario: Find no matching bookings**<br>**Given** no booking satisfies the active criteria<br>**When** the operator performs the search<br>**Then** the system returns an empty result without changing existing bookings. | EP003 |
-| US013 | Create a booking | As a front-desk operator, I want to create a booking for a guest and an available room, including from a cancelled or no-show booking, so that the requested stay is recorded with its applicable rate. | **Scenario: Create a valid booking**<br>**Given** the room is available for every requested night, the guest count is within room-type capacity, and the active rate plan sells that room type<br>**When** the operator provides the guest's name, email, phone, preferred language, check-in and check-out dates, guest count, room type, room, and rate plan<br>**Then** the system creates a pending booking with an unpaid payment status, a code unique within the property, and a total equal to the sum of the rate plan's nightly prices for the room type across the stay.<br><br>**Scenario: Reject an unavailable room**<br>**Given** another booking holds the room or the room is blocked or out of service for at least one requested night<br>**When** the operator attempts to create the booking<br>**Then** the system rejects the request and preserves existing room assignments.<br><br>**Scenario: Reject an invalid stay period**<br>**Given** the check-out date does not occur after the check-in date<br>**When** the operator attempts to create the booking<br>**Then** the system rejects the request and identifies the invalid stay period.<br><br>**Scenario: Reject a guest count above capacity**<br>**Given** the guest count exceeds the room-type capacity<br>**When** the operator attempts to create the booking<br>**Then** the system rejects the request without creating a booking.<br><br>**Scenario: Reject an inapplicable rate plan**<br>**Given** the rate plan is inactive or does not sell the requested room type<br>**When** the operator attempts to create the booking<br>**Then** the system rejects the request without creating a booking.<br><br>**Scenario: Create a booking from a cancelled or no-show booking**<br>**Given** a cancelled or no-show booking exists and its copied stay satisfies booking-creation rules<br>**When** the operator requests a new booking based on that booking<br>**Then** the system copies the guest and stay information into a new pending booking with a new code and unpaid payment status, calculates its applicable total, and preserves the original booking. | EP003 |
-| US014 | Review and update a booking | As a front-desk operator, I want to review booking details and update pending or confirmed bookings so that guest and stay changes remain consistent with room availability and applicable rates. | **Scenario: Review complete booking information**<br>**Given** the booking exists in the active property<br>**When** the operator requests its details<br>**Then** the system provides the guest, stay, room, rate, request, payment, and lifecycle information associated with the booking.<br><br>**Scenario: Update information without changing the agreed total**<br>**Given** the booking is pending or confirmed and the proposed room and dates are available<br>**When** the operator updates guest information or the assigned room without changing dates, room type, or rate plan<br>**Then** the system saves the changes, updates affected availability, and preserves the agreed total.<br><br>**Scenario: Recalculate the total for a stay or pricing change**<br>**Given** the booking is pending or confirmed and the proposed stay, room type, and rate plan satisfy booking-creation rules<br>**When** the operator changes dates, room type, or rate plan<br>**Then** the system saves the changes, recalculates the total from the applicable nightly rates, and updates affected availability.<br><br>**Scenario: Reject a conflicting update**<br>**Given** the proposed update conflicts with another room assignment<br>**When** the operator attempts to save the change<br>**Then** the system rejects the update and preserves the previous booking information.<br><br>**Scenario: Reject an update outside editable statuses**<br>**Given** the booking is neither pending nor confirmed<br>**When** the operator attempts to update the booking<br>**Then** the system rejects the update and preserves its information. | EP003 |
-| US015 | Manage the booking lifecycle | As a front-desk operator, I want to confirm, cancel, restore, or mark a booking as a no-show so that its status and room assignment reflect the pre-arrival outcome. | **Scenario: Confirm a pending booking**<br>**Given** the booking is pending<br>**When** the operator confirms the booking<br>**Then** the system changes its status to confirmed and retains the assigned stay information.<br><br>**Scenario: Cancel a pending or confirmed booking**<br>**Given** the booking is pending or confirmed<br>**When** the operator records a cancellation reason and a note when the reason is other<br>**Then** the system changes the booking to cancelled, records the reason and note when provided, and releases its room assignment.<br><br>**Scenario: Reject an incomplete cancellation reason**<br>**Given** the cancellation reason is missing or the reason is other without a note<br>**When** the operator attempts to cancel the booking<br>**Then** the system rejects the cancellation and preserves the booking and its room assignment.<br><br>**Scenario: Mark a confirmed booking as a no-show**<br>**Given** the booking is confirmed and today is on or after its check-in date<br>**When** the operator records the guest as a no-show<br>**Then** the system changes its status to no-show and releases its remaining room assignment.<br><br>**Scenario: Restore a cancelled booking**<br>**Given** the booking is cancelled, its stay has not started, and its room remains available for every booked night<br>**When** the operator restores the booking<br>**Then** the system changes its status to pending and reinstates its room assignment.<br><br>**Scenario: Reject an invalid lifecycle transition**<br>**Given** the requested transition is not allowed from the current status, a no-show precedes the check-in date, or a restoration fails the stay or availability conditions<br>**When** the operator attempts the transition<br>**Then** the system rejects the request and preserves the current status and room assignments. | EP003 |
-| US016 | Record a booking payment | As a front-desk operator, I want to record a payment received for a pending, confirmed, or checked-in booking so that the amount paid and remaining balance are accurate. | **Scenario: Record a valid payment**<br>**Given** the booking is pending, confirmed, or checked-in and has an outstanding balance<br>**When** the operator records an amount greater than zero and no greater than the balance, a method of cash, card terminal, bank transfer, or other, a receipt date, and an optional reference<br>**Then** the system adds the payment record and recalculates the paid amount, balance, and payment status.<br><br>**Scenario: Complete the booking balance**<br>**Given** the booking accepts payments and the received amount equals the outstanding balance<br>**When** the operator records the payment<br>**Then** the system reduces the balance to zero and changes the payment status to paid.<br><br>**Scenario: Reject an invalid payment amount**<br>**Given** the amount is zero, negative, or greater than the outstanding balance<br>**When** the operator attempts to record the payment<br>**Then** the system rejects the request and preserves the previous balance.<br><br>**Scenario: Reject a payment outside supported statuses**<br>**Given** the booking is neither pending, confirmed, nor checked-in<br>**When** the operator attempts to record a payment<br>**Then** the system rejects the request and preserves existing payment records. | EP003 |
-| US017 | Complete guest check-in | As a front-desk operator, I want to verify the guest identity, record any arrival payments, and encode room access when completing check-in for a confirmed booking so that the guest can begin the stay with a verified identity and valid key cards. | **Scenario: Verify the arriving guest**<br>**Given** the booking is confirmed and today is one of its booked nights<br>**When** the operator records the guest's document type of DNI, passport, or foreign resident card and its number and confirms verification of the original document<br>**Then** the system records the document information and identity verification for the booking.<br><br>**Scenario: Record an arrival payment**<br>**Given** the confirmed booking has an outstanding balance and today is one of its booked nights<br>**When** the operator records a payment that satisfies booking-payment rules<br>**Then** the system records the payment and updates the balance without requiring full settlement for check-in.<br><br>**Scenario: Encode room access**<br>**Given** the booking is confirmed, today is one of its booked nights, and a compatible RFID encoder and at least one blank key card are available<br>**When** the operator encodes the guest key cards<br>**Then** the system associates at least one encoded RFID key card with the booking and room, valid until 11:00 on the check-out date.<br><br>**Scenario: Complete check-in with or without an outstanding balance**<br>**Given** the booking is confirmed, today is one of its booked nights, identity is verified, and at least one associated key card is encoded<br>**When** the operator completes check-in<br>**Then** the system changes the booking to checked-in and records the room as occupied for the remaining booked nights, retaining any balance for settlement before check-out.<br><br>**Scenario: Reject check-in when a required condition fails**<br>**Given** identity is not verified, no key card is encoded, the booking is not confirmed, or today is outside its booked nights<br>**When** the operator attempts to complete check-in<br>**Then** the system rejects check-in, preserves the booking status, and identifies the unmet condition. | EP003 |
-| US018 | Complete guest check-out | As a front-desk operator, I want to complete check-out for a checked-in booking with a settled balance and record the room condition so that the stay closes, key cards end, and unused nights become available. | **Scenario: Review departure conditions**<br>**Given** the booking is checked-in<br>**When** the operator requests departure information<br>**Then** the system provides the booking's stay, balance, assigned room, and key cards.<br><br>**Scenario: Complete check-out with a settled balance**<br>**Given** the booking is checked-in and its balance is zero<br>**When** the operator completes check-out with a room condition of no issues or needs attention and an optional note<br>**Then** the system changes the booking to checked-out, records the room condition and note when provided, ends its key cards, and releases remaining booked nights if the guest departs early.<br><br>**Scenario: Prevent check-out with an outstanding balance**<br>**Given** the checked-in booking has an outstanding balance<br>**When** the operator attempts to complete check-out<br>**Then** the system rejects check-out, preserves the active stay, and identifies the outstanding balance. | EP003 |
-| US019 | Review room availability for a selected date | As a front-desk operator or hotel administrator, I want to review daily room availability from a chosen date and find rooms by number, room type, or status so that I can plan assignments and operational work. | **Scenario: Review the default planning period**<br>**Given** rooms exist for the active property<br>**When** the operator requests room availability without requesting another date<br>**Then** the system provides the current date and the following six days with each room's daily status.<br><br>**Scenario: Review a specific future period**<br>**Given** the operator chooses a valid date<br>**When** availability is requested<br>**Then** the system provides the selected date and the following six days.<br><br>**Scenario: Filter by the selected day's room status**<br>**Given** rooms have different statuses on the selected date<br>**When** the operator applies a room-status criterion<br>**Then** the system returns rooms whose status matches on that selected date.<br><br>**Scenario: Find rooms by number and room type**<br>**Given** rooms with different numbers and room types exist for the active property<br>**When** the operator searches by room number or filters by room type<br>**Then** the system returns only rooms that satisfy the active criteria with their daily statuses for the requested period. | EP004 |
-| US020 | Create a room | As a hotel administrator, I want to create a room within a property so that it can participate in availability planning and booking assignment. | **Scenario: Create a valid room**<br>**Given** the room number is unique within the property and the room type is active<br>**When** the administrator provides the room number, an integer floor, and the room type<br>**Then** the system creates the room with the capacity and configuration associated with its room type.<br><br>**Scenario: Reject a duplicate room number**<br>**Given** another room in the property already uses the provided number<br>**When** the administrator attempts to create the room<br>**Then** the system rejects the request without changing the existing room.<br><br>**Scenario: Reject an inactive room type**<br>**Given** the requested room type is inactive<br>**When** the administrator attempts to create the room<br>**Then** the system rejects the request without creating a room.<br><br>**Scenario: Reject an invalid floor**<br>**Given** the provided floor is not an integer<br>**When** the administrator attempts to create the room<br>**Then** the system rejects the request and identifies the invalid floor. | EP004 |
-| US021 | Maintain room information and operational status | As a hotel administrator or authorized staff member, I want to review and update room information and operational status for a period so that room conditions remain accurate without overriding booking-controlled days. | **Scenario: Review room information and daily statuses**<br>**Given** the room exists in the active property<br>**When** the operator requests its details for a chosen month<br>**Then** the system provides its number, floor, room type, capacity, and status for each day of that month, including days controlled by bookings.<br><br>**Scenario: Update room information**<br>**Given** the proposed room number remains unique, the floor is an integer, and the room type is active<br>**When** the operator changes the room number, floor, or room type<br>**Then** the system saves valid room information without changing historical bookings.<br><br>**Scenario: Change a controllable room status**<br>**Given** no booking or stay controls the room during the requested period<br>**When** the operator requests blocked or out of service with a reason, needs cleaning, or a return to available for that period<br>**Then** the system records the requested status for those days and retains the required reason for blocked or out of service.<br><br>**Scenario: Reject a missing operational reason**<br>**Given** the requested status is blocked or out of service and no reason is provided<br>**When** the operator attempts to change the status<br>**Then** the system rejects the change and preserves the prior daily statuses.<br><br>**Scenario: Protect booking-controlled statuses**<br>**Given** a booking or stay controls at least one day in the requested period<br>**When** the operator attempts to replace the status directly<br>**Then** the system rejects the change and preserves the booking-controlled days. | EP004 |
-| US022 | Manage room types | As a hotel administrator, I want to manage room types with unique names, valid capacities, bed configurations, and positive base rates so that rooms share consistent accommodation information and room types in use remain protected. | **Scenario: Create a room type**<br>**Given** the room-type name is unique within the property<br>**When** the administrator provides its name, capacity, bed configuration, base nightly rate, and status<br>**Then** the system creates the room type for future room assignments and rate configuration.<br><br>**Scenario: Update a room type**<br>**Given** the room type exists<br>**When** the administrator changes supported configuration values<br>**Then** the system applies the new values to future operations without rewriting completed-stay records.<br><br>**Scenario: Protect a room type that remains in use**<br>**Given** one or more rooms use the room type<br>**When** the administrator attempts to remove it<br>**Then** the system prevents destructive removal and allows the room type to be made inactive.<br><br>**Scenario: Reject invalid room-type information**<br>**Given** the proposed name duplicates another room type in the property, capacity is not an integer from 1 to 12, or the base nightly rate is not greater than zero<br>**When** the administrator attempts to create or update the room type<br>**Then** the system rejects the request and preserves existing room-type information. | EP004 |
-| US023 | Manage rate plans and daily rates | As a hotel administrator or operations manager, I want to define rate plans and daily room-type prices so that booking totals reflect the applicable commercial conditions. | **Scenario: Create a rate plan**<br>**Given** supported room types and a property currency exist<br>**When** the operator provides a unique plan name, included services, cancellation conditions, refundability, and applicable room types<br>**Then** the system creates the rate plan with its commercial conditions.<br><br>**Scenario: Set daily rates**<br>**Given** a rate plan and room type are active<br>**When** the operator sets valid nightly prices for a date range<br>**Then** the system records the prices for booking calculations in that period.<br><br>**Scenario: Preserve a booking's agreed rate**<br>**Given** a booking already records an agreed price<br>**When** a future room-type price or rate-plan condition changes<br>**Then** the system preserves the existing booking total unless a valid booking update changes dates, room type, or rate plan.<br><br>**Scenario: Reject a refundable plan without a cancellation policy**<br>**Given** the rate plan is refundable and no cancellation policy is provided<br>**When** the operator attempts to create or update the rate plan<br>**Then** the system rejects the request without saving an incomplete refundable plan.<br><br>**Scenario: Make a rate plan inactive**<br>**Given** a rate plan exists<br>**When** the operator stops offering that plan<br>**Then** the system makes it inactive instead of deleting it and preserves existing booking totals.<br><br>**Scenario: Return nights to the room-type base rate**<br>**Given** daily rates exist for a room type and rate plan within a date range<br>**When** the operator requests removal of those daily-rate overrides<br>**Then** the system uses the room-type base nightly rate for those nights in future booking calculations and preserves existing agreed booking totals. | EP004 |
+| US011 | Monitor operations across assigned properties | As a hotel administrator or operations manager, I want to monitor current operational information and change the active property so that I can identify conditions that require attention in the appropriate hotel. | **Scenario: Review the current property overview**<br>**Given** the operator has access to an active property<br>**When** the operator requests its operational overview<br>**Then** the system provides current reservation, occupancy, room, inventory, access, and upcoming-arrival information for that property.<br><br>**Scenario: Change the active property**<br>**Given** the operator is authorized for more than one property<br>**When** the operator chooses another assigned property<br>**Then** the system updates the operational information without combining records from unauthorized or unselected properties.<br><br>**Scenario: Find an operational record**<br>**Given** operational records exist for the active property<br>**When** the operator searches using a supported guest, reservation, room, inventory, or credential reference<br>**Then** the system returns matching records within the operator's authorization scope.<br><br>**Scenario: Report unavailable operational data**<br>**Given** one or more operational data sources cannot provide current information<br>**When** the operator requests the overview<br>**Then** the system identifies the affected information and preserves the available operational data. | EP002 |
+| US012 | Find and review reservations | As a front-desk operator or hotel administrator, I want to find reservations by guest, stay period, room, and status so that I can review the correct booking before taking an operational action. | **Scenario: Review reservations for a property**<br>**Given** reservations exist for the active property<br>**When** the operator requests the reservation collection<br>**Then** the system provides each reservation's guest, stay period, assigned room, lifecycle status, and payment status.<br><br>**Scenario: Filter reservations**<br>**Given** reservations have different dates, rooms, and statuses<br>**When** the operator applies supported search or filter criteria<br>**Then** the system returns only reservations that satisfy all active criteria.<br><br>**Scenario: Find no matching reservations**<br>**Given** no reservation satisfies the active criteria<br>**When** the operator performs the search<br>**Then** the system returns an empty result without changing existing reservations. | EP003 |
+| US013 | Create a reservation | As a front-desk operator, I want to create a reservation for a guest and an available room so that the requested stay is recorded with its applicable rate. | **Scenario: Create a valid reservation**<br>**Given** the guest information, stay period, property, guest count, room type, room, and rate plan are valid<br>**When** the operator creates the reservation<br>**Then** the system records the reservation with a unique code, calculated total, and initial lifecycle and payment statuses.<br><br>**Scenario: Reject an unavailable room**<br>**Given** the selected room is not available for part or all of the requested stay<br>**When** the operator attempts to create the reservation<br>**Then** the system rejects the request and preserves the existing room assignments.<br><br>**Scenario: Reject an invalid stay period**<br>**Given** the check-out date does not occur after the check-in date<br>**When** the operator attempts to create the reservation<br>**Then** the system rejects the request and identifies the invalid stay period. | EP003 |
+| US014 | Review and update a reservation | As a front-desk operator, I want to review and update reservation information so that changes requested before arrival remain consistent with room availability and rates. | **Scenario: Review complete reservation information**<br>**Given** the reservation exists in the active property<br>**When** the operator requests its details<br>**Then** the system provides the guest, stay, room, rate, request, payment, and lifecycle information associated with the reservation.<br><br>**Scenario: Update valid reservation information**<br>**Given** the reservation can still be modified and the proposed room and dates are available<br>**When** the operator changes supported guest or stay information<br>**Then** the system saves the changes and recalculates affected totals and availability.<br><br>**Scenario: Reject a conflicting update**<br>**Given** the proposed update conflicts with another room assignment or a terminal reservation status<br>**When** the operator attempts to save the change<br>**Then** the system rejects the update and preserves the previous reservation information. | EP003 |
+| US015 | Manage the reservation lifecycle | As a front-desk operator, I want to confirm, cancel, or mark a reservation as a no-show so that its status reflects what happened before the guest's stay begins. | **Scenario: Confirm a pending reservation**<br>**Given** a reservation is pending and its assigned room remains valid<br>**When** the operator confirms the reservation<br>**Then** the system changes its status to confirmed and retains the assigned stay information.<br><br>**Scenario: Cancel a pending or confirmed reservation**<br>**Given** a reservation has not been checked in or completed<br>**When** the operator records its cancellation with a reason<br>**Then** the system changes its status to cancelled and releases the future room assignment.<br><br>**Scenario: Mark a confirmed reservation as a no-show**<br>**Given** the confirmed reservation has reached its arrival conditions without guest check-in<br>**When** the operator records the guest as a no-show<br>**Then** the system changes its status to no-show and releases the remaining room assignment.<br><br>**Scenario: Reject an invalid lifecycle transition**<br>**Given** the requested transition is not allowed from the reservation's current status<br>**When** the operator attempts the transition<br>**Then** the system rejects the request and preserves the current status. | EP003 |
+| US016 | Record a reservation payment | As a front-desk operator, I want to record a payment received for a reservation so that the amount paid and remaining balance are accurate. | **Scenario: Record a valid payment**<br>**Given** the reservation has an outstanding balance<br>**When** the operator records a valid amount, payment method, date, and reference<br>**Then** the system adds the payment record and recalculates the paid amount and balance.<br><br>**Scenario: Complete the reservation balance**<br>**Given** the recorded payment equals the outstanding balance<br>**When** the payment is accepted<br>**Then** the system marks the reservation payment as paid.<br><br>**Scenario: Reject an invalid payment amount**<br>**Given** the amount is zero, negative, or exceeds the amount that can be recorded<br>**When** the operator submits the payment record<br>**Then** the system rejects the request and preserves the previous balance. | EP003 |
+| US017 | Complete guest check-in | As a front-desk operator, I want to complete guest check-in so that identity, payment, room assignment, and room access are verified before the stay begins. | **Scenario: Verify the arriving guest**<br>**Given** the guest arrives for a confirmed reservation<br>**When** the operator verifies the original identity document against the reservation holder<br>**Then** the system records that identity was verified at the property without requiring a pre-check-in document upload.<br><br>**Scenario: Resolve an outstanding balance**<br>**Given** the reservation has an outstanding balance at arrival<br>**When** the operator records an accepted payment or an authorized pay-later condition<br>**Then** the system records the resulting payment condition for check-in.<br><br>**Scenario: Encode room access**<br>**Given** the assigned room is ready and an RFID encoder and blank key card are available<br>**When** the operator encodes the guest credential for the authorized stay period<br>**Then** the system associates the credential with the reservation, room, property, and access validity period.<br><br>**Scenario: Complete check-in**<br>**Given** the required guest, payment, room, and access conditions are satisfied<br>**When** the operator completes check-in<br>**Then** the system changes the reservation to checked in and the assigned room to occupied.<br><br>**Scenario: Reject check-in when a required condition fails**<br>**Given** identity, room readiness, payment conditions, or credential encoding remains unresolved<br>**When** the operator attempts to complete check-in<br>**Then** the system does not start the stay and identifies the unresolved condition. | EP003 |
+| US018 | Complete guest check-out | As a front-desk operator, I want to complete guest check-out so that the stay closes, the balance is resolved, and the room and credential return to their next operational states. | **Scenario: Review departure conditions**<br>**Given** the reservation is checked in<br>**When** the operator starts check-out<br>**Then** the system provides the stay, payment balance, assigned room, and active credential information required to close the stay.<br><br>**Scenario: Complete check-out with a resolved balance**<br>**Given** the reservation balance is resolved<br>**When** the operator completes check-out<br>**Then** the system changes the reservation to checked out, ends its active credentials, and changes the room to needs cleaning.<br><br>**Scenario: Prevent check-out with an unresolved condition**<br>**Given** a required balance or stay condition remains unresolved<br>**When** the operator attempts to complete check-out<br>**Then** the system preserves the active stay and identifies the unresolved condition. | EP003 |
+| US019 | Review room availability for a selected date | As a front-desk operator or hotel administrator, I want to review room availability from a selected date so that I can plan assignments and operational work. | **Scenario: Review the default planning period**<br>**Given** rooms exist for the active property<br>**When** the operator requests room availability without selecting another date<br>**Then** the system provides the current date and the following six days with each room's daily status.<br><br>**Scenario: Review a specific future period**<br>**Given** the operator chooses a valid date<br>**When** availability is requested<br>**Then** the system provides the selected date and the following six days.<br><br>**Scenario: Filter by the selected day's room status**<br>**Given** rooms have different statuses on the selected date<br>**When** the operator applies a room-status criterion<br>**Then** the system returns rooms whose status matches on that selected date. | EP004 |
+| US020 | Create a room | As a hotel administrator, I want to create a room within a property so that it can participate in availability planning and reservation assignment. | **Scenario: Create a valid room**<br>**Given** the property and room type exist and the room number is unique within the property<br>**When** the administrator provides the room number, floor, room type, and initial operational status<br>**Then** the system creates the room with the capacity and base configuration associated with its room type.<br><br>**Scenario: Reject a duplicate room number**<br>**Given** another room in the property already uses the provided number<br>**When** the administrator attempts to create the room<br>**Then** the system rejects the request without changing the existing room. | EP004 |
+| US021 | Maintain room information and operational status | As a hotel administrator or authorized staff member, I want to review and update a room's information and controllable status so that its operational condition remains accurate. | **Scenario: Review room information and status history**<br>**Given** the room exists in the active property<br>**When** the operator requests its details<br>**Then** the system provides its number, floor, room type, capacity, current status, availability, and relevant status history.<br><br>**Scenario: Update room information**<br>**Given** the proposed room number remains unique and the room type exists<br>**When** an authorized operator changes the room number, floor, or room type<br>**Then** the system saves the valid room information without changing historical reservations.<br><br>**Scenario: Change a controllable room status**<br>**Given** the room is not controlled by an active reservation or stay<br>**When** an authorized operator changes its status to available, blocked, needs cleaning, or out of service<br>**Then** the system records the new status, effective period, operator, and reason when required.<br><br>**Scenario: Protect reservation-controlled statuses**<br>**Given** the room is reserved or occupied through an active reservation workflow<br>**When** an operator attempts to replace that status directly<br>**Then** the system rejects the change and requires the corresponding reservation or stay action. | EP004 |
+| US022 | Manage room types | As a hotel administrator, I want to manage room types so that rooms share consistent capacity, bed configuration, and base-rate information. | **Scenario: Create a room type**<br>**Given** the room-type name is unique within the property<br>**When** the administrator provides its name, capacity, bed configuration, base nightly rate, and status<br>**Then** the system creates the room type for future room assignments and rate configuration.<br><br>**Scenario: Update a room type**<br>**Given** the room type exists<br>**When** the administrator changes supported configuration values<br>**Then** the system applies the new values to future operations without rewriting completed-stay records.<br><br>**Scenario: Protect a room type that remains in use**<br>**Given** one or more rooms or future reservations use the room type<br>**When** the administrator attempts to remove it<br>**Then** the system prevents destructive removal and allows the room type to be made inactive. | EP004 |
+| US023 | Manage rate plans and daily rates | As a hotel administrator or operations manager, I want to define rate plans and daily room-type prices so that reservation totals reflect the applicable commercial conditions. | **Scenario: Create a rate plan**<br>**Given** supported room types and a property currency exist<br>**When** the operator provides a unique plan name, included services, cancellation conditions, refundability, and applicable room types<br>**Then** the system creates the rate plan with its commercial conditions.<br><br>**Scenario: Set daily rates**<br>**Given** a rate plan and room type are active<br>**When** the operator sets valid nightly prices for a date range<br>**Then** the system records the prices for reservation calculations in that period.<br><br>**Scenario: Preserve a reservation's agreed rate**<br>**Given** a reservation already records an agreed price<br>**When** a future room-type price or rate-plan condition changes<br>**Then** the system preserves the existing reservation total unless an authorized reservation update recalculates it. | EP004 |
 | US024 | Monitor property inventory | As a hotel administrator or inventory operator, I want to monitor item quantities and stock conditions by storage location so that I can identify supplies that require attention. | **Scenario: Review inventory status**<br>**Given** inventory items exist for the active property<br>**When** the operator requests the inventory collection<br>**Then** the system provides each item's category, storage location, on-hand quantity, and stock condition.<br><br>**Scenario: Find items by operational criteria**<br>**Given** items belong to different categories, storage locations, and stock conditions<br>**When** the operator searches or filters the inventory<br>**Then** the system returns only items that satisfy the active criteria.<br><br>**Scenario: Identify stock requiring attention**<br>**Given** an item's quantity reaches or falls below its configured threshold<br>**When** inventory status is calculated<br>**Then** the system identifies the item as low stock or out of stock as applicable. | EP005 |
-| US025 | Manage inventory item records | As an inventory operator, I want to create and update inventory items while preserving their units after stock movements so that tracked supplies and their movement history remain consistent. | **Scenario: Create an inventory item**<br>**Given** the item code is unique within the property and the storage location exists<br>**When** the operator provides the item name, code, category, unit, storage location, and stock threshold<br>**Then** the system creates the inventory item with its initial tracked quantity.<br><br>**Scenario: Update inventory item information**<br>**Given** the inventory item exists<br>**When** the operator changes supported descriptive or control information<br>**Then** the system saves the changes without rewriting prior stock movements.<br><br>**Scenario: Review item history**<br>**Given** stock adjustments exist for the item<br>**When** the operator requests its details<br>**Then** the system provides current stock information and an ordered history of recorded movements.<br><br>**Scenario: Protect the unit after stock movements**<br>**Given** the item already has recorded stock movements<br>**When** the operator attempts to change its unit<br>**Then** the system rejects the unit change and preserves the movement history. | EP005 |
-| US026 | Adjust inventory stock | As an inventory operator, I want to record stock entering, leaving, or transferring between storage locations so that on-hand quantities and their audit history remain accurate. | **Scenario: Record stock entering a location**<br>**Given** the inventory item and storage location exist<br>**When** the operator records a positive stock-in quantity with a supported reason<br>**Then** the system increases the on-hand quantity and records the operator, date, location, reason, and optional note.<br><br>**Scenario: Record stock leaving a location**<br>**Given** the requested quantity does not exceed available stock<br>**When** the operator records a stock-out quantity with a supported reason<br>**Then** the system decreases the on-hand quantity and records the corresponding audit entry.<br><br>**Scenario: Prevent negative stock**<br>**Given** the requested stock-out quantity exceeds available stock<br>**When** the operator submits the adjustment<br>**Then** the system rejects the request and preserves the current quantity.<br><br>**Scenario: Transfer stock between storage locations**<br>**Given** the source and destination locations exist, are different, and the positive transfer quantity does not exceed available source stock<br>**When** the operator requests a stock transfer<br>**Then** the system decreases source stock, increases destination stock by the same quantity, and records linked stock-out and stock-in audit entries.<br><br>**Scenario: Reject an invalid stock transfer**<br>**Given** the destination equals the source or the transfer quantity is not positive or exceeds available source stock<br>**When** the operator attempts the transfer<br>**Then** the system rejects the request and preserves both quantities.<br><br>**Scenario: Require a note for the other reason**<br>**Given** the adjustment or transfer reason is other and no note is provided<br>**When** the operator attempts to record the movement<br>**Then** the system rejects the request and preserves stock quantities. | EP005 |
-| US027 | Manage storage locations | As a hotel administrator or inventory operator, I want to manage storage locations while preserving existing codes and locations with assigned items so that stock remains associated with the correct physical area and responsible team. | **Scenario: Create a storage location**<br>**Given** the location name or code is unique within the property<br>**When** the operator provides its name, type, floor or area, responsible team, and description<br>**Then** the system creates the storage location for item assignment and stock adjustments.<br><br>**Scenario: Update a storage location**<br>**Given** the storage location exists<br>**When** the operator changes supported location information<br>**Then** the system saves the changes while preserving prior stock-adjustment history.<br><br>**Scenario: Protect a location with assigned items**<br>**Given** items remain assigned to the storage location<br>**When** the operator attempts to remove it<br>**Then** the system prevents removal while items remain assigned.<br><br>**Scenario: Preserve an existing location code**<br>**Given** the storage location already exists<br>**When** the operator attempts to change its code<br>**Then** the system rejects the code change and preserves the existing code. | EP005 |
-| US028 | Review and manage RFID credentials | As a hotel administrator or authorized front-desk operator, I want to find RFID credentials by card, person, room, status, or holder type and review or revoke them with a recorded reason so that access remains valid only for the intended person and period. | **Scenario: Find a credential**<br>**Given** credentials exist for guests and staff in the active property<br>**When** the operator searches by card, person, or room and filters by status or holder type<br>**Then** the system returns matching credentials and their assignment, scope, validity, and current status.<br><br>**Scenario: Review credential details**<br>**Given** a credential exists<br>**When** the operator requests its details<br>**Then** the system provides its assignee, type, room or access scope, validity period, status, and recent access events.<br><br>**Scenario: Revoke a credential**<br>**Given** an active or scheduled credential exists<br>**When** the operator revokes it with a reason of lost card, damaged card, security risk, staff left, or other and a note when the reason is other<br>**Then** the system prevents subsequent access with that credential and records the revocation.<br><br>**Scenario: End guest access at check-out**<br>**Given** a guest credential is associated with a stay<br>**When** the stay is checked out or reaches the end of its validity period<br>**Then** the system ends the credential's room access.<br><br>**Scenario: Require a note for the other revocation reason**<br>**Given** the revocation reason is other and no note is provided<br>**When** the operator attempts to revoke the credential<br>**Then** the system rejects the request and preserves its current status. | EP006 |
-| US029 | Encode or replace an RFID key card | As an authorized front-desk operator, I want to encode RFID key cards with valid access periods or replace them with the same end of validity, limiting each staff member to one usable credential, so that guests and staff receive access appropriate to their role or stay. | **Scenario: Encode a guest key card**<br>**Given** a booking, assigned room, access period, compatible encoder, and blank card are available<br>**When** the operator encodes the guest credential<br>**Then** the system associates the card with the guest's room and stay validity period.<br><br>**Scenario: Encode a staff credential**<br>**Given** the staff member has no usable credential and the property access scope, valid period, compatible encoder, and blank card are available<br>**When** the operator encodes the staff credential<br>**Then** the system associates the card with the authorized areas and validity period.<br><br>**Scenario: Replace a credential**<br>**Given** a credential eligible for replacement, a compatible encoder, and a blank card are available<br>**When** the operator encodes a replacement card<br>**Then** the system revokes the previous card with reason replaced and issues a new credential with the same end of validity.<br><br>**Scenario: Report an encoding failure**<br>**Given** the encoder or card cannot complete the encoding operation<br>**When** the operator attempts to encode the credential<br>**Then** the system reports the failure and does not mark the credential as active.<br><br>**Scenario: Prevent multiple usable staff credentials**<br>**Given** the staff member already has a usable credential<br>**When** the operator attempts to issue an additional staff credential<br>**Then** the system rejects the request and preserves the existing credential.<br><br>**Scenario: Reject an invalid temporary validity period**<br>**Given** the proposed temporary credential end is missing or does not occur after its start<br>**When** the operator attempts to issue the temporary credential<br>**Then** the system rejects the request without issuing a credential. | EP006 |
-| US030 | Review RFID access events | As a hotel administrator or security-authorized operator, I want to find granted and denied RFID access events by date, result, access point, person, or card so that I can investigate activity at rooms and access points. | **Scenario: Review recent access events**<br>**Given** access events exist for the active property<br>**When** the operator requests the event collection<br>**Then** the system provides each event's timestamp, result, access point, credential, and associated person when available.<br><br>**Scenario: Filter access events**<br>**Given** events differ by date, result, person, credential, and access point<br>**When** the operator filters by date, result, or access point and searches by person or card<br>**Then** the system returns only events that satisfy all active criteria.<br><br>**Scenario: Review a denied event**<br>**Given** an access attempt was denied<br>**When** the operator requests the event details<br>**Then** the system provides the recorded denial reason and credential condition without changing the event. | EP006 |
+| US025 | Manage inventory item records | As an inventory operator, I want to create and update inventory items so that each tracked supply has consistent identification, classification, storage, and threshold information. | **Scenario: Create an inventory item**<br>**Given** the item code is unique within the property and the selected storage location exists<br>**When** the operator provides the item name, code, category, unit, storage location, and stock threshold<br>**Then** the system creates the inventory item with its initial tracked quantity.<br><br>**Scenario: Update inventory item information**<br>**Given** the inventory item exists<br>**When** the operator changes supported descriptive or control information<br>**Then** the system saves the changes without rewriting prior stock movements.<br><br>**Scenario: Review item history**<br>**Given** stock adjustments exist for the item<br>**When** the operator requests its details<br>**Then** the system provides current stock information and an ordered history of recorded movements. | EP005 |
+| US026 | Adjust inventory stock | As an inventory operator, I want to record stock entering or leaving a storage location so that on-hand quantities and their audit history remain accurate. | **Scenario: Record stock entering a location**<br>**Given** the inventory item and storage location exist<br>**When** the operator records a positive stock-in quantity with a supported reason<br>**Then** the system increases the on-hand quantity and records the operator, date, location, reason, and optional note.<br><br>**Scenario: Record stock leaving a location**<br>**Given** the requested quantity does not exceed available stock<br>**When** the operator records a stock-out quantity with a supported reason<br>**Then** the system decreases the on-hand quantity and records the corresponding audit entry.<br><br>**Scenario: Prevent negative stock**<br>**Given** the requested stock-out quantity exceeds available stock<br>**When** the operator submits the adjustment<br>**Then** the system rejects the request and preserves the current quantity. | EP005 |
+| US027 | Manage storage locations | As a hotel administrator or inventory operator, I want to manage storage locations and their assigned items so that stock remains associated with the correct physical area and responsible team. | **Scenario: Create a storage location**<br>**Given** the location name or code is unique within the property<br>**When** the operator provides its name, type, floor or area, responsible team, and description<br>**Then** the system creates the storage location for item assignment and stock adjustments.<br><br>**Scenario: Update a storage location**<br>**Given** the storage location exists<br>**When** the operator changes supported location information<br>**Then** the system saves the changes while preserving prior stock-adjustment history.<br><br>**Scenario: Protect a location with assigned stock**<br>**Given** items or quantities remain assigned to the storage location<br>**When** the operator attempts to remove it<br>**Then** the system prevents removal until its stock and item assignments are resolved. | EP005 |
+| US028 | Review and manage RFID credentials | As a hotel administrator or authorized front-desk operator, I want to review and manage RFID credentials so that room and operational access remains valid only for the intended person and period. | **Scenario: Find a credential**<br>**Given** credentials exist for guests and staff in the active property<br>**When** the operator searches or filters by credential, person, room, or status<br>**Then** the system returns matching credentials and their assignment, scope, validity, and current status.<br><br>**Scenario: Review credential details**<br>**Given** a credential exists<br>**When** the operator requests its details<br>**Then** the system provides its assignee, type, room or access scope, validity period, status, and recent access events.<br><br>**Scenario: Revoke a lost or damaged credential**<br>**Given** an active credential is reported lost or damaged<br>**When** an authorized operator revokes it with a reason<br>**Then** the system prevents subsequent access with that credential and records the revocation.<br><br>**Scenario: End guest access at check-out**<br>**Given** a guest credential is associated with a stay<br>**When** the stay is checked out or reaches its authorized end condition<br>**Then** the system ends the credential's room access. | EP006 |
+| US029 | Encode or replace an RFID key card | As an authorized front-desk operator, I want to encode or replace an RFID key card so that a guest or staff member receives the access authorized for their role or stay. | **Scenario: Encode a guest key card**<br>**Given** a reservation, assigned room, access period, compatible encoder, and blank card are available<br>**When** the operator encodes the guest credential<br>**Then** the system associates the card with the guest's room and authorized stay period.<br><br>**Scenario: Encode a staff credential**<br>**Given** the staff member, property access scope, validity, compatible encoder, and blank card are available<br>**When** the operator encodes the staff credential<br>**Then** the system associates the card with the authorized areas and validity period.<br><br>**Scenario: Replace a credential**<br>**Given** the previous credential is revoked or otherwise invalidated<br>**When** the operator encodes a replacement card<br>**Then** the system creates a new credential reference without restoring the previous card.<br><br>**Scenario: Report an encoding failure**<br>**Given** the encoder or card cannot complete the encoding operation<br>**When** the operator attempts to encode the credential<br>**Then** the system reports the failure and does not mark the credential as active. | EP006 |
+| US030 | Review RFID access events | As a hotel administrator or security-authorized operator, I want to review granted and denied RFID access events so that I can investigate activity at rooms and access points. | **Scenario: Review recent access events**<br>**Given** access events exist for the active property<br>**When** the operator requests the event collection<br>**Then** the system provides each event's timestamp, result, access point, credential, and associated person when available.<br><br>**Scenario: Filter access events**<br>**Given** events differ by date, result, person, credential, and access point<br>**When** the operator applies supported criteria<br>**Then** the system returns only events within the operator's authorization scope that satisfy all active criteria.<br><br>**Scenario: Review a denied event**<br>**Given** an access attempt was denied<br>**When** the operator requests the event details<br>**Then** the system provides the recorded denial reason and credential condition without changing the event. | EP006 |
 | US031 | Find and review an operational report | As a hotel administrator or operations manager, I want to find and review operational reports by property and period so that I can evaluate hotel performance and activity. | **Scenario: Find a report by operational area**<br>**Given** the operator is authorized for the active property<br>**When** the operator searches or filters the report catalog<br>**Then** the system provides available reports for arrivals and departures, reservations, occupancy and availability, revenue and payments, inventory, and access activity.<br><br>**Scenario: Review a report for a selected period**<br>**Given** a report, property, and valid period are selected<br>**When** the operator requests the report<br>**Then** the system calculates and provides the report measures and supporting records for that scope.<br><br>**Scenario: Compare occupancy with a previous period**<br>**Given** occupancy and availability information exists for the selected and previous comparable periods<br>**When** the operator requests the occupancy report<br>**Then** the system provides occupancy rate, occupied room nights, average daily rate, revenue per available room, room-status distribution, and period comparison.<br><br>**Scenario: Report an empty period**<br>**Given** no qualifying operational records exist for the selected scope<br>**When** the operator requests the report<br>**Then** the system returns an empty report state without using records from another property or period. | EP007 |
 | US032 | Export an operational report | As a hotel administrator or operations manager, I want to export the currently scoped report so that I can share or archive the operational results. | **Scenario: Export a report with data**<br>**Given** a report has been calculated for an authorized property and period<br>**When** the operator requests a supported export format<br>**Then** the system produces a file that identifies the report type, property, period, generation time, measures, and supporting data.<br><br>**Scenario: Preserve the selected scope**<br>**Given** filters define the current report scope<br>**When** the operator exports the report<br>**Then** the generated file contains the same authorized scope and values as the reviewed report.<br><br>**Scenario: Reject an unauthorized export**<br>**Given** the operator is not authorized for the requested property or report<br>**When** the operator requests the export<br>**Then** the system denies the operation without exposing protected report data. | EP007 |
-| US033 | Navigate between operational areas | As an authorized hotel operator, I want to work across the operational overview, bookings, rooms, inventory, and access control so that I can perform hotel-management tasks without losing the active property context. | **Scenario: Work in an operational area**<br>**Given** an active property exists<br>**When** the operator requests the operational overview, bookings, rooms, inventory, or access control<br>**Then** the system provides the information and operations for the requested area within the active property.<br><br>**Scenario: Preserve the active property context**<br>**Given** the operator has chosen an active property<br>**When** the operator begins work in another operational area<br>**Then** the system preserves the active property and scopes the requested information to it.<br><br>**Scenario: Continue working from a mobile device**<br>**Given** the operator works with Hostera from a mobile phone or tablet<br>**When** the operator begins work in another operational area<br>**Then** the system provides the requested information and operations while preserving the active property context. | EP002 |
+| US033 | Navigate between operational areas | As an authorized hotel operator, I want to navigate between the operational areas assigned to me so that I can perform different hotel-management tasks without losing the active property context. | **Scenario: Access an authorized operational area**<br>**Given** the operator is authenticated and has access to one or more operational areas<br>**When** the operator chooses to work on the operational overview, reservations, rooms, inventory, access control, or reports<br>**Then** the system provides the chosen area within the operator's authorization scope.<br><br>**Scenario: Preserve the active property context**<br>**Given** the operator has selected an active property<br>**When** the operator moves to another operational area<br>**Then** the system preserves the active property and scopes the destination information to it.<br><br>**Scenario: Exclude unauthorized operational areas**<br>**Given** the operator does not have permission to access an operational area<br>**When** the system determines the operational areas available to the operator<br>**Then** the unauthorized area is not available to the operator.<br><br>**Scenario: Continue working from a mobile device**<br>**Given** the operator works with Hostera from a mobile phone or a tablet<br>**When** the operator moves to another authorized operational area<br>**Then** the system provides the chosen area while preserving the active property context. | EP002 |
 | TS001 | Register an account through the API | As a developer, I want to register an administrator and initial property through the API so that client applications can initialize an authorized hotel operation. | **Scenario: Create a valid registration**<br>**Given** a valid and unique registration payload<br>**When** the developer sends `POST /api/v1/auth/register`<br>**Then** the API returns `201 Created` with account, initial property, and authorization identifiers.<br><br>**Scenario: Reject a duplicate email**<br>**Given** the submitted work email already belongs to an account<br>**When** the developer sends `POST /api/v1/auth/register`<br>**Then** the API returns `409 Conflict` with a stable error code and does not create duplicate resources.<br><br>**Scenario: Reject invalid registration data**<br>**Given** the registration payload is incomplete or invalid<br>**When** the developer sends `POST /api/v1/auth/register`<br>**Then** the API returns `400 Bad Request` with validation details. | EP002 |
 | TS002 | Authenticate an operator through the API | As a developer, I want to authenticate an operator and refresh an authorized session through the API so that clients can access protected hotel resources securely. | **Scenario: Authenticate valid credentials**<br>**Given** an active operator account and valid credentials<br>**When** the developer sends `POST /api/v1/auth/sessions`<br>**Then** the API returns `200 OK` with an access token, refresh information, expiration, and authorized account context.<br><br>**Scenario: Reject invalid credentials**<br>**Given** the submitted credentials do not match an active account<br>**When** the developer sends `POST /api/v1/auth/sessions`<br>**Then** the API returns `401 Unauthorized` without identifying which credential failed.<br><br>**Scenario: Refresh an active session**<br>**Given** a valid refresh credential<br>**When** the developer sends `POST /api/v1/auth/sessions/refresh`<br>**Then** the API returns `200 OK` with renewed session credentials and invalidates the replaced refresh credential. | EP002 |
 | TS003 | Enforce property-scoped authorization | As a developer, I want protected API resources to enforce property-scoped authorization so that one hotel operation cannot access another property's data. | **Scenario: Allow an authorized property request**<br>**Given** the authenticated operator has the required permission for the requested property<br>**When** the developer requests a protected property resource<br>**Then** the API processes the request within that property scope.<br><br>**Scenario: Deny an unauthorized property request**<br>**Given** the authenticated operator is not authorized for the requested property<br>**When** the developer requests a protected property resource<br>**Then** the API returns `403 Forbidden` without exposing the property's protected data.<br><br>**Scenario: Reject a missing authentication credential**<br>**Given** no valid access credential accompanies a protected request<br>**When** the developer requests the resource<br>**Then** the API returns `401 Unauthorized`. | EP002 |
@@ -1995,9 +1899,9 @@ La siguiente matriz detalla cómo cada meta del negocio digital se apoya en un c
 
 | Business Goal | Actor | Impact (Cambio de comportamiento esperado) | Deliverables (¿Qué puedo hacer como negocio digital para provocar el impacto?) | User Stories (Derivadas del Impact Mapping) |
 | :--- | :--- | :--- | :--- | :--- |
-| **BG1** (50 suscripciones *Starter* a S/39/mes) | A1 (Steven Huarcaya) | El administrador abandona el uso de múltiples herramientas gratuitas y adquiere directamente la suscripción *Starter* desde la web para centralizar las reservas de su única sede. | Desarrollar un portal de adquisición (Landing Page) con un flujo de registro automatizado que comunique claramente los límites y beneficios del plan Starter para hoteles de 1 sede (EP001, EP002). | **US003:** Como visitante del segmento de hoteles independientes, deseo identificar la opción de Hostera para una propiedad con hasta 10 habitaciones para poder confirmar que se ajusta a mi operación y continuar con el plan correspondiente.<br><br>**US009:** Como administrador de hotel independiente, deseo crear una cuenta con una propiedad inicial para poder comenzar a configurar mi operación hotelera en Hostera. |
+| **BG1** (50 suscripciones *Starter* a S/39/mes) | A1 (Steven Huarcaya) | El administrador abandona el uso de múltiples herramientas gratuitas y adquiere directamente la suscripción *Starter* desde la web para centralizar las reservas de su única sede. | Desarrollar un portal de adquisición (Landing Page) con un flujo de registro automatizado que comunique claramente los límites y beneficios del plan Starter para hoteles de 1 sede (EP001, EP002). | **US003:** Como visitante del segmento de hotel independiente, deseo identificar el camino en Hostera para una propiedad con hasta 10 habitaciones (Plan Starter) para poder confirmar que se ajusta a mi operación y continuar al registro.<br><br>**US009:** Como administrador de hotel independiente, deseo crear una cuenta con una propiedad inicial para poder comenzar a configurar mi operación hotelera en Hostera. |
 | **BG2** (20 suscripciones *Professional* a S/8/habitación) | A2 (Anyeli Cárdenas) | La gerente de operaciones contrata el plan *Professional* en lugar de un ERP tradicional, para aprovechar los cinco administradores con roles y obtener reportes independientes por locación. | Implementar un módulo de analítica operativa multi-sede y un sistema de control de inventario capaz de generar alertas críticas de stock automáticamente (EP007, EP005). | **US031:** Como gerente de operaciones, deseo encontrar y revisar reportes operativos por propiedad y periodo para poder evaluar el rendimiento y la actividad de cada hotel de la cadena.<br><br>**US024:** Como gerente de operaciones, deseo monitorear las cantidades de inventario y condiciones de stock por ubicación para poder identificar rápidamente los suministros críticos que requieren atención. |
-| **BG3** (90% retención por uso diario) | A1, A2 (Steven y Anyeli) | Los responsables y su equipo confían exclusivamente en Hostera para su operación diaria, utilizándolo para emitir todas las llaves físicas y confirmar los check-ins diarios. | Proveer un sistema de gestión de estancias que esté directamente integrado con una API de codificación de tarjetas de proximidad (RFID) en la misma interfaz web (EP003, EP006). | **US017:** Como operador de recepción, deseo verificar la identidad del huésped, registrar los pagos de llegada que correspondan y codificar el acceso a la habitación al completar el check-in de una booking confirmed para que el huésped pueda iniciar su estancia con una identidad verificada y tarjetas válidas.<br><br>**US029:** Como operador autorizado de recepción, deseo codificar tarjetas RFID con periodos de acceso válidos o reemplazarlas conservando el mismo fin de validez, limitando a cada miembro del personal a una credencial utilizable, para que los huéspedes y el personal reciban acceso adecuado para su rol o estancia. |
+| **BG3** (90% retención por uso diario) | A1, A2 (Steven y Anyeli) | Los responsables y su equipo confían exclusivamente en Hostera para su operación diaria, utilizándolo para emitir todas las llaves físicas y confirmar los check-ins diarios. | Proveer un sistema de gestión de estancias que esté directamente integrado con una API de codificación de tarjetas de proximidad (RFID) en la misma interfaz web (EP003, EP006). | **US017:** Como operador de recepción, deseo completar el check-in del huésped para que la identidad, el pago, la asignación de habitación y el acceso sean verificados antes de que comience la estadía.<br><br>**US029:** Como operador de recepción autorizado, deseo codificar o reemplazar una tarjeta de acceso RFID para que un huésped o miembro del personal reciba el acceso físico autorizado para su rol o estadía. |
 
 ### Resumen Visual
 
@@ -2042,37 +1946,37 @@ autorización ocupan las últimas posiciones.
 
 | # Orden | User Story ID | Título | Descripción | Story Points |
 | :---: | :---: | :--- | :--- | :---: |
-| 1 | US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether Hostera is relevant to my hotel. | 5 |
+| 1 | US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether the Landing Page is relevant to my hotel. | 5 |
 | 2 | US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera option for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue with the corresponding plan. | 3 |
 | 3 | US004 | Find the small-chain path | As a small-chain hotel operations manager, I want an option for coordinating 2 to 5 locations, so that I can identify the plan and estimated cost intended for a multi-property operation. | 3 |
-| 4 | US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and understand the available next steps, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | 5 |
+| 4 | US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and see clear next actions, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | 5 |
 | 5 | US005 | Understand the product benefits and operating flow | As a visitor, I want to understand the benefits and the high-level operating flow described by Hostera, so that I can relate the proposition to hotel work. | 5 |
-| 6 | US002 | Find information about Hostera | As a visitor, I want to request information about the topic I am interested in, so that I can learn about Hostera and understand the available next steps. | 5 |
-| 7 | US008 | Consult Hostera information in English or Spanish | As a visitor, I want to choose English or Spanish, so that I can understand Hostera information in the language I understand best. | 8 |
-| 8 | US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information about Hostera, so that I can learn more before choosing a plan. | 8 |
-| 9 | US011 | Monitor operations across properties | As a hotel administrator or operations manager, I want to monitor room revenue, occupancy, arrivals, and room conditions across properties and change the active property so that I can identify operational conditions that require attention. | 8 |
-| 10 | US033 | Navigate between operational areas | As an authorized hotel operator, I want to work across the operational overview, bookings, rooms, inventory, and access control so that I can perform hotel-management tasks without losing the active property context. | 3 |
-| 11 | US012 | Find and review bookings | As a front-desk operator or hotel administrator, I want to find bookings by guest name or booking code, stay period, and status so that I can review the correct booking before taking an operational action. | 3 |
-| 12 | US019 | Review room availability for a selected date | As a front-desk operator or hotel administrator, I want to review daily room availability from a chosen date and find rooms by number, room type, or status so that I can plan assignments and operational work. | 5 |
-| 13 | US013 | Create a booking | As a front-desk operator, I want to create a booking for a guest and an available room, including from a cancelled or no-show booking, so that the requested stay is recorded with its applicable rate. | 8 |
-| 14 | US014 | Review and update a booking | As a front-desk operator, I want to review booking details and update pending or confirmed bookings so that guest and stay changes remain consistent with room availability and applicable rates. | 5 |
-| 15 | US015 | Manage the booking lifecycle | As a front-desk operator, I want to confirm, cancel, restore, or mark a booking as a no-show so that its status and room assignment reflect the pre-arrival outcome. | 5 |
-| 16 | US016 | Record a booking payment | As a front-desk operator, I want to record a payment received for a pending, confirmed, or checked-in booking so that the amount paid and remaining balance are accurate. | 3 |
-| 17 | US017 | Complete guest check-in | As a front-desk operator, I want to verify the guest identity, record any arrival payments, and encode room access when completing check-in for a confirmed booking so that the guest can begin the stay with a verified identity and valid key cards. | 8 |
-| 18 | US018 | Complete guest check-out | As a front-desk operator, I want to complete check-out for a checked-in booking with a settled balance and record the room condition so that the stay closes, key cards end, and unused nights become available. | 5 |
-| 19 | US020 | Create a room | As a hotel administrator, I want to create a room within a property so that it can participate in availability planning and booking assignment. | 3 |
-| 20 | US021 | Maintain room information and operational status | As a hotel administrator or authorized staff member, I want to review and update room information and operational status for a period so that room conditions remain accurate without overriding booking-controlled days. | 5 |
-| 21 | US022 | Manage room types | As a hotel administrator, I want to manage room types with unique names, valid capacities, bed configurations, and positive base rates so that rooms share consistent accommodation information and room types in use remain protected. | 5 |
-| 22 | US023 | Manage rate plans and daily rates | As a hotel administrator or operations manager, I want to define rate plans and daily room-type prices so that booking totals reflect the applicable commercial conditions. | 5 |
+| 6 | US002 | Find the Landing Page topics | As a visitor, I want to go directly to the topic I am interested in, so that I can find the Landing Page content and understand the available next steps. | 5 |
+| 7 | US008 | Use the English and Spanish Landing Page variants | As a visitor, I want to choose English or Spanish, so that I can read the Landing Page in the language I understand best. | 8 |
+| 8 | US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information in the Landing Page, so that I can learn more before choosing a plan. | 8 |
+| 9 | US011 | Monitor operations across assigned properties | As a hotel administrator or operations manager, I want to monitor current operational information and change the active property so that I can identify conditions that require attention in the appropriate hotel. | 5 |
+| 10 | US033 | Navigate between operational areas | As an authorized hotel operator, I want to navigate between the operational areas assigned to me so that I can perform different hotel-management tasks without losing the active property context. | 3 |
+| 11 | US012 | Find and review reservations | As a front-desk operator or hotel administrator, I want to find reservations by guest, stay period, room, and status so that I can review the correct booking before taking an operational action. | 3 |
+| 12 | US019 | Review room availability for a selected date | As a front-desk operator or hotel administrator, I want to review room availability from a selected date so that I can plan assignments and operational work. | 5 |
+| 13 | US013 | Create a reservation | As a front-desk operator, I want to create a reservation for a guest and an available room so that the requested stay is recorded with its applicable rate. | 5 |
+| 14 | US014 | Review and update a reservation | As a front-desk operator, I want to review and update reservation information so that changes requested before arrival remain consistent with room availability and rates. | 5 |
+| 15 | US015 | Manage the reservation lifecycle | As a front-desk operator, I want to confirm, cancel, or mark a reservation as a no-show so that its status reflects what happened before the guest's stay begins. | 5 |
+| 16 | US016 | Record a reservation payment | As a front-desk operator, I want to record a payment received for a reservation so that the amount paid and remaining balance are accurate. | 3 |
+| 17 | US017 | Complete guest check-in | As a front-desk operator, I want to complete guest check-in so that identity, payment, room assignment, and room access are verified before the stay begins. | 8 |
+| 18 | US018 | Complete guest check-out | As a front-desk operator, I want to complete guest check-out so that the stay closes, the balance is resolved, and the room and credential return to their next operational states. | 5 |
+| 19 | US020 | Create a room | As a hotel administrator, I want to create a room within a property so that it can participate in availability planning and reservation assignment. | 3 |
+| 20 | US021 | Maintain room information and operational status | As a hotel administrator or authorized staff member, I want to review and update a room's information and controllable status so that its operational condition remains accurate. | 5 |
+| 21 | US022 | Manage room types | As a hotel administrator, I want to manage room types so that rooms share consistent capacity, bed configuration, and base-rate information. | 5 |
+| 22 | US023 | Manage rate plans and daily rates | As a hotel administrator or operations manager, I want to define rate plans and daily room-type prices so that reservation totals reflect the applicable commercial conditions. | 5 |
 | 23 | US024 | Monitor property inventory | As a hotel administrator or inventory operator, I want to monitor item quantities and stock conditions by storage location so that I can identify supplies that require attention. | 5 |
-| 24 | US025 | Manage inventory item records | As an inventory operator, I want to create and update inventory items while preserving their units after stock movements so that tracked supplies and their movement history remain consistent. | 5 |
-| 25 | US027 | Manage storage locations | As a hotel administrator or inventory operator, I want to manage storage locations while preserving existing codes and locations with assigned items so that stock remains associated with the correct physical area and responsible team. | 5 |
-| 26 | US026 | Adjust inventory stock | As an inventory operator, I want to record stock entering, leaving, or transferring between storage locations so that on-hand quantities and their audit history remain accurate. | 5 |
+| 24 | US025 | Manage inventory item records | As an inventory operator, I want to create and update inventory items so that each tracked supply has consistent identification, classification, storage, and threshold information. | 5 |
+| 25 | US027 | Manage storage locations | As a hotel administrator or inventory operator, I want to manage storage locations and their assigned items so that stock remains associated with the correct physical area and responsible team. | 5 |
+| 26 | US026 | Adjust inventory stock | As an inventory operator, I want to record stock entering or leaving a storage location so that on-hand quantities and their audit history remain accurate. | 5 |
 | 27 | US031 | Find and review an operational report | As a hotel administrator or operations manager, I want to find and review operational reports by property and period so that I can evaluate hotel performance and activity. | 5 |
 | 28 | US032 | Export an operational report | As a hotel administrator or operations manager, I want to export the currently scoped report so that I can share or archive the operational results. | 3 |
-| 29 | US028 | Review and manage RFID credentials | As a hotel administrator or authorized front-desk operator, I want to find RFID credentials by card, person, room, status, or holder type and review or revoke them with a recorded reason so that access remains valid only for the intended person and period. | 5 |
-| 30 | US029 | Encode or replace an RFID key card | As an authorized front-desk operator, I want to encode RFID key cards with valid access periods or replace them with the same end of validity, limiting each staff member to one usable credential, so that guests and staff receive access appropriate to their role or stay. | 8 |
-| 31 | US030 | Review RFID access events | As a hotel administrator or security-authorized operator, I want to find granted and denied RFID access events by date, result, access point, person, or card so that I can investigate activity at rooms and access points. | 5 |
+| 29 | US028 | Review and manage RFID credentials | As a hotel administrator or authorized front-desk operator, I want to review and manage RFID credentials so that room and operational access remains valid only for the intended person and period. | 5 |
+| 30 | US029 | Encode or replace an RFID key card | As an authorized front-desk operator, I want to encode or replace an RFID key card so that a guest or staff member receives the access authorized for their role or stay. | 8 |
+| 31 | US030 | Review RFID access events | As a hotel administrator or security-authorized operator, I want to review granted and denied RFID access events so that I can investigate activity at rooms and access points. | 5 |
 | 32 | US009 | Register a hotel operation | As an independent hotel administrator or small-chain operations manager, I want to create an account with an initial property so that I can begin configuring my hotel operation in Hostera. | 5 |
 | 33 | US010 | Sign in to Hostera | As an authorized hotel operator, I want to sign in with my work account so that I can access the properties and operational information assigned to me. | 3 |
 | 34 | TS017 | Return standardized API errors | As a developer, I want the API to return consistent validation and domain-error responses so that client applications can handle failures predictably. | 5 |
@@ -2894,13 +2798,13 @@ disponible en https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7.
 | :--- | :--- | :--- |
 | Create an account with an initial property. | Independent hotel administrator / small-chain operations manager | Sign up → validation errors when the registration data is incomplete or invalid. |
 | Sign in with an authorized work account. | Authorized hotel operator | Login → invalid credentials state when authentication fails. |
-| Monitor operations across properties. | Hotel administrator / operations manager | Dashboard → property selection → operational search results → no results or partial-data state. |
+| Monitor current operations for an assigned property. | Hotel administrator / operations manager | Dashboard → property selection → operational search results → no results or partial-data state. |
 | Navigate to another authorized operational area. | Authorized hotel operator | Dashboard context → restricted navigation state that preserves the active property scope. |
-| Find and review bookings. | Front-desk operator / hotel administrator | Reservations list → empty result state when no reservation matches the criteria. |
-| Create a booking. | Front-desk operator | Create reservation → validation errors or invalid-period state when the requested stay cannot be recorded. |
-| Review and update a booking. | Front-desk operator | Reservation detail → edit reservation → availability-conflict state when the proposed change is not valid. |
-| Manage the booking lifecycle. | Front-desk operator | Pending reservation → status actions → confirmation, no-show, or cancelled state. |
-| Record a booking payment. | Front-desk operator | Record payment → invalid-amount state when the payment cannot be accepted. |
+| Find and review a reservation. | Front-desk operator / hotel administrator | Reservations list → empty result state when no reservation matches the criteria. |
+| Create a reservation for an available room. | Front-desk operator | Create reservation → validation errors or invalid-period state when the requested stay cannot be recorded. |
+| Review and update an existing reservation. | Front-desk operator | Reservation detail → edit reservation → availability-conflict state when the proposed change is not valid. |
+| Update a reservation according to its pre-arrival outcome. | Front-desk operator | Pending reservation → status actions → confirmation, no-show, or cancelled state. |
+| Record a payment received for a reservation. | Front-desk operator | Record payment → invalid-amount state when the payment cannot be accepted. |
 | Complete guest check-in for a confirmed reservation. | Front-desk operator | Verify guest → payment → encode key card → encoded card → completed check-in, with an unresolved-identity alternative. |
 | Complete guest check-out for an occupied room. | Front-desk operator | Checked-in reservation → check-out review → completed check-out, with an unresolved-balance alternative. |
 | Review room availability from a selected date. | Front-desk operator / hotel administrator | Rooms list → room detail with the selected-date monthly availability view. |
@@ -4101,13 +4005,13 @@ corresponden a la estimación registrada en el Product Backlog de Hostera.
 | User Story ID | User Story | Story Points | Estado al cierre del sprint |
 | --- | --- | :---: | --- |
 | US001 | Understand the hotel-operations proposition | 5 | Implementada |
-| US002 | Find information about Hostera | 5 | Implementada |
+| US002 | Find the Landing Page topics | 5 | Implementada |
 | US003 | Find the independent-hotel path | 3 | Implementada |
 | US004 | Find the small-chain path | 3 | Implementada |
 | US005 | Understand the product benefits and operating flow | 5 | Implementada |
 | US006 | Compare plans and choose a next step | 5 | Implementada |
 | US007 | Explore product, team, and support content | 8 | Implementada |
-| US008 | Consult Hostera information in English or Spanish | 8 | Implementada |
+| US008 | Use the English and Spanish Landing Page variants | 8 | Implementada |
 | **Total** | **Epic 1: Landing Page Experience** | **42** | **8/8 implementadas** |
 
 Al cierre del Sprint 1, el objetivo se considera cumplido: la Landing Page se
@@ -4189,9 +4093,9 @@ la estimación relativa en Story Points de cada User Story.
     <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.1</td><td>Build hero proposition</td><td>Implementar el hero con el mensaje principal, la propuesta de valor, las áreas operativas y el CTA inicial.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
     <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.2</td><td>Add dashboard preview</td><td>Incorporar la vista informativa del dashboard para representar reservas, habitaciones, inventario y accesos.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
     <tr><td>US001</td><td>Understand the hotel-operations proposition</td><td>T001.3</td><td>Explain the problem and solution</td><td>Implementar la sección que explica la fragmentación de la operación hotelera y la respuesta de Hostera.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US002</td><td>Find information about Hostera</td><td>T002.1</td><td>Implement primary navigation</td><td>Crear el encabezado, las etiquetas de navegación, el control de idioma y el CTA principal.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US002</td><td>Find information about Hostera</td><td>T002.2</td><td>Implement footer navigation</td><td>Crear la navegación secundaria, el aviso de Grafo Verde y los enlaces hacia las secciones y términos.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US002</td><td>Find information about Hostera</td><td>T002.3</td><td>Add mobile navigation and terms page</td><td>Implementar el menú de navegación responsive y la página de términos y condiciones.</td><td>8</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Find the Landing Page topics</td><td>T002.1</td><td>Implement primary navigation</td><td>Crear el encabezado, las etiquetas de navegación, el control de idioma y el CTA principal.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Find the Landing Page topics</td><td>T002.2</td><td>Implement footer navigation</td><td>Crear la navegación secundaria, el aviso de Grafo Verde y los enlaces hacia las secciones y términos.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US002</td><td>Find the Landing Page topics</td><td>T002.3</td><td>Add mobile navigation and terms page</td><td>Implementar el menú de navegación responsive y la página de términos y condiciones.</td><td>8</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.1</td><td>Add independent-hotel pathway</td><td>Implementar la tarjeta y el contenido del camino para un hotel independiente con hasta 10 habitaciones.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
     <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.2</td><td>Add Free plan details</td><td>Incorporar la información del plan Free y su CTA para iniciar la experiencia correspondiente.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
     <tr><td>US004</td><td>Find the small-chain path</td><td>T004.1</td><td>Add small-chain pathway</td><td>Implementar la tarjeta y el contenido del camino para una cadena hotelera pequeña de 2 a 5 ubicaciones.</td><td>4</td><td>Juan Diego Flores</td><td>Done</td></tr>
@@ -4204,8 +4108,8 @@ la estimación relativa en Story Points de cada User Story.
     <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.1</td><td>Add product discovery content</td><td>Implementar el área de producto y el punto de entrada para descubrir Hostera.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
     <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.2</td><td>Add team content</td><td>Implementar la sección del equipo, sus integrantes y el punto de entrada para conocerlo.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
     <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.3</td><td>Add support FAQ</td><td>Implementar las preguntas frecuentes con estados expandido y contraído.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US008</td><td>Consult Hostera information in English or Spanish</td><td>T008.1</td><td>Implement English and Spanish content</td><td>Incorporar las variantes de contenido, navegación, caminos, planes y CTA en inglés y español.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US008</td><td>Consult Hostera information in English or Spanish</td><td>T008.2</td><td>Preserve language selection</td><td>Mantener el idioma seleccionado al navegar hacia los términos y corregir la transición visual del cambio de idioma.</td><td>4</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US008</td><td>Use the English and Spanish Landing Page variants</td><td>T008.1</td><td>Implement English and Spanish content</td><td>Incorporar las variantes de contenido, navegación, caminos, planes y CTA en inglés y español.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US008</td><td>Use the English and Spanish Landing Page variants</td><td>T008.2</td><td>Preserve language selection</td><td>Mantener el idioma seleccionado al navegar hacia los términos y corregir la transición visual del cambio de idioma.</td><td>4</td><td>Joaquin Cuba</td><td>Done</td></tr>
   </tbody>
 </table>
 
