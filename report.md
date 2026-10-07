@@ -5080,7 +5080,7 @@ aplicación desplegada.
 *Figura 5.16. Landing Page publicada en su versión `v0.4.0`, con el enlace «Sign in» hacia la aplicación.*
 
 La aplicación publicada en Firebase Hosting y la API publicada en Render se muestran
-en las figuras 5.8 a 5.14.
+en las figuras 5.8 a 5.15.
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
