@@ -1,39 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="544.912pt" height="208.999pt" viewBox="0 0 544.912 208.999" version="1.1">
 <rect x="0" y="0" width="544.912" height="208.999" fill="#fcfcfb"/>
-<text x="350.8" y="16" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:10.5px;fill:#0b0b0b">Commits por integrante en el repositorio del informe · TB1 (84 commits)</text>
+<text x="350.8" y="16" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:10.5px;fill:#0b0b0b">Commits por integrante en el repositorio del informe · TB1 (92 commits)</text>
 <line x1="164.00" y1="27.2" x2="164.00" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
 <text x="164.00" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">0</text>
-<line x1="210.70" y1="27.2" x2="210.70" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
-<text x="210.70" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">5</text>
-<line x1="257.40" y1="27.2" x2="257.40" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
-<text x="257.40" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">10</text>
-<line x1="304.10" y1="27.2" x2="304.10" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
-<text x="304.10" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">15</text>
-<line x1="350.80" y1="27.2" x2="350.80" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
-<text x="350.80" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">20</text>
-<line x1="397.50" y1="27.2" x2="397.50" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
-<text x="397.50" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">25</text>
-<line x1="444.20" y1="27.2" x2="444.20" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
-<text x="444.20" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">30</text>
-<line x1="490.90" y1="27.2" x2="490.90" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
-<text x="490.90" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">35</text>
+<line x1="205.51" y1="27.2" x2="205.51" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="205.51" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">5</text>
+<line x1="247.02" y1="27.2" x2="247.02" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="247.02" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">10</text>
+<line x1="288.53" y1="27.2" x2="288.53" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="288.53" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">15</text>
+<line x1="330.04" y1="27.2" x2="330.04" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="330.04" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">20</text>
+<line x1="371.56" y1="27.2" x2="371.56" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="371.56" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">25</text>
+<line x1="413.07" y1="27.2" x2="413.07" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="413.07" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">30</text>
+<line x1="454.58" y1="27.2" x2="454.58" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="454.58" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">35</text>
+<line x1="496.09" y1="27.2" x2="496.09" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
+<text x="496.09" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">40</text>
 <line x1="537.60" y1="27.2" x2="537.60" y2="176.90" stroke="#e4e3df" stroke-width="0.8"/>
-<text x="537.60" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">40</text>
-<rect x="164.0" y="33.19" width="345.58" height="17.96" fill="#2a78d6"/>
-<text x="158.0" y="45.17" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Darnell Cuba (darnell1910)</text>
-<text x="513.58" y="45.17" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">37</text>
-<rect x="164.0" y="63.13" width="317.56" height="17.96" fill="#2a78d6"/>
-<text x="158.0" y="75.11" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">José Santana (JhosBY2005)</text>
-<text x="485.56" y="75.11" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">34</text>
-<rect x="164.0" y="93.07" width="46.70" height="17.96" fill="#2a78d6"/>
+<text x="537.60" y="189.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">45</text>
+<rect x="164.0" y="33.19" width="348.69" height="17.96" fill="#2a78d6"/>
+<text x="158.0" y="45.17" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">José Santana (JhosBY2005)</text>
+<text x="516.69" y="45.17" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">42</text>
+<rect x="164.0" y="63.13" width="307.18" height="17.96" fill="#2a78d6"/>
+<text x="158.0" y="75.11" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Darnell Cuba (darnell1910)</text>
+<text x="475.18" y="75.11" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">37</text>
+<rect x="164.0" y="93.07" width="41.51" height="17.96" fill="#2a78d6"/>
 <text x="158.0" y="105.05" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Mateo Condori (BeyaminUv)</text>
-<text x="214.70" y="105.05" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">5</text>
-<rect x="164.0" y="123.01" width="37.36" height="17.96" fill="#2a78d6"/>
+<text x="209.51" y="105.05" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">5</text>
+<rect x="164.0" y="123.01" width="33.21" height="17.96" fill="#2a78d6"/>
 <text x="158.0" y="134.99" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Joaquin Cuba (joacuba)</text>
-<text x="205.36" y="134.99" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">4</text>
-<rect x="164.0" y="152.95" width="37.36" height="17.96" fill="#2a78d6"/>
+<text x="201.21" y="134.99" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">4</text>
+<rect x="164.0" y="152.95" width="33.21" height="17.96" fill="#2a78d6"/>
 <text x="158.0" y="164.93" text-anchor="end" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Juan Diego Flores (YopoFlores)</text>
-<text x="205.36" y="164.93" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">4</text>
+<text x="201.21" y="164.93" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">4</text>
 <line x1="164.0" y1="27.2" x2="164.0" y2="176.90" stroke="#52514e" stroke-width="0.8"/>
 <text x="350.8" y="204.90" text-anchor="middle" style="font-family:'DejaVu Sans',Verdana,Arial,sans-serif;font-size:9px;fill:#52514e">Commits en develop entre el 18/09 y el 06/10/2026, sin commits de merge</text>
 </svg>
