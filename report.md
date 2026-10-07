@@ -47,9 +47,9 @@
 
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  0.4.0  | 06/10/2026 | Darnell Cuba (`darnell1910`)<br>José Antonio Santana Luna (`JhosBY2005`)<br>Joaquin Cuba (`joacuba`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>Mateo Urviola (`BeyaminUv`) | Versión de TB1. Se corrigieron las secciones observadas por el docente: el Lean UX se reescribió con la plantilla para una iniciativa nueva y se actualizó su canvas, las user stories se redactaron sin referencias a la interfaz y el Product Backlog se reordenó por prioridad. Se corrigió la asignación de las entrevistas a los segmentos, se agregaron entrevistas complementarias por formulario y se unificó su análisis con porcentajes. Se reemplazó el modelo C4 por las vistas del frontend, se completó la configuración del entorno, del control de código y del despliegue, y se incorporó el Sprint 2 con la primera versión de la Frontend Web Application y la versión `v0.4.0` de la Landing Page. Se reescribieron las conclusiones por etapa del ciclo de vida y la bibliografía pasó al formato APA. |
+|  0.4.0  | 06/10/2026 | Darnell Cuba (`darnell1910`)<br>José Antonio Santana Luna (`JhosBY2005`)<br>Joaquin Cuba (`joacuba`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>Mateo Condori (`BeyaminUv`) | Versión de TB1. Se corrigieron las secciones observadas por el docente: el Lean UX se reescribió con la plantilla para una iniciativa nueva y se actualizó su canvas, las user stories se redactaron sin referencias a la interfaz y el Product Backlog se reordenó por prioridad. Se corrigió la asignación de las entrevistas a los segmentos, se agregaron entrevistas complementarias por formulario y se unificó su análisis con porcentajes. Se reemplazó el modelo C4 por las vistas del frontend, se completó la configuración del entorno, del control de código y del despliegue, y se incorporó el Sprint 2 con la primera versión de la Frontend Web Application y la versión `v0.4.0` de la Landing Page. Se reescribieron las conclusiones por etapa del ciclo de vida y la bibliografía pasó al formato APA. |
 |  0.3.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)                                                                          | Se incorporó la sección Project Report Collaboration Insights para AV1, con el enlace al repositorio, la explicación del trabajo colaborativo y las capturas de analíticos y commits de GitHub. |
-|  0.2.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Mateo Urviola (`BeyaminUv`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>José Antonio Santana Luna (`JhosBY2005`) | Se amplió el informe con la documentación de descubrimiento, diseño, arquitectura e implementación de Hostera; se incorporó la evidencia del Sprint 1, el despliegue de la Landing Page en GitHub Pages, los Student Outcomes AV1, los perfiles del equipo y los anexos. |
+|  0.2.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Mateo Condori (`BeyaminUv`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>José Antonio Santana Luna (`JhosBY2005`) | Se amplió el informe con la documentación de descubrimiento, diseño, arquitectura e implementación de Hostera; se incorporó la evidencia del Sprint 1, el despliegue de la Landing Page en GitHub Pages, los Student Outcomes AV1, los perfiles del equipo y los anexos. |
 |  0.1.1  | 03/09/2026 | Joaquin Cuba (`joacuba`)                                                                          | Se agregó la documentación del repositorio, el script para generar el PDF y la licencia MIT. Se corrigió el diseño de la portada, el tamaño de las imágenes y los bordes de las tablas. |
 |  0.1.0  | 03/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Juan Diego Flores Rios (`YopoFlores`) | Se creó la estructura inicial del informe del proyecto Hostera, se incorporaron los recursos gráficos y se agregó la descripción de la startup.                                         |
 
@@ -77,7 +77,7 @@ secciones del reporte, y estos cambios quedaron registrados en el historial de
 GitHub.
 
 La captura de analíticos confirma la participación de **Joaquin Cuba** (`joacuba`),
-**Darnell Cuba** (`darnell1910`), **Mateo Urviola** (`BeyaminUv`), **Juan Diego
+**Darnell Cuba** (`darnell1910`), **Mateo Condori** (`BeyaminUv`), **Juan Diego
 Flores Rios** (`YopoFlores`) y **José Antonio Santana Luna** (`JhosBY2005`) durante
 el periodo mostrado. La captura del historial de commits muestra la evolución de
 la rama `main`, incluyendo los cambios de documentación, la preparación del
@@ -1613,7 +1613,7 @@ aprueba los pedidos de las áreas a su cargo; el gerente general del Meliá (`E4
 a diario los informes consolidados en lugar de revisar reserva por reserva.
 
 La dificultad que define al segmento no es registrar, sino consolidar. Tres de los
-cinco entrevistados la declaran de forma explícita: Wilson (`E2`) debe coordinar
+seis entrevistados la declaran de forma explícita: Wilson (`E2`) debe coordinar
 constantemente con el administrador de su segunda sede para conocer la disponibilidad;
 José Ramírez (`F4`) describe que cada sede usa hojas distintas y que armar el
 consolidado semanal le toma medio día; Andrea Salazar (`F5`) señala que los reportes
@@ -2058,7 +2058,7 @@ La siguiente matriz detalla cómo cada meta del negocio digital se apoya en un c
 | :--- | :--- | :--- | :--- | :--- |
 | **BG1** (50 suscripciones *Starter* a S/39/mes) | A1 (Steven Huarcaya) | El administrador abandona el uso de múltiples herramientas gratuitas y adquiere directamente la suscripción *Starter* desde la web para centralizar las reservas de su única sede. | Desarrollar un portal de adquisición (Landing Page) con un flujo de registro automatizado que comunique claramente los límites y beneficios del plan Starter para hoteles de 1 sede (EP001, EP002). | **US003:** Como visitante del segmento de hoteles independientes, deseo identificar la opción de Hostera para una propiedad con hasta 10 habitaciones para poder confirmar que se ajusta a mi operación y continuar con el plan correspondiente.<br><br>**US009:** Como administrador de hotel independiente, deseo crear una cuenta con una propiedad inicial para poder comenzar a configurar mi operación hotelera en Hostera. |
 | **BG2** (20 suscripciones *Professional* a S/8/habitación) | A2 (Anyeli Cárdenas) | La gerente de operaciones contrata el plan *Professional* en lugar de un ERP tradicional, para aprovechar los cinco administradores con roles y obtener reportes independientes por locación. | Implementar un módulo de analítica operativa multi-sede y un sistema de control de inventario capaz de generar alertas críticas de stock automáticamente (EP007, EP005). | **US031:** Como gerente de operaciones, deseo encontrar y revisar reportes operativos por propiedad y periodo para poder evaluar el rendimiento y la actividad de cada hotel de la cadena.<br><br>**US024:** Como gerente de operaciones, deseo monitorear las cantidades de inventario y condiciones de stock por ubicación para poder identificar rápidamente los suministros críticos que requieren atención. |
-| **BG3** (90% retención por uso diario) | A1, A2 (Steven y Anyeli) | Los responsables y su equipo confían exclusivamente en Hostera para su operación diaria, utilizándolo para emitir todas las llaves físicas y confirmar los check-ins diarios. | Proveer un sistema de gestión de estancias que esté directamente integrado con una API de codificación de tarjetas de proximidad (RFID) en la misma interfaz web (EP003, EP006). | **US017:** Como operador de recepción, deseo verificar la identidad del huésped, registrar los pagos de llegada que correspondan y codificar el acceso a la habitación al completar el check-in de una booking confirmed para que el huésped pueda iniciar su estancia con una identidad verificada y tarjetas válidas.<br><br>**US029:** Como operador autorizado de recepción, deseo codificar tarjetas RFID con periodos de acceso válidos o reemplazarlas conservando el mismo fin de validez, limitando a cada miembro del personal a una credencial utilizable, para que los huéspedes y el personal reciban acceso adecuado para su rol o estancia. |
+| **BG3** (90% retención por uso diario) | A1, A2 (Steven y Anyeli) | Los responsables y su equipo confían exclusivamente en Hostera para su operación diaria, utilizándolo para emitir todas las llaves físicas y confirmar los check-ins diarios. | Proveer un sistema de gestión de estancias que esté directamente integrado con una API de codificación de tarjetas de proximidad (RFID) en la misma interfaz web (EP003, EP006). | **US017:** Como operador de recepción, deseo verificar la identidad del huésped, registrar los pagos de llegada que correspondan y codificar el acceso a la habitación al completar el check-in de una reserva confirmada para que el huésped pueda iniciar su estancia con una identidad verificada y tarjetas válidas.<br><br>**US029:** Como operador autorizado de recepción, deseo codificar tarjetas RFID con periodos de acceso válidos o reemplazarlas conservando el mismo fin de validez, limitando a cada miembro del personal a una credencial utilizable, para que los huéspedes y el personal reciban acceso adecuado para su rol o estancia. |
 
 ### Resumen Visual
 
@@ -2073,8 +2073,8 @@ El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la je
 ## 3.3. Product Backlog
 
 El Product Backlog es una lista priorizada y evolutiva de los requisitos del producto
-digital de Hostera. Reúne las User Stories y, conforme avance el proyecto, podrá
-incorporar Technical Stories, tareas y otros elementos necesarios para desarrollar,
+digital de Hostera. Reúne las User Stories y las Technical Stories, y conforme avance el proyecto podrá
+incorporar tareas y otros elementos necesarios para desarrollar,
 validar y desplegar la solución. La priorización se establece según el valor para el
 negocio, las necesidades de los User Personas, las dependencias y los riesgos del
 producto. Los Story Points representan una estimación relativa del esfuerzo, la
@@ -5104,11 +5104,11 @@ El gráfico siguiente se construyó a partir del historial del repositorio hasta
 versión `v0.1.0`, sin contar los commits de merge. Incluye el commit inicial del
 repositorio, por eso suma uno más que la tabla de la sección 5.2.2.4.
 
-<img src="assets/chapter-5/sprint-2-commits-by-member.svg" alt="Commits funcionales por integrante en el repositorio del frontend durante el Sprint 2" style="width:100%%; height:auto;"/>
+<img src="assets/chapter-5/sprint-2-commits-by-member.svg" alt="Commits funcionales por integrante en el repositorio del frontend durante el Sprint 2" style="width:100%; height:auto;"/>
 
 *Figura 5.17. Commits funcionales por integrante en el repositorio del frontend hasta la versión `v0.1.0`.*
 
-<img src="assets/chapter-5/sprint-2-github-commits.png" alt="Historial de commits del repositorio del frontend en la rama develop" style="width:100%%; height:auto;"/>
+<img src="assets/chapter-5/sprint-2-github-commits.png" alt="Historial de commits del repositorio del frontend en la rama develop" style="width:100%; height:auto;"/>
 
 *Figura 5.18. Historial de commits del repositorio del frontend en la rama `develop`, con la integración de ramas y de la versión `0.1.0`.*
 
