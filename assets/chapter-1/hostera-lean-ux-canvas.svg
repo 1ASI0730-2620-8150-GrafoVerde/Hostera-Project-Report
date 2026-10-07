@@ -1,93 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1100" viewBox="0 0 1440 1100" role="img" aria-labelledby="title desc">
-  <title id="title">Lean UX Canvas de Hostera</title>
-  <desc id="desc">Canvas Lean UX para la coordinación de la operación hotelera.</desc>
-  <rect width="1440" height="1100" fill="#F3F6F4"/>
-
-  <g font-family="Arial, Helvetica, sans-serif" fill="#0D1613">
-    <text x="44" y="62" font-family="monospace" font-size="12" font-weight="700" letter-spacing="1.4" fill="#14523E">HOSTERA / SOLUTION PROFILE</text>
-    <rect x="276" y="56" width="72" height="2" rx="1" fill="#9EF2CC"/>
-    <text x="44" y="112" font-size="42" font-weight="700">Lean UX Canvas</text>
-    <text x="44" y="142" font-size="16" fill="#5B6862">Coordinación de la operación hotelera · 1.2.2.4</text>
-
-    <g transform="translate(1190,44)">
-      <rect width="206" height="36" rx="8" fill="#FFFFFF" stroke="#C6CFCA"/>
-      <text x="12" y="23" font-family="monospace" font-size="11" font-weight="700" letter-spacing="1" fill="#5B6862">DATE</text>
-      <text x="130" y="23" font-family="monospace" font-size="13" font-weight="700">03.09.26</text>
-      <rect y="44" width="206" height="36" rx="8" fill="#FFFFFF" stroke="#C6CFCA"/>
-      <text x="12" y="67" font-family="monospace" font-size="11" font-weight="700" letter-spacing="1" fill="#5B6862">ITERATION</text>
-      <text x="174" y="67" font-family="monospace" font-size="13" font-weight="700" fill="#14523E">01</text>
-    </g>
-
-    <rect x="40" y="196" width="1360" height="820" rx="12" fill="#FFFFFF" stroke="#0D1613" stroke-width="2"/>
-    <rect x="42" y="198" width="408" height="258" fill="#FFFFFF"/>
-    <rect x="42" y="458" width="408" height="298" fill="#FFFFFF"/>
-    <rect x="42" y="758" width="408" height="256" fill="#FFFFFF"/>
-    <rect x="452" y="198" width="298" height="558" fill="#E6F0E9"/>
-    <rect x="452" y="758" width="298" height="256" fill="#FFFFFF"/>
-    <rect x="752" y="198" width="646" height="258" fill="#FFFFFF"/>
-    <rect x="752" y="458" width="646" height="298" fill="#F9FBFA"/>
-    <rect x="752" y="758" width="646" height="256" fill="#FFFFFF"/>
-
-    <path d="M450 198V1014 M750 198V1014 M42 456H450 M42 756H450 M452 756H750 M752 456H1398 M752 756H1398" fill="none" stroke="#0D1613" stroke-width="1.5"/>
-
-    <g fill="#9BA59F" opacity="0.35" font-size="100" font-weight="700">
-      <text x="360" y="430">1</text><text x="1300" y="430">2</text><text x="360" y="710">3</text><text x="1300" y="710">4</text>
-      <text x="680" y="650">5</text><text x="360" y="980">6</text><text x="690" y="980">7</text><text x="1320" y="980">8</text>
-    </g>
-
-    <g font-family="monospace" font-size="11" font-weight="700" letter-spacing="1" fill="#14523E">
-      <text x="62" y="224">01 / PROBLEM</text><circle cx="188" cy="220" r="3" fill="#E5B94C"/>
-      <text x="62" y="484">03 / PEOPLE</text><circle cx="190" cy="480" r="3" fill="#3F7D5A"/>
-      <text x="62" y="784" fill="#0D1613">06 / TEST</text><circle cx="164" cy="780" r="3" fill="#E5B94C"/>
-      <text x="472" y="224">05 / MAKE</text><circle cx="570" cy="220" r="3" fill="#3F7D5A"/>
-      <text x="472" y="784">07 / LEARN FIRST</text><circle cx="650" cy="780" r="3" fill="#E5B94C"/>
-      <text x="772" y="224">02 / OUTCOME</text><circle cx="898" cy="220" r="3" fill="#3F7D5A"/>
-      <text x="772" y="484">04 / BENEFIT</text><circle cx="882" cy="480" r="3" fill="#E5B94C"/>
-      <text x="772" y="784">08 / TEST LEAN</text><circle cx="916" cy="780" r="3" fill="#3F7D5A"/>
-    </g>
-
-    <g font-size="23" font-weight="700">
-      <text x="62" y="254">Business Problem</text>
-      <text x="62" y="514">Users</text>
-      <text x="62" y="814">Hypotheses</text>
-      <text x="472" y="254">Solutions</text>
-      <text x="472" y="814" font-size="21">What’s the most important</text>
-      <text x="472" y="839" font-size="21">thing we need to learn first?</text>
-      <text x="772" y="254">Business Outcomes</text>
-      <text x="772" y="514">User Outcomes &amp; Benefits</text>
-      <text x="772" y="814">What’s the least amount of work we need</text>
-      <text x="772" y="839">to do to learn next?</text>
-    </g>
-
-    <g font-size="14" fill="#33423B">
-      <text x="62" y="288"><tspan x="62" dy="0">La información de reservas, habitaciones,</tspan><tspan x="62" dy="20">inventario y accesos puede estar distribuida</tspan><tspan x="62" dy="20">entre registros y herramientas independientes.</tspan></text>
-      <text x="62" y="372" fill="#14523E" font-weight="700"><tspan x="62" dy="0">Esto dificulta conocer el estado actualizado,</tspan><tspan x="62" dy="20">conciliar datos y mantener la trazabilidad</tspan><tspan x="62" dy="20">de los eventos.</tspan></text>
-
-      <text x="62" y="548"><tspan font-weight="700" fill="#14523E">Primary</tspan><tspan x="128">· Administradores y responsables</tspan><tspan x="128" dy="18">de la operación.</tspan></text>
-      <text x="62" y="596"><tspan font-weight="700" fill="#14523E">Operativos</tspan><tspan x="150">· Recepción y almacén.</tspan></text>
-      <text x="62" y="624"><tspan font-weight="700" fill="#14523E">Autorizados</tspan><tspan x="158">· Gestión y supervisión de accesos.</tspan></text>
-      <text x="62" y="652"><tspan font-weight="700" fill="#14523E">Indirectos</tspan><tspan x="146">· Huéspedes beneficiados.</tspan></text>
-
-      <text x="62" y="850" font-size="9" fill="#0D1613"><tspan x="62" dy="0">1. Creemos que un panel centralizado reducirá registros independientes.</tspan><tspan x="62" dy="15">Sabremos que hemos tenido éxito cuando veamos 5% más tareas de supervisión.</tspan><tspan x="62" dy="15">2. Creemos que reservas y disponibilidad actualizadas reducirán inconsistencias.</tspan><tspan x="62" dy="15">Sabremos que hemos tenido éxito cuando veamos 5% menos inconsistencias.</tspan><tspan x="62" dy="15">3. Creemos que registrar movimientos mejorará la visibilidad del inventario.</tspan><tspan x="62" dy="15">Sabremos que hemos tenido éxito cuando veamos 5% más movimientos consultables.</tspan><tspan x="62" dy="15">4. Creemos que integrar RFID mejorará la trazabilidad de accesos.</tspan><tspan x="62" dy="15">Sabremos que hemos tenido éxito cuando veamos 5% más accesos RFID vinculados.</tspan><tspan x="62" dy="15">5. Creemos que gestionar una o varias sedes mantendrá el contexto operativo.</tspan><tspan x="62" dy="15">Sabremos que hemos tenido éxito cuando veamos 5% más tareas correctas multi-sede.</tspan></text>
-
-      <text x="472" y="288"><tspan x="472" dy="0">Plataforma web administrativa</tspan><tspan x="472" dy="20">para coordinar la operación</tspan><tspan x="472" dy="20">entre áreas y sedes.</tspan></text>
-      <g fill="#0D1613">
-        <circle cx="480" cy="372" r="9" fill="#14523E"/><text x="476" y="376" font-family="monospace" font-size="10" fill="#FFFFFF">A</text><text x="498" y="376">Panel centralizado para reservas.</text><text x="498" y="394">Habitaciones, inventario y accesos.</text>
-        <circle cx="480" cy="430" r="9" fill="#14523E"/><text x="476" y="434" font-family="monospace" font-size="10" fill="#FFFFFF">B</text><text x="498" y="434">Registro y consulta de reservas.</text><text x="498" y="452">Disponibilidad actualizada.</text>
-        <circle cx="480" cy="486" r="9" fill="#14523E"/><text x="476" y="490" font-family="monospace" font-size="10" fill="#FFFFFF">C</text><text x="498" y="490">Movimientos y existencias.</text>
-        <circle cx="480" cy="524" r="9" fill="#14523E"/><text x="476" y="528" font-family="monospace" font-size="10" fill="#FFFFFF">D</text><text x="498" y="528">Tarjetas RFID y habitaciones.</text><text x="498" y="546">Usuarios y eventos relacionados.</text>
-        <circle cx="480" cy="584" r="9" fill="#14523E"/><text x="476" y="588" font-family="monospace" font-size="10" fill="#FFFFFF">E</text><text x="498" y="588">Administración multi-sede.</text>
-      </g>
-
-      <text x="472" y="880" font-size="11"><tspan x="472" dy="0">• Si los hoteles están dispuestos a utilizar</tspan><tspan x="472" dy="15">  la plataforma centralizada.</tspan><tspan x="472" dy="15">• Si los responsables aceptarían adaptar</tspan><tspan x="472" dy="15">  sus flujos de trabajo.</tspan><tspan x="472" dy="15">• Si centralizar reduce la conciliación</tspan><tspan x="472" dy="15">  manual entre áreas.</tspan><tspan x="472" dy="15">• Cuáles son las métricas críticas</tspan><tspan x="472" dy="15">  de la operación.</tspan></text>
-
-      <text x="772" y="288"><tspan x="772" dy="0">• Centralizar la supervisión de la operación.</tspan><tspan x="772" dy="24">• Reducir la conciliación entre registros.</tspan><tspan x="772" dy="24">• Mejorar la visibilidad de reservas e inventario.</tspan><tspan x="772" dy="24">• Mantener la trazabilidad de accesos y eventos.</tspan><tspan x="772" dy="24">• Escalar a una o varias sedes.</tspan></text>
-
-      <text x="772" y="548"><tspan x="772" dy="0">• Supervisar con información actualizada.</tspan><tspan x="772" dy="24">• Consultar rápidamente reservas y disponibilidad.</tspan><tspan x="772" dy="24">• Revisar existencias y movimientos del almacén.</tspan><tspan x="772" dy="24">• Rastrear accesos vinculados a tarjetas RFID.</tspan><tspan x="772" dy="24">• Coordinar con menos conciliación manual.</tspan></text>
-
-      <text x="772" y="880"><tspan x="772" dy="0">• Entrevistas con responsables de hoteles.</tspan><tspan x="772" dy="20">• Reencuadre de supuestos con la información obtenida.</tspan><tspan x="772" dy="20">• Validación de los flujos de reservas, inventario y accesos.</tspan></text>
-      <text x="772" y="952" fill="#33423B"><tspan x="772" dy="0">• Prototipo de baja fidelidad para introducir datos,</tspan><tspan x="772" dy="18">sin tarjetas RFID.</tspan></text>
-    </g>
-
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="922" viewBox="0 0 1220 922">
+<rect width="1220" height="922" fill="#fcfcfb"/>
+<text x="20" y="42" font-family="DejaVu Sans, Verdana, sans-serif" font-size="17" font-weight="bold" fill="#0b0b0b">Lean UX Canvas · Hostera</text><text x="20" y="62" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">Grafo Verde · iteración 02 · elaborado a partir de las nueve entrevistas de la sección 2.2 y de los objetivos de negocio de la sección 3.2</text>
+<rect x="18" y="78" width="587" height="182" rx="6" fill="#ffffff" stroke="#dcdbd6" stroke-width="1"/>
+<text x="32" y="102" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" font-weight="bold" fill="#2a78d6">1</text>
+<text x="48" y="102" font-family="DejaVu Sans, Verdana, sans-serif" font-size="13" font-weight="bold" fill="#0b0b0b">Business Problem</text>
+<text x="32" y="126" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">Los hoteles de una a cinco sedes registran la reserva en un canal y controlan la</text>
+<text x="32" y="141" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">operación en otro. Conciliar esa información a mano cuesta de 30 minutos a 2 horas al</text>
+<text x="32" y="156" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">día en una sede, y de 1 hora a medio día por cada consolidado en varias sedes.</text>
+<text x="32" y="178" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">Los sistemas hoteleros disponibles cubren reservas y tarifas, pero dejan fuera el</text>
+<text x="32" y="193" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">almacén y el acceso físico, o los resuelven con plataformas contratadas aparte, por</text>
+<text x="32" y="208" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">encima de la capacidad de pago de este tamaño de negocio.</text>
+<rect x="615" y="78" width="587" height="182" rx="6" fill="#ffffff" stroke="#dcdbd6" stroke-width="1"/>
+<text x="629" y="102" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" font-weight="bold" fill="#2a78d6">2</text>
+<text x="645" y="102" font-family="DejaVu Sans, Verdana, sans-serif" font-size="13" font-weight="bold" fill="#0b0b0b">Business Outcomes</text>
+<text x="629" y="126" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• 50 suscripciones de pago activas en el plan Starter (S/39 al mes) durante los</text>
+<text x="639" y="141" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">primeros 4 meses de lanzamiento.</text>
+<text x="629" y="163" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• 20 cadenas pequeñas en el plan Professional (S/8 por habitación) y 10 % de clientes</text>
+<text x="639" y="178" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">Starter que actualicen su plan, en 6 meses.</text>
+<text x="629" y="200" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Retención mensual del 90 %, sostenida por el uso de la plataforma al menos 5 días a</text>
+<text x="639" y="215" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">la semana.</text>
+<rect x="18" y="270" width="587" height="152" rx="6" fill="#ffffff" stroke="#dcdbd6" stroke-width="1"/>
+<text x="32" y="294" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" font-weight="bold" fill="#2a78d6">3</text>
+<text x="48" y="294" font-family="DejaVu Sans, Verdana, sans-serif" font-size="13" font-weight="bold" fill="#0b0b0b">Users</text>
+<text x="32" y="318" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Steven Huarcaya — administrador de un hotel independiente de una sede. Decide la</text>
+<text x="42" y="333" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">compra sin intermediarios.</text>
+<text x="32" y="355" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Anyeli Cárdenas — responsable de operaciones de una cadena de 2 a 5 sedes.</text>
+<text x="32" y="377" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Usuarios operativos: recepción, encargados del almacén y personal autorizado que</text>
+<text x="42" y="392" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">gestiona accesos.</text>
+<rect x="615" y="270" width="587" height="152" rx="6" fill="#ffffff" stroke="#dcdbd6" stroke-width="1"/>
+<text x="629" y="294" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" font-weight="bold" fill="#2a78d6">4</text>
+<text x="645" y="294" font-family="DejaVu Sans, Verdana, sans-serif" font-size="13" font-weight="bold" fill="#0b0b0b">User Outcomes &amp; Benefits</text>
+<text x="629" y="318" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Conocer el estado actual de la propiedad sin reconstruirlo desde una hoja de cálculo.</text>
+<text x="629" y="340" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Obtener el consolidado de todas las sedes ya construido.</text>
+<text x="629" y="362" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Encontrar la disponibilidad y el estado de una reserva en el momento del check-in.</text>
+<text x="629" y="384" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Saber qué persona accedió a una habitación y en qué momento.</text>
+<rect x="18" y="432" width="587" height="240" rx="6" fill="#ffffff" stroke="#dcdbd6" stroke-width="1"/>
+<text x="32" y="456" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" font-weight="bold" fill="#2a78d6">5</text>
+<text x="48" y="456" font-family="DejaVu Sans, Verdana, sans-serif" font-size="13" font-weight="bold" fill="#0b0b0b">Solutions</text>
+<text x="32" y="480" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Panel de la propiedad activa con ocupación, habitaciones, inventario y accesos.</text>
+<text x="32" y="502" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Consulta y registro de reservas y disponibilidad sobre un mismo calendario.</text>
+<text x="32" y="524" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Control de existencias por ubicación de almacén, con umbrales de reposición.</text>
+<text x="32" y="546" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Credencial RFID relacionada con una habitación y una persona, con su historial de</text>
+<text x="42" y="561" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">eventos.</text>
+<text x="32" y="583" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">• Reportes por propiedad y periodo, y cambio de propiedad activa sin perder el contexto</text>
+<text x="42" y="598" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">de trabajo.</text>
+<rect x="615" y="432" width="587" height="240" rx="6" fill="#ffffff" stroke="#dcdbd6" stroke-width="1"/>
+<text x="629" y="456" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" font-weight="bold" fill="#2a78d6">6</text>
+<text x="645" y="456" font-family="DejaVu Sans, Verdana, sans-serif" font-size="13" font-weight="bold" fill="#0b0b0b">Hypotheses</text>
+<text x="629" y="480" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">1. 50 suscripciones Starter en 4 meses si Steven obtiene el estado de su propiedad sin</text>
+<text x="639" y="495" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">abrir su hoja de cálculo, con el panel de la propiedad activa.</text>
+<text x="629" y="517" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">2. Retención del 90 % si recepción obtiene la disponibilidad al atender al huésped, con</text>
+<text x="639" y="532" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">reservas y disponibilidad sobre un mismo calendario.</text>
+<text x="629" y="554" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">3. Renovación sostenida si Steven recibe la alerta de un insumo bajo umbral, con el</text>
+<text x="639" y="569" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">control de existencias por ubicación.</text>
+<text x="629" y="591" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">4. 20 cadenas en Professional y 10 % de upgrades en 6 meses si Anyeli obtiene el</text>
+<text x="639" y="606" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">consolidado ya construido, con los reportes por propiedad.</text>
+<text x="629" y="628" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">5. Contratación frente a una solución de acceso aparte si Steven identifica quién entró</text>
+<text x="639" y="643" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">a una habitación, con la trazabilidad RFID.</text>
+<rect x="18" y="682" width="1184" height="100" rx="6" fill="#ffffff" stroke="#dcdbd6" stroke-width="1"/>
+<text x="32" y="706" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" font-weight="bold" fill="#2a78d6">7</text>
+<text x="48" y="706" font-family="DejaVu Sans, Verdana, sans-serif" font-size="13" font-weight="bold" fill="#0b0b0b">What's the most important thing we need to learn first?</text>
+<text x="32" y="730" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">Si el administrador de un hotel de una sede sostiene su operación diaria dentro de Hostera. De ese comportamiento dependen la adquisición y la renovación del plan Starter, que son</text>
+<text x="32" y="745" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">el primer objetivo de negocio. Es la hipótesis 1 y es la de mayor riesgo.</text>
+<rect x="18" y="792" width="1184" height="112" rx="6" fill="#ffffff" stroke="#dcdbd6" stroke-width="1"/>
+<text x="32" y="816" font-family="DejaVu Sans, Verdana, sans-serif" font-size="12" font-weight="bold" fill="#2a78d6">8</text>
+<text x="48" y="816" font-family="DejaVu Sans, Verdana, sans-serif" font-size="13" font-weight="bold" fill="#0b0b0b">What's the least amount of work we need to do to learn the next most important thing?</text>
+<text x="32" y="840" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">Publicar la primera versión de la Frontend Web Application con datos de demostración y medir, con tres administradores de una sede, cuánto tiempo les toma obtener el estado de su</text>
+<text x="32" y="855" font-family="DejaVu Sans, Verdana, sans-serif" font-size="11.5" fill="#52514e">propiedad frente al que hoy declaran con su hoja de cálculo. No requiere los Web Services ni la integración RFID.</text>
 </svg>

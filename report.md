@@ -417,261 +417,280 @@ fin de mejorar la visibilidad y la coordinación de la operación hotelera.
 
 #### 1.2.2.1. Lean UX Problem Statement
 
+Hostera es una iniciativa nueva y no la evolución de un producto existente, por lo que
+su enunciado del problema utiliza la plantilla de Lean UX correspondiente a una
+*brand new initiative*. El enunciado se apoya en las nueve entrevistas registradas en
+la sección 2.2 y en las cifras del sector publicadas por el Ministerio de Comercio
+Exterior y Turismo.
+
 **Enunciado del problema**
 
-Nuestro servicio ofrece una plataforma web administrativa para la gestión y operación
-hotelera. Hostera busca ayudar a los administradores y responsables de la operación a
-coordinar reservas, disponibilidad de habitaciones, inventario y accesos físicos desde
-una visión común. El personal de recepción, los encargados del almacén y el personal
-autorizado también participan en estos procesos, mientras que los huéspedes se
-benefician indirectamente de una atención más coordinada y oportuna.
+El estado actual de la gestión hotelera en el Perú se ha centrado en resolver por
+separado la captación de la reserva, la ocupación de las habitaciones, el
+abastecimiento del almacén y el acceso físico a las habitaciones. El sector reúne
+28 050 establecimientos de hospedaje y 329 340 habitaciones, y el 85,1 % de esos
+establecimientos no está categorizado (MINCETUR, 2025), lo que describe un mercado
+dominado por operaciones pequeñas que resuelven su gestión con las herramientas que
+tienen a la mano. Las entrevistas lo confirman: los cuatro responsables de un
+establecimiento de una sede coordinan su operación por WhatsApp y tres de ellos
+concilian reservas, accesos o almacén en hojas de cálculo o en un cuaderno.
 
-Hemos observado un factor crítico que afecta la coordinación de la operación
-hotelera: la información necesaria para estos procesos puede encontrarse distribuida
-entre diferentes registros o herramientas independientes. Esta situación puede
-dificultar que los responsables y usuarios operativos conozcan el estado actualizado
-de una reserva o habitación, controlen las existencias del almacén y relacionen los
-accesos autorizados con una habitación y un usuario. También puede obligarlos a
-comparar y conciliar datos manualmente, generando riesgos de duplicidad, demoras en la
-atención y menor trazabilidad, especialmente cuando se coordinan varias sedes. Esta
-observación es preliminar y deberá validarse con usuarios del sector hotelero.
+Lo que las herramientas existentes no resuelven es la conexión entre el canal por el
+que entra la reserva y el registro donde se controla la operación. Los sistemas de
+gestión hotelera disponibles atienden la reserva y la tarifa, pero dejan fuera el
+almacén y el acceso físico, o los resuelven con plataformas separadas que se contratan
+aparte: el gerente general entrevistado paga cerca de USD 1 500 anuales por propiedad
+solo por la plataforma de ama de llaves. En las operaciones de varias sedes, la
+consecuencia es que consolidar la información cuesta entre una hora y medio día cada
+vez, y que los reportes llegan desactualizados con frecuencia semanal.
 
-¿Cómo podríamos mejorar la coordinación de la operación hotelera para que sus
-responsables y usuarios operativos trabajen con información actualizada, reduzcan la
-conciliación manual, mantengan la trazabilidad de los eventos y tomen decisiones
-oportunas?
+Hostera atenderá esta brecha con una plataforma administrativa que mantiene en un
+mismo lugar las reservas, la disponibilidad de habitaciones, el inventario del almacén
+y los accesos con tarjeta RFID, con la propiedad activa como contexto de trabajo, de
+modo que el responsable de la operación deje de reconstruir el estado de su hotel a
+partir de registros separados.
 
-**Domain:** Gestión y operación hotelera, incluyendo reservas, disponibilidad de
-habitaciones, control de inventario y gestión de accesos físicos.
+Nuestro foco inicial serán los administradores y propietarios de hoteles
+independientes de una sede y los responsables de operaciones de cadenas de dos a cinco
+sedes, porque son quienes concentran la decisión de compra y sufren directamente el
+costo de la conciliación manual.
+
+Sabremos que hemos tenido éxito cuando Grafo Verde alcance 50 suscripciones de pago
+activas en el plan Starter durante los primeros cuatro meses de lanzamiento, 20
+cadenas pequeñas en el plan Professional en seis meses y una retención mensual del
+90 % sostenida por el uso de la plataforma al menos cinco días a la semana.
+
+**Domain:** Gestión y operación hotelera de establecimientos independientes y cadenas
+pequeñas, incluyendo reservas, disponibilidad de habitaciones, control de inventario
+del almacén y gestión de accesos físicos.
 
 **Customer Segments:**
 
-- Administradores y responsables de la operación hotelera.
-- Personal de recepción.
-- Encargados del almacén.
-- Personal autorizado que gestiona o supervisa accesos.
-- Huéspedes como beneficiarios indirectos de una operación coordinada.
+- Administradores y propietarios de hoteles independientes de una sede.
+- Responsables de operaciones de cadenas hoteleras de dos a cinco sedes.
+- Personal de recepción, encargados del almacén y personal autorizado que gestiona
+  accesos, como usuarios operativos dentro de esas organizaciones.
 
 **Pain Points:**
 
-- Dificultad para consultar en un mismo contexto la información de reservas,
-  habitaciones, inventario y accesos.
-- Riesgo de trabajar con datos diferentes entre áreas o registros independientes.
-- Tiempo adicional dedicado a verificar y conciliar información antes de completar
-  tareas operativas.
-- Poca trazabilidad para relacionar los accesos autorizados con una habitación y un
-  usuario o huésped.
-- Mayor dificultad para mantener una visión consistente cuando se coordinan varias
-  sedes.
+- La reserva entra por un canal y se registra en otro, lo que obliga a trasladar
+  información a mano. Tres de los cuatro entrevistados de una sede declaran esa carga.
+- Los descuadres de almacén y las demoras en el check-in ocurren al menos una vez al
+  mes en las tres respuestas estructuradas del segmento de una sede.
+- Consolidar la información de varias sedes toma entre una hora y medio día, y los
+  reportes llegan desactualizados con frecuencia semanal.
+- Cuando las tarjetas de acceso se comparten entre trabajadores, no es posible
+  identificar quién entró a una habitación ni en qué turno.
+- Los sistemas hoteleros disponibles cubren reservas y tarifas, pero el almacén y el
+  acceso físico se resuelven con plataformas adicionales que se contratan por separado.
 
-**Gap:** Los registros y herramientas utilizados en los procesos hoteleros no
-resuelven de manera integrada la necesidad de contar con información centralizada,
-actualizada y relacionada entre reservas, habitaciones, inventario y accesos. Esta
-brecha limita la visibilidad de los responsables de la operación y la coordinación
-entre los usuarios que participan en las tareas diarias.
+**Gap:** No existe una plataforma que mantenga relacionadas las reservas, las
+habitaciones, el inventario y los accesos para una operación de una a cinco sedes a un
+precio accesible para ese tamaño de negocio. Las alternativas obligan a elegir entre un
+sistema hotelero que deja fuera el almacén y los accesos, o varias herramientas
+contratadas por separado cuyo costo supera la capacidad de pago declarada por estos
+segmentos.
 
-**Vision/Strategy:** Hostera buscará cerrar esta brecha mediante una solución digital
-administrativa orientada a centralizar la información operativa, facilitar su consulta
-y apoyar la coordinación entre áreas. La estrategia inicial considera la gestión de
-reservas y habitaciones, el seguimiento del inventario y la relación de los accesos
-físicos con tarjetas y lectores RFID. Esta dirección deberá evolucionar según la
-evidencia obtenida durante el descubrimiento y la validación.
+**Vision/Strategy:** Hostera centraliza la operación diaria del hotel alrededor de la
+propiedad activa y comercializa esa capacidad como suscripción mensual, con un plan
+Starter para una sede y un plan Professional por habitación para operaciones de varias
+sedes. La estrategia prioriza primero las reservas y la disponibilidad, después el
+inventario del almacén y los reportes, y finalmente la trazabilidad de los accesos con
+tarjeta RFID.
 
-**Initial Segment:** El foco inicial serán los **administradores y responsables de la
-operación hotelera**, debido a que necesitan una visión consolidada para supervisar
-los procesos y tomar decisiones. Los demás perfiles se considerarán usuarios
-operativos relacionados o beneficiarios indirectos. Esta priorización es preliminar y
-deberá confirmarse con evidencia de usuarios.
+**Initial Segment:** Los administradores y propietarios de hoteles independientes de
+una sede, porque deciden la compra sin intermediarios, declaran la mayor carga de
+conciliación manual y constituyen la base del plan Starter.
 
-**Success Criteria:** Se considerará que la iniciativa avanza hacia el éxito cuando
-los usuarios puedan completar tareas representativas con información centralizada,
-actualizada y sin depender de la conciliación entre registros independientes. Para
-medir ese comportamiento se proponen los siguientes indicadores, cuyos valores
-iniciales y metas se definirán durante la validación:
-
-- porcentaje de tareas de consulta o actualización de reservas y disponibilidad que
-  se completan desde el entorno administrativo;
-- tiempo promedio que necesita el personal para encontrar el estado actual de una
-  reserva o habitación;
-- porcentaje de movimientos de inventario registrados y consultables en la solución;
-- porcentaje de accesos autorizados relacionados con una tarjeta RFID, una habitación
-  y un usuario o huésped; y
-- número de inconsistencias detectadas durante escenarios de prueba.
+**Success Criteria:** Los criterios de éxito de la iniciativa son los objetivos de
+negocio de Grafo Verde definidos en la sección 3.2: 50 suscripciones de pago activas
+en el plan Starter en cuatro meses, 20 cadenas pequeñas en el plan Professional y un
+10 % de clientes Starter que actualicen su plan en seis meses, y una retención mensual
+del 90 % con uso de la plataforma al menos cinco días a la semana.
 
 #### 1.2.2.2. Lean UX Assumptions
 
-Los siguientes supuestos representan las creencias iniciales del equipo sobre el
-negocio, los usuarios, los resultados esperados y las capacidades que podría ofrecer
-Hostera. Se formulan como afirmaciones que deberán ser contrastadas mediante
-entrevistas, prototipos y experimentos durante las siguientes iteraciones del proceso
-Lean UX.
+Los siguientes supuestos declaran lo que el equipo sostiene sobre el negocio, los
+usuarios, los resultados esperados y las capacidades de Hostera. Se redactan como
+afirmaciones y no como preguntas, y cada una indica la evidencia de la que proviene:
+las entrevistas registradas en la sección 2.2, identificadas con sus códigos `E1` a
+`E4` y `F1` a `F5`, las cifras de MINCETUR y los precios publicados en la Landing Page.
 
 **Business Assumptions**
 
-1. Creemos que los hoteles que administran sus reservas, habitaciones, inventario y
-   accesos con procesos separados necesitan una visión operativa más centralizada.
-2. Creemos que una plataforma web administrativa enfocada en la coordinación de estos
-   procesos puede ofrecer valor a hoteles individuales y a negocios que administran
-   varias sedes.
-3. Creemos que el principal valor de Hostera para el negocio será facilitar la
-   supervisión diaria y mejorar la consistencia de la información operativa.
-4. Creemos que un modelo de suscripción por hotel o por sede podría ser una
-   alternativa viable para comercializar Hostera, aunque esta posibilidad todavía no
-   ha sido validada con clientes.
-5. Creemos que Grafo Verde puede organizar sus capacidades de diseño y desarrollo
-   para construir y validar un producto mínimo viable dentro del alcance académico
-   definido para Hostera.
+1. El mercado objetivo de Grafo Verde son operaciones hoteleras pequeñas: de los
+   28 050 establecimientos de hospedaje del país, el 85,1 % no está categorizado
+   (MINCETUR, 2025), y las nueve entrevistas corresponden a operaciones de entre 20 y
+   100 habitaciones.
+2. Estas operaciones pagan por software de gestión: cuatro de los cinco respondientes
+   válidos del formulario declaran que pagarían S/51 o más al mes, y el gerente general
+   entrevistado (`E4`) ya paga cerca de USD 1 500 anuales por propiedad por una
+   plataforma complementaria de ama de llaves.
+3. Una suscripción mensual escalonada —Starter a S/39 por una sede y Professional a
+   S/8 por habitación para cadenas— captura esa disposición de pago y permite que el
+   ingreso crezca con el tamaño del cliente.
+4. La decisión de compra se concentra en el responsable de la operación: en los dos
+   segmentos, quien administra o supervisa el establecimiento es también quien evalúa
+   y aprueba la herramienta.
+5. Grafo Verde puede construir y validar el producto mínimo viable dentro del alcance
+   académico definido, apoyándose en el flujo de trabajo y las convenciones descritas
+   en la sección 5.1.
 
 **Business Outcome Assumptions**
 
-1. Creemos que los responsables de la operación consultarán el entorno administrativo
-   como una fuente principal para supervisar reservas, habitaciones, inventario y
-   accesos.
-2. Creemos que la centralización de la información reducirá la necesidad de comparar
-   registros independientes antes de tomar decisiones operativas.
-3. Creemos que el personal podrá identificar con mayor rapidez el estado de una
-   reserva o habitación cuando la información se encuentre disponible en un mismo
-   entorno.
-4. Creemos que una mayor trazabilidad de los accesos y movimientos de inventario
-   permitirá a los responsables detectar inconsistencias con mayor oportunidad.
-5. Creemos que estos cambios de comportamiento contribuirán a que Hostera genere
-   valor para los hoteles, aunque las métricas y metas concretas deberán definirse
-   después de establecer una línea base.
+1. Las suscripciones activas del plan Starter crecen cuando el administrador de una
+   sede completa su operación diaria dentro de Hostera, porque la renovación mensual
+   depende del uso y no de un compromiso anual.
+2. Los clientes del plan Starter actualizan al plan Professional cuando incorporan una
+   segunda sede, porque es el momento en que aparece el costo de consolidar.
+3. La retención mensual se sostiene con el uso diario de las funciones de reservas e
+   inventario, que son las que los entrevistados sitúan en los primeros lugares de sus
+   prioridades.
+4. El tiempo que hoy se dedica a conciliar —de 30 minutos a 2 horas diarias en una
+   sede y de 1 hora a medio día por consolidado en varias sedes— es el indicador que
+   el cliente reconoce como ahorro y el argumento comercial más directo.
+5. La demostración previa es condición de cierre: los cinco respondientes válidos del
+   formulario la piden antes de comprometerse.
 
 **User Assumptions**
 
-1. **¿Quién es el usuario?** Creemos que los usuarios principales serán los
-   administradores y responsables de la operación hotelera. También interactuarán con
-   la solución el personal de recepción, los encargados del almacén y el personal
-   autorizado que gestiona o supervisa los accesos. Los huéspedes serán beneficiarios
-   indirectos y no constituirán el usuario administrativo principal del MVP.
-2. **¿Dónde encaja nuestro producto en su trabajo o vida?** Creemos que Hostera
-   encajará en las actividades diarias de administración y operación del hotel como
-   un entorno común para consultar y actualizar información de reservas, habitaciones,
-   inventario y accesos. Los responsables lo utilizarán para supervisar la operación,
-   mientras que el personal operativo lo empleará como apoyo en sus tareas específicas.
-3. **¿Qué problemas debe resolver nuestro producto?** Creemos que Hostera debe
-   ayudar a resolver la dispersión de información entre registros independientes, las
-   inconsistencias entre reservas y disponibilidad, la poca visibilidad del inventario,
-   la dificultad para rastrear accesos autorizados y la coordinación de información
-   entre varias sedes.
-4. **¿Cuándo y cómo se usará nuestro producto?** Creemos que Hostera se utilizará
-   durante el registro o modificación de reservas, la actualización de la
-   disponibilidad, los procesos de check-in y check-out, el registro de movimientos
-   del almacén, la autorización de accesos y la revisión del historial de eventos. El
-   uso se realizará desde la plataforma web, según las responsabilidades de cada
-   usuario y las necesidades de la operación.
-5. **¿Qué características son importantes?** Creemos que serán importantes la
-   centralización de reservas y disponibilidad, el registro y consulta del inventario,
-   la relación de tarjetas y lectores RFID con habitaciones y usuarios, la trazabilidad
-   de los accesos y la posibilidad de consultar información de una o varias sedes.
-6. **¿Cómo debe verse y comportarse nuestro producto?** Creemos que Hostera debe
-   presentar una interfaz clara, ordenada y fácil de comprender para usuarios con
-   diferentes responsabilidades. La solución debe mostrar información actualizada,
-   mantener una navegación consistente, brindar confirmación de las acciones
-   realizadas y facilitar la identificación de estados, cambios e incidencias sin
-   exigir que el usuario consulte múltiples registros.
+1. **Usuario principal.** El usuario principal es quien responde por la operación
+   completa del establecimiento: propietario, administrador general, gerente de
+   operaciones o jefe de recepción. El personal de recepción, los encargados del
+   almacén y el personal autorizado que gestiona accesos son usuarios operativos, y
+   los huéspedes son beneficiarios indirectos.
+2. **Encaje en su trabajo.** Hostera se usa durante la jornada de operación, entre el
+   momento en que llega una reserva y el cierre de caja, como el lugar donde se
+   consulta y se actualiza el estado de la propiedad activa.
+3. **Problemas que resuelve.** Hostera resuelve el traslado manual de información
+   entre el canal de entrada y el registro operativo, los descuadres entre el almacén
+   y lo registrado, las demoras del check-in por información dispersa y el costo de
+   consolidar varias sedes.
+4. **Momento y forma de uso.** Se usa a diario desde una laptop o una computadora de
+   escritorio, con Chrome como navegador más frecuente, y de forma complementaria
+   desde el celular, que es el dispositivo principal de uno de los entrevistados.
+5. **Características importantes.** Importan la vista del estado actual de la
+   propiedad activa, la consulta y el registro de reservas y disponibilidad, el
+   control de existencias por ubicación de almacén y la relación entre una tarjeta de
+   acceso, una habitación y una persona.
+6. **Apariencia y comportamiento.** Hostera debe mostrar el estado actual sin exigir
+   pasos adicionales, confirmar cada acción realizada y permitir cambiar de propiedad
+   activa sin perder el contexto de trabajo.
 
 **User Outcome and Benefit Assumptions**
 
-1. Creemos que los responsables de la operación desean contar con información
-   actualizada para tomar decisiones sin depender de múltiples registros.
-2. Creemos que el personal de recepción se beneficiará de consultar rápidamente la
-   disponibilidad de las habitaciones y el estado de las reservas.
-3. Creemos que los encargados del almacén se beneficiarán de disponer de un historial
-   organizado de los ingresos, consumos y existencias.
-4. Creemos que el personal autorizado y los responsables del hotel valorarán poder
-   revisar la trazabilidad de los accesos vinculados con tarjetas RFID.
-5. Creemos que los usuarios operativos considerarán valiosa una experiencia que
-   reduzca la conciliación manual y les permita coordinar tareas entre áreas o sedes.
+1. El administrador de una sede deja de reconstruir el estado de su hotel a partir de
+   una hoja de cálculo y lo consulta directamente, lo que reduce el tiempo diario de
+   conciliación.
+2. El responsable de varias sedes deja de armar el consolidado a mano y lo obtiene ya
+   construido, lo que elimina la espera entre el cierre de cada sede y el reporte.
+3. El personal de recepción encuentra la disponibilidad y el estado de una reserva en
+   el momento del check-in, lo que reduce las demoras que los entrevistados declaran
+   con frecuencia semanal.
+4. El encargado del almacén registra los movimientos donde ocurren y evita el
+   descuadre entre lo que hay y lo que está anotado.
+5. El responsable de la operación identifica qué persona accedió a una habitación y en
+   qué momento, lo que convierte la pérdida de un objeto en un hecho rastreable.
 
 **Feature Assumptions**
 
-1. Creemos que un panel administrativo que centralice reservas, habitaciones,
-   inventario y accesos ayudará a los usuarios a supervisar la operación desde un
-   mismo entorno.
-2. Creemos que las funciones para registrar y consultar reservas y disponibilidad
-   permitirán reducir inconsistencias entre la información reservada y el estado de
-   las habitaciones.
-3. Creemos que el registro de movimientos de inventario permitirá mejorar la
-   visibilidad de las existencias y facilitar su seguimiento.
-4. Creemos que la integración con tarjetas y lectores RFID permitirá asociar accesos
-   autorizados con habitaciones y usuarios, además de conservar un historial de
-   eventos.
-5. Creemos que una estructura de información preparada para una o varias sedes
-   permitirá que Hostera crezca junto con las necesidades de sus clientes.
+1. Un panel de la propiedad activa que reúne ocupación, habitaciones, inventario y
+   accesos entrega el estado actual sin consultar otros registros.
+2. La consulta y el registro de reservas y disponibilidad sobre un mismo calendario
+   evitan las dobles reservas que se declaran con frecuencia mensual.
+3. El control de existencias por ubicación de almacén, con umbrales de reposición,
+   anticipa el descuadre en lugar de detectarlo en el inventario siguiente.
+4. La relación entre credencial RFID, habitación y persona, con su historial de
+   eventos, hace rastreable cada acceso.
+5. El cambio de propiedad activa y los reportes por propiedad y periodo sustituyen el
+   consolidado manual de las operaciones de varias sedes.
 
-Estos supuestos no representan requisitos definitivos ni resultados comprobados. Los
-supuestos más riesgosos deberán priorizarse para formular los Hypothesis Statements y
-definir los experimentos que permitan confirmarlos o modificarlos.
+Los supuestos de mayor riesgo son los de resultado de negocio, porque dependen de un
+comportamiento que todavía no se ha observado. Esos son los que se convierten en los
+Hypothesis Statements de la siguiente sección.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-Los Hypothesis Statements representan una evolución de los Assumptions, ya que
-convierten las creencias iniciales del equipo en afirmaciones que pueden medirse y
-comprobarse. Cada hipótesis aplica el formato de Lean UX y relaciona un business
-outcome con un user outcome y una feature específica. Esta estructura permite
-contrastar las ideas con evidencia y comprobar si Hostera contribuye tanto a los
-objetivos del negocio como a las necesidades reales de sus usuarios.
+Cada hipótesis aplica la plantilla de Lean UX: relaciona un resultado de negocio de
+Grafo Verde con la persona que obtiene el beneficio y con la característica que lo
+produce. Las personas corresponden a los arquetipos de la sección 2.3.1 y las métricas
+provienen de los objetivos de negocio de la sección 3.2 y de los tiempos que los
+entrevistados declararon en la sección 2.2.
 
-**Hipótesis 1: Panel administrativo centralizado**
+**Hipótesis 1: Panel de la propiedad activa**
 
-Creemos que centralizar la información de reservas, habitaciones, inventario y
-accesos en un panel administrativo reducirá la dependencia de registros
-independientes para supervisar la operación hotelera.
+Creemos que lograremos **50 suscripciones de pago activas en el plan Starter durante
+los primeros cuatro meses** si **Steven Huarcaya**, administrador de un hotel
+independiente de una sede, obtiene **el estado actual de su propiedad sin abrir su
+hoja de cálculo** con **el panel de la propiedad activa**.
 
-**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
-tareas de supervisión que los administradores y responsables de la operación
-completan desde el panel sin consultar registros adicionales, respecto a la línea
-base definida durante la validación.
+*Señal que lo confirma:* el tiempo diario que Steven dedica a cuadrar reservas, caja e
+inventario baja de la franja de 1 a 2 horas que declara `F3` a menos de 30 minutos,
+que es la franja que ya alcanza `F2` con un sistema instalado.
 
-**Hipótesis 2: Gestión de reservas y disponibilidad**
+**Hipótesis 2: Reservas y disponibilidad sobre un mismo calendario**
 
-Creemos que ofrecer al personal de recepción y a los administradores información
-actualizada para registrar y consultar reservas y disponibilidad reducirá las
-inconsistencias entre las reservas registradas y el estado de las habitaciones.
+Creemos que lograremos **una retención mensual del 90 % con uso de la plataforma al
+menos cinco días a la semana** si **el personal de recepción de Steven** obtiene
+**la disponibilidad y el estado de una reserva en el momento de atender al huésped**
+con **la consulta y el registro de reservas sobre un mismo calendario**.
 
-**Sabremos que hemos tenido éxito cuando veamos** una reducción de al menos 5% en
-las inconsistencias detectadas entre reservas y disponibilidad, y una disminución del
-tiempo necesario para encontrar el estado de una reserva o habitación, en comparación
-con la línea base de la validación.
+*Señal que lo confirma:* las demoras en el check-in y las dobles reservas, que `F1`,
+`F2` y `F3` declaran con frecuencia mensual o semanal, dejan de registrarse durante un
+mes completo de operación.
 
-**Hipótesis 3: Registro y consulta del inventario**
+**Hipótesis 3: Control de existencias por ubicación de almacén**
 
-Creemos que registrar y consultar los movimientos de inventario permitirá a los
-encargados del almacén y a los responsables de la operación mejorar la visibilidad y
-el seguimiento de las existencias.
+Creemos que lograremos **que el uso diario sostenga la renovación del plan Starter**
+si **Steven** obtiene **la alerta de un insumo por debajo de su umbral antes de que
+falte** con **el control de existencias por ubicación de almacén**.
 
-**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
-movimientos de inventario registrados y consultables, junto con una reducción de las
-diferencias encontradas durante las pruebas de control de existencias, respecto a la
-línea base.
+*Señal que lo confirma:* los descuadres de almacén, declarados con frecuencia mensual
+o semanal por los tres respondientes del segmento, dejan de aparecer en el cierre del
+mes.
 
-**Hipótesis 4: Control y trazabilidad de accesos RFID**
+**Hipótesis 4: Reportes por propiedad y cambio de propiedad activa**
 
-Creemos que integrar las tarjetas y lectores RFID con el registro de eventos de
-Hostera permitirá al personal autorizado y a los responsables de la operación mejorar
-la trazabilidad de los accesos a las habitaciones y espacios del hotel.
+Creemos que lograremos **20 cadenas hoteleras pequeñas en el plan Professional y que
+el 10 % de los clientes Starter actualicen su plan en seis meses** si **Anyeli
+Cárdenas**, responsable de operaciones de una cadena de dos a cinco sedes, obtiene
+**el consolidado de todas sus sedes ya construido** con **los reportes por propiedad y
+periodo y el cambio de propiedad activa**.
 
-**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en los
-accesos autorizados que quedan relacionados con una tarjeta RFID, una habitación y un
-usuario o huésped, además de una reducción del tiempo necesario para consultar su
-historial.
+*Señal que lo confirma:* el tiempo de armar el consolidado baja del rango de 1 hora a
+medio día que declaran `F4` y `F5` a una consulta dentro de la plataforma, y los
+reportes desactualizados dejan de declararse con frecuencia semanal.
 
-**Hipótesis 5: Administración de una o varias sedes**
+**Hipótesis 5: Trazabilidad de los accesos con credenciales RFID**
 
-Creemos que una estructura de información preparada para administrar una o varias
-sedes permitirá a los administradores y responsables de la operación mantener una
-visión consistente sin perder el contexto de cada hotel.
+Creemos que lograremos **que los clientes con tarjetas compartidas entre trabajadores
+contraten Hostera en lugar de una solución de control de acceso por separado** si
+**Steven y el personal autorizado** obtienen **la identificación de quién accedió a
+una habitación y en qué momento** con **la relación entre credencial RFID, habitación
+y persona y su historial de eventos**.
 
-**Sabremos que hemos tenido éxito cuando veamos** un aumento de al menos 5% en las
-tareas de consulta y supervisión completadas correctamente en escenarios de una y
-varias sedes, sin duplicar ni confundir la información operativa.
+*Señal que lo confirma:* la necesidad que Wilson (`E2`) describe como su principal
+motivo para adoptar un sistema queda cubierta, y cada acceso del periodo de prueba
+queda asociado a una credencial, una habitación y una persona identificable.
+
+Las hipótesis 1 y 4 son las de mayor riesgo, porque sostienen directamente los
+objetivos de adquisición y de expansión del negocio. Son las que deben contrastarse
+primero en las sesiones de validación.
 
 #### 1.2.2.4. Lean UX Canvas
 
+El Lean UX Canvas sintetiza en una sola vista el resultado de las secciones
+anteriores. Esta es la segunda iteración del lienzo: la primera se elaboró antes de
+contar con las entrevistas, por lo que sus resultados de negocio todavía describían la
+operación del hotel. La versión actual incorpora el problema dimensionado con datos
+del sector y de las entrevistas, los resultados de negocio de Grafo Verde definidos en
+la sección 3.2, las personas de la sección 2.3.1 y las cinco hipótesis de la sección
+anterior. Las casillas 7 y 8 fijan el aprendizaje pendiente y el experimento mínimo
+para obtenerlo, que corresponde al alcance del Sprint 2.
+
 ![Lean UX Canvas de Hostera](assets/chapter-1/hostera-lean-ux-canvas.svg)
-*Figura 1.1. Lean UX Canvas de Hostera.*
+
+*Figura 1.1. Lean UX Canvas de Hostera, segunda iteración.*
 
 ## 1.3. Segmentos objetivo
 
