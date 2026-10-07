@@ -642,19 +642,20 @@ mes completo de operación.
 
 **Hipótesis 3: Control de existencias por ubicación de almacén**
 
-Creemos que lograremos **una retención mensual del 90 % de los clientes del plan
-Starter**
-si **Steven** obtiene **la alerta de un insumo por debajo de su umbral antes de que
-falte** con **el control de existencias por ubicación de almacén**.
+Creemos que lograremos **que el 10 % de los clientes del plan Starter actualicen al
+plan Professional en seis meses** si **Steven** obtiene **la alerta de un insumo por
+debajo de su umbral antes de que falte** con **el control de existencias por ubicación
+de almacén**. Las alertas automáticas de stock crítico forman parte del plan
+Professional, por lo que esta capacidad es la que motiva el cambio de plan.
 
 *Señal que lo confirma:* los descuadres de almacén, declarados con frecuencia mensual
 o semanal por los tres respondientes del segmento, dejan de aparecer en el cierre del
-mes.
+mes, y los clientes Starter que activan las alertas pasan al plan Professional.
 
 **Hipótesis 4: Reportes por propiedad y cambio de propiedad activa**
 
-Creemos que lograremos **20 cadenas hoteleras pequeñas en el plan Professional y que
-el 10 % de los clientes Starter actualicen su plan en seis meses** si **Anyeli
+Creemos que lograremos **20 cadenas hoteleras pequeñas en el plan Professional en seis
+meses** si **Anyeli
 Cárdenas**, responsable de operaciones de una cadena de dos a cinco sedes, obtiene
 **el consolidado de todas sus sedes ya construido** con **los reportes por propiedad y
 periodo y el cambio de propiedad activa**.
