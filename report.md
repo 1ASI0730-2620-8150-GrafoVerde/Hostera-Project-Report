@@ -1523,6 +1523,14 @@ frecuencia ocurre una incidencia. Cuando una característica solo puede medirse 
 respuestas estructuradas, la fila correspondiente indica su base entre paréntesis en
 lugar del total del segmento.
 
+Las respuestas de las entrevistas complementarias se registran en las hojas de cálculo
+de cada formulario, de donde se obtuvieron los conteos y porcentajes de esta sección:
+
+- Formulario del segmento 1, operaciones de una sede (`F1` a `F3`):
+  https://docs.google.com/spreadsheets/d/18yiAgkBVyqIB-UtTMOLA52Hmr7Lm_dgl_Oh66REljb0
+- Formulario del segmento 2, operaciones de varias sedes (`F4` a `F6`):
+  https://docs.google.com/spreadsheets/d/1Tp2EJ_TLLZc0xVgZ8MGqhc3nFl_J8o9mcT7ywq4RW7U
+
 #### Segmento 1: administradores y propietarios de hoteles independientes (n = 4)
 
 | Característica | Resultado | % | Fuente |
