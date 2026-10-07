@@ -4,7 +4,7 @@ set -Eeuo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 REPOSITORY_ROOT="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
-INPUT_FILE="${REPOSITORY_ROOT}/README.md"
+INPUT_FILE="${REPOSITORY_ROOT}/report.md"
 OUTPUT_FILE="${1:-${REPOSITORY_ROOT}/report.pdf}"
 TEMP_DIR="$(mktemp -d)"
 HTML_FILE="${TEMP_DIR}/report.html"
