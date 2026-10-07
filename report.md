@@ -1869,18 +1869,31 @@ El Big Picture EventStorming representa el dominio hotelero de Hostera de princi
 fin, antes de entrar en el diseño. El tablero ordena en el tiempo los eventos del
 negocio, escritos en pasado y en inglés como el resto del Ubiquitous Language, junto
 con los actores que los provocan, los sistemas externos que participan y los puntos
-que el equipo no podía resolver todavía.
-## Etapa 1
+que el equipo no podía resolver todavía. La sesión se desarrolló en tres etapas.
+
+#### Etapa 1: exploración de eventos
+
 Solapamiento masivo de información, eventos repetidos con distinta redacción, y un fuerte desorden cronológico que dificulta la lectura global.
-<img src="assets/chapter-2/hostera-bigPicture-eventStorming-Etapa1.jpg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
-## Etapa 2
+
+<img src="assets/chapter-2/hostera-bigPicture-eventStorming-Etapa1.jpg" alt="Etapa 1 del Big Picture EventStorming de Hostera, con los eventos todavía sin ordenar" style="width:100%; height:auto;"/>
+
+*Figura 2.15. Etapa 1 del Big Picture EventStorming: exploración de eventos.*
+
+#### Etapa 2: línea de tiempo
+
 Los eventos dispersos se alinean horizontalmente de izquierda a derecha siguiendo el flujo natural del negocio de Hostera, desde la reserva inicial hasta el check-out y el cierre diario.
-<img src="assets/chapter-2/BigPicture-eventStorming-etapa2.jpg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
-## Etapa 3
-Se introducen los eventos negativos en rojo (problemas como conflictos de overbooking o fallas de stock) y se sitúan los elementos de control superior (cabeceras amarillas de fases y notas de actores o comandos que desencadenan los eventos, tal como se aprecia organizado en filas horizontales en la imagen.
+
+<img src="assets/chapter-2/BigPicture-eventStorming-etapa2.jpg" alt="Etapa 2 del Big Picture EventStorming de Hostera, con los eventos ordenados en el tiempo" style="width:100%; height:auto;"/>
+
+*Figura 2.16. Etapa 2 del Big Picture EventStorming: eventos ordenados en la línea de tiempo.*
+
+#### Etapa 3: fases, actores y hotspots
+
+Se introducen los eventos negativos en rojo (problemas como conflictos de overbooking o fallas de stock) y se sitúan los elementos de control superior (cabeceras amarillas de fases y notas de actores o comandos que desencadenan los eventos), tal como se aprecia organizado en filas horizontales en la imagen.
+
 <img src="assets/chapter-2/big-picture-event-storming-hostera.svg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 2.15. Big Picture EventStorming del dominio de Hostera.*
+*Figura 2.17. Etapa 3 del Big Picture EventStorming: tablero final con fases, actores, sistemas externos y hotspots.*
 
 El tablero se organiza en ocho flujos. Los cinco primeros siguen la vida de una
 estadía: la configuración de la propiedad (`Property Added`, `Rooms Registered`,
