@@ -300,11 +300,12 @@ La propuesta de Grafo Verde se centra en construir un ecosistema de gestión hot
 
 ### 1.2.1. Antecedentes y problemática
 
-Esta sección presenta una aproximación preliminar a la problemática que Hostera busca
-atender. El análisis se organizó mediante la técnica 5W+2H, una herramienta para
-describir un problema y concentrarse en sus causas antes de plantear una solución
-(Progressa Lean, 2021). Los hallazgos descritos deberán complementarse y validarse posteriormente con
-entrevistas y otras actividades de needfinding.
+Esta sección describe el problema que Hostera busca atender. El análisis se organizó
+con la técnica 5W+2H, una herramienta para describir un problema y concentrarse en
+sus causas antes de plantear una solución (Progressa Lean, 2021). Las respuestas se
+apoyan en las diez entrevistas registradas en la sección 2.2, identificadas con los
+códigos `E1` a `E5` y `F1` a `F5`, y en las cifras del sector publicadas por el
+Ministerio de Comercio Exterior y Turismo.
 
 #### Técnica de The 5 'W's y 2 'H's
 
@@ -312,111 +313,121 @@ entrevistas y otras actividades de needfinding.
 
 **¿Cuál es el problema?**
 
-Los hoteles necesitan coordinar varias actividades para atender a sus huéspedes y
-mantener la operación diaria: gestionar reservas, conocer la disponibilidad de las
-habitaciones, controlar las existencias del almacén y administrar los accesos a los
-espacios físicos. En la aproximación actual del proyecto, estas actividades pueden
-apoyarse en registros, archivos o herramientas independientes, lo que dificulta
-obtener una visión única y actualizada del estado del hotel.
+Los hoteles pequeños registran cada parte de su operación en un lugar distinto. La
+reserva llega por WhatsApp, por teléfono o por una agencia en línea y se anota en una
+hoja de cálculo, en un cuaderno o en un sistema hotelero; el almacén se controla en
+otra hoja, y los accesos a las habitaciones, cuando se registran, quedan en un
+sistema de tarjetas aparte. Los cuatro entrevistados que administran una sola sede
+coordinan su operación por WhatsApp, y tres de ellos concilian reservas, accesos o
+almacén en hojas de cálculo o en un cuaderno.
 
-Cuando la información de una reserva, una habitación, un producto del almacén o un
-acceso no se encuentra sincronizada, el personal puede trabajar con datos distintos
-según el área que consulte. Esto puede provocar duplicidad de registros,
-inconsistencias entre la reserva y la disponibilidad real, demoras en la atención y
-dificultades para rastrear quién ingresó a una habitación. La problemática descrita
-es preliminar y deberá contrastarse con usuarios del sector hotelero.
+El resultado es que nadie tiene a la vista el estado completo del hotel. Para saber
+qué habitación está libre, qué insumo falta o quién entró a una habitación, alguien
+tiene que reunir esa información a mano.
 
 **When (¿Cuándo?)**
 
 **¿Cuándo se presenta el problema?**
 
-La problemática puede presentarse durante toda la operación diaria del hotel, pero
-se vuelve especialmente relevante cuando se registra una nueva reserva, se modifica
-una reserva existente o se actualiza el estado de una habitación. También puede
-aparecer durante el check-in y el check-out, cuando recepción necesita confirmar
-rápidamente la disponibilidad y autorizar o revocar accesos.
+El problema aparece en los momentos en que una parte de la operación depende de
+otra. En el check-in, la recepción necesita confirmar la habitación, el pago y el
+acceso del huésped: las demoras en ese paso se declaran al menos una vez al mes en
+las tres respuestas estructuradas del segmento de una sede. Al registrar una reserva
+aparece el riesgo de la doble reserva, que dos de esas tres respuestas declaran con
+frecuencia mensual. En el cambio de turno, una entrevistada describe que los
+registros quedan inconsistentes (`F3`), y en el cierre de caja se reconstruyen los
+reportes del día (`E1`).
 
-Del mismo modo, el problema puede manifestarse cuando se reciben o consumen
-productos del almacén y cuando se requiere revisar el historial de accesos. En esos
-momentos, la falta de información compartida puede obligar al personal a consultar
-varios registros y conciliarlos manualmente antes de tomar una decisión.
+En las operaciones de varias sedes el momento crítico es la consolidación, que se
+hace cada semana o cada día y toma entre una hora y medio día cada vez (`F4`, `F5`).
 
 **Where (¿Dónde?)**
 
 **¿En qué lugares o procesos se presenta?**
 
-El problema se ubica principalmente en los procesos administrativos y operativos del
-hotel. Comprende la recepción, donde se registran las reservas y se atiende a los
-huéspedes; la gestión de habitaciones, donde se consulta su disponibilidad; el
-almacén, donde se controla el inventario; y los puntos de acceso donde se validan
-las tarjetas RFID.
+El problema se ubica en la recepción, donde se registran las reservas y se atiende al
+huésped; en el almacén, donde los descuadres entre lo que hay y lo anotado aparecen
+al menos una vez al mes en las tres respuestas del segmento de una sede; y en el
+control de acceso a las habitaciones, sobre todo cuando las tarjetas se comparten
+entre trabajadores y no es posible saber quién entró (`E2`).
 
-La dificultad también puede aumentar cuando el negocio administra más de una sede,
-porque la información debe consolidarse y mantenerse consistente entre diferentes
-hoteles. Por esa razón, el análisis considera tanto la operación de un hotel
-individual como la coordinación básica de varias sedes desde un mismo entorno.
+Cuando el negocio tiene más de una sede, el problema se traslada al espacio entre
+ellas. Cada sede usa sus propias hojas y la información llega por WhatsApp o por
+correo con archivos de Excel, por lo que los reportes consolidados llegan
+desactualizados con frecuencia semanal (`F4`, `F5`).
 
 **Who (¿Quién?)**
 
 **¿A quiénes afecta el problema?**
 
-Los usuarios potenciales directamente relacionados con el problema son los
-administradores y responsables de la operación hotelera, el personal de recepción,
-los encargados del almacén y el personal autorizado que gestiona o supervisa los
-accesos. Cada perfil necesita consultar o actualizar una parte diferente de la
-operación, por lo que la ausencia de una fuente común de información puede generar
-trabajo duplicado y dificultades de coordinación.
+Afecta en primer lugar a quien responde por la operación: el administrador o
+propietario de un hotel independiente de una sede y el responsable de operaciones de
+una cadena de dos a cinco sedes. También afecta al personal de recepción, a los
+encargados del almacén y al personal autorizado que gestiona los accesos, que
+trabajan cada uno con una parte distinta de la información.
 
-Los huéspedes pueden verse afectados indirectamente cuando existen inconsistencias
-en la disponibilidad de las habitaciones, demoras durante la atención o problemas
-para acceder a un espacio autorizado. Estos perfiles son una identificación inicial
-del dominio; la segmentación definitiva y las necesidades de cada usuario deberán
-validarse mediante entrevistas y actividades de needfinding.
+Los huéspedes lo sufren de forma indirecta. Uno de los entrevistados relata que un
+huésped recibió una habitación que todavía estaba en limpieza y hubo que cambiar la
+asignación en el momento (`F1`).
 
 **Why (¿Por qué?)**
 
 **¿Por qué se presenta el problema?**
 
-La causa preliminar es la ausencia de una gestión centralizada que relacione los
-datos de reservas, habitaciones, inventario y accesos. Cuando cada proceso se
-registra o consulta de manera independiente, las actualizaciones pueden no estar
-disponibles para todas las personas que las necesitan y se reduce la trazabilidad de
-los cambios.
+Porque las herramientas que usan estos hoteles resuelven partes separadas de la
+operación. Los sistemas hoteleros disponibles cubren la reserva y la tarifa, pero el
+almacén y el acceso físico quedan fuera o se resuelven con plataformas adicionales:
+el gerente general entrevistado paga cerca de USD 1 500 al año por propiedad solo por
+una plataforma para el área de ama de llaves (`E4`). Quienes no tienen un sistema
+hotelero sostienen todo con hojas de cálculo, cuadernos y mensajes.
 
-Esta situación puede producir duplicidad de información, diferencias entre el
-estado registrado y el estado real de una habitación, menor visibilidad de las
-existencias y dificultades para revisar los accesos realizados. Como resultado, el
-personal cuenta con menos información para actuar oportunamente y debe invertir
-tiempo en verificar o conciliar datos antes de completar sus tareas.
+A eso se suma el tamaño de las operaciones. En un equipo de pocas personas, la misma
+persona registra reservas, atiende la recepción y controla el almacén, así que cada
+traslado manual de información le quita tiempo a la atención.
 
 **How (¿Cómo?)**
 
 **¿Cómo se manifiesta y se diferencia del estado esperado?**
 
-En un estado operativo esperado, una modificación de reserva debería reflejarse en
-la disponibilidad de la habitación y estar disponible para las personas responsables
-de la atención. De forma similar, el consumo o ingreso de productos debería
-actualizar la información del inventario, y un acceso autorizado debería poder
-relacionarse con una tarjeta, una habitación y un usuario o huésped.
+En el estado esperado, registrar una reserva actualiza la disponibilidad de la
+habitación, un ingreso o una salida del almacén actualiza las existencias, y cada
+acceso queda asociado a una tarjeta, una habitación y una persona.
 
-En la situación problemática, estos cambios pueden quedar distribuidos en procesos
-independientes. El personal debe buscar información en diferentes registros, comparar
-datos y comunicar manualmente las actualizaciones. La ausencia de un panel común y
-de una relación clara entre habitaciones y accesos RFID dificulta distinguir con
-rapidez el estado actual de la operación y seguir el historial de los eventos.
+En la situación actual esos cambios no se propagan. Un administrador con sistema
+hotelero ve la ocupación al momento, pero tiene que exportar datos para usar los
+reportes de almacén (`F1`). Otra administradora concilia a mano las reservas que le
+llegan por WhatsApp con su hoja de disponibilidad (`F3`). En un hospedaje, los
+accesos se anotan en papel y luego se pasan a Excel (`E1`). En una operación de
+varias sedes, cada sede usa hojas distintas y conciliar la disponibilidad y el
+inventario cuesta medio día por semana (`F4`).
 
 **How Much (¿Cuánto?)**
 
-**¿Cuánto costará implementar la solución?**
+**¿Cuánto cuesta el problema?**
 
-Actualmente no se cuenta con métricas operativas validadas sobre la frecuencia de
-los incidentes, el tiempo dedicado a conciliar información o las pérdidas económicas
-asociadas. Para dimensionar inicialmente el esfuerzo, se plantea el siguiente
-presupuesto referencial para desarrollar un producto mínimo viable de software. Los
-montos son una estimación de planificación y deberán ajustarse después de definir
-los requisitos, la arquitectura y las integraciones necesarias.
+El problema se mide primero en tiempo. Los administradores de una sede que
+respondieron el formulario dedican entre 30 minutos y 2 horas al día a cuadrar
+reservas, caja e inventario (`F1`, `F3`); si ese cuadre se hace todos los días, son
+entre 15 y 60 horas al mes de una sola persona. En las operaciones de varias sedes,
+armar cada consolidado toma entre una hora y medio día (`F4`, `F5`).
 
-**Presupuesto estimado de software:**
+También se mide en incidentes. En el segmento de una sede, los descuadres de almacén
+y las demoras en el check-in aparecen al menos una vez al mes en todas las respuestas
+estructuradas, y la doble reserva en dos de cada tres. En el segmento de varias
+sedes, los reportes desactualizados y las diferencias de procesos entre sedes se
+declaran cada semana.
+
+El alcance del problema lo da el tamaño del sector. En 2024 el Perú tenía 28 050
+establecimientos de hospedaje y 329 340 habitaciones, y el 85,1 % de esos
+establecimientos no estaba categorizado (MINCETUR, 2025), lo que describe un mercado
+formado sobre todo por operaciones pequeñas. Esas operaciones están dispuestas a
+pagar por resolverlo: cuatro de los cinco respondientes válidos del formulario
+pagarían S/51 o más al mes por una herramienta que reúna reservas, almacén y accesos.
+
+**Costo de referencia de la solución.** Como referencia para el equipo, se estimó el
+costo de desarrollar un producto mínimo viable de software. Los montos son una
+estimación de planificación, no una cotización comercial.
+
 
 | Componente                                                                |            Costo estimado |
 | ------------------------------------------------------------------------- | ------------------------: |
@@ -429,10 +440,7 @@ los requisitos, la arquitectura y las integraciones necesarias.
 | **Total estimado de software**                                            | **S/ 15,700 – S/ 25,000** |
 
 Esta estimación no incluye la compra de tarjetas, lectores RFID u otro hardware
-físico, ni costos de operación del hotel. Tampoco representa una cotización
-comercial; su finalidad es mostrar una primera aproximación del costo de software y
-dejar identificados los elementos que deberán precisarse durante las siguientes
-etapas del proyecto.
+físico, ni los costos de operación del hotel.
 
 Los aspectos principales que la solución propuesta debe resolver son los siguientes:
 
@@ -459,7 +467,7 @@ fin de mejorar la visibilidad y la coordinación de la operación hotelera.
 - El alcance inicial se limita a una plataforma web administrativa para monitorear reservas, habitaciones, inventario y accesos; no contempla reemplazar todos los sistemas comerciales o contables que un hotel pueda utilizar.
 - El control físico de accesos depende de la disponibilidad y configuración de tarjetas y lectores RFID compatibles.
 - La plataforma debe manejar la información de forma centralizada, pero la definición de reglas detalladas para cada hotel o sede deberá establecerse durante el levantamiento de requisitos.
-- No se presentan todavía cifras sobre frecuencia, costos o reducción de incidentes; cualquier beneficio cuantitativo deberá demostrarse mediante validaciones posteriores.
+- Las cifras de tiempo y de frecuencia de incidentes provienen de diez entrevistas y describen a los entrevistados, no a todo el sector. La reducción de incidentes que logre la plataforma se medirá con las hipótesis de la sección 1.2.2.3.
 
 ### 1.2.2. Lean UX Process
 
