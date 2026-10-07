@@ -3570,7 +3570,7 @@ informe.
 #### Web Application
 
 Los componentes de la Web Application corresponden a la estructura del repositorio
-`hostera-frontend`. Cada bounded context es un módulo (`overview`, `bookings`, `rooms`,
+`hostera-frontend-wa`. Cada bounded context es un módulo (`overview`, `bookings`, `rooms`,
 `inventory` y `access-control`) con sus capas de dominio, aplicación (store de Pinia),
 infraestructura y presentación. El App Shell reúne `app.vue`, `router.js` y el layout
 compartido; Localization agrupa `i18n.js` y los archivos de idioma en inglés y español;
@@ -3765,7 +3765,7 @@ verificación del software, y publicación de evidencias.
 | WebStorm y Visual Studio Code | Editan el código de la Landing Page y de la Frontend Web Application. | Instalación local desde los canales oficiales de distribución. | Las carpetas de configuración local del editor se excluyen del control de versiones; el formato del código se rige por las convenciones de la sección 5.1.3. |
 | Node.js y npm | Ejecutan el entorno de construcción de la Frontend Web Application y la API de datos de demostración. | Instalación local desde https://nodejs.org/ | Las dependencias se declaran en `package.json` y el lockfile generado se conserva en el control de versiones para favorecer instalaciones reproducibles. |
 | Vite | Provee el servidor de desarrollo y el empaquetado de producción de la Frontend Web Application. | https://vite.dev/guide/ | La configuración se mantiene en `vite.config.js`; las variables de entorno se declaran con el prefijo `VITE_` y sin incluir secretos. |
-| json-server | Expone la API de datos de demostración que consume la Frontend Web Application mientras los RESTful Web Services no están implementados. | https://github.com/typicode/json-server | Los datos y las rutas se versionan en `server/db.json` y `server/routes.json` dentro del repositorio del frontend. |
+| json-server | Expone la API de datos de demostración que consume la Frontend Web Application mientras los RESTful Web Services no están implementados. | https://github.com/typicode/json-server | Los datos se versionan como un archivo JSON por recurso en `server/data/` del repositorio del frontend; al iniciar, `server/build-db.js` los reúne en `server/db.json`, que no se versiona. |
 | .NET SDK | Compila y ejecuta los RESTful Web Services de Hostera en ASP.NET Core. | Instalación local desde https://dotnet.microsoft.com/ | La versión del SDK se fija en el archivo de configuración del repositorio de Web Services; las cadenas de conexión se leen desde variables de entorno. |
 | Postman | Verifica manualmente los endpoints HTTP de los RESTful Web Services y de la API de datos de demostración. | https://www.postman.com/ | Las colecciones de solicitudes se exportan al repositorio de Web Services para que cualquier integrante reproduzca las pruebas. |
 | MySQL | Provee el motor de base de datos relacional de la solución. | https://dev.mysql.com/doc/ | Los scripts de esquema y de datos de ejemplo se versionan en el repositorio de Web Services; las credenciales se proveen mediante variables de entorno. |
@@ -3804,8 +3804,8 @@ repositorios de producto exigidos por el enunciado del proyecto:
 
 | Producto | URL del repositorio | Estado actual |
 | --- | --- | --- |
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.3.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
-| Frontend Web Applications | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend | Registrado con las ramas `main` y `develop` creadas. Su implementación y su despliegue corresponden al Sprint 2. |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.4.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
+| Frontend Web Applications | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, el tag `v0.1.0`, su `CHANGELOG.md` y su `LICENSE.md`, y la carpeta `docs/` con las ADR, el diagrama de clases y las user stories. |
 | RESTful Web Services | Por registrar | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. Mientras no esté implementado, la Frontend Web Application consume la API de datos de demostración descrita en la sección 5.1.1. |
 
 El repositorio del informe (https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report)
@@ -3995,36 +3995,37 @@ la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en GitHu
 
 *Figura 5.1. Configuración y estado del despliegue de la Landing Page en GitHub Pages.*
 
-El destino de despliegue de la Frontend Web Application y de la API de datos de
-demostración que esta consume quedó definido para el Sprint 2. La Frontend Web
-Application se publica en Firebase Hosting, porque atiende las rutas del lado del
-cliente de una aplicación de página única sin configuración adicional de reescrituras;
-la API de datos de demostración se publica como servicio web en Render, ejecutando
-json-server sobre los archivos versionados del repositorio del frontend. El siguiente
-registro resume la configuración de despliegue de cada producto:
+En el Sprint 2 se desplegaron la Frontend Web Application y la API de datos de
+demostración que esta consume. La Frontend Web Application se publica en Firebase
+Hosting, en el proyecto `hostera-f4116`, cuya configuración reescribe todas las rutas
+hacia `index.html` para que la navegación del lado del cliente funcione al recargar
+cualquier página. La API de datos de demostración se publica como servicio web en
+Render y ejecuta json-server sobre los archivos versionados del repositorio del
+frontend. El siguiente registro resume la configuración de despliegue de cada
+producto:
 
 | Producto | Entorno objetivo | Fuente | Comando de build | Comando de publicación | URL pública |
 | --- | --- | --- | --- | --- | --- |
 | Landing Page | GitHub Pages | Rama `main` y carpeta `/ (root)` de `landing-page` | No requiere build: el sitio se sirve como HTML, CSS y JavaScript estáticos. | Publicación automática del flujo de GitHub Pages al integrar en `main`. | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ |
-| Frontend Web Application | Firebase Hosting | Rama `main` de `hostera-frontend` | `npm run build`, que genera el directorio `dist/`. | `firebase deploy --only hosting` | Se registrará al completar el despliegue del Sprint 2. |
-| API de datos de demostración | Render (Web Service) | Rama `main` de `hostera-frontend`, directorio `server/` | `npm install` | `npm run server`, que expone los recursos definidos en `server/db.json` y `server/routes.json`. | Se registrará al completar el despliegue del Sprint 2. |
+| Frontend Web Application | Firebase Hosting | Rama `main` de `hostera-frontend-wa` | `npm run build`, que genera el directorio `dist/`. | `npm run deploy`, que construye la aplicación y ejecuta `firebase deploy --only hosting`. | https://hostera-f4116.web.app/ |
+| API de datos de demostración | Render (Web Service) | Rama `main` de `hostera-frontend-wa`, directorio `server/` | `npm ci` | `npm run server:start -- --host 0.0.0.0 --port $PORT`, que reconstruye `server/db.json` desde `server/data/` e inicia json-server. | https://hostera-frontend.onrender.com |
 | RESTful Web Services | Por definir | Repositorio por registrar | Por definir con la implementación. | Por definir con la implementación. | Se definirá junto con la implementación de los Web Services. |
 
-Las variables de entorno de la Frontend Web Application se declaran en el archivo
-`.env` del repositorio del frontend, se documentan en su `README.md` mediante un
-archivo de ejemplo sin valores reales y se registran en la plataforma de alojamiento
-como variables del proyecto. La variable `VITE_API_BASE_URL` apunta a la URL pública
-de la API de datos de demostración, de modo que el mismo build puede resolverse contra
-el entorno local o contra el entorno publicado sin modificar el código. La clave de
-licencia de la biblioteca de componentes se provee en `VITE_PRIME_UI_LICENSE_KEY` y no
-se registra en GitHub.
+Las variables de entorno de la Frontend Web Application se documentan en el archivo
+`.env.example` del repositorio, sin valores reales. Para publicar, se definen en
+`.env.production`: la variable `VITE_HOSTERA_API_URL` apunta a la URL de la API de
+datos de demostración en Render, y las variables `VITE_*_ENDPOINT_PATH` indican la
+ruta de cada recurso. Así, el mismo código se ejecuta contra la API local o contra la
+publicada sin modificarse. La clave de licencia de PrimeVue se provee en
+`VITE_PRIMEVUE_LICENSE_KEY` y no se registra en GitHub.
 
 La verificación posterior a cada despliegue consiste en comprobar que la ruta raíz de
-la Frontend Web Application responde con la aplicación cargada y que un recurso de
-lectura de la API de datos de demostración responde con el código `200 OK` y su
-colección de datos. Si alguna de las dos comprobaciones falla, el procedimiento de
-rollback consiste en volver a publicar la versión anterior: Firebase Hosting conserva
-el historial de versiones del sitio y permite restituir la inmediatamente anterior,
+la Frontend Web Application responde con la aplicación cargada y que la API de datos
+de demostración responde con el código `200 OK`. Render hace esta comprobación de
+forma automática sobre `/properties`, configurado como health check del servicio. Si
+alguna de las dos comprobaciones falla, el procedimiento de rollback consiste en
+volver a publicar la versión anterior: Firebase Hosting conserva el historial de
+versiones del sitio y deja restituir la inmediatamente anterior,
 Render permite volver a desplegar un commit previo de la misma rama, y GitHub Pages se
 republica desde el último tag estable de `main`. Como los despliegues se realizan
 siempre desde `main`, la versión restituida corresponde a un tag registrado en el
@@ -4996,10 +4997,16 @@ como versión `v0.3.0`. Se retiró el plan gratuito y se presentaron los planes
 Starter, a S/39 al mes, y Professional, a S/8 por habitación. El contacto comercial
 pasó a una página propia y se agregaron los metadatos para redes sociales.
 
+El Sprint 2 dejó publicada la primera versión de la Frontend Web Application, la
+`v0.1.0`, con las 21 user stories del sprint implementadas sobre una API de datos de
+demostración en Render. La aplicación se organizó con un módulo por bounded context y
+una rama de trabajo para cada uno, y cada integrante lideró al menos uno de esos
+módulos. La Landing Page pasó a la versión `v0.4.0`, que agrega el acceso a la
+aplicación.
+
 En los repositorios se trabaja con Git Flow, Conventional Commits y Semantic
-Versioning, con versiones etiquetadas de la `v0.1.0` a la `v0.3.0`. El repositorio de la Frontend
-Web Application ya tiene su estructura y su documentación, y su primera versión se
-construye en el Sprint 2 sobre una API de datos de demostración.
+Versioning. La Landing Page tiene versiones etiquetadas de la `v0.1.0` a la `v0.4.0`
+y el frontend, la `v0.1.0`.
 
 ### Estado de las hipótesis al cierre de TB1
 
@@ -5021,12 +5028,13 @@ resolver, y viene de las entrevistas.
 
 | Prioridad | Siguiente paso | Para qué |
 |---:|---|---|
-| 1 | Publicar en el Sprint 2 la primera versión de los flujos de operación del frontend (`US011` a `US027`, `US031` a `US033`) con la API de datos de demostración. | Medir la hipótesis 1 con administradores de una sede, que es la de mayor riesgo. |
+| 1 | Llevar la aplicación publicada a administradores de hoteles de una sede y medir cuánto tardan en conocer el estado de su propiedad. | Probar la hipótesis 1, que es la de mayor riesgo. |
 | 2 | Implementar los servicios REST priorizados (`TS004` a `TS013`, `TS016` y `TS017`) e integrarlos con el frontend. | Reemplazar los datos de demostración por operaciones persistentes. |
-| 3 | Dejar el registro, el inicio de sesión y la autorización (`US009`, `US010`, `TS001` a `TS003`), junto con las historias RFID (`US028` a `US030`, `TS014` a `TS015`), para después de los flujos principales y antes de publicar los servicios. | Proteger la información de cada propiedad antes de exponerla. |
-| 4 | Hacer que las llamadas a la acción de la Landing Page lleven al registro en la aplicación desplegada. | Que el visitante que elige un plan pueda empezar a usar Hostera. |
-| 5 | Hacer más entrevistas en el segmento 2 con operaciones de administración compartida y agregar al formulario preguntas sobre personalidad, marcas e influencias. | Completar las fichas de User Persona con datos que hoy no se recogieron. |
-| 6 | Actualizar cada rama con `develop` antes de integrarla y mantener Git Flow y Conventional Commits. | Evitar que una integración reemplace cambios que otros integrantes ya habían subido. |
+| 3 | Completar los reportes operativos (`US031`, `US032`), que quedaron fuera de la primera versión del frontend. | Probar la hipótesis 4 con responsables de cadenas pequeñas. |
+| 4 | Dejar el registro, el inicio de sesión y la autorización (`US009`, `US010`, `TS001` a `TS003`), junto con la integración RFID de los servicios (`TS014` y `TS015`), para después de los flujos principales y antes de publicar los servicios. | Proteger la información de cada propiedad antes de exponerla. |
+| 5 | Hacer que «Explore Starter» y «Explore Professional» lleven a la aplicación, como ya lo hace el enlace «Sign in» de la Landing Page. | Que el visitante que elige un plan pueda empezar a usar Hostera. |
+| 6 | Hacer más entrevistas en el segmento 2 con operaciones de administración compartida y agregar al formulario preguntas sobre personalidad, marcas e influencias. | Completar las fichas de User Persona con datos que hoy no se recogieron. |
+| 7 | Actualizar cada rama con `develop` antes de integrarla y mantener Git Flow y Conventional Commits. | Evitar que una integración reemplace cambios que otros integrantes ya habían subido. |
 
 Al cierre de TB1, Hostera tiene una Landing Page publicada y un problema mejor
 entendido que al inicio del curso, pero ninguna de sus hipótesis se ha probado con el
@@ -5104,6 +5112,9 @@ World Wide Web Consortium. (2024). _Web Content Accessibility Guidelines (WCAG) 
 - **Final Project Keynote.** Archivo independiente de la presentación de la entrega.
 - **Repositorio del informe.** https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report
 - **Repositorio de la Landing Page.** https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page
+- **Repositorio de la Frontend Web Application.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa
+- **Frontend Web Application desplegada.** https://hostera-f4116.web.app/
+- **API de datos de demostración.** https://hostera-frontend.onrender.com
 - **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/landing-page/
 - **Board de seguimiento.** https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5
 - **Prototipo de Web Application.** https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes
