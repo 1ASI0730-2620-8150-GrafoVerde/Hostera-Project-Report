@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.4.0] - 2026-10-06
 
 ### Added
 
@@ -28,6 +28,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Rewrote the conclusions by product lifecycle stage and formatted the bibliography in APA style.
 - Renamed the chapter 2 images to kebab-case.
 - Replaced the two impact maps with a single map for both segments and renumbered the chapter 3 figures.
+- Added the Sprint 2 navigation video, the big picture stages and the links to the form response sheets.
+- Completed the Sprint 2 planning data and task estimates, used the booking term in the technical stories and referenced Figma as the design tool.
 
 ### Removed
 
