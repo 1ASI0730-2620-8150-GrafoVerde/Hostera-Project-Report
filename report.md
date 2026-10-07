@@ -5090,13 +5090,13 @@ contexto, y las ramas se integraron en `develop` a medida que se completaban, en
 | Juan Diego Flores (`YopoFlores`) | Panorama operativo y navegación | 39 |
 | **Total** | | **252** |
 
-El gráfico siguiente se construyó a partir del historial de la rama `develop`, sin
-contar los commits de merge. Incluye el commit inicial del repositorio, por eso suma
-uno más que la tabla de la sección 5.2.2.4.
+El gráfico siguiente se construyó a partir del historial del repositorio hasta la
+versión `v0.1.0`, sin contar los commits de merge. Incluye el commit inicial del
+repositorio, por eso suma uno más que la tabla de la sección 5.2.2.4.
 
 <img src="assets/chapter-5/sprint-2-commits-by-member.svg" alt="Commits funcionales por integrante en el repositorio del frontend durante el Sprint 2" style="width:100%%; height:auto;"/>
 
-*Figura 5.16. Commits funcionales por integrante en el repositorio del frontend durante el Sprint 2.*
+*Figura 5.16. Commits funcionales por integrante en el repositorio del frontend hasta la versión `v0.1.0`.*
 
 <img src="assets/chapter-5/sprint-2-github-commits.png" alt="Historial de commits del repositorio del frontend en la rama develop" style="width:100%%; height:auto;"/>
 
