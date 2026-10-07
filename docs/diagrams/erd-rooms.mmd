@@ -1,0 +1,67 @@
+erDiagram
+    properties ||--o{ room_types : has
+    properties ||--o{ rooms : has
+    room_types ||--o{ rooms : classifies
+    properties ||--o{ rate_plans : offers
+    rate_plans ||--o{ rate_plan_room_types : "applies to"
+    room_types ||--o{ rate_plan_room_types : "is sold in"
+    rate_plans ||--o{ rate_plan_services : includes
+    rate_plans ||--o{ daily_rates : prices
+    room_types ||--o{ daily_rates : "is priced by"
+    rooms ||--o{ status_periods : "is held by"
+    properties {
+        int id PK
+        int organization_id
+        varchar name
+        varchar city
+        char currency
+    }
+    room_types {
+        int id PK
+        int property_id FK
+        varchar name
+        int capacity
+        varchar bed_configuration
+        decimal base_nightly_rate
+        varchar status
+    }
+    rooms {
+        int id PK
+        int property_id FK
+        int room_type_id FK
+        varchar number UK "unique per property"
+        int floor
+    }
+    rate_plans {
+        int id PK
+        int property_id FK
+        varchar name
+        text cancellation_policy
+        boolean refundable
+        varchar status
+    }
+    rate_plan_room_types {
+        int rate_plan_id PK, FK
+        int room_type_id PK, FK
+    }
+    rate_plan_services {
+        int rate_plan_id PK, FK
+        varchar service PK
+    }
+    daily_rates {
+        int id PK
+        int property_id FK
+        int rate_plan_id FK
+        int room_type_id FK
+        date rate_date UK "unique per plan and room type"
+        decimal amount
+    }
+    status_periods {
+        int id PK
+        int property_id FK
+        int room_id FK
+        varchar status
+        varchar reason
+        date start_date
+        date end_date
+    }

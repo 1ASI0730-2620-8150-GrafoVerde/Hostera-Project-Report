@@ -1,0 +1,37 @@
+classDiagram
+    direction LR
+    class CredentialCommandService {
+        +IssueGuestKeyCardsAsync(IssueGuestKeyCardsCommand) Task~IReadOnlyList~Credential~~
+        +IssueStaffCredentialAsync(IssueStaffCredentialCommand) Task~Credential~
+        +ReplaceKeyCardAsync(int) Task~Credential~
+        +RevokeAsync(RevokeCredentialCommand) Task
+    }
+    class AccessEventQueryService {
+        +FindAsync(AccessEventSearchQuery) Task~IReadOnlyList~AccessEvent~~
+        +RecordAsync(AccessEventReport) Task~AccessEvent~
+    }
+    class ICredentialRepository {
+        <<interface>>
+        +FindByIdAsync(int) Task~Credential~
+        +FindByPropertyAsync(int) Task~IReadOnlyList~Credential~~
+        +AddAsync(Credential) Task
+        +Update(Credential) void
+    }
+    class IStaffMemberRepository {
+        <<interface>>
+        +FindByPropertyAsync(int) Task~IReadOnlyList~StaffMember~~
+    }
+    class IAccessEventRepository {
+        <<interface>>
+        +FindAsync(AccessEventSearchQuery) Task~IReadOnlyList~AccessEvent~~
+        +AddAsync(AccessEvent) Task
+    }
+    class IRfidEncoder {
+        <<interface>>
+        +EncodeAsync(Credential) Task~string~
+        +EraseAsync(string) Task
+    }
+    CredentialCommandService ..> ICredentialRepository
+    CredentialCommandService ..> IStaffMemberRepository
+    CredentialCommandService ..> IRfidEncoder
+    AccessEventQueryService ..> IAccessEventRepository

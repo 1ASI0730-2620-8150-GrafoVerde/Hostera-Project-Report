@@ -1,0 +1,43 @@
+classDiagram
+    direction LR
+    class PropertyOverview {
+        +int PropertyId
+        +string Name
+        +int RoomsCount
+        +int HeldRooms
+        +int RoomsNeedingCleaning
+        +int RoomsOutOfOrder
+        +int AvailableRooms
+        +int AlertsCount
+        +decimal OccupancyRate
+    }
+    class DailyPerformance {
+        +DateOnly Date
+        +decimal Revenue
+        +int RoomsCount
+        +int SoldRooms
+        +decimal OccupancyRate
+    }
+    class ArrivalSummary {
+        +int BookingId
+        +string BookingCode
+        +string GuestName
+        +string RoomNumber
+        +DateOnly CheckInDate
+        +DateOnly CheckOutDate
+    }
+    class OverviewQueryService {
+        +GetPropertyOverviewsAsync(int, DateOnly) Task~IReadOnlyList~PropertyOverview~~
+        +GetDailyPerformanceAsync(int, DateOnly, DateOnly) Task~IReadOnlyList~DailyPerformance~~
+        +GetTodaysArrivalsAsync(int, DateOnly) Task~IReadOnlyList~ArrivalSummary~~
+    }
+    class IOverviewReadRepository {
+        <<interface>>
+        +GetRoomsAsync(int) Task~IReadOnlyList~RoomReadModel~~
+        +GetBookingsAsync(int, DateOnly, DateOnly) Task~IReadOnlyList~BookingReadModel~~
+        +GetStatusPeriodsAsync(int, DateOnly, DateOnly) Task~IReadOnlyList~StatusPeriodReadModel~~
+    }
+    OverviewQueryService ..> IOverviewReadRepository : reads through
+    OverviewQueryService ..> PropertyOverview : builds
+    OverviewQueryService ..> DailyPerformance : builds
+    OverviewQueryService ..> ArrivalSummary : builds
