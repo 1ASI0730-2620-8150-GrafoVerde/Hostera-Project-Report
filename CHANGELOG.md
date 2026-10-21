@@ -17,6 +17,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Noted in the Sprint 1 backlog, plan figure, leadership matrix and student outcome that the Free plan was replaced by Starter in the landing page `v0.3.0`.
 - Split the Sprint 2 backlog into tasks of 4 to 8 hours mapped to the frontend components, with the owner of each task taken from the repository history.
 - Counted the release commit of `v0.4.0` in the TB1 collaboration insights and their chart, and listed the landing page tags up to `v0.5.0` in the source code management section.
+- Proofread every chapter, the cover, the version history, the conclusions and the references: corrected agreement, misused gerunds, accents and a sentence without a verb, used the Booking term in the ubiquitous language definitions, the user stories and the code examples, and renamed the version history section as the project statement requires.
+- Used one format across the report for amounts (`S/ 39`, `USD 1500`), percentages (`90 %`), the gender of Landing Page and RESTful API, `periodo` and words with the `multi` prefix.
 
 ## [0.4.0] - 2026-10-06
 
