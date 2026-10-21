@@ -4103,7 +4103,7 @@ blanco.
 | `docs` | Cambiar documentación, incluido el contenido del informe. | `docs(report): add project annexes` |
 | `chore` | Cambiar configuración, dependencias o tareas de soporte que no alteran el comportamiento. | `chore(styles): add Hostera color and type tokens` |
 | `refactor` | Reorganizar el código sin cambiar su comportamiento observable. | `refactor(report): split chapter assets by product` |
-| `test` | Agregar o modificar pruebas automatizadas. | `test(reservations): cover overlapping stay validation` |
+| `test` | Agregar o modificar pruebas automatizadas. | `test(bookings): cover overlapping stay validation` |
 
 Las ramas de funcionalidad se nombran en kebab-case y describen el cambio, no al
 integrante que lo realiza, por ejemplo `feature/scm-development-environment`. Cuando
@@ -4128,9 +4128,9 @@ ampliamente conocidas. La elección del formato depende del tipo de elemento:
 
 | Elemento | Convención adoptada | Ejemplo |
 | --- | --- | --- |
-| Archivos y carpetas | Minúsculas; se utiliza `kebab-case` cuando el nombre contiene varias palabras. | `reservation-card.vue`, `user-stories.md` |
-| Variables y funciones de JavaScript | `camelCase`. | `reservationCount`, `calculateTotal()` |
-| Clases y componentes | `PascalCase` cuando representan una clase o un componente de Vue. | `ReservationCard`, `BookingSummary` |
+| Archivos y carpetas | Minúsculas; se utiliza `kebab-case` cuando el nombre contiene varias palabras. | `booking-card.vue`, `user-stories.md` |
+| Variables y funciones de JavaScript | `camelCase`. | `bookingCount`, `calculateTotal()` |
+| Clases y componentes | `PascalCase` cuando representan una clase o un componente de Vue. | `BookingCard`, `PaymentSummary` |
 | Constantes | `UPPER_SNAKE_CASE` cuando son valores globales inmutables. | `MAX_RETRY_COUNT` |
 | Clases CSS, atributos `data-*` e identificadores HTML | Minúsculas en `kebab-case`; las clases CSS siguen el patrón BEM cuando representan bloques, elementos y modificadores. | `site-header__nav`, `plan--professional` |
 | Variables CSS personalizadas | Prefijo `--` seguido de un nombre en `kebab-case`. | `--color-primary`, `--spacing-md` |
@@ -4158,12 +4158,12 @@ de retorno cuando corresponda:
 
 ```javascript
 /**
- * Calculates the total amount for a reservation.
+ * Calculates the total amount for a booking.
  * @param {number} nightlyRate - The nightly room rate.
  * @param {number} nights - The number of nights.
- * @returns {number} The reservation total.
+ * @returns {number} The booking total.
  */
-export function calculateReservationTotal(nightlyRate, nights) {
+export function calculateBookingTotal(nightlyRate, nights) {
   return nightlyRate * nights;
 }
 ```
@@ -4178,7 +4178,7 @@ Components (`.vue`) y utilizarán Composition API. Se preferirá la sintaxis
 vida de forma concisa.
 
 La lógica reutilizable y con estado se extraerá a composables con nombres que
-comiencen por `use`, por ejemplo `useReservationSearch`. Los componentes utilizarán
+comiencen por `use`, por ejemplo `useBookingSearch`. Los componentes utilizarán
 nombres en `PascalCase` y los nombres de props, eventos y variables respetarán las
 convenciones de JavaScript. Cada componente tendrá una responsabilidad clara y se
 evitará colocar lógica de negocio extensa directamente en la plantilla.
@@ -4191,11 +4191,11 @@ de nomenclatura de Microsoft para C#:
 
 | Elemento de C# | Convención | Ejemplo |
 | --- | --- | --- |
-| Namespaces, clases, records, enums y miembros públicos | `PascalCase`. | `ReservationService`, `GetReservation()` |
-| Interfaces | `PascalCase` con prefijo `I`. | `IReservationRepository` |
-| Parámetros y variables locales | `camelCase`. | `reservationId`, `totalAmount` |
-| Campos privados de instancia | `_camelCase`. | `_reservationRepository` |
-| Métodos asíncronos | `PascalCase` con sufijo `Async`. | `GetReservationAsync()` |
+| Namespaces, clases, records, enums y miembros públicos | `PascalCase`. | `BookingService`, `GetBooking()` |
+| Interfaces | `PascalCase` con prefijo `I`. | `IBookingRepository` |
+| Parámetros y variables locales | `camelCase`. | `bookingId`, `totalAmount` |
+| Campos privados de instancia | `_camelCase`. | `_bookingRepository` |
+| Métodos asíncronos | `PascalCase` con sufijo `Async`. | `GetBookingAsync()` |
 | Archivos de configuración y clases de inicio | Nombres establecidos por ASP.NET Core. | `Program.cs`, `appsettings.json` |
 
 Los endpoints, DTOs, servicios, repositorios y entidades utilizarán nombres en
@@ -5071,7 +5071,7 @@ activa, y la interfaz se puede usar en inglés o en español.
 El recorrido de esta versión se presenta en el video de navegación del Sprint 2,
 publicado en Microsoft Stream, con una duración de 5:19. El video parte de la Landing
 Page publicada y continúa en la Frontend Web Application desplegada, a la que se
-entra desde el enlace «Sign in», recorriendo sus vistas con los datos de demostración.
+entra desde el enlace «Sign in», y recorre sus vistas con los datos de demostración.
 
 <a href="https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2F2026-10-06%2022-29-15%2Emp4&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;ga=1&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Ee514020b-9142-4cb3-81b9-f525e7d44f1c"><img src="assets/chapter-5/sprint-2-navigation-video.png" alt="Captura del video de navegación del Sprint 2 en Microsoft Stream" style="width:100%; height:auto;"/></a>
 
