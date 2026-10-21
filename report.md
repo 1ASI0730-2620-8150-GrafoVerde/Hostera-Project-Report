@@ -2629,7 +2629,7 @@ misma terminología del producto, pero evitan presentarlo como contenido indexab
 
 | Vista principal | Title | Description | Keywords | Author | Robots |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Hostera web application | `Hostera Dashboard | Hotel operations` | `Administrative workspace to monitor reservations, room availability, inventory, and RFID access for one or more hotel properties.` | `Hostera dashboard, hotel operations, reservations, inventory, RFID access` | `Grafo Verde Team` | `noindex, nofollow` |
+| Hostera web application | `Hostera`, y `Hostera - <vista>` en las vistas con título propio | `Administrative workspace to monitor reservations, room availability, inventory, and RFID access for one or more hotel properties.` | `Hostera dashboard, hotel operations, reservations, inventory, RFID access` | `Grafo Verde Team` | `noindex, nofollow` |
 
 #### Implementación mínima
 
