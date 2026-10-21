@@ -852,10 +852,10 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
 </tr>
 <tr>
   <th colspan="2">Criterio</th>
-  <th>Su startup<br><strong>Hostera</strong></th>
-  <th>Competidor 1<br><strong>Nexus PMS</strong><br>(HotelClick, s.f.)</th>
-  <th>Competidor 2<br><strong>OkFac</strong> (Montalvo Soluciones Tecnológicas S.A.C., s.f.)</th>
-  <th>Competidor 3<br><strong>SysHotel</strong> (SysHotel, s.f.)</th>
+  <th>Su startup<br><img src="assets/chapter-2/competitors/hostera-logo.png" alt="Logo de Hostera" style="height:36px; width:auto;"/><br><strong>Hostera</strong></th>
+  <th>Competidor 1<br><img src="assets/chapter-2/competitors/nexus-pms-logo.png" alt="Logo de Nexus PMS" style="height:36px; width:auto;"/><br><strong>Nexus PMS</strong><br>(HotelClick, s.f.)</th>
+  <th>Competidor 2<br><img src="assets/chapter-2/competitors/okfac-logo.png" alt="Logo de OkFac" style="height:36px; width:auto;"/><br><strong>OkFac</strong> (Montalvo Soluciones Tecnológicas S.A.C., s.f.)</th>
+  <th>Competidor 3<br><img src="assets/chapter-2/competitors/syshotel-logo.png" alt="Logo de SysHotel" style="height:36px; width:auto;"/><br><strong>SysHotel</strong> (SysHotel, s.f.)</th>
 </tr>
 <tr>
   <td class="group-label" rowspan="2"><span class="vertical-label">Perfil</span></td>
