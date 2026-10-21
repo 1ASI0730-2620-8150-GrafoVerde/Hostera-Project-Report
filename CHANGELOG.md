@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Changed
 
+- Noted in the Sprint 1 backlog, plan figure, leadership matrix and student outcome that the Free plan was replaced by Starter in the landing page `v0.3.0`.
 - Split the Sprint 2 backlog into tasks of 4 to 8 hours mapped to the frontend components, with the owner of each task taken from the repository history.
 
 ## [0.4.0] - 2026-10-06
