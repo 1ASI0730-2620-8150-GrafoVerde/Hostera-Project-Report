@@ -571,7 +571,7 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 **Business Assumptions**
 *Creencias de alto nivel sobre la posición en el mercado, viabilidad, estrategia de monetización y capacidades organizativas.*
 1. Creemos que los hoteles independientes y las cadenas pequeñas en Perú tienen la disposición de pagar una suscripción SaaS (Software as a Service) desde el primer día si la plataforma centraliza su operación.
-2. Creemos que un modelo de monetización escalonado (plan *Starter* de S/39 para 1 sede y plan *Professional* de S/8 por habitación para cadenas) nos permitirá adquirir, rentabilizar y expandir clientes de forma escalable.
+2. Creemos que un modelo de monetización escalonado (plan *Starter* de S/ 39 para 1 sede y plan *Professional* de S/ 8 por habitación para cadenas) nos permitirá adquirir, rentabilizar y expandir clientes de forma escalable.
 3. Creemos que nuestra principal ventaja competitiva en el mercado será la integración nativa del control de acceso RFID con la gestión de reservas en la nube.
 4. Creemos que el equipo de Grafo Verde posee las capacidades organizativas y técnicas para desarrollar, desplegar y mantener una arquitectura web segura orientada al sector hotelero.
 5. Creemos que adquiriremos la mayoría de los clientes del plan *Starter* a través de la Landing Page, con un flujo de registro automatizado que les permita comprender los planes y configurar su propiedad inicial sin depender de un equipo de ventas.
@@ -579,7 +579,7 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 **Business Outcome Assumptions**
 *Cambios o métricas medibles que indican el éxito de la empresa.*
 1. Creemos que lograremos 50 suscripciones activas de pago en el plan *Starter* a través de nuestra Landing Page durante los primeros 4 meses de lanzamiento.
-2. Creemos que 20 cadenas hoteleras pequeñas contratarán el plan *Professional*, y que el 10% de nuestros clientes *Starter* actualizarán a este plan en un periodo de 6 meses.
+2. Creemos que 20 cadenas hoteleras pequeñas contratarán el plan *Professional*, y que el 10 % de nuestros clientes *Starter* actualizarán a este plan en un periodo de 6 meses.
 3. Creemos que mantendremos una tasa de retención mensual del 90 % porque el producto será indispensable en la operación diaria.
 4. Creemos que reduciremos significativamente nuestro costo de adquisición de clientes (CAC) al permitir un flujo de registro y *onboarding* automatizado (Self-Service) para los hoteles de una sola sede.
 
@@ -602,7 +602,7 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 1. Creemos que un **panel de la propiedad activa** que reúna ocupación, habitaciones, inventario y accesos permitirá a los administradores conocer el estado actual de su hotel sin consultar otros registros.
 2. Creemos que un **módulo de reservas y estancias sobre un mismo calendario** permitirá registrar la reserva, el pago y el check-in del huésped en un mismo flujo y evitará las dobles reservas.
 3. Creemos que un **sistema de control de inventario con alertas automáticas** notificará los niveles críticos de stock a los administradores antes de que afecten la operatividad del hotel.
-4. Creemos que un **módulo de analítica y reportes operativos multi-sede** permitirá a los gerentes de cadenas filtrar y comparar el rendimiento (ocupación, ingresos, accesos) respetando la separación de datos de cada establecimiento.
+4. Creemos que un **módulo de analítica y reportes operativos multisede** permitirá a los gerentes de cadenas filtrar y comparar el rendimiento (ocupación, ingresos, accesos) respetando la separación de datos de cada establecimiento.
 5. Creemos que una **API de codificación RFID integrada con la estancia** permitirá relacionar la identidad del huésped, el pago y su acceso físico a la habitación en un solo paso durante el check-in, y conservar el historial de cada acceso.
 
 Cada Feature Assumption se convierte en uno de los Hypothesis Statements de la
@@ -813,13 +813,13 @@ OkFac se presenta como un PMS hecho para hoteles peruanos. Incluye un calendario
 reservas, vista del estado de las habitaciones, check-in y check-out, housekeeping,
 conexión con OTAs y emisión de comprobantes electrónicos mediante SUNAT (Montalvo Soluciones Tecnológicas S.A.C., s.f.). En su
 plan Pro incorpora inventario, compras y gastos; el plan Enterprise añade reportes y
-operación multi-sucursal, además de roles y permisos avanzados (Montalvo Soluciones Tecnológicas S.A.C., s.f.). Estas funciones
+operación multisucursal, además de roles y permisos avanzados (Montalvo Soluciones Tecnológicas S.A.C., s.f.). Estas funciones
 se ofrecen para hoteles y hostales de distintos tamaños.
 
 Su modelo comercial es de suscripción mensual o anual por planes. El proveedor
 publica planes para hoteles y hostales pequeños, medianos y grandes, desde S/ 140 al
 mes, con implementación y capacitación incluidas; el plan Enterprise contempla
-funciones multi-sucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.). También ofrece facturación electrónica y módulos de
+funciones multisucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.). También ofrece facturación electrónica y módulos de
 restaurante dentro de la misma cuenta (Montalvo Soluciones Tecnológicas S.A.C., s.f.).
 
 **SysHotel.**
@@ -828,7 +828,7 @@ SysHotel es una plataforma PMS y ERP desarrollada para el mercado peruano, dirig
 desde hostales pequeños hasta cadenas con varias sedes. Su oferta pública incluye
 reservas, check-in y check-out, disponibilidad de habitaciones, housekeeping,
 facturación electrónica SUNAT, channel manager y un ERP con inventario
-multi-almacén y kardex (SysHotel, s.f.). Además, el proveedor declara que puede cotizar
+multialmacén y kardex (SysHotel, s.f.). Además, el proveedor declara que puede cotizar
 integraciones con cerraduras inteligentes y sistemas de control de acceso, aunque no
 especifica que estas integraciones utilicen RFID (SysHotel, s.f.).
 
@@ -869,15 +869,15 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
   <td>Ventaja competitiva<br>¿Qué valor ofrece a los clientes?</td>
   <td>Integra reservas, habitaciones, almacén y accesos RFID en un mismo panel para una o varias sedes.</td>
   <td>Integra facturación SUNAT, POS, channel manager, acceso remoto y alertas de stock mínimo.</td>
-  <td>Combina operación hotelera, cumplimiento SUNAT, implementación incluida y planes multi-sucursal.</td>
-  <td>Combina PMS y ERP con inventario multi-almacén, kardex e integraciones de cerraduras y control de acceso.</td>
+  <td>Combina operación hotelera, cumplimiento SUNAT, implementación incluida y planes multisucursal.</td>
+  <td>Combina PMS y ERP con inventario multialmacén, kardex e integraciones de cerraduras y control de acceso.</td>
 </tr>
 <tr>
   <td class="group-label" rowspan="2"><span class="vertical-label">Perfil de Marketing</span></td>
   <td>Mercado objetivo</td>
   <td>Administradores y propietarios de hoteles independientes; gerentes o responsables de pequeñas cadenas.</td>
   <td>Hoteles que operan en Perú; no limita públicamente el servicio a un tamaño específico.</td>
-  <td>Hoteles y hostales pequeños, hoteles medianos y establecimientos grandes con necesidades multi-sucursal.</td>
+  <td>Hoteles y hostales pequeños, hoteles medianos y establecimientos grandes con necesidades multisucursal.</td>
   <td>Hostales pequeños, hoteles medianos y hoteles grandes o cadenas con varias sedes.</td>
 </tr>
 <tr>
@@ -893,7 +893,7 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
   <td>Panel administrativo, reservas, disponibilidad, inventario, registro de eventos y control RFID.</td>
   <td>PMS, channel manager, reservas, check-in/out, inventarios, POS, SUNAT, usuarios y permisos.</td>
   <td>PMS, calendario, habitaciones, check-in/out, housekeeping, OTAs, inventario, compras, reportes y SUNAT.</td>
-  <td>PMS, ERP, reservas, disponibilidad, housekeeping, channel manager, SUNAT, multi-almacén, kardex e integraciones.</td>
+  <td>PMS, ERP, reservas, disponibilidad, housekeeping, channel manager, SUNAT, multialmacén, kardex e integraciones.</td>
 </tr>
 <tr>
   <td>Precios &amp; Costos</td>
@@ -917,20 +917,20 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
   <td>Fortalezas</td>
   <td>Centralización de reservas, inventario y accesos RFID; alcance para una o varias sedes.</td>
   <td>Plataforma en la nube, inventario, SUNAT, POS y conexiones con OTAs.</td>
-  <td>Planes escalables, implementación incluida y adaptación a SUNAT y multi-sucursal.</td>
-  <td>PMS + ERP, multi-almacén, kardex y posibilidad de integraciones de acceso.</td>
+  <td>Planes escalables, implementación incluida y adaptación a SUNAT y multisucursal.</td>
+  <td>PMS + ERP, multialmacén, kardex y posibilidad de integraciones de acceso.</td>
 </tr>
 <tr>
   <td>Debilidades</td>
   <td>Producto en su primera versión, sin integraciones con PMS ni con agencias en línea; las hipótesis de negocio aún no se han medido con clientes.</td>
   <td>Pago anual y precio no publicado; no documenta RFID en la información consultada.</td>
-  <td>Inventario y multi-sucursal dependen de planes superiores; no documenta RFID.</td>
+  <td>Inventario y multisucursal dependen de planes superiores; no documenta RFID.</td>
   <td>Las integraciones de acceso requieren cotización y no especifican RFID.</td>
 </tr>
 <tr>
   <td>Oportunidades</td>
   <td>Atender hoteles independientes y pequeñas cadenas que requieren operación y accesos en un mismo contexto.</td>
-  <td>Ampliar la gestión remota y multi-propiedad en un mercado hotelero que continúa digitalizándose.</td>
+  <td>Ampliar la gestión remota y multipropiedad en un mercado hotelero que continúa digitalizándose.</td>
   <td>Captar hoteles pequeños y hostales que buscan formalizar reservas y facturación.</td>
   <td>Escalar desde establecimientos pequeños hacia cadenas y proyectos con integraciones a medida.</td>
 </tr>
@@ -964,7 +964,7 @@ deberán validarse con administradores y responsables de operaciones hoteleras.
 | **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multisede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel.                                                    |
 | **Producto modular e interoperable**                             | Nexus, OkFac y SysHotel ya ofrecen facturación, OTAs, POS u otros módulos. Hostera no debe asumir que reemplazará todas las herramientas comerciales y contables que utiliza un hotel.                                                             | Mantener el alcance inicial en reservas, disponibilidad, inventario y accesos RFID. Levantar como requisitos de integración los sistemas de facturación, canales de reserva y cerraduras que los hoteles ya utilicen, empezando por los escenarios de mayor valor.                                      |
 | **Entrada gradual mediante demostraciones y pilotos**            | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.).                                                                                         | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
-| **Precio y despliegue transparentes**                            | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Hostera publica en su Landing Page el plan Starter a S/39 por propiedad y el plan Professional a S/8 por habitación.                                                                                   | Mantener los precios publicados y la estimación por habitación del plan Professional, y validar con los segmentos objetivo si el cobro por propiedad o por habitación les resulta comprensible. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto.                                                                   |
+| **Precio y despliegue transparentes**                            | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Hostera publica en su Landing Page el plan Starter a S/ 39 por propiedad y el plan Professional a S/ 8 por habitación.                                                                                   | Mantener los precios publicados y la estimación por habitación del plan Professional, y validar con los segmentos objetivo si el cobro por propiedad o por habitación les resulta comprensible. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto.                                                                   |
 | **Confianza mediante adaptación local y soporte**                | Los competidores resaltan SUNAT, soporte en español y conocimiento del mercado peruano (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Esa expectativa debe considerarse aunque la facturación no forme parte del MVP de Hostera.                                                       | Usar terminología y flujos comprensibles para equipos hoteleros peruanos, documentar la compatibilidad del hardware RFID y ofrecer acompañamiento inicial. Cuando una función dependa de un sistema externo, explicitar esa dependencia en lugar de prometer cobertura no validada.                     |
 
 #### Tácticas frente a los competidores seleccionados
@@ -972,8 +972,8 @@ deberán validarse con administradores y responsables de operaciones hoteleras.
 | Competidor    | Fortaleza a afrontar                                                                                         | Táctica de Hostera                                                                                                                                                                                                                                                                             |
 | ------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Nexus PMS** | Plataforma en la nube con reservas, inventario, facturación SUNAT, POS y channel manager (HotelClick, s.f.).                | Evitar una comparación basada en amplitud de módulos. Mostrar cómo Hostera añade la relación entre reserva, habitación, tarjeta RFID y evento de acceso, y evaluar integraciones para que el hotel no tenga que reemplazar sus herramientas de facturación o distribución desde el primer día. |
-| **OkFac**     | Planes escalables, implementación incluida, housekeeping, inventario y operación multi-sucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.).         | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren.                                  |
-| **SysHotel**  | PMS + ERP con inventario multi-almacén, kardex y posibilidad de integrar cerraduras o control de acceso (SysHotel, s.f.). | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee.                                                |
+| **OkFac**     | Planes escalables, implementación incluida, housekeeping, inventario y operación multisucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.).         | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren.                                  |
+| **SysHotel**  | PMS + ERP con inventario multialmacén, kardex y posibilidad de integrar cerraduras o control de acceso (SysHotel, s.f.). | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee.                                                |
 
 #### Criterios para validar la estrategia
 
@@ -1339,7 +1339,7 @@ una habitación todavía en limpieza, que resolvió cambiando la asignación y
 coordinando con recepción. La tarea que más le gustaría dejar de hacer a mano es
 actualizar el inventario de artículos de limpieza al cierre del turno. Ordena como
 prioridad las reservas y la disponibilidad, seguidas del control de acceso; pagaría
-entre S/51 y S/150 al mes, y para confiar en una herramienta nueva necesita probarla
+entre S/ 51 y S/ 150 al mes, y para confiar en una herramienta nueva necesita probarla
 antes, recibir capacitación y que se conecte con lo que ya usa.
 
 **Entrevista complementaria 2 (F2).**
@@ -1372,7 +1372,7 @@ minutos diarios a tareas de conciliación. Su último incidente fue una tarjeta 
 que falló en el ingreso: se emitió otra y se registró el caso para mantenimiento. La
 tarea que querría automatizar es preparar el reporte diario de incidencias y accesos
 de habitaciones. Su primera prioridad es el control de acceso a las habitaciones,
-seguido de las reservas; pagaría entre S/151 y S/300 al mes, y para adoptar una
+seguido de las reservas; pagaría entre S/ 151 y S/ 300 al mes, y para adoptar una
 herramienta nueva pide probarla antes, soporte en español e integración con lo que ya
 utiliza.
 
@@ -1405,7 +1405,7 @@ y dos horas diarias a cuadrar reservas, caja e inventario. Su último incidente 
 doble reserva sobre la misma habitación, que resolvió ofreciendo otra disponible y
 corrigiendo la hoja de reservas. La tarea que más querría dejar de hacer a mano es
 conciliar las reservas recibidas por WhatsApp con la hoja de disponibilidad. Ordena
-como prioridad las reservas y el inventario de almacén; pagaría hasta S/50 al mes, y
+como prioridad las reservas y el inventario de almacén; pagaría hasta S/ 50 al mes, y
 para confiar en una herramienta nueva necesita probarla antes, soporte en español y
 un precio claro.
 
@@ -1440,7 +1440,7 @@ descuadres de insumos entre sedes con frecuencia semanal, y procesos distintos e
 sedes a diario. Su último incidente grave fue una sede que informó tarde un faltante
 de ropa de cama, que obligó a un traslado urgente y a ajustar el inventario. Ordena
 como prioridad las reservas centralizadas y el inventario entre sedes, y sitúa el
-control de accesos en último lugar; pagaría entre S/51 y S/150 al mes, y para adoptar
+control de accesos en último lugar; pagaría entre S/ 51 y S/ 150 al mes, y para adoptar
 una herramienta nueva pide una demostración previa y capacitación.
 
 **Entrevista complementaria 5 (F5).**
@@ -1472,7 +1472,7 @@ mensual; nunca ha tenido accesos sin registro. Su último incidente fue una rese
 duplicada que llegó a recepción, que el equipo resolvió reasignando la habitación y
 actualizando el registro central. Ordena como prioridad las reservas centralizadas y
 los reportes consolidados en tiempo real, y sitúa el control de accesos en último
-lugar; pagaría entre S/151 y S/300 al mes, y para adoptar una herramienta nueva pide
+lugar; pagaría entre S/ 151 y S/ 300 al mes, y para adoptar una herramienta nueva pide
 una demostración previa, integración con lo existente y capacitación.
 
 **Respuesta fuera del segmento (F6).**
@@ -1496,7 +1496,7 @@ permite consolidar a diario en menos de una hora, controla el almacén con un ER
 contable integrado al sistema hotelero y abre las habitaciones con tarjeta magnética.
 Coordina con los encargados por correo y por Teams o Slack. Identifica como punto
 débil que el control de accesos no se integre con los reportes consolidados, sitúa el
-control de accesos como su primera prioridad y pagaría más de S/300 al mes. Su
+control de accesos como su primera prioridad y pagaría más de S/ 300 al mes. Su
 respuesta resulta útil como contraste: confirma que el problema que Hostera aborda
 pierde intensidad cuando la operación ya dispone de un sistema compartido entre
 sedes, y por eso el producto se concentra en operaciones de menor escala.
@@ -1550,7 +1550,7 @@ de cada formulario, de donde se obtuvieron los conteos y porcentajes de esta sec
 | Declara doble reserva o sobreventa al menos una vez al mes | 2 de 3 (formulario) | 67 % | F1, F3 |
 | Dedica 30 minutos o más al día a cuadrar reservas, caja e inventario | 2 de 3 (formulario) | 67 % | F1, F3 |
 | Sitúa las reservas y la disponibilidad entre sus dos prioridades | 3 de 3 (formulario) | 100 % | F1, F2, F3 |
-| Pagaría S/51 o más al mes por una herramienta integrada | 2 de 3 (formulario) | 67 % | F1, F2 |
+| Pagaría S/ 51 o más al mes por una herramienta integrada | 2 de 3 (formulario) | 67 % | F1, F2 |
 | Necesita probar la herramienta antes de adoptarla | 3 de 3 (formulario) | 100 % | F1, F2, F3 |
 
 El segmento está formado por quienes responden por la operación completa de un solo
@@ -1584,7 +1584,7 @@ control de accesos como una capacidad deseable más que urgente.
 
 Las condiciones de adopción son homogéneas. Los tres respondientes del formulario
 coinciden en que necesitan probar la herramienta antes de comprometerse, y dos de tres
-pagarían S/51 o más al mes. Otto Cuba (`E1`) refuerza ese punto desde el video: su
+pagarían S/ 51 o más al mes. Otto Cuba (`E1`) refuerza ese punto desde el video: su
 decisión de incorporar un sistema está condicionada a un financiamiento bancario y
 proyectada para una temporada concreta, lo que confirma que en este segmento la
 inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
@@ -1609,7 +1609,7 @@ inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
 | Declara procesos distintos entre sedes al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Sitúa las reservas centralizadas como su primera prioridad | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Sitúa el control de accesos en el último lugar de sus prioridades | 2 de 2 (formulario) | 100 % | F4, F5 |
-| Pagaría S/51 o más al mes y pide una demostración previa | 2 de 2 (formulario) | 100 % | F4, F5 |
+| Pagaría S/ 51 o más al mes y pide una demostración previa | 2 de 2 (formulario) | 100 % | F4, F5 |
 
 El segmento reúne a quienes forman parte de una operación con más de un
 establecimiento, con cargos de propietario multisede, gerente de operaciones, gerente
@@ -1744,7 +1744,7 @@ cada ficha.
 | Contexto de operación del segmento 2: dos o más establecimientos, con responsabilidad de supervisión | 6 de 6 entrevistas del segmento | E2, E3, E4, E5, F4, F5 |
 | Frustración del segmento 2: consolidar la información entre sedes | 3 de 6 (50 %) | E2, F4, F5 |
 | Objetivo del segmento 2: disponer de reservas y reportes centralizados | 2 de 2 lo sitúan en primer lugar | F4, F5 |
-| Disposición a pagar: S/51 o más al mes | 4 de 5 respondientes válidos (80 %) | F1, F2, F4, F5 |
+| Disposición a pagar: S/ 51 o más al mes | 4 de 5 respondientes válidos (80 %) | F1, F2, F4, F5 |
 | Alternativas que ya conocen o evalúan | Análisis competitivo de la sección 2.1 | Nexus PMS, OkFac, SysHotel |
 
 Las fichas se elaboraron en UXPressia, la herramienta indicada para este artefacto, y
@@ -2010,9 +2010,9 @@ actores, recursos y procesos.
 
 Las siguientes historias especifican los requisitos del producto digital de Hostera a
 partir de las necesidades de sus segmentos objetivo y de los flujos operativos
-identificados para el Landing Page y la Web Application. Cada Epic agrupa un conjunto
+identificados para la Landing Page y la Web Application. Cada Epic agrupa un conjunto
 coherente de capacidades y cada Story incluye criterios de aceptación comprobables.
-Las Technical Stories describen requisitos de integración del RESTful API desde la
+Las Technical Stories describen requisitos de integración de la RESTful API desde la
 perspectiva de un Developer y no generan Wireflow User Goals.
 
 | Epic / Story ID | Título | Descripción | Criterios de aceptación | Relacionado con (Epic ID) |
@@ -2027,10 +2027,10 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 | EP008 | API Reliability and Integration | As a developer integrating with Hostera, I want the API to apply consistent errors and shared integration behavior, so that every client can handle the product capabilities in a predictable way. | **Scenario: Process an API request consistently**<br>**Given** a client sends a supported or invalid request to the API<br>**When** the API processes the request<br>**Then** it returns a predictable response with the appropriate result or standardized error information. | No aplica |
 | US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether Hostera is relevant to my hotel. | **Scenario: The visitor identifies the value proposition**<br>**Given** a visitor evaluates Hostera for the first time<br>**When** the visitor requests the value proposition<br>**Then** the visitor learns that Hostera allows running the whole hotel operation from one place.<br><br>**Scenario: The visitor identifies the operational areas covered**<br>**Given** the visitor is reviewing the value proposition<br>**When** the visitor looks for the scope of the product<br>**Then** the visitor finds that Hostera covers reservations, rooms, inventory, and access across every property.<br><br>**Scenario: The visitor recognizes the problem Hostera addresses**<br>**Given** the visitor continues reviewing the content<br>**When** the visitor reads about current hotel operations<br>**Then** the visitor learns that operations break when information is kept in different places and that Hostera connects reservations, rooms, inventory, and guest access in the same operational picture.<br><br>**Scenario: The visitor continues to the entry plan**<br>**Given** the visitor wants to evaluate Hostera after reading the value proposition<br>**When** the visitor chooses to continue<br>**Then** the system provides the Starter plan information. | EP001 |
 | US002 | Find information about Hostera | As a visitor, I want to request information about the topic I am interested in, so that I can learn about Hostera and understand the available next steps. | **Scenario: The visitor requests information about a topic**<br>**Given** a visitor wants information about a specific topic<br>**When** the visitor chooses solutions, features, pricing, product, or team information<br>**Then** the system provides information about the requested topic.<br><br>**Scenario: The visitor changes topic from any point**<br>**Given** the visitor is consulting information about Hostera<br>**When** the visitor wants to consult another topic<br>**Then** the system provides the requested topic independently of the topic previously consulted.<br><br>**Scenario: The visitor finds support and the service terms**<br>**Given** the visitor has reviewed the main content<br>**When** the visitor looks for support or for the conditions of the service<br>**Then** the visitor finds the frequently asked questions and the Terms and Conditions of Hostera.<br><br>**Scenario: The visitor identifies who offers the product**<br>**Given** the visitor wants to know who is responsible for Hostera<br>**When** the visitor reviews the company information<br>**Then** the visitor identifies Hostera, its statement “Hotel operations, connected.”, and Grafo Verde as the copyright holder. | EP001 |
-| US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera option for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue with the corresponding plan. | **Scenario: The visitor identifies the independent-hotel option**<br>**Given** a visitor operates one independent hotel with up to 10 rooms<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Independent hotel” option for one property with up to 10 rooms, focused on reservations, availability, and room operations with consistent operational information.<br><br>**Scenario: The visitor reviews the Starter plan conditions**<br>**Given** the visitor evaluates the Starter plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it costs S/39 per property per month and includes basic reservations and availability, inventory without automatic alerts, one simulated RFID reader, one administrator, and community and documentation support.<br><br>**Scenario: The visitor continues with the Starter plan**<br>**Given** the visitor considers that the independent-hotel option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Starter plan information. | EP001 |
-| US004 | Find the small-chain path | As a small-chain hotel operations manager, I want an option for coordinating 2 to 5 locations, so that I can identify the plan and estimated cost intended for a multi-property operation. | **Scenario: The visitor identifies the small-chain option**<br>**Given** the visitor is responsible for a hotel chain with 2 to 5 locations<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Small hotel chain” option for coordinating rooms, stock, and reports across every property.<br><br>**Scenario: The visitor reviews the Professional plan conditions**<br>**Given** the visitor evaluates the Professional plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it is intended for hotel chains with 2 to 5 locations, costs S/8 per room per month, and includes unlimited rooms across locations, automatic critical-stock alerts, up to 25 RFID readers, reports by location, five administrators with roles, and priority chat and email support.<br><br>**Scenario: The visitor estimates the monthly cost**<br>**Given** the visitor knows the total number of rooms across the chain's hotels<br>**When** the visitor provides that number of rooms<br>**Then** the system calculates the estimated monthly cost at S/8 per room, so 25 rooms correspond to S/200.<br><br>**Scenario: The visitor provides an invalid number of rooms**<br>**Given** the visitor provides a value that is not a whole number of 1 or more<br>**When** the estimate is calculated<br>**Then** the system does not calculate the cost and indicates that a whole number of rooms of 1 or more is required.<br><br>**Scenario: The visitor continues with the Professional plan**<br>**Given** the visitor considers that the small-chain option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Professional plan information. | EP001 |
+| US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera option for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue with the corresponding plan. | **Scenario: The visitor identifies the independent-hotel option**<br>**Given** a visitor operates one independent hotel with up to 10 rooms<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Independent hotel” option for one property with up to 10 rooms, focused on reservations, availability, and room operations with consistent operational information.<br><br>**Scenario: The visitor reviews the Starter plan conditions**<br>**Given** the visitor evaluates the Starter plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it costs S/ 39 per property per month and includes basic reservations and availability, inventory without automatic alerts, one simulated RFID reader, one administrator, and community and documentation support.<br><br>**Scenario: The visitor continues with the Starter plan**<br>**Given** the visitor considers that the independent-hotel option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Starter plan information. | EP001 |
+| US004 | Find the small-chain path | As a small-chain hotel operations manager, I want an option for coordinating 2 to 5 locations, so that I can identify the plan and estimated cost intended for a multi-property operation. | **Scenario: The visitor identifies the small-chain option**<br>**Given** the visitor is responsible for a hotel chain with 2 to 5 locations<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Small hotel chain” option for coordinating rooms, stock, and reports across every property.<br><br>**Scenario: The visitor reviews the Professional plan conditions**<br>**Given** the visitor evaluates the Professional plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it is intended for hotel chains with 2 to 5 locations, costs S/ 8 per room per month, and includes unlimited rooms across locations, automatic critical-stock alerts, up to 25 RFID readers, reports by location, five administrators with roles, and priority chat and email support.<br><br>**Scenario: The visitor estimates the monthly cost**<br>**Given** the visitor knows the total number of rooms across the chain's hotels<br>**When** the visitor provides that number of rooms<br>**Then** the system calculates the estimated monthly cost at S/ 8 per room, so 25 rooms correspond to S/ 200.<br><br>**Scenario: The visitor provides an invalid number of rooms**<br>**Given** the visitor provides a value that is not a whole number of 1 or more<br>**When** the estimate is calculated<br>**Then** the system does not calculate the cost and indicates that a whole number of rooms of 1 or more is required.<br><br>**Scenario: The visitor continues with the Professional plan**<br>**Given** the visitor considers that the small-chain option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Professional plan information. | EP001 |
 | US005 | Understand the product benefits and operating flow | As a visitor, I want to understand the benefits and the high-level operating flow described by Hostera, so that I can relate the proposition to hotel work. | **Scenario: The visitor learns the benefit of connected operations**<br>**Given** the visitor wants to know the benefits of Hostera<br>**When** the visitor reviews them<br>**Then** the visitor learns that Hostera coordinates occupancy, room readiness, inventory, and guest access across every property with consistent operational information.<br><br>**Scenario: The visitor reviews specific benefits**<br>**Given** the visitor looks for examples of those benefits<br>**When** the visitor reviews them<br>**Then** the visitor finds RFID guest access designed for hospitality, centralized inventory by property with automatic flagging of critical shortages, and access controls that give staff access only to the properties they need.<br><br>**Scenario: The visitor learns how to start operating**<br>**Given** the visitor wants to know how a hotel starts using Hostera<br>**When** the visitor reviews the operating flow<br>**Then** the visitor learns the four steps: add hotels and define their rooms, set up the team and assign access by role, connect RFID readers and configure inventory workflows, and manage reservations, room status, access, and stock from one place. | EP001 |
-| US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and understand the available next steps, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | **Scenario: The visitor compares the plans by operating scale**<br>**Given** the visitor wants to compare the available plans<br>**When** the visitor reviews the pricing information<br>**Then** the visitor finds Starter for one property with up to 10 rooms at S/39 per property per month, Professional for chains with 2 to 5 locations at S/8 per room per month, and Enterprise for large or multinational hotel groups, each with its included capabilities.<br><br>**Scenario: The visitor reviews the Enterprise conditions**<br>**Given** the visitor manages a large or multi-country hotel group<br>**When** the visitor evaluates the Enterprise plan<br>**Then** the visitor learns that it includes unlimited locations and RFID readers, an open API for PMS integrations, dedicated onboarding, unlimited users and roles, a guaranteed availability SLA, and dedicated 24/7 support, and that it is requested through the sales team.<br><br>**Scenario: Each plan leads to its next step**<br>**Given** the visitor has chosen a plan<br>**When** the visitor decides to continue<br>**Then** Starter and Professional lead to the information of each plan, and Enterprise leads to the sales contact.<br><br>**Scenario: The visitor contacts the sales team**<br>**Given** a visitor from a hotel group wants to talk to sales<br>**When** the visitor sends their name, the hotel or group they represent, and a message<br>**Then** the request is registered and the visitor is informed that a Hostera teammate will follow up.<br><br>**Scenario: The visitor leaves a sales request incomplete**<br>**Given** the visitor wants to contact the sales team<br>**When** the visitor tries to send the request without the name, the hotel or group, or the message<br>**Then** the request is not sent and the visitor is asked to complete the missing information.<br><br>**Scenario: The visitor decides after reviewing all the content**<br>**Given** the visitor has reviewed the information of Hostera<br>**When** the visitor is ready to choose<br>**Then** the visitor can continue with the Starter plan or contact the sales team. | EP001 |
+| US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and understand the available next steps, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | **Scenario: The visitor compares the plans by operating scale**<br>**Given** the visitor wants to compare the available plans<br>**When** the visitor reviews the pricing information<br>**Then** the visitor finds Starter for one property with up to 10 rooms at S/ 39 per property per month, Professional for chains with 2 to 5 locations at S/ 8 per room per month, and Enterprise for large or multinational hotel groups, each with its included capabilities.<br><br>**Scenario: The visitor reviews the Enterprise conditions**<br>**Given** the visitor manages a large or multi-country hotel group<br>**When** the visitor evaluates the Enterprise plan<br>**Then** the visitor learns that it includes unlimited locations and RFID readers, an open API for PMS integrations, dedicated onboarding, unlimited users and roles, a guaranteed availability SLA, and dedicated 24/7 support, and that it is requested through the sales team.<br><br>**Scenario: Each plan leads to its next step**<br>**Given** the visitor has chosen a plan<br>**When** the visitor decides to continue<br>**Then** Starter and Professional lead to the information of each plan, and Enterprise leads to the sales contact.<br><br>**Scenario: The visitor contacts the sales team**<br>**Given** a visitor from a hotel group wants to talk to sales<br>**When** the visitor sends their name, the hotel or group they represent, and a message<br>**Then** the request is registered and the visitor is informed that a Hostera teammate will follow up.<br><br>**Scenario: The visitor leaves a sales request incomplete**<br>**Given** the visitor wants to contact the sales team<br>**When** the visitor tries to send the request without the name, the hotel or group, or the message<br>**Then** the request is not sent and the visitor is asked to complete the missing information.<br><br>**Scenario: The visitor decides after reviewing all the content**<br>**Given** the visitor has reviewed the information of Hostera<br>**When** the visitor is ready to choose<br>**Then** the visitor can continue with the Starter plan or contact the sales team. | EP001 |
 | US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information about Hostera, so that I can learn more before choosing a plan. | **Scenario: The visitor watches the product presentation**<br>**Given** the visitor wants to understand how Hostera operates<br>**When** the visitor requests the product presentation<br>**Then** the system provides the product video explaining how Hostera works in daily hotel operations.<br><br>**Scenario: The visitor watches the team presentation**<br>**Given** the visitor wants to know who is building Hostera<br>**When** the visitor requests the team presentation<br>**Then** the system provides the team video explaining who builds Hostera and the reasons behind the product.<br><br>**Scenario: The visitor identifies the engineering team**<br>**Given** the visitor wants to know the people behind Hostera<br>**When** the visitor reviews the team information<br>**Then** the visitor identifies Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana as software engineers, with a short description of each person's contribution.<br><br>**Scenario: The visitor resolves questions before choosing a plan**<br>**Given** the visitor has questions about the service<br>**When** the visitor consults the frequently asked questions<br>**Then** the visitor finds answers about starting with one hotel, what changes with Professional, and the availability of Hostera in English and Latin American Spanish. | EP001 |
 | US008 | Consult Hostera information in English or Spanish | As a visitor, I want to choose English or Spanish, so that I can understand Hostera information in the language I understand best. | **Scenario: The visitor chooses the language**<br>**Given** a visitor prefers to read in English or in Spanish<br>**When** the visitor chooses that language<br>**Then** the topics, value proposition, options by operating scale, plans, next steps, and support content are presented in the selected language.<br><br>**Scenario: The Spanish variant preserves the offer**<br>**Given** the visitor consults Hostera information in Spanish<br>**When** the visitor reviews the options and plans<br>**Then** the visitor finds the options “Hotel independiente”, “Cadena hotelera pequeña”, and “Grupo hotelero”, and the plans “Starter”, “Profesional”, and “Empresarial”, with the same prices and conditions as the English variant.<br><br>**Scenario: The visitor changes language at any moment**<br>**Given** the visitor is reading either language variant<br>**When** the visitor chooses the other language<br>**Then** the content the visitor was consulting is presented in the newly selected language. | EP001 |
 | US009 | Register a hotel operation | As an independent hotel administrator or small-chain operations manager, I want to create an account with an initial property so that I can begin configuring my hotel operation in Hostera. | **Scenario: Register with valid information**<br>**Given** the administrator provides a name, a unique work email, a property name, and a valid password<br>**When** the administrator submits the registration<br>**Then** the system creates the account, associates the initial property, and identifies the administrator as its first authorized operator.<br><br>**Scenario: Reject an email that is already registered**<br>**Given** an account already exists for the provided work email<br>**When** the administrator submits the registration<br>**Then** the system rejects the request and indicates that the email is already associated with an account.<br><br>**Scenario: Reject incomplete or invalid registration data**<br>**Given** one or more required registration values are missing or invalid<br>**When** the administrator submits the registration<br>**Then** the system does not create the account and identifies the values that require correction. | EP002 |
@@ -2084,9 +2084,9 @@ El Impact Mapping de Hostera conecta las hipótesis estratégicas del modelo de 
 
 Los objetivos de negocio reflejan las metas comerciales y de adopción de Grafo Verde como plataforma B2B SaaS (Software as a Service) monetizada desde el inicio.
 
-*   **BG1 (adquisición en el plan Starter):** Alcanzar 50 suscripciones de pago activas en el plan *Starter* (facturadas a S/39 mensuales) durante los primeros 4 meses de lanzamiento.
-*   **BG2 (expansión al plan Professional):** Lograr que 20 cadenas hoteleras pequeñas contraten el plan *Professional* (S/8 por habitación) y que el 10% de los clientes *Starter* actualicen a este plan al superar la restricción de una sola propiedad en un periodo de 6 meses.
-*   **BG3 (retención y uso diario):** Alcanzar una tasa de retención mensual del 90%, garantizada mediante el uso diario (al menos 5 días a la semana) de las funciones críticas como codificación RFID y control de reservas por parte de los operadores del hotel.
+*   **BG1 (adquisición en el plan Starter):** Alcanzar 50 suscripciones de pago activas en el plan *Starter* (facturadas a S/ 39 mensuales) durante los primeros 4 meses de lanzamiento.
+*   **BG2 (expansión al plan Professional):** Lograr que 20 cadenas hoteleras pequeñas contraten el plan *Professional* (S/ 8 por habitación) y que el 10 % de los clientes *Starter* actualicen a este plan al superar la restricción de una sola propiedad en un periodo de 6 meses.
+*   **BG3 (retención y uso diario):** Alcanzar una tasa de retención mensual del 90 %, garantizada mediante el uso diario (al menos 5 días a la semana) de las funciones críticas como codificación RFID y control de reservas por parte de los operadores del hotel.
 
 ### Actores (Actors)
 
@@ -2103,7 +2103,7 @@ La siguiente matriz detalla cómo cada meta del negocio digital se apoya en un c
 | :--- | :--- | :--- | :--- | :--- |
 | **BG1** (50 suscripciones *Starter* a S/ 39 al mes) | A1 (Steven Huarcaya) | El administrador abandona el uso de múltiples herramientas gratuitas y adquiere directamente la suscripción *Starter* desde la web para centralizar las reservas de su única sede. | Desarrollar un portal de adquisición (Landing Page) con un flujo de registro automatizado que comunique claramente los límites y beneficios del plan Starter para hoteles de 1 sede (EP001, EP002). | **US003:** Como visitante del segmento de hoteles independientes, deseo identificar la opción de Hostera para una propiedad con hasta 10 habitaciones para poder confirmar que se ajusta a mi operación y continuar con el plan correspondiente.<br><br>**US009:** Como administrador de hotel independiente, deseo crear una cuenta con una propiedad inicial para poder comenzar a configurar mi operación hotelera en Hostera. |
 | **BG2** (20 suscripciones *Professional* a S/ 8 por habitación) | A2 (Anyeli Cárdenas) | La gerente de operaciones contrata el plan *Professional* en lugar de un ERP tradicional, para aprovechar los cinco administradores con roles y obtener reportes independientes por sede. | Implementar un módulo de analítica operativa multisede y un sistema de control de inventario capaz de generar alertas críticas de stock automáticamente (EP007, EP005). | **US031:** Como gerente de operaciones, deseo encontrar y revisar reportes operativos por propiedad y periodo para poder evaluar el rendimiento y la actividad de cada hotel de la cadena.<br><br>**US024:** Como gerente de operaciones, deseo monitorear las cantidades de inventario y condiciones de stock por ubicación para poder identificar rápidamente los suministros críticos que requieren atención. |
-| **BG3** (90% retención por uso diario) | A1, A2 (Steven y Anyeli) | Los responsables y su equipo confían exclusivamente en Hostera para su operación diaria, utilizándolo para emitir todas las llaves físicas y confirmar los check-ins diarios. | Proveer un sistema de gestión de estancias que esté directamente integrado con una API de codificación de tarjetas de proximidad (RFID) en la misma interfaz web (EP003, EP006). | **US017:** Como operador de recepción, deseo verificar la identidad del huésped, registrar los pagos de llegada que correspondan y codificar el acceso a la habitación al completar el check-in de una reserva confirmada para que el huésped pueda iniciar su estancia con una identidad verificada y tarjetas válidas.<br><br>**US029:** Como operador autorizado de recepción, deseo codificar tarjetas RFID con periodos de acceso válidos o reemplazarlas conservando el mismo fin de validez, limitando a cada miembro del personal a una credencial utilizable, para que los huéspedes y el personal reciban acceso adecuado para su rol o estancia. |
+| **BG3** (90 % retención por uso diario) | A1, A2 (Steven y Anyeli) | Los responsables y su equipo confían exclusivamente en Hostera para su operación diaria, utilizándolo para emitir todas las llaves físicas y confirmar los check-ins diarios. | Proveer un sistema de gestión de estancias que esté directamente integrado con una API de codificación de tarjetas de proximidad (RFID) en la misma interfaz web (EP003, EP006). | **US017:** Como operador de recepción, deseo verificar la identidad del huésped, registrar los pagos de llegada que correspondan y codificar el acceso a la habitación al completar el check-in de una reserva confirmada para que el huésped pueda iniciar su estancia con una identidad verificada y tarjetas válidas.<br><br>**US029:** Como operador autorizado de recepción, deseo codificar tarjetas RFID con periodos de acceso válidos o reemplazarlas conservando el mismo fin de validez, limitando a cada miembro del personal a una credencial utilizable, para que los huéspedes y el personal reciban acceso adecuado para su rol o estancia. |
 
 ### Resumen Visual
 
@@ -2142,7 +2142,7 @@ Las primeras ocho posiciones se mantienen para las historias de la Landing Page,
 que deben considerarse desde el primer Sprint. A continuación se priorizan las
 experiencias y flujos operativos de la Web Application por su valor visible para los
 usuarios. Las historias de registro e inicio de sesión se ubican después de esas
-capacidades. Las Technical Stories del RESTful API, correspondientes al trabajo
+capacidades. Las Technical Stories de la RESTful API, correspondientes al trabajo
 backend, se agrupan al final; las relacionadas con identidad, autenticación y
 autorización ocupan las últimas posiciones.
 
@@ -2214,7 +2214,7 @@ El Product Backlog puede consultarse en el tablero de YouTrack del proyecto (htt
 ## 4.1. Style Guidelines
 
 El sistema de diseño de Hostera centraliza las decisiones visuales que deben
-mantenerse en el Landing Page y en las aplicaciones web. La propuesta adopta
+mantenerse en la Landing Page y en las aplicaciones web. La propuesta adopta
 Material Design 3 (M3) (Google, s.f.-c) y lo adapta a la identidad de Hostera mediante tokens de
 color, tipografía, espaciado, forma y elevación compartidos.
 
@@ -2848,7 +2848,7 @@ Landing Page, la selección de segmento y la aplicación web.
 
 ## 4.3. Landing Page UI Design
 
-La propuesta de interfaz del Landing Page traduce el sistema de diseño y la
+La propuesta de interfaz de la Landing Page traduce el sistema de diseño y la
 arquitectura de información de Hostera en una experiencia web coherente y
 responsive. La composición establece una jerarquía que inicia con la propuesta de
 valor, orienta a cada visitante hacia su segmento, explica el problema y la solución,
@@ -2876,9 +2876,9 @@ entre las secciones. Los encabezados, agrupaciones, divisores y llamadas a la ac
 refuerzan la jerarquía definida por los sistemas de organización, etiquetado y
 navegación.
 
-<img src="assets/chapter-4/landing-page-wireframe-desktop.png" alt="Wireframe completo del Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/landing-page-wireframe-desktop.png" alt="Wireframe completo de la Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
 
-*Figura 4.4. Wireframe del Landing Page de Hostera para Desktop Web Browser.*
+*Figura 4.4. Wireframe de la Landing Page de Hostera para Desktop Web Browser.*
 
 #### Mobile Web Browser
 
@@ -2889,9 +2889,9 @@ los márgenes laterales mantienen una línea de lectura estable. Los controles
 interactivos principales tienen una altura mínima de 48 px y permanecen claramente
 identificados, lo que favorece su uso táctil y mediante tecnologías de asistencia.
 
-<img src="assets/chapter-4/landing-page-wireframe-mobile-contact-sheet.png" alt="Wireframe completo del Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
+<img src="assets/chapter-4/landing-page-wireframe-mobile-contact-sheet.png" alt="Wireframe completo de la Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
 
-*Figura 4.5. Wireframe del Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
+*Figura 4.5. Wireframe de la Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
 
 ### 4.3.2. Landing Page Mock-up
 
@@ -2911,9 +2911,9 @@ evidencia y equipo alternan texto y contenido visual para mantener el ritmo de l
 Los botones principales emplean un énfasis uniforme y las acciones secundarias se
 distinguen sin competir con el objetivo principal de cada sección.
 
-<img src="assets/chapter-4/landing-page-mockup-desktop.png" alt="Mock-up completo del Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/landing-page-mockup-desktop.png" alt="Mock-up completo de la Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
 
-*Figura 4.6. Mock-up del Landing Page de Hostera para Desktop Web Browser.*
+*Figura 4.6. Mock-up de la Landing Page de Hostera para Desktop Web Browser.*
 
 #### Mobile Web Browser
 
@@ -2926,9 +2926,9 @@ la interacción accesibles. De esta manera, la adaptación responsive conserva l
 identidad y la arquitectura de información sin tratar la vista móvil como un producto
 distinto.
 
-<img src="assets/chapter-4/landing-page-mockup-mobile-contact-sheet.png" alt="Mock-up completo del Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
+<img src="assets/chapter-4/landing-page-mockup-mobile-contact-sheet.png" alt="Mock-up completo de la Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
 
-*Figura 4.7. Mock-up del Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
+*Figura 4.7. Mock-up de la Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
 
 ## 4.4. Web Applications UX/UI Design
 
@@ -3388,7 +3388,7 @@ indica la condición y permite ajustar los criterios para realizar una nueva bú
 
 La ruta esperada lleva desde la lista de reservas al formulario de creación y luego al
 detalle de la reserva creada para una habitación disponible. La ruta alternativa
-presenta errores cuando faltan datos o el período no es válido; la operación puede
+presenta errores cuando faltan datos o el periodo no es válido; la operación puede
 corregirse desde el mismo formulario.
 
 #### Goal: Review and update an existing booking
@@ -3398,7 +3398,7 @@ corregirse desde el mismo formulario.
 *Figura 4.58. User Flow para revisar y actualizar una reserva existente.*
 
 Desde el detalle, el personal abre el formulario de edición y vuelve al detalle con
-los cambios guardados. Si la habitación o el período seleccionado dejó de estar
+los cambios guardados. Si la habitación o el periodo seleccionado dejó de estar
 disponible, el flujo muestra el conflicto y permite elegir una alternativa.
 
 #### Goal: Update a booking according to its pre-arrival outcome
@@ -3565,10 +3565,10 @@ acceso y su motivo.
 
 <img src="assets/chapter-4/web-application-user-flows/24-operational-report-review.png" alt="User Flow para encontrar y revisar un reporte operativo" style="width:100%; height:auto;"/>
 
-*Figura 4.75. User Flow para encontrar y revisar un reporte operativo para una propiedad y período.*
+*Figura 4.75. User Flow para encontrar y revisar un reporte operativo para una propiedad y periodo.*
 
 La biblioteca de reportes conduce al reporte de ocupación y disponibilidad cuando
-existen datos para la propiedad y el período seleccionados. Si el período no contiene
+existen datos para la propiedad y el periodo seleccionados. Si el periodo no contiene
 datos, se presenta un estado vacío en lugar de un resultado engañoso.
 
 #### Goal: Export an operational report for the selected scope
@@ -5274,7 +5274,7 @@ llamada a la acción de su plan.
 
 Después de la revisión del sprint, la Landing Page cambió en tres puntos y se publicó
 como versión `v0.3.0`. Se retiró el plan gratuito y se presentaron los planes
-Starter, a S/39 al mes, y Professional, a S/8 por habitación. El contacto comercial
+Starter, a S/ 39 al mes, y Professional, a S/ 8 por habitación. El contacto comercial
 pasó a una página propia y se agregaron los metadatos para redes sociales.
 
 El Sprint 2 dejó publicada la primera versión de la Frontend Web Application, la
