@@ -1917,8 +1917,8 @@ Se introducen los eventos negativos en rojo (problemas como conflictos de overbo
 
 El tablero se organiza en ocho flujos. Los cinco primeros siguen la vida de una
 estadía: la configuración de la propiedad (`Property Added`, `Rooms Registered`,
-`Rate Plan Defined`), el ciclo de la reserva (`Reservation Created`,
-`Room Assigned`, `Reservation Confirmed`, con sus alternativas de modificación,
+`Rate Plan Defined`), el ciclo de la reserva (`Booking Created`,
+`Room Assigned`, `Booking Confirmed`, con sus alternativas de modificación,
 cancelación y no-show), la llegada y el check-in (`Guest Identity Verified`,
 `Payment Recorded`, `RFID Key Card Encoded`, `Guest Checked In`), el acceso y la
 salida (`Access Granted` o `Access Denied`, `Guest Checked Out`,
@@ -1928,9 +1928,14 @@ otros tres flujos corren en paralelo a la estadía: el acceso del personal, las
 operaciones de inventario y el monitoreo con reportes.
 
 Tres eventos marcan el paso de un flujo al siguiente y funcionan como eventos pivote:
-`Reservation Confirmed` cierra la reserva y abre la espera de la llegada,
+`Booking Confirmed` cierra la reserva y abre la espera de la llegada,
 `Guest Checked In` activa la credencial del huésped y `Guest Checked Out` revoca esa
 credencial y pone en marcha la preparación de la habitación.
+
+En el tablero, los eventos de la reserva aparecen con el término `Reservation`. En el
+Ubiquitous Language (sección 2.5) y en la aplicación el término es `Booking`, por lo
+que `Reservation Created` y `Reservation Confirmed` corresponden a `Booking Created`
+y `Booking Confirmed`.
 
 Los actores que aparecen en el tablero son el administrador o responsable de
 operaciones, el agente de recepción, el huésped, el personal de housekeeping y el
@@ -2549,18 +2554,18 @@ reducida del navegador.
 
 | Uso en la interfaz | Etiqueta definida | Qué representa |
 | :--- | :--- | :--- |
-| Entrada de navegación o sección del dashboard | `Reservations` | El conjunto de reservas y sus operaciones. |
+| Entrada de navegación o sección del dashboard | `Bookings` | El conjunto de reservas y sus operaciones. |
 | Entrada de navegación o sección del dashboard | `Rooms` | Las habitaciones y su disponibilidad. |
 | Entrada de navegación o sección del dashboard | `Inventory` | El inventario del almacén y sus movimientos. |
 | Entrada de navegación o sección del dashboard | `Access control` | Las tarjetas, los lectores y los eventos RFID. |
 | Entrada de navegación o sección del dashboard | `Reports` | Los resultados agregados y las comparaciones operativas. |
-| Acción dentro de un área funcional | `Create reservation`, `Check availability` | La operación que la persona puede ejecutar. |
+| Acción dentro de un área funcional | `New booking`, `Check availability` | La operación que la persona puede ejecutar. |
 | Acción dentro de un área funcional | `Add item`, `Review access event` | La operación sobre inventario o registros de acceso. |
 | Estado de un registro o evento | `Available`, `Occupied`, `Pending`, `Access granted` | La condición actual del dato o evento. |
 
 Las entradas de navegación expresan áreas de información y las acciones expresan
-operaciones sobre esa información. Por ejemplo, `Reservations` identifica el
-destino, mientras que `Create reservation` identifica una acción dentro de ese
+operaciones sobre esa información. Por ejemplo, `Bookings` identifica el
+destino, mientras que `New booking` identifica una acción dentro de ese
 destino. Esta relación hace explícita la asociación entre el área funcional, el dato y la
 tarea de la persona.
 
@@ -2676,7 +2681,7 @@ facilitar la localización de nombres en español.
 
 | Zona | Campos de búsqueda | Filtros complementarios |
 | :--- | :--- | :--- |
-| **Reservations** | Nombre del huésped, código de reserva y contacto asociado. | Propiedad, rango de fechas, estado de la reserva y tipo de habitación. |
+| **Bookings** | Nombre del huésped, código de reserva y contacto asociado. | Propiedad, rango de fechas, estado de la reserva y tipo de habitación. |
 | **Rooms** | Número o nombre de habitación y propiedad. | Fecha de consulta, estado de ocupación, tipo de habitación y disponibilidad. |
 | **Inventory** | Nombre del artículo, código o categoría. | Propiedad, ubicación de almacén, nivel de stock y estado del artículo. |
 | **Access control** | Persona, tarjeta, lector o identificador del evento. | Propiedad, rango de fecha y hora, lector y resultado del acceso. |
@@ -2788,7 +2793,7 @@ la acción que corresponden a su escala operativa.
 #### Navegación de la aplicación web
 
 La aplicación web utiliza un menú global persistente para las áreas funcionales de
-Hostera: `Reservations`, `Rooms`, `Inventory`, `Access control` y
+Hostera: `Bookings`, `Rooms`, `Inventory`, `Access control` y
 `Reports`. El menú permite cambiar de área sin reiniciar la tarea y comunica la
 sección activa mediante una señal visual y textual.
 
@@ -2799,8 +2804,8 @@ permite volver a la lista sin perder los filtros o el contexto de la propiedad.
 
 | Nivel | Ejemplo de recorrido | Regla de navegación |
 | :--- | :--- | :--- |
-| Área funcional | Menú principal → `Reservations` | La persona identifica dónde se encuentra mediante el destino activo. |
-| Colección | `Reservations` → lista de reservas | La lista permite revisar el conjunto y utilizar la búsqueda o los filtros del área. |
+| Área funcional | Menú principal → `Bookings` | La persona identifica dónde se encuentra mediante el destino activo. |
+| Colección | `Bookings` → lista de reservas | La lista permite revisar el conjunto y utilizar la búsqueda o los filtros del área. |
 | Detalle | Lista → detalle de una reserva | El detalle conserva el nombre del área y ofrece una acción clara para regresar. |
 | Acción contextual | Detalle → revisar disponibilidad relacionada | La acción aparece junto al dato que explica por qué es relevante. |
 | Cambio de contexto | Selector de propiedad → otra propiedad | El cambio informa qué propiedad está activa antes de actualizar el contenido. |
@@ -2927,6 +2932,11 @@ distinto.
 
 ## 4.4. Web Applications UX/UI Design
 
+Los wireframes, wireflows, mock-ups, user flows y el prototipo de esta sección muestran
+el área de reservas con el término `Reservations`. En el Ubiquitous Language (sección
+2.5) y en la aplicación implementada el término es `Booking`, por lo que esa área
+corresponde a `Bookings` y la acción `New reservation` a `New booking`.
+
 ### 4.4.1. Web Applications Wireframes
 
 Los wireframes de Hostera representan la estructura de la aplicación web responsive en
@@ -3048,37 +3058,37 @@ disponible en https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7.
 
 *Figura 4.14. Wireflow para navegar a otra área operativa autorizada.*
 
-**User goal: Find and review a reservation.**
+**User goal: Find and review a booking.**
 
 <img src="assets/chapter-4/web-application-wireflow-05-reservation-review.png" alt="Wireflow de búsqueda y revisión de una reserva" style="width:100%; height:auto;"/>
 
 *Figura 4.15. Wireflow para encontrar y revisar una reserva.*
 
-**User goal: Create a reservation for an available room.**
+**User goal: Create a booking for an available room.**
 
 <img src="assets/chapter-4/web-application-wireflow-06-reservation-creation.png" alt="Wireflow de creación de una reserva" style="width:100%; height:auto;"/>
 
 *Figura 4.16. Wireflow para crear una reserva de habitación disponible.*
 
-**User goal: Review and update an existing reservation.**
+**User goal: Review and update an existing booking.**
 
 <img src="assets/chapter-4/web-application-wireflow-07-reservation-update.png" alt="Wireflow de actualización de una reserva" style="width:100%; height:auto;"/>
 
 *Figura 4.17. Wireflow para revisar y actualizar una reserva existente.*
 
-**User goal: Update a reservation according to its pre-arrival outcome.**
+**User goal: Update a booking according to its pre-arrival outcome.**
 
 <img src="assets/chapter-4/web-application-wireflow-08-reservation-lifecycle.png" alt="Wireflow de resultado previo a la llegada" style="width:100%; height:auto;"/>
 
 *Figura 4.18. Wireflow para actualizar una reserva según el resultado previo a la llegada.*
 
-**User goal: Record a payment received for a reservation.**
+**User goal: Record a payment received for a booking.**
 
 <img src="assets/chapter-4/web-application-wireflow-09-reservation-payment.png" alt="Wireflow de registro de pago" style="width:100%; height:auto;"/>
 
 *Figura 4.19. Wireflow para registrar un pago de reserva.*
 
-**User goal: Complete guest check-in for a confirmed reservation.**
+**User goal: Complete guest check-in for a confirmed booking.**
 
 <img src="assets/chapter-4/web-application-wireflow-10-guest-check-in.png" alt="Wireflow de check-in" style="width:100%; height:auto;"/>
 
@@ -3360,7 +3370,7 @@ La navegación persistente permite pasar del dashboard a reservas y posteriormen
 habitaciones. Cuando se intenta abrir un área no autorizada, se muestra el estado de
 restricción y se ofrece el retorno a un área permitida.
 
-#### Goal: Find and review a reservation
+#### Goal: Find and review a booking
 
 <img src="assets/chapter-4/web-application-user-flows/05-reservation-review.png" alt="User Flow para encontrar y revisar una reserva" style="width:100%; height:auto;"/>
 
@@ -3370,7 +3380,7 @@ El personal abre la lista de reservas, aplica los criterios de búsqueda y revis
 detalle de la reserva encontrada. Si no existen coincidencias, el estado vacío
 indica la condición y permite ajustar los criterios para realizar una nueva búsqueda.
 
-#### Goal: Create a reservation for an available room
+#### Goal: Create a booking for an available room
 
 <img src="assets/chapter-4/web-application-user-flows/06-reservation-creation.png" alt="User Flow para crear una reserva de una habitación disponible" style="width:100%; height:auto;"/>
 
@@ -3381,7 +3391,7 @@ detalle de la reserva creada para una habitación disponible. La ruta alternativ
 presenta errores cuando faltan datos o el período no es válido; la operación puede
 corregirse desde el mismo formulario.
 
-#### Goal: Review and update an existing reservation
+#### Goal: Review and update an existing booking
 
 <img src="assets/chapter-4/web-application-user-flows/07-reservation-update.png" alt="User Flow para revisar y actualizar una reserva existente" style="width:100%; height:auto;"/>
 
@@ -3391,7 +3401,7 @@ Desde el detalle, el personal abre el formulario de edición y vuelve al detalle
 los cambios guardados. Si la habitación o el período seleccionado dejó de estar
 disponible, el flujo muestra el conflicto y permite elegir una alternativa.
 
-#### Goal: Update a reservation according to its pre-arrival outcome
+#### Goal: Update a booking according to its pre-arrival outcome
 
 <img src="assets/chapter-4/web-application-user-flows/08-reservation-lifecycle.png" alt="User Flow para actualizar una reserva según su resultado previo a la llegada" style="width:100%; height:auto;"/>
 
@@ -3401,7 +3411,7 @@ El detalle de la reserva abre las acciones de ciclo de vida disponibles. Según 
 resultado previo a la llegada, el personal puede cancelar la reserva o marcarla como
 no-show; cada opción se confirma mediante su diálogo correspondiente.
 
-#### Goal: Record a payment received for a reservation
+#### Goal: Record a payment received for a booking
 
 <img src="assets/chapter-4/web-application-user-flows/09-reservation-payment.png" alt="User Flow para registrar un pago recibido de una reserva" style="width:100%; height:auto;"/>
 
@@ -3411,7 +3421,7 @@ El personal abre el registro de pago desde el detalle, introduce el importe reci
 y vuelve al detalle con el balance actualizado. Un importe inválido activa el estado
 de error y permite corregir el valor antes de guardar.
 
-#### Goal: Complete guest check-in for a confirmed reservation
+#### Goal: Complete guest check-in for a confirmed booking
 
 <img src="assets/chapter-4/web-application-user-flows/10-guest-check-in.png" alt="User Flow para completar el check-in de un huésped" style="width:100%; height:auto;"/>
 
@@ -3585,7 +3595,7 @@ prototipado.
 
 Las decisiones de interacción mantienen la arquitectura de información definida para
 la aplicación. En Desktop, la navegación persistente conserva el contexto de la
-propiedad activa y permite acceder a Overview, Reservations, Rooms, Inventory, Access
+propiedad activa y permite acceder a Overview, Bookings, Rooms, Inventory, Access
 Control y Reports desde cualquier módulo operativo. Las acciones principales de cada
 módulo conducen a las vistas de creación, detalle, edición y confirmación que forman
 parte de los User Flows. Las rutas alternativas representan estados como errores de
@@ -3595,7 +3605,7 @@ balances pendientes y fallos de codificación RFID.
 En Mobile Web Browser se conserva la misma organización funcional, pero las vistas se
 presentan en una composición vertical y con controles compactos adecuados para la
 navegación táctil. El prototipo permite iniciar el recorrido desde el Dashboard
-Mobile, acceder a Reservations, Rooms y Occupancy Report, y regresar al contexto
+Mobile, acceder a Bookings, Rooms y Occupancy Report, y regresar al contexto
 principal. Esta adaptación mantiene las etiquetas y la jerarquía de los módulos sin
 introducir una arquitectura de navegación diferente.
 
@@ -3653,8 +3663,8 @@ dominio y cambia el estado de un agregado. La tabla resume lo que contiene cada 
 | Frame | Comandos principales | Agregados | Reglas de negocio que se validan | Sistemas externos |
 | --- | --- | --- | --- | --- |
 | Property Management (Identity & Access) | Agregar propiedad, registrar habitaciones, definir plan tarifario, asignar personal | `Property`, `Room`, `RatePlan`, `PropertyAccess` | El nombre de la propiedad es único, el número de habitación es único dentro de la propiedad y el rol asignado pertenece a la propiedad. | Ninguno |
-| Reservations & Stays | Crear, modificar y cancelar una reserva, marcar no-show, asignar habitación | `Reservation` | La habitación está disponible para las fechas, la reserva está en un estado que admite cambios y la política de cancelación se cumple. | Ninguno |
-| Reservations & Stays + RFID Access Control | Verificar la identidad del huésped, registrar el pago, codificar la tarjeta, hacer el check-in, acceder a la habitación, hacer el check-out | `Guest`, `Reservation`, `Stay`, `RFIDCredential`, `AccessEvent` | El documento es válido, el pago viene de un canal autorizado, la reserva está confirmada antes de emitir la tarjeta y no quedan cargos pendientes al salir. | Lectores RFID |
+| Reservations & Stays | Crear, modificar y cancelar una reserva, marcar no-show, asignar habitación | `Booking` | La habitación está disponible para las fechas, la reserva está en un estado que admite cambios y la política de cancelación se cumple. | Ninguno |
+| Reservations & Stays + RFID Access Control | Verificar la identidad del huésped, registrar el pago, codificar la tarjeta, hacer el check-in, acceder a la habitación, hacer el check-out | `Guest`, `Booking`, `Stay`, `RFIDCredential`, `AccessEvent` | El documento es válido, el pago viene de un canal autorizado, la reserva está confirmada antes de emitir la tarjeta y no quedan cargos pendientes al salir. | Lectores RFID |
 | Room Management | Actualizar el estado, marcar la habitación como limpia, inspeccionada y lista | `Room` | La transición de estado está permitida y la habitación solo queda lista después de inspeccionarse sin observaciones. | Ninguno |
 | Inventory Management | Agregar ubicación y artículo, recibir y ajustar stock, detectar stock bajo y quiebre | `StorageLocation`, `InventoryItem`, `StockMovement` | Los códigos son únicos, el stock no puede quedar en negativo y la alerta se dispara al bajar del umbral. | Servicio de notificaciones |
 | RFID Access Control (Staff) | Emitir, activar, validar y revocar la credencial de un miembro del personal | `RFIDCredential`, `AccessEvent` | El miembro del personal tiene un rol activo y la credencial es válida para el área y el horario. | Lectores RFID |
@@ -3667,7 +3677,8 @@ o deja vencer la credencial del huésped.
 
 Los contextos del tablero se corresponden con los módulos de la Frontend Web
 Application: Property Management con la gestión de la propiedad activa, Reservations
-& Stays con `bookings`, Room Management con `rooms`, Inventory Management con
+& Stays con `bookings`, cuyo agregado `Reservation` del tablero es `Booking` en el
+Ubiquitous Language, Room Management con `rooms`, Inventory Management con
 `inventory`, los dos frames de RFID con `access-control` y Reporting & Analytics con
 el panorama operativo de `overview`. En la implementación, el agregado
 `StockMovement` del tablero se registra como el historial de ajustes de cada artículo.
