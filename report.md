@@ -961,7 +961,7 @@ deberán validarse con administradores y responsables de operaciones hoteleras.
 | Estrategia                                                       | Justificación                                                                                                                                                                                                                                      | Tácticas iniciales                                                                                                                                                                                                                                                                                      |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Enfoque en la coordinación operativa y la trazabilidad RFID**  | Nexus PMS, OkFac y SysHotel cubren buena parte de las reservas, habitaciones e inventarios. Hostera puede diferenciarse al relacionar esos procesos con la autorización y el historial de accesos RFID en un mismo contexto.                       | Priorizar en el MVP el panel de operación, la relación entre habitación, usuario y tarjeta, y la consulta del historial de eventos. Comunicar la propuesta como coordinación operativa y seguridad, sin afirmar todavía una ventaja comprobada.                                                         |
-| **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multi-sede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel.                                                    |
+| **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multisede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel.                                                    |
 | **Producto modular e interoperable**                             | Nexus, OkFac y SysHotel ya ofrecen facturación, OTAs, POS u otros módulos. Hostera no debe asumir que reemplazará todas las herramientas comerciales y contables que utiliza un hotel.                                                             | Mantener el alcance inicial en reservas, disponibilidad, inventario y accesos RFID. Levantar como requisitos de integración los sistemas de facturación, canales de reserva y cerraduras que los hoteles ya utilicen, empezando por los escenarios de mayor valor.                                      |
 | **Entrada gradual mediante demostraciones y pilotos**            | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.).                                                                                         | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
 | **Precio y despliegue transparentes**                            | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Hostera publica en su Landing Page el plan Starter a S/39 por propiedad y el plan Professional a S/8 por habitación.                                                                                   | Mantener los precios publicados y la estimación por habitación del plan Professional, y validar con los segmentos objetivo si el cobro por propiedad o por habitación les resulta comprensible. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto.                                                                   |
@@ -1069,7 +1069,7 @@ información y el control de las diferencias entre establecimientos.
 | 7   | ¿Cómo mantiene separada la información de cada sede y, al mismo tiempo, obtiene reportes consolidados?     | ¿Qué roles y permisos tienen los equipos? ¿Quién puede consultar o modificar la información?                |
 | 8   | ¿Qué sistemas, dispositivos y canales utiliza el equipo de la cadena?                                                  | ¿Usan PMS, Excel u otra herramienta; teléfono, computadora, laptop o tableta; qué navegador y canal prefieren? |
 | 9   | ¿Qué debería ofrecer una solución para mejorar la coordinación y acompañar el crecimiento de la cadena?          | ¿Qué configuraciones deberían replicarse y qué procesos deberían mantenerse específicos por sede?           |
-| 10  | ¿Qué condiciones de costo, soporte, capacitación, seguridad e integración necesitaría para adoptarla?           | ¿Hay algún aspecto multi-sede que debamos comprender mejor y autoriza el uso de sus respuestas y grabación?  |
+| 10  | ¿Qué condiciones de costo, soporte, capacitación, seguridad e integración necesitaría para adoptarla?           | ¿Hay algún aspecto multisede que debamos comprender mejor y autoriza el uso de sus respuestas y grabación?  |
 
 ### 2.2.2. Registro de entrevistas
 
@@ -1108,11 +1108,11 @@ con una entrevista en video y el segmento 2 con cuatro.
 
 **Resumen.**
 
-Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
+Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han crecido año tras año y que han captado y fidelizado nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
 
-Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja conjuntamente con la administradora, quienes bloquean y gestionan las reservas de acuerdo con la disponibilidad. Posteriormente, el personal operativo se encarga de direccionar las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se realizan registros manuales que posteriormente son trasladados a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
+Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja junto con la administradora, y entre ambas bloquean y gestionan las reservas de acuerdo con la disponibilidad. Luego, el personal operativo se encarga de dirigir las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se hacen registros manuales que después se trasladan a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
 
-Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación entre el equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, siendo estos los principales canales utilizados para coordinar las actividades del hospedaje.
+Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación del equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, que son los principales canales para coordinar las actividades del hospedaje.
 
 Como solución para mejorar la coordinación y acompañar el crecimiento del negocio, considera necesario implementar un sistema que permita automatizar las reservas y brindar una mayor visibilidad del hospedaje mediante una página web. Actualmente se encuentran evaluando un proyecto de implementación de este tipo de sistema debido a las necesidades que han surgido con el crecimiento del establecimiento.
 
@@ -1144,7 +1144,7 @@ Wilson, ingeniero, propietario y administrador de un hotel con dos sedes en Puno
 
 Para gestionar las reservas, recibe información principalmente mediante WhatsApp, correo electrónico, TikTok y aplicaciones de reservas, pero posteriormente debe trasladarla manualmente a un archivo de Excel, que utiliza como herramienta principal para controlar la disponibilidad y las reservas. Para los accesos utiliza tarjetas de identificación, aunque actualmente estas solo permiten controlar la entrada y salida de las habitaciones. También emplea una computadora para administrar el sistema de tarjetas.
 
-Respecto a la seguridad, considera necesario que cada trabajador de limpieza tenga su propia tarjeta de acceso, ya que anteriormente una misma tarjeta podía ser utilizada por diferentes personas, dificultando identificar quién ingresó a una habitación en caso de pérdida de algún objeto. Por ello, considera importante registrar quién entra, a qué hora y si el acceso corresponde con su turno de trabajo. En caso de pérdida de una tarjeta, actualmente esta debe ser anulada y reemplazada por una nueva.
+Respecto a la seguridad, considera necesario que cada trabajador de limpieza tenga su propia tarjeta de acceso, ya que anteriormente una misma tarjeta podía ser utilizada por diferentes personas, lo que dificultaba identificar quién ingresó a una habitación en caso de pérdida de algún objeto. Por ello, considera importante registrar quién entra, a qué hora y si el acceso corresponde con su turno de trabajo. En caso de pérdida de una tarjeta, actualmente esta debe ser anulada y reemplazada por una nueva.
 
 Otro aspecto importante es el control de los diferentes servicios ofrecidos por el hotel. Además de las habitaciones, administra desayunos, almuerzos, productos del minibar, piscina, sauna y gimnasio. Propone que estos servicios puedan registrarse directamente mediante la tarjeta del huésped, utilizando lectores de tarjetas, para evitar que el personal tenga que registrar manualmente quién utiliza cada servicio y facilitar el cobro al finalizar la estadía.
 
@@ -1172,7 +1172,7 @@ Finalmente, considera que una mejora importante para la administración del hote
 
 **Resumen.**
 
-El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y solicitudes especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
+El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, spa, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y solicitudes especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
 
 Para la gestión de reservas, el entrevistado señala que esta actividad es realizada principalmente por el departamento de reservas, aunque también puede ser gestionada por el Front Desk Manager o los MODs cuando es necesario. La disponibilidad de habitaciones se analiza estratégicamente mediante reuniones semanales de revenue, donde se revisa el comportamiento del mercado, los hoteles competidores, las tarifas, los eventos de la semana y los niveles de disponibilidad. A partir de esta información, diferentes áreas como ventas, gerencia general, revenue management y reservas establecen estrategias para responder a los cambios entre temporadas de alta y baja ocupación.
 
@@ -1180,7 +1180,7 @@ En cuanto al almacén, el entrevistado no controla directamente las existencias 
 
 Para supervisar el hotel de manera remota, cuenta con una laptop y un celular proporcionados por la organización. Mediante una conexión VPN autorizada puede ingresar al sistema desde su domicilio y revisar información como las llegadas, salidas y movimiento de huéspedes. Utiliza principalmente Opera y la VPN como herramientas para realizar estas tareas. El acceso remoto está restringido a determinados trabajadores según su nivel de responsabilidad dentro del hotel, por lo que no todos cuentan con una laptop corporativa o acceso mediante VPN.
 
-Respecto a las dificultades, considera que no existe un único problema específico, sino diferentes circunstancias que pueden presentarse en una operación hotelera, relacionadas con el personal, la percepción del huésped o descuidos en la atención y preparación de las habitaciones. Por ello, considera que la organización y la capacidad de responder ante estas situaciones son aspectos importantes para la operación. Como cambio para mejorar la administración, destaca la importancia de la mejora continua y de mantener motivado al equipo, especialmente mediante el reconocimiento y proporcionándoles las herramientas necesarias para realizar correctamente su trabajo.
+Respecto a las dificultades, considera que no existe un único problema específico, sino diferentes circunstancias que pueden presentarse en una operación hotelera, relacionadas con el personal, la percepción del huésped o descuidos en la atención y preparación de las habitaciones. Por ello, considera que la organización y la capacidad de responder ante estas situaciones son aspectos importantes para la operación. Como cambio para mejorar la administración, destaca la importancia de la mejora continua y de mantener motivado al equipo, especialmente mediante el reconocimiento y la entrega de las herramientas necesarias para realizar correctamente su trabajo.
 
 Finalmente, resalta la importancia de comprender mejor el trabajo del área de housekeeping. Señala que su función no se limita a limpiar habitaciones, sino que también implica cumplir estándares, identificar los gustos y preferencias de los huéspedes y cuidar los detalles durante la preparación de las habitaciones. Considera que este departamento tiene un trabajo altamente demandante y que su aporte es fundamental para la experiencia del huésped, razón por la cual algunas cadenas realizan actividades como el Housekeeping Week para reconocer su trabajo.
 
@@ -1210,13 +1210,13 @@ Para la gestión de reservas e inventario utiliza principalmente Opera Cloud, in
 
 En situaciones de sobreventa u *overbooking*, se realiza una coordinación entre los responsables de las diferentes propiedades para derivar a los huéspedes a otra sede. Para mantener separada la información de cada hotel, cada propiedad cuenta con informes y un centro de costos o código propio. De esta manera, los usuarios autorizados pueden acceder únicamente a la información correspondiente a las sedes que tienen bajo su responsabilidad. Opera también permite realizar comparaciones entre diferentes informes y propiedades.
 
-Respecto a la seguridad de la información, señala que Opera está configurado de acuerdo con el código de cada propiedad, evitando que otras sedes o personas externas puedan acceder a información que no les corresponde. También menciona que Opera Cloud representa una versión más moderna del sistema, utilizando almacenamiento en la nube en lugar de depender de la misma infraestructura de centros de datos.
+Respecto a la seguridad de la información, señala que Opera está configurado de acuerdo con el código de cada propiedad, lo que evita que otras sedes o personas externas puedan acceder a información que no les corresponde. También menciona que Opera Cloud representa una versión más moderna del sistema, porque utiliza almacenamiento en la nube en lugar de depender de la misma infraestructura de centros de datos.
 
-Como solución complementaria para la administración de habitaciones, comenta que propuso implementar una plataforma destinada al área de ama de llaves. Actualmente, esta plataforma permite visualizar en tiempo real el estado de las habitaciones y realizar seguimiento de trabajos de mantenimiento y pendientes relacionados con las áreas de *Room Divisions*, incluyendo ama de llaves, recepción y mantenimiento. El costo aproximado es de 1.500 dólares anuales por propiedad, e incluye soporte 24/7 desde España. Las capacitaciones se realizan constantemente y también forman parte de la inducción de los nuevos trabajadores que utilizarán la plataforma.
+Como solución complementaria para la administración de habitaciones, comenta que propuso implementar una plataforma destinada al área de ama de llaves. Actualmente, esta plataforma permite visualizar en tiempo real el estado de las habitaciones y realizar seguimiento de trabajos de mantenimiento y pendientes relacionados con las áreas de *Room Divisions*, incluyendo ama de llaves, recepción y mantenimiento. El costo aproximado es de USD 1500 anuales por propiedad, e incluye soporte 24/7 desde España. Las capacitaciones se realizan constantemente y también forman parte de la inducción de los nuevos trabajadores que utilizarán la plataforma.
 
-Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, facilitando así la gestión y supervisión de las operaciones del hotel.
+Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, lo que facilita la gestión y supervisión de las operaciones del hotel.
 
-**Tecnología y canales.** Utiliza Opera Cloud integrado con el CRM y recibe a diario los informes *Flash Manager* y *History and Forecast*. Las reservas llegan, entre otros canales, desde Booking y Expedia. Cada trabajador tiene usuario y contraseña personales, y el hotel usa una plataforma complementaria para housekeeping que cuesta cerca de USD 1 500 al año por propiedad, con soporte 24/7.
+**Tecnología y canales.** Utiliza Opera Cloud integrado con el CRM y recibe a diario los informes *Flash Manager* y *History and Forecast*. Las reservas llegan, entre otros canales, desde Booking y Expedia. Cada trabajador tiene usuario y contraseña personales, y el hotel usa una plataforma complementaria para housekeeping que cuesta cerca de USD 1500 al año por propiedad, con soporte 24/7.
 
 **Entrevista E5: Roy Ríos**
 
@@ -1344,7 +1344,7 @@ antes, recibir capacitación y que se conecte con lo que ya usa.
 
 **Entrevista complementaria 2 (F2).**
 
-Entrevistado: Valeria Rojas
+Entrevistada: Valeria Rojas
 <br>Edad: 29 años
 <br>Ubicación: San Isidro, Lima
 <br>Ocupación: Jefa de recepción, entre 2 y 5 años de experiencia en hotelería
@@ -1378,7 +1378,7 @@ utiliza.
 
 **Entrevista complementaria 3 (F3).**
 
-Entrevistado: Mariana Torres
+Entrevistada: Mariana Torres
 <br>Edad: 34 años
 <br>Ubicación: Barranco, Lima
 <br>Ocupación: Administradora general, entre 2 y 5 años de experiencia en hotelería
@@ -1445,7 +1445,7 @@ una herramienta nueva pide una demostración previa y capacitación.
 
 **Entrevista complementaria 5 (F5).**
 
-Entrevistado: Andrea Salazar
+Entrevistada: Andrea Salazar
 <br>Edad: 38 años
 <br>Ubicación: Miraflores, Lima
 <br>Ocupación: Gerente de operaciones, entre 6 y 10 años de experiencia en hotelería
@@ -1477,7 +1477,7 @@ una demostración previa, integración con lo existente y capacitación.
 
 **Respuesta fuera del segmento (F6).**
 
-Entrevistado: Claudia Vargas
+Entrevistada: Claudia Vargas
 <br>Edad: 51 años
 <br>Ubicación: San Isidro, Lima
 <br>Ocupación: Gerente general, más de 10 años de experiencia en hotelería
@@ -1637,7 +1637,7 @@ operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
 conviven dentro del mismo segmento, y la diferencia tiene consecuencias de producto:
 donde ya existe un PMS corporativo el problema se desplaza hacia la integración entre
 sistemas, y el propio `E4` señala que su plataforma complementaria de housekeeping
-cuesta cerca de USD 1 500 anuales por propiedad, lo que fija una referencia de precio
+cuesta cerca de USD 1500 anuales por propiedad, lo que fija una referencia de precio
 para la categoría.
 
 La entrevista a Roy Ríos (`E5`) incorpora un caso que conviene leer en contraste con
@@ -1758,7 +1758,7 @@ User Persona 1
 
 User Persona 2
 
-![Anyeli Cardenas](assets/chapter-2/user-persona-anyeli-cardenas.png)
+![Anyeli Cárdenas](assets/chapter-2/user-persona-anyeli-cardenas.png)
 
 *Figura 2.10. User Persona de Anyeli Cárdenas, segmento de cadenas hoteleras pequeñas.*
 
@@ -1839,7 +1839,7 @@ panorama operativo y las reservas antes que los reportes y el control de accesos
 
 ### 2.3.3. User Journey Mapping
 
-En esta sección se presentan los User Journey Maps en su versión **As-Is** (situación actual) para cada uno de los segmentos representados. Estos mapas ilustran el flujo de trabajo de extremo a extremo (*end-to-end journey*) que experimentan los usuarios al gestionar sus operaciones hoteleras cotidianas sin la presencia de la plataforma Hostera, evidenciando los puntos de fricción, ineficiencias y dolores en sus procesos actuales.
+En esta sección se presentan los User Journey Maps en su versión **As-Is** (situación actual) para cada uno de los segmentos representados. Estos mapas ilustran el flujo de trabajo de extremo a extremo (*end-to-end journey*) que experimentan los usuarios al gestionar sus operaciones hoteleras cotidianas sin la plataforma Hostera, y muestran los puntos de fricción, las ineficiencias y los dolores de sus procesos actuales.
 
 #### Segmento 1: Steven Huarcaya
 
@@ -1893,7 +1893,7 @@ que el equipo no podía resolver todavía. La sesión se desarrolló en tres eta
 
 ### Etapa 1: exploración de eventos
 
-Solapamiento masivo de información, eventos repetidos con distinta redacción, y un fuerte desorden cronológico que dificulta la lectura global.
+En esta etapa el equipo colocó en el tablero todos los eventos que conocía del dominio. El resultado muestra información superpuesta, eventos repetidos con distinta redacción y un desorden cronológico que dificulta la lectura global.
 
 <img src="assets/chapter-2/hostera-bigPicture-eventStorming-Etapa1.jpg" alt="Etapa 1 del Big Picture EventStorming de Hostera, con los eventos todavía sin ordenar" style="width:100%; height:auto;"/>
 
@@ -1909,7 +1909,7 @@ Los eventos dispersos se alinean horizontalmente de izquierda a derecha siguiend
 
 ### Etapa 3: fases, actores y hotspots
 
-Se introducen los eventos negativos en rojo (problemas como conflictos de overbooking o fallas de stock) y se sitúan los elementos de control superior (cabeceras amarillas de fases y notas de actores o comandos que desencadenan los eventos), tal como se aprecia organizado en filas horizontales en la imagen.
+Se agregan en rojo los eventos negativos, como los conflictos de overbooking o las fallas de stock, y se ubican las cabeceras amarillas de las fases y las notas de los actores y comandos que desencadenan los eventos. El tablero queda organizado en filas horizontales, como muestra la figura.
 
 <img src="assets/chapter-2/big-picture-event-storming-hostera.svg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
 
@@ -1964,12 +1964,12 @@ actores, recursos y procesos.
 
 | Term | Equivalent in Spanish | Business-domain definition |
 | :--- | :--- | :--- |
-| **Property** | Establecimiento / sede | A physical hotel location managed as an operational unit, with its own rooms, staff, reservations, inventory and access rules. |
+| **Property** | Establecimiento / sede | A physical hotel location managed as an operational unit, with its own rooms, staff, bookings, inventory and access rules. |
 | **Active Property** | Propiedad activa | The property an operator is currently working on. Every view and operation in the application is scoped to it until the operator selects another one. |
 | **Hotel Group** | Grupo hotelero | An organization that operates or coordinates multiple hotel properties under a common business structure. |
 | **Independent Hotel** | Hotel independiente | A hotel that operates as a single property rather than as part of a larger hotel group. |
 | **Small Hotel Chain** | Cadena hotelera pequeña | A hotel operation that coordinates several properties on a limited scale; in Hostera, this segment covers operations with two to five locations. |
-| **Hotel Operation** | Operación hotelera | The coordinated activities required to manage properties, rooms, guests, reservations, staff, inventory and access. |
+| **Hotel Operation** | Operación hotelera | The coordinated activities required to manage properties, rooms, guests, bookings, staff, inventory and access. |
 | **Guest** | Huésped | A person who stays at or uses the accommodation services of a hotel. |
 | **Staff Member** | Miembro del personal | A person who performs operational or administrative activities for a property, such as reception, housekeeping or management. |
 | **Booking** | Reserva | A record that holds a guest's request or confirmed arrangement for accommodation, including dates, room information and applicable conditions. The application, its demonstration API and the Technical Stories expose it as the `bookings` resource. |
@@ -1979,11 +1979,11 @@ actores, recursos y procesos.
 | **Room Availability** | Disponibilidad de habitaciones | The set of rooms that can be offered or assigned for a specific date or period. |
 | **Room Status** | Estado de la habitación | The operational condition of a room, such as available, occupied, dirty, clean, inspected, blocked or out of service. |
 | **Status Period** | Periodo de estado | A date range during which a room is blocked, out of service or needs cleaning, recorded separately from the bookings that occupy it. |
-| **Room Assignment** | Asignación de habitación | The act of associating an available room with a reservation or guest stay. |
-| **Check-in** | Registro de entrada | The process through which a property confirms a guest's arrival, verifies the reservation and enables the stay. |
+| **Room Assignment** | Asignación de habitación | The act of associating an available room with a booking or guest stay. |
+| **Check-in** | Registro de entrada | The process through which a property confirms a guest's arrival, verifies the booking and enables the stay. |
 | **Check-out** | Registro de salida | The process through which a property confirms a guest's departure, closes the stay and settles the corresponding account. |
 | **No-show** | No presentado | The outcome of a booking whose guest neither arrived nor cancelled. It releases the room for other bookings. |
-| **Front Desk** | Recepción | The hotel operation responsible for welcoming guests and coordinating reservations, arrivals, departures, room assignments and guest requests. |
+| **Front Desk** | Recepción | The hotel operation responsible for welcoming guests and coordinating bookings, arrivals, departures, room assignments and guest requests. |
 | **Housekeeping** | Limpieza y mantenimiento de habitaciones | The operation responsible for preparing rooms, updating their condition and reporting cleaning or maintenance needs. |
 | **Rate Plan** | Plan tarifario | A set of pricing and selling conditions associated with a room or accommodation offer, such as dates, restrictions and included services. |
 | **Daily Rate** | Tarifa diaria | The price of a room type for a specific night under a rate plan. It replaces the base nightly rate for that night. |
@@ -1994,7 +1994,7 @@ actores, recursos y procesos.
 | **Stock Condition** | Condición de stock | The state of an inventory item compared with its thresholds: in stock, low stock when it reaches the replenishment level, or out of stock when its quantity is zero. |
 | **Folio** | Cuenta del huésped | The account associated with a guest stay that records charges, payments, adjustments and the balance to be settled. |
 | **Payment** | Pago | An amount received for a booking, recorded with its method, reference and the operator who registered it. The payments of a booking determine its balance due. |
-| **Property Management System (PMS)** | Sistema de gestión hotelera | A business operations system used by a hotel or hotel group to manage reservations, check-in and check-out, room assignment, rates, billing and related operational information. Its traditional hotel scope is described by Oracle Hospitality (s.f.). |
+| **Property Management System (PMS)** | Sistema de gestión hotelera | A business operations system used by a hotel or hotel group to manage bookings, check-in and check-out, room assignment, rates, billing and related operational information. Its traditional hotel scope is described by Oracle Hospitality (s.f.). |
 | **Online Travel Agency (OTA)** | Agencia de viajes en línea | A third-party booking channel through which guests can search for and reserve accommodation offered by a property. |
 | **Access Control** | Control de acceso | The set of operational rules and actions that determine who can enter a property, room or restricted area and under what conditions. |
 | **Credential** | Credencial | An RFID authorization that grants a guest or a staff member access to specific rooms or areas for a validity period. A credential can be revoked before it expires. |
