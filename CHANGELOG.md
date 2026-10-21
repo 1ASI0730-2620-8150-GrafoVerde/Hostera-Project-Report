@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+### Added
+
+- Added the Hostera, Nexus PMS, OkFac and SysHotel logos to the header of the competitive analysis landscape.
+
 ### Changed
 
 - Aligned the web application title in the SEO metadata with the title the application sets.
