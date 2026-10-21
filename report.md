@@ -103,14 +103,14 @@ fue una actividad compartida.
 
 Durante TB1 el informe se trabajó en ramas de funcionalidad que se integraron en
 `develop`, con mensajes Conventional Commits. Entre el 18 de septiembre y el 6 de
-octubre de 2026 se registraron 93 commits sin contar los de merge. Los cinco
+octubre de 2026 se registraron 94 commits sin contar los de merge. Los cinco
 integrantes aportaron al informe; la siguiente tabla resume qué secciones trabajó
 cada uno.
 
 | Integrante | Aportes al informe en TB1 | Commits |
 |---|---|---:|
 | Darnell Cuba (`darnell1910`) | Entorno de desarrollo, control de código y despliegue (5.1); entrevistas complementarias y análisis de entrevistas; Lean UX y su canvas; trazabilidad de las User Personas y matriz de tareas; Sprint 2; conclusiones; registro de versiones. | 37 |
-| José Santana (`JhosBY2005`) | Student Outcome; limpieza de secciones vacías, enlaces y textos de plantilla; bibliografía en APA; user stories sin referencias a la interfaz; objetivo del Sprint 1; registro de entrevistas y criterio del segmento 2; modelo C4; video de navegación del Sprint 2; evidencia de los segmentos, término Booking y herramientas de diseño. | 43 |
+| José Santana (`JhosBY2005`) | Student Outcome; limpieza de secciones vacías, enlaces y textos de plantilla; bibliografía en APA; user stories sin referencias a la interfaz; objetivo del Sprint 1; registro de entrevistas y criterio del segmento 2; modelo C4; video de navegación del Sprint 2; evidencia de los segmentos, término Booking y herramientas de diseño. | 44 |
 | Joaquin Cuba (`joacuba`) | Priorización del Product Backlog; alineación de las user stories con el frontend; formato de enlaces e imágenes en el PDF. | 4 |
 | Juan Diego Flores (`YopoFlores`) | Impact Mapping con objetivos de negocio del modelo SaaS; supuestos del Lean UX. | 4 |
 | Mateo Condori (`BeyaminUv`) | Ajuste del registro de entrevistas; etapas del Big Picture EventStorming e Impact Mapping. | 5 |
@@ -4049,7 +4049,7 @@ repositorios de producto exigidos por el enunciado del proyecto:
 
 | Producto | URL del repositorio | Estado actual |
 | --- | --- | --- |
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.4.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.5.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
 | Frontend Web Applications | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, el tag `v0.1.0`, su `CHANGELOG.md` y su `LICENSE.md`, y la carpeta `docs/` con las ADR, el diagrama de clases y las user stories. |
 | RESTful Web Services | Se creará en el Sprint 3 (AV2). | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. Mientras no esté implementado, la Frontend Web Application consume la API de datos de demostración descrita en la sección 5.1.1. |
 
