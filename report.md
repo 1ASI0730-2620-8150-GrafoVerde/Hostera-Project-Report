@@ -290,8 +290,8 @@ La propuesta de Grafo Verde se centra en una plataforma de gestión hotelera con
 
 | Foto                                                                                                              | Apellidos y Nombres              | Código     | Carrera                | Habilidades                                                                                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="assets/chapter-1/joaquin-cuba-image-profile.png" alt="Foto de Joaquin Antonio Cuba Pareja" width="100"> | Cuba Pareja, Joaquin Antonio     | u201621281 | Ingeniería de Software | JavaScript, TypeScript, Python, HTML, CSS y C++. Dispuesto a trabajar y aprender en equipo. Tiene facilidad para aprender rápidamente nuevas tecnologías y lenguajes de programación. |
-| <img src="assets/chapter-1/darnell-cuba-image-profile.png" alt="Foto de Darnell Yadir Cuba Vega" width="100">   | Cuba Vega, Darnell Yadir         | u202410105 | Ingeniería de Software |   Python, HTML, CSS y C++. Dispuesto a trabajar, apoyar y aprender en equipo.                                                                                                                                                                                     |
+| <img src="assets/chapter-1/joaquin-cuba-image-profile.png" alt="Foto de Joaquin Antonio Cuba Pareja" width="100"> | Cuba Pareja, Joaquin Antonio     | U201621281 | Ingeniería de Software | JavaScript, TypeScript, Python, HTML, CSS y C++. Dispuesto a trabajar y aprender en equipo. Tiene facilidad para aprender rápidamente nuevas tecnologías y lenguajes de programación. |
+| <img src="assets/chapter-1/darnell-cuba-image-profile.png" alt="Foto de Darnell Yadir Cuba Vega" width="100">   | Cuba Vega, Darnell Yadir         | U202410105 | Ingeniería de Software | Python, HTML, CSS y C++. Dispuesto a trabajar, apoyar y aprender en equipo.                                                                                                                                                                                     |
 | <img src="assets/chapter-1/mateo-condori-image-profile.png" alt="Foto de Mateo Sebastián Condori Urviola" width="100"> | Condori Urviola, Mateo Sebastián | U20231E443 | Ingeniería de Software | Lean UX, análisis de usuarios, diseño de interfaces, wireframes, wireflows y User Stories. Colaborativo y orientado a convertir necesidades en flujos claros. |
 | <img src="assets/chapter-1/juan-flores-image-profile.png" alt="Foto de Juan Diego Flores Rios" width="100">      | Flores Rios, Juan Diego          | U202412124 | Ingeniería de Software | HTML, CSS y C++. Se adapta a cualquier entorno de trabajo y brinda el mayor apoyo posible al equipo.                                                                                |
 | <img src="assets/chapter-1/jose-santana-image-profile.png" alt="Foto de José Antonio Santana Luna" width="100"> | Santana Luna, José Antonio       | U20241E281 | Ingeniería de Software | Lean UX, análisis de entrevistas, arquitectura de software, EventStorming, diseño de APIs y documentación técnica. Organizado y orientado a la colaboración y la trazabilidad. |
@@ -301,13 +301,13 @@ La propuesta de Grafo Verde se centra en una plataforma de gestión hotelera con
 ### 1.2.1. Antecedentes y problemática
 
 Esta sección describe el problema que Hostera busca atender. El análisis se organizó
-con la técnica 5W+2H, una herramienta para describir un problema y concentrarse en
+con la técnica 5W2H, una herramienta para describir un problema y concentrarse en
 sus causas antes de plantear una solución (Progressa Lean, 2021). Las respuestas se
 apoyan en las diez entrevistas registradas en la sección 2.2, identificadas con los
 códigos `E1` a `E5` y `F1` a `F5`, y en las cifras del sector publicadas por el
 Ministerio de Comercio Exterior y Turismo.
 
-#### Técnica de The 5 'W's y 2 'H's
+#### Técnica 5W2H
 
 **What (¿Qué?)**
 
@@ -378,7 +378,7 @@ asignación en el momento (`F1`).
 Porque las herramientas que usan estos hoteles resuelven partes separadas de la
 operación. Los sistemas hoteleros disponibles cubren la reserva y la tarifa, pero el
 almacén y el acceso físico quedan fuera o se resuelven con plataformas adicionales:
-el gerente general entrevistado paga cerca de USD 1 500 al año por propiedad solo por
+el gerente general entrevistado paga cerca de USD 1500 al año por propiedad solo por
 una plataforma para el área de ama de llaves (`E4`). Quienes no tienen un sistema
 hotelero sostienen todo con hojas de cálculo, cuadernos y mensajes.
 
@@ -423,7 +423,7 @@ establecimientos de hospedaje y 329 340 habitaciones, y el 85,1 % de esos
 establecimientos no estaba categorizado (MINCETUR, 2025), lo que describe un mercado
 formado sobre todo por operaciones pequeñas. Esas operaciones están dispuestas a
 pagar por resolverlo: cuatro de los cinco respondientes válidos del formulario
-pagarían S/51 o más al mes por una herramienta que reúna reservas, almacén y accesos.
+pagarían S/ 51 o más al mes por una herramienta que reúna reservas, almacén y accesos.
 
 **Costo de referencia de la solución.** Como referencia para el equipo, se estimó el
 costo de desarrollar un producto mínimo viable de software. Los montos son una
@@ -431,13 +431,13 @@ estimación de planificación, no una cotización comercial.
 
 | Componente                                                                |            Costo estimado |
 | ------------------------------------------------------------------------- | ------------------------: |
-| Diseño UX/UI y prototipo del dashboard web                                |       S/ 2,500 a S/ 4,000 |
-| Desarrollo frontend del dashboard administrativo                          |       S/ 4,000 a S/ 6,000 |
-| Backend, API y base de datos                                              |       S/ 4,000 a S/ 6,500 |
-| Integración del software de control de accesos RFID y registro de eventos |       S/ 2,500 a S/ 4,000 |
-| Pruebas, documentación y configuración del despliegue                     |       S/ 1,500 a S/ 2,500 |
-| Dominio, hosting y servicios de infraestructura (anual)                   |       S/ 1,200 a S/ 2,000 |
-| **Total estimado de software**                                            | **S/ 15,700 a S/ 25,000** |
+| Diseño UX/UI y prototipo del dashboard web                                |         S/ 2500 a S/ 4000 |
+| Desarrollo frontend del dashboard administrativo                          |         S/ 4000 a S/ 6000 |
+| Backend, API y base de datos                                              |         S/ 4000 a S/ 6500 |
+| Integración del software de control de accesos RFID y registro de eventos |         S/ 2500 a S/ 4000 |
+| Pruebas, documentación y configuración del despliegue                     |         S/ 1500 a S/ 2500 |
+| Dominio, hosting y servicios de infraestructura (anual)                   |         S/ 1200 a S/ 2000 |
+| **Total estimado de software**                                            | **S/ 15 700 a S/ 25 000** |
 
 Esta estimación no incluye la compra de tarjetas, lectores RFID u otro hardware
 físico, ni los costos de operación del hotel.
@@ -495,7 +495,7 @@ Lo que las herramientas existentes no resuelven es la conexión entre el canal p
 que entra la reserva y el registro donde se controla la operación. Los sistemas de
 gestión hotelera disponibles atienden la reserva y la tarifa, pero dejan fuera el
 almacén y el acceso físico, o los resuelven con plataformas separadas que se contratan
-aparte: el gerente general entrevistado paga cerca de USD 1 500 anuales por propiedad
+aparte: el gerente general entrevistado paga cerca de USD 1500 anuales por propiedad
 solo por la plataforma de ama de llaves. En las operaciones de varias sedes, la
 consecuencia es que consolidar la información cuesta entre una hora y medio día cada
 vez, y que los reportes llegan desactualizados con frecuencia semanal.
@@ -580,14 +580,14 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 *Cambios o métricas medibles que indican el éxito de la empresa.*
 1. Creemos que lograremos 50 suscripciones activas de pago en el plan *Starter* a través de nuestra Landing Page durante los primeros 4 meses de lanzamiento.
 2. Creemos que 20 cadenas hoteleras pequeñas contratarán el plan *Professional*, y que el 10% de nuestros clientes *Starter* actualizarán a este plan en un periodo de 6 meses.
-3. Creemos que mantendremos una tasa de retención mensual del 90% asegurando que el producto sea indispensable en el uso diario.
+3. Creemos que mantendremos una tasa de retención mensual del 90 % porque el producto será indispensable en la operación diaria.
 4. Creemos que reduciremos significativamente nuestro costo de adquisición de clientes (CAC) al permitir un flujo de registro y *onboarding* automatizado (Self-Service) para los hoteles de una sola sede.
 
 **User Assumptions**
 *Perfiles de usuario específicos, segmentos de clientes o actores que interactúan con el sistema.*
-1. Creemos que nuestro usuario principal para el plan *Starter* es el administrador o propietario de un hotel independiente (ej. Steven Huarcaya), quien supervisa directamente la continuidad diaria de una sola sede de hasta 10 habitaciones.
-2. Creemos que nuestro usuario principal para el plan *Professional* es la gerente de operaciones de una pequeña cadena (ej. Anyeli Cárdenas), cuya responsabilidad es coordinar el rendimiento y recursos de 2 a 5 locaciones.
-3. Creemos que estos usuarios operan actualmente en un ecosistema fragmentado, resolviendo su coordinación mediante WhatsApp, Excel y registros físicos propensos a errores.
+1. Creemos que nuestro usuario principal para el plan *Starter* es el administrador o propietario de un hotel independiente (por ejemplo, Steven Huarcaya), quien supervisa directamente la continuidad diaria de una sola sede de hasta 10 habitaciones.
+2. Creemos que nuestro usuario principal para el plan *Professional* es la gerente de operaciones de una pequeña cadena (por ejemplo, Anyeli Cárdenas), cuya responsabilidad es coordinar el rendimiento y los recursos de 2 a 5 sedes.
+3. Creemos que estos usuarios operan actualmente en un ecosistema fragmentado y resuelven su coordinación mediante WhatsApp, Excel y registros físicos propensos a errores.
 4. Creemos que estos usuarios interactuarán con Hostera diariamente, empleando la plataforma web tanto en computadoras de escritorio (recepción) como en dispositivos móviles (supervisión remota).
 
 **User Outcome and Benefit Assumptions**
