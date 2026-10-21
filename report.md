@@ -29,8 +29,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr><td>u201621281</td><td>Cuba Pareja, Joaquín Antonio</td></tr>
-    <tr><td>u202410105</td><td>Cuba Vega, Darnell Yadir</td></tr>
+    <tr><td>U201621281</td><td>Cuba Pareja, Joaquin Antonio</td></tr>
+    <tr><td>U202410105</td><td>Cuba Vega, Darnell Yadir</td></tr>
     <tr><td>U20231E443</td><td>Condori Urviola, Mateo Sebastián</td></tr>
     <tr><td>U202412124</td><td>Flores Rios, Juan Diego</td></tr>
     <tr><td>U20241E281</td><td>Santana Luna, José Antonio</td></tr>
@@ -43,7 +43,7 @@
 </div>
 <div class="version-history">
 
-# Control de versiones
+# Registro de Versiones del Informe
 
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -152,7 +152,7 @@ historial y la captura muestra sus commits más recientes.
   - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
 - [1.2. Solution Profile](#12-solution-profile)
   - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-    - [Técnica de The 5 'W's y 2 'H's](#técnica-de-the-5-ws-y-2-hs)
+    - [Técnica 5W2H](#técnica-5w2h)
   - [1.2.2. Lean UX Process](#122-lean-ux-process)
     - [1.2.2.1. Lean UX Problem Statement](#1221-lean-ux-problem-statement)
     - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
@@ -5312,12 +5312,12 @@ resolver, y viene de las entrevistas.
 | 2 | Implementar los servicios REST priorizados (`TS004` a `TS013`, `TS016` y `TS017`) e integrarlos con el frontend. | Reemplazar los datos de demostración por operaciones persistentes. |
 | 3 | Completar los reportes operativos (`US031`, `US032`), que quedaron fuera de la primera versión del frontend. | Probar la hipótesis 4 con responsables de cadenas pequeñas. |
 | 4 | Dejar el registro, el inicio de sesión y la autorización (`US009`, `US010`, `TS001` a `TS003`), junto con la integración RFID de los servicios (`TS014` y `TS015`), para después de los flujos principales y antes de publicar los servicios. | Proteger la información de cada propiedad antes de exponerla. |
-| 5 | Hacer que «Explore Starter» y «Explore Professional» lleven a la aplicación, como ya lo hace el enlace «Sign in» de la Landing Page. | Que el visitante que elige un plan pueda empezar a usar Hostera. |
+| 5 | Hacer que «Explore Starter» y «Explore Professional» abran el registro de su plan cuando estén implementados `US009` y `US010`. Desde la versión `v0.5.0` de la Landing Page ambos botones ya llevan a la aplicación. | Que el visitante que elige un plan empiece a usar Hostera desde el recorrido que le corresponde. |
 | 6 | Hacer más entrevistas en el segmento 2 con operaciones de administración compartida y agregar al formulario preguntas sobre personalidad, marcas e influencias. | Completar las fichas de User Persona con datos que hoy no se recogieron. |
 | 7 | Actualizar cada rama con `develop` antes de integrarla y mantener Git Flow y Conventional Commits. | Evitar que una integración reemplace cambios que otros integrantes ya habían subido. |
 
-Al cierre de TB1, Hostera tiene una Landing Page publicada y un problema mejor
-entendido que al inicio del curso, pero ninguna de sus hipótesis se ha probado con el
+Al cierre de TB1, Hostera tiene publicadas una Landing Page y la primera versión de su
+aplicación web, y un problema mejor entendido que al inicio del curso, pero ninguna de sus hipótesis se ha probado con el
 producto. La siguiente entrega tiene que poner la primera versión de la aplicación en
 manos de administradores de hotel y medir lo que hasta ahora solo se conoce por lo
 que contaron en las entrevistas.
@@ -5338,7 +5338,7 @@ Google. (s.f.-b). _Google JavaScript style guide_. Recuperado el 16 de septiembr
 
 Google. (s.f.-c). _Material Design 3_. Recuperado el 5 de septiembre de 2026, de https://m3.material.io/
 
-Gothelf, J., & Seiden, J. (2021). _Lean UX: Creating great products with agile teams_ (3a. ed.). O'Reilly Media.
+Gothelf, J., & Seiden, J. (2021). _Lean UX: Creating great products with agile teams_ (3.ª ed.). O'Reilly Media.
 
 HotelClick. (s.f.). _Sistema de administración y gestión hotelera para Perú: Nexus PMS_. Recuperado el 4 de septiembre de 2026, de https://hotelclick.net.pe/
 
