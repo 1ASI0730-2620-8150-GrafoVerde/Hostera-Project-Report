@@ -2964,7 +2964,7 @@ resumen de ocupación, el estado de las habitaciones y las próximas llegadas.
 
 *Figura 4.8. Wireframes móviles de acceso, dashboard y reservas.*
 
-#### Reservación, habitaciones e inventario
+#### Reserva, habitaciones e inventario
 
 Este grupo representa el detalle de una reserva, el listado de habitaciones, el detalle
 de una habitación, el inventario y el ajuste de stock. La información contextual se
@@ -2972,9 +2972,9 @@ mantiene cerca de las acciones correspondientes: el estado de la reserva acompa�
 datos principales, la habitación expone sus atributos operativos y el ajuste de stock
 separa la cantidad, la ubicación y el motivo de la operación.
 
-<img src="assets/chapter-4/web-application-wireframes-mobile-operations.png" alt="Wireframes móviles de reservación, habitaciones e inventario de Hostera" style="display:block; width:35%; height:auto; margin:0 auto;"/>
+<img src="assets/chapter-4/web-application-wireframes-mobile-operations.png" alt="Wireframes móviles de reserva, habitaciones e inventario de Hostera" style="display:block; width:35%; height:auto; margin:0 auto;"/>
 
-*Figura 4.9. Wireframes móviles de reservación, habitaciones e inventario.*
+*Figura 4.9. Wireframes móviles de reserva, habitaciones e inventario.*
 
 #### Control de acceso, reportes y navegación
 
@@ -3015,7 +3015,7 @@ disponible en https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7.
 | Review and update a booking. | Front-desk operator | Reservation detail → edit reservation → availability-conflict state when the proposed change is not valid. |
 | Manage the booking lifecycle. | Front-desk operator | Pending reservation → status actions → confirmation, no-show, or cancelled state. |
 | Record a booking payment. | Front-desk operator | Record payment → invalid-amount state when the payment cannot be accepted. |
-| Complete guest check-in for a confirmed reservation. | Front-desk operator | Verify guest → payment → encode key card → encoded card → completed check-in, with an unresolved-identity alternative. |
+| Complete guest check-in for a confirmed booking. | Front-desk operator | Verify guest → payment → encode key card → encoded card → completed check-in, with an unresolved-identity alternative. |
 | Complete guest check-out for an occupied room. | Front-desk operator | Checked-in reservation → check-out review → completed check-out, with an unresolved-balance alternative. |
 | Review room availability from a selected date. | Front-desk operator / hotel administrator | Rooms list → room detail with the selected-date monthly availability view. |
 | Create a room within an assigned property. | Hotel administrator | Rooms list → new-room drawer → duplicate-number validation state. |
@@ -3779,7 +3779,7 @@ de un adaptador de infraestructura.
 
 *Figura 4.83. Diagrama de componentes del bounded context Bookings de la RESTful API.*
 
-**Bounded context Rooms.** Administra habitaciones, tipos de habitación, planes de tarifa, tarifas diarias y periodos de estado, y responde las consultas de disponibilidad.
+**Bounded context Rooms.** Administra habitaciones, tipos de habitación, planes tarifarios, tarifas diarias y periodos de estado, y responde las consultas de disponibilidad.
 
 <img src="assets/chapter-4/c4-components-api-rooms.svg" alt="Diagrama de componentes del bounded context Rooms" style="display:block; width:75%; height:auto; margin:0 auto;"/>
 
