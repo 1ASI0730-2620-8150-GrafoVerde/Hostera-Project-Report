@@ -47,6 +47,7 @@
 
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  0.5.0  | 22/10/2026 | José Antonio Santana Luna (`JhosBY2005`)<br>Darnell Cuba (`darnell1910`) | Correcciones posteriores a la revisión de TB1. El Sprint Backlog 2 se descompuso en 50 tareas de 4 a 8 horas; el término Booking del Ubiquitous Language se usó en la arquitectura de información, los user goals y el EventStorming; se aclaró dónde el plan Free se reemplazó por Starter; se agregaron los logos del análisis competitivo; se revisó la ortografía de todo el informe; y los enlaces de la Landing Page apuntan al repositorio renombrado `hostera-landing-page`. |
 |  0.4.0  | 06/10/2026 | Darnell Cuba (`darnell1910`)<br>José Antonio Santana Luna (`JhosBY2005`)<br>Joaquin Cuba (`joacuba`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>Mateo Condori (`BeyaminUv`) | Versión de TB1. Se corrigieron las secciones observadas por el docente: el Lean UX se reescribió con la plantilla para una iniciativa nueva y se actualizó su canvas, las user stories se redactaron sin referencias a la interfaz y el Product Backlog se reordenó por prioridad. Se corrigió la asignación de las entrevistas a los segmentos, se agregaron entrevistas complementarias por formulario y se unificó su análisis con porcentajes. Se reemplazó el modelo C4 por las vistas del frontend, se completó la configuración del entorno, del control de código y del despliegue, y se incorporó el Sprint 2 con la primera versión de la Frontend Web Application y la versión `v0.4.0` de la Landing Page. Se reescribieron las conclusiones por etapa del ciclo de vida y la bibliografía pasó al formato APA. |
 |  0.3.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)                                                                          | Se incorporó la sección Project Report Collaboration Insights para AV1, con el enlace al repositorio, la explicación del trabajo colaborativo y las capturas de analíticos y commits de GitHub. |
 |  0.2.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Mateo Condori (`BeyaminUv`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>José Antonio Santana Luna (`JhosBY2005`) | Se amplió el informe con la documentación de descubrimiento, diseño, arquitectura e implementación de Hostera; se incorporó la evidencia del Sprint 1, el despliegue de la Landing Page en GitHub Pages, los Student Outcomes AV1, los perfiles del equipo y los anexos. |
@@ -3989,7 +3990,7 @@ verificación del software, y publicación de evidencias.
 | --- | --- | --- | --- |
 | Git | Controla las versiones locales del informe y de cada producto, y ejecuta el modelo de ramas del equipo. | Instalación local desde el canal oficial de distribución (https://git-scm.com/). | Cada integrante configura su nombre y su correo antes de su primer commit; las ramas siguen el modelo descrito en la sección 5.1.2. |
 | GitHub | Aloja el repositorio del equipo, los repositorios de producto, los issues y el historial de revisiones. | https://github.com/1ASI0730-2620-8150-GrafoVerde | Los cambios se realizan en ramas de trabajo y se integran mediante el flujo Git Flow descrito en la sección 5.1.2. |
-| GitHub Pages | Publica la Landing Page del equipo como sitio estático accesible públicamente. | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | La publicación se realiza desde la rama `main` y la carpeta `/ (root)`; la configuración se detalla en la sección 5.1.4. |
+| GitHub Pages | Publica la Landing Page del equipo como sitio estático accesible públicamente. | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ | La publicación se realiza desde la rama `main` y la carpeta `/ (root)`; la configuración se detalla en la sección 5.1.4. |
 | YouTrack | Gestiona el Product Backlog y realiza el seguimiento de las historias de usuario y los ítems de trabajo. | https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5 | El trabajo se asocia a un ítem del backlog antes de su implementación y revisión. |
 
 **Diseño, modelado y documentación de la solución**
@@ -4049,7 +4050,7 @@ repositorios de producto exigidos por el enunciado del proyecto:
 
 | Producto | URL del repositorio | Estado actual |
 | --- | --- | --- |
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.5.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.5.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
 | Frontend Web Applications | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, el tag `v0.1.0`, su `CHANGELOG.md` y su `LICENSE.md`, y la carpeta `docs/` con las ADR, el diagrama de clases y las user stories. |
 | RESTful Web Services | Se creará en el Sprint 3 (AV2). | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. Mientras no esté implementado, la Frontend Web Application consume la API de datos de demostración descrita en la sección 5.1.1. |
 
@@ -4234,7 +4235,7 @@ de compilación sí están versionados.
 La Landing Page está desplegada mediante GitHub Pages utilizando el repositorio de
 Landing Page registrado en la sección 5.1.2. La configuración de publicación utiliza
 la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en GitHub Pages
-(https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+(https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/).
 
 <img src="assets/chapter-5/github-pages-deployment.png" alt="Configuración de GitHub Pages de la Landing Page, publicada desde main y la carpeta raíz" style="width:100%; height:auto;"/>
 
@@ -4251,7 +4252,7 @@ producto:
 
 | Producto | Entorno objetivo | Fuente | Comando de build | Comando de publicación | URL pública |
 | --- | --- | --- | --- | --- | --- |
-| Landing Page | GitHub Pages | Rama `main` y carpeta `/ (root)` de `landing-page` | No requiere build: el sitio se sirve como HTML, CSS y JavaScript estáticos. | Publicación automática del flujo de GitHub Pages al integrar en `main`. | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ |
+| Landing Page | GitHub Pages | Rama `main` y carpeta `/ (root)` de `landing-page` | No requiere build: el sitio se sirve como HTML, CSS y JavaScript estáticos. | Publicación automática del flujo de GitHub Pages al integrar en `main`. | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ |
 | Frontend Web Application | Firebase Hosting | Copia local de `hostera-frontend-wa`, publicada con la CLI de Firebase | `npm run build`, que genera el directorio `dist/`. | `npm run deploy`, que construye la aplicación y ejecuta `firebase deploy --only hosting`. | https://hostera-f4116.web.app/ |
 | API de datos de demostración | Render (Web Service) | Rama `main` de `hostera-frontend-wa`, desde la raíz del repositorio | `npm ci` | `npm run server:start -- --host 0.0.0.0 --port $PORT`, que reconstruye `server/db.json` desde `server/data/` e inicia json-server. | https://hostera-frontend.onrender.com |
 | RESTful Web Services | Se elegirá en el Sprint 3 (AV2). | Repositorio de Web Services, que se creará en el Sprint 3. | `dotnet publish` del proyecto ASP.NET Core. | Se fijará junto con el proveedor elegido. | Se publicará con la primera versión de los servicios, prevista para el Sprint 3 (AV2). |
@@ -4331,7 +4332,7 @@ corresponden a la estimación registrada en el Product Backlog de Hostera.
 | **Total** | **Epic 1: Landing Page Experience** | **42** | **8/8 implementadas** |
 
 Al cierre del Sprint 1, el objetivo se considera cumplido: la Landing Page se
-encuentra publicada en https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ y, según la evidencia
+encuentra publicada en https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ y, según la evidencia
 de ejecución de la sección 5.2.1.5, permite recorrer desde la propuesta de valor
 hasta los caminos por escala de operación y los planes con su siguiente paso. Las
 ocho User Stories de `EP001` fueron implementadas.
@@ -4344,7 +4345,7 @@ asignar una persona líder para cada funcionalidad y mantener la colaboración d
 resto del equipo durante su implementación, revisión e integración mediante Git Flow.
 
 La asignación de líderes se basa en la persona responsable de la feature branch de
-cada User Story en el repositorio de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+cada User Story en el repositorio de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page).
 Los cuatro integrantes restantes se registran como colaboradores en cada aspecto,
 de acuerdo con la dinámica de trabajo colaborativo definida para el Sprint 1.
 
@@ -4432,7 +4433,7 @@ la estimación relativa en Story Points de cada User Story.
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 La evidencia de desarrollo del Sprint 1 corresponde al repositorio público de la
-Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page).
 Los commits funcionales se organizaron en ramas `feature/US001` a
 `feature/US008`, siguiendo el flujo Git Flow del equipo. La tabla registra los
 commits de implementación asociados con las ocho User Stories del sprint; los
@@ -4441,32 +4442,32 @@ documentan estos cambios.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`0e1282b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/0e1282b6460c4e5e7dbb73ddff9b775bf8ca046a) | `chore(styles): add Hostera color and type tokens` | Add shared CSS custom properties and document base styles so later sections can reuse the same surface, primary, and type scale. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`000a4ca`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/000a4ca8d5d4e3e48bdb4ad86ea6d9e904eae0b8) | `feat(hero): add hotel-operations proposition and dashboard preview` | Show the English hero copy, Start for free action, and an informational dashboard overview of reservations, rooms, inventory, and access. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`529c650`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/529c6503a79f06e6e69477d8408485b620ca106c) | `feat(problem): add fragmented-operations story and photo` | Explain that hotel operations break when information lives in different places and present Hostera as connecting reservations, rooms, inventory, and guest access. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`1010a38`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/1010a38394db1095275670857ace7e2041772440) | `feat(header): add primary navigation and Hostera mark` | Expose Solutions, Features, Pricing, Product, About, EN / ES, and Start for free at the top of the English landing page. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`5325b63`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/5325b63c41fac5df4db333954d827c3cef6370e2) | `feat(footer): add secondary navigation and Grafo Verde notice` | Expose Solutions, Benefits, Pricing, Product, About, Support, EN / ES, Terms and Conditions, and the Hostera publisher line in the footer. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`a39ca3f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/a39ca3f4bc5a0d51692dace477d7439d2b44441a) | `feat(nav): add terms page and mobile navigation menu` | Open Terms and Conditions as a dedicated page and let smaller screens use the header menu for the same destinations. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US003` | [`6f2139d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/6f2139dc92ce06e3b1e462d4834f576cebccba8e) | `feat(solutions): add independent-hotel pathway` | Present the one-property path with up to 10 rooms and a Start for free action into the Free experience. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US003` | [`493d8f2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/493d8f2b29f0abe96f0dff847cdea770a03d0975) | `feat(plans): add Free plan for one property` | State the Free plan is for one property with up to 10 rooms and list reservations, warehouse, RFID, administrator, and community support. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US004` | [`331de56`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/331de560a1823b6b0627bea31ac13c2ca7961976) | `feat(solutions): add small-chain pathway` | Present the 2-5 locations path and an Explore Professional action into the Professional plan. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US004` | [`750f65d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/750f65d1acaf4e8c86fb92b0adabe6bfece408e4) | `feat(plans): add Professional plan for small chains` | State the Professional plan is for 2 to 5 locations and list rooms, stock alerts, RFID, reports, roles, and priority support. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US005` | [`ca17547`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/ca1754785c33f9fc7c2899ac5eef9e44895398c9) | `feat(benefits): add connected operations and example cards` | Describe occupancy, room readiness, inventory, and guest access, and show centralized inventory and property access controls. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US005` | [`bd10bc3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/bd10bc3d18d037daaa69f085b9ce388419beb95e) | `feat(workflow): add four-step operating flow` | Present Add hotels, Set up your team, Connect systems, and Run operations with supporting descriptions. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`4f46e7c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/4f46e7cf7a2c9169317c831f26ba2c266527e115) | `feat(solutions): add hotel group commercial pathway` | Present the multi-country Hotel group path and a Talk to sales action into the Enterprise contact step. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`699014f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/699014fa134d41ae5378b5eae27fe728f3a8e946) | `feat(plans): add Enterprise plan to the comparison` | Show Free, Professional, and Enterprise with Talk to sales as the next step for large or multinational hotel groups. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`c9ce586`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/c9ce586a38d9040ce778557e43b1cd607e04d64e) | `feat(close): add closing actions and sales contact` | Repeat Start for free and Talk to sales, and open a sales contact step for the Enterprise hotel-group path. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`2cc1173`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/2cc11730b8228da92089bc92735d80c76584d6f1) | `feat(product): add Discover Hostera video entry` | Present the product media area with a play control that starts the daily hotel-operations demonstration. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`f8a5a88`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/f8a5a8801dcd969c3d7f8ede4a90f4c5dff21f07) | `feat(team): add engineering team and Meet the team video` | Identify Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana and start the team video from the play control. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`8293970`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/829397088f4f645039caf0ce4fd547c81ed6b4de) | `feat(support): add expandable FAQ answers` | Answer starting with one hotel, what changes with Professional, and English and Spanish availability. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US008` | [`a5046a5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/a5046a5b2a77522f9f5368486b329dd2859bebe1) | `feat(i18n): switch English and Spanish copy in place` | Keep a single landing page and swap navigation, hero, paths, plans, and CTAs when the visitor chooses EN or ES. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US008` | [`6d6ede6`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/6d6ede63f2a98a35bd21be2c4fa300f3eef2a9d6) | `feat(i18n): keep language when returning from terms` | Send EN and ES from the terms page back to the same landing page with the selected language. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US001` | [`0e1282b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/0e1282b6460c4e5e7dbb73ddff9b775bf8ca046a) | `chore(styles): add Hostera color and type tokens` | Add shared CSS custom properties and document base styles so later sections can reuse the same surface, primary, and type scale. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US001` | [`000a4ca`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/000a4ca8d5d4e3e48bdb4ad86ea6d9e904eae0b8) | `feat(hero): add hotel-operations proposition and dashboard preview` | Show the English hero copy, Start for free action, and an informational dashboard overview of reservations, rooms, inventory, and access. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US001` | [`529c650`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/529c6503a79f06e6e69477d8408485b620ca106c) | `feat(problem): add fragmented-operations story and photo` | Explain that hotel operations break when information lives in different places and present Hostera as connecting reservations, rooms, inventory, and guest access. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US002` | [`1010a38`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/1010a38394db1095275670857ace7e2041772440) | `feat(header): add primary navigation and Hostera mark` | Expose Solutions, Features, Pricing, Product, About, EN / ES, and Start for free at the top of the English landing page. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US002` | [`5325b63`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/5325b63c41fac5df4db333954d827c3cef6370e2) | `feat(footer): add secondary navigation and Grafo Verde notice` | Expose Solutions, Benefits, Pricing, Product, About, Support, EN / ES, Terms and Conditions, and the Hostera publisher line in the footer. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US002` | [`a39ca3f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/a39ca3f4bc5a0d51692dace477d7439d2b44441a) | `feat(nav): add terms page and mobile navigation menu` | Open Terms and Conditions as a dedicated page and let smaller screens use the header menu for the same destinations. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US003` | [`6f2139d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/6f2139dc92ce06e3b1e462d4834f576cebccba8e) | `feat(solutions): add independent-hotel pathway` | Present the one-property path with up to 10 rooms and a Start for free action into the Free experience. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US003` | [`493d8f2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/493d8f2b29f0abe96f0dff847cdea770a03d0975) | `feat(plans): add Free plan for one property` | State the Free plan is for one property with up to 10 rooms and list reservations, warehouse, RFID, administrator, and community support. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US004` | [`331de56`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/331de560a1823b6b0627bea31ac13c2ca7961976) | `feat(solutions): add small-chain pathway` | Present the 2-5 locations path and an Explore Professional action into the Professional plan. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US004` | [`750f65d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/750f65d1acaf4e8c86fb92b0adabe6bfece408e4) | `feat(plans): add Professional plan for small chains` | State the Professional plan is for 2 to 5 locations and list rooms, stock alerts, RFID, reports, roles, and priority support. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US005` | [`ca17547`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/ca1754785c33f9fc7c2899ac5eef9e44895398c9) | `feat(benefits): add connected operations and example cards` | Describe occupancy, room readiness, inventory, and guest access, and show centralized inventory and property access controls. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US005` | [`bd10bc3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/bd10bc3d18d037daaa69f085b9ce388419beb95e) | `feat(workflow): add four-step operating flow` | Present Add hotels, Set up your team, Connect systems, and Run operations with supporting descriptions. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US006` | [`4f46e7c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/4f46e7cf7a2c9169317c831f26ba2c266527e115) | `feat(solutions): add hotel group commercial pathway` | Present the multi-country Hotel group path and a Talk to sales action into the Enterprise contact step. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US006` | [`699014f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/699014fa134d41ae5378b5eae27fe728f3a8e946) | `feat(plans): add Enterprise plan to the comparison` | Show Free, Professional, and Enterprise with Talk to sales as the next step for large or multinational hotel groups. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US006` | [`c9ce586`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/c9ce586a38d9040ce778557e43b1cd607e04d64e) | `feat(close): add closing actions and sales contact` | Repeat Start for free and Talk to sales, and open a sales contact step for the Enterprise hotel-group path. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US007` | [`2cc1173`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/2cc11730b8228da92089bc92735d80c76584d6f1) | `feat(product): add Discover Hostera video entry` | Present the product media area with a play control that starts the daily hotel-operations demonstration. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US007` | [`f8a5a88`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/f8a5a8801dcd969c3d7f8ede4a90f4c5dff21f07) | `feat(team): add engineering team and Meet the team video` | Identify Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana and start the team video from the play control. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US007` | [`8293970`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/829397088f4f645039caf0ce4fd547c81ed6b4de) | `feat(support): add expandable FAQ answers` | Answer starting with one hotel, what changes with Professional, and English and Spanish availability. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US008` | [`a5046a5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/a5046a5b2a77522f9f5368486b329dd2859bebe1) | `feat(i18n): switch English and Spanish copy in place` | Keep a single landing page and swap navigation, hero, paths, plans, and CTAs when the visitor chooses EN or ES. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US008` | [`6d6ede6`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/6d6ede63f2a98a35bd21be2c4fa300f3eef2a9d6) | `feat(i18n): keep language when returning from terms` | Send EN and ES from the terms page back to the same landing page with the selected language. | 2026-09-16 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 1 se completó la experiencia principal de la Landing Page para
 las ocho User Stories de `EP001`. La versión ejecutable está disponible en
-https://1asi0730-2620-8150-grafoverde.github.io/landing-page/.
+https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/.
 La navegación permite recorrer la propuesta de valor, los caminos según la
 escala del hotel, los beneficios operativos, el flujo de trabajo, los planes,
 la información del producto y del equipo, las preguntas frecuentes y el
@@ -4497,13 +4498,13 @@ El alcance del Sprint 1 estuvo concentrado en la implementación de la Landing
 Page. Por ese motivo, durante este sprint no se implementaron Web Services ni
 endpoints HTTP, y no se generó documentación OpenAPI asociada. El repositorio de
 la Landing Page contiene la experiencia web estática y se encuentra disponible en
-su repositorio (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+su repositorio (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page).
 La documentación de endpoints y sus evidencias se incorporará en el sprint en
 el que se implemente el repositorio de Web Services.
 
 | Repository | Endpoint | Actions / HTTP Verb | OpenAPI Documentation | Documentation Commit |
 |---|---|---|---|---|
-| https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | No aplica | No aplica | No aplica | No aplica |
+| https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | No aplica | No aplica | No aplica | No aplica |
 
 Por lo tanto, no corresponde incluir capturas de interacción con Swagger u otra
 documentación de servicios para el Sprint 1.
@@ -4518,7 +4519,7 @@ y publicó el sitio en el entorno `github-pages`.
 
 | Product | Repository | Deployment Platform | Source | Public URL | Sprint Status |
 |---|---|---|---|---|---|
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | Deployed |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ | Deployed |
 | Web Services | No aplica | No aplica | No aplica | No aplica | Not in Sprint 1 scope |
 | Frontend Web Applications | No aplica | No aplica | No aplica | No aplica | Not in Sprint 1 scope |
 
@@ -4752,7 +4753,7 @@ tareas quedaron en estado Done al cierre.
 
 Durante el Sprint 2 se trabajó en dos repositorios. En el de la Frontend Web
 Application (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) se construyó la primera versión de la aplicación, publicada como
-`v0.1.0`. En el de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) se agregó el acceso a la aplicación y se
+`v0.1.0`. En el de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) se agregó el acceso a la aplicación y se
 publicó la versión `v0.4.0`.
 
 El repositorio del frontend se organizó con una rama de funcionalidad por bounded
@@ -4780,8 +4781,8 @@ incluyen un cuerpo de mensaje; en los demás la columna indica «Sin cuerpo».
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/login-button` | [`2cc618a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/2cc618aa44363f2f040de04169a4c802da91f9d4) | `feat(header): add responsive login link with EN/ES translations` | Sin cuerpo | 2026-10-06 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `release/0.4.0` | [`72f46d9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/72f46d9c4c56969563d5ae7d18b24187b31f206d) | `docs(release): prepare changelog for 0.4.0` | Sin cuerpo | 2026-10-06 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/login-button` | [`2cc618a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/2cc618aa44363f2f040de04169a4c802da91f9d4) | `feat(header): add responsive login link with EN/ES translations` | Sin cuerpo | 2026-10-06 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `release/0.4.0` | [`72f46d9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/72f46d9c4c56969563d5ae7d18b24187b31f206d) | `docs(release): prepare changelog for 0.4.0` | Sin cuerpo | 2026-10-06 |
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
@@ -5150,7 +5151,7 @@ aplicación desplegada.
 
 | Product | Repository | Deployment Platform | Source | Public URL | Version |
 |---|---|---|---|---|---|
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | `v0.4.0` |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ | `v0.4.0` |
 | Frontend Web Application | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Firebase Hosting | `dist/`, generado y publicado con `npm run deploy` | https://hostera-f4116.web.app/ | `v0.1.0` |
 | API de datos de demostración | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Render (Web Service) | `main`, desde la raíz del repositorio con `server/start.sh` | https://hostera-frontend.onrender.com | `v0.1.0` |
 | RESTful Web Services | Se creará en el Sprint 3 | Se elegirá en el Sprint 3 | No aplica | No aplica | Planificado para el Sprint 3 (AV2), con ASP.NET Core, Entity Framework Core y MySQL, documentado con OpenAPI vía Swagger. |
@@ -5391,11 +5392,11 @@ World Wide Web Consortium. (2024). _Web Content Accessibility Guidelines (WCAG) 
 - **Final Project Individual Member Performance Report (by Team Leader).** Documento independiente que debe enviarse junto con la entrega.
 - **Final Project Keynote.** Archivo independiente de la presentación de la entrega.
 - **Repositorio del informe.** https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report
-- **Repositorio de la Landing Page.** https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page
+- **Repositorio de la Landing Page.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page
 - **Repositorio de la Frontend Web Application.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa
 - **Frontend Web Application desplegada.** https://hostera-f4116.web.app/
 - **API de datos de demostración.** https://hostera-frontend.onrender.com
-- **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/landing-page/
+- **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/
 - **Video de navegación del Sprint 2 (Landing Page y Frontend Web Application, 5:19).** https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2F2026-10-06%2022-29-15%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee514020b-9142-4cb3-81b9-f525e7d44f1c
 - **Board de seguimiento.** https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5
 - **Prototipo de Web Application.** https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes
