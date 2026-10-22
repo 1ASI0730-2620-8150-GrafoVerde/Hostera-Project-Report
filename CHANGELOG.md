@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-10-22
+
+### Added
+
+- Added the Hostera, Nexus PMS, OkFac and SysHotel logos to the header of the competitive analysis landscape.
+
+### Changed
+
+- Pointed the landing page links to the renamed `hostera-landing-page` repository and GitHub Pages site, and added the 0.5.0 entry to the version history.
+- Aligned the web application title in the SEO metadata with the title the application sets.
+- Used the Booking term of the ubiquitous language in the labeling, searching and navigation systems, the user goals of the wireflows and user flows, the prototype description and the EventStorming events and aggregates, with a note where the figures still show Reservation.
+- Noted in the Sprint 1 backlog, plan figure, leadership matrix and student outcome that the Free plan was replaced by Starter in the landing page `v0.3.0`.
+- Split the Sprint 2 backlog into tasks of 4 to 8 hours mapped to the frontend components, with the owner of each task taken from the repository history.
+- Counted the release commit of `v0.4.0` in the TB1 collaboration insights and their chart, and listed the landing page tags up to `v0.5.0` in the source code management section.
+- Proofread every chapter, the cover, the version history, the conclusions and the references: corrected agreement, misused gerunds, accents and a sentence without a verb, used the Booking term in the ubiquitous language definitions, the user stories and the code examples, and renamed the version history section as the project statement requires.
+- Used one format across the report for amounts (`S/ 39`, `USD 1500`), percentages (`90 %`), the gender of Landing Page and RESTful API, `periodo` and words with the `multi` prefix.
+
 ## [0.4.0] - 2026-10-06
 
 ### Added

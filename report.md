@@ -29,8 +29,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr><td>u201621281</td><td>Cuba Pareja, Joaquín Antonio</td></tr>
-    <tr><td>u202410105</td><td>Cuba Vega, Darnell Yadir</td></tr>
+    <tr><td>U201621281</td><td>Cuba Pareja, Joaquin Antonio</td></tr>
+    <tr><td>U202410105</td><td>Cuba Vega, Darnell Yadir</td></tr>
     <tr><td>U20231E443</td><td>Condori Urviola, Mateo Sebastián</td></tr>
     <tr><td>U202412124</td><td>Flores Rios, Juan Diego</td></tr>
     <tr><td>U20241E281</td><td>Santana Luna, José Antonio</td></tr>
@@ -43,10 +43,11 @@
 </div>
 <div class="version-history">
 
-# Control de versiones
+# Registro de Versiones del Informe
 
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  0.5.0  | 22/10/2026 | José Antonio Santana Luna (`JhosBY2005`)<br>Darnell Cuba (`darnell1910`) | Correcciones posteriores a la revisión de TB1. El Sprint Backlog 2 se descompuso en 50 tareas de 4 a 8 horas; el término Booking del Ubiquitous Language se usó en la arquitectura de información, los user goals y el EventStorming; se aclaró dónde el plan Free se reemplazó por Starter; se agregaron los logos del análisis competitivo; se revisó la ortografía de todo el informe; y los enlaces de la Landing Page apuntan al repositorio renombrado `hostera-landing-page`. |
 |  0.4.0  | 06/10/2026 | Darnell Cuba (`darnell1910`)<br>José Antonio Santana Luna (`JhosBY2005`)<br>Joaquin Cuba (`joacuba`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>Mateo Condori (`BeyaminUv`) | Versión de TB1. Se corrigieron las secciones observadas por el docente: el Lean UX se reescribió con la plantilla para una iniciativa nueva y se actualizó su canvas, las user stories se redactaron sin referencias a la interfaz y el Product Backlog se reordenó por prioridad. Se corrigió la asignación de las entrevistas a los segmentos, se agregaron entrevistas complementarias por formulario y se unificó su análisis con porcentajes. Se reemplazó el modelo C4 por las vistas del frontend, se completó la configuración del entorno, del control de código y del despliegue, y se incorporó el Sprint 2 con la primera versión de la Frontend Web Application y la versión `v0.4.0` de la Landing Page. Se reescribieron las conclusiones por etapa del ciclo de vida y la bibliografía pasó al formato APA. |
 |  0.3.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)                                                                          | Se incorporó la sección Project Report Collaboration Insights para AV1, con el enlace al repositorio, la explicación del trabajo colaborativo y las capturas de analíticos y commits de GitHub. |
 |  0.2.0  | 17/09/2026 | Joaquin Cuba (`joacuba`)<br>Darnell Cuba (`darnell1910`)<br>Mateo Condori (`BeyaminUv`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>José Antonio Santana Luna (`JhosBY2005`) | Se amplió el informe con la documentación de descubrimiento, diseño, arquitectura e implementación de Hostera; se incorporó la evidencia del Sprint 1, el despliegue de la Landing Page en GitHub Pages, los Student Outcomes AV1, los perfiles del equipo y los anexos. |
@@ -103,14 +104,14 @@ fue una actividad compartida.
 
 Durante TB1 el informe se trabajó en ramas de funcionalidad que se integraron en
 `develop`, con mensajes Conventional Commits. Entre el 18 de septiembre y el 6 de
-octubre de 2026 se registraron 93 commits sin contar los de merge. Los cinco
+octubre de 2026 se registraron 94 commits sin contar los de merge. Los cinco
 integrantes aportaron al informe; la siguiente tabla resume qué secciones trabajó
 cada uno.
 
 | Integrante | Aportes al informe en TB1 | Commits |
 |---|---|---:|
 | Darnell Cuba (`darnell1910`) | Entorno de desarrollo, control de código y despliegue (5.1); entrevistas complementarias y análisis de entrevistas; Lean UX y su canvas; trazabilidad de las User Personas y matriz de tareas; Sprint 2; conclusiones; registro de versiones. | 37 |
-| José Santana (`JhosBY2005`) | Student Outcome; limpieza de secciones vacías, enlaces y textos de plantilla; bibliografía en APA; user stories sin referencias a la interfaz; objetivo del Sprint 1; registro de entrevistas y criterio del segmento 2; modelo C4; video de navegación del Sprint 2; evidencia de los segmentos, término Booking y herramientas de diseño. | 43 |
+| José Santana (`JhosBY2005`) | Student Outcome; limpieza de secciones vacías, enlaces y textos de plantilla; bibliografía en APA; user stories sin referencias a la interfaz; objetivo del Sprint 1; registro de entrevistas y criterio del segmento 2; modelo C4; video de navegación del Sprint 2; evidencia de los segmentos, término Booking y herramientas de diseño. | 44 |
 | Joaquin Cuba (`joacuba`) | Priorización del Product Backlog; alineación de las user stories con el frontend; formato de enlaces e imágenes en el PDF. | 4 |
 | Juan Diego Flores (`YopoFlores`) | Impact Mapping con objetivos de negocio del modelo SaaS; supuestos del Lean UX. | 4 |
 | Mateo Condori (`BeyaminUv`) | Ajuste del registro de entrevistas; etapas del Big Picture EventStorming e Impact Mapping. | 5 |
@@ -152,7 +153,7 @@ historial y la captura muestra sus commits más recientes.
   - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
 - [1.2. Solution Profile](#12-solution-profile)
   - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-    - [Técnica de The 5 'W's y 2 'H's](#técnica-de-the-5-ws-y-2-hs)
+    - [Técnica 5W2H](#técnica-5w2h)
   - [1.2.2. Lean UX Process](#122-lean-ux-process)
     - [1.2.2.1. Lean UX Problem Statement](#1221-lean-ux-problem-statement)
     - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
@@ -263,7 +264,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Cuba Pareja, Joaquin Antonio**<br>**AV1**<br>Coordiné el Sprint Planning 1, participé en la integración mediante Git Flow e implementé US001, US007 y US008. También contribuí en la definición de segmentos, User Stories, Product Backlog, diseño de la Landing Page, EventStorming y User Flows.<br>**TB1**<br>Lideré el contexto de reservas de la Frontend Web Application (`US012` a `US018`), configuré el proyecto e integré las ramas con Git Flow hasta publicar la versión `v0.1.0` en Firebase Hosting y la API de datos de demostración en Render. También publiqué la versión `v0.4.0` de la Landing Page, con el acceso a la aplicación.<br><br>**Cuba Vega, Darnell Yadir**<br>**AV1**<br>Coordiné la implementación de la navegación y los planes de la Landing Page, lideré las ramas `feature/US002` y `feature/US006`, y colaboré en la integración del Sprint 1 mediante Git Flow. Además, documenté el backlog, la matriz de liderazgo y colaboración, la evidencia de ejecución y despliegue, las convenciones de código, el prototipo web, los diagramas de clases y el Design-Level EventStorming.<br>**TB1**<br>Lideré el contexto de inventario de la Frontend Web Application (`US024` a `US027`) y colaboré en habitaciones y en control de accesos. En el informe restauré, con un merge de tres vías, los cambios de varios integrantes que una integración había reemplazado.<br><br>**Condori Urviola, Mateo Sebastián**<br>**AV1**<br>Coordiné US003, definiendo el camino del hotel independiente y el plan Free de la Landing Page, y participé en la integración mediante Git Flow. También contribuí al análisis competitivo y a la definición del problema, assumptions e hipótesis de Lean UX.<br>**TB1**<br>Lideré el contexto de habitaciones de la Frontend Web Application, con la disponibilidad, los tipos de habitación, las tarifas y los estados operativos, e integré su rama en `develop` mediante Git Flow.<br><br>**Flores Rios, Juan Diego**<br>**AV1**<br>Coordiné US004, definiendo el camino de la cadena hotelera pequeña y el plan Professional de la Landing Page. También colaboré en el análisis de impactos y en el diseño de los artefactos del producto.<br>**TB1**<br>Lideré el panorama operativo y la navegación entre áreas de la Frontend Web Application (`US011` y `US033`) y colaboré en los contextos de reservas, habitaciones e inventario.<br><br>**Santana Luna, José Antonio**<br>**AV1**<br>Coordiné US005, definiendo los beneficios de operaciones conectadas y el flujo operativo de la Landing Page. También participé en la documentación colaborativa de entrevistas, arquitectura y gestión del proyecto.<br>**TB1**<br>Lideré el contexto de control de accesos de la Frontend Web Application (`US028` a `US030`) y colaboré en reservas, en especial en los pagos y en el ciclo de la estadía. | **AV1**<br>El liderazgo se distribuyó por User Story: cada integrante coordinó al menos una historia de la Landing Page (`US001` a `US008`) y la integró mediante Git Flow, lo que permitió avanzar en paralelo desde el análisis hasta la implementación.<br>La combinación de coordinación funcional, ejecución técnica y documentación mantuvo alineadas las responsabilidades de cada integrante con la evolución del producto.<br><br>**TB1**<br>El liderazgo pasó de las user stories a los bounded contexts: cada integrante lideró un contexto completo de la Frontend Web Application y colaboró en otros, y así se publicó la primera versión con 21 user stories en dos semanas. En el informe, cada observación del docente quedó a cargo de un integrante distinto. |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Cuba Pareja, Joaquin Antonio**<br>**AV1**<br>Coordiné el Sprint Planning 1, participé en la integración mediante Git Flow e implementé US001, US007 y US008. También contribuí en la definición de segmentos, User Stories, Product Backlog, diseño de la Landing Page, EventStorming y User Flows.<br>**TB1**<br>Lideré el contexto de reservas de la Frontend Web Application (`US012` a `US018`), configuré el proyecto e integré las ramas con Git Flow hasta publicar la versión `v0.1.0` en Firebase Hosting y la API de datos de demostración en Render. También publiqué la versión `v0.4.0` de la Landing Page, con el acceso a la aplicación.<br><br>**Cuba Vega, Darnell Yadir**<br>**AV1**<br>Coordiné la implementación de la navegación y los planes de la Landing Page, lideré las ramas `feature/US002` y `feature/US006`, y colaboré en la integración del Sprint 1 mediante Git Flow. Además, documenté el backlog, la matriz de liderazgo y colaboración, la evidencia de ejecución y despliegue, las convenciones de código, el prototipo web, los diagramas de clases y el Design-Level EventStorming.<br>**TB1**<br>Lideré el contexto de inventario de la Frontend Web Application (`US024` a `US027`) y colaboré en habitaciones y en control de accesos. En el informe restauré, con un merge de tres vías, los cambios de varios integrantes que una integración había reemplazado.<br><br>**Condori Urviola, Mateo Sebastián**<br>**AV1**<br>Coordiné US003, definiendo el camino del hotel independiente y el plan Free de la Landing Page, que luego se reemplazó por Starter, y participé en la integración mediante Git Flow. También contribuí al análisis competitivo y a la definición del problema, assumptions e hipótesis de Lean UX.<br>**TB1**<br>Lideré el contexto de habitaciones de la Frontend Web Application, con la disponibilidad, los tipos de habitación, las tarifas y los estados operativos, e integré su rama en `develop` mediante Git Flow.<br><br>**Flores Rios, Juan Diego**<br>**AV1**<br>Coordiné US004, definiendo el camino de la cadena hotelera pequeña y el plan Professional de la Landing Page. También colaboré en el análisis de impactos y en el diseño de los artefactos del producto.<br>**TB1**<br>Lideré el panorama operativo y la navegación entre áreas de la Frontend Web Application (`US011` y `US033`) y colaboré en los contextos de reservas, habitaciones e inventario.<br><br>**Santana Luna, José Antonio**<br>**AV1**<br>Coordiné US005, definiendo los beneficios de operaciones conectadas y el flujo operativo de la Landing Page. También participé en la documentación colaborativa de entrevistas, arquitectura y gestión del proyecto.<br>**TB1**<br>Lideré el contexto de control de accesos de la Frontend Web Application (`US028` a `US030`) y colaboré en reservas, en especial en los pagos y en el ciclo de la estadía. | **AV1**<br>El liderazgo se distribuyó por User Story: cada integrante coordinó al menos una historia de la Landing Page (`US001` a `US008`) y la integró mediante Git Flow, lo que permitió avanzar en paralelo desde el análisis hasta la implementación.<br>La combinación de coordinación funcional, ejecución técnica y documentación mantuvo alineadas las responsabilidades de cada integrante con la evolución del producto.<br><br>**TB1**<br>El liderazgo pasó de las user stories a los bounded contexts: cada integrante lideró un contexto completo de la Frontend Web Application y colaboró en otros, y así se publicó la primera versión con 21 user stories en dos semanas. En el informe, cada observación del docente quedó a cargo de un integrante distinto. |
 | Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Cuba Pareja, Joaquin Antonio**<br>**AV1**<br>Definí el objetivo y la métrica del sprint, organicé el backlog y contribuí al cumplimiento de 8/8 User Stories y al despliegue en GitHub Pages. Además, documenté estándares, estructura del informe y evidencias del proceso.<br>**TB1**<br>Reordené el Product Backlog por prioridad y alineé las user stories con lo implementado en el frontend. Documenté el repositorio del frontend con su README, sus user stories y su diagrama de clases, para que el equipo trabajara sobre una misma estructura.<br><br>**Cuba Vega, Darnell Yadir**<br>**AV1**<br>Definí y organicé tareas del Sprint 1 para US002 y US006, descomponiendo la navegación, la página de términos, la comparación de planes y las acciones de cierre. También elaboré evidencias de desarrollo, ejecución y despliegue, y documenté arquitectura, convenciones y prototipos para contribuir al cumplimiento de las ocho User Stories y la publicación de la Landing Page.<br>**TB1**<br>Organicé las entrevistas complementarias por formulario y unifiqué el análisis de entrevistas. Reescribí el Lean UX y las conclusiones a partir de las observaciones del docente, y documenté el Sprint 2, la configuración del entorno y del despliegue y el registro de versiones de TB1.<br><br>**Condori Urviola, Mateo Sebastián**<br>**AV1**<br>Definí las tareas y artefactos de US003; elaboré wireframes y wireflows, documenté User Stories y servicios de habitaciones, y aporté al diseño de la solución.<br>**TB1**<br>Documenté en la API de demostración los recursos de habitaciones y tarifas, y colaboré en los contextos de inventario y de panorama operativo.<br><br>**Flores Rios, Juan Diego**<br>**AV1**<br>Definí y documenté User Stories y servicios de inventario, elaboré mockups de alta fidelidad y contribuí al Impact Mapping y a los sistemas de búsqueda y organización.<br>**TB1**<br>Redefiní los objetivos de negocio del Impact Mapping según el modelo de suscripción de Grafo Verde y reescribí los supuestos del Lean UX como afirmaciones.<br><br>**Santana Luna, José Antonio**<br>**AV1**<br>Definí las tareas y artefactos de US005; documenté entrevistas y su análisis, servicios de RFID y reporting, diagramas de arquitectura y la configuración de los repositorios.<br>**TB1**<br>Corregí el registro de entrevistas y definí el criterio del segmento 2. Reescribí las user stories sin referencias a la interfaz, apliqué el formato APA a la bibliografía y reemplacé el modelo C4 por las vistas del frontend. | **AV1**<br>La planificación del Sprint 1 con un objetivo, una métrica y tareas por User Story permitió completar las ocho User Stories de `EP001` y publicar la Landing Page en GitHub Pages.<br>Registrar en un repositorio común los artefactos de investigación, diseño, arquitectura y configuración hizo trazable el aporte de cada integrante y su relación con las necesidades identificadas.<br><br>**TB1**<br>Las observaciones del docente se convirtieron en tareas concretas, repartidas entre los cinco integrantes y resueltas en ramas separadas. Una integración que reemplazó cambios ya subidos mostró que cada rama debe actualizarse con `develop` antes de integrarse, práctica que quedó registrada en las recomendaciones del roadmap. |
 
 # Capítulo I: Introducción
@@ -290,8 +291,8 @@ La propuesta de Grafo Verde se centra en una plataforma de gestión hotelera con
 
 | Foto                                                                                                              | Apellidos y Nombres              | Código     | Carrera                | Habilidades                                                                                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="assets/chapter-1/joaquin-cuba-image-profile.png" alt="Foto de Joaquin Antonio Cuba Pareja" width="100"> | Cuba Pareja, Joaquin Antonio     | u201621281 | Ingeniería de Software | JavaScript, TypeScript, Python, HTML, CSS y C++. Dispuesto a trabajar y aprender en equipo. Tiene facilidad para aprender rápidamente nuevas tecnologías y lenguajes de programación. |
-| <img src="assets/chapter-1/darnell-cuba-image-profile.png" alt="Foto de Darnell Yadir Cuba Vega" width="100">   | Cuba Vega, Darnell Yadir         | u202410105 | Ingeniería de Software |   Python, HTML, CSS y C++. Dispuesto a trabajar, apoyar y aprender en equipo.                                                                                                                                                                                     |
+| <img src="assets/chapter-1/joaquin-cuba-image-profile.png" alt="Foto de Joaquin Antonio Cuba Pareja" width="100"> | Cuba Pareja, Joaquin Antonio     | U201621281 | Ingeniería de Software | JavaScript, TypeScript, Python, HTML, CSS y C++. Dispuesto a trabajar y aprender en equipo. Tiene facilidad para aprender rápidamente nuevas tecnologías y lenguajes de programación. |
+| <img src="assets/chapter-1/darnell-cuba-image-profile.png" alt="Foto de Darnell Yadir Cuba Vega" width="100">   | Cuba Vega, Darnell Yadir         | U202410105 | Ingeniería de Software | Python, HTML, CSS y C++. Dispuesto a trabajar, apoyar y aprender en equipo.                                                                                                                                                                                     |
 | <img src="assets/chapter-1/mateo-condori-image-profile.png" alt="Foto de Mateo Sebastián Condori Urviola" width="100"> | Condori Urviola, Mateo Sebastián | U20231E443 | Ingeniería de Software | Lean UX, análisis de usuarios, diseño de interfaces, wireframes, wireflows y User Stories. Colaborativo y orientado a convertir necesidades en flujos claros. |
 | <img src="assets/chapter-1/juan-flores-image-profile.png" alt="Foto de Juan Diego Flores Rios" width="100">      | Flores Rios, Juan Diego          | U202412124 | Ingeniería de Software | HTML, CSS y C++. Se adapta a cualquier entorno de trabajo y brinda el mayor apoyo posible al equipo.                                                                                |
 | <img src="assets/chapter-1/jose-santana-image-profile.png" alt="Foto de José Antonio Santana Luna" width="100"> | Santana Luna, José Antonio       | U20241E281 | Ingeniería de Software | Lean UX, análisis de entrevistas, arquitectura de software, EventStorming, diseño de APIs y documentación técnica. Organizado y orientado a la colaboración y la trazabilidad. |
@@ -301,13 +302,13 @@ La propuesta de Grafo Verde se centra en una plataforma de gestión hotelera con
 ### 1.2.1. Antecedentes y problemática
 
 Esta sección describe el problema que Hostera busca atender. El análisis se organizó
-con la técnica 5W+2H, una herramienta para describir un problema y concentrarse en
+con la técnica 5W2H, una herramienta para describir un problema y concentrarse en
 sus causas antes de plantear una solución (Progressa Lean, 2021). Las respuestas se
 apoyan en las diez entrevistas registradas en la sección 2.2, identificadas con los
 códigos `E1` a `E5` y `F1` a `F5`, y en las cifras del sector publicadas por el
 Ministerio de Comercio Exterior y Turismo.
 
-#### Técnica de The 5 'W's y 2 'H's
+#### Técnica 5W2H
 
 **What (¿Qué?)**
 
@@ -349,7 +350,8 @@ El problema se ubica en la recepción, donde se registran las reservas y se atie
 huésped; en el almacén, donde los descuadres entre lo que hay y lo anotado aparecen
 al menos una vez al mes en las tres respuestas del segmento de una sede; y en el
 control de acceso a las habitaciones, sobre todo cuando las tarjetas se comparten
-entre trabajadores y no es posible saber quién entró (`E2`).
+entre trabajadores y no es posible saber quién entró, como describe el propietario de
+un hotel de dos sedes (`E2`).
 
 Cuando el negocio tiene más de una sede, el problema se traslada al espacio entre
 ellas. Cada sede usa sus propias hojas y la información llega por WhatsApp o por
@@ -377,7 +379,7 @@ asignación en el momento (`F1`).
 Porque las herramientas que usan estos hoteles resuelven partes separadas de la
 operación. Los sistemas hoteleros disponibles cubren la reserva y la tarifa, pero el
 almacén y el acceso físico quedan fuera o se resuelven con plataformas adicionales:
-el gerente general entrevistado paga cerca de USD 1 500 al año por propiedad solo por
+el gerente general entrevistado paga cerca de USD 1500 al año por propiedad solo por
 una plataforma para el área de ama de llaves (`E4`). Quienes no tienen un sistema
 hotelero sostienen todo con hojas de cálculo, cuadernos y mensajes.
 
@@ -422,7 +424,7 @@ establecimientos de hospedaje y 329 340 habitaciones, y el 85,1 % de esos
 establecimientos no estaba categorizado (MINCETUR, 2025), lo que describe un mercado
 formado sobre todo por operaciones pequeñas. Esas operaciones están dispuestas a
 pagar por resolverlo: cuatro de los cinco respondientes válidos del formulario
-pagarían S/51 o más al mes por una herramienta que reúna reservas, almacén y accesos.
+pagarían S/ 51 o más al mes por una herramienta que reúna reservas, almacén y accesos.
 
 **Costo de referencia de la solución.** Como referencia para el equipo, se estimó el
 costo de desarrollar un producto mínimo viable de software. Los montos son una
@@ -430,13 +432,13 @@ estimación de planificación, no una cotización comercial.
 
 | Componente                                                                |            Costo estimado |
 | ------------------------------------------------------------------------- | ------------------------: |
-| Diseño UX/UI y prototipo del dashboard web                                |       S/ 2,500 a S/ 4,000 |
-| Desarrollo frontend del dashboard administrativo                          |       S/ 4,000 a S/ 6,000 |
-| Backend, API y base de datos                                              |       S/ 4,000 a S/ 6,500 |
-| Integración del software de control de accesos RFID y registro de eventos |       S/ 2,500 a S/ 4,000 |
-| Pruebas, documentación y configuración del despliegue                     |       S/ 1,500 a S/ 2,500 |
-| Dominio, hosting y servicios de infraestructura (anual)                   |       S/ 1,200 a S/ 2,000 |
-| **Total estimado de software**                                            | **S/ 15,700 a S/ 25,000** |
+| Diseño UX/UI y prototipo del dashboard web                                |         S/ 2500 a S/ 4000 |
+| Desarrollo frontend del dashboard administrativo                          |         S/ 4000 a S/ 6000 |
+| Backend, API y base de datos                                              |         S/ 4000 a S/ 6500 |
+| Integración del software de control de accesos RFID y registro de eventos |         S/ 2500 a S/ 4000 |
+| Pruebas, documentación y configuración del despliegue                     |         S/ 1500 a S/ 2500 |
+| Dominio, hosting y servicios de infraestructura (anual)                   |         S/ 1200 a S/ 2000 |
+| **Total estimado de software**                                            | **S/ 15 700 a S/ 25 000** |
 
 Esta estimación no incluye la compra de tarjetas, lectores RFID u otro hardware
 físico, ni los costos de operación del hotel.
@@ -494,7 +496,7 @@ Lo que las herramientas existentes no resuelven es la conexión entre el canal p
 que entra la reserva y el registro donde se controla la operación. Los sistemas de
 gestión hotelera disponibles atienden la reserva y la tarifa, pero dejan fuera el
 almacén y el acceso físico, o los resuelven con plataformas separadas que se contratan
-aparte: el gerente general entrevistado paga cerca de USD 1 500 anuales por propiedad
+aparte: el gerente general entrevistado paga cerca de USD 1500 anuales por propiedad
 solo por la plataforma de ama de llaves. En las operaciones de varias sedes, la
 consecuencia es que consolidar la información cuesta entre una hora y medio día cada
 vez, y que los reportes llegan desactualizados con frecuencia semanal.
@@ -570,7 +572,7 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 **Business Assumptions**
 *Creencias de alto nivel sobre la posición en el mercado, viabilidad, estrategia de monetización y capacidades organizativas.*
 1. Creemos que los hoteles independientes y las cadenas pequeñas en Perú tienen la disposición de pagar una suscripción SaaS (Software as a Service) desde el primer día si la plataforma centraliza su operación.
-2. Creemos que un modelo de monetización escalonado (plan *Starter* de S/39 para 1 sede y plan *Professional* de S/8 por habitación para cadenas) nos permitirá adquirir, rentabilizar y expandir clientes de forma escalable.
+2. Creemos que un modelo de monetización escalonado (plan *Starter* de S/ 39 para 1 sede y plan *Professional* de S/ 8 por habitación para cadenas) nos permitirá adquirir, rentabilizar y expandir clientes de forma escalable.
 3. Creemos que nuestra principal ventaja competitiva en el mercado será la integración nativa del control de acceso RFID con la gestión de reservas en la nube.
 4. Creemos que el equipo de Grafo Verde posee las capacidades organizativas y técnicas para desarrollar, desplegar y mantener una arquitectura web segura orientada al sector hotelero.
 5. Creemos que adquiriremos la mayoría de los clientes del plan *Starter* a través de la Landing Page, con un flujo de registro automatizado que les permita comprender los planes y configurar su propiedad inicial sin depender de un equipo de ventas.
@@ -578,15 +580,15 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 **Business Outcome Assumptions**
 *Cambios o métricas medibles que indican el éxito de la empresa.*
 1. Creemos que lograremos 50 suscripciones activas de pago en el plan *Starter* a través de nuestra Landing Page durante los primeros 4 meses de lanzamiento.
-2. Creemos que 20 cadenas hoteleras pequeñas contratarán el plan *Professional*, y que el 10% de nuestros clientes *Starter* actualizarán a este plan en un periodo de 6 meses.
-3. Creemos que mantendremos una tasa de retención mensual del 90% asegurando que el producto sea indispensable en el uso diario.
+2. Creemos que 20 cadenas hoteleras pequeñas contratarán el plan *Professional*, y que el 10 % de nuestros clientes *Starter* actualizarán a este plan en un periodo de 6 meses.
+3. Creemos que mantendremos una tasa de retención mensual del 90 % porque el producto será indispensable en la operación diaria.
 4. Creemos que reduciremos significativamente nuestro costo de adquisición de clientes (CAC) al permitir un flujo de registro y *onboarding* automatizado (Self-Service) para los hoteles de una sola sede.
 
 **User Assumptions**
 *Perfiles de usuario específicos, segmentos de clientes o actores que interactúan con el sistema.*
-1. Creemos que nuestro usuario principal para el plan *Starter* es el administrador o propietario de un hotel independiente (ej. Steven Huarcaya), quien supervisa directamente la continuidad diaria de una sola sede de hasta 10 habitaciones.
-2. Creemos que nuestro usuario principal para el plan *Professional* es la gerente de operaciones de una pequeña cadena (ej. Anyeli Cárdenas), cuya responsabilidad es coordinar el rendimiento y recursos de 2 a 5 locaciones.
-3. Creemos que estos usuarios operan actualmente en un ecosistema fragmentado, resolviendo su coordinación mediante WhatsApp, Excel y registros físicos propensos a errores.
+1. Creemos que nuestro usuario principal para el plan *Starter* es el administrador o propietario de un hotel independiente (por ejemplo, Steven Huarcaya), quien supervisa directamente la continuidad diaria de una sola sede de hasta 10 habitaciones.
+2. Creemos que nuestro usuario principal para el plan *Professional* es la gerente de operaciones de una pequeña cadena (por ejemplo, Anyeli Cárdenas), cuya responsabilidad es coordinar el rendimiento y los recursos de 2 a 5 sedes.
+3. Creemos que estos usuarios operan actualmente en un ecosistema fragmentado y resuelven su coordinación mediante WhatsApp, Excel y registros físicos propensos a errores.
 4. Creemos que estos usuarios interactuarán con Hostera diariamente, empleando la plataforma web tanto en computadoras de escritorio (recepción) como en dispositivos móviles (supervisión remota).
 
 **User Outcome and Benefit Assumptions**
@@ -601,7 +603,7 @@ Los siguientes supuestos representan las creencias del equipo sobre el negocio, 
 1. Creemos que un **panel de la propiedad activa** que reúna ocupación, habitaciones, inventario y accesos permitirá a los administradores conocer el estado actual de su hotel sin consultar otros registros.
 2. Creemos que un **módulo de reservas y estancias sobre un mismo calendario** permitirá registrar la reserva, el pago y el check-in del huésped en un mismo flujo y evitará las dobles reservas.
 3. Creemos que un **sistema de control de inventario con alertas automáticas** notificará los niveles críticos de stock a los administradores antes de que afecten la operatividad del hotel.
-4. Creemos que un **módulo de analítica y reportes operativos multi-sede** permitirá a los gerentes de cadenas filtrar y comparar el rendimiento (ocupación, ingresos, accesos) respetando la separación de datos de cada establecimiento.
+4. Creemos que un **módulo de analítica y reportes operativos multisede** permitirá a los gerentes de cadenas filtrar y comparar el rendimiento (ocupación, ingresos, accesos) respetando la separación de datos de cada establecimiento.
 5. Creemos que una **API de codificación RFID integrada con la estancia** permitirá relacionar la identidad del huésped, el pago y su acceso físico a la habitación en un solo paso durante el check-in, y conservar el historial de cada acceso.
 
 Cada Feature Assumption se convierte en uno de los Hypothesis Statements de la
@@ -812,13 +814,13 @@ OkFac se presenta como un PMS hecho para hoteles peruanos. Incluye un calendario
 reservas, vista del estado de las habitaciones, check-in y check-out, housekeeping,
 conexión con OTAs y emisión de comprobantes electrónicos mediante SUNAT (Montalvo Soluciones Tecnológicas S.A.C., s.f.). En su
 plan Pro incorpora inventario, compras y gastos; el plan Enterprise añade reportes y
-operación multi-sucursal, además de roles y permisos avanzados (Montalvo Soluciones Tecnológicas S.A.C., s.f.). Estas funciones
+operación multisucursal, además de roles y permisos avanzados (Montalvo Soluciones Tecnológicas S.A.C., s.f.). Estas funciones
 se ofrecen para hoteles y hostales de distintos tamaños.
 
 Su modelo comercial es de suscripción mensual o anual por planes. El proveedor
 publica planes para hoteles y hostales pequeños, medianos y grandes, desde S/ 140 al
 mes, con implementación y capacitación incluidas; el plan Enterprise contempla
-funciones multi-sucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.). También ofrece facturación electrónica y módulos de
+funciones multisucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.). También ofrece facturación electrónica y módulos de
 restaurante dentro de la misma cuenta (Montalvo Soluciones Tecnológicas S.A.C., s.f.).
 
 **SysHotel.**
@@ -827,7 +829,7 @@ SysHotel es una plataforma PMS y ERP desarrollada para el mercado peruano, dirig
 desde hostales pequeños hasta cadenas con varias sedes. Su oferta pública incluye
 reservas, check-in y check-out, disponibilidad de habitaciones, housekeeping,
 facturación electrónica SUNAT, channel manager y un ERP con inventario
-multi-almacén y kardex (SysHotel, s.f.). Además, el proveedor declara que puede cotizar
+multialmacén y kardex (SysHotel, s.f.). Además, el proveedor declara que puede cotizar
 integraciones con cerraduras inteligentes y sistemas de control de acceso, aunque no
 especifica que estas integraciones utilicen RFID (SysHotel, s.f.).
 
@@ -851,10 +853,10 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
 </tr>
 <tr>
   <th colspan="2">Criterio</th>
-  <th>Su startup<br><strong>Hostera</strong></th>
-  <th>Competidor 1<br><strong>Nexus PMS</strong><br>(HotelClick, s.f.)</th>
-  <th>Competidor 2<br><strong>OkFac</strong> (Montalvo Soluciones Tecnológicas S.A.C., s.f.)</th>
-  <th>Competidor 3<br><strong>SysHotel</strong> (SysHotel, s.f.)</th>
+  <th>Su startup<br><img src="assets/chapter-2/competitors/hostera-logo.png" alt="Logo de Hostera" style="height:36px; width:auto;"/><br><strong>Hostera</strong></th>
+  <th>Competidor 1<br><img src="assets/chapter-2/competitors/nexus-pms-logo.png" alt="Logo de Nexus PMS" style="height:36px; width:auto;"/><br><strong>Nexus PMS</strong><br>(HotelClick, s.f.)</th>
+  <th>Competidor 2<br><img src="assets/chapter-2/competitors/okfac-logo.png" alt="Logo de OkFac" style="height:36px; width:auto;"/><br><strong>OkFac</strong> (Montalvo Soluciones Tecnológicas S.A.C., s.f.)</th>
+  <th>Competidor 3<br><img src="assets/chapter-2/competitors/syshotel-logo.png" alt="Logo de SysHotel" style="height:36px; width:auto;"/><br><strong>SysHotel</strong> (SysHotel, s.f.)</th>
 </tr>
 <tr>
   <td class="group-label" rowspan="2"><span class="vertical-label">Perfil</span></td>
@@ -868,15 +870,15 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
   <td>Ventaja competitiva<br>¿Qué valor ofrece a los clientes?</td>
   <td>Integra reservas, habitaciones, almacén y accesos RFID en un mismo panel para una o varias sedes.</td>
   <td>Integra facturación SUNAT, POS, channel manager, acceso remoto y alertas de stock mínimo.</td>
-  <td>Combina operación hotelera, cumplimiento SUNAT, implementación incluida y planes multi-sucursal.</td>
-  <td>Combina PMS y ERP con inventario multi-almacén, kardex e integraciones de cerraduras y control de acceso.</td>
+  <td>Combina operación hotelera, cumplimiento SUNAT, implementación incluida y planes multisucursal.</td>
+  <td>Combina PMS y ERP con inventario multialmacén, kardex e integraciones de cerraduras y control de acceso.</td>
 </tr>
 <tr>
   <td class="group-label" rowspan="2"><span class="vertical-label">Perfil de Marketing</span></td>
   <td>Mercado objetivo</td>
   <td>Administradores y propietarios de hoteles independientes; gerentes o responsables de pequeñas cadenas.</td>
   <td>Hoteles que operan en Perú; no limita públicamente el servicio a un tamaño específico.</td>
-  <td>Hoteles y hostales pequeños, hoteles medianos y establecimientos grandes con necesidades multi-sucursal.</td>
+  <td>Hoteles y hostales pequeños, hoteles medianos y establecimientos grandes con necesidades multisucursal.</td>
   <td>Hostales pequeños, hoteles medianos y hoteles grandes o cadenas con varias sedes.</td>
 </tr>
 <tr>
@@ -892,7 +894,7 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
   <td>Panel administrativo, reservas, disponibilidad, inventario, registro de eventos y control RFID.</td>
   <td>PMS, channel manager, reservas, check-in/out, inventarios, POS, SUNAT, usuarios y permisos.</td>
   <td>PMS, calendario, habitaciones, check-in/out, housekeeping, OTAs, inventario, compras, reportes y SUNAT.</td>
-  <td>PMS, ERP, reservas, disponibilidad, housekeeping, channel manager, SUNAT, multi-almacén, kardex e integraciones.</td>
+  <td>PMS, ERP, reservas, disponibilidad, housekeeping, channel manager, SUNAT, multialmacén, kardex e integraciones.</td>
 </tr>
 <tr>
   <td>Precios &amp; Costos</td>
@@ -916,20 +918,20 @@ análisis SWOT de Hostera y de los tres competidores seleccionados.
   <td>Fortalezas</td>
   <td>Centralización de reservas, inventario y accesos RFID; alcance para una o varias sedes.</td>
   <td>Plataforma en la nube, inventario, SUNAT, POS y conexiones con OTAs.</td>
-  <td>Planes escalables, implementación incluida y adaptación a SUNAT y multi-sucursal.</td>
-  <td>PMS + ERP, multi-almacén, kardex y posibilidad de integraciones de acceso.</td>
+  <td>Planes escalables, implementación incluida y adaptación a SUNAT y multisucursal.</td>
+  <td>PMS + ERP, multialmacén, kardex y posibilidad de integraciones de acceso.</td>
 </tr>
 <tr>
   <td>Debilidades</td>
   <td>Producto en su primera versión, sin integraciones con PMS ni con agencias en línea; las hipótesis de negocio aún no se han medido con clientes.</td>
   <td>Pago anual y precio no publicado; no documenta RFID en la información consultada.</td>
-  <td>Inventario y multi-sucursal dependen de planes superiores; no documenta RFID.</td>
+  <td>Inventario y multisucursal dependen de planes superiores; no documenta RFID.</td>
   <td>Las integraciones de acceso requieren cotización y no especifican RFID.</td>
 </tr>
 <tr>
   <td>Oportunidades</td>
   <td>Atender hoteles independientes y pequeñas cadenas que requieren operación y accesos en un mismo contexto.</td>
-  <td>Ampliar la gestión remota y multi-propiedad en un mercado hotelero que continúa digitalizándose.</td>
+  <td>Ampliar la gestión remota y multipropiedad en un mercado hotelero que continúa digitalizándose.</td>
   <td>Captar hoteles pequeños y hostales que buscan formalizar reservas y facturación.</td>
   <td>Escalar desde establecimientos pequeños hacia cadenas y proyectos con integraciones a medida.</td>
 </tr>
@@ -960,10 +962,10 @@ deberán validarse con administradores y responsables de operaciones hoteleras.
 | Estrategia                                                       | Justificación                                                                                                                                                                                                                                      | Tácticas iniciales                                                                                                                                                                                                                                                                                      |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Enfoque en la coordinación operativa y la trazabilidad RFID**  | Nexus PMS, OkFac y SysHotel cubren buena parte de las reservas, habitaciones e inventarios. Hostera puede diferenciarse al relacionar esos procesos con la autorización y el historial de accesos RFID en un mismo contexto.                       | Priorizar en el MVP el panel de operación, la relación entre habitación, usuario y tarjeta, y la consulta del historial de eventos. Comunicar la propuesta como coordinación operativa y seguridad, sin afirmar todavía una ventaja comprobada.                                                         |
-| **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multi-sede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel.                                                    |
+| **Especialización en hoteles independientes y pequeñas cadenas** | Los segmentos objetivo necesitan una solución que funcione en una sede y pueda crecer a varias. Los competidores ofrecen coberturas amplias, por lo que competir inicialmente por cantidad de módulos aumentaría el alcance y el costo de Hostera. | Diseñar flujos simples para administradores y responsables de operación; validar primero escenarios de una sede y luego escenarios multisede. Usar una arquitectura que permita replicar la configuración sin mezclar la información de cada hotel.                                                    |
 | **Producto modular e interoperable**                             | Nexus, OkFac y SysHotel ya ofrecen facturación, OTAs, POS u otros módulos. Hostera no debe asumir que reemplazará todas las herramientas comerciales y contables que utiliza un hotel.                                                             | Mantener el alcance inicial en reservas, disponibilidad, inventario y accesos RFID. Levantar como requisitos de integración los sistemas de facturación, canales de reserva y cerraduras que los hoteles ya utilicen, empezando por los escenarios de mayor valor.                                      |
 | **Entrada gradual mediante demostraciones y pilotos**            | El producto y sus supuestos todavía están en validación, mientras que los competidores ofrecen demos, implementación o soporte de incorporación (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.).                                                                                         | Preparar una demostración guiada con datos representativos y proponer un piloto controlado en un hotel. Comparar antes y después el tiempo para consultar reservas o habitaciones, la proporción de movimientos de inventario registrados, la trazabilidad de accesos y las inconsistencias detectadas. |
-| **Precio y despliegue transparentes**                            | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Hostera publica en su Landing Page el plan Starter a S/39 por propiedad y el plan Professional a S/8 por habitación.                                                                                   | Mantener los precios publicados y la estimación por habitación del plan Professional, y validar con los segmentos objetivo si el cobro por propiedad o por habitación les resulta comprensible. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto.                                                                   |
+| **Precio y despliegue transparentes**                            | OkFac y SysHotel publican planes de entrada, mientras que Nexus comunica un pago anual sin publicar el precio (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Hostera publica en su Landing Page el plan Starter a S/ 39 por propiedad y el plan Professional a S/ 8 por habitación.                                                                                   | Mantener los precios publicados y la estimación por habitación del plan Professional, y validar con los segmentos objetivo si el cobro por propiedad o por habitación les resulta comprensible. Separar en la propuesta el costo del software, la configuración y el hardware RFID, y ofrecer una estimación clara antes del piloto.                                                                   |
 | **Confianza mediante adaptación local y soporte**                | Los competidores resaltan SUNAT, soporte en español y conocimiento del mercado peruano (HotelClick, s.f.; Montalvo Soluciones Tecnológicas S.A.C., s.f.; SysHotel, s.f.). Esa expectativa debe considerarse aunque la facturación no forme parte del MVP de Hostera.                                                       | Usar terminología y flujos comprensibles para equipos hoteleros peruanos, documentar la compatibilidad del hardware RFID y ofrecer acompañamiento inicial. Cuando una función dependa de un sistema externo, explicitar esa dependencia en lugar de prometer cobertura no validada.                     |
 
 #### Tácticas frente a los competidores seleccionados
@@ -971,8 +973,8 @@ deberán validarse con administradores y responsables de operaciones hoteleras.
 | Competidor    | Fortaleza a afrontar                                                                                         | Táctica de Hostera                                                                                                                                                                                                                                                                             |
 | ------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Nexus PMS** | Plataforma en la nube con reservas, inventario, facturación SUNAT, POS y channel manager (HotelClick, s.f.).                | Evitar una comparación basada en amplitud de módulos. Mostrar cómo Hostera añade la relación entre reserva, habitación, tarjeta RFID y evento de acceso, y evaluar integraciones para que el hotel no tenga que reemplazar sus herramientas de facturación o distribución desde el primer día. |
-| **OkFac**     | Planes escalables, implementación incluida, housekeeping, inventario y operación multi-sucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.).         | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren.                                  |
-| **SysHotel**  | PMS + ERP con inventario multi-almacén, kardex y posibilidad de integrar cerraduras o control de acceso (SysHotel, s.f.). | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee.                                                |
+| **OkFac**     | Planes escalables, implementación incluida, housekeeping, inventario y operación multisucursal (Montalvo Soluciones Tecnológicas S.A.C., s.f.).         | Enfocar la propuesta en la supervisión transversal de reservas, almacén y accesos físicos. Ofrecer una experiencia administrativa simple para los dos segmentos objetivo y validar si el control RFID resuelve un problema que sus planes actuales no cubren.                                  |
+| **SysHotel**  | PMS + ERP con inventario multialmacén, kardex y posibilidad de integrar cerraduras o control de acceso (SysHotel, s.f.). | Diferenciar el control RFID como capacidad central del producto, no solo como una integración personalizada. Mantener un alcance inicial más acotado y fácil de adoptar, y evaluar compatibilidad con los dispositivos que cada hotel ya posee.                                                |
 
 #### Criterios para validar la estrategia
 
@@ -1068,7 +1070,7 @@ información y el control de las diferencias entre establecimientos.
 | 7   | ¿Cómo mantiene separada la información de cada sede y, al mismo tiempo, obtiene reportes consolidados?     | ¿Qué roles y permisos tienen los equipos? ¿Quién puede consultar o modificar la información?                |
 | 8   | ¿Qué sistemas, dispositivos y canales utiliza el equipo de la cadena?                                                  | ¿Usan PMS, Excel u otra herramienta; teléfono, computadora, laptop o tableta; qué navegador y canal prefieren? |
 | 9   | ¿Qué debería ofrecer una solución para mejorar la coordinación y acompañar el crecimiento de la cadena?          | ¿Qué configuraciones deberían replicarse y qué procesos deberían mantenerse específicos por sede?           |
-| 10  | ¿Qué condiciones de costo, soporte, capacitación, seguridad e integración necesitaría para adoptarla?           | ¿Hay algún aspecto multi-sede que debamos comprender mejor y autoriza el uso de sus respuestas y grabación?  |
+| 10  | ¿Qué condiciones de costo, soporte, capacitación, seguridad e integración necesitaría para adoptarla?           | ¿Hay algún aspecto multisede que debamos comprender mejor y autoriza el uso de sus respuestas y grabación?  |
 
 ### 2.2.2. Registro de entrevistas
 
@@ -1107,11 +1109,11 @@ con una entrevista en video y el segmento 2 con cuatro.
 
 **Resumen.**
 
-Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han ido incrementándose año tras año, logrando captar y fidelizar nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
+Otto Cuba, accionista del Hotel Bahía de Cuba, comenta sobre la forma en que actualmente gestionan las reservas, habitaciones y accesos de su hospedaje, el cual lleva aproximadamente cuatro años operando en Huarmey. Señala que durante este tiempo la gestión se ha realizado principalmente de manera manual y mediante redes sociales. A pesar de ello, menciona que el desempeño y la disponibilidad del hospedaje han crecido año tras año y que han captado y fidelizado nuevos huéspedes, con un crecimiento aproximado del 10 al 15 % anual.
 
-Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja conjuntamente con la administradora, quienes bloquean y gestionan las reservas de acuerdo con la disponibilidad. Posteriormente, el personal operativo se encarga de direccionar las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se realizan registros manuales que posteriormente son trasladados a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
+Para coordinar los movimientos de inventario y las habitaciones, el área de recepción trabaja junto con la administradora, y entre ambas bloquean y gestionan las reservas de acuerdo con la disponibilidad. Luego, el personal operativo se encarga de dirigir las actividades correspondientes. En cuanto a los accesos de huéspedes y personal, actualmente se hacen registros manuales que después se trasladan a una tabla de Excel para mantener identificados tanto a los huéspedes frecuentes como a los nuevos.
 
-Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación entre el equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, siendo estos los principales canales utilizados para coordinar las actividades del hospedaje.
+Respecto al manejo de la información y los reportes, señala que durante el cierre de caja diario se obtienen los reportes correspondientes. Sin embargo, el proceso continúa siendo principalmente manual, ya que los registros realizados inicialmente de forma física deben trasladarse posteriormente a medios digitales. La comunicación del equipo se realiza mediante grupos de WhatsApp y llamadas telefónicas, que son los principales canales para coordinar las actividades del hospedaje.
 
 Como solución para mejorar la coordinación y acompañar el crecimiento del negocio, considera necesario implementar un sistema que permita automatizar las reservas y brindar una mayor visibilidad del hospedaje mediante una página web. Actualmente se encuentran evaluando un proyecto de implementación de este tipo de sistema debido a las necesidades que han surgido con el crecimiento del establecimiento.
 
@@ -1133,17 +1135,17 @@ Finalmente, respecto a las condiciones para adoptar la propuesta, menciona que e
 | Edad | 46 años |
 | Distrito y ciudad | Puno, Puno |
 | Ocupación | Ingeniero; propietario y administrador de hotel |
-| Establecimiento | Hotel independiente con dos sedes: una de unas 30 habitaciones y otra de unas 15 con sala de eventos |
+| Establecimiento | Operación de dos sedes de un mismo propietario: una de unas 30 habitaciones y otra de unas 15 con sala de eventos |
 | URL de la entrevista | https://1drv.ms/v/c/888b77ed7e85f778/IQB3J3HBJMqLSKvJshn-oZCJAba2jLzRmQtVCD109pJ820c?e=dTzLYR |
 | Inicio y duración en el video | Inicio en 0:00 · duración 18:10 |
 
 **Resumen.**
 
-Wilson, ingeniero y administrador de un hotel independiente en Puno, comenta sobre los principales desafíos que enfrenta al gestionar las reservas, accesos, disponibilidad e inventario de dos sedes. Actualmente, administra una sede principal de aproximadamente 30 habitaciones y otra de alrededor de 15 habitaciones, que además cuenta con un espacio para eventos. Señala que una de las principales dificultades es centralizar la información de ambas sedes, ya que debe coordinar constantemente con el administrador de la segunda sede para conocer las habitaciones disponibles.
+Wilson, ingeniero, propietario y administrador de un hotel con dos sedes en Puno, comenta sobre los principales desafíos que enfrenta al gestionar las reservas, accesos, disponibilidad e inventario de dos sedes. Actualmente, administra una sede principal de aproximadamente 30 habitaciones y otra de alrededor de 15 habitaciones, que además cuenta con un espacio para eventos. Señala que una de las principales dificultades es centralizar la información de ambas sedes, ya que debe coordinar constantemente con el administrador de la segunda sede para conocer las habitaciones disponibles.
 
 Para gestionar las reservas, recibe información principalmente mediante WhatsApp, correo electrónico, TikTok y aplicaciones de reservas, pero posteriormente debe trasladarla manualmente a un archivo de Excel, que utiliza como herramienta principal para controlar la disponibilidad y las reservas. Para los accesos utiliza tarjetas de identificación, aunque actualmente estas solo permiten controlar la entrada y salida de las habitaciones. También emplea una computadora para administrar el sistema de tarjetas.
 
-Respecto a la seguridad, considera necesario que cada trabajador de limpieza tenga su propia tarjeta de acceso, ya que anteriormente una misma tarjeta podía ser utilizada por diferentes personas, dificultando identificar quién ingresó a una habitación en caso de pérdida de algún objeto. Por ello, considera importante registrar quién entra, a qué hora y si el acceso corresponde con su turno de trabajo. En caso de pérdida de una tarjeta, actualmente esta debe ser anulada y reemplazada por una nueva.
+Respecto a la seguridad, considera necesario que cada trabajador de limpieza tenga su propia tarjeta de acceso, ya que anteriormente una misma tarjeta podía ser utilizada por diferentes personas, lo que dificultaba identificar quién ingresó a una habitación en caso de pérdida de algún objeto. Por ello, considera importante registrar quién entra, a qué hora y si el acceso corresponde con su turno de trabajo. En caso de pérdida de una tarjeta, actualmente esta debe ser anulada y reemplazada por una nueva.
 
 Otro aspecto importante es el control de los diferentes servicios ofrecidos por el hotel. Además de las habitaciones, administra desayunos, almuerzos, productos del minibar, piscina, sauna y gimnasio. Propone que estos servicios puedan registrarse directamente mediante la tarjeta del huésped, utilizando lectores de tarjetas, para evitar que el personal tenga que registrar manualmente quién utiliza cada servicio y facilitar el cobro al finalizar la estadía.
 
@@ -1171,7 +1173,7 @@ Finalmente, considera que una mejora importante para la administración del hote
 
 **Resumen.**
 
-El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, SPA, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y solicitudes especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
+El entrevistado, Room Division Manager de un complejo hotelero conformado por el Hotel Intercontinental Lima Miraflores, con 321 habitaciones, y el Hotel Índigo Lima Miraflores, con 76 habitaciones, comenta sobre las principales actividades y responsabilidades que realiza en la gestión de ambas propiedades. Está encargado de supervisar las áreas de recepción, spa, seguridad y housekeeping. En su rutina diaria revisa las reservas que ingresarán al día siguiente y realiza una verificación adicional para identificar nuevos huéspedes, clientes VIP y solicitudes especiales. También supervisa que las habitaciones estén correctamente asignadas de acuerdo con el tipo de habitación, piso, reserva y beneficios de los huéspedes.
 
 Para la gestión de reservas, el entrevistado señala que esta actividad es realizada principalmente por el departamento de reservas, aunque también puede ser gestionada por el Front Desk Manager o los MODs cuando es necesario. La disponibilidad de habitaciones se analiza estratégicamente mediante reuniones semanales de revenue, donde se revisa el comportamiento del mercado, los hoteles competidores, las tarifas, los eventos de la semana y los niveles de disponibilidad. A partir de esta información, diferentes áreas como ventas, gerencia general, revenue management y reservas establecen estrategias para responder a los cambios entre temporadas de alta y baja ocupación.
 
@@ -1179,7 +1181,7 @@ En cuanto al almacén, el entrevistado no controla directamente las existencias 
 
 Para supervisar el hotel de manera remota, cuenta con una laptop y un celular proporcionados por la organización. Mediante una conexión VPN autorizada puede ingresar al sistema desde su domicilio y revisar información como las llegadas, salidas y movimiento de huéspedes. Utiliza principalmente Opera y la VPN como herramientas para realizar estas tareas. El acceso remoto está restringido a determinados trabajadores según su nivel de responsabilidad dentro del hotel, por lo que no todos cuentan con una laptop corporativa o acceso mediante VPN.
 
-Respecto a las dificultades, considera que no existe un único problema específico, sino diferentes circunstancias que pueden presentarse en una operación hotelera, relacionadas con el personal, la percepción del huésped o descuidos en la atención y preparación de las habitaciones. Por ello, considera que la organización y la capacidad de responder ante estas situaciones son aspectos importantes para la operación. Como cambio para mejorar la administración, destaca la importancia de la mejora continua y de mantener motivado al equipo, especialmente mediante el reconocimiento y proporcionándoles las herramientas necesarias para realizar correctamente su trabajo.
+Respecto a las dificultades, considera que no existe un único problema específico, sino diferentes circunstancias que pueden presentarse en una operación hotelera, relacionadas con el personal, la percepción del huésped o descuidos en la atención y preparación de las habitaciones. Por ello, considera que la organización y la capacidad de responder ante estas situaciones son aspectos importantes para la operación. Como cambio para mejorar la administración, destaca la importancia de la mejora continua y de mantener motivado al equipo, especialmente mediante el reconocimiento y la entrega de las herramientas necesarias para realizar correctamente su trabajo.
 
 Finalmente, resalta la importancia de comprender mejor el trabajo del área de housekeeping. Señala que su función no se limita a limpiar habitaciones, sino que también implica cumplir estándares, identificar los gustos y preferencias de los huéspedes y cuidar los detalles durante la preparación de las habitaciones. Considera que este departamento tiene un trabajo altamente demandante y que su aporte es fundamental para la experiencia del huésped, razón por la cual algunas cadenas realizan actividades como el Housekeeping Week para reconocer su trabajo.
 
@@ -1209,13 +1211,13 @@ Para la gestión de reservas e inventario utiliza principalmente Opera Cloud, in
 
 En situaciones de sobreventa u *overbooking*, se realiza una coordinación entre los responsables de las diferentes propiedades para derivar a los huéspedes a otra sede. Para mantener separada la información de cada hotel, cada propiedad cuenta con informes y un centro de costos o código propio. De esta manera, los usuarios autorizados pueden acceder únicamente a la información correspondiente a las sedes que tienen bajo su responsabilidad. Opera también permite realizar comparaciones entre diferentes informes y propiedades.
 
-Respecto a la seguridad de la información, señala que Opera está configurado de acuerdo con el código de cada propiedad, evitando que otras sedes o personas externas puedan acceder a información que no les corresponde. También menciona que Opera Cloud representa una versión más moderna del sistema, utilizando almacenamiento en la nube en lugar de depender de la misma infraestructura de centros de datos.
+Respecto a la seguridad de la información, señala que Opera está configurado de acuerdo con el código de cada propiedad, lo que evita que otras sedes o personas externas puedan acceder a información que no les corresponde. También menciona que Opera Cloud representa una versión más moderna del sistema, porque utiliza almacenamiento en la nube en lugar de depender de la misma infraestructura de centros de datos.
 
-Como solución complementaria para la administración de habitaciones, comenta que propuso implementar una plataforma destinada al área de ama de llaves. Actualmente, esta plataforma permite visualizar en tiempo real el estado de las habitaciones y realizar seguimiento de trabajos de mantenimiento y pendientes relacionados con las áreas de *Room Divisions*, incluyendo ama de llaves, recepción y mantenimiento. El costo aproximado es de 1.500 dólares anuales por propiedad, e incluye soporte 24/7 desde España. Las capacitaciones se realizan constantemente y también forman parte de la inducción de los nuevos trabajadores que utilizarán la plataforma.
+Como solución complementaria para la administración de habitaciones, comenta que propuso implementar una plataforma destinada al área de ama de llaves. Actualmente, esta plataforma permite visualizar en tiempo real el estado de las habitaciones y realizar seguimiento de trabajos de mantenimiento y pendientes relacionados con las áreas de *Room Divisions*, incluyendo ama de llaves, recepción y mantenimiento. El costo aproximado es de USD 1500 anuales por propiedad, e incluye soporte 24/7 desde España. Las capacitaciones se realizan constantemente y también forman parte de la inducción de los nuevos trabajadores que utilizarán la plataforma.
 
-Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, facilitando así la gestión y supervisión de las operaciones del hotel.
+Finalmente, considera importantes aspectos como la seguridad de los datos personales, el soporte permanente, la capacitación de los trabajadores y la integración continua del sistema. Señala que las actualizaciones mensuales permiten corregir errores y reducir procesos repetitivos mediante la automatización, lo que facilita la gestión y supervisión de las operaciones del hotel.
 
-**Tecnología y canales.** Utiliza Opera Cloud integrado con el CRM y recibe a diario los informes *Flash Manager* y *History and Forecast*. Las reservas llegan, entre otros canales, desde Booking y Expedia. Cada trabajador tiene usuario y contraseña personales, y el hotel usa una plataforma complementaria para housekeeping que cuesta cerca de USD 1 500 al año por propiedad, con soporte 24/7.
+**Tecnología y canales.** Utiliza Opera Cloud integrado con el CRM y recibe a diario los informes *Flash Manager* y *History and Forecast*. Las reservas llegan, entre otros canales, desde Booking y Expedia. Cada trabajador tiene usuario y contraseña personales, y el hotel usa una plataforma complementaria para housekeeping que cuesta cerca de USD 1500 al año por propiedad, con soporte 24/7.
 
 **Entrevista E5: Roy Ríos**
 
@@ -1338,12 +1340,12 @@ una habitación todavía en limpieza, que resolvió cambiando la asignación y
 coordinando con recepción. La tarea que más le gustaría dejar de hacer a mano es
 actualizar el inventario de artículos de limpieza al cierre del turno. Ordena como
 prioridad las reservas y la disponibilidad, seguidas del control de acceso; pagaría
-entre S/51 y S/150 al mes, y para confiar en una herramienta nueva necesita probarla
+entre S/ 51 y S/ 150 al mes, y para confiar en una herramienta nueva necesita probarla
 antes, recibir capacitación y que se conecte con lo que ya usa.
 
 **Entrevista complementaria 2 (F2).**
 
-Entrevistado: Valeria Rojas
+Entrevistada: Valeria Rojas
 <br>Edad: 29 años
 <br>Ubicación: San Isidro, Lima
 <br>Ocupación: Jefa de recepción, entre 2 y 5 años de experiencia en hotelería
@@ -1371,13 +1373,13 @@ minutos diarios a tareas de conciliación. Su último incidente fue una tarjeta 
 que falló en el ingreso: se emitió otra y se registró el caso para mantenimiento. La
 tarea que querría automatizar es preparar el reporte diario de incidencias y accesos
 de habitaciones. Su primera prioridad es el control de acceso a las habitaciones,
-seguido de las reservas; pagaría entre S/151 y S/300 al mes, y para adoptar una
+seguido de las reservas; pagaría entre S/ 151 y S/ 300 al mes, y para adoptar una
 herramienta nueva pide probarla antes, soporte en español e integración con lo que ya
 utiliza.
 
 **Entrevista complementaria 3 (F3).**
 
-Entrevistado: Mariana Torres
+Entrevistada: Mariana Torres
 <br>Edad: 34 años
 <br>Ubicación: Barranco, Lima
 <br>Ocupación: Administradora general, entre 2 y 5 años de experiencia en hotelería
@@ -1404,7 +1406,7 @@ y dos horas diarias a cuadrar reservas, caja e inventario. Su último incidente 
 doble reserva sobre la misma habitación, que resolvió ofreciendo otra disponible y
 corrigiendo la hoja de reservas. La tarea que más querría dejar de hacer a mano es
 conciliar las reservas recibidas por WhatsApp con la hoja de disponibilidad. Ordena
-como prioridad las reservas y el inventario de almacén; pagaría hasta S/50 al mes, y
+como prioridad las reservas y el inventario de almacén; pagaría hasta S/ 50 al mes, y
 para confiar en una herramienta nueva necesita probarla antes, soporte en español y
 un precio claro.
 
@@ -1439,12 +1441,12 @@ descuadres de insumos entre sedes con frecuencia semanal, y procesos distintos e
 sedes a diario. Su último incidente grave fue una sede que informó tarde un faltante
 de ropa de cama, que obligó a un traslado urgente y a ajustar el inventario. Ordena
 como prioridad las reservas centralizadas y el inventario entre sedes, y sitúa el
-control de accesos en último lugar; pagaría entre S/51 y S/150 al mes, y para adoptar
+control de accesos en último lugar; pagaría entre S/ 51 y S/ 150 al mes, y para adoptar
 una herramienta nueva pide una demostración previa y capacitación.
 
 **Entrevista complementaria 5 (F5).**
 
-Entrevistado: Andrea Salazar
+Entrevistada: Andrea Salazar
 <br>Edad: 38 años
 <br>Ubicación: Miraflores, Lima
 <br>Ocupación: Gerente de operaciones, entre 6 y 10 años de experiencia en hotelería
@@ -1471,12 +1473,12 @@ mensual; nunca ha tenido accesos sin registro. Su último incidente fue una rese
 duplicada que llegó a recepción, que el equipo resolvió reasignando la habitación y
 actualizando el registro central. Ordena como prioridad las reservas centralizadas y
 los reportes consolidados en tiempo real, y sitúa el control de accesos en último
-lugar; pagaría entre S/151 y S/300 al mes, y para adoptar una herramienta nueva pide
+lugar; pagaría entre S/ 151 y S/ 300 al mes, y para adoptar una herramienta nueva pide
 una demostración previa, integración con lo existente y capacitación.
 
 **Respuesta fuera del segmento (F6).**
 
-Entrevistado: Claudia Vargas
+Entrevistada: Claudia Vargas
 <br>Edad: 51 años
 <br>Ubicación: San Isidro, Lima
 <br>Ocupación: Gerente general, más de 10 años de experiencia en hotelería
@@ -1495,7 +1497,7 @@ permite consolidar a diario en menos de una hora, controla el almacén con un ER
 contable integrado al sistema hotelero y abre las habitaciones con tarjeta magnética.
 Coordina con los encargados por correo y por Teams o Slack. Identifica como punto
 débil que el control de accesos no se integre con los reportes consolidados, sitúa el
-control de accesos como su primera prioridad y pagaría más de S/300 al mes. Su
+control de accesos como su primera prioridad y pagaría más de S/ 300 al mes. Su
 respuesta resulta útil como contraste: confirma que el problema que Hostera aborda
 pierde intensidad cuando la operación ya dispone de un sistema compartido entre
 sedes, y por eso el producto se concentra en operaciones de menor escala.
@@ -1549,7 +1551,7 @@ de cada formulario, de donde se obtuvieron los conteos y porcentajes de esta sec
 | Declara doble reserva o sobreventa al menos una vez al mes | 2 de 3 (formulario) | 67 % | F1, F3 |
 | Dedica 30 minutos o más al día a cuadrar reservas, caja e inventario | 2 de 3 (formulario) | 67 % | F1, F3 |
 | Sitúa las reservas y la disponibilidad entre sus dos prioridades | 3 de 3 (formulario) | 100 % | F1, F2, F3 |
-| Pagaría S/51 o más al mes por una herramienta integrada | 2 de 3 (formulario) | 67 % | F1, F2 |
+| Pagaría S/ 51 o más al mes por una herramienta integrada | 2 de 3 (formulario) | 67 % | F1, F2 |
 | Necesita probar la herramienta antes de adoptarla | 3 de 3 (formulario) | 100 % | F1, F2, F3 |
 
 El segmento está formado por quienes responden por la operación completa de un solo
@@ -1583,7 +1585,7 @@ control de accesos como una capacidad deseable más que urgente.
 
 Las condiciones de adopción son homogéneas. Los tres respondientes del formulario
 coinciden en que necesitan probar la herramienta antes de comprometerse, y dos de tres
-pagarían S/51 o más al mes. Otto Cuba (`E1`) refuerza ese punto desde el video: su
+pagarían S/ 51 o más al mes. Otto Cuba (`E1`) refuerza ese punto desde el video: su
 decisión de incorporar un sistema está condicionada a un financiamiento bancario y
 proyectada para una temporada concreta, lo que confirma que en este segmento la
 inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
@@ -1608,7 +1610,7 @@ inversión se evalúa contra el ciclo del negocio y no como un gasto corriente.
 | Declara procesos distintos entre sedes al menos una vez por semana | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Sitúa las reservas centralizadas como su primera prioridad | 2 de 2 (formulario) | 100 % | F4, F5 |
 | Sitúa el control de accesos en el último lugar de sus prioridades | 2 de 2 (formulario) | 100 % | F4, F5 |
-| Pagaría S/51 o más al mes y pide una demostración previa | 2 de 2 (formulario) | 100 % | F4, F5 |
+| Pagaría S/ 51 o más al mes y pide una demostración previa | 2 de 2 (formulario) | 100 % | F4, F5 |
 
 El segmento reúne a quienes forman parte de una operación con más de un
 establecimiento, con cargos de propietario multisede, gerente de operaciones, gerente
@@ -1636,7 +1638,7 @@ operaciones de varias sedes sobre hojas de cálculo. Las dos realidades
 conviven dentro del mismo segmento, y la diferencia tiene consecuencias de producto:
 donde ya existe un PMS corporativo el problema se desplaza hacia la integración entre
 sistemas, y el propio `E4` señala que su plataforma complementaria de housekeeping
-cuesta cerca de USD 1 500 anuales por propiedad, lo que fija una referencia de precio
+cuesta cerca de USD 1500 anuales por propiedad, lo que fija una referencia de precio
 para la categoría.
 
 La entrevista a Roy Ríos (`E5`) incorpora un caso que conviene leer en contraste con
@@ -1743,7 +1745,7 @@ cada ficha.
 | Contexto de operación del segmento 2: dos o más establecimientos, con responsabilidad de supervisión | 6 de 6 entrevistas del segmento | E2, E3, E4, E5, F4, F5 |
 | Frustración del segmento 2: consolidar la información entre sedes | 3 de 6 (50 %) | E2, F4, F5 |
 | Objetivo del segmento 2: disponer de reservas y reportes centralizados | 2 de 2 lo sitúan en primer lugar | F4, F5 |
-| Disposición a pagar: S/51 o más al mes | 4 de 5 respondientes válidos (80 %) | F1, F2, F4, F5 |
+| Disposición a pagar: S/ 51 o más al mes | 4 de 5 respondientes válidos (80 %) | F1, F2, F4, F5 |
 | Alternativas que ya conocen o evalúan | Análisis competitivo de la sección 2.1 | Nexus PMS, OkFac, SysHotel |
 
 Las fichas se elaboraron en UXPressia, la herramienta indicada para este artefacto, y
@@ -1757,7 +1759,7 @@ User Persona 1
 
 User Persona 2
 
-![Anyeli Cardenas](assets/chapter-2/user-persona-anyeli-cardenas.png)
+![Anyeli Cárdenas](assets/chapter-2/user-persona-anyeli-cardenas.png)
 
 *Figura 2.10. User Persona de Anyeli Cárdenas, segmento de cadenas hoteleras pequeñas.*
 
@@ -1838,7 +1840,7 @@ panorama operativo y las reservas antes que los reportes y el control de accesos
 
 ### 2.3.3. User Journey Mapping
 
-En esta sección se presentan los User Journey Maps en su versión **As-Is** (situación actual) para cada uno de los segmentos representados. Estos mapas ilustran el flujo de trabajo de extremo a extremo (*end-to-end journey*) que experimentan los usuarios al gestionar sus operaciones hoteleras cotidianas sin la presencia de la plataforma Hostera, evidenciando los puntos de fricción, ineficiencias y dolores en sus procesos actuales.
+En esta sección se presentan los User Journey Maps en su versión **As-Is** (situación actual) para cada uno de los segmentos representados. Estos mapas ilustran el flujo de trabajo de extremo a extremo (*end-to-end journey*) que experimentan los usuarios al gestionar sus operaciones hoteleras cotidianas sin la plataforma Hostera, y muestran los puntos de fricción, las ineficiencias y los dolores de sus procesos actuales.
 
 #### Segmento 1: Steven Huarcaya
 
@@ -1892,7 +1894,7 @@ que el equipo no podía resolver todavía. La sesión se desarrolló en tres eta
 
 ### Etapa 1: exploración de eventos
 
-Solapamiento masivo de información, eventos repetidos con distinta redacción, y un fuerte desorden cronológico que dificulta la lectura global.
+En esta etapa el equipo colocó en el tablero todos los eventos que conocía del dominio. El resultado muestra información superpuesta, eventos repetidos con distinta redacción y un desorden cronológico que dificulta la lectura global.
 
 <img src="assets/chapter-2/hostera-bigPicture-eventStorming-Etapa1.jpg" alt="Etapa 1 del Big Picture EventStorming de Hostera, con los eventos todavía sin ordenar" style="width:100%; height:auto;"/>
 
@@ -1908,7 +1910,7 @@ Los eventos dispersos se alinean horizontalmente de izquierda a derecha siguiend
 
 ### Etapa 3: fases, actores y hotspots
 
-Se introducen los eventos negativos en rojo (problemas como conflictos de overbooking o fallas de stock) y se sitúan los elementos de control superior (cabeceras amarillas de fases y notas de actores o comandos que desencadenan los eventos), tal como se aprecia organizado en filas horizontales en la imagen.
+Se agregan en rojo los eventos negativos, como los conflictos de overbooking o las fallas de stock, y se ubican las cabeceras amarillas de las fases y las notas de los actores y comandos que desencadenan los eventos. El tablero queda organizado en filas horizontales, como muestra la figura.
 
 <img src="assets/chapter-2/big-picture-event-storming-hostera.svg" alt="Diagrama Big Picture EventStorming del dominio de Hostera" style="width:100%; height:auto;"/>
 
@@ -1916,8 +1918,8 @@ Se introducen los eventos negativos en rojo (problemas como conflictos de overbo
 
 El tablero se organiza en ocho flujos. Los cinco primeros siguen la vida de una
 estadía: la configuración de la propiedad (`Property Added`, `Rooms Registered`,
-`Rate Plan Defined`), el ciclo de la reserva (`Reservation Created`,
-`Room Assigned`, `Reservation Confirmed`, con sus alternativas de modificación,
+`Rate Plan Defined`), el ciclo de la reserva (`Booking Created`,
+`Room Assigned`, `Booking Confirmed`, con sus alternativas de modificación,
 cancelación y no-show), la llegada y el check-in (`Guest Identity Verified`,
 `Payment Recorded`, `RFID Key Card Encoded`, `Guest Checked In`), el acceso y la
 salida (`Access Granted` o `Access Denied`, `Guest Checked Out`,
@@ -1927,9 +1929,14 @@ otros tres flujos corren en paralelo a la estadía: el acceso del personal, las
 operaciones de inventario y el monitoreo con reportes.
 
 Tres eventos marcan el paso de un flujo al siguiente y funcionan como eventos pivote:
-`Reservation Confirmed` cierra la reserva y abre la espera de la llegada,
+`Booking Confirmed` cierra la reserva y abre la espera de la llegada,
 `Guest Checked In` activa la credencial del huésped y `Guest Checked Out` revoca esa
 credencial y pone en marcha la preparación de la habitación.
+
+En el tablero, los eventos de la reserva aparecen con el término `Reservation`. En el
+Ubiquitous Language (sección 2.5) y en la aplicación el término es `Booking`, por lo
+que `Reservation Created` y `Reservation Confirmed` corresponden a `Booking Created`
+y `Booking Confirmed`.
 
 Los actores que aparecen en el tablero son el administrador o responsable de
 operaciones, el agente de recepción, el huésped, el personal de housekeeping y el
@@ -1958,12 +1965,12 @@ actores, recursos y procesos.
 
 | Term | Equivalent in Spanish | Business-domain definition |
 | :--- | :--- | :--- |
-| **Property** | Establecimiento / sede | A physical hotel location managed as an operational unit, with its own rooms, staff, reservations, inventory and access rules. |
+| **Property** | Establecimiento / sede | A physical hotel location managed as an operational unit, with its own rooms, staff, bookings, inventory and access rules. |
 | **Active Property** | Propiedad activa | The property an operator is currently working on. Every view and operation in the application is scoped to it until the operator selects another one. |
 | **Hotel Group** | Grupo hotelero | An organization that operates or coordinates multiple hotel properties under a common business structure. |
 | **Independent Hotel** | Hotel independiente | A hotel that operates as a single property rather than as part of a larger hotel group. |
 | **Small Hotel Chain** | Cadena hotelera pequeña | A hotel operation that coordinates several properties on a limited scale; in Hostera, this segment covers operations with two to five locations. |
-| **Hotel Operation** | Operación hotelera | The coordinated activities required to manage properties, rooms, guests, reservations, staff, inventory and access. |
+| **Hotel Operation** | Operación hotelera | The coordinated activities required to manage properties, rooms, guests, bookings, staff, inventory and access. |
 | **Guest** | Huésped | A person who stays at or uses the accommodation services of a hotel. |
 | **Staff Member** | Miembro del personal | A person who performs operational or administrative activities for a property, such as reception, housekeeping or management. |
 | **Booking** | Reserva | A record that holds a guest's request or confirmed arrangement for accommodation, including dates, room information and applicable conditions. The application, its demonstration API and the Technical Stories expose it as the `bookings` resource. |
@@ -1973,11 +1980,11 @@ actores, recursos y procesos.
 | **Room Availability** | Disponibilidad de habitaciones | The set of rooms that can be offered or assigned for a specific date or period. |
 | **Room Status** | Estado de la habitación | The operational condition of a room, such as available, occupied, dirty, clean, inspected, blocked or out of service. |
 | **Status Period** | Periodo de estado | A date range during which a room is blocked, out of service or needs cleaning, recorded separately from the bookings that occupy it. |
-| **Room Assignment** | Asignación de habitación | The act of associating an available room with a reservation or guest stay. |
-| **Check-in** | Registro de entrada | The process through which a property confirms a guest's arrival, verifies the reservation and enables the stay. |
+| **Room Assignment** | Asignación de habitación | The act of associating an available room with a booking or guest stay. |
+| **Check-in** | Registro de entrada | The process through which a property confirms a guest's arrival, verifies the booking and enables the stay. |
 | **Check-out** | Registro de salida | The process through which a property confirms a guest's departure, closes the stay and settles the corresponding account. |
 | **No-show** | No presentado | The outcome of a booking whose guest neither arrived nor cancelled. It releases the room for other bookings. |
-| **Front Desk** | Recepción | The hotel operation responsible for welcoming guests and coordinating reservations, arrivals, departures, room assignments and guest requests. |
+| **Front Desk** | Recepción | The hotel operation responsible for welcoming guests and coordinating bookings, arrivals, departures, room assignments and guest requests. |
 | **Housekeeping** | Limpieza y mantenimiento de habitaciones | The operation responsible for preparing rooms, updating their condition and reporting cleaning or maintenance needs. |
 | **Rate Plan** | Plan tarifario | A set of pricing and selling conditions associated with a room or accommodation offer, such as dates, restrictions and included services. |
 | **Daily Rate** | Tarifa diaria | The price of a room type for a specific night under a rate plan. It replaces the base nightly rate for that night. |
@@ -1988,7 +1995,7 @@ actores, recursos y procesos.
 | **Stock Condition** | Condición de stock | The state of an inventory item compared with its thresholds: in stock, low stock when it reaches the replenishment level, or out of stock when its quantity is zero. |
 | **Folio** | Cuenta del huésped | The account associated with a guest stay that records charges, payments, adjustments and the balance to be settled. |
 | **Payment** | Pago | An amount received for a booking, recorded with its method, reference and the operator who registered it. The payments of a booking determine its balance due. |
-| **Property Management System (PMS)** | Sistema de gestión hotelera | A business operations system used by a hotel or hotel group to manage reservations, check-in and check-out, room assignment, rates, billing and related operational information. Its traditional hotel scope is described by Oracle Hospitality (s.f.). |
+| **Property Management System (PMS)** | Sistema de gestión hotelera | A business operations system used by a hotel or hotel group to manage bookings, check-in and check-out, room assignment, rates, billing and related operational information. Its traditional hotel scope is described by Oracle Hospitality (s.f.). |
 | **Online Travel Agency (OTA)** | Agencia de viajes en línea | A third-party booking channel through which guests can search for and reserve accommodation offered by a property. |
 | **Access Control** | Control de acceso | The set of operational rules and actions that determine who can enter a property, room or restricted area and under what conditions. |
 | **Credential** | Credencial | An RFID authorization that grants a guest or a staff member access to specific rooms or areas for a validity period. A credential can be revoked before it expires. |
@@ -2004,9 +2011,9 @@ actores, recursos y procesos.
 
 Las siguientes historias especifican los requisitos del producto digital de Hostera a
 partir de las necesidades de sus segmentos objetivo y de los flujos operativos
-identificados para el Landing Page y la Web Application. Cada Epic agrupa un conjunto
+identificados para la Landing Page y la Web Application. Cada Epic agrupa un conjunto
 coherente de capacidades y cada Story incluye criterios de aceptación comprobables.
-Las Technical Stories describen requisitos de integración del RESTful API desde la
+Las Technical Stories describen requisitos de integración de la RESTful API desde la
 perspectiva de un Developer y no generan Wireflow User Goals.
 
 | Epic / Story ID | Título | Descripción | Criterios de aceptación | Relacionado con (Epic ID) |
@@ -2021,15 +2028,15 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 | EP008 | API Reliability and Integration | As a developer integrating with Hostera, I want the API to apply consistent errors and shared integration behavior, so that every client can handle the product capabilities in a predictable way. | **Scenario: Process an API request consistently**<br>**Given** a client sends a supported or invalid request to the API<br>**When** the API processes the request<br>**Then** it returns a predictable response with the appropriate result or standardized error information. | No aplica |
 | US001 | Understand the hotel-operations proposition | As a visitor, I want to understand what Hostera offers for hotel operations, so that I can decide whether Hostera is relevant to my hotel. | **Scenario: The visitor identifies the value proposition**<br>**Given** a visitor evaluates Hostera for the first time<br>**When** the visitor requests the value proposition<br>**Then** the visitor learns that Hostera allows running the whole hotel operation from one place.<br><br>**Scenario: The visitor identifies the operational areas covered**<br>**Given** the visitor is reviewing the value proposition<br>**When** the visitor looks for the scope of the product<br>**Then** the visitor finds that Hostera covers reservations, rooms, inventory, and access across every property.<br><br>**Scenario: The visitor recognizes the problem Hostera addresses**<br>**Given** the visitor continues reviewing the content<br>**When** the visitor reads about current hotel operations<br>**Then** the visitor learns that operations break when information is kept in different places and that Hostera connects reservations, rooms, inventory, and guest access in the same operational picture.<br><br>**Scenario: The visitor continues to the entry plan**<br>**Given** the visitor wants to evaluate Hostera after reading the value proposition<br>**When** the visitor chooses to continue<br>**Then** the system provides the Starter plan information. | EP001 |
 | US002 | Find information about Hostera | As a visitor, I want to request information about the topic I am interested in, so that I can learn about Hostera and understand the available next steps. | **Scenario: The visitor requests information about a topic**<br>**Given** a visitor wants information about a specific topic<br>**When** the visitor chooses solutions, features, pricing, product, or team information<br>**Then** the system provides information about the requested topic.<br><br>**Scenario: The visitor changes topic from any point**<br>**Given** the visitor is consulting information about Hostera<br>**When** the visitor wants to consult another topic<br>**Then** the system provides the requested topic independently of the topic previously consulted.<br><br>**Scenario: The visitor finds support and the service terms**<br>**Given** the visitor has reviewed the main content<br>**When** the visitor looks for support or for the conditions of the service<br>**Then** the visitor finds the frequently asked questions and the Terms and Conditions of Hostera.<br><br>**Scenario: The visitor identifies who offers the product**<br>**Given** the visitor wants to know who is responsible for Hostera<br>**When** the visitor reviews the company information<br>**Then** the visitor identifies Hostera, its statement “Hotel operations, connected.”, and Grafo Verde as the copyright holder. | EP001 |
-| US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera option for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue with the corresponding plan. | **Scenario: The visitor identifies the independent-hotel option**<br>**Given** a visitor operates one independent hotel with up to 10 rooms<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Independent hotel” option for one property with up to 10 rooms, focused on reservations, availability, and room operations with consistent operational information.<br><br>**Scenario: The visitor reviews the Starter plan conditions**<br>**Given** the visitor evaluates the Starter plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it costs S/39 per property per month and includes basic reservations and availability, inventory without automatic alerts, one simulated RFID reader, one administrator, and community and documentation support.<br><br>**Scenario: The visitor continues with the Starter plan**<br>**Given** the visitor considers that the independent-hotel option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Starter plan information. | EP001 |
-| US004 | Find the small-chain path | As a small-chain hotel operations manager, I want an option for coordinating 2 to 5 locations, so that I can identify the plan and estimated cost intended for a multi-property operation. | **Scenario: The visitor identifies the small-chain option**<br>**Given** the visitor is responsible for a hotel chain with 2 to 5 locations<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Small hotel chain” option for coordinating rooms, stock, and reports across every property.<br><br>**Scenario: The visitor reviews the Professional plan conditions**<br>**Given** the visitor evaluates the Professional plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it is intended for hotel chains with 2 to 5 locations, costs S/8 per room per month, and includes unlimited rooms across locations, automatic critical-stock alerts, up to 25 RFID readers, reports by location, five administrators with roles, and priority chat and email support.<br><br>**Scenario: The visitor estimates the monthly cost**<br>**Given** the visitor knows the total number of rooms across the chain's hotels<br>**When** the visitor provides that number of rooms<br>**Then** the system calculates the estimated monthly cost at S/8 per room, so 25 rooms correspond to S/200.<br><br>**Scenario: The visitor provides an invalid number of rooms**<br>**Given** the visitor provides a value that is not a whole number of 1 or more<br>**When** the estimate is calculated<br>**Then** the system does not calculate the cost and indicates that a whole number of rooms of 1 or more is required.<br><br>**Scenario: The visitor continues with the Professional plan**<br>**Given** the visitor considers that the small-chain option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Professional plan information. | EP001 |
+| US003 | Find the independent-hotel path | As a visitor from the independent-hotel segment, I want to identify the Hostera option for one property with up to 10 rooms, so that I can confirm that it fits my operation and continue with the corresponding plan. | **Scenario: The visitor identifies the independent-hotel option**<br>**Given** a visitor operates one independent hotel with up to 10 rooms<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Independent hotel” option for one property with up to 10 rooms, focused on reservations, availability, and room operations with consistent operational information.<br><br>**Scenario: The visitor reviews the Starter plan conditions**<br>**Given** the visitor evaluates the Starter plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it costs S/ 39 per property per month and includes basic reservations and availability, inventory without automatic alerts, one simulated RFID reader, one administrator, and community and documentation support.<br><br>**Scenario: The visitor continues with the Starter plan**<br>**Given** the visitor considers that the independent-hotel option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Starter plan information. | EP001 |
+| US004 | Find the small-chain path | As a small-chain hotel operations manager, I want an option for coordinating 2 to 5 locations, so that I can identify the plan and estimated cost intended for a multi-property operation. | **Scenario: The visitor identifies the small-chain option**<br>**Given** the visitor is responsible for a hotel chain with 2 to 5 locations<br>**When** the visitor reviews the options by operating scale<br>**Then** the visitor identifies the “Small hotel chain” option for coordinating rooms, stock, and reports across every property.<br><br>**Scenario: The visitor reviews the Professional plan conditions**<br>**Given** the visitor evaluates the Professional plan<br>**When** the visitor reviews its conditions<br>**Then** the visitor learns that it is intended for hotel chains with 2 to 5 locations, costs S/ 8 per room per month, and includes unlimited rooms across locations, automatic critical-stock alerts, up to 25 RFID readers, reports by location, five administrators with roles, and priority chat and email support.<br><br>**Scenario: The visitor estimates the monthly cost**<br>**Given** the visitor knows the total number of rooms across the chain's hotels<br>**When** the visitor provides that number of rooms<br>**Then** the system calculates the estimated monthly cost at S/ 8 per room, so 25 rooms correspond to S/ 200.<br><br>**Scenario: The visitor provides an invalid number of rooms**<br>**Given** the visitor provides a value that is not a whole number of 1 or more<br>**When** the estimate is calculated<br>**Then** the system does not calculate the cost and indicates that a whole number of rooms of 1 or more is required.<br><br>**Scenario: The visitor continues with the Professional plan**<br>**Given** the visitor considers that the small-chain option fits the operation<br>**When** the visitor decides to continue<br>**Then** the system provides the Professional plan information. | EP001 |
 | US005 | Understand the product benefits and operating flow | As a visitor, I want to understand the benefits and the high-level operating flow described by Hostera, so that I can relate the proposition to hotel work. | **Scenario: The visitor learns the benefit of connected operations**<br>**Given** the visitor wants to know the benefits of Hostera<br>**When** the visitor reviews them<br>**Then** the visitor learns that Hostera coordinates occupancy, room readiness, inventory, and guest access across every property with consistent operational information.<br><br>**Scenario: The visitor reviews specific benefits**<br>**Given** the visitor looks for examples of those benefits<br>**When** the visitor reviews them<br>**Then** the visitor finds RFID guest access designed for hospitality, centralized inventory by property with automatic flagging of critical shortages, and access controls that give staff access only to the properties they need.<br><br>**Scenario: The visitor learns how to start operating**<br>**Given** the visitor wants to know how a hotel starts using Hostera<br>**When** the visitor reviews the operating flow<br>**Then** the visitor learns the four steps: add hotels and define their rooms, set up the team and assign access by role, connect RFID readers and configure inventory workflows, and manage reservations, room status, access, and stock from one place. | EP001 |
-| US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and understand the available next steps, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | **Scenario: The visitor compares the plans by operating scale**<br>**Given** the visitor wants to compare the available plans<br>**When** the visitor reviews the pricing information<br>**Then** the visitor finds Starter for one property with up to 10 rooms at S/39 per property per month, Professional for chains with 2 to 5 locations at S/8 per room per month, and Enterprise for large or multinational hotel groups, each with its included capabilities.<br><br>**Scenario: The visitor reviews the Enterprise conditions**<br>**Given** the visitor manages a large or multi-country hotel group<br>**When** the visitor evaluates the Enterprise plan<br>**Then** the visitor learns that it includes unlimited locations and RFID readers, an open API for PMS integrations, dedicated onboarding, unlimited users and roles, a guaranteed availability SLA, and dedicated 24/7 support, and that it is requested through the sales team.<br><br>**Scenario: Each plan leads to its next step**<br>**Given** the visitor has chosen a plan<br>**When** the visitor decides to continue<br>**Then** Starter and Professional lead to the information of each plan, and Enterprise leads to the sales contact.<br><br>**Scenario: The visitor contacts the sales team**<br>**Given** a visitor from a hotel group wants to talk to sales<br>**When** the visitor sends their name, the hotel or group they represent, and a message<br>**Then** the request is registered and the visitor is informed that a Hostera teammate will follow up.<br><br>**Scenario: The visitor leaves a sales request incomplete**<br>**Given** the visitor wants to contact the sales team<br>**When** the visitor tries to send the request without the name, the hotel or group, or the message<br>**Then** the request is not sent and the visitor is asked to complete the missing information.<br><br>**Scenario: The visitor decides after reviewing all the content**<br>**Given** the visitor has reviewed the information of Hostera<br>**When** the visitor is ready to choose<br>**Then** the visitor can continue with the Starter plan or contact the sales team. | EP001 |
+| US006 | Compare plans and choose a next step | As a visitor, I want to compare the plans and understand the available next steps, including the open Hotel group / Enterprise commercial option, so that I can choose the path that matches my operating scale. | **Scenario: The visitor compares the plans by operating scale**<br>**Given** the visitor wants to compare the available plans<br>**When** the visitor reviews the pricing information<br>**Then** the visitor finds Starter for one property with up to 10 rooms at S/ 39 per property per month, Professional for chains with 2 to 5 locations at S/ 8 per room per month, and Enterprise for large or multinational hotel groups, each with its included capabilities.<br><br>**Scenario: The visitor reviews the Enterprise conditions**<br>**Given** the visitor manages a large or multi-country hotel group<br>**When** the visitor evaluates the Enterprise plan<br>**Then** the visitor learns that it includes unlimited locations and RFID readers, an open API for PMS integrations, dedicated onboarding, unlimited users and roles, a guaranteed availability SLA, and dedicated 24/7 support, and that it is requested through the sales team.<br><br>**Scenario: Each plan leads to its next step**<br>**Given** the visitor has chosen a plan<br>**When** the visitor decides to continue<br>**Then** Starter and Professional lead to the information of each plan, and Enterprise leads to the sales contact.<br><br>**Scenario: The visitor contacts the sales team**<br>**Given** a visitor from a hotel group wants to talk to sales<br>**When** the visitor sends their name, the hotel or group they represent, and a message<br>**Then** the request is registered and the visitor is informed that a Hostera teammate will follow up.<br><br>**Scenario: The visitor leaves a sales request incomplete**<br>**Given** the visitor wants to contact the sales team<br>**When** the visitor tries to send the request without the name, the hotel or group, or the message<br>**Then** the request is not sent and the visitor is asked to complete the missing information.<br><br>**Scenario: The visitor decides after reviewing all the content**<br>**Given** the visitor has reviewed the information of Hostera<br>**When** the visitor is ready to choose<br>**Then** the visitor can continue with the Starter plan or contact the sales team. | EP001 |
 | US007 | Explore product, team, and support content | As a visitor, I want product, team, and support information about Hostera, so that I can learn more before choosing a plan. | **Scenario: The visitor watches the product presentation**<br>**Given** the visitor wants to understand how Hostera operates<br>**When** the visitor requests the product presentation<br>**Then** the system provides the product video explaining how Hostera works in daily hotel operations.<br><br>**Scenario: The visitor watches the team presentation**<br>**Given** the visitor wants to know who is building Hostera<br>**When** the visitor requests the team presentation<br>**Then** the system provides the team video explaining who builds Hostera and the reasons behind the product.<br><br>**Scenario: The visitor identifies the engineering team**<br>**Given** the visitor wants to know the people behind Hostera<br>**When** the visitor reviews the team information<br>**Then** the visitor identifies Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana as software engineers, with a short description of each person's contribution.<br><br>**Scenario: The visitor resolves questions before choosing a plan**<br>**Given** the visitor has questions about the service<br>**When** the visitor consults the frequently asked questions<br>**Then** the visitor finds answers about starting with one hotel, what changes with Professional, and the availability of Hostera in English and Latin American Spanish. | EP001 |
 | US008 | Consult Hostera information in English or Spanish | As a visitor, I want to choose English or Spanish, so that I can understand Hostera information in the language I understand best. | **Scenario: The visitor chooses the language**<br>**Given** a visitor prefers to read in English or in Spanish<br>**When** the visitor chooses that language<br>**Then** the topics, value proposition, options by operating scale, plans, next steps, and support content are presented in the selected language.<br><br>**Scenario: The Spanish variant preserves the offer**<br>**Given** the visitor consults Hostera information in Spanish<br>**When** the visitor reviews the options and plans<br>**Then** the visitor finds the options “Hotel independiente”, “Cadena hotelera pequeña”, and “Grupo hotelero”, and the plans “Starter”, “Profesional”, and “Empresarial”, with the same prices and conditions as the English variant.<br><br>**Scenario: The visitor changes language at any moment**<br>**Given** the visitor is reading either language variant<br>**When** the visitor chooses the other language<br>**Then** the content the visitor was consulting is presented in the newly selected language. | EP001 |
 | US009 | Register a hotel operation | As an independent hotel administrator or small-chain operations manager, I want to create an account with an initial property so that I can begin configuring my hotel operation in Hostera. | **Scenario: Register with valid information**<br>**Given** the administrator provides a name, a unique work email, a property name, and a valid password<br>**When** the administrator submits the registration<br>**Then** the system creates the account, associates the initial property, and identifies the administrator as its first authorized operator.<br><br>**Scenario: Reject an email that is already registered**<br>**Given** an account already exists for the provided work email<br>**When** the administrator submits the registration<br>**Then** the system rejects the request and indicates that the email is already associated with an account.<br><br>**Scenario: Reject incomplete or invalid registration data**<br>**Given** one or more required registration values are missing or invalid<br>**When** the administrator submits the registration<br>**Then** the system does not create the account and identifies the values that require correction. | EP002 |
 | US010 | Sign in to Hostera | As an authorized hotel operator, I want to sign in with my work account so that I can access the properties and operational information assigned to me. | **Scenario: Sign in with valid credentials**<br>**Given** the operator has an active account<br>**When** the operator provides valid credentials<br>**Then** the system starts an authenticated session and grants access to the assigned properties.<br><br>**Scenario: Reject invalid credentials**<br>**Given** the provided email or password does not match an active account<br>**When** the operator attempts to sign in<br>**Then** the system denies access without revealing which credential is incorrect.<br><br>**Scenario: Keep an authenticated session**<br>**Given** the operator chooses to remain signed in on a trusted device<br>**When** the operator returns before the persistent session expires or is revoked<br>**Then** the system restores the authorized session. | EP002 |
-| US011 | Monitor operations across properties | As a hotel administrator or operations manager, I want to monitor room revenue, occupancy, arrivals, and room conditions across properties and change the active property so that I can identify operational conditions that require attention. | **Scenario: Review the active property's performance**<br>**Given** the active property has room and booking records<br>**When** the operator requests the last 7 days, last 30 days, or next 30 days<br>**Then** the system provides room revenue and occupancy for each day, period totals, and variation against the preceding period of equal duration, counting confirmed, checked-in, and checked-out bookings as room revenue.<br><br>**Scenario: Compare properties tonight**<br>**Given** properties have room and booking records<br>**When** the operator requests tonight's property comparison<br>**Then** the system provides occupancy, available rooms, and rooms requiring attention because they are needs cleaning, blocked, or out of service for each property tonight.<br><br>**Scenario: Review today's arrivals**<br>**Given** pending, confirmed, or checked-in bookings have a check-in date of today<br>**When** the operator requests today's arrivals<br>**Then** the system provides the active property's qualifying bookings and indicates whether each guest has arrived, the booking awaits confirmation, an outstanding balance remains, or the booking is ready for check-in.<br><br>**Scenario: Review today's room statuses**<br>**Given** rooms exist for the active property<br>**When** the operator requests today's room conditions<br>**Then** the system provides the number of rooms that are available, booked, occupied, needs cleaning, blocked, or out of service today.<br><br>**Scenario: Change the active property**<br>**Given** more than one property exists<br>**When** the operator chooses another property<br>**Then** the system updates the operational information for that property without combining records from other properties.<br><br>**Scenario: Find a booking**<br>**Given** bookings exist for the active property<br>**When** the operator searches by guest name or booking code<br>**Then** the system returns matching bookings from the active property.<br><br>**Scenario: Report unavailable information**<br>**Given** one or more operational data sources do not respond<br>**When** the operator requests operational information<br>**Then** the system identifies the affected information, preserves the available information, and accepts a renewed request for the affected information. | EP002 |
+| US011 | Monitor operations across properties | As a hotel administrator or operations manager, I want to monitor room revenue, occupancy, arrivals, and room conditions across properties and change the active property so that I can identify operational conditions that require attention. | **Scenario: Review the active property's performance**<br>**Given** the active property has room and booking records<br>**When** the operator requests the last 7 days, last 30 days, or next 30 days<br>**Then** the system provides room revenue and occupancy for each day, period totals, and variation against the preceding period of equal duration, counting confirmed, checked-in, and checked-out bookings as room revenue.<br><br>**Scenario: Compare properties tonight**<br>**Given** properties have room and booking records<br>**When** the operator requests tonight's property comparison<br>**Then** the system provides occupancy, available rooms, and rooms requiring attention because they need cleaning or are blocked or out of service, for each property tonight.<br><br>**Scenario: Review today's arrivals**<br>**Given** pending, confirmed, or checked-in bookings have a check-in date of today<br>**When** the operator requests today's arrivals<br>**Then** the system provides the active property's qualifying bookings and indicates whether each guest has arrived, the booking awaits confirmation, an outstanding balance remains, or the booking is ready for check-in.<br><br>**Scenario: Review today's room statuses**<br>**Given** rooms exist for the active property<br>**When** the operator requests today's room conditions<br>**Then** the system provides the number of rooms that are available, booked, or occupied, that need cleaning, or that are blocked or out of service today.<br><br>**Scenario: Change the active property**<br>**Given** more than one property exists<br>**When** the operator chooses another property<br>**Then** the system updates the operational information for that property without combining records from other properties.<br><br>**Scenario: Find a booking**<br>**Given** bookings exist for the active property<br>**When** the operator searches by guest name or booking code<br>**Then** the system returns matching bookings from the active property.<br><br>**Scenario: Report unavailable information**<br>**Given** one or more operational data sources do not respond<br>**When** the operator requests operational information<br>**Then** the system identifies the affected information, preserves the available information, and accepts a renewed request for the affected information. | EP002 |
 | US012 | Find and review bookings | As a front-desk operator or hotel administrator, I want to find bookings by guest name or booking code, stay period, and status so that I can review the correct booking before taking an operational action. | **Scenario: Review bookings for a property**<br>**Given** bookings exist for the active property<br>**When** the operator requests the booking collection<br>**Then** the system provides each booking's guest, code, stay period, assigned room, lifecycle status, and payment status of unpaid, partially paid, or paid.<br><br>**Scenario: Find bookings by operational criteria**<br>**Given** bookings have different guests, codes, stay periods, and statuses<br>**When** the operator searches by guest name or booking code and applies a current, upcoming, or past stay-period criterion and a lifecycle-status criterion<br>**Then** the system returns only bookings that satisfy all active criteria.<br><br>**Scenario: Find no matching bookings**<br>**Given** no booking satisfies the active criteria<br>**When** the operator performs the search<br>**Then** the system returns an empty result without changing existing bookings. | EP003 |
 | US013 | Create a booking | As a front-desk operator, I want to create a booking for a guest and an available room, including from a cancelled or no-show booking, so that the requested stay is recorded with its applicable rate. | **Scenario: Create a valid booking**<br>**Given** the room is available for every requested night, the guest count is within room-type capacity, and the active rate plan sells that room type<br>**When** the operator provides the guest's name, email, phone, preferred language, check-in and check-out dates, guest count, room type, room, and rate plan<br>**Then** the system creates a pending booking with an unpaid payment status, a code unique within the property, and a total equal to the sum of the rate plan's nightly prices for the room type across the stay.<br><br>**Scenario: Reject an unavailable room**<br>**Given** another booking holds the room or the room is blocked or out of service for at least one requested night<br>**When** the operator attempts to create the booking<br>**Then** the system rejects the request and preserves existing room assignments.<br><br>**Scenario: Reject an invalid stay period**<br>**Given** the check-out date does not occur after the check-in date<br>**When** the operator attempts to create the booking<br>**Then** the system rejects the request and identifies the invalid stay period.<br><br>**Scenario: Reject a guest count above capacity**<br>**Given** the guest count exceeds the room-type capacity<br>**When** the operator attempts to create the booking<br>**Then** the system rejects the request without creating a booking.<br><br>**Scenario: Reject an inapplicable rate plan**<br>**Given** the rate plan is inactive or does not sell the requested room type<br>**When** the operator attempts to create the booking<br>**Then** the system rejects the request without creating a booking.<br><br>**Scenario: Create a booking from a cancelled or no-show booking**<br>**Given** a cancelled or no-show booking exists and its copied stay satisfies booking-creation rules<br>**When** the operator requests a new booking based on that booking<br>**Then** the system copies the guest and stay information into a new pending booking with a new code and unpaid payment status, calculates its applicable total, and preserves the original booking. | EP003 |
 | US014 | Review and update a booking | As a front-desk operator, I want to review booking details and update pending or confirmed bookings so that guest and stay changes remain consistent with room availability and applicable rates. | **Scenario: Review complete booking information**<br>**Given** the booking exists in the active property<br>**When** the operator requests its details<br>**Then** the system provides the guest, stay, room, rate, request, payment, and lifecycle information associated with the booking.<br><br>**Scenario: Update information without changing the agreed total**<br>**Given** the booking is pending or confirmed and the proposed room and dates are available<br>**When** the operator updates guest information or the assigned room without changing dates, room type, or rate plan<br>**Then** the system saves the changes, updates affected availability, and preserves the agreed total.<br><br>**Scenario: Recalculate the total for a stay or pricing change**<br>**Given** the booking is pending or confirmed and the proposed stay, room type, and rate plan satisfy booking-creation rules<br>**When** the operator changes dates, room type, or rate plan<br>**Then** the system saves the changes, recalculates the total from the applicable nightly rates, and updates affected availability.<br><br>**Scenario: Reject a conflicting update**<br>**Given** the proposed update conflicts with another room assignment<br>**When** the operator attempts to save the change<br>**Then** the system rejects the update and preserves the previous booking information.<br><br>**Scenario: Reject an update outside editable statuses**<br>**Given** the booking is neither pending nor confirmed<br>**When** the operator attempts to update the booking<br>**Then** the system rejects the update and preserves its information. | EP003 |
@@ -2049,7 +2056,7 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 | US028 | Review and manage RFID credentials | As a hotel administrator or authorized front-desk operator, I want to find RFID credentials by card, person, room, status, or holder type and review or revoke them with a recorded reason so that access remains valid only for the intended person and period. | **Scenario: Find a credential**<br>**Given** credentials exist for guests and staff in the active property<br>**When** the operator searches by card, person, or room and filters by status or holder type<br>**Then** the system returns matching credentials and their assignment, scope, validity, and current status.<br><br>**Scenario: Review credential details**<br>**Given** a credential exists<br>**When** the operator requests its details<br>**Then** the system provides its assignee, type, room or access scope, validity period, status, and recent access events.<br><br>**Scenario: Revoke a credential**<br>**Given** an active or scheduled credential exists<br>**When** the operator revokes it with a reason of lost card, damaged card, security risk, staff left, or other and a note when the reason is other<br>**Then** the system prevents subsequent access with that credential and records the revocation.<br><br>**Scenario: End guest access at check-out**<br>**Given** a guest credential is associated with a stay<br>**When** the stay is checked out or reaches the end of its validity period<br>**Then** the system ends the credential's room access.<br><br>**Scenario: Require a note for the other revocation reason**<br>**Given** the revocation reason is other and no note is provided<br>**When** the operator attempts to revoke the credential<br>**Then** the system rejects the request and preserves its current status. | EP006 |
 | US029 | Encode or replace an RFID key card | As an authorized front-desk operator, I want to encode RFID key cards with valid access periods or replace them with the same end of validity, limiting each staff member to one usable credential, so that guests and staff receive access appropriate to their role or stay. | **Scenario: Encode a guest key card**<br>**Given** a booking, assigned room, access period, compatible encoder, and blank card are available<br>**When** the operator encodes the guest credential<br>**Then** the system associates the card with the guest's room and stay validity period.<br><br>**Scenario: Encode a staff credential**<br>**Given** the staff member has no usable credential and the property access scope, valid period, compatible encoder, and blank card are available<br>**When** the operator encodes the staff credential<br>**Then** the system associates the card with the authorized areas and validity period.<br><br>**Scenario: Replace a credential**<br>**Given** a credential eligible for replacement, a compatible encoder, and a blank card are available<br>**When** the operator encodes a replacement card<br>**Then** the system revokes the previous card with reason replaced and issues a new credential with the same end of validity.<br><br>**Scenario: Report an encoding failure**<br>**Given** the encoder or card cannot complete the encoding operation<br>**When** the operator attempts to encode the credential<br>**Then** the system reports the failure and does not mark the credential as active.<br><br>**Scenario: Prevent multiple usable staff credentials**<br>**Given** the staff member already has a usable credential<br>**When** the operator attempts to issue an additional staff credential<br>**Then** the system rejects the request and preserves the existing credential.<br><br>**Scenario: Reject an invalid temporary validity period**<br>**Given** the proposed temporary credential end is missing or does not occur after its start<br>**When** the operator attempts to issue the temporary credential<br>**Then** the system rejects the request without issuing a credential. | EP006 |
 | US030 | Review RFID access events | As a hotel administrator or security-authorized operator, I want to find granted and denied RFID access events by date, result, access point, person, or card so that I can investigate activity at rooms and access points. | **Scenario: Review recent access events**<br>**Given** access events exist for the active property<br>**When** the operator requests the event collection<br>**Then** the system provides each event's timestamp, result, access point, credential, and associated person when available.<br><br>**Scenario: Filter access events**<br>**Given** events differ by date, result, person, credential, and access point<br>**When** the operator filters by date, result, or access point and searches by person or card<br>**Then** the system returns only events that satisfy all active criteria.<br><br>**Scenario: Review a denied event**<br>**Given** an access attempt was denied<br>**When** the operator requests the event details<br>**Then** the system provides the recorded denial reason and credential condition without changing the event. | EP006 |
-| US031 | Find and review an operational report | As a hotel administrator or operations manager, I want to find and review operational reports by property and period so that I can evaluate hotel performance and activity. | **Scenario: Find a report by operational area**<br>**Given** the operator is authorized for the active property<br>**When** the operator searches or filters the report catalog<br>**Then** the system provides available reports for arrivals and departures, reservations, occupancy and availability, revenue and payments, inventory, and access activity.<br><br>**Scenario: Review a report for a selected period**<br>**Given** a report, property, and valid period are selected<br>**When** the operator requests the report<br>**Then** the system calculates and provides the report measures and supporting records for that scope.<br><br>**Scenario: Compare occupancy with a previous period**<br>**Given** occupancy and availability information exists for the selected and previous comparable periods<br>**When** the operator requests the occupancy report<br>**Then** the system provides occupancy rate, occupied room nights, average daily rate, revenue per available room, room-status distribution, and period comparison.<br><br>**Scenario: Report an empty period**<br>**Given** no qualifying operational records exist for the selected scope<br>**When** the operator requests the report<br>**Then** the system returns an empty report state without using records from another property or period. | EP007 |
+| US031 | Find and review an operational report | As a hotel administrator or operations manager, I want to find and review operational reports by property and period so that I can evaluate hotel performance and activity. | **Scenario: Find a report by operational area**<br>**Given** the operator is authorized for the active property<br>**When** the operator searches or filters the report catalog<br>**Then** the system provides available reports for arrivals and departures, bookings, occupancy and availability, revenue and payments, inventory, and access activity.<br><br>**Scenario: Review a report for a selected period**<br>**Given** a report, property, and valid period are selected<br>**When** the operator requests the report<br>**Then** the system calculates and provides the report measures and supporting records for that scope.<br><br>**Scenario: Compare occupancy with a previous period**<br>**Given** occupancy and availability information exists for the selected and previous comparable periods<br>**When** the operator requests the occupancy report<br>**Then** the system provides occupancy rate, occupied room nights, average daily rate, revenue per available room, room-status distribution, and period comparison.<br><br>**Scenario: Report an empty period**<br>**Given** no qualifying operational records exist for the selected scope<br>**When** the operator requests the report<br>**Then** the system returns an empty report state without using records from another property or period. | EP007 |
 | US032 | Export an operational report | As a hotel administrator or operations manager, I want to export the currently scoped report so that I can share or archive the operational results. | **Scenario: Export a report with data**<br>**Given** a report has been calculated for an authorized property and period<br>**When** the operator requests a supported export format<br>**Then** the system produces a file that identifies the report type, property, period, generation time, measures, and supporting data.<br><br>**Scenario: Preserve the selected scope**<br>**Given** filters define the current report scope<br>**When** the operator exports the report<br>**Then** the generated file contains the same authorized scope and values as the reviewed report.<br><br>**Scenario: Reject an unauthorized export**<br>**Given** the operator is not authorized for the requested property or report<br>**When** the operator requests the export<br>**Then** the system denies the operation without exposing protected report data. | EP007 |
 | US033 | Navigate between operational areas | As an authorized hotel operator, I want to work across the operational overview, bookings, rooms, inventory, and access control so that I can perform hotel-management tasks without losing the active property context. | **Scenario: Work in an operational area**<br>**Given** an active property exists<br>**When** the operator requests the operational overview, bookings, rooms, inventory, or access control<br>**Then** the system provides the information and operations for the requested area within the active property.<br><br>**Scenario: Preserve the active property context**<br>**Given** the operator has chosen an active property<br>**When** the operator begins work in another operational area<br>**Then** the system preserves the active property and scopes the requested information to it.<br><br>**Scenario: Continue working from a mobile device**<br>**Given** the operator works with Hostera from a mobile phone or tablet<br>**When** the operator begins work in another operational area<br>**Then** the system provides the requested information and operations while preserving the active property context. | EP002 |
 | TS001 | Register an account through the API | As a developer, I want to register an administrator and initial property through the API so that client applications can initialize an authorized hotel operation. | **Scenario: Create a valid registration**<br>**Given** a valid and unique registration payload<br>**When** the developer sends `POST /api/v1/auth/register`<br>**Then** the API returns `201 Created` with account, initial property, and authorization identifiers.<br><br>**Scenario: Reject a duplicate email**<br>**Given** the submitted work email already belongs to an account<br>**When** the developer sends `POST /api/v1/auth/register`<br>**Then** the API returns `409 Conflict` with a stable error code and does not create duplicate resources.<br><br>**Scenario: Reject invalid registration data**<br>**Given** the registration payload is incomplete or invalid<br>**When** the developer sends `POST /api/v1/auth/register`<br>**Then** the API returns `400 Bad Request` with validation details. | EP002 |
@@ -2078,16 +2085,16 @@ El Impact Mapping de Hostera conecta las hipótesis estratégicas del modelo de 
 
 Los objetivos de negocio reflejan las metas comerciales y de adopción de Grafo Verde como plataforma B2B SaaS (Software as a Service) monetizada desde el inicio.
 
-*   **BG1 (adquisición en el plan Starter):** Alcanzar 50 suscripciones de pago activas en el plan *Starter* (facturadas a S/39 mensuales) durante los primeros 4 meses de lanzamiento.
-*   **BG2 (expansión al plan Professional):** Lograr que 20 cadenas hoteleras pequeñas contraten el plan *Professional* (S/8 por habitación) y que el 10% de los clientes *Starter* actualicen a este plan al superar la restricción de una sola propiedad en un periodo de 6 meses.
-*   **BG3 (Retención y Uso Diario):** Alcanzar una tasa de retención mensual del 90%, garantizada mediante el uso diario (al menos 5 días a la semana) de las funciones críticas como codificación RFID y control de reservas por parte de los operadores del hotel.
+*   **BG1 (adquisición en el plan Starter):** Alcanzar 50 suscripciones de pago activas en el plan *Starter* (facturadas a S/ 39 mensuales) durante los primeros 4 meses de lanzamiento.
+*   **BG2 (expansión al plan Professional):** Lograr que 20 cadenas hoteleras pequeñas contraten el plan *Professional* (S/ 8 por habitación) y que el 10 % de los clientes *Starter* actualicen a este plan al superar la restricción de una sola propiedad en un periodo de 6 meses.
+*   **BG3 (retención y uso diario):** Alcanzar una tasa de retención mensual del 90 %, garantizada mediante el uso diario (al menos 5 días a la semana) de las funciones críticas como codificación RFID y control de reservas por parte de los operadores del hotel.
 
 ### Actores (Actors)
 
 Se consideran exclusivamente los dos User Personas identificados como segmentos objetivo para el modelo de negocio digital. Las tareas del personal operativo (recepción, almacén) se consideran acciones subordinadas a la coordinación de estos responsables.
 
 *   **A1. Steven Huarcaya (Administrador de Hotel Independiente):** Cliente objetivo del plan *Starter* que gestiona una sola propiedad de hasta 10 habitaciones y requiere una administración centralizada con un lector RFID.
-*   **A2. Anyeli Cárdenas (Gerente de Operaciones de Cadena):** Cliente objetivo del plan *Professional* que requiere consolidar la operación de 2 a 5 locaciones, gestionar reportes por sede y obtener alertas automáticas de inventario.
+*   **A2. Anyeli Cárdenas (Gerente de Operaciones de Cadena):** Cliente objetivo del plan *Professional* que requiere consolidar la operación de 2 a 5 sedes, gestionar reportes por sede y obtener alertas automáticas de inventario.
 
 ### Mapeo Completo (Impacts, Deliverables y User Stories)
 
@@ -2095,13 +2102,13 @@ La siguiente matriz detalla cómo cada meta del negocio digital se apoya en un c
 
 | Business Goal | Actor | Impact (Cambio de comportamiento esperado) | Deliverables (¿Qué puedo hacer como negocio digital para provocar el impacto?) | User Stories (Derivadas del Impact Mapping) |
 | :--- | :--- | :--- | :--- | :--- |
-| **BG1** (50 suscripciones *Starter* a S/39/mes) | A1 (Steven Huarcaya) | El administrador abandona el uso de múltiples herramientas gratuitas y adquiere directamente la suscripción *Starter* desde la web para centralizar las reservas de su única sede. | Desarrollar un portal de adquisición (Landing Page) con un flujo de registro automatizado que comunique claramente los límites y beneficios del plan Starter para hoteles de 1 sede (EP001, EP002). | **US003:** Como visitante del segmento de hoteles independientes, deseo identificar la opción de Hostera para una propiedad con hasta 10 habitaciones para poder confirmar que se ajusta a mi operación y continuar con el plan correspondiente.<br><br>**US009:** Como administrador de hotel independiente, deseo crear una cuenta con una propiedad inicial para poder comenzar a configurar mi operación hotelera en Hostera. |
-| **BG2** (20 suscripciones *Professional* a S/8/habitación) | A2 (Anyeli Cárdenas) | La gerente de operaciones contrata el plan *Professional* en lugar de un ERP tradicional, para aprovechar los cinco administradores con roles y obtener reportes independientes por locación. | Implementar un módulo de analítica operativa multi-sede y un sistema de control de inventario capaz de generar alertas críticas de stock automáticamente (EP007, EP005). | **US031:** Como gerente de operaciones, deseo encontrar y revisar reportes operativos por propiedad y periodo para poder evaluar el rendimiento y la actividad de cada hotel de la cadena.<br><br>**US024:** Como gerente de operaciones, deseo monitorear las cantidades de inventario y condiciones de stock por ubicación para poder identificar rápidamente los suministros críticos que requieren atención. |
-| **BG3** (90% retención por uso diario) | A1, A2 (Steven y Anyeli) | Los responsables y su equipo confían exclusivamente en Hostera para su operación diaria, utilizándolo para emitir todas las llaves físicas y confirmar los check-ins diarios. | Proveer un sistema de gestión de estancias que esté directamente integrado con una API de codificación de tarjetas de proximidad (RFID) en la misma interfaz web (EP003, EP006). | **US017:** Como operador de recepción, deseo verificar la identidad del huésped, registrar los pagos de llegada que correspondan y codificar el acceso a la habitación al completar el check-in de una reserva confirmada para que el huésped pueda iniciar su estancia con una identidad verificada y tarjetas válidas.<br><br>**US029:** Como operador autorizado de recepción, deseo codificar tarjetas RFID con periodos de acceso válidos o reemplazarlas conservando el mismo fin de validez, limitando a cada miembro del personal a una credencial utilizable, para que los huéspedes y el personal reciban acceso adecuado para su rol o estancia. |
+| **BG1** (50 suscripciones *Starter* a S/ 39 al mes) | A1 (Steven Huarcaya) | El administrador abandona el uso de múltiples herramientas gratuitas y adquiere directamente la suscripción *Starter* desde la web para centralizar las reservas de su única sede. | Desarrollar un portal de adquisición (Landing Page) con un flujo de registro automatizado que comunique claramente los límites y beneficios del plan Starter para hoteles de 1 sede (EP001, EP002). | **US003:** Como visitante del segmento de hoteles independientes, deseo identificar la opción de Hostera para una propiedad con hasta 10 habitaciones para poder confirmar que se ajusta a mi operación y continuar con el plan correspondiente.<br><br>**US009:** Como administrador de hotel independiente, deseo crear una cuenta con una propiedad inicial para poder comenzar a configurar mi operación hotelera en Hostera. |
+| **BG2** (20 suscripciones *Professional* a S/ 8 por habitación) | A2 (Anyeli Cárdenas) | La gerente de operaciones contrata el plan *Professional* en lugar de un ERP tradicional, para aprovechar los cinco administradores con roles y obtener reportes independientes por sede. | Implementar un módulo de analítica operativa multisede y un sistema de control de inventario capaz de generar alertas críticas de stock automáticamente (EP007, EP005). | **US031:** Como gerente de operaciones, deseo encontrar y revisar reportes operativos por propiedad y periodo para poder evaluar el rendimiento y la actividad de cada hotel de la cadena.<br><br>**US024:** Como gerente de operaciones, deseo monitorear las cantidades de inventario y condiciones de stock por ubicación para poder identificar rápidamente los suministros críticos que requieren atención. |
+| **BG3** (90 % retención por uso diario) | A1, A2 (Steven y Anyeli) | Los responsables y su equipo confían exclusivamente en Hostera para su operación diaria, utilizándolo para emitir todas las llaves físicas y confirmar los check-ins diarios. | Proveer un sistema de gestión de estancias que esté directamente integrado con una API de codificación de tarjetas de proximidad (RFID) en la misma interfaz web (EP003, EP006). | **US017:** Como operador de recepción, deseo verificar la identidad del huésped, registrar los pagos de llegada que correspondan y codificar el acceso a la habitación al completar el check-in de una reserva confirmada para que el huésped pueda iniciar su estancia con una identidad verificada y tarjetas válidas.<br><br>**US029:** Como operador autorizado de recepción, deseo codificar tarjetas RFID con periodos de acceso válidos o reemplazarlas conservando el mismo fin de validez, limitando a cada miembro del personal a una credencial utilizable, para que los huéspedes y el personal reciban acceso adecuado para su rol o estancia. |
 
 ### Resumen Visual
 
-El mapa de impacto fue consolidado en la herramienta UXPressia, ilustrando la jerarquía completa desde los Business Goals hasta las User Stories establecidas para el producto mínimo viable de Hostera.
+El mapa de impacto se consolidó en la herramienta UXPressia y muestra la jerarquía completa desde los Business Goals hasta las User Stories establecidas para el producto mínimo viable de Hostera.
 
 <img src="assets/chapter-3/uxpressia-impact-mapping.png" alt="Impact Mapping de Hostera con los objetivos de negocio de ambos segmentos" style="width:100%; height:auto;"/>
 
@@ -2136,7 +2143,7 @@ Las primeras ocho posiciones se mantienen para las historias de la Landing Page,
 que deben considerarse desde el primer Sprint. A continuación se priorizan las
 experiencias y flujos operativos de la Web Application por su valor visible para los
 usuarios. Las historias de registro e inicio de sesión se ubican después de esas
-capacidades. Las Technical Stories del RESTful API, correspondientes al trabajo
+capacidades. Las Technical Stories de la RESTful API, correspondientes al trabajo
 backend, se agrupan al final; las relacionadas con identidad, autenticación y
 autorización ocupan las últimas posiciones.
 
@@ -2194,7 +2201,7 @@ autorización ocupan las últimas posiciones.
 | 50 | TS003 | Enforce property-scoped authorization | As a developer, I want protected API resources to enforce property-scoped authorization so that one hotel operation cannot access another property's data. | 8 |
 
 La siguiente captura muestra el listado general de issues del proyecto Hostera en
-YouTrack. En él se visualiza el estado del Product Backlog y los campos utilizados
+YouTrack. En él se visualizan el estado del Product Backlog y los campos utilizados
 para su seguimiento, priorización y estimación.
 
 ![Product Backlog de Hostera en YouTrack](assets/chapter-3/youtrack-product-backlog.png)
@@ -2208,7 +2215,7 @@ El Product Backlog puede consultarse en el tablero de YouTrack del proyecto (htt
 ## 4.1. Style Guidelines
 
 El sistema de diseño de Hostera centraliza las decisiones visuales que deben
-mantenerse en el Landing Page y en las aplicaciones web. La propuesta adopta
+mantenerse en la Landing Page y en las aplicaciones web. La propuesta adopta
 Material Design 3 (M3) (Google, s.f.-c) y lo adapta a la identidad de Hostera mediante tokens de
 color, tipografía, espaciado, forma y elevación compartidos.
 
@@ -2548,18 +2555,18 @@ reducida del navegador.
 
 | Uso en la interfaz | Etiqueta definida | Qué representa |
 | :--- | :--- | :--- |
-| Entrada de navegación o sección del dashboard | `Reservations` | El conjunto de reservas y sus operaciones. |
+| Entrada de navegación o sección del dashboard | `Bookings` | El conjunto de reservas y sus operaciones. |
 | Entrada de navegación o sección del dashboard | `Rooms` | Las habitaciones y su disponibilidad. |
 | Entrada de navegación o sección del dashboard | `Inventory` | El inventario del almacén y sus movimientos. |
 | Entrada de navegación o sección del dashboard | `Access control` | Las tarjetas, los lectores y los eventos RFID. |
 | Entrada de navegación o sección del dashboard | `Reports` | Los resultados agregados y las comparaciones operativas. |
-| Acción dentro de un área funcional | `Create reservation`, `Check availability` | La operación que la persona puede ejecutar. |
+| Acción dentro de un área funcional | `New booking`, `Check availability` | La operación que la persona puede ejecutar. |
 | Acción dentro de un área funcional | `Add item`, `Review access event` | La operación sobre inventario o registros de acceso. |
 | Estado de un registro o evento | `Available`, `Occupied`, `Pending`, `Access granted` | La condición actual del dato o evento. |
 
 Las entradas de navegación expresan áreas de información y las acciones expresan
-operaciones sobre esa información. Por ejemplo, `Reservations` identifica el
-destino, mientras que `Create reservation` identifica una acción dentro de ese
+operaciones sobre esa información. Por ejemplo, `Bookings` identifica el
+destino, mientras que `New booking` identifica una acción dentro de ese
 destino. Esta relación hace explícita la asociación entre el área funcional, el dato y la
 tarea de la persona.
 
@@ -2623,7 +2630,7 @@ misma terminología del producto, pero evitan presentarlo como contenido indexab
 
 | Vista principal | Title | Description | Keywords | Author | Robots |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Hostera web application | `Hostera Dashboard | Hotel operations` | `Administrative workspace to monitor reservations, room availability, inventory, and RFID access for one or more hotel properties.` | `Hostera dashboard, hotel operations, reservations, inventory, RFID access` | `Grafo Verde Team` | `noindex, nofollow` |
+| Hostera web application | `Hostera`, y `Hostera - <vista>` en las vistas con título propio | `Administrative workspace to monitor reservations, room availability, inventory, and RFID access for one or more hotel properties.` | `Hostera dashboard, hotel operations, reservations, inventory, RFID access` | `Grafo Verde Team` | `noindex, nofollow` |
 
 #### Implementación mínima
 
@@ -2675,7 +2682,7 @@ facilitar la localización de nombres en español.
 
 | Zona | Campos de búsqueda | Filtros complementarios |
 | :--- | :--- | :--- |
-| **Reservations** | Nombre del huésped, código de reserva y contacto asociado. | Propiedad, rango de fechas, estado de la reserva y tipo de habitación. |
+| **Bookings** | Nombre del huésped, código de reserva y contacto asociado. | Propiedad, rango de fechas, estado de la reserva y tipo de habitación. |
 | **Rooms** | Número o nombre de habitación y propiedad. | Fecha de consulta, estado de ocupación, tipo de habitación y disponibilidad. |
 | **Inventory** | Nombre del artículo, código o categoría. | Propiedad, ubicación de almacén, nivel de stock y estado del artículo. |
 | **Access control** | Persona, tarjeta, lector o identificador del evento. | Propiedad, rango de fecha y hora, lector y resultado del acceso. |
@@ -2787,7 +2794,7 @@ la acción que corresponden a su escala operativa.
 #### Navegación de la aplicación web
 
 La aplicación web utiliza un menú global persistente para las áreas funcionales de
-Hostera: `Reservations`, `Rooms`, `Inventory`, `Access control` y
+Hostera: `Bookings`, `Rooms`, `Inventory`, `Access control` y
 `Reports`. El menú permite cambiar de área sin reiniciar la tarea y comunica la
 sección activa mediante una señal visual y textual.
 
@@ -2798,8 +2805,8 @@ permite volver a la lista sin perder los filtros o el contexto de la propiedad.
 
 | Nivel | Ejemplo de recorrido | Regla de navegación |
 | :--- | :--- | :--- |
-| Área funcional | Menú principal → `Reservations` | La persona identifica dónde se encuentra mediante el destino activo. |
-| Colección | `Reservations` → lista de reservas | La lista permite revisar el conjunto y utilizar la búsqueda o los filtros del área. |
+| Área funcional | Menú principal → `Bookings` | La persona identifica dónde se encuentra mediante el destino activo. |
+| Colección | `Bookings` → lista de reservas | La lista permite revisar el conjunto y utilizar la búsqueda o los filtros del área. |
 | Detalle | Lista → detalle de una reserva | El detalle conserva el nombre del área y ofrece una acción clara para regresar. |
 | Acción contextual | Detalle → revisar disponibilidad relacionada | La acción aparece junto al dato que explica por qué es relevante. |
 | Cambio de contexto | Selector de propiedad → otra propiedad | El cambio informa qué propiedad está activa antes de actualizar el contenido. |
@@ -2842,7 +2849,7 @@ Landing Page, la selección de segmento y la aplicación web.
 
 ## 4.3. Landing Page UI Design
 
-La propuesta de interfaz del Landing Page traduce el sistema de diseño y la
+La propuesta de interfaz de la Landing Page traduce el sistema de diseño y la
 arquitectura de información de Hostera en una experiencia web coherente y
 responsive. La composición establece una jerarquía que inicia con la propuesta de
 valor, orienta a cada visitante hacia su segmento, explica el problema y la solución,
@@ -2870,9 +2877,9 @@ entre las secciones. Los encabezados, agrupaciones, divisores y llamadas a la ac
 refuerzan la jerarquía definida por los sistemas de organización, etiquetado y
 navegación.
 
-<img src="assets/chapter-4/landing-page-wireframe-desktop.png" alt="Wireframe completo del Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/landing-page-wireframe-desktop.png" alt="Wireframe completo de la Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
 
-*Figura 4.4. Wireframe del Landing Page de Hostera para Desktop Web Browser.*
+*Figura 4.4. Wireframe de la Landing Page de Hostera para Desktop Web Browser.*
 
 #### Mobile Web Browser
 
@@ -2883,9 +2890,9 @@ los márgenes laterales mantienen una línea de lectura estable. Los controles
 interactivos principales tienen una altura mínima de 48 px y permanecen claramente
 identificados, lo que favorece su uso táctil y mediante tecnologías de asistencia.
 
-<img src="assets/chapter-4/landing-page-wireframe-mobile-contact-sheet.png" alt="Wireframe completo del Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
+<img src="assets/chapter-4/landing-page-wireframe-mobile-contact-sheet.png" alt="Wireframe completo de la Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
 
-*Figura 4.5. Wireframe del Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
+*Figura 4.5. Wireframe de la Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
 
 ### 4.3.2. Landing Page Mock-up
 
@@ -2905,9 +2912,9 @@ evidencia y equipo alternan texto y contenido visual para mantener el ritmo de l
 Los botones principales emplean un énfasis uniforme y las acciones secundarias se
 distinguen sin competir con el objetivo principal de cada sección.
 
-<img src="assets/chapter-4/landing-page-mockup-desktop.png" alt="Mock-up completo del Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
+<img src="assets/chapter-4/landing-page-mockup-desktop.png" alt="Mock-up completo de la Landing Page de Hostera para navegador web de escritorio" style="width:100%; max-height:900px; height:auto; object-fit:contain;"/>
 
-*Figura 4.6. Mock-up del Landing Page de Hostera para Desktop Web Browser.*
+*Figura 4.6. Mock-up de la Landing Page de Hostera para Desktop Web Browser.*
 
 #### Mobile Web Browser
 
@@ -2920,11 +2927,16 @@ la interacción accesibles. De esta manera, la adaptación responsive conserva l
 identidad y la arquitectura de información sin tratar la vista móvil como un producto
 distinto.
 
-<img src="assets/chapter-4/landing-page-mockup-mobile-contact-sheet.png" alt="Mock-up completo del Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
+<img src="assets/chapter-4/landing-page-mockup-mobile-contact-sheet.png" alt="Mock-up completo de la Landing Page móvil de Hostera, distribuido en 16 paneles en orden de lectura" style="display:block; width:75%; max-height:740px; height:auto; object-fit:contain; margin:0 auto;"/>
 
-*Figura 4.7. Mock-up del Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
+*Figura 4.7. Mock-up de la Landing Page de Hostera para Mobile Web Browser, distribuido en 16 paneles en orden de lectura.*
 
 ## 4.4. Web Applications UX/UI Design
+
+Los wireframes, wireflows, mock-ups, user flows y el prototipo de esta sección muestran
+el área de reservas con el término `Reservations`. En el Ubiquitous Language (sección
+2.5) y en la aplicación implementada el término es `Booking`, por lo que esa área
+corresponde a `Bookings` y la acción `New reservation` a `New booking`.
 
 ### 4.4.1. Web Applications Wireframes
 
@@ -2953,7 +2965,7 @@ resumen de ocupación, el estado de las habitaciones y las próximas llegadas.
 
 *Figura 4.8. Wireframes móviles de acceso, dashboard y reservas.*
 
-#### Reservación, habitaciones e inventario
+#### Reserva, habitaciones e inventario
 
 Este grupo representa el detalle de una reserva, el listado de habitaciones, el detalle
 de una habitación, el inventario y el ajuste de stock. La información contextual se
@@ -2961,9 +2973,9 @@ mantiene cerca de las acciones correspondientes: el estado de la reserva acompa�
 datos principales, la habitación expone sus atributos operativos y el ajuste de stock
 separa la cantidad, la ubicación y el motivo de la operación.
 
-<img src="assets/chapter-4/web-application-wireframes-mobile-operations.png" alt="Wireframes móviles de reservación, habitaciones e inventario de Hostera" style="display:block; width:35%; height:auto; margin:0 auto;"/>
+<img src="assets/chapter-4/web-application-wireframes-mobile-operations.png" alt="Wireframes móviles de reserva, habitaciones e inventario de Hostera" style="display:block; width:35%; height:auto; margin:0 auto;"/>
 
-*Figura 4.9. Wireframes móviles de reservación, habitaciones e inventario.*
+*Figura 4.9. Wireframes móviles de reserva, habitaciones e inventario.*
 
 #### Control de acceso, reportes y navegación
 
@@ -3004,7 +3016,7 @@ disponible en https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7.
 | Review and update a booking. | Front-desk operator | Reservation detail → edit reservation → availability-conflict state when the proposed change is not valid. |
 | Manage the booking lifecycle. | Front-desk operator | Pending reservation → status actions → confirmation, no-show, or cancelled state. |
 | Record a booking payment. | Front-desk operator | Record payment → invalid-amount state when the payment cannot be accepted. |
-| Complete guest check-in for a confirmed reservation. | Front-desk operator | Verify guest → payment → encode key card → encoded card → completed check-in, with an unresolved-identity alternative. |
+| Complete guest check-in for a confirmed booking. | Front-desk operator | Verify guest → payment → encode key card → encoded card → completed check-in, with an unresolved-identity alternative. |
 | Complete guest check-out for an occupied room. | Front-desk operator | Checked-in reservation → check-out review → completed check-out, with an unresolved-balance alternative. |
 | Review room availability from a selected date. | Front-desk operator / hotel administrator | Rooms list → room detail with the selected-date monthly availability view. |
 | Create a room within an assigned property. | Hotel administrator | Rooms list → new-room drawer → duplicate-number validation state. |
@@ -3047,37 +3059,37 @@ disponible en https://www.figma.com/board/cbBXWjZefifKIffGrMY6E7.
 
 *Figura 4.14. Wireflow para navegar a otra área operativa autorizada.*
 
-**User goal: Find and review a reservation.**
+**User goal: Find and review a booking.**
 
 <img src="assets/chapter-4/web-application-wireflow-05-reservation-review.png" alt="Wireflow de búsqueda y revisión de una reserva" style="width:100%; height:auto;"/>
 
 *Figura 4.15. Wireflow para encontrar y revisar una reserva.*
 
-**User goal: Create a reservation for an available room.**
+**User goal: Create a booking for an available room.**
 
 <img src="assets/chapter-4/web-application-wireflow-06-reservation-creation.png" alt="Wireflow de creación de una reserva" style="width:100%; height:auto;"/>
 
 *Figura 4.16. Wireflow para crear una reserva de habitación disponible.*
 
-**User goal: Review and update an existing reservation.**
+**User goal: Review and update an existing booking.**
 
 <img src="assets/chapter-4/web-application-wireflow-07-reservation-update.png" alt="Wireflow de actualización de una reserva" style="width:100%; height:auto;"/>
 
 *Figura 4.17. Wireflow para revisar y actualizar una reserva existente.*
 
-**User goal: Update a reservation according to its pre-arrival outcome.**
+**User goal: Update a booking according to its pre-arrival outcome.**
 
 <img src="assets/chapter-4/web-application-wireflow-08-reservation-lifecycle.png" alt="Wireflow de resultado previo a la llegada" style="width:100%; height:auto;"/>
 
 *Figura 4.18. Wireflow para actualizar una reserva según el resultado previo a la llegada.*
 
-**User goal: Record a payment received for a reservation.**
+**User goal: Record a payment received for a booking.**
 
 <img src="assets/chapter-4/web-application-wireflow-09-reservation-payment.png" alt="Wireflow de registro de pago" style="width:100%; height:auto;"/>
 
 *Figura 4.19. Wireflow para registrar un pago de reserva.*
 
-**User goal: Complete guest check-in for a confirmed reservation.**
+**User goal: Complete guest check-in for a confirmed booking.**
 
 <img src="assets/chapter-4/web-application-wireflow-10-guest-check-in.png" alt="Wireflow de check-in" style="width:100%; height:auto;"/>
 
@@ -3359,7 +3371,7 @@ La navegación persistente permite pasar del dashboard a reservas y posteriormen
 habitaciones. Cuando se intenta abrir un área no autorizada, se muestra el estado de
 restricción y se ofrece el retorno a un área permitida.
 
-#### Goal: Find and review a reservation
+#### Goal: Find and review a booking
 
 <img src="assets/chapter-4/web-application-user-flows/05-reservation-review.png" alt="User Flow para encontrar y revisar una reserva" style="width:100%; height:auto;"/>
 
@@ -3369,7 +3381,7 @@ El personal abre la lista de reservas, aplica los criterios de búsqueda y revis
 detalle de la reserva encontrada. Si no existen coincidencias, el estado vacío
 indica la condición y permite ajustar los criterios para realizar una nueva búsqueda.
 
-#### Goal: Create a reservation for an available room
+#### Goal: Create a booking for an available room
 
 <img src="assets/chapter-4/web-application-user-flows/06-reservation-creation.png" alt="User Flow para crear una reserva de una habitación disponible" style="width:100%; height:auto;"/>
 
@@ -3377,20 +3389,20 @@ indica la condición y permite ajustar los criterios para realizar una nueva bú
 
 La ruta esperada lleva desde la lista de reservas al formulario de creación y luego al
 detalle de la reserva creada para una habitación disponible. La ruta alternativa
-presenta errores cuando faltan datos o el período no es válido; la operación puede
+presenta errores cuando faltan datos o el periodo no es válido; la operación puede
 corregirse desde el mismo formulario.
 
-#### Goal: Review and update an existing reservation
+#### Goal: Review and update an existing booking
 
 <img src="assets/chapter-4/web-application-user-flows/07-reservation-update.png" alt="User Flow para revisar y actualizar una reserva existente" style="width:100%; height:auto;"/>
 
 *Figura 4.58. User Flow para revisar y actualizar una reserva existente.*
 
 Desde el detalle, el personal abre el formulario de edición y vuelve al detalle con
-los cambios guardados. Si la habitación o el período seleccionado dejó de estar
+los cambios guardados. Si la habitación o el periodo seleccionado dejó de estar
 disponible, el flujo muestra el conflicto y permite elegir una alternativa.
 
-#### Goal: Update a reservation according to its pre-arrival outcome
+#### Goal: Update a booking according to its pre-arrival outcome
 
 <img src="assets/chapter-4/web-application-user-flows/08-reservation-lifecycle.png" alt="User Flow para actualizar una reserva según su resultado previo a la llegada" style="width:100%; height:auto;"/>
 
@@ -3400,7 +3412,7 @@ El detalle de la reserva abre las acciones de ciclo de vida disponibles. Según 
 resultado previo a la llegada, el personal puede cancelar la reserva o marcarla como
 no-show; cada opción se confirma mediante su diálogo correspondiente.
 
-#### Goal: Record a payment received for a reservation
+#### Goal: Record a payment received for a booking
 
 <img src="assets/chapter-4/web-application-user-flows/09-reservation-payment.png" alt="User Flow para registrar un pago recibido de una reserva" style="width:100%; height:auto;"/>
 
@@ -3410,7 +3422,7 @@ El personal abre el registro de pago desde el detalle, introduce el importe reci
 y vuelve al detalle con el balance actualizado. Un importe inválido activa el estado
 de error y permite corregir el valor antes de guardar.
 
-#### Goal: Complete guest check-in for a confirmed reservation
+#### Goal: Complete guest check-in for a confirmed booking
 
 <img src="assets/chapter-4/web-application-user-flows/10-guest-check-in.png" alt="User Flow para completar el check-in de un huésped" style="width:100%; height:auto;"/>
 
@@ -3554,10 +3566,10 @@ acceso y su motivo.
 
 <img src="assets/chapter-4/web-application-user-flows/24-operational-report-review.png" alt="User Flow para encontrar y revisar un reporte operativo" style="width:100%; height:auto;"/>
 
-*Figura 4.75. User Flow para encontrar y revisar un reporte operativo para una propiedad y período.*
+*Figura 4.75. User Flow para encontrar y revisar un reporte operativo para una propiedad y periodo.*
 
 La biblioteca de reportes conduce al reporte de ocupación y disponibilidad cuando
-existen datos para la propiedad y el período seleccionados. Si el período no contiene
+existen datos para la propiedad y el periodo seleccionados. Si el periodo no contiene
 datos, se presenta un estado vacío en lugar de un resultado engañoso.
 
 #### Goal: Export an operational report for the selected scope
@@ -3584,7 +3596,7 @@ prototipado.
 
 Las decisiones de interacción mantienen la arquitectura de información definida para
 la aplicación. En Desktop, la navegación persistente conserva el contexto de la
-propiedad activa y permite acceder a Overview, Reservations, Rooms, Inventory, Access
+propiedad activa y permite acceder a Overview, Bookings, Rooms, Inventory, Access
 Control y Reports desde cualquier módulo operativo. Las acciones principales de cada
 módulo conducen a las vistas de creación, detalle, edición y confirmación que forman
 parte de los User Flows. Las rutas alternativas representan estados como errores de
@@ -3594,7 +3606,7 @@ balances pendientes y fallos de codificación RFID.
 En Mobile Web Browser se conserva la misma organización funcional, pero las vistas se
 presentan en una composición vertical y con controles compactos adecuados para la
 navegación táctil. El prototipo permite iniciar el recorrido desde el Dashboard
-Mobile, acceder a Reservations, Rooms y Occupancy Report, y regresar al contexto
+Mobile, acceder a Bookings, Rooms y Occupancy Report, y regresar al contexto
 principal. Esta adaptación mantiene las etiquetas y la jerarquía de los módulos sin
 introducir una arquitectura de navegación diferente.
 
@@ -3652,8 +3664,8 @@ dominio y cambia el estado de un agregado. La tabla resume lo que contiene cada 
 | Frame | Comandos principales | Agregados | Reglas de negocio que se validan | Sistemas externos |
 | --- | --- | --- | --- | --- |
 | Property Management (Identity & Access) | Agregar propiedad, registrar habitaciones, definir plan tarifario, asignar personal | `Property`, `Room`, `RatePlan`, `PropertyAccess` | El nombre de la propiedad es único, el número de habitación es único dentro de la propiedad y el rol asignado pertenece a la propiedad. | Ninguno |
-| Reservations & Stays | Crear, modificar y cancelar una reserva, marcar no-show, asignar habitación | `Reservation` | La habitación está disponible para las fechas, la reserva está en un estado que admite cambios y la política de cancelación se cumple. | Ninguno |
-| Reservations & Stays + RFID Access Control | Verificar la identidad del huésped, registrar el pago, codificar la tarjeta, hacer el check-in, acceder a la habitación, hacer el check-out | `Guest`, `Reservation`, `Stay`, `RFIDCredential`, `AccessEvent` | El documento es válido, el pago viene de un canal autorizado, la reserva está confirmada antes de emitir la tarjeta y no quedan cargos pendientes al salir. | Lectores RFID |
+| Reservations & Stays | Crear, modificar y cancelar una reserva, marcar no-show, asignar habitación | `Booking` | La habitación está disponible para las fechas, la reserva está en un estado que admite cambios y la política de cancelación se cumple. | Ninguno |
+| Reservations & Stays + RFID Access Control | Verificar la identidad del huésped, registrar el pago, codificar la tarjeta, hacer el check-in, acceder a la habitación, hacer el check-out | `Guest`, `Booking`, `Stay`, `RFIDCredential`, `AccessEvent` | El documento es válido, el pago viene de un canal autorizado, la reserva está confirmada antes de emitir la tarjeta y no quedan cargos pendientes al salir. | Lectores RFID |
 | Room Management | Actualizar el estado, marcar la habitación como limpia, inspeccionada y lista | `Room` | La transición de estado está permitida y la habitación solo queda lista después de inspeccionarse sin observaciones. | Ninguno |
 | Inventory Management | Agregar ubicación y artículo, recibir y ajustar stock, detectar stock bajo y quiebre | `StorageLocation`, `InventoryItem`, `StockMovement` | Los códigos son únicos, el stock no puede quedar en negativo y la alerta se dispara al bajar del umbral. | Servicio de notificaciones |
 | RFID Access Control (Staff) | Emitir, activar, validar y revocar la credencial de un miembro del personal | `RFIDCredential`, `AccessEvent` | El miembro del personal tiene un rol activo y la credencial es válida para el área y el horario. | Lectores RFID |
@@ -3666,7 +3678,8 @@ o deja vencer la credencial del huésped.
 
 Los contextos del tablero se corresponden con los módulos de la Frontend Web
 Application: Property Management con la gestión de la propiedad activa, Reservations
-& Stays con `bookings`, Room Management con `rooms`, Inventory Management con
+& Stays con `bookings`, cuyo agregado `Reservation` del tablero es `Booking` en el
+Ubiquitous Language, Room Management con `rooms`, Inventory Management con
 `inventory`, los dos frames de RFID con `access-control` y Reporting & Analytics con
 el panorama operativo de `overview`. En la implementación, el agregado
 `StockMovement` del tablero se registra como el historial de ajustes de cada artículo.
@@ -3767,7 +3780,7 @@ de un adaptador de infraestructura.
 
 *Figura 4.83. Diagrama de componentes del bounded context Bookings de la RESTful API.*
 
-**Bounded context Rooms.** Administra habitaciones, tipos de habitación, planes de tarifa, tarifas diarias y periodos de estado, y responde las consultas de disponibilidad.
+**Bounded context Rooms.** Administra habitaciones, tipos de habitación, planes tarifarios, tarifas diarias y periodos de estado, y responde las consultas de disponibilidad.
 
 <img src="assets/chapter-4/c4-components-api-rooms.svg" alt="Diagrama de componentes del bounded context Rooms" style="display:block; width:75%; height:auto; margin:0 auto;"/>
 
@@ -3977,7 +3990,7 @@ verificación del software, y publicación de evidencias.
 | --- | --- | --- | --- |
 | Git | Controla las versiones locales del informe y de cada producto, y ejecuta el modelo de ramas del equipo. | Instalación local desde el canal oficial de distribución (https://git-scm.com/). | Cada integrante configura su nombre y su correo antes de su primer commit; las ramas siguen el modelo descrito en la sección 5.1.2. |
 | GitHub | Aloja el repositorio del equipo, los repositorios de producto, los issues y el historial de revisiones. | https://github.com/1ASI0730-2620-8150-GrafoVerde | Los cambios se realizan en ramas de trabajo y se integran mediante el flujo Git Flow descrito en la sección 5.1.2. |
-| GitHub Pages | Publica la Landing Page del equipo como sitio estático accesible públicamente. | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | La publicación se realiza desde la rama `main` y la carpeta `/ (root)`; la configuración se detalla en la sección 5.1.4. |
+| GitHub Pages | Publica la Landing Page del equipo como sitio estático accesible públicamente. | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ | La publicación se realiza desde la rama `main` y la carpeta `/ (root)`; la configuración se detalla en la sección 5.1.4. |
 | YouTrack | Gestiona el Product Backlog y realiza el seguimiento de las historias de usuario y los ítems de trabajo. | https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5 | El trabajo se asocia a un ítem del backlog antes de su implementación y revisión. |
 
 **Diseño, modelado y documentación de la solución**
@@ -4037,7 +4050,7 @@ repositorios de producto exigidos por el enunciado del proyecto:
 
 | Producto | URL del repositorio | Estado actual |
 | --- | --- | --- |
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.4.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, los tags de versión desde `v0.1.0` hasta `v0.5.0`, su `CHANGELOG.md` y su `LICENSE.md`. |
 | Frontend Web Applications | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Registrado, implementado y desplegado. Mantiene las ramas `main` y `develop`, el tag `v0.1.0`, su `CHANGELOG.md` y su `LICENSE.md`, y la carpeta `docs/` con las ADR, el diagrama de clases y las user stories. |
 | RESTful Web Services | Se creará en el Sprint 3 (AV2). | El repositorio deberá incluir pruebas unitarias y pruebas de integración/aceptación, según lo requerido por el enunciado del proyecto. Mientras no esté implementado, la Frontend Web Application consume la API de datos de demostración descrita en la sección 5.1.1. |
 
@@ -4091,7 +4104,7 @@ blanco.
 | `docs` | Cambiar documentación, incluido el contenido del informe. | `docs(report): add project annexes` |
 | `chore` | Cambiar configuración, dependencias o tareas de soporte que no alteran el comportamiento. | `chore(styles): add Hostera color and type tokens` |
 | `refactor` | Reorganizar el código sin cambiar su comportamiento observable. | `refactor(report): split chapter assets by product` |
-| `test` | Agregar o modificar pruebas automatizadas. | `test(reservations): cover overlapping stay validation` |
+| `test` | Agregar o modificar pruebas automatizadas. | `test(bookings): cover overlapping stay validation` |
 
 Las ramas de funcionalidad se nombran en kebab-case y describen el cambio, no al
 integrante que lo realiza, por ejemplo `feature/scm-development-environment`. Cuando
@@ -4116,9 +4129,9 @@ ampliamente conocidas. La elección del formato depende del tipo de elemento:
 
 | Elemento | Convención adoptada | Ejemplo |
 | --- | --- | --- |
-| Archivos y carpetas | Minúsculas; se utiliza `kebab-case` cuando el nombre contiene varias palabras. | `reservation-card.vue`, `user-stories.md` |
-| Variables y funciones de JavaScript | `camelCase`. | `reservationCount`, `calculateTotal()` |
-| Clases y componentes | `PascalCase` cuando representan una clase o un componente de Vue. | `ReservationCard`, `BookingSummary` |
+| Archivos y carpetas | Minúsculas; se utiliza `kebab-case` cuando el nombre contiene varias palabras. | `booking-card.vue`, `user-stories.md` |
+| Variables y funciones de JavaScript | `camelCase`. | `bookingCount`, `calculateTotal()` |
+| Clases y componentes | `PascalCase` cuando representan una clase o un componente de Vue. | `BookingCard`, `PaymentSummary` |
 | Constantes | `UPPER_SNAKE_CASE` cuando son valores globales inmutables. | `MAX_RETRY_COUNT` |
 | Clases CSS, atributos `data-*` e identificadores HTML | Minúsculas en `kebab-case`; las clases CSS siguen el patrón BEM cuando representan bloques, elementos y modificadores. | `site-header__nav`, `plan--professional` |
 | Variables CSS personalizadas | Prefijo `--` seguido de un nombre en `kebab-case`. | `--color-primary`, `--spacing-md` |
@@ -4146,12 +4159,12 @@ de retorno cuando corresponda:
 
 ```javascript
 /**
- * Calculates the total amount for a reservation.
+ * Calculates the total amount for a booking.
  * @param {number} nightlyRate - The nightly room rate.
  * @param {number} nights - The number of nights.
- * @returns {number} The reservation total.
+ * @returns {number} The booking total.
  */
-export function calculateReservationTotal(nightlyRate, nights) {
+export function calculateBookingTotal(nightlyRate, nights) {
   return nightlyRate * nights;
 }
 ```
@@ -4166,7 +4179,7 @@ Components (`.vue`) y utilizarán Composition API. Se preferirá la sintaxis
 vida de forma concisa.
 
 La lógica reutilizable y con estado se extraerá a composables con nombres que
-comiencen por `use`, por ejemplo `useReservationSearch`. Los componentes utilizarán
+comiencen por `use`, por ejemplo `useBookingSearch`. Los componentes utilizarán
 nombres en `PascalCase` y los nombres de props, eventos y variables respetarán las
 convenciones de JavaScript. Cada componente tendrá una responsabilidad clara y se
 evitará colocar lógica de negocio extensa directamente en la plantilla.
@@ -4179,11 +4192,11 @@ de nomenclatura de Microsoft para C#:
 
 | Elemento de C# | Convención | Ejemplo |
 | --- | --- | --- |
-| Namespaces, clases, records, enums y miembros públicos | `PascalCase`. | `ReservationService`, `GetReservation()` |
-| Interfaces | `PascalCase` con prefijo `I`. | `IReservationRepository` |
-| Parámetros y variables locales | `camelCase`. | `reservationId`, `totalAmount` |
-| Campos privados de instancia | `_camelCase`. | `_reservationRepository` |
-| Métodos asíncronos | `PascalCase` con sufijo `Async`. | `GetReservationAsync()` |
+| Namespaces, clases, records, enums y miembros públicos | `PascalCase`. | `BookingService`, `GetBooking()` |
+| Interfaces | `PascalCase` con prefijo `I`. | `IBookingRepository` |
+| Parámetros y variables locales | `camelCase`. | `bookingId`, `totalAmount` |
+| Campos privados de instancia | `_camelCase`. | `_bookingRepository` |
+| Métodos asíncronos | `PascalCase` con sufijo `Async`. | `GetBookingAsync()` |
 | Archivos de configuración y clases de inicio | Nombres establecidos por ASP.NET Core. | `Program.cs`, `appsettings.json` |
 
 Los endpoints, DTOs, servicios, repositorios y entidades utilizarán nombres en
@@ -4222,7 +4235,7 @@ de compilación sí están versionados.
 La Landing Page está desplegada mediante GitHub Pages utilizando el repositorio de
 Landing Page registrado en la sección 5.1.2. La configuración de publicación utiliza
 la rama `main` y la carpeta `/ (root)`. La aplicación está disponible en GitHub Pages
-(https://1asi0730-2620-8150-grafoverde.github.io/landing-page/).
+(https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/).
 
 <img src="assets/chapter-5/github-pages-deployment.png" alt="Configuración de GitHub Pages de la Landing Page, publicada desde main y la carpeta raíz" style="width:100%; height:auto;"/>
 
@@ -4239,7 +4252,7 @@ producto:
 
 | Producto | Entorno objetivo | Fuente | Comando de build | Comando de publicación | URL pública |
 | --- | --- | --- | --- | --- | --- |
-| Landing Page | GitHub Pages | Rama `main` y carpeta `/ (root)` de `landing-page` | No requiere build: el sitio se sirve como HTML, CSS y JavaScript estáticos. | Publicación automática del flujo de GitHub Pages al integrar en `main`. | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ |
+| Landing Page | GitHub Pages | Rama `main` y carpeta `/ (root)` de `landing-page` | No requiere build: el sitio se sirve como HTML, CSS y JavaScript estáticos. | Publicación automática del flujo de GitHub Pages al integrar en `main`. | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ |
 | Frontend Web Application | Firebase Hosting | Copia local de `hostera-frontend-wa`, publicada con la CLI de Firebase | `npm run build`, que genera el directorio `dist/`. | `npm run deploy`, que construye la aplicación y ejecuta `firebase deploy --only hosting`. | https://hostera-f4116.web.app/ |
 | API de datos de demostración | Render (Web Service) | Rama `main` de `hostera-frontend-wa`, desde la raíz del repositorio | `npm ci` | `npm run server:start -- --host 0.0.0.0 --port $PORT`, que reconstruye `server/db.json` desde `server/data/` e inicia json-server. | https://hostera-frontend.onrender.com |
 | RESTful Web Services | Se elegirá en el Sprint 3 (AV2). | Repositorio de Web Services, que se creará en el Sprint 3. | `dotnet publish` del proyecto ASP.NET Core. | Se fijará junto con el proveedor elegido. | Se publicará con la primera versión de los servicios, prevista para el Sprint 3 (AV2). |
@@ -4319,7 +4332,7 @@ corresponden a la estimación registrada en el Product Backlog de Hostera.
 | **Total** | **Epic 1: Landing Page Experience** | **42** | **8/8 implementadas** |
 
 Al cierre del Sprint 1, el objetivo se considera cumplido: la Landing Page se
-encuentra publicada en https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ y, según la evidencia
+encuentra publicada en https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ y, según la evidencia
 de ejecución de la sección 5.2.1.5, permite recorrer desde la propuesta de valor
 hasta los caminos por escala de operación y los planes con su siguiente paso. Las
 ocho User Stories de `EP001` fueron implementadas.
@@ -4332,7 +4345,7 @@ asignar una persona líder para cada funcionalidad y mantener la colaboración d
 resto del equipo durante su implementación, revisión e integración mediante Git Flow.
 
 La asignación de líderes se basa en la persona responsable de la feature branch de
-cada User Story en el repositorio de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+cada User Story en el repositorio de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page).
 Los cuatro integrantes restantes se registran como colaboradores en cada aspecto,
 de acuerdo con la dinámica de trabajo colaborativo definida para el Sprint 1.
 
@@ -4401,13 +4414,13 @@ la estimación relativa en Story Points de cada User Story.
     <tr><td>US002</td><td>Find information about Hostera</td><td>T002.2</td><td>Implement footer navigation</td><td>Crear la navegación secundaria, el aviso de Grafo Verde y los enlaces hacia las secciones y términos.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>US002</td><td>Find information about Hostera</td><td>T002.3</td><td>Add mobile navigation and terms page</td><td>Implementar el menú de navegación responsive y la página de términos y condiciones.</td><td>8</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.1</td><td>Add independent-hotel pathway</td><td>Implementar la tarjeta y el contenido del camino para un hotel independiente con hasta 10 habitaciones.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.2</td><td>Add Free plan details</td><td>Incorporar la información del plan Free y su CTA para iniciar la experiencia correspondiente.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US003</td><td>Find the independent-hotel path</td><td>T003.2</td><td>Add Free plan details</td><td>Incorporar la información del plan Free y su CTA para iniciar la experiencia correspondiente. En la versión <code>v0.3.0</code> el plan Free se reemplazó por Starter.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
     <tr><td>US004</td><td>Find the small-chain path</td><td>T004.1</td><td>Add small-chain pathway</td><td>Implementar la tarjeta y el contenido del camino para una cadena hotelera pequeña de 2 a 5 ubicaciones.</td><td>4</td><td>Juan Diego Flores</td><td>Done</td></tr>
     <tr><td>US004</td><td>Find the small-chain path</td><td>T004.2</td><td>Add Professional plan details</td><td>Incorporar la información del plan Professional y su CTA para explorar la experiencia correspondiente.</td><td>4</td><td>Juan Diego Flores</td><td>Done</td></tr>
     <tr><td>US005</td><td>Understand the product benefits and operating flow</td><td>T005.1</td><td>Add connected-operations benefits</td><td>Implementar la sección de beneficios y las tarjetas de inventario centralizado y control de accesos.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
     <tr><td>US005</td><td>Understand the product benefits and operating flow</td><td>T005.2</td><td>Add four-step operating flow</td><td>Implementar el flujo de cuatro pasos: añadir hoteles, configurar el equipo, conectar sistemas y operar.</td><td>4</td><td>José Santana</td><td>Done</td></tr>
     <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.1</td><td>Add hotel-group pathway</td><td>Implementar el camino comercial para grupos hoteleros y la opción Enterprise.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.2</td><td>Add plan comparison</td><td>Completar la comparación de planes, capacidades y CTA para Free, Professional y Enterprise.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.2</td><td>Add plan comparison</td><td>Completar la comparación de planes, capacidades y CTA para Free, Professional y Enterprise. En la versión <code>v0.3.0</code> el plan Free se reemplazó por Starter.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>US006</td><td>Compare plans and choose a next step</td><td>T006.3</td><td>Add closing actions and sales contact</td><td>Implementar el panel de cierre, las acciones principales y el siguiente paso de contacto comercial.</td><td>4</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.1</td><td>Add product discovery content</td><td>Implementar el área de producto y el punto de entrada para descubrir Hostera.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
     <tr><td>US007</td><td>Explore product, team, and support content</td><td>T007.2</td><td>Add team content</td><td>Implementar la sección del equipo, sus integrantes y el punto de entrada para conocerlo.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
@@ -4420,7 +4433,7 @@ la estimación relativa en Story Points de cada User Story.
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 La evidencia de desarrollo del Sprint 1 corresponde al repositorio público de la
-Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page).
 Los commits funcionales se organizaron en ramas `feature/US001` a
 `feature/US008`, siguiendo el flujo Git Flow del equipo. La tabla registra los
 commits de implementación asociados con las ocho User Stories del sprint; los
@@ -4429,32 +4442,32 @@ documentan estos cambios.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`0e1282b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/0e1282b6460c4e5e7dbb73ddff9b775bf8ca046a) | `chore(styles): add Hostera color and type tokens` | Add shared CSS custom properties and document base styles so later sections can reuse the same surface, primary, and type scale. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`000a4ca`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/000a4ca8d5d4e3e48bdb4ad86ea6d9e904eae0b8) | `feat(hero): add hotel-operations proposition and dashboard preview` | Show the English hero copy, Start for free action, and an informational dashboard overview of reservations, rooms, inventory, and access. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US001` | [`529c650`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/529c6503a79f06e6e69477d8408485b620ca106c) | `feat(problem): add fragmented-operations story and photo` | Explain that hotel operations break when information lives in different places and present Hostera as connecting reservations, rooms, inventory, and guest access. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`1010a38`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/1010a38394db1095275670857ace7e2041772440) | `feat(header): add primary navigation and Hostera mark` | Expose Solutions, Features, Pricing, Product, About, EN / ES, and Start for free at the top of the English landing page. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`5325b63`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/5325b63c41fac5df4db333954d827c3cef6370e2) | `feat(footer): add secondary navigation and Grafo Verde notice` | Expose Solutions, Benefits, Pricing, Product, About, Support, EN / ES, Terms and Conditions, and the Hostera publisher line in the footer. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US002` | [`a39ca3f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/a39ca3f4bc5a0d51692dace477d7439d2b44441a) | `feat(nav): add terms page and mobile navigation menu` | Open Terms and Conditions as a dedicated page and let smaller screens use the header menu for the same destinations. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US003` | [`6f2139d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/6f2139dc92ce06e3b1e462d4834f576cebccba8e) | `feat(solutions): add independent-hotel pathway` | Present the one-property path with up to 10 rooms and a Start for free action into the Free experience. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US003` | [`493d8f2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/493d8f2b29f0abe96f0dff847cdea770a03d0975) | `feat(plans): add Free plan for one property` | State the Free plan is for one property with up to 10 rooms and list reservations, warehouse, RFID, administrator, and community support. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US004` | [`331de56`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/331de560a1823b6b0627bea31ac13c2ca7961976) | `feat(solutions): add small-chain pathway` | Present the 2-5 locations path and an Explore Professional action into the Professional plan. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US004` | [`750f65d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/750f65d1acaf4e8c86fb92b0adabe6bfece408e4) | `feat(plans): add Professional plan for small chains` | State the Professional plan is for 2 to 5 locations and list rooms, stock alerts, RFID, reports, roles, and priority support. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US005` | [`ca17547`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/ca1754785c33f9fc7c2899ac5eef9e44895398c9) | `feat(benefits): add connected operations and example cards` | Describe occupancy, room readiness, inventory, and guest access, and show centralized inventory and property access controls. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US005` | [`bd10bc3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/bd10bc3d18d037daaa69f085b9ce388419beb95e) | `feat(workflow): add four-step operating flow` | Present Add hotels, Set up your team, Connect systems, and Run operations with supporting descriptions. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`4f46e7c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/4f46e7cf7a2c9169317c831f26ba2c266527e115) | `feat(solutions): add hotel group commercial pathway` | Present the multi-country Hotel group path and a Talk to sales action into the Enterprise contact step. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`699014f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/699014fa134d41ae5378b5eae27fe728f3a8e946) | `feat(plans): add Enterprise plan to the comparison` | Show Free, Professional, and Enterprise with Talk to sales as the next step for large or multinational hotel groups. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US006` | [`c9ce586`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/c9ce586a38d9040ce778557e43b1cd607e04d64e) | `feat(close): add closing actions and sales contact` | Repeat Start for free and Talk to sales, and open a sales contact step for the Enterprise hotel-group path. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`2cc1173`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/2cc11730b8228da92089bc92735d80c76584d6f1) | `feat(product): add Discover Hostera video entry` | Present the product media area with a play control that starts the daily hotel-operations demonstration. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`f8a5a88`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/f8a5a8801dcd969c3d7f8ede4a90f4c5dff21f07) | `feat(team): add engineering team and Meet the team video` | Identify Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana and start the team video from the play control. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US007` | [`8293970`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/829397088f4f645039caf0ce4fd547c81ed6b4de) | `feat(support): add expandable FAQ answers` | Answer starting with one hotel, what changes with Professional, and English and Spanish availability. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US008` | [`a5046a5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/a5046a5b2a77522f9f5368486b329dd2859bebe1) | `feat(i18n): switch English and Spanish copy in place` | Keep a single landing page and swap navigation, hero, paths, plans, and CTAs when the visitor chooses EN or ES. | 2026-09-16 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/US008` | [`6d6ede6`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/6d6ede63f2a98a35bd21be2c4fa300f3eef2a9d6) | `feat(i18n): keep language when returning from terms` | Send EN and ES from the terms page back to the same landing page with the selected language. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US001` | [`0e1282b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/0e1282b6460c4e5e7dbb73ddff9b775bf8ca046a) | `chore(styles): add Hostera color and type tokens` | Add shared CSS custom properties and document base styles so later sections can reuse the same surface, primary, and type scale. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US001` | [`000a4ca`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/000a4ca8d5d4e3e48bdb4ad86ea6d9e904eae0b8) | `feat(hero): add hotel-operations proposition and dashboard preview` | Show the English hero copy, Start for free action, and an informational dashboard overview of reservations, rooms, inventory, and access. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US001` | [`529c650`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/529c6503a79f06e6e69477d8408485b620ca106c) | `feat(problem): add fragmented-operations story and photo` | Explain that hotel operations break when information lives in different places and present Hostera as connecting reservations, rooms, inventory, and guest access. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US002` | [`1010a38`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/1010a38394db1095275670857ace7e2041772440) | `feat(header): add primary navigation and Hostera mark` | Expose Solutions, Features, Pricing, Product, About, EN / ES, and Start for free at the top of the English landing page. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US002` | [`5325b63`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/5325b63c41fac5df4db333954d827c3cef6370e2) | `feat(footer): add secondary navigation and Grafo Verde notice` | Expose Solutions, Benefits, Pricing, Product, About, Support, EN / ES, Terms and Conditions, and the Hostera publisher line in the footer. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US002` | [`a39ca3f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/a39ca3f4bc5a0d51692dace477d7439d2b44441a) | `feat(nav): add terms page and mobile navigation menu` | Open Terms and Conditions as a dedicated page and let smaller screens use the header menu for the same destinations. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US003` | [`6f2139d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/6f2139dc92ce06e3b1e462d4834f576cebccba8e) | `feat(solutions): add independent-hotel pathway` | Present the one-property path with up to 10 rooms and a Start for free action into the Free experience. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US003` | [`493d8f2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/493d8f2b29f0abe96f0dff847cdea770a03d0975) | `feat(plans): add Free plan for one property` | State the Free plan is for one property with up to 10 rooms and list reservations, warehouse, RFID, administrator, and community support. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US004` | [`331de56`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/331de560a1823b6b0627bea31ac13c2ca7961976) | `feat(solutions): add small-chain pathway` | Present the 2-5 locations path and an Explore Professional action into the Professional plan. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US004` | [`750f65d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/750f65d1acaf4e8c86fb92b0adabe6bfece408e4) | `feat(plans): add Professional plan for small chains` | State the Professional plan is for 2 to 5 locations and list rooms, stock alerts, RFID, reports, roles, and priority support. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US005` | [`ca17547`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/ca1754785c33f9fc7c2899ac5eef9e44895398c9) | `feat(benefits): add connected operations and example cards` | Describe occupancy, room readiness, inventory, and guest access, and show centralized inventory and property access controls. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US005` | [`bd10bc3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/bd10bc3d18d037daaa69f085b9ce388419beb95e) | `feat(workflow): add four-step operating flow` | Present Add hotels, Set up your team, Connect systems, and Run operations with supporting descriptions. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US006` | [`4f46e7c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/4f46e7cf7a2c9169317c831f26ba2c266527e115) | `feat(solutions): add hotel group commercial pathway` | Present the multi-country Hotel group path and a Talk to sales action into the Enterprise contact step. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US006` | [`699014f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/699014fa134d41ae5378b5eae27fe728f3a8e946) | `feat(plans): add Enterprise plan to the comparison` | Show Free, Professional, and Enterprise with Talk to sales as the next step for large or multinational hotel groups. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US006` | [`c9ce586`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/c9ce586a38d9040ce778557e43b1cd607e04d64e) | `feat(close): add closing actions and sales contact` | Repeat Start for free and Talk to sales, and open a sales contact step for the Enterprise hotel-group path. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US007` | [`2cc1173`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/2cc11730b8228da92089bc92735d80c76584d6f1) | `feat(product): add Discover Hostera video entry` | Present the product media area with a play control that starts the daily hotel-operations demonstration. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US007` | [`f8a5a88`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/f8a5a8801dcd969c3d7f8ede4a90f4c5dff21f07) | `feat(team): add engineering team and Meet the team video` | Identify Mateo Condori, Joaquin Cuba, Darnell Cuba, Juan Flores, and José Santana and start the team video from the play control. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US007` | [`8293970`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/829397088f4f645039caf0ce4fd547c81ed6b4de) | `feat(support): add expandable FAQ answers` | Answer starting with one hotel, what changes with Professional, and English and Spanish availability. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US008` | [`a5046a5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/a5046a5b2a77522f9f5368486b329dd2859bebe1) | `feat(i18n): switch English and Spanish copy in place` | Keep a single landing page and swap navigation, hero, paths, plans, and CTAs when the visitor chooses EN or ES. | 2026-09-16 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/US008` | [`6d6ede6`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/6d6ede63f2a98a35bd21be2c4fa300f3eef2a9d6) | `feat(i18n): keep language when returning from terms` | Send EN and ES from the terms page back to the same landing page with the selected language. | 2026-09-16 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 1 se completó la experiencia principal de la Landing Page para
 las ocho User Stories de `EP001`. La versión ejecutable está disponible en
-https://1asi0730-2620-8150-grafoverde.github.io/landing-page/.
+https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/.
 La navegación permite recorrer la propuesta de valor, los caminos según la
 escala del hotel, los beneficios operativos, el flujo de trabajo, los planes,
 la información del producto y del equipo, las preguntas frecuentes y el
@@ -4470,7 +4483,7 @@ Review:
 
 <img src="assets/chapter-5/sprint-1-landing-page-pricing.png" alt="Vista de comparación de planes de la Landing Page de Hostera" style="width:100%; height:auto;"/>
 
-*Figura 5.4. Vista de comparación de planes Free, Professional y Enterprise.*
+*Figura 5.4. Vista de comparación de planes Free, Professional y Enterprise al cierre del Sprint 1. En la versión `v0.3.0` el plan Free se reemplazó por Starter.*
 
 Como evidencia de navegación, se incorpora el video del recorrido de la Landing Page (https://1drv.ms/f/c/8d4ae682dbad6a14/IgDpv3unJcdXQJ0d3eyvjDjBATcwFeKcn-JrAaMoJk2_5jQ?e=bsHpeN).
 El video muestra los principales recorridos de navegación de la Landing Page,
@@ -4485,13 +4498,13 @@ El alcance del Sprint 1 estuvo concentrado en la implementación de la Landing
 Page. Por ese motivo, durante este sprint no se implementaron Web Services ni
 endpoints HTTP, y no se generó documentación OpenAPI asociada. El repositorio de
 la Landing Page contiene la experiencia web estática y se encuentra disponible en
-su repositorio (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page).
+su repositorio (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page).
 La documentación de endpoints y sus evidencias se incorporará en el sprint en
 el que se implemente el repositorio de Web Services.
 
 | Repository | Endpoint | Actions / HTTP Verb | OpenAPI Documentation | Documentation Commit |
 |---|---|---|---|---|
-| https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | No aplica | No aplica | No aplica | No aplica |
+| https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | No aplica | No aplica | No aplica | No aplica |
 
 Por lo tanto, no corresponde incluir capturas de interacción con Swagger u otra
 documentación de servicios para el Sprint 1.
@@ -4506,7 +4519,7 @@ y publicó el sitio en el entorno `github-pages`.
 
 | Product | Repository | Deployment Platform | Source | Public URL | Sprint Status |
 |---|---|---|---|---|---|
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | Deployed |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ | Deployed |
 | Web Services | No aplica | No aplica | No aplica | No aplica | Not in Sprint 1 scope |
 | Frontend Web Applications | No aplica | No aplica | No aplica | No aplica | Not in Sprint 1 scope |
 
@@ -4537,7 +4550,7 @@ release:
 |---|---|---:|
 | Joaquin Cuba (`joacuba`) | US001, US007 y US008: propuesta de valor, contenido de producto y equipo, soporte y variantes de idioma. | 8 |
 | Darnell Cuba (`darnell1910`) | US002 y US006: navegación, términos, caminos comerciales, planes y acciones de cierre. | 6 |
-| Mateo Condori (`BeyaminUv`) | US003: camino del hotel independiente y plan Free. | 2 |
+| Mateo Condori (`BeyaminUv`) | US003: camino del hotel independiente y plan Free, reemplazado por Starter en la versión `v0.3.0`. | 2 |
 | Juan Diego Flores (`YopoFlores`) | US004: camino de la cadena pequeña y plan Professional. | 2 |
 | José Santana (`JhosBY2005`) | US005: beneficios de operaciones conectadas y flujo operativo. | 2 |
 | **Total** | **Ocho User Stories de `EP001`** | **20** |
@@ -4652,17 +4665,14 @@ configuración inicial y el despliegue.
 
 #### 5.2.2.3. Sprint Backlog 2
 
-El Sprint Backlog 2 descompone las 21 user stories en el trabajo implementado en cada
-bounded context de la aplicación. Cada historia se trabajó en la rama de su bounded
-context, y el archivo `docs/user-stories.md` del repositorio del frontend relaciona
-cada historia con los componentes que la implementan y con su responsable.
+El Sprint Backlog 2 descompone las 21 user stories en 50 tareas de entre 4 y 8
+horas. Cada historia se trabajó en la rama de su bounded context, y cada tarea
+corresponde a los componentes de la aplicación que la implementan, según la matriz de
+trazabilidad del archivo `docs/user-stories.md` del repositorio del frontend.
 
-La tabla siguiente presenta el trabajo de cada user story y su estado al cierre del
-sprint. El responsable de cada tarea es el integrante con más commits sobre los
-componentes que implementan la historia, según la matriz de trazabilidad del archivo
-`docs/user-stories.md` del repositorio del frontend. La estimación en horas de
-cada tarea se obtuvo de los story points de su historia, a razón de dos horas por
-punto.
+El responsable de cada tarea es el integrante con más commits sobre sus componentes en
+el historial del repositorio. La estimación suma 256 horas para el sprint y todas las
+tareas quedaron en estado Done al cierre.
 
 <table>
   <thead>
@@ -4686,27 +4696,56 @@ punto.
     </tr>
   </thead>
   <tbody>
-    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.1</td><td>Build the operational overview</td><td>Panorama de la propiedad activa con ingresos, ocupación, llegadas del día y estado de las habitaciones, y comparación entre propiedades.</td><td>16</td><td>Juan Diego Flores</td><td>Done</td></tr>
-    <tr><td>US033</td><td>Navigate between operational areas</td><td>T033.1</td><td>Build the navigation shell</td><td>Layout de la aplicación, barra lateral y rutas entre las áreas operativas conservando la propiedad activa.</td><td>6</td><td>Juan Diego Flores</td><td>Done</td></tr>
-    <tr><td>US012</td><td>Find and review bookings</td><td>T012.1</td><td>Build the booking list and filters</td><td>Listado de reservas con búsqueda por huésped o código y filtros por periodo y estado.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US013</td><td>Create a booking</td><td>T013.1</td><td>Build the booking creation form</td><td>Registro de una reserva con validación de disponibilidad, periodo, capacidad y plan tarifario.</td><td>16</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US014</td><td>Review and update a booking</td><td>T014.1</td><td>Build the booking detail and edition</td><td>Detalle de la reserva y edición de sus datos antes de la llegada del huésped.</td><td>10</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US015</td><td>Manage the booking lifecycle</td><td>T015.1</td><td>Implement the booking lifecycle</td><td>Confirmación, cancelación con motivo y registro de no-show de una reserva.</td><td>10</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US016</td><td>Record a booking payment</td><td>T016.1</td><td>Record booking payments</td><td>Registro de pagos y cálculo del saldo pendiente de cada reserva.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US017</td><td>Complete guest check-in</td><td>T017.1</td><td>Implement guest check-in</td><td>Check-in con verificación del documento del huésped y emisión de sus tarjetas de acceso.</td><td>16</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US018</td><td>Complete guest check-out</td><td>T018.1</td><td>Implement guest check-out</td><td>Check-out con cierre del saldo, condición de la habitación y vencimiento de las tarjetas.</td><td>10</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US019</td><td>Review room availability for a selected date</td><td>T019.1</td><td>Build the room availability view</td><td>Disponibilidad diaria de las habitaciones a partir de una fecha seleccionada.</td><td>10</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US020</td><td>Create a room</td><td>T020.1</td><td>Build the room creation form</td><td>Registro de habitaciones a partir de su tipo, capacidad y camas.</td><td>6</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US021</td><td>Maintain room information and operational status</td><td>T021.1</td><td>Maintain room details and status</td><td>Detalle de la habitación, calendario mensual y periodos de estado operativo.</td><td>10</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>US022</td><td>Manage room types</td><td>T022.1</td><td>Manage room types</td><td>Creación, edición y eliminación de tipos de habitación sin uso.</td><td>10</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US023</td><td>Manage rate plans and daily rates</td><td>T023.1</td><td>Manage rate plans and daily rates</td><td>Planes tarifarios y tarifas por noche de cada tipo de habitación.</td><td>10</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>US024</td><td>Monitor property inventory</td><td>T024.1</td><td>Build the inventory overview</td><td>Listado de artículos con su condición de stock y sus existencias por ubicación.</td><td>10</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US025</td><td>Manage inventory item records</td><td>T025.1</td><td>Manage inventory item records</td><td>Creación y edición de artículos con su código, categoría, unidad y umbrales.</td><td>10</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US026</td><td>Adjust inventory stock</td><td>T026.1</td><td>Record stock adjustments</td><td>Entradas, salidas y transferencias de stock con su historial de ajustes.</td><td>10</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US027</td><td>Manage storage locations</td><td>T027.1</td><td>Manage storage locations</td><td>Ubicaciones de almacén de la propiedad y los artículos asignados a cada una.</td><td>10</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>US028</td><td>Review and manage RFID credentials</td><td>T028.1</td><td>Review and revoke RFID credentials</td><td>Listado y detalle de credenciales RFID con su vigencia y su revocación.</td><td>10</td><td>José Santana</td><td>Done</td></tr>
-    <tr><td>US029</td><td>Encode or replace an RFID key card</td><td>T029.1</td><td>Encode and replace RFID cards</td><td>Emisión de credenciales de personal y reemplazo de tarjetas con el codificador simulado.</td><td>16</td><td>José Santana</td><td>Done</td></tr>
-    <tr><td>US030</td><td>Review RFID access events</td><td>T030.1</td><td>Review RFID access events</td><td>Consulta de los eventos de acceso concedidos y denegados por habitación y persona.</td><td>10</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.1</td><td>Implement the overview data access</td><td><code>OverviewApi</code>, <code>PropertyOverviewAssembler</code> y la entidad <code>PropertyOverview</code> para leer el panorama de cada propiedad.</td><td>4</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.2</td><td>Build the revenue and occupancy card</td><td><code>RevenueOccupancyCard</code> y la entidad <code>DailyPerformance</code>: ingresos y ocupación por día, totales del periodo y variación frente al periodo anterior.</td><td>6</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.3</td><td>Build the property comparison and room status cards</td><td><code>PropertyOverviewCard</code> y <code>RoomStatusCard</code>: ocupación de esta noche por propiedad y estados de las habitaciones de hoy.</td><td>6</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.4</td><td>Build today's arrivals and booking search</td><td><code>TodaysArrivalsCard</code> y <code>BookingSearch</code>: llegadas del día con su situación y búsqueda por huésped o código.</td><td>6</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US011</td><td>Monitor operations across properties</td><td>T011.5</td><td>Compose the overview and the active property</td><td><code>OverviewView</code> y <code>OverviewStore</code>: cambio de propiedad activa y aviso de la información que no responde sin perder la disponible.</td><td>6</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US033</td><td>Navigate between operational areas</td><td>T033.1</td><td>Build the application layout and sidebar</td><td><code>AppLayout</code>, <code>SidebarToggle</code>, <code>BrandLogo</code> y <code>LanguageSwitcher</code> con la navegación entre áreas.</td><td>6</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US033</td><td>Navigate between operational areas</td><td>T033.2</td><td>Configure the routes of the operational areas</td><td><code>router</code> con las rutas de cada bounded context conservando la propiedad activa.</td><td>4</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US012</td><td>Find and review bookings</td><td>T012.1</td><td>Implement the bookings data layer</td><td><code>BookingsApi</code>, <code>BookingAssembler</code>, la entidad <code>Booking</code> y <code>BookingsStore</code>.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US012</td><td>Find and review bookings</td><td>T012.2</td><td>Build the booking list with search and filters</td><td><code>BookingList</code> y <code>BookingStatusTag</code>: búsqueda por huésped o código y filtros por periodo y estado.</td><td>5</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US013</td><td>Create a booking</td><td>T013.1</td><td>Build the booking form</td><td><code>BookingForm</code> con los datos del huésped, el periodo, la cantidad de huéspedes, el tipo de habitación, la habitación y el plan tarifario.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US013</td><td>Create a booking</td><td>T013.2</td><td>Validate availability, capacity and rate plan</td><td>Reglas de la entidad <code>Booking</code> con <code>RoomsStore</code>: habitación libre todas las noches, periodo válido, capacidad y plan activo.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US013</td><td>Create a booking</td><td>T013.3</td><td>Calculate the total and create from a previous booking</td><td>Total por noches del plan tarifario, código único por propiedad y nueva reserva a partir de una cancelada o no-show.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US014</td><td>Review and update a booking</td><td>T014.1</td><td>Build the booking detail</td><td><code>BookingDetail</code> con los datos de la reserva, la habitación, el estado y los pagos.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US014</td><td>Review and update a booking</td><td>T014.2</td><td>Edit a booking before arrival</td><td>Modo edición de <code>BookingForm</code> y actualización en <code>BookingsStore</code> antes del check-in.</td><td>4</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US015</td><td>Manage the booking lifecycle</td><td>T015.1</td><td>Confirm a booking and record a no-show</td><td><code>BookingStatusDialog</code> con las transiciones de estado permitidas.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US015</td><td>Manage the booking lifecycle</td><td>T015.2</td><td>Cancel a booking with a reason</td><td><code>BookingCancelDialog</code> y <code>CancelBookingCommand</code> con los motivos de cancelación.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US016</td><td>Record a booking payment</td><td>T016.1</td><td>Implement the payment model</td><td>Entidad <code>Payment</code>, <code>PaymentAssembler</code> y su endpoint en <code>BookingsApi</code>.</td><td>4</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US016</td><td>Record a booking payment</td><td>T016.2</td><td>Build the payment form and balance summary</td><td><code>PaymentForm</code>, <code>BookingPaymentSummary</code> y <code>PaymentStatusTag</code> con el saldo pendiente.</td><td>5</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>US017</td><td>Complete guest check-in</td><td>T017.1</td><td>Build the check-in view</td><td><code>BookingCheckIn</code> con la verificación del documento del huésped y el resumen del saldo.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US017</td><td>Complete guest check-in</td><td>T017.2</td><td>Implement the check-in command</td><td><code>CheckInBookingCommand</code> y la transición a checked-in en <code>BookingsStore</code>.</td><td>4</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US017</td><td>Complete guest check-in</td><td>T017.3</td><td>Issue the guest key cards at check-in</td><td><code>IssueGuestKeyCardsCommand</code> y el uso de <code>RfidEncoderPanel</code> desde el check-in.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US018</td><td>Complete guest check-out</td><td>T018.1</td><td>Build the check-out view</td><td><code>BookingCheckOut</code> con el cierre del saldo y la condición de la habitación.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US018</td><td>Complete guest check-out</td><td>T018.2</td><td>Implement the check-out command</td><td><code>CheckOutBookingCommand</code> con el vencimiento de las tarjetas del huésped en <code>AccessControlStore</code>.</td><td>4</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US019</td><td>Review room availability for a selected date</td><td>T019.1</td><td>Implement the rooms data layer</td><td><code>RoomsApi</code>, las entidades <code>Room</code>, <code>RoomAssignment</code> y <code>StatusPeriod</code>, sus assemblers y <code>RoomsStore</code>.</td><td>6</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US019</td><td>Review room availability for a selected date</td><td>T019.2</td><td>Build the daily availability grid</td><td><code>RoomAvailability</code> y <code>DayStatusTag</code> a partir de la fecha seleccionada.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US020</td><td>Create a room</td><td>T020.1</td><td>Build the room creation form</td><td><code>RoomForm</code> y <code>RoomAssembler</code> con el tipo, la capacidad y las camas.</td><td>5</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US021</td><td>Maintain room information and operational status</td><td>T021.1</td><td>Build the room detail and monthly calendar</td><td><code>RoomDetail</code> y <code>RoomMonthCalendar</code> con las reservas y los periodos de estado.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US021</td><td>Maintain room information and operational status</td><td>T021.2</td><td>Record operational status periods</td><td><code>RoomStatusForm</code>, <code>SetRoomStatusCommand</code> y <code>BookingControlledDialog</code> para bloquear o sacar de servicio sin afectar reservas.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>US022</td><td>Manage room types</td><td>T022.1</td><td>Build the room type list</td><td><code>RoomTypeList</code> con la eliminación de los tipos sin uso.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US022</td><td>Manage room types</td><td>T022.2</td><td>Build the room type form</td><td><code>RoomTypeForm</code>, <code>RoomTypeAssembler</code> y la entidad <code>RoomType</code>.</td><td>5</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US023</td><td>Manage rate plans and daily rates</td><td>T023.1</td><td>Manage rate plans</td><td><code>RatePlanForm</code>, la entidad <code>RatePlan</code> y su assembler.</td><td>5</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US023</td><td>Manage rate plans and daily rates</td><td>T023.2</td><td>Set the daily rates</td><td><code>RoomRates</code>, <code>DailyRateForm</code> y <code>SetDailyRatesCommand</code> con las tarifas por noche de cada tipo.</td><td>5</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US024</td><td>Monitor property inventory</td><td>T024.1</td><td>Implement the inventory data layer</td><td><code>InventoryApi</code>, <code>InventoryStore</code> y las entidades del inventario.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US024</td><td>Monitor property inventory</td><td>T024.2</td><td>Implement the inventory assemblers</td><td>Assemblers de artículos, propiedades, ajustes y ubicaciones.</td><td>4</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>US024</td><td>Monitor property inventory</td><td>T024.3</td><td>Build the inventory item list</td><td><code>InventoryItemList</code> y <code>StockConditionTag</code> con la condición de stock y las existencias por ubicación.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US025</td><td>Manage inventory item records</td><td>T025.1</td><td>Build the inventory item form</td><td><code>InventoryItemForm</code> con el código, la categoría, la unidad y los umbrales.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US025</td><td>Manage inventory item records</td><td>T025.2</td><td>Build the inventory item detail</td><td><code>InventoryItemDetail</code> con las existencias y el historial de ajustes.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US026</td><td>Adjust inventory stock</td><td>T026.1</td><td>Build the stock adjustment form</td><td><code>StockAdjustmentForm</code> para entradas, salidas y transferencias.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US026</td><td>Adjust inventory stock</td><td>T026.2</td><td>Implement the stock adjustment command</td><td><code>AdjustStockCommand</code> y las reglas de stock de <code>InventoryItem</code>.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US027</td><td>Manage storage locations</td><td>T027.1</td><td>Build the storage location list and detail</td><td><code>StorageLocationList</code> y <code>StorageLocationDetail</code> con los artículos asignados.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US027</td><td>Manage storage locations</td><td>T027.2</td><td>Build the storage location form</td><td><code>StorageLocationForm</code> para crear y editar ubicaciones.</td><td>5</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US028</td><td>Review and manage RFID credentials</td><td>T028.1</td><td>Implement the access control data layer</td><td><code>AccessControlApi</code>, la entidad <code>Credential</code>, <code>CredentialAssembler</code> y <code>AccessControlStore</code>.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US028</td><td>Review and manage RFID credentials</td><td>T028.2</td><td>Build the credential list and detail</td><td><code>CredentialList</code>, <code>CredentialDetail</code> y <code>CredentialStatusTag</code> con la vigencia.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US028</td><td>Review and manage RFID credentials</td><td>T028.3</td><td>Revoke a credential</td><td><code>RevokeCredentialDialog</code> y <code>RevokeCredentialCommand</code>.</td><td>4</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US029</td><td>Encode or replace an RFID key card</td><td>T029.1</td><td>Build the simulated RFID encoder</td><td><code>RfidEncoder</code> y <code>RfidEncoderPanel</code> con el progreso y el reintento.</td><td>6</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US029</td><td>Encode or replace an RFID key card</td><td>T029.2</td><td>Implement the staff credential command</td><td>Entidad <code>StaffMember</code>, su assembler e <code>IssueStaffCredentialCommand</code>.</td><td>4</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>US029</td><td>Encode or replace an RFID key card</td><td>T029.3</td><td>Build the staff credential form</td><td><code>StaffCredentialForm</code> para emitir credenciales de personal.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US029</td><td>Encode or replace an RFID key card</td><td>T029.4</td><td>Replace a key card</td><td><code>ReplaceCredentialDrawer</code> con la revocación de la tarjeta anterior.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US030</td><td>Review RFID access events</td><td>T030.1</td><td>Implement the access event model</td><td>Entidad <code>AccessEvent</code>, <code>AccessEventAssembler</code> y su endpoint.</td><td>4</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>US030</td><td>Review RFID access events</td><td>T030.2</td><td>Build the access event list and detail</td><td><code>AccessEventList</code> y <code>AccessEventDrawer</code> con los accesos concedidos y denegados por habitación y persona.</td><td>6</td><td>José Santana</td><td>Done</td></tr>
   </tbody>
 </table>
 
@@ -4714,7 +4753,7 @@ punto.
 
 Durante el Sprint 2 se trabajó en dos repositorios. En el de la Frontend Web
 Application (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) se construyó la primera versión de la aplicación, publicada como
-`v0.1.0`. En el de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) se agregó el acceso a la aplicación y se
+`v0.1.0`. En el de la Landing Page (https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) se agregó el acceso a la aplicación y se
 publicó la versión `v0.4.0`.
 
 El repositorio del frontend se organizó con una rama de funcionalidad por bounded
@@ -4742,8 +4781,8 @@ incluyen un cuerpo de mensaje; en los demás la columna indica «Sin cuerpo».
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `feature/login-button` | [`2cc618a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/2cc618aa44363f2f040de04169a4c802da91f9d4) | `feat(header): add responsive login link with EN/ES translations` | Sin cuerpo | 2026-10-06 |
-| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page) | `release/0.4.0` | [`72f46d9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page/commit/72f46d9c4c56969563d5ae7d18b24187b31f206d) | `docs(release): prepare changelog for 0.4.0` | Sin cuerpo | 2026-10-06 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `feature/login-button` | [`2cc618a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/2cc618aa44363f2f040de04169a4c802da91f9d4) | `feat(header): add responsive login link with EN/ES translations` | Sin cuerpo | 2026-10-06 |
+| [landing-page](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page) | `release/0.4.0` | [`72f46d9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page/commit/72f46d9c4c56969563d5ae7d18b24187b31f206d) | `docs(release): prepare changelog for 0.4.0` | Sin cuerpo | 2026-10-06 |
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
@@ -5033,7 +5072,7 @@ activa, y la interfaz se puede usar en inglés o en español.
 El recorrido de esta versión se presenta en el video de navegación del Sprint 2,
 publicado en Microsoft Stream, con una duración de 5:19. El video parte de la Landing
 Page publicada y continúa en la Frontend Web Application desplegada, a la que se
-entra desde el enlace «Sign in», recorriendo sus vistas con los datos de demostración.
+entra desde el enlace «Sign in», y recorre sus vistas con los datos de demostración.
 
 <a href="https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2F2026-10-06%2022-29-15%2Emp4&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;ga=1&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Ee514020b-9142-4cb3-81b9-f525e7d44f1c"><img src="assets/chapter-5/sprint-2-navigation-video.png" alt="Captura del video de navegación del Sprint 2 en Microsoft Stream" style="width:100%; height:auto;"/></a>
 
@@ -5112,7 +5151,7 @@ aplicación desplegada.
 
 | Product | Repository | Deployment Platform | Source | Public URL | Version |
 |---|---|---|---|---|---|
-| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/landing-page/ | `v0.4.0` |
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ | `v0.4.0` |
 | Frontend Web Application | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Firebase Hosting | `dist/`, generado y publicado con `npm run deploy` | https://hostera-f4116.web.app/ | `v0.1.0` |
 | API de datos de demostración | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Render (Web Service) | `main`, desde la raíz del repositorio con `server/start.sh` | https://hostera-frontend.onrender.com | `v0.1.0` |
 | RESTful Web Services | Se creará en el Sprint 3 | Se elegirá en el Sprint 3 | No aplica | No aplica | Planificado para el Sprint 3 (AV2), con ASP.NET Core, Entity Framework Core y MySQL, documentado con OpenAPI vía Swagger. |
@@ -5236,7 +5275,7 @@ llamada a la acción de su plan.
 
 Después de la revisión del sprint, la Landing Page cambió en tres puntos y se publicó
 como versión `v0.3.0`. Se retiró el plan gratuito y se presentaron los planes
-Starter, a S/39 al mes, y Professional, a S/8 por habitación. El contacto comercial
+Starter, a S/ 39 al mes, y Professional, a S/ 8 por habitación. El contacto comercial
 pasó a una página propia y se agregaron los metadatos para redes sociales.
 
 El Sprint 2 dejó publicada la primera versión de la Frontend Web Application, la
@@ -5274,12 +5313,12 @@ resolver, y viene de las entrevistas.
 | 2 | Implementar los servicios REST priorizados (`TS004` a `TS013`, `TS016` y `TS017`) e integrarlos con el frontend. | Reemplazar los datos de demostración por operaciones persistentes. |
 | 3 | Completar los reportes operativos (`US031`, `US032`), que quedaron fuera de la primera versión del frontend. | Probar la hipótesis 4 con responsables de cadenas pequeñas. |
 | 4 | Dejar el registro, el inicio de sesión y la autorización (`US009`, `US010`, `TS001` a `TS003`), junto con la integración RFID de los servicios (`TS014` y `TS015`), para después de los flujos principales y antes de publicar los servicios. | Proteger la información de cada propiedad antes de exponerla. |
-| 5 | Hacer que «Explore Starter» y «Explore Professional» lleven a la aplicación, como ya lo hace el enlace «Sign in» de la Landing Page. | Que el visitante que elige un plan pueda empezar a usar Hostera. |
+| 5 | Hacer que «Explore Starter» y «Explore Professional» abran el registro de su plan cuando estén implementados `US009` y `US010`. Desde la versión `v0.5.0` de la Landing Page ambos botones ya llevan a la aplicación. | Que el visitante que elige un plan empiece a usar Hostera desde el recorrido que le corresponde. |
 | 6 | Hacer más entrevistas en el segmento 2 con operaciones de administración compartida y agregar al formulario preguntas sobre personalidad, marcas e influencias. | Completar las fichas de User Persona con datos que hoy no se recogieron. |
 | 7 | Actualizar cada rama con `develop` antes de integrarla y mantener Git Flow y Conventional Commits. | Evitar que una integración reemplace cambios que otros integrantes ya habían subido. |
 
-Al cierre de TB1, Hostera tiene una Landing Page publicada y un problema mejor
-entendido que al inicio del curso, pero ninguna de sus hipótesis se ha probado con el
+Al cierre de TB1, Hostera tiene publicadas una Landing Page y la primera versión de su
+aplicación web, y un problema mejor entendido que al inicio del curso, pero ninguna de sus hipótesis se ha probado con el
 producto. La siguiente entrega tiene que poner la primera versión de la aplicación en
 manos de administradores de hotel y medir lo que hasta ahora solo se conoce por lo
 que contaron en las entrevistas.
@@ -5300,7 +5339,7 @@ Google. (s.f.-b). _Google JavaScript style guide_. Recuperado el 16 de septiembr
 
 Google. (s.f.-c). _Material Design 3_. Recuperado el 5 de septiembre de 2026, de https://m3.material.io/
 
-Gothelf, J., & Seiden, J. (2021). _Lean UX: Creating great products with agile teams_ (3a. ed.). O'Reilly Media.
+Gothelf, J., & Seiden, J. (2021). _Lean UX: Creating great products with agile teams_ (3.ª ed.). O'Reilly Media.
 
 HotelClick. (s.f.). _Sistema de administración y gestión hotelera para Perú: Nexus PMS_. Recuperado el 4 de septiembre de 2026, de https://hotelclick.net.pe/
 
@@ -5353,11 +5392,11 @@ World Wide Web Consortium. (2024). _Web Content Accessibility Guidelines (WCAG) 
 - **Final Project Individual Member Performance Report (by Team Leader).** Documento independiente que debe enviarse junto con la entrega.
 - **Final Project Keynote.** Archivo independiente de la presentación de la entrega.
 - **Repositorio del informe.** https://github.com/1ASI0730-2620-8150-GrafoVerde/Hostera-Project-Report
-- **Repositorio de la Landing Page.** https://github.com/1ASI0730-2620-8150-GrafoVerde/landing-page
+- **Repositorio de la Landing Page.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page
 - **Repositorio de la Frontend Web Application.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa
 - **Frontend Web Application desplegada.** https://hostera-f4116.web.app/
 - **API de datos de demostración.** https://hostera-frontend.onrender.com
-- **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/landing-page/
+- **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/
 - **Video de navegación del Sprint 2 (Landing Page y Frontend Web Application, 5:19).** https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2F2026-10-06%2022-29-15%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee514020b-9142-4cb3-81b9-f525e7d44f1c
 - **Board de seguimiento.** https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5
 - **Prototipo de Web Application.** https://www.figma.com/design/3KIDTsjWUCaBv93Xa1jxOI/Hostera-%C2%B7-Web-Application-Prototypes
