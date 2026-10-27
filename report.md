@@ -1890,7 +1890,9 @@ El Big Picture EventStorming representa el dominio hotelero de Hostera de princi
 fin, antes de entrar en el diseño. El tablero ordena en el tiempo los eventos del
 negocio, escritos en pasado y en inglés como el resto del Ubiquitous Language, junto
 con los actores que los provocan, los sistemas externos que participan y los puntos
-que el equipo no podía resolver todavía. La sesión se desarrolló en tres etapas.
+que el equipo no podía resolver todavía. La sesión se desarrolló en tres etapas. Las etapas 1 y 2 se
+encuentran en el tablero de Miro del equipo
+(https://miro.com/app/board/uXjVHB0kIH8=/).
 
 ### Etapa 1: exploración de eventos
 
@@ -1932,11 +1934,6 @@ Tres eventos marcan el paso de un flujo al siguiente y funcionan como eventos pi
 `Booking Confirmed` cierra la reserva y abre la espera de la llegada,
 `Guest Checked In` activa la credencial del huésped y `Guest Checked Out` revoca esa
 credencial y pone en marcha la preparación de la habitación.
-
-En el tablero, los eventos de la reserva aparecen con el término `Reservation`. En el
-Ubiquitous Language (sección 2.5) y en la aplicación el término es `Booking`, por lo
-que `Reservation Created` y `Reservation Confirmed` corresponden a `Booking Created`
-y `Booking Confirmed`.
 
 Los actores que aparecen en el tablero son el administrador o responsable de
 operaciones, el agente de recepción, el huésped, el personal de housekeeping y el
