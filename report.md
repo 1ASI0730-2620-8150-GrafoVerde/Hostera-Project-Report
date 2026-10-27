@@ -3662,8 +3662,8 @@ dominio y cambia el estado de un agregado. La tabla resume lo que contiene cada 
 | Frame | Comandos principales | Agregados | Reglas de negocio que se validan | Sistemas externos |
 | --- | --- | --- | --- | --- |
 | Property Management (Identity & Access) | Agregar propiedad, registrar habitaciones, definir plan tarifario, asignar personal | `Property`, `Room`, `RatePlan`, `PropertyAccess` | El nombre de la propiedad es único, el número de habitación es único dentro de la propiedad y el rol asignado pertenece a la propiedad. | Ninguno |
-| Reservations & Stays | Crear, modificar y cancelar una reserva, marcar no-show, asignar habitación | `Booking` | La habitación está disponible para las fechas, la reserva está en un estado que admite cambios y la política de cancelación se cumple. | Ninguno |
-| Reservations & Stays + RFID Access Control | Verificar la identidad del huésped, registrar el pago, codificar la tarjeta, hacer el check-in, acceder a la habitación, hacer el check-out | `Guest`, `Booking`, `Stay`, `RFIDCredential`, `AccessEvent` | El documento es válido, el pago viene de un canal autorizado, la reserva está confirmada antes de emitir la tarjeta y no quedan cargos pendientes al salir. | Lectores RFID |
+| Bookings & Stays | Crear, modificar y cancelar una reserva, marcar no-show, asignar habitación | `Booking` | La habitación está disponible para las fechas, la reserva está en un estado que admite cambios y la política de cancelación se cumple. | Ninguno |
+| Bookings & Stays + RFID Access Control | Verificar la identidad del huésped, registrar el pago, codificar la tarjeta, hacer el check-in, acceder a la habitación, hacer el check-out | `Guest`, `Booking`, `Stay`, `RFIDCredential`, `AccessEvent` | El documento es válido, el pago viene de un canal autorizado, la reserva está confirmada antes de emitir la tarjeta y no quedan cargos pendientes al salir. | Lectores RFID |
 | Room Management | Actualizar el estado, marcar la habitación como limpia, inspeccionada y lista | `Room` | La transición de estado está permitida y la habitación solo queda lista después de inspeccionarse sin observaciones. | Ninguno |
 | Inventory Management | Agregar ubicación y artículo, recibir y ajustar stock, detectar stock bajo y quiebre | `StorageLocation`, `InventoryItem`, `StockMovement` | Los códigos son únicos, el stock no puede quedar en negativo y la alerta se dispara al bajar del umbral. | Servicio de notificaciones |
 | RFID Access Control (Staff) | Emitir, activar, validar y revocar la credencial de un miembro del personal | `RFIDCredential`, `AccessEvent` | El miembro del personal tiene un rol activo y la credencial es válida para el área y el horario. | Lectores RFID |
@@ -3675,9 +3675,8 @@ tarjeta exige una reserva confirmada con habitación asignada, y el check-out re
 o deja vencer la credencial del huésped.
 
 Los contextos del tablero se corresponden con los módulos de la Frontend Web
-Application: Property Management con la gestión de la propiedad activa, Reservations
-& Stays con `bookings`, cuyo agregado `Reservation` del tablero es `Booking` en el
-Ubiquitous Language, Room Management con `rooms`, Inventory Management con
+Application: Property Management con la gestión de la propiedad activa, Bookings
+& Stays con `bookings`, Room Management con `rooms`, Inventory Management con
 `inventory`, los dos frames de RFID con `access-control` y Reporting & Analytics con
 el panorama operativo de `overview`. En la implementación, el agregado
 `StockMovement` del tablero se registra como el historial de ajustes de cada artículo.
