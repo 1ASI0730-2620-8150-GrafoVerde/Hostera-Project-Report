@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- Used the Booking term in the Big Picture EventStorming board (lifecycle header, created, confirmed, modified and cancelled events, and the booking sources hotspot) and removed the note that explained the Reservation term of the board.
+- Replaced the stage 2 Big Picture EventStorming capture with the Miro board that uses the Booking term, and linked the Miro board from section 2.4.
+
 ## [0.5.0] - 2026-10-22
 
 ### Added
