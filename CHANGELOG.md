@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- Replaced the Design-Level EventStorming figure with the Miro board that uses the Booking term in its bounded contexts, commands, read models, rules, events and aggregates, exported on a white background, and renamed the Bookings & Stays frames in section 4.6.1.
+
 ## [0.5.1] - 2026-10-27
 
 ### Changed
