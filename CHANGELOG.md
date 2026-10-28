@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-10-28
+
+### Added
+
+- Added the Sprint 3 section with the Sprint Planning 3, the Aspect Leaders and Collaborators matrix and the Sprint Backlog 3, which splits 12 technical stories (62 story points) into 34 tasks of 4 to 8 hours.
+- Added TS018 (booking confirmation emails through Twilio SendGrid) to the technical stories and the Product Backlog.
+
+### Changed
+
+- Updated the technical story count in the conclusions and documented the Web Services with OpenAPI through Scalar.
+
 ## [0.5.2] - 2026-10-27
 
 ### Changed
