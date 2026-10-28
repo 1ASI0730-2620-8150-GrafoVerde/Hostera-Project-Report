@@ -48,6 +48,7 @@
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |  0.5.2  | 27/10/2026 | José Antonio Santana Luna (`JhosBY2005`) | El Design-Level EventStorming usa el término Booking en sus bounded contexts, comandos, vistas, reglas, eventos y agregados, con fondo blanco. |
+|  0.6.0  | 28/10/2026 | José Antonio Santana Luna (`JhosBY2005`) | Se agregó el Sprint 3 con el Sprint Planning 3, la matriz de líderes y colaboradores y el Sprint Backlog 3, y la technical story `TS018` en el Product Backlog. |
 |  0.5.1  | 27/10/2026 | José Antonio Santana Luna (`JhosBY2005`) | Las figuras del Big Picture EventStorming usan el término Booking del Ubiquitous Language en la etapa 2 y en el tablero final, y la sección 2.4 enlaza el tablero de Miro. |
 |  0.5.0  | 22/10/2026 | José Antonio Santana Luna (`JhosBY2005`)<br>Darnell Cuba (`darnell1910`) | Correcciones posteriores a la revisión de TB1. El Sprint Backlog 2 se descompuso en 50 tareas de 4 a 8 horas; el término Booking del Ubiquitous Language se usó en la arquitectura de información, los user goals y el EventStorming; se aclaró dónde el plan Free se reemplazó por Starter; se agregaron los logos del análisis competitivo; se revisó la ortografía de todo el informe; y los enlaces de la Landing Page apuntan al repositorio renombrado `hostera-landing-page`. |
 |  0.4.0  | 06/10/2026 | Darnell Cuba (`darnell1910`)<br>José Antonio Santana Luna (`JhosBY2005`)<br>Joaquin Cuba (`joacuba`)<br>Juan Diego Flores Rios (`YopoFlores`)<br>Mateo Condori (`BeyaminUv`) | Versión de TB1. Se corrigieron las secciones observadas por el docente: el Lean UX se reescribió con la plantilla para una iniciativa nueva y se actualizó su canvas, las user stories se redactaron sin referencias a la interfaz y el Product Backlog se reordenó por prioridad. Se corrigió la asignación de las entrevistas a los segmentos, se agregaron entrevistas complementarias por formulario y se unificó su análisis con porcentajes. Se reemplazó el modelo C4 por las vistas del frontend, se completó la configuración del entorno, del control de código y del despliegue, y se incorporó el Sprint 2 con la primera versión de la Frontend Web Application y la versión `v0.4.0` de la Landing Page. Se reescribieron las conclusiones por etapa del ciclo de vida y la bibliografía pasó al formato APA. |
@@ -243,6 +244,10 @@ historial y la captura muestra sus commits más recientes.
     - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
     - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 
+  - [5.2.3. Sprint 3](#523-sprint-3)
+    - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+    - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+    - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
@@ -2075,6 +2080,7 @@ perspectiva de un Developer y no generan Wireflow User Goals.
 | TS015 | Record and query RFID access events through the API | As a developer, I want to record and query RFID access events through the API so that authorized clients can investigate granted and denied access attempts. | **Scenario: Record an access event**<br>**Given** a registered access point submits a valid credential attempt<br>**When** the developer sends `POST /api/v1/access-events`<br>**Then** the API returns `201 Created` with the immutable timestamp, credential, access point, result, and reason information.<br><br>**Scenario: Query property access events**<br>**Given** the requester is authorized for the property<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/access-events` with supported criteria<br>**Then** the API returns `200 OK` with a paginated collection satisfying the date, result, person, credential, and access-point criteria.<br><br>**Scenario: Reject an unregistered access point**<br>**Given** the event source is not registered or authorized<br>**When** the developer attempts to record an event<br>**Then** the API returns `403 Forbidden` and does not create the event. | EP006 |
 | TS016 | Retrieve and export operational reports through the API | As a developer, I want to retrieve and export property-scoped operational reports through the API so that clients can analyze and share consistent results. | **Scenario: Retrieve a calculated report**<br>**Given** the requester is authorized and provides a supported report type and valid period<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/reports/{reportType}`<br>**Then** the API returns `200 OK` with the report scope, generation time, measures, comparison values when applicable, and supporting data.<br><br>**Scenario: Export the current report scope**<br>**Given** a supported export format and valid report criteria<br>**When** the developer sends `GET /api/v1/properties/{propertyId}/reports/{reportType}/export`<br>**Then** the API returns `200 OK` with the exported file and content type for the same authorized scope.<br><br>**Scenario: Reject an unsupported report or format**<br>**Given** the requested report type or export format is not supported<br>**When** the developer requests the report or export<br>**Then** the API returns `400 Bad Request` with the supported values. | EP007 |
 | TS017 | Return standardized API errors | As a developer, I want the API to return consistent validation and domain-error responses so that client applications can handle failures predictably. | **Scenario: Return validation details**<br>**Given** a request contains invalid input<br>**When** the developer sends the request<br>**Then** the API returns `400 Bad Request` using a consistent problem-details structure with field-level information when applicable.<br><br>**Scenario: Return a missing-resource error**<br>**Given** an authorized request targets a resource that does not exist<br>**When** the developer sends the request<br>**Then** the API returns `404 Not Found` using the same problem-details structure.<br><br>**Scenario: Return a domain-conflict error**<br>**Given** a valid request violates a current business-state rule<br>**When** the developer sends the request<br>**Then** the API returns `409 Conflict` with a stable error code and actionable context. | EP008 |
+| TS018 | Send booking confirmation emails through an external service | As a developer, I want the API to send a confirmation email through an external email service when a booking is confirmed so that the guest receives the stay details without manual work from the front desk. | **Scenario: Send the confirmation email**<br>**Given** a pending booking with a valid guest email<br>**When** the developer confirms it with `POST /api/v1/bookings/{bookingId}/transitions`<br>**Then** the API returns `200 OK` and the external email service receives a message with the booking code, stay period, room, and total.<br><br>**Scenario: Keep the booking when the email service fails**<br>**Given** the external email service is unavailable<br>**When** the developer confirms the booking<br>**Then** the API returns `200 OK` with the confirmed booking and records that the confirmation email is pending.<br><br>**Scenario: Skip a booking without guest email**<br>**Given** the booking has no guest email<br>**When** the developer confirms it<br>**Then** the API confirms the booking and does not call the external email service. | EP008 |
 
 ## 3.2. Impact Mapping
 
@@ -2195,9 +2201,10 @@ autorización ocupan las últimas posiciones.
 | 45 | TS016 | Retrieve and export operational reports through the API | As a developer, I want to retrieve and export property-scoped operational reports through the API so that clients can analyze and share consistent results. | 5 |
 | 46 | TS014 | Manage RFID credentials through the API | As a developer, I want to encode, retrieve, replace, and revoke RFID credentials through the API so that clients and compatible encoders maintain controlled access. | 8 |
 | 47 | TS015 | Record and query RFID access events through the API | As a developer, I want to record and query RFID access events through the API so that authorized clients can investigate granted and denied access attempts. | 5 |
-| 48 | TS001 | Register an account through the API | As a developer, I want to register an administrator and initial property through the API so that client applications can initialize an authorized hotel operation. | 5 |
-| 49 | TS002 | Authenticate an operator through the API | As a developer, I want to authenticate an operator and refresh an authorized session through the API so that clients can access protected hotel resources securely. | 5 |
-| 50 | TS003 | Enforce property-scoped authorization | As a developer, I want protected API resources to enforce property-scoped authorization so that one hotel operation cannot access another property's data. | 8 |
+| 48 | TS018 | Send booking confirmation emails through an external service | As a developer, I want the API to send a confirmation email through an external email service when a booking is confirmed so that the guest receives the stay details without manual work from the front desk. | 5 |
+| 49 | TS001 | Register an account through the API | As a developer, I want to register an administrator and initial property through the API so that client applications can initialize an authorized hotel operation. | 5 |
+| 50 | TS002 | Authenticate an operator through the API | As a developer, I want to authenticate an operator and refresh an authorized session through the API so that clients can access protected hotel resources securely. | 5 |
+| 51 | TS003 | Enforce property-scoped authorization | As a developer, I want protected API resources to enforce property-scoped authorization so that one hotel operation cannot access another property's data. | 8 |
 
 La siguiente captura muestra el listado general de issues del proyecto Hostera en
 YouTrack. En él se visualizan el estado del Product Backlog y los campos utilizados
@@ -5152,7 +5159,7 @@ aplicación desplegada.
 | Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ | `v0.4.0` |
 | Frontend Web Application | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Firebase Hosting | `dist/`, generado y publicado con `npm run deploy` | https://hostera-f4116.web.app/ | `v0.1.0` |
 | API de datos de demostración | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Render (Web Service) | `main`, desde la raíz del repositorio con `server/start.sh` | https://hostera-frontend.onrender.com | `v0.1.0` |
-| RESTful Web Services | Se creará en el Sprint 3 | Se elegirá en el Sprint 3 | No aplica | No aplica | Planificado para el Sprint 3 (AV2), con ASP.NET Core, Entity Framework Core y MySQL, documentado con OpenAPI vía Swagger. |
+| RESTful Web Services | Se creará en el Sprint 3 | Se elegirá en el Sprint 3 | No aplica | No aplica | Planificado para el Sprint 3 (AV2), con ASP.NET Core, Entity Framework Core y MySQL, documentado con OpenAPI vía Scalar. |
 
 <img src="assets/chapter-5/sprint-2-landing-page-v0-4-0.png" alt="Landing Page publicada en su versión 0.4.0 con el enlace de inicio de sesión en el encabezado" style="width:100%; height:auto;"/>
 
@@ -5193,6 +5200,160 @@ La distribución es más pareja que en el Sprint 1. Joaquin Cuba concentra más 
 porque lideró el contexto de reservas, el más extenso del sprint, y la configuración y
 el despliegue; los otros cuatro integrantes suman entre 39 y 50 commits cada uno y
 lideraron un contexto completo.
+
+### 5.2.3. Sprint 3
+
+#### 5.2.3.1. Sprint Planning 3
+
+El Sprint 3 se planificó para construir la primera versión de los RESTful Web
+Services de Hostera y conectar a ellos la Frontend Web Application, que hasta el
+Sprint 2 trabajaba con datos de demostración. Los servicios se construyen con ASP.NET
+Core, Entity Framework Core y MySQL, y siguen la organización por bounded context y
+por capas (Domain, Application, Infrastructure e Interfaces) del curso. El alcance
+reúne 12 technical stories de los contextos de reservas, habitaciones,
+inventario, control de accesos y panorama operativo, más la integración con un
+servicio externo de terceros.
+
+| Campo | Resumen |
+| --- | --- |
+| Sprint # | Sprint 3 |
+| Sprint Planning Background | Planificación de la primera versión de los RESTful Web Services, organizada por bounded context, de la conexión de la Frontend Web Application a esos servicios y de la nueva versión de la Landing Page con los videos del producto y del equipo. |
+| Date | 2026-10-28 |
+| Time | 8:00 PM |
+| Location | Virtual |
+| Prepared By | Santana Luna, José Antonio (`JhosBY2005`) |
+| Attendees (to planning meeting) | Cuba Pareja, Joaquin Antonio (`joacuba`); Cuba Vega, Darnell Yadir (`darnell1910`); Condori Urviola, Mateo Sebastián (`BeyaminUv`); Flores Rios, Juan Diego (`YopoFlores`); Santana Luna, José Antonio (`JhosBY2005`). |
+| Sprint 2 Review Summary | El Sprint 2 cerró con la primera versión de la Frontend Web Application (`v0.1.0`) publicada en Firebase Hosting, con las 21 user stories de `EP002` a `EP006` implementadas sobre una API de datos de demostración en Render. En la revisión de TB1 el docente observó que las historias no estaban divididas en tareas de 4 a 8 horas, que la Landing Page no explicaba el producto con capturas ni ofrecía datos de contacto y que persistían errores en artefactos ya observados. Se atendió con el Sprint Backlog 2 dividido en 50 tareas, las versiones `v0.6.0` a `v0.9.0` de la Landing Page, la versión `v0.2.0` de la aplicación, el término Booking en los diagramas de EventStorming y la revisión ortográfica del informe (versiones `0.5.0` a `0.5.2`). |
+| Sprint 2 Retrospective Summary | Se mantiene que cada integrante lidere el bounded context que ya conoce y lo integre en `develop` apenas lo termina. Se cambian tres prácticas: las historias se dividen en tareas de 4 a 8 horas durante el planning y se cargan al tablero desde el inicio del sprint; la base compartida de los servicios se construye primero, porque el resto de contextos depende de ella; y cada integrante documenta en el informe la evidencia de su propio contexto, para que el aporte al informe quede repartido. |
+| Sprint 3 Goal | Nuestro enfoque está en que el responsable de operaciones de un hotel independiente o de una cadena pequeña trabaje con información que se guarda en los servicios de Hostera y no en datos de demostración. Creemos que esto le permite confiar en que lo que registra hoy seguirá disponible mañana y desde cualquier dispositivo. Esto se confirmará cuando, en la aplicación publicada, una persona registre una reserva y la confirme, reciba el correo de confirmación, consulte la disponibilidad de habitaciones, registre un ajuste de existencias y emita una credencial RFID, y al volver a ingresar esos datos sigan ahí. |
+| Sprint 3 Goal Metric | El objetivo se considera cumplido cuando ese recorrido se completa en la aplicación desplegada, servida por la API publicada con su documentación OpenAPI. Como condición de entrega, las 12 technical stories del sprint deben estar implementadas y los endpoints documentados. |
+| Sprint 3 Velocity | 62 Story Points comprometidos para el sprint. |
+| Sum of Story Points | 62 Story Points. |
+
+La velocity baja de 109 a 62 story points porque el sprint construye los
+servicios desde cero, conecta la aplicación a ellos y, en paralelo, incluye las
+entrevistas de validación y los videos del producto y del equipo. El registro, el inicio
+de sesión y la autorización por propiedad (`TS001` a `TS003`, `US009` y `US010`), los
+pagos y el check-in y check-out en la API (`TS008` y `TS009`) y los reportes (`TS016`,
+`US031` y `US032`) pasan al Sprint 4.
+
+Las stories incluidas en el Sprint 3 son las siguientes. `TS018` es una technical story
+nueva, agregada al Product Backlog para cubrir la integración con un servicio externo de
+terceros.
+
+| Story ID | Story | Story Points |
+| --- | --- | :---: |
+| TS017 | Return standardized API errors | 5 |
+| TS010 | Retrieve room availability through the API | 5 |
+| TS011 | Manage rooms, room types, and rates through the API | 8 |
+| TS005 | Query bookings through the API | 3 |
+| TS006 | Create and update bookings through the API | 5 |
+| TS007 | Transition booking status through the API | 5 |
+| TS018 | Send booking confirmation emails through an external service | 5 |
+| TS012 | Manage inventory and stock adjustments through the API | 5 |
+| TS013 | Manage storage locations through the API | 3 |
+| TS014 | Manage RFID credentials through the API | 8 |
+| TS015 | Record and query RFID access events through the API | 5 |
+| TS004 | Retrieve the operational dashboard through the API | 5 |
+| **Total** | **12 technical stories** | **62** |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En el Sprint 3 cada aspecto corresponde a un bounded context de los RESTful Web
+Services, junto con su conexión desde la Frontend Web Application, más la base
+compartida de los servicios, la integración con el servicio externo de correo, el
+despliegue con su documentación y los entregables de validación y de la Landing Page.
+La matriz se definió en el Sprint Planning 3 a partir de la asignación de tareas del
+Sprint Backlog 3: el líder de cada aspecto es quien concentra sus tareas e integra su
+rama en `develop`, y el colaborador revisa esa rama y apoya en las pruebas.
+
+En la matriz Leadership-and-Collaboration (LACX), `L` representa al líder del aspecto,
+`C` a un colaborador y `N/A` indica que el integrante no participa en ese aspecto.
+
+| Team Member | GitHub Username | Shared Foundation | Bookings | Email Integration | Rooms | Inventory | Access Control | Operational Overview | Deployment and Documentation | Validation and Landing Page |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Cuba Pareja, Joaquin Antonio | `joacuba` | C | L | L | N/A | N/A | N/A | C | L | N/A |
+| Cuba Vega, Darnell Yadir | `darnell1910` | N/A | N/A | N/A | N/A | L | N/A | N/A | N/A | L |
+| Condori Urviola, Mateo Sebastián | `BeyaminUv` | L | N/A | C | C | C | N/A | N/A | C | N/A |
+| Flores Rios, Juan Diego | `YopoFlores` | N/A | C | N/A | N/A | N/A | C | L | N/A | C |
+| Santana Luna, José Antonio | `JhosBY2005` | N/A | C | N/A | L | N/A | L | N/A | N/A | N/A |
+
+Mateo Condori lidera la base compartida porque el resto de contextos depende de ella, y
+la entrega primero. Joaquin Cuba mantiene las reservas, que ya lideró en el frontend,
+junto con el correo de confirmación que se envía al confirmar una reserva y el
+despliegue. José Santana lidera las habitaciones y el control de accesos, Darnell Cuba
+el inventario y Juan Diego Flores el panorama operativo. Darnell Cuba y Juan Diego
+Flores comparten además las entrevistas de validación y la nueva versión de la Landing
+Page con los videos del producto y del equipo.
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El Sprint Backlog 3 descompone las 12 technical stories en 34 tareas de
+entre 4 y 8 horas, que suman 217 horas. Cada tarea sigue las capas de un bounded
+context de los servicios (dominio, aplicación, persistencia e interfaz REST) o conecta
+la vista correspondiente de la aplicación con la API. Todas las tareas inician en
+estado To-do y se registran en el tablero del proyecto en YouTrack
+(https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5), asociadas a la
+technical story que implementan.
+
+<table>
+  <thead>
+    <tr>
+      <th>Sprint #</th>
+      <td colspan="7">Sprint 3</td>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Story Id</th>
+      <th>Story Title</th>
+      <th>Task Id</th>
+      <th>Task Title</th>
+      <th>Task Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status<br>(To-do / In-Process / To-Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T1</td><td>Set up the platform solution and shared kernel</td><td>Solución <code>HosteraPlatform.API</code> en .NET 10 con los paquetes del curso, <code>global.json</code>, el patrón <code>Result</code> e <code>IAuditableEntity</code>.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
+    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T2</td><td>Configure EF Core with MySQL</td><td><code>AppDbContext</code>, <code>BaseRepository</code>, <code>UnitOfWork</code>, interceptor de auditoría y nombres en <code>snake_case</code>.</td><td>8</td><td>Mateo Condori</td><td>To-do</td></tr>
+    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T3</td><td>Configure localized error responses</td><td>ProblemDetails (RFC 7807), respuestas de modelo inválido y recursos <code>.resx</code> en inglés y español.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
+    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T4</td><td>Configure OpenAPI, routing and deployment settings</td><td>OpenAPI con Scalar, rutas en kebab-case, <code>Dockerfile</code> y conexión a la base de datos por variables de entorno.</td><td>5</td><td>Mateo Condori</td><td>To-do</td></tr>
+    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T1</td><td>Model rooms and room types</td><td>Agregados <code>Room</code> y <code>RoomType</code> con sus value objects, queries e interfaces de repositorio.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
+    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T2</td><td>Persist rooms and room types</td><td>Configuración en <code>AppDbContext</code>, repositorios y migración.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
+    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T3</td><td>Expose the room availability endpoint</td><td>Query service, resources, assemblers y controller de disponibilidad por fecha.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
+    <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T1</td><td>Implement room and room type commands</td><td>Commands y command service para crear, editar y eliminar habitaciones y tipos sin uso.</td><td>8</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T2</td><td>Model and persist rate plans and daily rates</td><td>Agregado <code>RatePlan</code>, tarifas por noche, configuración y migración.</td><td>8</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T3</td><td>Expose the rooms, room types and rates endpoints</td><td>Controllers, resources, assemblers y mensajes localizados.</td><td>7</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T4</td><td>Connect the rooms views to the API</td><td>Endpoints del frontend apuntando a la API y pruebas manuales del recorrido.</td><td>6</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS005</td><td>Query bookings through the API</td><td>TS005-T1</td><td>Model the booking aggregate and its queries</td><td>Agregado <code>Booking</code> con <code>BookingCode</code>, <code>StayPeriod</code> y <code>GuestCount</code>, queries e interfaz de repositorio.</td><td>6</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS005</td><td>Query bookings through the API</td><td>TS005-T2</td><td>Persist bookings and expose the query endpoint</td><td>Configuración, repositorio, migración y endpoint de búsqueda por huésped, código, periodo y estado.</td><td>6</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T1</td><td>Implement booking creation and update rules</td><td>Commands y command service con disponibilidad, capacidad y plan tarifario, usando <code>Result</code>.</td><td>8</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T2</td><td>Expose the booking creation and update endpoints</td><td>POST y PUT con resources, assemblers y errores localizados.</td><td>6</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T3</td><td>Connect the bookings views to the API</td><td>Listado, creación y edición de reservas del frontend contra la API.</td><td>6</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS007</td><td>Transition booking status through the API</td><td>TS007-T1</td><td>Implement booking status transitions</td><td>Confirmación, cancelación con motivo y no-show en el agregado y el command service.</td><td>7</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS007</td><td>Transition booking status through the API</td><td>TS007-T2</td><td>Expose the booking status endpoints</td><td>Endpoints de transición con sus respuestas de conflicto.</td><td>5</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS018</td><td>Send booking confirmation emails through an external service</td><td>TS018-T1</td><td>Integrate the email provider</td><td>Servicio de salida en infraestructura para Twilio SendGrid, con la clave de la API en variables de entorno.</td><td>7</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS018</td><td>Send booking confirmation emails through an external service</td><td>TS018-T2</td><td>Send the confirmation when a booking is confirmed</td><td>Envío desde el command service de reservas y documentación de la configuración.</td><td>5</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T1</td><td>Model inventory items and their queries</td><td>Agregado <code>InventoryItem</code> con código, categoría, unidad y umbrales, queries y repositorio.</td><td>6</td><td>Darnell Cuba</td><td>To-do</td></tr>
+    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T2</td><td>Implement stock adjustments</td><td>Commands de entrada, salida y transferencia con su historial y persistencia.</td><td>7</td><td>Darnell Cuba</td><td>To-do</td></tr>
+    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T3</td><td>Expose the inventory endpoints</td><td>Controllers, resources, assemblers y mensajes localizados.</td><td>6</td><td>Darnell Cuba</td><td>To-do</td></tr>
+    <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T1</td><td>Model, persist and expose storage locations</td><td>Agregado <code>StorageLocation</code>, migración y endpoints.</td><td>7</td><td>Darnell Cuba</td><td>To-do</td></tr>
+    <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T2</td><td>Connect the inventory views to the API</td><td>Artículos, ubicaciones y ajustes del frontend contra la API.</td><td>6</td><td>Darnell Cuba</td><td>To-do</td></tr>
+    <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T1</td><td>Model RFID credentials</td><td>Agregado <code>Credential</code> con identificador de tarjeta y vigencia, queries y repositorio.</td><td>6</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T2</td><td>Implement credential issue, replacement and revocation</td><td>Commands y command service con sus reglas de vigencia.</td><td>8</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T3</td><td>Persist credentials</td><td>Configuración en <code>AppDbContext</code> y migración.</td><td>5</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T4</td><td>Expose the credentials endpoints</td><td>Controllers, resources, assemblers y mensajes localizados.</td><td>6</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T5</td><td>Connect the access control views to the API</td><td>Credenciales, emisión y reemplazo del frontend contra la API.</td><td>6</td><td>José Santana</td><td>To-do</td></tr>
+    <tr><td>TS015</td><td>Record and query RFID access events through the API</td><td>TS015-T1</td><td>Model and persist access events</td><td>Agregado <code>AccessEvent</code>, configuración y migración.</td><td>6</td><td>Juan Diego Flores</td><td>To-do</td></tr>
+    <tr><td>TS015</td><td>Record and query RFID access events through the API</td><td>TS015-T2</td><td>Expose access events and connect the view</td><td>Endpoint de consulta por habitación y persona, y vista de eventos del frontend.</td><td>6</td><td>Juan Diego Flores</td><td>To-do</td></tr>
+    <tr><td>TS004</td><td>Retrieve the operational dashboard through the API</td><td>TS004-T1</td><td>Implement the operational overview query</td><td>Query service con ingresos, ocupación, llegadas del día y estado de habitaciones por propiedad.</td><td>8</td><td>Juan Diego Flores</td><td>To-do</td></tr>
+    <tr><td>TS004</td><td>Retrieve the operational dashboard through the API</td><td>TS004-T2</td><td>Expose the overview endpoint and connect the view</td><td>Endpoint del panorama y vista de overview del frontend contra la API.</td><td>6</td><td>Juan Diego Flores</td><td>To-do</td></tr>
+  </tbody>
+</table>
 
 # Conclusiones
 
@@ -5249,7 +5410,7 @@ Las user stories de la Landing Page pasaron por un ajuste parecido. La primera
 versión describía la interfaz, como el hero, el encabezado o el texto de los
 botones, y ofrecía un plan gratuito que ya no forma parte de la propuesta comercial.
 Se reescribieron según lo que el visitante quiere lograr. El Product Backlog quedó con
-33 user stories y 17 technical stories ordenadas por prioridad, con el registro, el
+33 user stories y 18 technical stories ordenadas por prioridad, con el registro, el
 inicio de sesión y las historias técnicas al final.
 
 ### Diseño del producto
