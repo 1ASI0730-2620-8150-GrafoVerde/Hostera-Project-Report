@@ -5454,6 +5454,36 @@ merge.
 | [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`3b24d35`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3b24d3588c602434055a55f9e4a8103b48c390e7) | `fix(inventory): show the storage name of each adjustment from the loaded locations` | Sin cuerpo | 2026-11-06 |
 | [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`29ffd90`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/29ffd90adde1e01c5405e3dda52b8e587ce4ea46) | `docs(changelog): record the inventory connection to the platform API` | Sin cuerpo | 2026-11-06 |
 
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+**Inventory.** Las vistas de inventario de la Frontend Web Application ya leen y guardan
+la información en los RESTful Web Services, que la persisten en MySQL. Los demás
+módulos de la aplicación siguen con la API de datos de demostración hasta que se integre
+su contexto. Las capturas se tomaron con los servicios y la aplicación ejecutándose en
+local sobre una base de datos MySQL, cargada con los datos de ejemplo de la propiedad
+Cartagena 04.
+
+<img src="assets/chapter-5/sprint-3-inventory-items.png" alt="Listado de artículos de inventario servido por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.19. Artículos de inventario de la propiedad, con existencias y condición de stock calculadas por los servicios.*
+
+<img src="assets/chapter-5/sprint-3-inventory-item-detail.png" alt="Detalle de un artículo con su historial de ajustes y su stock por ubicación" style="width:100%; height:auto;"/>
+
+*Figura 5.20. Detalle de un artículo con su historial de ajustes y su stock por ubicación. La transferencia aparece como una salida y una entrada enlazadas.*
+
+<img src="assets/chapter-5/sprint-3-inventory-stock-adjustment.png" alt="Formulario de ajuste de stock con una transferencia entre ubicaciones" style="width:100%; height:auto;"/>
+
+*Figura 5.21. Registro de una transferencia entre ubicaciones, que la aplicación envía a `POST /api/v1/inventory-items/{inventoryItemId}/stock-adjustments`.*
+
+<img src="assets/chapter-5/sprint-3-inventory-storage-locations.png" alt="Listado de ubicaciones de almacén servido por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.22. Ubicaciones de almacén de la propiedad, con los artículos asignados y las alertas de stock.*
+
+En el recorrido se listaron, crearon y editaron ubicaciones y artículos, se registraron
+entradas, salidas y transferencias, se quitó de un artículo una ubicación vacía y se
+eliminó una ubicación sin uso. Cada operación se comprobó consultando después el
+recurso en los servicios.
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
