@@ -5484,6 +5484,46 @@ entradas, salidas y transferencias, se quitó de un artículo una ubicación vac
 eliminó una ubicación sin uso. Cada operación se comprobó consultando después el
 recurso en los servicios.
 
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Los RESTful Web Services se documentan con OpenAPI, que ASP.NET Core genera a partir de
+los controladores, y se consultan con Scalar en la ruta `/scalar/v1` durante el
+desarrollo. Cada endpoint indica su resumen, sus parámetros y las respuestas posibles.
+
+**Inventory.** Las colecciones pertenecen a una propiedad y cada recurso individual se
+consulta por su propio identificador. Los errores se responden con problem details y un
+código propio del contexto, por ejemplo `InsufficientStock` cuando una salida supera el
+stock disponible.
+
+| Endpoint | Acciones / verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+|---|---|---|---|---|
+| `/api/v1/properties/{propertyId}/storage-locations` | `GET`, `POST` | `GET /api/v1/properties/1/storage-locations`, `POST /api/v1/properties/1/storage-locations` | `propertyId` en la ruta; en el `POST`, `code`, `name`, `type`, `area`, `responsibleTeam` y `description` en el cuerpo. | Ubicaciones de la propiedad, o la ubicación creada con `201 Created`. `409 Conflict` si el código ya existe en la propiedad. |
+| `/api/v1/storage-locations/{storageLocationId}` | `GET`, `PUT`, `DELETE` | `GET /api/v1/storage-locations/1`, `PUT /api/v1/storage-locations/1`, `DELETE /api/v1/storage-locations/1` | `storageLocationId` en la ruta; en el `PUT`, los mismos campos del alta salvo el código. | La ubicación, o `204 No Content` al eliminarla. `409 Conflict` si algún artículo la usa. |
+| `/api/v1/properties/{propertyId}/inventory-items` | `GET`, `POST` | `GET /api/v1/properties/1/inventory-items`, `POST /api/v1/properties/1/inventory-items` | `propertyId` en la ruta; en el `POST`, `code`, `name`, `category`, `unit`, `primaryLocationId` y `lowStockThreshold` en el cuerpo. | Artículos con su stock por ubicación, cantidad total, condición de stock e historial, o el artículo creado con `201 Created`. |
+| `/api/v1/inventory-items/{inventoryItemId}` | `GET`, `PUT` | `GET /api/v1/inventory-items/1`, `PUT /api/v1/inventory-items/1` | `inventoryItemId` en la ruta; en el `PUT`, los campos del alta salvo el código. | El artículo. `409 Conflict` si se cambia la unidad de un artículo que ya tiene ajustes. |
+| `/api/v1/inventory-items/{inventoryItemId}/stock-adjustments` | `POST` | `POST /api/v1/inventory-items/1/stock-adjustments` | `inventoryItemId` en la ruta; `operation`, `quantity`, `storageLocationId`, `destinationStorageLocationId`, `reason`, `note` y `operator` en el cuerpo. | El artículo con su stock e historial actualizados, con `201 Created`. `409 Conflict` si la cantidad supera el stock de la ubicación. |
+| `/api/v1/inventory-items/{inventoryItemId}/stocks/{storageLocationId}` | `DELETE` | `DELETE /api/v1/inventory-items/1/stocks/3` | `inventoryItemId` y `storageLocationId` en la ruta. | El artículo sin esa ubicación. `409 Conflict` si es la ubicación principal o todavía tiene stock. |
+
+<img src="assets/chapter-5/sprint-3-scalar-inventory-items.png" alt="Documentación de los endpoints de artículos de inventario en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.23. Endpoints de artículos de inventario documentados con OpenAPI y consultados en Scalar.*
+
+<img src="assets/chapter-5/sprint-3-scalar-storage-locations.png" alt="Documentación de los endpoints de ubicaciones de almacén en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.24. Endpoints de ubicaciones de almacén documentados con OpenAPI y consultados en Scalar.*
+
+Los endpoints se probaron contra MySQL con 36 casos: las operaciones de cada recurso y
+los errores de código duplicado, ubicación de otra propiedad, stock insuficiente, motivo
+inválido, cambio de unidad, ubicación en uso y ubicación principal. Los 36 casos
+respondieron con el código esperado. La documentación sale de los controladores, que
+declaran el resumen, la descripción y los tipos de respuesta de cada endpoint. Se
+agregaron en los commits [`e462b69`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/e462b69),
+[`aa299f8`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/aa299f8),
+[`4f0d560`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/4f0d560) y
+[`864ed2d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/864ed2d) de `feature/inventory`, y
+[`303548f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/303548f) de
+`feature/inventory-stock-unassignment`.
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
