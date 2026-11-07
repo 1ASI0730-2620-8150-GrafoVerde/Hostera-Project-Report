@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Added the Inventory evidence of the Sprint 3 in the development, execution and services documentation sections: the 67 commits of its three branches, the Inventory endpoints and the screenshots of the application and of Scalar on MySQL.
+
+### Changed
+
+- Marked the Inventory tasks TS012-T1 to TS012-T3, TS013-T1 and TS013-T2 as done in the Sprint Backlog 3.
+
 ## [0.6.1] - 2026-10-28
 
 ### Fixed

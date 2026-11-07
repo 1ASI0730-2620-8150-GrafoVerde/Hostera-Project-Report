@@ -248,6 +248,9 @@ historial y la captura muestra sus commits más recientes.
     - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
     - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
     - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+    - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+    - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+    - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
@@ -5338,11 +5341,11 @@ technical story que implementan.
     <tr><td>TS007</td><td>Transition booking status through the API</td><td>TS007-T2</td><td>Expose the booking status endpoints</td><td>Endpoints de transición con sus respuestas de conflicto.</td><td>5</td><td>Joaquin Cuba</td><td>To-do</td></tr>
     <tr><td>TS018</td><td>Send booking confirmation emails through an external service</td><td>TS018-T1</td><td>Integrate the email provider</td><td>Servicio de salida en infraestructura para Twilio SendGrid, con la clave de la API en variables de entorno.</td><td>7</td><td>Joaquin Cuba</td><td>To-do</td></tr>
     <tr><td>TS018</td><td>Send booking confirmation emails through an external service</td><td>TS018-T2</td><td>Send the confirmation when a booking is confirmed</td><td>Envío desde el command service de reservas y documentación de la configuración.</td><td>5</td><td>Joaquin Cuba</td><td>To-do</td></tr>
-    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T1</td><td>Model inventory items and their queries</td><td>Agregado <code>InventoryItem</code> con código, categoría, unidad y umbrales, queries y repositorio.</td><td>6</td><td>Darnell Cuba</td><td>To-do</td></tr>
-    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T2</td><td>Implement stock adjustments</td><td>Commands de entrada, salida y transferencia con su historial y persistencia.</td><td>7</td><td>Darnell Cuba</td><td>To-do</td></tr>
-    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T3</td><td>Expose the inventory endpoints</td><td>Controllers, resources, assemblers y mensajes localizados.</td><td>6</td><td>Darnell Cuba</td><td>To-do</td></tr>
-    <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T1</td><td>Model, persist and expose storage locations</td><td>Agregado <code>StorageLocation</code>, migración y endpoints.</td><td>7</td><td>Darnell Cuba</td><td>To-do</td></tr>
-    <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T2</td><td>Connect the inventory views to the API</td><td>Artículos, ubicaciones y ajustes del frontend contra la API.</td><td>6</td><td>Darnell Cuba</td><td>To-do</td></tr>
+    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T1</td><td>Model inventory items and their queries</td><td>Agregado <code>InventoryItem</code> con código, categoría, unidad y umbrales, queries y repositorio.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T2</td><td>Implement stock adjustments</td><td>Commands de entrada, salida y transferencia con su historial y persistencia.</td><td>7</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T3</td><td>Expose the inventory endpoints</td><td>Controllers, resources, assemblers y mensajes localizados.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T1</td><td>Model, persist and expose storage locations</td><td>Agregado <code>StorageLocation</code>, migración y endpoints.</td><td>7</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T2</td><td>Connect the inventory views to the API</td><td>Artículos, ubicaciones y ajustes del frontend contra la API.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T1</td><td>Model RFID credentials</td><td>Agregado <code>Credential</code> con identificador de tarjeta y vigencia, queries y repositorio.</td><td>6</td><td>José Santana</td><td>To-do</td></tr>
     <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T2</td><td>Implement credential issue, replacement and revocation</td><td>Commands y command service con sus reglas de vigencia.</td><td>8</td><td>José Santana</td><td>To-do</td></tr>
     <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T3</td><td>Persist credentials</td><td>Configuración en <code>AppDbContext</code> y migración.</td><td>5</td><td>José Santana</td><td>To-do</td></tr>
@@ -5354,6 +5357,175 @@ technical story que implementan.
     <tr><td>TS004</td><td>Retrieve the operational dashboard through the API</td><td>TS004-T2</td><td>Expose the overview endpoint and connect the view</td><td>Endpoint del panorama y vista de overview del frontend contra la API.</td><td>6</td><td>Juan Diego Flores</td><td>To-do</td></tr>
   </tbody>
 </table>
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+El Sprint 3 se desarrolla en dos repositorios: el de los RESTful Web Services
+(https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) y el de la Frontend Web Application
+(https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa). Cada bounded context se trabaja en su propia rama
+de funcionalidad y se integra en `develop` con Git Flow cuando está terminado, por lo
+que esta sección se completa a medida que entra cada contexto.
+
+**Inventory.** El contexto de inventario se integró en `develop` en las tres ramas
+siguientes. La rama `feature/inventory` construye el contexto completo en los servicios,
+capa por capa; `feature/inventory-stock-unassignment` agrega el endpoint para quitar de
+un artículo una ubicación vacía, que la aplicación ya ofrecía; y `feature/inventory-api`
+conecta las vistas de inventario de la aplicación con los servicios. La rama
+`feature/inventory` incluye además el commit que corrige los identificadores de los
+paquetes de Entity Framework Core en el proyecto, sin el cual los servicios no compilaban.
+
+| Rama | Repositorio | Contenido | Líder | Commits | Periodo |
+|---|---|---|---|---:|---|
+| `feature/inventory` | hostera-platform | Dominio, aplicación, persistencia e interfaz REST de ubicaciones, artículos, existencias por ubicación y ajustes de stock. | Darnell Cuba | 52 | 2026-11-04 |
+| `feature/inventory-stock-unassignment` | hostera-platform | Endpoint para quitar de un artículo una ubicación secundaria sin stock. | Darnell Cuba | 6 | 2026-11-06 |
+| `feature/inventory-api` | hostera-frontend-wa | Cliente de la API, assemblers y store de inventario contra los servicios. | Darnell Cuba | 9 | 2026-11-06 |
+
+El esquema de las tablas de inventario lo crea `EnsureCreated()` al iniciar los
+servicios. La migración de Entity Framework Core prevista en `TS013-T1` se generará una
+sola vez, cuando estén integrados todos los contextos, para que las migraciones de cada
+rama no entren en conflicto. La tabla siguiente registra los 67 commits de
+Inventory (58 en los servicios y 9 en la aplicación), sin los commits de
+merge.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`0237db5`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/0237db57a968a568efaada5c8cc58c0fe7717cd3) | `feat(Inventory): add folder structure for domain model components` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`bb7675b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/bb7675bd7a5bb4d9b8312c33827cb09068974712) | `build: use the Microsoft package ids for Entity Framework Core` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`83e54ba`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/83e54bad18bb1ffa594de6142f1e71f961904fb3) | `feat(inventory): add EInventoryUnit enum for item counting units` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`a0fffd7`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/a0fffd75962eda466f5804afed07a2f73823f525) | `feat(inventory): add EInventoryCategory enum for supply categories` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`4c4d000`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/4c4d00091b9ba280efde35cfc942da042bf514ff) | `feat(inventory): add EStorageLocationType enum for storage areas` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`0be77cd`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/0be77cdf0a3e0483ce9b00f5b4db88e7fd7a5624) | `feat(inventory): add EStockOperation enum for stock movements` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`364b224`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/364b2244f864fe774e8259182817c5a535dc7484) | `feat(inventory): add EStockAdjustmentReason enum with its valid operations` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`5614a73`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/5614a73f7a4a67cf849649a32515b78b26da8bec) | `feat(inventory): add EStockCondition enum for low stock tracking` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`6062266`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/60622660a443a23236490e5bf31ba169f62cf6d1) | `feat(inventory): add InventoryCode value object for item and location codes` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`bd3fd9d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/bd3fd9dae85b2215da8005cc915fe30d75d150b3) | `feat(inventory): add StockQuantity value object with unit validation` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`689ace1`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/689ace193ed9353bacce22689a64b9278471d00a) | `feat(inventory): add CreateStorageLocationCommand` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`3c1fc4e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/3c1fc4efe272a8a24fbd7593204b9d564437cfd4) | `feat(inventory): add UpdateStorageLocationCommand` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`bd31c29`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/bd31c29f9d53da43785efaf6cf22ff248e3ba3e8) | `feat(inventory): add DeleteStorageLocationCommand` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`c106233`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/c106233667743bc72f0c7b8e1a9b6b2a0cf5965e) | `feat(inventory): add CreateInventoryItemCommand` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`91d0e9f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/91d0e9fcb06efaad7ff65c3d6f27dec4a2b84e2e) | `feat(inventory): add UpdateInventoryItemCommand` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`ba45870`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/ba4587034b84f245a618eea5972d259b16e1e5bf) | `feat(inventory): add AdjustStockCommand for stock in, out and transfers` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`60e1280`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/60e1280b63783f861b9fd8ad84aca37a8ad15e82) | `feat(inventory): add storage location queries by property and by id` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`cd5c686`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/cd5c6866a6e3461491776db709d4ca6a7baaaf62) | `feat(inventory): add inventory item queries by property and by id` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`736ab62`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/736ab62814b9a61a3a861ac6401cf81d64124cf1) | `feat(inventory): add InventoryStock entity for stock by storage location` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`2657c7b`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/2657c7b86000d145307a0c4aab7f3057e60be79c) | `feat(inventory): add StockAdjustment entity for the movement history` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`d160960`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/d160960f49d4562d718a5a0d96c657954d092fc6) | `feat(inventory): add StorageLocation aggregate with update rules` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`72eb869`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/72eb8691a213e78684eb7360f9c76cdb8dd564f6) | `feat(inventory): add audit timestamps to StorageLocation` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`19e6e56`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/19e6e566be032d8ee4f265c00dc6c812c67e951a) | `feat(inventory): add InventoryItem aggregate with stock adjustment rules` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`cbc7c9a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/cbc7c9a4a34412cabaf438f25e84b93a046ef124) | `feat(inventory): add audit timestamps to InventoryItem` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`fd6b07d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/fd6b07d7229a2b312b2efbf81edc6a39bb2f1750) | `feat(inventory): add IStorageLocationRepository with property and code lookups` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`531d665`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/531d6657a01e0772296b18dbee143f9daaa59684) | `feat(inventory): add IInventoryItemRepository with location usage lookup` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`72d79f9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/72d79f9bd19dafee4f3cb52a32507c5c2ab6b442) | `feat(inventory): add InventoryError enum for inventory operation errors` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`f53b623`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/f53b623d4758df5526fc7fb69a76a91c87f7e838) | `feat(inventory): add IStorageLocationCommandService` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`3bf3641`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/3bf3641aa2133d9679306f7b0f944423ab111632) | `feat(inventory): add IInventoryItemCommandService` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`243fea3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/243fea33e1c80db240eebebfad102d4efd87f6a3) | `feat(inventory): add storage location and inventory item query service interfaces` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`92dac24`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/92dac248729493c71a7bf7e305dc3410f5c6be04) | `feat(inventory): implement storage location and inventory item query services` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`2507b93`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/2507b93e6239d84070d9b83cdb2f9a23cb14cc45) | `feat(inventory): implement StorageLocationCommandService with code and usage checks` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`3dee3db`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/3dee3dbeb00adc0b9f817585d241cef176dcc526) | `feat(inventory): implement InventoryItemCommandService with stock adjustment handling` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`0715c2a`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/0715c2a7ccebe63e37362349fa48cc6b0e3eb8dd) | `feat(inventory): add EF Core mapping for storage locations, items, stock and adjustments` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`4f0026f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/4f0026fc340a0f21598a28a1d464ac49319c28c2) | `feat(inventory): add StorageLocationRepository` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`768ba36`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/768ba361e5b2b4b2a124f35866714d99c4edf7ae) | `feat(inventory): add InventoryItemRepository with location usage query` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`f634948`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/f6349487f6c5060e169e5734393cfa3c5ea16629) | `feat(inventory): add InventoryEnumNames for kebab-case enum names in the API` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`306ab6c`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/306ab6cdd9e0c66648ebd429a07ff503ece70ee8) | `feat(inventory): add storage location REST resources` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`a02be79`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/a02be792ded162fe7c838fa4c2e857ec6362e6e8) | `feat(inventory): add inventory item REST resources` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`38c9818`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/38c981832e65e163fecdb0a785026ac345369212) | `feat(inventory): add stock adjustment REST resources` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`dfa9d86`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/dfa9d86199ac23a085e374caaad709f06d6ccb6d) | `feat(inventory): add storage location command assemblers` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`cbeef9f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/cbeef9fcac08a38bb8ecaa93a87b9a8d3c4e1f35) | `feat(inventory): add StorageLocationResourceFromEntityAssembler` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`d0d6c07`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/d0d6c07fd48c6a705bc67a43387785f1b7384081) | `feat(inventory): add inventory item command assemblers` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`9112109`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/91121095f60a0939698771e85e723a7c908bc876) | `feat(inventory): add AdjustStockCommandFromResourceAssembler` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`b4ea0cf`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/b4ea0cf6b3cfb1477a3a963fd41735eb9f20372f) | `feat(inventory): add InventoryItemResourceFromEntityAssembler` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`d349694`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/d349694163a4b833966216e4fe91bd4cdeb48832) | `feat(inventory): add InventoryActionResultAssembler for problem details responses` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`e462b69`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/e462b693692149e1bf06740e0da48319b5d58d81) | `feat(inventory): add property storage locations endpoints` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`aa299f8`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/aa299f85a754f64a8b9f74c32fc26aef18c4a4c5) | `feat(inventory): add storage location get, update and delete endpoints` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`4f0d560`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/4f0d560392ba13c1cc1ec574f93f7b1b822362af) | `feat(inventory): add property inventory items endpoints` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`864ed2d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/864ed2d68e0685ddedd568dfbe8caefccde7f283) | `feat(inventory): add inventory item get, update and stock adjustment endpoints` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`962daa2`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/962daa20306693c266af7c4fc8af2f46c7d3bc90) | `feat(shared): apply the inventory mapping in AppDbContext` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory` | [`0492c8f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/0492c8f5b77fe60d6fc28b7213f3457edb8e3792) | `feat(shared): configure the MySQL connection and the inventory services` | Sin cuerpo | 2026-11-04 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory-stock-unassignment` | [`80c8021`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/80c8021d8673bac24c9bd72d4f8efe3d9bf320da) | `feat(inventory): add UnassignStorageLocationCommand` | Sin cuerpo | 2026-11-06 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory-stock-unassignment` | [`0956481`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/0956481fa460cb8e804bcd12f79699b1ca104511) | `feat(inventory): allow removing an empty secondary location from an item` | Sin cuerpo | 2026-11-06 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory-stock-unassignment` | [`8ed521e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/8ed521e7b2be1192d75964c091b75b0270decdfc) | `feat(inventory): add location assignment errors to InventoryError` | Sin cuerpo | 2026-11-06 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory-stock-unassignment` | [`d60e995`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/d60e995b784c2e04c89009491883d1f680ec38c9) | `feat(inventory): handle the unassign storage location command` | Sin cuerpo | 2026-11-06 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory-stock-unassignment` | [`19420c3`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/19420c366114a16777f9a93c73e09d1de18495ce) | `feat(inventory): map the location assignment errors to problem details` | Sin cuerpo | 2026-11-06 |
+| [hostera-platform](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform) | `feature/inventory-stock-unassignment` | [`303548f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/303548fdce168b7fc3b2fefc18bdeca08576bbf6) | `feat(inventory): add endpoint to remove a storage location from an item` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`720651f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/720651f7cc20ffcf798818d1d0a66c35e9448844) | `feat(shared): allow BaseApi to target another API base url` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`b1bbb18`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/b1bbb1821bae1d11d3ed5443094858c349e0aba2) | `chore(env): add the Hostera Platform API url and inventory endpoint paths` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`5ccf9f6`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/5ccf9f69b98b7321ab63051397cd2b22900a14e0) | `feat(inventory): call the Hostera Platform inventory endpoints` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`24faca8`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/24faca85c04006e0b1a28676b706502421d7e129) | `feat(inventory): map platform stock adjustments and adjust stock resources` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`c8b92b9`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/c8b92b9287f096ce1b150f0128cded665e610084) | `feat(inventory): map platform inventory item resources` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`ac07754`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/ac07754a13c9883277d58877a8b613b6e8df4fed) | `feat(inventory): map platform storage location resources` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`16d030e`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/16d030e62c1a3f6adbbea4c7dbf04e75784d8faf) | `feat(inventory): save items, locations and adjustments through the platform API` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`3b24d35`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/3b24d3588c602434055a55f9e4a8103b48c390e7) | `fix(inventory): show the storage name of each adjustment from the loaded locations` | Sin cuerpo | 2026-11-06 |
+| [hostera-frontend-wa](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa) | `feature/inventory-api` | [`29ffd90`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa/commit/29ffd90adde1e01c5405e3dda52b8e587ce4ea46) | `docs(changelog): record the inventory connection to the platform API` | Sin cuerpo | 2026-11-06 |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+**Inventory.** Las vistas de inventario de la Frontend Web Application ya leen y guardan
+la información en los RESTful Web Services, que la persisten en MySQL. Los demás
+módulos de la aplicación siguen con la API de datos de demostración hasta que se integre
+su contexto. Las capturas se tomaron con los servicios y la aplicación ejecutándose en
+local sobre una base de datos MySQL, cargada con los datos de ejemplo de la propiedad
+Cartagena 04.
+
+<img src="assets/chapter-5/sprint-3-inventory-items.png" alt="Listado de artículos de inventario servido por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.19. Artículos de inventario de la propiedad, con existencias y condición de stock calculadas por los servicios.*
+
+<img src="assets/chapter-5/sprint-3-inventory-item-detail.png" alt="Detalle de un artículo con su historial de ajustes y su stock por ubicación" style="width:100%; height:auto;"/>
+
+*Figura 5.20. Detalle de un artículo con su historial de ajustes y su stock por ubicación. La transferencia aparece como una salida y una entrada enlazadas.*
+
+<img src="assets/chapter-5/sprint-3-inventory-stock-adjustment.png" alt="Formulario de ajuste de stock con una transferencia entre ubicaciones" style="width:100%; height:auto;"/>
+
+*Figura 5.21. Registro de una transferencia entre ubicaciones, que la aplicación envía a `POST /api/v1/inventory-items/{inventoryItemId}/stock-adjustments`.*
+
+<img src="assets/chapter-5/sprint-3-inventory-storage-locations.png" alt="Listado de ubicaciones de almacén servido por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.22. Ubicaciones de almacén de la propiedad, con los artículos asignados y las alertas de stock.*
+
+En el recorrido se listaron, crearon y editaron ubicaciones y artículos, se registraron
+entradas, salidas y transferencias, se quitó de un artículo una ubicación vacía y se
+eliminó una ubicación sin uso. Cada operación se comprobó consultando después el
+recurso en los servicios.
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Los RESTful Web Services se documentan con OpenAPI, que ASP.NET Core genera a partir de
+los controladores, y se consultan con Scalar en la ruta `/scalar/v1` durante el
+desarrollo. Cada endpoint indica su resumen, sus parámetros y las respuestas posibles.
+
+**Inventory.** Las colecciones pertenecen a una propiedad y cada recurso individual se
+consulta por su propio identificador. Los errores se responden con problem details y un
+código propio del contexto, por ejemplo `InsufficientStock` cuando una salida supera el
+stock disponible.
+
+| Endpoint | Acciones / verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+|---|---|---|---|---|
+| `/api/v1/properties/{propertyId}/storage-locations` | `GET`, `POST` | `GET /api/v1/properties/1/storage-locations`, `POST /api/v1/properties/1/storage-locations` | `propertyId` en la ruta; en el `POST`, `code`, `name`, `type`, `area`, `responsibleTeam` y `description` en el cuerpo. | Ubicaciones de la propiedad, o la ubicación creada con `201 Created`. `409 Conflict` si el código ya existe en la propiedad. |
+| `/api/v1/storage-locations/{storageLocationId}` | `GET`, `PUT`, `DELETE` | `GET /api/v1/storage-locations/1`, `PUT /api/v1/storage-locations/1`, `DELETE /api/v1/storage-locations/1` | `storageLocationId` en la ruta; en el `PUT`, los mismos campos del alta salvo el código. | La ubicación, o `204 No Content` al eliminarla. `409 Conflict` si algún artículo la usa. |
+| `/api/v1/properties/{propertyId}/inventory-items` | `GET`, `POST` | `GET /api/v1/properties/1/inventory-items`, `POST /api/v1/properties/1/inventory-items` | `propertyId` en la ruta; en el `POST`, `code`, `name`, `category`, `unit`, `primaryLocationId` y `lowStockThreshold` en el cuerpo. | Artículos con su stock por ubicación, cantidad total, condición de stock e historial, o el artículo creado con `201 Created`. |
+| `/api/v1/inventory-items/{inventoryItemId}` | `GET`, `PUT` | `GET /api/v1/inventory-items/1`, `PUT /api/v1/inventory-items/1` | `inventoryItemId` en la ruta; en el `PUT`, los campos del alta salvo el código. | El artículo. `409 Conflict` si se cambia la unidad de un artículo que ya tiene ajustes. |
+| `/api/v1/inventory-items/{inventoryItemId}/stock-adjustments` | `POST` | `POST /api/v1/inventory-items/1/stock-adjustments` | `inventoryItemId` en la ruta; `operation`, `quantity`, `storageLocationId`, `destinationStorageLocationId`, `reason`, `note` y `operator` en el cuerpo. | El artículo con su stock e historial actualizados, con `201 Created`. `409 Conflict` si la cantidad supera el stock de la ubicación. |
+| `/api/v1/inventory-items/{inventoryItemId}/stocks/{storageLocationId}` | `DELETE` | `DELETE /api/v1/inventory-items/1/stocks/3` | `inventoryItemId` y `storageLocationId` en la ruta. | El artículo sin esa ubicación. `409 Conflict` si es la ubicación principal o todavía tiene stock. |
+
+<img src="assets/chapter-5/sprint-3-scalar-inventory-items.png" alt="Documentación de los endpoints de artículos de inventario en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.23. Endpoints de artículos de inventario documentados con OpenAPI y consultados en Scalar.*
+
+<img src="assets/chapter-5/sprint-3-scalar-storage-locations.png" alt="Documentación de los endpoints de ubicaciones de almacén en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.24. Endpoints de ubicaciones de almacén documentados con OpenAPI y consultados en Scalar.*
+
+Los endpoints se probaron contra MySQL con 36 casos: las operaciones de cada recurso y
+los errores de código duplicado, ubicación de otra propiedad, stock insuficiente, motivo
+inválido, cambio de unidad, ubicación en uso y ubicación principal. Los 36 casos
+respondieron con el código esperado. La documentación sale de los controladores, que
+declaran el resumen, la descripción y los tipos de respuesta de cada endpoint. Se
+agregaron en los commits [`e462b69`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/e462b69),
+[`aa299f8`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/aa299f8),
+[`4f0d560`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/4f0d560) y
+[`864ed2d`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/864ed2d) de `feature/inventory`, y
+[`303548f`](https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform/commit/303548f) de
+`feature/inventory-stock-unassignment`.
 
 # Conclusiones
 
