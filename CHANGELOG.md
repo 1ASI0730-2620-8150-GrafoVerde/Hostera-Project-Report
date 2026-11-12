@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
+- Added the deployment evidence of the Sprint 3: the RESTful Web Services on Render with their Aiven for MySQL database, the Frontend Web Application `v2.0.0` on Firebase Hosting and the Landing Page `v3.0.0` on GitHub Pages, with six screenshots.
 - Added the Rooms, Bookings, access events and Overview endpoints to the services documentation of the Sprint 3, with nine screenshots of the API reference published in Scalar.
 - Added the execution evidence of Bookings, Rooms, Overview and access events in the Sprint 3, with six screenshots of the application deployed on Firebase Hosting and served by the RESTful Web Services on Render.
 - Added the development evidence of the shared foundation, Rooms, Bookings, access events, Overview, the integration with the application and the versions 1.0.0 and 2.0.0 in the Sprint 3: the 295 commits of eleven branches with their content, leader and period.
