@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
+- Added the AV2 entries of the report version history, the Project Report Collaboration Insights, with the commits of each member and the commit history of `develop`, and the Student Outcome of the other four members.
 - Added the team collaboration insights of the Sprint 3: the commits of each member in the three repositories, a chart by member and repository, and the GitHub contributor analytics of the services, the application and the landing page.
 - Added the deployment evidence of the Sprint 3: the RESTful Web Services on Render with their Aiven for MySQL database, the Frontend Web Application `v2.0.0` on Firebase Hosting and the Landing Page `v3.0.0` on GitHub Pages, with six screenshots.
 - Added the Rooms, Bookings, access events and Overview endpoints to the services documentation of the Sprint 3, with nine screenshots of the API reference published in Scalar.
@@ -19,6 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Changed
 
+- Brought the conclusions, the hypotheses status and the roadmap up to the close of AV2, linked the RESTful Web Services in the annexes, numbered the chapter 5 figures in order of appearance and dated the cover November 2026.
 - Marked the tasks of TS004 to TS010, TS015 and TS017 as done in the Sprint Backlog 3 and named who completed the shared tasks.
 - Marked the tasks TS011-T1 to TS011-T4 and TS014-T1 to TS014-T5 as done in the Sprint Backlog 3, naming who completed each one, and recorded that Mateo Condori led the Rooms aspect.
 - Marked the Inventory tasks TS012-T1 to TS012-T3, TS013-T1 and TS013-T2 as done in the Sprint Backlog 3.

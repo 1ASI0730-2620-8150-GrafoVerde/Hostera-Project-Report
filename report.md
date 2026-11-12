@@ -38,7 +38,7 @@
 </table>
 
 <div class="cover-period">Período 202620</div>
-<div class="cover-date">Octubre 2026</div>
+<div class="cover-date">Noviembre 2026</div>
 
 </div>
 <div class="version-history">
@@ -47,6 +47,7 @@
 
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  0.7.0  | 12/11/2026 | Joaquin Cuba (`joacuba`)<br>José Antonio Santana Luna (`JhosBY2005`)<br>Darnell Cuba (`darnell1910`)<br>Mateo Condori (`BeyaminUv`)<br>Juan Diego Flores Rios (`YopoFlores`) | Versión de AV2. Se agregó la evidencia del Sprint 3: el desarrollo, la ejecución, la documentación de servicios y el despliegue de los RESTful Web Services en Render con MySQL en Aiven, la versión `v2.0.0` de la Frontend Web Application conectada a ellos y la colaboración del equipo; se completó el Sprint Backlog 3 y se actualizaron el Project Report Collaboration Insights, el Student Outcome, las conclusiones y los anexos. |
 |  0.6.0  | 28/10/2026 | José Antonio Santana Luna (`JhosBY2005`) | Se agregó el Sprint 3 con el Sprint Planning 3, la matriz de líderes y colaboradores y el Sprint Backlog 3, y la technical story `TS018` en el Product Backlog. |
 |  0.5.2  | 27/10/2026 | José Antonio Santana Luna (`JhosBY2005`) | El Design-Level EventStorming usa el término Booking en sus bounded contexts, comandos, vistas, reglas, eventos y agregados, con fondo blanco. |
 |  0.5.1  | 27/10/2026 | José Antonio Santana Luna (`JhosBY2005`) | Las figuras del Big Picture EventStorming usan el término Booking del Ubiquitous Language en la etapa 2 y en el tablero final, y la sección 2.4 enlaza el tablero de Miro. |
@@ -138,6 +139,41 @@ historial y la captura muestra sus commits más recientes.
 <img src="assets/project-report-collaboration-insights/tb1-github-commits.png" alt="Historial de commits de la rama develop del repositorio del Project Report en GitHub" style="width:100%; height:auto;"/>
 
 *Evidencia 4. Historial de commits de la rama `develop` del repositorio del Project Report durante TB1.*
+
+<div style="page-break-before: always;"></div>
+
+## AV2
+
+Durante AV2 el informe siguió trabajándose en ramas de funcionalidad integradas en
+`develop` con Git Flow y mensajes Conventional Commits. Entre el 7 de octubre y el 12 de
+noviembre de 2026 se registraron 49 commits sin contar los de merge, y los cinco
+integrantes aportaron al informe. Cada uno documentó la evidencia del Sprint 3 de los
+contextos que lideró en los RESTful Web Services.
+
+| Integrante | Aportes al informe en AV2 | Commits |
+|---|---|---:|
+| José Santana (`JhosBY2005`) | Sprint Planning 3, matriz de líderes y colaboradores, Sprint Backlog 3 y `TS018`; Sprint Backlog 2 en tareas de 4 a 8 horas; término Booking en el diseño y en el EventStorming; logos del análisis competitivo; evidencia del control de accesos, las tarifas y las propiedades; registro de versiones de la `0.5.0` a la `0.6.0`. | 18 |
+| Darnell Cuba (`darnell1910`) | Revisión de redacción de la portada, los cinco capítulos, las conclusiones y la bibliografía; formato único de montos, porcentajes y términos; evidencia de desarrollo, ejecución y servicios del inventario; secciones del Sprint 3 en la tabla de contenidos. | 16 |
+| Joaquin Cuba (`joacuba`) | Evidencia de desarrollo de reservas, integración y versiones; estado del Sprint Backlog 3; evidencia de ejecución, documentación de servicios y despliegue del Sprint 3; colaboración del equipo durante el sprint. | 13 |
+| Mateo Condori (`BeyaminUv`) | Evidencia de desarrollo de la base compartida y de las habitaciones. | 1 |
+| Juan Diego Flores (`YopoFlores`) | Evidencia de desarrollo de los eventos de acceso y del panorama operativo. | 1 |
+
+Igual que en TB1, la evidencia del periodo se toma de la rama `develop`, porque el
+analítico de colaboradores de GitHub solo cuenta la rama `main` y su total histórico.
+El número de commits en el informe tampoco mide todo el aporte de AV2: en el mismo
+periodo el equipo construyó los RESTful Web Services, donde Mateo Condori y Juan Diego
+Flores lideraron la base compartida, las habitaciones, los eventos de acceso y el
+panorama operativo, como muestra la sección 5.2.3.8.
+
+<div style="page-break-before: always;"></div>
+
+<img src="assets/project-report-collaboration-insights/av2-commits-by-member.svg" alt="Commits por integrante en el repositorio del informe durante AV2" style="width:100%; height:auto;"/>
+
+*Evidencia 5. Commits por integrante en la rama `develop` del repositorio del Project Report durante AV2.*
+
+<img src="assets/project-report-collaboration-insights/av2-github-commits.png" alt="Historial de commits de la rama develop del repositorio del Project Report en GitHub durante AV2" style="width:100%; height:auto;"/>
+
+*Evidencia 6. Historial de commits de la rama `develop` del repositorio del Project Report durante AV2, con los aportes de los cinco integrantes.*
 
 <div style="page-break-before: always;"></div>
 
@@ -276,8 +312,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico                                                                             | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Cuba Pareja, Joaquin Antonio**<br>**AV1**<br>Coordiné el Sprint Planning 1, participé en la integración mediante Git Flow e implementé US001, US007 y US008. También contribuí en la definición de segmentos, User Stories, Product Backlog, diseño de la Landing Page, EventStorming y User Flows.<br>**TB1**<br>Lideré el contexto de reservas de la Frontend Web Application (`US012` a `US018`), configuré el proyecto e integré las ramas con Git Flow hasta publicar la versión `v0.1.0` en Firebase Hosting y la API de datos de demostración en Render. También publiqué la versión `v0.4.0` de la Landing Page, con el acceso a la aplicación.<br><br>**Cuba Vega, Darnell Yadir**<br>**AV1**<br>Coordiné la implementación de la navegación y los planes de la Landing Page, lideré las ramas `feature/US002` y `feature/US006`, y colaboré en la integración del Sprint 1 mediante Git Flow. Además, documenté el backlog, la matriz de liderazgo y colaboración, la evidencia de ejecución y despliegue, las convenciones de código, el prototipo web, los diagramas de clases y el Design-Level EventStorming.<br>**TB1**<br>Lideré el contexto de inventario de la Frontend Web Application (`US024` a `US027`) y colaboré en habitaciones y en control de accesos. En el informe restauré, con un merge de tres vías, los cambios de varios integrantes que una integración había reemplazado.<br><br>**Condori Urviola, Mateo Sebastián**<br>**AV1**<br>Coordiné US003, definiendo el camino del hotel independiente y el plan Free de la Landing Page, que luego se reemplazó por Starter, y participé en la integración mediante Git Flow. También contribuí al análisis competitivo y a la definición del problema, assumptions e hipótesis de Lean UX.<br>**TB1**<br>Lideré el contexto de habitaciones de la Frontend Web Application, con la disponibilidad, los tipos de habitación, las tarifas y los estados operativos, e integré su rama en `develop` mediante Git Flow.<br><br>**Flores Rios, Juan Diego**<br>**AV1**<br>Coordiné US004, definiendo el camino de la cadena hotelera pequeña y el plan Professional de la Landing Page. También colaboré en el análisis de impactos y en el diseño de los artefactos del producto.<br>**TB1**<br>Lideré el panorama operativo y la navegación entre áreas de la Frontend Web Application (`US011` y `US033`) y colaboré en los contextos de reservas, habitaciones e inventario.<br><br>**Santana Luna, José Antonio**<br>**AV1**<br>Coordiné US005, definiendo los beneficios de operaciones conectadas y el flujo operativo de la Landing Page. También participé en la documentación colaborativa de entrevistas, arquitectura y gestión del proyecto.<br>**TB1**<br>Lideré el contexto de control de accesos de la Frontend Web Application (`US028` a `US030`) y colaboré en reservas, en especial en los pagos y en el ciclo de la estadía.<br>**AV2**<br>Elaboré el Sprint Planning 3 y el Sprint Backlog 3, con las historias divididas en tareas de 4 a 8 horas. Lideré el control de accesos de los RESTful Web Services (`TS014`), desde el modelo de dominio hasta los endpoints, y en el contexto de habitaciones implementé los planes de tarifa, las tarifas diarias y las propiedades (`TS011`). | **AV1**<br>El liderazgo se distribuyó por User Story: cada integrante coordinó al menos una historia de la Landing Page (`US001` a `US008`) y la integró mediante Git Flow, lo que permitió avanzar en paralelo desde el análisis hasta la implementación.<br>La combinación de coordinación funcional, ejecución técnica y documentación mantuvo alineadas las responsabilidades de cada integrante con la evolución del producto.<br><br>**TB1**<br>El liderazgo pasó de las user stories a los bounded contexts: cada integrante lideró un contexto completo de la Frontend Web Application y colaboró en otros, y así se publicó la primera versión con 21 user stories en dos semanas. En el informe, cada observación del docente quedó a cargo de un integrante distinto. |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Cuba Pareja, Joaquin Antonio**<br>**AV1**<br>Definí el objetivo y la métrica del sprint, organicé el backlog y contribuí al cumplimiento de 8/8 User Stories y al despliegue en GitHub Pages. Además, documenté estándares, estructura del informe y evidencias del proceso.<br>**TB1**<br>Reordené el Product Backlog por prioridad y alineé las user stories con lo implementado en el frontend. Documenté el repositorio del frontend con su README, sus user stories y su diagrama de clases, para que el equipo trabajara sobre una misma estructura.<br><br>**Cuba Vega, Darnell Yadir**<br>**AV1**<br>Definí y organicé tareas del Sprint 1 para US002 y US006, descomponiendo la navegación, la página de términos, la comparación de planes y las acciones de cierre. También elaboré evidencias de desarrollo, ejecución y despliegue, y documenté arquitectura, convenciones y prototipos para contribuir al cumplimiento de las ocho User Stories y la publicación de la Landing Page.<br>**TB1**<br>Organicé las entrevistas complementarias por formulario y unifiqué el análisis de entrevistas. Reescribí el Lean UX y las conclusiones a partir de las observaciones del docente, y documenté el Sprint 2, la configuración del entorno y del despliegue y el registro de versiones de TB1.<br><br>**Condori Urviola, Mateo Sebastián**<br>**AV1**<br>Definí las tareas y artefactos de US003; elaboré wireframes y wireflows, documenté User Stories y servicios de habitaciones, y aporté al diseño de la solución.<br>**TB1**<br>Documenté en la API de demostración los recursos de habitaciones y tarifas, y colaboré en los contextos de inventario y de panorama operativo.<br><br>**Flores Rios, Juan Diego**<br>**AV1**<br>Definí y documenté User Stories y servicios de inventario, elaboré mockups de alta fidelidad y contribuí al Impact Mapping y a los sistemas de búsqueda y organización.<br>**TB1**<br>Redefiní los objetivos de negocio del Impact Mapping según el modelo de suscripción de Grafo Verde y reescribí los supuestos del Lean UX como afirmaciones.<br><br>**Santana Luna, José Antonio**<br>**AV1**<br>Definí las tareas y artefactos de US005; documenté entrevistas y su análisis, servicios de RFID y reporting, diagramas de arquitectura y la configuración de los repositorios.<br>**TB1**<br>Corregí el registro de entrevistas y definí el criterio del segmento 2. Reescribí las user stories sin referencias a la interfaz, apliqué el formato APA a la bibliografía y reemplacé el modelo C4 por las vistas del frontend.<br>**AV2**<br>Planifiqué el Sprint 3 con la meta, las 12 historias técnicas y la asignación de horas por integrante. Integré mis ramas en `develop` mediante Git Flow después de probarlas contra MySQL, lo que permitió corregir antes de integrar un error de fechas en las tarifas, y documenté en el informe la evidencia de mis contextos. | **AV1**<br>La planificación del Sprint 1 con un objetivo, una métrica y tareas por User Story permitió completar las ocho User Stories de `EP001` y publicar la Landing Page en GitHub Pages.<br>Registrar en un repositorio común los artefactos de investigación, diseño, arquitectura y configuración hizo trazable el aporte de cada integrante y su relación con las necesidades identificadas.<br><br>**TB1**<br>Las observaciones del docente se convirtieron en tareas concretas, repartidas entre los cinco integrantes y resueltas en ramas separadas. Una integración que reemplazó cambios ya subidos mostró que cada rama debe actualizarse con `develop` antes de integrarse, práctica que quedó registrada en las recomendaciones del roadmap. |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Cuba Pareja, Joaquin Antonio**<br>**AV1**<br>Coordiné el Sprint Planning 1, participé en la integración mediante Git Flow e implementé US001, US007 y US008. También contribuí en la definición de segmentos, User Stories, Product Backlog, diseño de la Landing Page, EventStorming y User Flows.<br>**TB1**<br>Lideré el contexto de reservas de la Frontend Web Application (`US012` a `US018`), configuré el proyecto e integré las ramas con Git Flow hasta publicar la versión `v0.1.0` en Firebase Hosting y la API de datos de demostración en Render. También publiqué la versión `v0.4.0` de la Landing Page, con el acceso a la aplicación.<br>**AV2**<br>Lideré el contexto de reservas de los RESTful Web Services (`TS005` a `TS009`), con los pagos, el check-in y el check-out, y el despliegue de los servicios en Render con MySQL en Aiven. Conecté los módulos de la Frontend Web Application a los servicios y publiqué la versión `v2.0.0` en Firebase Hosting.<br><br>**Cuba Vega, Darnell Yadir**<br>**AV1**<br>Coordiné la implementación de la navegación y los planes de la Landing Page, lideré las ramas `feature/US002` y `feature/US006`, y colaboré en la integración del Sprint 1 mediante Git Flow. Además, documenté el backlog, la matriz de liderazgo y colaboración, la evidencia de ejecución y despliegue, las convenciones de código, el prototipo web, los diagramas de clases y el Design-Level EventStorming.<br>**TB1**<br>Lideré el contexto de inventario de la Frontend Web Application (`US024` a `US027`) y colaboré en habitaciones y en control de accesos. En el informe restauré, con un merge de tres vías, los cambios de varios integrantes que una integración había reemplazado.<br>**AV2**<br>Lideré el contexto de inventario de los RESTful Web Services (`TS012` y `TS013`), con los artículos, las ubicaciones de almacén y los ajustes de stock, y conecté el módulo de inventario de la Frontend Web Application a sus endpoints.<br><br>**Condori Urviola, Mateo Sebastián**<br>**AV1**<br>Coordiné US003, definiendo el camino del hotel independiente y el plan Free de la Landing Page, que luego se reemplazó por Starter, y participé en la integración mediante Git Flow. También contribuí al análisis competitivo y a la definición del problema, assumptions e hipótesis de Lean UX.<br>**TB1**<br>Lideré el contexto de habitaciones de la Frontend Web Application, con la disponibilidad, los tipos de habitación, las tarifas y los estados operativos, e integré su rama en `develop` mediante Git Flow.<br>**AV2**<br>Lideré la base compartida de los RESTful Web Services, de la que dependen los demás contextos, y el contexto de habitaciones (`TS010` y `TS011`), con los tipos de habitación, los periodos de estado y la disponibilidad semanal.<br><br>**Flores Rios, Juan Diego**<br>**AV1**<br>Coordiné US004, definiendo el camino de la cadena hotelera pequeña y el plan Professional de la Landing Page. También colaboré en el análisis de impactos y en el diseño de los artefactos del producto.<br>**TB1**<br>Lideré el panorama operativo y la navegación entre áreas de la Frontend Web Application (`US011` y `US033`) y colaboré en los contextos de reservas, habitaciones e inventario.<br>**AV2**<br>Lideré los eventos de acceso RFID (`TS015`) y el panorama operativo (`TS004`) de los RESTful Web Services, que reúne en una sola respuesta la ocupación, las llegadas, los ingresos, el inventario y los accesos de una propiedad.<br><br>**Santana Luna, José Antonio**<br>**AV1**<br>Coordiné US005, definiendo los beneficios de operaciones conectadas y el flujo operativo de la Landing Page. También participé en la documentación colaborativa de entrevistas, arquitectura y gestión del proyecto.<br>**TB1**<br>Lideré el contexto de control de accesos de la Frontend Web Application (`US028` a `US030`) y colaboré en reservas, en especial en los pagos y en el ciclo de la estadía.<br>**AV2**<br>Elaboré el Sprint Planning 3 y el Sprint Backlog 3, con las historias divididas en tareas de 4 a 8 horas. Lideré el control de accesos de los RESTful Web Services (`TS014`), desde el modelo de dominio hasta los endpoints, y en el contexto de habitaciones implementé los planes de tarifa, las tarifas diarias y las propiedades (`TS011`). | **AV1**<br>El liderazgo se distribuyó por User Story: cada integrante coordinó al menos una historia de la Landing Page (`US001` a `US008`) y la integró mediante Git Flow, lo que permitió avanzar en paralelo desde el análisis hasta la implementación.<br>La combinación de coordinación funcional, ejecución técnica y documentación mantuvo alineadas las responsabilidades de cada integrante con la evolución del producto.<br><br>**TB1**<br>El liderazgo pasó de las user stories a los bounded contexts: cada integrante lideró un contexto completo de la Frontend Web Application y colaboró en otros, y así se publicó la primera versión con 21 user stories en dos semanas. En el informe, cada observación del docente quedó a cargo de un integrante distinto.<br><br>**AV2**<br>El liderazgo siguió organizado por bounded context, ahora en los RESTful Web Services: cada integrante lideró al menos un contexto completo, desde el modelo de dominio hasta los endpoints, y la base compartida se entregó primero para que el resto avanzara en paralelo. Así se publicó la primera versión de los servicios (`1.0.0`) y la aplicación pasó a trabajar con ellos en su versión `v2.0.0`. |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Cuba Pareja, Joaquin Antonio**<br>**AV1**<br>Definí el objetivo y la métrica del sprint, organicé el backlog y contribuí al cumplimiento de 8/8 User Stories y al despliegue en GitHub Pages. Además, documenté estándares, estructura del informe y evidencias del proceso.<br>**TB1**<br>Reordené el Product Backlog por prioridad y alineé las user stories con lo implementado en el frontend. Documenté el repositorio del frontend con su README, sus user stories y su diagrama de clases, para que el equipo trabajara sobre una misma estructura.<br>**AV2**<br>Actualicé con el equipo el estado del Sprint Backlog 3 y documenté en el informe la evidencia de reservas, la ejecución, los servicios, el despliegue y la colaboración del Sprint 3. Grabé el video de navegación con los flujos principales sobre los datos de producción.<br><br>**Cuba Vega, Darnell Yadir**<br>**AV1**<br>Definí y organicé tareas del Sprint 1 para US002 y US006, descomponiendo la navegación, la página de términos, la comparación de planes y las acciones de cierre. También elaboré evidencias de desarrollo, ejecución y despliegue, y documenté arquitectura, convenciones y prototipos para contribuir al cumplimiento de las ocho User Stories y la publicación de la Landing Page.<br>**TB1**<br>Organicé las entrevistas complementarias por formulario y unifiqué el análisis de entrevistas. Reescribí el Lean UX y las conclusiones a partir de las observaciones del docente, y documenté el Sprint 2, la configuración del entorno y del despliegue y el registro de versiones de TB1.<br>**AV2**<br>Revisé la redacción de todo el informe y unifiqué el formato de montos, porcentajes y términos. Documenté la evidencia del inventario del Sprint 3 y agregué sus secciones a la tabla de contenidos.<br><br>**Condori Urviola, Mateo Sebastián**<br>**AV1**<br>Definí las tareas y artefactos de US003; elaboré wireframes y wireflows, documenté User Stories y servicios de habitaciones, y aporté al diseño de la solución.<br>**TB1**<br>Documenté en la API de demostración los recursos de habitaciones y tarifas, y colaboré en los contextos de inventario y de panorama operativo.<br>**AV2**<br>Entregué primero la base compartida, con el patrón `Result`, la auditoría, el repositorio base y la unidad de trabajo, para que los demás integrantes construyeran sus contextos sobre ella, y documenté en el informe su evidencia y la de habitaciones.<br><br>**Flores Rios, Juan Diego**<br>**AV1**<br>Definí y documenté User Stories y servicios de inventario, elaboré mockups de alta fidelidad y contribuí al Impact Mapping y a los sistemas de búsqueda y organización.<br>**TB1**<br>Redefiní los objetivos de negocio del Impact Mapping según el modelo de suscripción de Grafo Verde y reescribí los supuestos del Lean UX como afirmaciones.<br>**AV2**<br>Construí el panorama operativo sobre las fachadas de los otros contextos, de modo que cada sección se entrega aunque otra no tenga datos, y documenté en el informe la evidencia de los eventos de acceso y del panorama.<br><br>**Santana Luna, José Antonio**<br>**AV1**<br>Definí las tareas y artefactos de US005; documenté entrevistas y su análisis, servicios de RFID y reporting, diagramas de arquitectura y la configuración de los repositorios.<br>**TB1**<br>Corregí el registro de entrevistas y definí el criterio del segmento 2. Reescribí las user stories sin referencias a la interfaz, apliqué el formato APA a la bibliografía y reemplacé el modelo C4 por las vistas del frontend.<br>**AV2**<br>Planifiqué el Sprint 3 con la meta, las 14 historias técnicas y la asignación de horas por integrante. Integré mis ramas en `develop` mediante Git Flow después de probarlas contra MySQL, lo que permitió corregir antes de integrar un error de fechas en las tarifas, y documenté en el informe la evidencia de mis contextos. | **AV1**<br>La planificación del Sprint 1 con un objetivo, una métrica y tareas por User Story permitió completar las ocho User Stories de `EP001` y publicar la Landing Page en GitHub Pages.<br>Registrar en un repositorio común los artefactos de investigación, diseño, arquitectura y configuración hizo trazable el aporte de cada integrante y su relación con las necesidades identificadas.<br><br>**TB1**<br>Las observaciones del docente se convirtieron en tareas concretas, repartidas entre los cinco integrantes y resueltas en ramas separadas. Una integración que reemplazó cambios ya subidos mostró que cada rama debe actualizarse con `develop` antes de integrarse, práctica que quedó registrada en las recomendaciones del roadmap.<br><br>**AV2**<br>Dividir las historias en tareas de 4 a 8 horas permitió seguir el Sprint 3 tarea por tarea: 37 de las 39 tareas quedaron terminadas. Probar cada rama contra MySQL antes de integrarla permitió corregir errores antes de que llegaran a `develop`. Queda pendiente la integración con el servicio externo de correo (`TS018`). |
 
 # Capítulo I: Introducción
 
@@ -6001,15 +6037,15 @@ publicadas, con los datos de ejemplo de la propiedad Cartagena 04.
 
 <img src="assets/chapter-5/sprint-3-access-control-credentials.png" alt="Listado de credenciales RFID de la propiedad servido por los RESTful Web Services" style="width:100%; height:auto;"/>
 
-*Figura 5.25. Credenciales RFID de la propiedad, con su tipo, titular, acceso, vigencia y estado calculado por los servicios.*
+*Figura 5.23. Credenciales RFID de la propiedad, con su tipo, titular, acceso, vigencia y estado calculado por los servicios.*
 
 <img src="assets/chapter-5/sprint-3-access-control-credential-detail.png" alt="Detalle de una credencial de personal con su periodo de acceso y sus eventos recientes" style="width:100%; height:auto;"/>
 
-*Figura 5.26. Detalle de una credencial de personal sin fecha de fin, con las acciones para revocarla o reemplazar la tarjeta.*
+*Figura 5.24. Detalle de una credencial de personal sin fecha de fin, con las acciones para revocarla o reemplazar la tarjeta.*
 
 <img src="assets/chapter-5/sprint-3-rooms-rates.png" alt="Tarifas diarias de un plan por tipo de habitación servidas por los RESTful Web Services" style="width:100%; height:auto;"/>
 
-*Figura 5.27. Tarifas por noche del plan Breakfast included para cada tipo de habitación, en la moneda de la propiedad.*
+*Figura 5.25. Tarifas por noche del plan Breakfast included para cada tipo de habitación, en la moneda de la propiedad.*
 
 **Bookings, Rooms, Overview y eventos de acceso.** La aplicación publicada en Firebase
 Hosting (https://hostera-f4116.web.app/) lee y guarda las reservas, los pagos, las
@@ -6019,27 +6055,27 @@ publicadas, con los datos de ejemplo de la propiedad Cartagena 04.
 
 <img src="assets/chapter-5/sprint-3-overview-dashboard.png" alt="Panorama operativo de la propiedad servido por los RESTful Web Services" style="width:100%; height:auto;"/>
 
-*Figura 5.31. Panorama operativo de la propiedad: ingresos y ocupación de los últimos 30 días, ocupación de las propiedades, llegadas del día con su estado de pago y estado de las habitaciones, calculados por los servicios.*
+*Figura 5.26. Panorama operativo de la propiedad: ingresos y ocupación de los últimos 30 días, ocupación de las propiedades, llegadas del día con su estado de pago y estado de las habitaciones, calculados por los servicios.*
 
 <img src="assets/chapter-5/sprint-3-bookings-list.png" alt="Listado de reservas de la propiedad servido por los RESTful Web Services" style="width:100%; height:auto;"/>
 
-*Figura 5.32. Reservas de la propiedad con su estadía, habitación, estado, estado de pago y total, paginadas por los servicios.*
+*Figura 5.27. Reservas de la propiedad con su estadía, habitación, estado, estado de pago y total, paginadas por los servicios.*
 
 <img src="assets/chapter-5/sprint-3-booking-detail.png" alt="Detalle de una reserva con check-in, tarjeta RFID activa y pago parcial" style="width:100%; height:auto;"/>
 
-*Figura 5.33. Detalle de una reserva con el check-in registrado, el documento del huésped, la tarjeta RFID activa hasta el check-out y un pago parcial con su saldo pendiente.*
+*Figura 5.28. Detalle de una reserva con el check-in registrado, el documento del huésped, la tarjeta RFID activa hasta el check-out y un pago parcial con su saldo pendiente.*
 
 <img src="assets/chapter-5/sprint-3-rooms-availability.png" alt="Disponibilidad semanal de las habitaciones servida por los RESTful Web Services" style="width:100%; height:auto;"/>
 
-*Figura 5.34. Disponibilidad semanal de las habitaciones, con los días reservados, ocupados, por limpiar o bloqueados que los servicios calculan a partir de las reservas y los periodos de estado.*
+*Figura 5.29. Disponibilidad semanal de las habitaciones, con los días reservados, ocupados, por limpiar o bloqueados que los servicios calculan a partir de las reservas y los periodos de estado.*
 
 <img src="assets/chapter-5/sprint-3-rooms-room-types.png" alt="Tipos de habitación de la propiedad servidos por los RESTful Web Services" style="width:100%; height:auto;"/>
 
-*Figura 5.35. Tipos de habitación con su capacidad, camas, número de habitaciones, tarifa base por noche y estado.*
+*Figura 5.30. Tipos de habitación con su capacidad, camas, número de habitaciones, tarifa base por noche y estado.*
 
 <img src="assets/chapter-5/sprint-3-access-events.png" alt="Eventos de acceso de un día servidos por los RESTful Web Services" style="width:100%; height:auto;"/>
 
-*Figura 5.36. Eventos de acceso del 11 de noviembre de 2026, con los intentos concedidos y los rechazados por estar fuera del alcance de la credencial.*
+*Figura 5.31. Eventos de acceso del 11 de noviembre de 2026, con los intentos concedidos y los rechazados por estar fuera del alcance de la credencial.*
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -6063,11 +6099,11 @@ stock disponible.
 
 <img src="assets/chapter-5/sprint-3-scalar-inventory-items.png" alt="Documentación de los endpoints de artículos de inventario en Scalar" style="width:100%; height:auto;"/>
 
-*Figura 5.23. Endpoints de artículos de inventario documentados con OpenAPI y consultados en Scalar.*
+*Figura 5.32. Endpoints de artículos de inventario documentados con OpenAPI y consultados en Scalar.*
 
 <img src="assets/chapter-5/sprint-3-scalar-storage-locations.png" alt="Documentación de los endpoints de ubicaciones de almacén en Scalar" style="width:100%; height:auto;"/>
 
-*Figura 5.24. Endpoints de ubicaciones de almacén documentados con OpenAPI y consultados en Scalar.*
+*Figura 5.33. Endpoints de ubicaciones de almacén documentados con OpenAPI y consultados en Scalar.*
 
 Los endpoints se probaron contra MySQL con 36 casos: las operaciones de cada recurso y
 los errores de código duplicado, ubicación de otra propiedad, stock insuficiente, motivo
@@ -6101,15 +6137,15 @@ documentación publicada puede consultarse en https://hostera-platform.onrender.
 
 <img src="assets/chapter-5/sprint-3-scalar-rfid-credentials.png" alt="Documentación de los endpoints de credenciales RFID en Scalar" style="width:100%; height:auto;"/>
 
-*Figura 5.28. Endpoints de credenciales RFID documentados con OpenAPI y publicados en Scalar.*
+*Figura 5.34. Endpoints de credenciales RFID documentados con OpenAPI y publicados en Scalar.*
 
 <img src="assets/chapter-5/sprint-3-scalar-staff-members.png" alt="Documentación del endpoint de personal en Scalar" style="width:100%; height:auto;"/>
 
-*Figura 5.29. Endpoint del personal de una propiedad documentado con OpenAPI y publicado en Scalar.*
+*Figura 5.35. Endpoint del personal de una propiedad documentado con OpenAPI y publicado en Scalar.*
 
 <img src="assets/chapter-5/sprint-3-scalar-properties.png" alt="Documentación de los endpoints de propiedades en Scalar" style="width:100%; height:auto;"/>
 
-*Figura 5.30. Endpoints de propiedades documentados con OpenAPI y publicados en Scalar.*
+*Figura 5.36. Endpoints de propiedades documentados con OpenAPI y publicados en Scalar.*
 
 **Rooms.** Los tipos de habitación, las habitaciones y los planes de tarifa pertenecen a
 una propiedad y se consultan después por su propio identificador. Los nombres de tipos y
@@ -6326,7 +6362,7 @@ construyó la base compartida y las habitaciones, y los otros tres integrantes s
 
 ## Conclusiones y recomendaciones
 
-Esta sección recoge lo que dejó el proyecto desde su inicio hasta el cierre de TB1.
+Esta sección recoge lo que dejó el proyecto desde su inicio hasta el cierre de AV2.
 Se organiza por etapas del ciclo de vida del producto, desde la investigación con
 usuarios hasta el despliegue, e incluye lo que se corrigió en cada una a partir de
 las observaciones recibidas.
@@ -6411,11 +6447,21 @@ una rama de trabajo para cada uno, y cada integrante lideró al menos uno de eso
 módulos. La Landing Page pasó a la versión `v0.4.0`, que agrega el acceso a la
 aplicación.
 
-En los repositorios se trabaja con Git Flow, Conventional Commits y Semantic
-Versioning. La Landing Page tiene versiones etiquetadas de la `v0.1.0` a la `v0.4.0`
-y el frontend, la `v0.1.0`.
+El Sprint 3 dejó publicada la primera versión de los RESTful Web Services, la `1.0.0`,
+en Render y con su base de datos MySQL en Aiven, documentada con OpenAPI en Scalar. Los
+servicios cubren los cinco bounded contexts: reservas con pagos, check-in y check-out;
+habitaciones y tarifas; inventario; control de accesos con credenciales y eventos RFID;
+y el panorama operativo. La Frontend Web Application dejó la API de datos de
+demostración y pasó a trabajar con estos servicios en su versión `v2.0.0`, y la Landing
+Page se publicó en su versión `v3.0.0`. Del Sprint Backlog 3 se completaron 37 de las 39
+tareas; queda pendiente el envío de correos de confirmación mediante un servicio
+externo (`TS018`).
 
-### Estado de las hipótesis al cierre de TB1
+En los repositorios se trabaja con Git Flow, Conventional Commits y Semantic
+Versioning. La Landing Page tiene versiones etiquetadas hasta la `v3.0.0`, el frontend
+hasta la `v2.0.0` y los servicios, la `1.0.0`.
+
+### Estado de las hipótesis al cierre de AV2
 
 Ninguno de los tres resultados de negocio puede medirse todavía, porque Hostera aún
 no tiene clientes. Por ahora solo hay evidencia del problema que cada hipótesis busca
@@ -6436,18 +6482,19 @@ resolver, y viene de las entrevistas.
 | Prioridad | Siguiente paso | Para qué |
 |---:|---|---|
 | 1 | Llevar la aplicación publicada a administradores de hoteles de una sede y medir cuánto tardan en conocer el estado de su propiedad. | Probar la hipótesis 1, que es la de mayor riesgo. |
-| 2 | Implementar los servicios REST priorizados (`TS004` a `TS013`, `TS016` y `TS017`) e integrarlos con el frontend. | Reemplazar los datos de demostración por operaciones persistentes. |
+| 2 | Integrar el envío de correos de confirmación de reserva con un servicio externo (`TS018`). | Que el huésped reciba la confirmación de su reserva sin intervención del personal. |
 | 3 | Completar los reportes operativos (`US031`, `US032`), que quedaron fuera de la primera versión del frontend. | Probar la hipótesis 4 con responsables de cadenas pequeñas. |
-| 4 | Dejar el registro, el inicio de sesión y la autorización (`US009`, `US010`, `TS001` a `TS003`), junto con la integración RFID de los servicios (`TS014` y `TS015`), para después de los flujos principales y antes de publicar los servicios. | Proteger la información de cada propiedad antes de exponerla. |
+| 4 | Implementar el registro, el inicio de sesión y la autorización (`US009`, `US010`, `TS001` a `TS003`) antes de abrir los servicios a hoteles reales. | Proteger la información de cada propiedad antes de exponerla. |
 | 5 | Hacer que «Explore Starter» y «Explore Professional» abran el registro de su plan cuando estén implementados `US009` y `US010`. Desde la versión `v0.5.0` de la Landing Page ambos botones ya llevan a la aplicación. | Que el visitante que elige un plan empiece a usar Hostera desde el recorrido que le corresponde. |
 | 6 | Hacer más entrevistas en el segmento 2 con operaciones de administración compartida y agregar al formulario preguntas sobre personalidad, marcas e influencias. | Completar las fichas de User Persona con datos que hoy no se recogieron. |
 | 7 | Actualizar cada rama con `develop` antes de integrarla y mantener Git Flow y Conventional Commits. | Evitar que una integración reemplace cambios que otros integrantes ya habían subido. |
 
-Al cierre de TB1, Hostera tiene publicadas una Landing Page y la primera versión de su
-aplicación web, y un problema mejor entendido que al inicio del curso, pero ninguna de sus hipótesis se ha probado con el
-producto. La siguiente entrega tiene que poner la primera versión de la aplicación en
-manos de administradores de hotel y medir lo que hasta ahora solo se conoce por lo
-que contaron en las entrevistas.
+Al cierre de AV2, Hostera tiene publicadas una Landing Page, su aplicación web y la
+primera versión de sus servicios, que guardan las reservas, las habitaciones, el
+inventario y los accesos de cada propiedad. El producto ya puede usarse de principio a
+fin, pero ninguna de sus hipótesis se ha probado todavía con administradores de hotel.
+Las entrevistas de validación tienen que poner la aplicación en sus manos y medir lo que
+hasta ahora solo se conoce por lo que contaron en las entrevistas.
 
 # Bibliografía
 
@@ -6521,7 +6568,8 @@ World Wide Web Consortium. (2024). _Web Content Accessibility Guidelines (WCAG) 
 - **Repositorio de la Landing Page.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page
 - **Repositorio de la Frontend Web Application.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa
 - **Frontend Web Application desplegada.** https://hostera-f4116.web.app/
-- **API de datos de demostración.** https://hostera-frontend.onrender.com
+- **Repositorio de los RESTful Web Services.** https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform
+- **RESTful Web Services desplegados (referencia de la API en Scalar).** https://hostera-platform.onrender.com/scalar/v1
 - **Landing Page desplegada.** https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/
 - **Video de navegación del Sprint 2 (Landing Page y Frontend Web Application, 5:19).** https://upcedupe-my.sharepoint.com/personal/u202410105_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410105_upc_edu_pe%2FDocuments%2F2026-10-06%2022-29-15%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee514020b-9142-4cb3-81b9-f525e7d44f1c
 - **Board de seguimiento.** https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5
