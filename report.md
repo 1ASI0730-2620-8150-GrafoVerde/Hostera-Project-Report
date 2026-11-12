@@ -251,6 +251,7 @@ historial y la captura muestra sus commits más recientes.
     - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
     - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
     - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+    - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
@@ -6197,6 +6198,71 @@ completo aunque una de sus fuentes no tenga datos: esa sección aparece en
 <img src="assets/chapter-5/sprint-3-scalar-overview.png" alt="Documentación de los endpoints del panorama operativo en Scalar" style="width:100%; height:auto;"/>
 
 *Figura 5.45. Endpoints del panorama operativo documentados con OpenAPI y publicados en Scalar.*
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+En el Sprint 3 se desplegaron los RESTful Web Services con su base de datos, la versión
+de la Frontend Web Application que los consume y una nueva versión de la Landing Page.
+
+Los RESTful Web Services se publican como un Web Service de Render con runtime Docker,
+conectado a la rama `main` de `hostera-platform`. El `Dockerfile` compila la API con el
+SDK de .NET 10 y la ejecuta sobre la imagen de ASP.NET Core 10, que escucha en el puerto
+`8080`. El archivo `render.yaml` describe el servicio como un Blueprint de Render: plan
+gratuito, comprobación de salud en `/api/v1/properties` y las variables
+`ASPNETCORE_ENVIRONMENT`, `PORT`, `Hostera__SeedDemoData` y
+`Hostera__PublishApiReference`. La cadena de conexión `ConnectionStrings__DefaultConnection`
+se ingresa en Render como secreto al aplicar el Blueprint y no se guarda en el
+repositorio. Render vuelve a desplegar el servicio con cada push a `main`. La versión
+publicada es la `1.0.0`, del commit `9d1facf`, y su referencia de API queda disponible en
+https://hostera-platform.onrender.com/scalar/v1.
+
+La base de datos es un servicio Aiven for MySQL, porque Render no ofrece MySQL
+administrado. El servicio usa el plan Developer-1 (1 CPU, 1 GB de RAM y 8 GB de
+almacenamiento) en DigitalOcean, región Nueva York, y solo acepta conexiones cifradas. En
+el primer arranque, la API crea la base `hostera` y sus tablas, y carga los datos de
+demostración cuando `Hostera__SeedDemoData` está activo.
+
+La Frontend Web Application se sigue publicando en Firebase Hosting, en el proyecto
+`hostera-f4116`. En la versión `v2.0.0`, la variable `VITE_HOSTERA_PLATFORM_API_URL` del
+archivo `.env.production` apunta a `https://hostera-platform.onrender.com/api/v1`, y el
+comando `npm run deploy` construye la aplicación y la publica con
+`firebase deploy --only hosting`.
+
+La Landing Page se publicó en GitHub Pages desde la rama `main` en su versión `v3.0.0`.
+Esta versión agrega el panel de acceso RFID con tres características, dos puntos de
+detalle en cada tarjeta de beneficios y la página de política de privacidad en inglés y
+español, enlazada desde el pie de página.
+
+| Product | Repository | Deployment Platform | Source | Public URL | Version |
+|---|---|---|---|---|---|
+| Landing Page | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-landing-page | GitHub Pages | `main` / `/ (root)` | https://1asi0730-2620-8150-grafoverde.github.io/hostera-landing-page/ | `v3.0.0` |
+| Frontend Web Application | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-frontend-wa | Firebase Hosting | `dist/`, generado y publicado con `npm run deploy` | https://hostera-f4116.web.app/ | `v2.0.0` |
+| RESTful Web Services | https://github.com/1ASI0730-2620-8150-GrafoVerde/hostera-platform | Render (Web Service con Docker, desde un Blueprint) | `main`, con `Dockerfile` y `render.yaml` | https://hostera-platform.onrender.com/scalar/v1 | `1.0.0` |
+| Base de datos | No aplica | Aiven for MySQL (Developer-1) | Conexión cifrada desde los RESTful Web Services | No aplica | MySQL |
+
+<img src="assets/chapter-5/sprint-3-render-web-service.png" alt="Web Service de Render con los RESTful Web Services publicados desde la rama main" style="width:100%; height:auto;"/>
+
+*Figura 5.46. Web Service `hostera-platform` en Render, gestionado por un Blueprint y publicado desde la rama `main` en el commit `9d1facf`.*
+
+<img src="assets/chapter-5/sprint-3-render-deploy.png" alt="Despliegue de la versión 1.0.0 en Render con sus registros de ejecución" style="width:100%; height:auto;"/>
+
+*Figura 5.47. Despliegue de la versión `1.0.0` en Render, con los registros de las consultas de la API a MySQL.*
+
+<img src="assets/chapter-5/sprint-3-aiven-mysql.png" alt="Servicio Aiven for MySQL en ejecución" style="width:100%; height:auto;"/>
+
+*Figura 5.48. Servicio Aiven for MySQL en ejecución, con el plan Developer-1 en DigitalOcean.*
+
+<img src="assets/chapter-5/sprint-3-scalar-production.png" alt="Referencia de la API publicada en Scalar desde Render" style="width:100%; height:auto;"/>
+
+*Figura 5.49. Referencia de los RESTful Web Services en su versión `1.0.0`, publicada en Scalar desde Render.*
+
+<img src="assets/chapter-5/sprint-3-firebase-hosting.png" alt="Versiones de la Frontend Web Application en Firebase Hosting" style="width:100%; height:auto;"/>
+
+*Figura 5.50. Versión actual de la Frontend Web Application en Firebase Hosting y sus dominios.*
+
+<img src="assets/chapter-5/sprint-3-landing-page-v3-0-0.png" alt="Landing Page publicada en su versión 3.0.0 con el panel de acceso RFID" style="width:100%; height:auto;"/>
+
+*Figura 5.51. Landing Page publicada en su versión `v3.0.0`, con el panel de acceso RFID.*
 
 # Conclusiones
 
