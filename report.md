@@ -5957,12 +5957,19 @@ aplicación), sin los commits de merge.
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
-**Inventory.** Las vistas de inventario de la Frontend Web Application ya leen y guardan
-la información en los RESTful Web Services, que la persisten en MySQL. Los demás
-módulos de la aplicación siguen con la API de datos de demostración hasta que se integre
-su contexto. Las capturas se tomaron con los servicios y la aplicación ejecutándose en
-local sobre una base de datos MySQL, cargada con los datos de ejemplo de la propiedad
+En el Sprint 3 la Frontend Web Application dejó de depender de la API de datos de
+demostración y pasó a trabajar con los RESTful Web Services de Hostera. Los servicios están
+publicados en Render con una base de datos MySQL en Aiven, y la aplicación, publicada en
+Firebase Hosting, lee y guarda en ellos las reservas con sus pagos y estadías, las
+habitaciones con su disponibilidad y tarifas, el inventario, las credenciales RFID con sus
+eventos de acceso y el panorama operativo de cada propiedad. Las capturas de esta sección
+muestran las principales vistas de cada contexto con los datos de ejemplo de la propiedad
 Cartagena 04.
+
+**Inventory.** Las vistas de inventario de la Frontend Web Application ya leen y guardan
+la información en los RESTful Web Services, que la persisten en MySQL. Las capturas se
+tomaron con los servicios y la aplicación ejecutándose en local sobre una base de datos
+MySQL, cargada con los datos de ejemplo de la propiedad Cartagena 04.
 
 <img src="assets/chapter-5/sprint-3-inventory-items.png" alt="Listado de artículos de inventario servido por los RESTful Web Services" style="width:100%; height:auto;"/>
 
@@ -6001,6 +6008,36 @@ publicadas, con los datos de ejemplo de la propiedad Cartagena 04.
 <img src="assets/chapter-5/sprint-3-rooms-rates.png" alt="Tarifas diarias de un plan por tipo de habitación servidas por los RESTful Web Services" style="width:100%; height:auto;"/>
 
 *Figura 5.27. Tarifas por noche del plan Breakfast included para cada tipo de habitación, en la moneda de la propiedad.*
+
+**Bookings, Rooms, Overview y eventos de acceso.** La aplicación publicada en Firebase
+Hosting (https://hostera-f4116.web.app/) lee y guarda las reservas, los pagos, las
+estadías, las habitaciones, el panorama operativo y los eventos de acceso en los RESTful
+Web Services publicados en Render. Las capturas siguientes se tomaron de esas versiones
+publicadas, con los datos de ejemplo de la propiedad Cartagena 04.
+
+<img src="assets/chapter-5/sprint-3-overview-dashboard.png" alt="Panorama operativo de la propiedad servido por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.31. Panorama operativo de la propiedad: ingresos y ocupación de los últimos 30 días, ocupación de las propiedades, llegadas del día con su estado de pago y estado de las habitaciones, calculados por los servicios.*
+
+<img src="assets/chapter-5/sprint-3-bookings-list.png" alt="Listado de reservas de la propiedad servido por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.32. Reservas de la propiedad con su estadía, habitación, estado, estado de pago y total, paginadas por los servicios.*
+
+<img src="assets/chapter-5/sprint-3-booking-detail.png" alt="Detalle de una reserva con check-in, tarjeta RFID activa y pago parcial" style="width:100%; height:auto;"/>
+
+*Figura 5.33. Detalle de una reserva con el check-in registrado, el documento del huésped, la tarjeta RFID activa hasta el check-out y un pago parcial con su saldo pendiente.*
+
+<img src="assets/chapter-5/sprint-3-rooms-availability.png" alt="Disponibilidad semanal de las habitaciones servida por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.34. Disponibilidad semanal de las habitaciones, con los días reservados, ocupados, por limpiar o bloqueados que los servicios calculan a partir de las reservas y los periodos de estado.*
+
+<img src="assets/chapter-5/sprint-3-rooms-room-types.png" alt="Tipos de habitación de la propiedad servidos por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.35. Tipos de habitación con su capacidad, camas, número de habitaciones, tarifa base por noche y estado.*
+
+<img src="assets/chapter-5/sprint-3-access-events.png" alt="Eventos de acceso de un día servidos por los RESTful Web Services" style="width:100%; height:auto;"/>
+
+*Figura 5.36. Eventos de acceso del 11 de noviembre de 2026, con los intentos concedidos y los rechazados por estar fuera del alcance de la credencial.*
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
