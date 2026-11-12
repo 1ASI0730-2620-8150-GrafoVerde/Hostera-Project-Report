@@ -8,10 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
+- Added the Access Control, rate plan and property evidence of the Sprint 3 in the development, execution and services documentation sections: the 50 commits of five branches, the credential, staff member and property endpoints, and screenshots of the deployed application and API reference.
+- Added the AV2 entries of José Santana in the Student Outcome section.
 - Added the Inventory evidence of the Sprint 3 in the development, execution and services documentation sections: the 67 commits of its three branches, the Inventory endpoints and the screenshots of the application and of Scalar on MySQL.
 
 ### Changed
 
+- Marked the tasks TS011-T1 to TS011-T4 and TS014-T1 to TS014-T5 as done in the Sprint Backlog 3, naming who completed each one, and recorded that Mateo Condori led the Rooms aspect.
 - Marked the Inventory tasks TS012-T1 to TS012-T3, TS013-T1 and TS013-T2 as done in the Sprint Backlog 3.
 
 ## [0.6.1] - 2026-10-28
