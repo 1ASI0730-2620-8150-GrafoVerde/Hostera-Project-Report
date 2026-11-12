@@ -5213,7 +5213,7 @@ Services de Hostera y conectar a ellos la Frontend Web Application, que hasta el
 Sprint 2 trabajaba con datos de demostración. Los servicios se construyen con ASP.NET
 Core, Entity Framework Core y MySQL, y siguen la organización por bounded context y
 por capas (Domain, Application, Infrastructure e Interfaces) del curso. El alcance
-reúne 12 technical stories de los contextos de reservas, habitaciones,
+reúne 14 technical stories de los contextos de reservas, habitaciones,
 inventario, control de accesos y panorama operativo, más la integración con un
 servicio externo de terceros.
 
@@ -5229,16 +5229,15 @@ servicio externo de terceros.
 | Sprint 2 Review Summary | El Sprint 2 cerró con la primera versión de la Frontend Web Application (`v0.1.0`) publicada en Firebase Hosting, con las 21 user stories de `EP002` a `EP006` implementadas sobre una API de datos de demostración en Render. En la revisión de TB1 el docente observó que las historias no estaban divididas en tareas de 4 a 8 horas, que la Landing Page no explicaba el producto con capturas ni ofrecía datos de contacto y que persistían errores en artefactos ya observados. Se atendió con el Sprint Backlog 2 dividido en 50 tareas, las versiones `v0.6.0` a `v0.9.0` de la Landing Page, la versión `v0.2.0` de la aplicación, el término Booking en los diagramas de EventStorming y la revisión ortográfica del informe (versiones `0.5.0` a `0.5.2`). |
 | Sprint 2 Retrospective Summary | Se mantiene que cada integrante lidere el bounded context que ya conoce y lo integre en `develop` apenas lo termina. Se cambian tres prácticas: las historias se dividen en tareas de 4 a 8 horas durante el planning y se cargan al tablero desde el inicio del sprint; la base compartida de los servicios se construye primero, porque el resto de contextos depende de ella; y cada integrante documenta en el informe la evidencia de su propio contexto, para que el aporte al informe quede repartido. |
 | Sprint 3 Goal | Nuestro enfoque está en que el responsable de operaciones de un hotel independiente o de una cadena pequeña trabaje con información que se guarda en los servicios de Hostera y no en datos de demostración. Creemos que esto le permite confiar en que lo que registra hoy seguirá disponible mañana y desde cualquier dispositivo. Esto se confirmará cuando, en la aplicación publicada, una persona registre una reserva y la confirme, reciba el correo de confirmación, consulte la disponibilidad de habitaciones, registre un ajuste de existencias y emita una credencial RFID, y al volver a ingresar esos datos sigan ahí. |
-| Sprint 3 Goal Metric | El objetivo se considera cumplido cuando ese recorrido se completa en la aplicación desplegada, servida por la API publicada con su documentación OpenAPI. Como condición de entrega, las 12 technical stories del sprint deben estar implementadas y los endpoints documentados. |
-| Sprint 3 Velocity | 62 Story Points comprometidos para el sprint. |
-| Sum of Story Points | 62 Story Points. |
+| Sprint 3 Goal Metric | El objetivo se considera cumplido cuando ese recorrido se completa en la aplicación desplegada, servida por la API publicada con su documentación OpenAPI. Como condición de entrega, las 14 technical stories del sprint deben estar implementadas y los endpoints documentados. |
+| Sprint 3 Velocity | 75 Story Points comprometidos para el sprint. |
+| Sum of Story Points | 75 Story Points. |
 
-La velocity baja de 109 a 62 story points porque el sprint construye los
+La velocity baja de 109 a 75 story points porque el sprint construye los
 servicios desde cero, conecta la aplicación a ellos y, en paralelo, incluye las
 entrevistas de validación y los videos del producto y del equipo. El registro, el inicio
-de sesión y la autorización por propiedad (`TS001` a `TS003`, `US009` y `US010`), los
-pagos y el check-in y check-out en la API (`TS008` y `TS009`) y los reportes (`TS016`,
-`US031` y `US032`) pasan al Sprint 4.
+de sesión y la autorización por propiedad (`TS001` a `TS003`, `US009` y `US010`) y los
+reportes (`TS016`, `US031` y `US032`) pasan al Sprint 4.
 
 Las stories incluidas en el Sprint 3 son las siguientes. `TS018` es una technical story
 nueva, agregada al Product Backlog para cubrir la integración con un servicio externo de
@@ -5252,13 +5251,15 @@ terceros.
 | TS005 | Query bookings through the API | 3 |
 | TS006 | Create and update bookings through the API | 5 |
 | TS007 | Transition booking status through the API | 5 |
+| TS008 | Record payments through the API | 5 |
+| TS009 | Complete check-in and check-out through the API | 8 |
 | TS018 | Send booking confirmation emails through an external service | 5 |
 | TS012 | Manage inventory and stock adjustments through the API | 5 |
 | TS013 | Manage storage locations through the API | 3 |
 | TS014 | Manage RFID credentials through the API | 8 |
 | TS015 | Record and query RFID access events through the API | 5 |
 | TS004 | Retrieve the operational dashboard through the API | 5 |
-| **Total** | **12 technical stories** | **62** |
+| **Total** | **14 technical stories** | **75** |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -5296,8 +5297,8 @@ propiedades, y mantuvo el liderazgo del control de accesos.
 
 #### 5.2.3.3. Sprint Backlog 3
 
-El Sprint Backlog 3 descompone las 12 technical stories en 34 tareas de
-entre 4 y 8 horas, que suman 217 horas. Cada tarea sigue las capas de un bounded
+El Sprint Backlog 3 descompone las 14 technical stories en 39 tareas de
+entre 4 y 8 horas, que suman 252 horas. Cada tarea sigue las capas de un bounded
 context de los servicios (dominio, aplicación, persistencia e interfaz REST) o conecta
 la vista correspondiente de la aplicación con la API. Todas las tareas inician en
 estado To-do y se registran en el tablero del proyecto en YouTrack
@@ -5326,40 +5327,45 @@ technical story que implementan.
     </tr>
   </thead>
   <tbody>
-    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T1</td><td>Set up the platform solution and shared kernel</td><td>Solución <code>HosteraPlatform.API</code> en .NET 10 con los paquetes del curso, <code>global.json</code>, el patrón <code>Result</code> e <code>IAuditableEntity</code>.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
-    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T2</td><td>Configure EF Core with MySQL</td><td><code>AppDbContext</code>, <code>BaseRepository</code>, <code>UnitOfWork</code>, interceptor de auditoría y nombres en <code>snake_case</code>.</td><td>8</td><td>Mateo Condori</td><td>To-do</td></tr>
-    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T3</td><td>Configure localized error responses</td><td>ProblemDetails (RFC 7807), respuestas de modelo inválido y recursos <code>.resx</code> en inglés y español.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
-    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T4</td><td>Configure OpenAPI, routing and deployment settings</td><td>OpenAPI con Scalar, rutas en kebab-case, <code>Dockerfile</code> y conexión a la base de datos por variables de entorno.</td><td>5</td><td>Mateo Condori</td><td>To-do</td></tr>
-    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T1</td><td>Model rooms and room types</td><td>Agregados <code>Room</code> y <code>RoomType</code> con sus value objects, queries e interfaces de repositorio.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
-    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T2</td><td>Persist rooms and room types</td><td>Configuración en <code>AppDbContext</code>, repositorios y migración.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
-    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T3</td><td>Expose the room availability endpoint</td><td>Query service, resources, assemblers y controller de disponibilidad por fecha.</td><td>6</td><td>Mateo Condori</td><td>To-do</td></tr>
+    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T1</td><td>Set up the platform solution and shared kernel</td><td>Solución <code>HosteraPlatform.API</code> en .NET 10 con los paquetes del curso, <code>global.json</code>, el patrón <code>Result</code> e <code>IAuditableEntity</code>.</td><td>6</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T2</td><td>Configure EF Core with MySQL</td><td><code>AppDbContext</code>, <code>BaseRepository</code>, <code>UnitOfWork</code>, interceptor de auditoría y nombres en <code>snake_case</code>.</td><td>8</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T3</td><td>Configure localized error responses</td><td>ProblemDetails (RFC 7807), respuestas de modelo inválido y recursos <code>.resx</code> en inglés y español.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS017</td><td>Return standardized API errors</td><td>TS017-T4</td><td>Configure OpenAPI, routing and deployment settings</td><td>OpenAPI con Scalar, rutas en kebab-case, <code>Dockerfile</code> y conexión a la base de datos por variables de entorno.</td><td>5</td><td>Mateo Condori, Darnell Cuba y Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T1</td><td>Model rooms and room types</td><td>Agregados <code>Room</code> y <code>RoomType</code> con sus value objects, queries e interfaces de repositorio.</td><td>6</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T2</td><td>Persist rooms and room types</td><td>Configuración en <code>AppDbContext</code>, repositorios y tablas en MySQL.</td><td>6</td><td>Mateo Condori</td><td>Done</td></tr>
+    <tr><td>TS010</td><td>Retrieve room availability through the API</td><td>TS010-T3</td><td>Expose the room availability endpoint</td><td>Query service, resources, assemblers y controller de disponibilidad por fecha.</td><td>6</td><td>Mateo Condori</td><td>Done</td></tr>
     <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T1</td><td>Implement room and room type commands</td><td>Commands y command service para crear, editar y eliminar habitaciones y tipos sin uso.</td><td>8</td><td>Mateo Condori</td><td>Done</td></tr>
-    <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T2</td><td>Model and persist rate plans and daily rates</td><td>Agregado <code>RatePlan</code>, tarifas por noche, configuración y migración.</td><td>8</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T2</td><td>Model and persist rate plans and daily rates</td><td>Agregado <code>RatePlan</code>, tarifas por noche, configuración y tablas en MySQL.</td><td>8</td><td>José Santana</td><td>Done</td></tr>
     <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T3</td><td>Expose the rooms, room types and rates endpoints</td><td>Controllers, resources, assemblers y mensajes localizados.</td><td>7</td><td>Mateo Condori</td><td>Done</td></tr>
     <tr><td>TS011</td><td>Manage rooms, room types, and rates through the API</td><td>TS011-T4</td><td>Connect the rooms views to the API</td><td>Endpoints del frontend apuntando a la API y pruebas manuales del recorrido.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>TS005</td><td>Query bookings through the API</td><td>TS005-T1</td><td>Model the booking aggregate and its queries</td><td>Agregado <code>Booking</code> con <code>BookingCode</code>, <code>StayPeriod</code> y <code>GuestCount</code>, queries e interfaz de repositorio.</td><td>6</td><td>Joaquin Cuba</td><td>To-do</td></tr>
-    <tr><td>TS005</td><td>Query bookings through the API</td><td>TS005-T2</td><td>Persist bookings and expose the query endpoint</td><td>Configuración, repositorio, migración y endpoint de búsqueda por huésped, código, periodo y estado.</td><td>6</td><td>Joaquin Cuba</td><td>To-do</td></tr>
-    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T1</td><td>Implement booking creation and update rules</td><td>Commands y command service con disponibilidad, capacidad y plan tarifario, usando <code>Result</code>.</td><td>8</td><td>Joaquin Cuba</td><td>To-do</td></tr>
-    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T2</td><td>Expose the booking creation and update endpoints</td><td>POST y PUT con resources, assemblers y errores localizados.</td><td>6</td><td>Joaquin Cuba</td><td>To-do</td></tr>
-    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T3</td><td>Connect the bookings views to the API</td><td>Listado, creación y edición de reservas del frontend contra la API.</td><td>6</td><td>Joaquin Cuba</td><td>To-do</td></tr>
-    <tr><td>TS007</td><td>Transition booking status through the API</td><td>TS007-T1</td><td>Implement booking status transitions</td><td>Confirmación, cancelación con motivo y no-show en el agregado y el command service.</td><td>7</td><td>Joaquin Cuba</td><td>To-do</td></tr>
-    <tr><td>TS007</td><td>Transition booking status through the API</td><td>TS007-T2</td><td>Expose the booking status endpoints</td><td>Endpoints de transición con sus respuestas de conflicto.</td><td>5</td><td>Joaquin Cuba</td><td>To-do</td></tr>
+    <tr><td>TS005</td><td>Query bookings through the API</td><td>TS005-T1</td><td>Model the booking aggregate and its queries</td><td>Agregado <code>Booking</code> con <code>BookingCode</code>, <code>StayPeriod</code> y <code>GuestCount</code>, queries e interfaz de repositorio.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS005</td><td>Query bookings through the API</td><td>TS005-T2</td><td>Persist bookings and expose the query endpoint</td><td>Configuración, repositorio, tablas en MySQL y endpoint de búsqueda por huésped, código, periodo y estado.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T1</td><td>Implement booking creation and update rules</td><td>Commands y command service con disponibilidad, capacidad y plan tarifario, usando <code>Result</code>.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T2</td><td>Expose the booking creation and update endpoints</td><td>POST y PUT con resources, assemblers y errores localizados.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS006</td><td>Create and update bookings through the API</td><td>TS006-T3</td><td>Connect the bookings views to the API</td><td>Listado, creación y edición de reservas del frontend contra la API.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS007</td><td>Transition booking status through the API</td><td>TS007-T1</td><td>Implement booking status transitions</td><td>Confirmación, cancelación con motivo y no-show en el agregado y el command service.</td><td>7</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS007</td><td>Transition booking status through the API</td><td>TS007-T2</td><td>Expose the booking status endpoints</td><td>Endpoints de transición con sus respuestas de conflicto.</td><td>5</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS008</td><td>Record payments through the API</td><td>TS008-T1</td><td>Model and persist payments</td><td>Agregado <code>Payment</code> con clave de idempotencia, método y estado del pago, repositorio y mapeo con una clave única por reserva.</td><td>7</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS008</td><td>Record payments through the API</td><td>TS008-T2</td><td>Expose the payment endpoints and connect the view</td><td><code>PaymentCommandService</code> con reglas de saldo e idempotencia, endpoints, saldo pendiente en el recurso de reserva y registro de pagos del frontend contra la API.</td><td>7</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS009</td><td>Complete check-in and check-out through the API</td><td>TS009-T1</td><td>Implement check-in and check-out</td><td>Commands, registros de estadía y <code>StayCommandService</code> con el documento del huésped y la condición de la habitación.</td><td>8</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS009</td><td>Complete check-in and check-out through the API</td><td>TS009-T2</td><td>Coordinate key cards and room cleaning</td><td>Fachada de Access Control para terminar las tarjetas del huésped al hacer check-out y marca de limpieza mediante la fachada de Rooms.</td><td>7</td><td>Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS009</td><td>Complete check-in and check-out through the API</td><td>TS009-T3</td><td>Expose the stay endpoints and connect the views</td><td>Endpoints de check-in y check-out con sus errores, y check-in y check-out del frontend contra la API.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
     <tr><td>TS018</td><td>Send booking confirmation emails through an external service</td><td>TS018-T1</td><td>Integrate the email provider</td><td>Servicio de salida en infraestructura para Twilio SendGrid, con la clave de la API en variables de entorno.</td><td>7</td><td>Joaquin Cuba</td><td>To-do</td></tr>
     <tr><td>TS018</td><td>Send booking confirmation emails through an external service</td><td>TS018-T2</td><td>Send the confirmation when a booking is confirmed</td><td>Envío desde el command service de reservas y documentación de la configuración.</td><td>5</td><td>Joaquin Cuba</td><td>To-do</td></tr>
     <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T1</td><td>Model inventory items and their queries</td><td>Agregado <code>InventoryItem</code> con código, categoría, unidad y umbrales, queries y repositorio.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T2</td><td>Implement stock adjustments</td><td>Commands de entrada, salida y transferencia con su historial y persistencia.</td><td>7</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>TS012</td><td>Manage inventory and stock adjustments through the API</td><td>TS012-T3</td><td>Expose the inventory endpoints</td><td>Controllers, resources, assemblers y mensajes localizados.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
-    <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T1</td><td>Model, persist and expose storage locations</td><td>Agregado <code>StorageLocation</code>, migración y endpoints.</td><td>7</td><td>Darnell Cuba</td><td>Done</td></tr>
+    <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T1</td><td>Model, persist and expose storage locations</td><td>Agregado <code>StorageLocation</code>, tablas en MySQL y endpoints.</td><td>7</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>TS013</td><td>Manage storage locations through the API</td><td>TS013-T2</td><td>Connect the inventory views to the API</td><td>Artículos, ubicaciones y ajustes del frontend contra la API.</td><td>6</td><td>Darnell Cuba</td><td>Done</td></tr>
     <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T1</td><td>Model RFID credentials</td><td>Agregado <code>Credential</code> con identificador de tarjeta y vigencia, queries y repositorio.</td><td>6</td><td>José Santana</td><td>Done</td></tr>
     <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T2</td><td>Implement credential issue, replacement and revocation</td><td>Commands y command service con sus reglas de vigencia.</td><td>8</td><td>José Santana</td><td>Done</td></tr>
-    <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T3</td><td>Persist credentials</td><td>Configuración en <code>AppDbContext</code> y migración.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
+    <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T3</td><td>Persist credentials</td><td>Configuración en <code>AppDbContext</code> y tablas en MySQL.</td><td>5</td><td>José Santana</td><td>Done</td></tr>
     <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T4</td><td>Expose the credentials endpoints</td><td>Controllers, resources, assemblers y mensajes localizados.</td><td>6</td><td>José Santana</td><td>Done</td></tr>
     <tr><td>TS014</td><td>Manage RFID credentials through the API</td><td>TS014-T5</td><td>Connect the access control views to the API</td><td>Credenciales, emisión y reemplazo del frontend contra la API.</td><td>6</td><td>Joaquin Cuba</td><td>Done</td></tr>
-    <tr><td>TS015</td><td>Record and query RFID access events through the API</td><td>TS015-T1</td><td>Model and persist access events</td><td>Agregado <code>AccessEvent</code>, configuración y migración.</td><td>6</td><td>Juan Diego Flores</td><td>To-do</td></tr>
-    <tr><td>TS015</td><td>Record and query RFID access events through the API</td><td>TS015-T2</td><td>Expose access events and connect the view</td><td>Endpoint de consulta por habitación y persona, y vista de eventos del frontend.</td><td>6</td><td>Juan Diego Flores</td><td>To-do</td></tr>
-    <tr><td>TS004</td><td>Retrieve the operational dashboard through the API</td><td>TS004-T1</td><td>Implement the operational overview query</td><td>Query service con ingresos, ocupación, llegadas del día y estado de habitaciones por propiedad.</td><td>8</td><td>Juan Diego Flores</td><td>To-do</td></tr>
-    <tr><td>TS004</td><td>Retrieve the operational dashboard through the API</td><td>TS004-T2</td><td>Expose the overview endpoint and connect the view</td><td>Endpoint del panorama y vista de overview del frontend contra la API.</td><td>6</td><td>Juan Diego Flores</td><td>To-do</td></tr>
+    <tr><td>TS015</td><td>Record and query RFID access events through the API</td><td>TS015-T1</td><td>Model and persist access events</td><td>Agregado <code>AccessEvent</code>, configuración y tablas en MySQL.</td><td>6</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>TS015</td><td>Record and query RFID access events through the API</td><td>TS015-T2</td><td>Expose access events and connect the view</td><td>Endpoint de consulta por habitación y persona, y vista de eventos del frontend.</td><td>6</td><td>Juan Diego Flores y Joaquin Cuba</td><td>Done</td></tr>
+    <tr><td>TS004</td><td>Retrieve the operational dashboard through the API</td><td>TS004-T1</td><td>Implement the operational overview query</td><td>Query service con ingresos, ocupación, llegadas del día y estado de habitaciones por propiedad.</td><td>8</td><td>Juan Diego Flores</td><td>Done</td></tr>
+    <tr><td>TS004</td><td>Retrieve the operational dashboard through the API</td><td>TS004-T2</td><td>Expose the overview endpoint and connect the view</td><td>Endpoint del panorama y vista de overview del frontend contra la API.</td><td>6</td><td>Juan Diego Flores y Joaquin Cuba</td><td>Done</td></tr>
   </tbody>
 </table>
 
@@ -5367,6 +5373,16 @@ Las tareas `TS011-T1` y `TS011-T3` las completó Mateo Condori dentro de la rama
 habitaciones, y `TS011-T4` y `TS014-T5` las completó Joaquin Cuba al conectar todas las
 vistas de la aplicación con los servicios. Por eso figuran a su nombre, aunque en el
 Sprint Planning 3 se asignaron a José Santana.
+
+En la base compartida, `TS017-T3` la completó Joaquin Cuba con los mensajes de error en
+inglés y español según el idioma de la petición, y cada líder tradujo y mapeó a
+ProblemDetails los errores de su propio contexto. `TS017-T4` reúne la convención de rutas
+en kebab-case de Mateo Condori, la configuración de OpenAPI con Scalar de Darnell Cuba y
+el `Dockerfile` con la conexión por variables de entorno de Joaquin Cuba. En `TS015-T2` y
+`TS004-T2`, Juan Diego Flores expuso los endpoints y Joaquin Cuba conectó las vistas de la
+aplicación.
+
+La integración con el servicio externo de correo (`TS018`) queda pendiente.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -5391,9 +5407,8 @@ paquetes de Entity Framework Core en el proyecto, sin el cual los servicios no c
 | `feature/inventory-api` | hostera-frontend-wa | Cliente de la API, assemblers y store de inventario contra los servicios. | Darnell Cuba | 9 | 2026-11-06 |
 
 El esquema de las tablas de inventario lo crea `EnsureCreated()` al iniciar los
-servicios. La migración de Entity Framework Core prevista en `TS013-T1` se generará una
-sola vez, cuando estén integrados todos los contextos, para que las migraciones de cada
-rama no entren en conflicto. La tabla siguiente registra los 67 commits de
+servicios, igual que el de los demás contextos, sin migraciones de Entity Framework Core.
+La tabla siguiente registra los 67 commits de
 Inventory (58 en los servicios y 9 en la aplicación), sin los commits de
 merge.
 
@@ -5673,7 +5688,7 @@ restauración usan la fecha de la zona horaria de las propiedades. La rama inclu
 los pagos, con una clave de idempotencia por reserva y el saldo pendiente, y el check-in
 y check-out, que termina las tarjetas del huésped mediante la fachada de Access Control y
 marca la habitación para limpieza. Estas dos capacidades corresponden a `TS008` y
-`TS009`, que el Sprint Planning 3 había previsto para el Sprint 4. Cada cambio de una
+`TS009`. Cada cambio de una
 reserva incrementa su versión, y los endpoints la exponen con las cabeceras `ETag` e
 `If-Match` para rechazar cambios concurrentes.
 
