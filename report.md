@@ -6109,6 +6109,95 @@ documentación publicada puede consultarse en https://hostera-platform.onrender.
 
 *Figura 5.30. Endpoints de propiedades documentados con OpenAPI y publicados en Scalar.*
 
+**Rooms.** Los tipos de habitación, las habitaciones y los planes de tarifa pertenecen a
+una propiedad y se consultan después por su propio identificador. Los nombres de tipos y
+planes, y los números de habitación, son únicos dentro de la propiedad; un nombre o
+número repetido responde `409 Conflict`. Los planes de tarifa y los tipos de habitación
+se desactivan con su estado en lugar de eliminarse, salvo un tipo que ninguna habitación
+ni plan usa.
+
+| Endpoint | Acciones / verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+|---|---|---|---|---|
+| `/api/v1/properties/{propertyId}/room-types` | `GET`, `POST` | `GET /api/v1/properties/1/room-types`, `POST /api/v1/properties/1/room-types` | `propertyId` en la ruta; en el `POST`, `name`, `capacity`, `bedConfiguration` y `baseNightlyRate`. | Los tipos de habitación ordenados por nombre, o `201 Created` con el tipo creado. `409 Conflict` si el nombre ya existe. |
+| `/api/v1/room-types/{roomTypeId}` | `GET`, `PUT`, `DELETE` | `GET /api/v1/room-types/2`, `PUT /api/v1/room-types/2`, `DELETE /api/v1/room-types/2` | `roomTypeId` en la ruta; en el `PUT`, los campos del alta y `status`. | El tipo de habitación; sus habitaciones toman la nueva capacidad y camas. `204 No Content` al eliminarlo y `409 Conflict` si una habitación o un plan lo usa. |
+| `/api/v1/properties/{propertyId}/rooms` | `GET`, `POST` | `GET /api/v1/properties/1/rooms`, `POST /api/v1/properties/1/rooms` | `propertyId` en la ruta; en el `POST`, `number`, `roomTypeId` y `floor`. | Las habitaciones ordenadas por número, o `201 Created` con la habitación creada. `409 Conflict` si el número existe o el tipo está inactivo. |
+| `/api/v1/rooms/{roomId}` | `GET`, `PUT` | `GET /api/v1/rooms/7`, `PUT /api/v1/rooms/7` | `roomId` en la ruta; en el `PUT`, `number`, `roomTypeId` y `floor`. | La habitación. Puede conservar un tipo inactivo, pero no pasar a uno. |
+| `/api/v1/rooms/{roomId}/status` | `PUT` | `PUT /api/v1/rooms/7/status` | `roomId` en la ruta; `status` (`blocked`, `out-of-service`, `needs-cleaning` o `available`), `startDate`, `endDate` y `reason`. | Los periodos de estado de la habitación tras el cambio. Los periodos del rango se recortan, dividen o eliminan en la misma operación. |
+| `/api/v1/properties/{propertyId}/room-availability` | `GET` | `GET /api/v1/properties/1/room-availability?startDate=2026-11-11` | `propertyId` en la ruta; `startDate` obligatorio y `status` opcional en la consulta. | El estado de cada habitación en la fecha indicada y los seis días siguientes. `400 Bad Request` sin `startDate`. |
+| `/api/v1/properties/{propertyId}/status-periods` | `GET` | `GET /api/v1/properties/1/status-periods?from=2026-11-10&to=2026-11-16` | `propertyId` en la ruta; `from` y `to` opcionales. | Los periodos de estado de las habitaciones que se cruzan con el rango. |
+| `/api/v1/properties/{propertyId}/rate-plans` | `GET`, `POST` | `GET /api/v1/properties/1/rate-plans`, `POST /api/v1/properties/1/rate-plans` | `propertyId` en la ruta; en el `POST`, `name`, `refundable`, `cancellationPolicy`, `includedServices` y `roomTypeIds`. | Los planes activos e inactivos ordenados por nombre, o `201 Created` con el plan. Un plan reembolsable exige política de cancelación y una lista vacía de tipos vende todos. |
+| `/api/v1/rate-plans/{ratePlanId}` | `GET`, `PUT` | `GET /api/v1/rate-plans/1`, `PUT /api/v1/rate-plans/1` | `ratePlanId` en la ruta; en el `PUT`, los campos del alta y `status`. | El plan de tarifa. `409 Conflict` si el nombre ya existe. |
+| `/api/v1/rate-plans/{ratePlanId}/daily-rates` | `PUT` | `PUT /api/v1/rate-plans/1/daily-rates` | `ratePlanId` en la ruta; `roomTypeId`, `startDate`, `endDate` y `amount`. | Las tarifas de cada noche del rango. Un `amount` nulo devuelve las noches a la tarifa base del tipo. `409 Conflict` si el plan no vende ese tipo. |
+| `/api/v1/properties/{propertyId}/daily-rates` | `GET` | `GET /api/v1/properties/1/daily-rates?startDate=2026-11-11&endDate=2026-11-17` | `propertyId` en la ruta; `startDate` y `endDate` opcionales. | Las tarifas por noche de cada plan y tipo de habitación; las noches sin tarifa usan la tarifa base. |
+
+<img src="assets/chapter-5/sprint-3-scalar-room-types.png" alt="Documentación de los endpoints de tipos de habitación en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.37. Endpoints de tipos de habitación documentados con OpenAPI y publicados en Scalar.*
+
+<img src="assets/chapter-5/sprint-3-scalar-rooms.png" alt="Documentación de los endpoints de habitaciones en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.38. Endpoints de habitaciones documentados con OpenAPI y publicados en Scalar.*
+
+<img src="assets/chapter-5/sprint-3-scalar-room-status.png" alt="Documentación de los endpoints de estado y disponibilidad de habitaciones en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.39. Endpoints de estado y disponibilidad de habitaciones documentados con OpenAPI y publicados en Scalar.*
+
+<img src="assets/chapter-5/sprint-3-scalar-rate-plans.png" alt="Documentación de los endpoints de planes de tarifa y tarifas diarias en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.40. Endpoints de planes de tarifa y tarifas diarias documentados con OpenAPI y publicados en Scalar.*
+
+**Bookings.** Cada respuesta de una reserva incluye su versión en la cabecera `ETag`. Las
+operaciones que la modifican aceptan esa versión en `If-Match` y responden
+`409 Conflict` si otra operación cambió la reserva antes. El servidor asigna el código de
+la reserva y calcula el total con la tarifa diaria del tipo de habitación en el plan
+elegido, o con su tarifa base. Los pagos aceptan la cabecera `Idempotency-Key`: un
+reintento con la misma clave devuelve el pago original con `200 OK` y la cabecera
+`Idempotent-Replayed`, en lugar de registrar otro.
+
+| Endpoint | Acciones / verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+|---|---|---|---|---|
+| `/api/v1/properties/{propertyId}/bookings` | `GET`, `POST` | `GET /api/v1/properties/1/bookings?status=confirmed&page=1&pageSize=20`, `POST /api/v1/properties/1/bookings` | `propertyId` en la ruta; en el `GET`, `status`, `roomId`, `from`, `to`, `search`, `page` y `pageSize` opcionales; en el `POST`, los datos del huésped, `checkInDate`, `checkOutDate`, `guests`, `roomTypeId`, `roomId`, `ratePlanId` y `guestRequest`. | Las reservas ordenadas por día de llegada y código, con el total en la cabecera `X-Total-Count`, o `201 Created` con la reserva pendiente. `409 Conflict` si la habitación no está disponible. |
+| `/api/v1/bookings/{bookingId}` | `GET`, `PUT` | `GET /api/v1/bookings/40`, `PUT /api/v1/bookings/40` | `bookingId` en la ruta; en el `PUT`, `If-Match` y los campos del alta. | La reserva con su `ETag`. Solo se editan reservas pendientes o confirmadas, y el total se recalcula si cambian las noches, el tipo o el plan. |
+| `/api/v1/bookings/{bookingId}/transitions` | `POST` | `POST /api/v1/bookings/40/transitions` | `bookingId` en la ruta; `If-Match`; `status`, `operatorId`, y `cancellationReason` y `cancellationNote` al cancelar. | La reserva con su nuevo estado: confirmada, cancelada, no-show o restaurada a pendiente. `409 Conflict` si el cambio no corresponde al estado actual. |
+| `/api/v1/bookings/{bookingId}/check-in` | `POST` | `POST /api/v1/bookings/40/check-in` | `bookingId` en la ruta; `If-Match`; `documentType`, `documentNumber`, `documentVerified`, `keyCardIds` y `operatorId`. | La reserva en estadía y sus tarjetas. Exige el documento verificado y al menos una tarjeta codificada, que abre la habitación hasta las 11:00 del día de salida. |
+| `/api/v1/bookings/{bookingId}/check-out` | `POST` | `POST /api/v1/bookings/40/check-out` | `bookingId` en la ruta; `If-Match`; `roomCondition`, `departureNote` y `operatorId`. | La reserva con la estadía cerrada; las tarjetas dejan de abrir la habitación y esta queda para limpieza. `409 Conflict` si queda saldo pendiente. |
+| `/api/v1/bookings/{bookingId}/payments` | `GET`, `POST` | `GET /api/v1/bookings/40/payments`, `POST /api/v1/bookings/40/payments` | `bookingId` en la ruta; en el `POST`, `Idempotency-Key` e `If-Match` opcionales, y `amount`, `method`, `paidAt`, `reference` y `recordedBy`. | Los pagos de la reserva, o `201 Created` con el pago y el saldo pendiente. `422 Unprocessable Entity` si el monto supera el saldo. |
+| `/api/v1/properties/{propertyId}/payments` | `GET` | `GET /api/v1/properties/1/payments` | `propertyId` en la ruta. | Los pagos de las reservas de la propiedad, en el orden en que se recibieron. |
+
+<img src="assets/chapter-5/sprint-3-scalar-bookings.png" alt="Documentación de los endpoints de reservas en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.41. Endpoints de reservas documentados con OpenAPI y publicados en Scalar.*
+
+<img src="assets/chapter-5/sprint-3-scalar-payments.png" alt="Documentación de los endpoints de pagos en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.42. Endpoints de pagos documentados con OpenAPI y publicados en Scalar.*
+
+<img src="assets/chapter-5/sprint-3-scalar-stays.png" alt="Documentación de los endpoints de check-in y check-out en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.43. Endpoints de check-in y check-out documentados con OpenAPI y publicados en Scalar.*
+
+**Eventos de acceso y Overview.** El resultado de un evento de acceso lo decide el
+servidor a partir del estado y el alcance de la credencial de la tarjeta presentada. Un
+lector que no está registrado responde `403 Forbidden`. El panorama operativo se entrega
+completo aunque una de sus fuentes no tenga datos: esa sección aparece en
+`unavailableSections` y sus valores llegan nulos.
+
+| Endpoint | Acciones / verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+|---|---|---|---|---|
+| `/api/v1/access-events` | `POST` | `POST /api/v1/access-events` | `propertyId`, `cardId`, `accessPoint`, `roomId` y `occurredAt`. | `201 Created` con el evento y su resultado, concedido o rechazado. `403 Forbidden` si el lector no está registrado. |
+| `/api/v1/access-events/{accessEventId}` | `GET` | `GET /api/v1/access-events/12` | `accessEventId` en la ruta. | El evento de acceso. `404 Not Found` si no existe. |
+| `/api/v1/properties/{propertyId}/access-events` | `GET` | `GET /api/v1/properties/1/access-events?from=2026-11-11&result=denied&page=1&pageSize=20` | `propertyId` en la ruta; `from`, `to`, `result`, `holderName`, `credentialId`, `cardId`, `accessPoint`, `roomId`, `page` y `pageSize` opcionales. | Una página de eventos, del más reciente al más antiguo, con el total en la cabecera `X-Total-Count`. |
+| `/api/v1/properties/{propertyId}/dashboard` | `GET` | `GET /api/v1/properties/1/dashboard?date=2026-11-11` | `propertyId` en la ruta; `date`, `from` y `to` opcionales. | Ocupación, estado de las habitaciones, llegadas, ingresos, inventario y accesos del día. El día por defecto es hoy y el rango, sus últimas 7 noches. |
+| `/api/v1/property-overviews` | `GET` | `GET /api/v1/property-overviews?date=2026-11-11` | `date` opcional. | El panorama de cada propiedad en el día, para comparar su ocupación y las habitaciones que requieren atención. |
+
+<img src="assets/chapter-5/sprint-3-scalar-access-events.png" alt="Documentación de los endpoints de eventos de acceso en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.44. Endpoints de eventos de acceso documentados con OpenAPI y publicados en Scalar.*
+
+<img src="assets/chapter-5/sprint-3-scalar-overview.png" alt="Documentación de los endpoints del panorama operativo en Scalar" style="width:100%; height:auto;"/>
+
+*Figura 5.45. Endpoints del panorama operativo documentados con OpenAPI y publicados en Scalar.*
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
