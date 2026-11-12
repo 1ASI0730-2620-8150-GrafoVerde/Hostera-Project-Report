@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
+- Added the development evidence of the shared foundation, Rooms, Bookings, access events, Overview, the integration with the application and the versions 1.0.0 and 2.0.0 in the Sprint 3: the 295 commits of eleven branches with their content, leader and period.
 - Added the Access Control, rate plan and property evidence of the Sprint 3 in the development, execution and services documentation sections: the 50 commits of five branches, the credential, staff member and property endpoints, and screenshots of the deployed application and API reference.
 - Added the AV2 entries of José Santana in the Student Outcome section.
 - Added the Inventory evidence of the Sprint 3 in the development, execution and services documentation sections: the 67 commits of its three branches, the Inventory endpoints and the screenshots of the application and of Scalar on MySQL.
