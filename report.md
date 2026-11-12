@@ -252,6 +252,7 @@ historial y la captura muestra sus commits más recientes.
     - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
     - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
     - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+    - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
@@ -6263,6 +6264,63 @@ español, enlazada desde el pie de página.
 <img src="assets/chapter-5/sprint-3-landing-page-v3-0-0.png" alt="Landing Page publicada en su versión 3.0.0 con el panel de acceso RFID" style="width:100%; height:auto;"/>
 
 *Figura 5.51. Landing Page publicada en su versión `v3.0.0`, con el panel de acceso RFID.*
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+En el Sprint 3 el trabajo se concentró en los RESTful Web Services, donde los cinco
+integrantes hicieron commits. Cada bounded context se desarrolló en su propia rama con un
+líder, sobre la base compartida que Mateo Condori integró primero, y las ramas se
+integraron en `develop` a medida que se completaban, entre el 21 de octubre y el 12 de
+noviembre de 2026. En la Frontend Web Application, José Santana agregó el pie de página
+con el enlace a los términos y condiciones, los metadatos SEO y el menú de cuenta con el
+selector de idioma; Darnell Cuba conectó el inventario a los servicios, y Joaquin Cuba
+conectó los demás módulos y publicó la versión `v2.0.0`. En la Landing Page, José Santana
+agregó el recorrido del producto con capturas de la aplicación, las secciones de
+privacidad y ética de los términos y condiciones y el correo del equipo en el pie de
+página, y Joaquin Cuba agregó el panel de acceso RFID y la página de política de
+privacidad.
+
+| Integrante | Aspectos liderados | hostera-platform | hostera-frontend-wa | hostera-landing-page | Total |
+|---|---|---:|---:|---:|---:|
+| Joaquin Cuba (`joacuba`) | Reservas, pagos, check-in y check-out, integración con la aplicación y despliegue | 126 | 31 | 16 | 173 |
+| Mateo Condori (`BeyaminUv`) | Base compartida y habitaciones | 87 | 0 | 0 | 87 |
+| Darnell Cuba (`darnell1910`) | Inventario | 62 | 9 | 0 | 71 |
+| José Santana (`JhosBY2005`) | Control de accesos, con planes de tarifa y propiedades | 52 | 5 | 12 | 69 |
+| Juan Diego Flores (`YopoFlores`) | Eventos de acceso y panorama operativo | 46 | 0 | 0 | 46 |
+| **Total** | **Cinco integrantes** | **373** | **45** | **28** | **446** |
+
+El gráfico siguiente se construyó a partir del historial de los tres repositorios, sin
+contar los commits de merge. En `hostera-platform` incluye el commit inicial del
+repositorio, por eso suma uno más que las tablas de la sección 5.2.3.4. En
+`hostera-frontend-wa` y `hostera-landing-page` cuenta los commits del 7 de octubre al 12
+de noviembre de 2026.
+
+<img src="assets/chapter-5/sprint-3-commits-by-member.svg" alt="Commits funcionales por integrante y repositorio durante el Sprint 3" style="width:100%; height:auto;"/>
+
+*Figura 5.52. Commits funcionales por integrante y repositorio durante el Sprint 3.*
+
+Los analíticos de GitHub muestran la misma distribución. En `hostera-platform` cuentan los
+commits de la rama `main`, que todavía no incluye un commit de documentación de José
+Santana integrado en `develop` después de la versión `1.0.0`. En `hostera-frontend-wa` y
+`hostera-landing-page` el periodo se limita del 7 de octubre al 12 de noviembre de 2026.
+
+<img src="assets/chapter-5/sprint-3-github-contributors-platform.png" alt="Analíticos de colaboradores de GitHub del repositorio hostera-platform" style="width:100%; height:auto;"/>
+
+*Figura 5.53. Contribuciones por integrante en `hostera-platform`, según los analíticos de GitHub.*
+
+<img src="assets/chapter-5/sprint-3-github-contributors-frontend.png" alt="Analíticos de colaboradores de GitHub del repositorio hostera-frontend-wa durante el Sprint 3" style="width:100%; height:auto;"/>
+
+*Figura 5.54. Contribuciones por integrante en `hostera-frontend-wa` durante el Sprint 3, según los analíticos de GitHub.*
+
+<img src="assets/chapter-5/sprint-3-github-contributors-landing.png" alt="Analíticos de colaboradores de GitHub del repositorio hostera-landing-page durante el Sprint 3" style="width:100%; height:auto;"/>
+
+*Figura 5.55. Contribuciones por integrante en `hostera-landing-page` durante el Sprint 3, según los analíticos de GitHub.*
+
+En los servicios la distribución sigue el tamaño de cada contexto. Joaquin Cuba concentra
+más commits porque lideró las reservas, que incluyen los pagos, el check-in y el
+check-out, además de la integración con la aplicación y el despliegue. Mateo Condori
+construyó la base compartida y las habitaciones, y los otros tres integrantes suman entre
+46 y 62 commits cada uno con un contexto completo.
 
 # Conclusiones
 
