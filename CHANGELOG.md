@@ -20,6 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Changed
 
+- Rewrote the actions of the Student Outcome for AV1, TB1 and AV2 around the criteria of ABET Student Outcome 5, and gave each member their own conclusions for each delivery, in the same structure as the actions.
 - Brought the conclusions, the hypotheses status and the roadmap up to the close of AV2, linked the RESTful Web Services in the annexes, numbered the chapter 5 figures in order of appearance and dated the cover November 2026.
 - Marked the tasks of TS004 to TS010, TS015 and TS017 as done in the Sprint Backlog 3 and named who completed the shared tasks.
 - Marked the tasks TS011-T1 to TS011-T4 and TS014-T1 to TS014-T5 as done in the Sprint Backlog 3, naming who completed each one, and recorded that Mateo Condori led the Rooms aspect.
