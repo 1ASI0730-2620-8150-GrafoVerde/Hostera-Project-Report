@@ -6358,6 +6358,13 @@ check-out, además de la integración con la aplicación y el despliegue. Mateo 
 construyó la base compartida y las habitaciones, y los otros tres integrantes suman entre
 46 y 62 commits cada uno con un contexto completo.
 
+## 5.3. Validation Interviews
+
+### 5.3.1. Diseño de Entrevistas
+
+
+
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
