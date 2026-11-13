@@ -47,6 +47,7 @@
 
 | Versión |   Fecha    | Autor(es)                                                                                         | Descripción de cambios                                                                                                                                                                  |
 | :-----: | :--------: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  0.8.0  | 13/11/2026 | Mateo Condori (`BeyaminUv`)<br>Darnell Cuba (`darnell1910`) | Se agregaron las Validation Interviews con el diseño de las entrevistas y las tareas por segmento, el registro de las entrevistas con Wilson Zapata y Otto Cuba y la evaluación según heurísticas, y la sección del Video About-the-Product. |
 |  0.7.0  | 12/11/2026 | Joaquin Cuba (`joacuba`)<br>José Antonio Santana Luna (`JhosBY2005`)<br>Darnell Cuba (`darnell1910`)<br>Mateo Condori (`BeyaminUv`)<br>Juan Diego Flores Rios (`YopoFlores`) | Versión de AV2. Se agregó la evidencia del Sprint 3: el desarrollo, la ejecución, la documentación de servicios y el despliegue de los RESTful Web Services en Render con MySQL en Aiven, la versión `v2.0.0` de la Frontend Web Application conectada a ellos y la colaboración del equipo; se completó el Sprint Backlog 3 y se actualizaron el Project Report Collaboration Insights, el Student Outcome, las conclusiones y los anexos. |
 |  0.6.0  | 28/10/2026 | José Antonio Santana Luna (`JhosBY2005`) | Se agregó el Sprint 3 con el Sprint Planning 3, la matriz de líderes y colaboradores y el Sprint Backlog 3, y la technical story `TS018` en el Product Backlog. |
 |  0.5.2  | 27/10/2026 | José Antonio Santana Luna (`JhosBY2005`) | El Design-Level EventStorming usa el término Booking en sus bounded contexts, comandos, vistas, reglas, eventos y agregados, con fondo blanco. |
@@ -289,6 +290,11 @@ panorama operativo, como muestra la sección 5.2.3.8.
     - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
     - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
     - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+- [5.3. Validation Interviews](#53-validation-interviews)
+  - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+  - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+  - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+- [5.4. Video About-the-Product](#54-video-about-the-product)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
