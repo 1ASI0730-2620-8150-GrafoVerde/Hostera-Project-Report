@@ -6365,11 +6365,18 @@ Para la validación del producto final se diseñaron sesiones estructuradas en l
 
 **Objetivo de validación:** Confirmar que Hostera resuelve la problemática de monitoreo manual, que la interfaz es comprensible para usuarios no técnicos y que los flujos del sistema funcionan correctamente en el entorno desplegado.
 
-| Segmento  | Producto evaluado | Tareas asignadas al entrevistado |
-| :--- |  :--- | :--- |
-|  hoteles independientes | Web Application |Es lunes temprano y no está en el hotel.Dígame cuántas llegadas hay hoy, qué porcentaje de ocupación tiene y cuántas habitaciones están libres.|
-|  pequeñas cadenas hoteleras | Web Application | Viendo la sede Cartagena 04 tiene que cambiar a monitorear Lima 01 sin salir de la sección en la que está |
-|  pequeñas cadenas hoteleras | Web Application | Compare la ocupación y las llegadas de hoy entre las dos sedes|
+| Segmento  | Producto evaluado | Tareas asignadas al entrevistado                                                                                                              |
+| :--- |  :--- |:----------------------------------------------------------------------------------------------------------------------------------------------|
+|  hoteles independientes | Web Application | Es lunes temprano y no está en el hotel.Dígame cuántas llegadas hay hoy, qué porcentaje de ocupación tiene y cuántas habitaciones están libres.|
+|  hoteles independientes | Web Application |Un huésped llama para confirmar su reserva. Búsquela y dígame su estado y si ya pagó.» (dar el nombre de una reserva de prueba) |
+|  hoteles independientes | Web Application |Una persona quiere una habitación doble para el próximo viernes, dos noches. Revise si hay disponibilidad y regístrele la reserva |
+|  hoteles independientes | Web Application |Quiere saber qué insumos están por acabarse. Luego registre que salió 1 caja de papel higiénico del almacén |
+|  hoteles independientes | Web Application |A un huésped se le perdió la tarjeta de su habitación. Revise qué credencial tenía y quién entró a esa habitación en los últimos días. |  
+|  pequeñas cadenas hoteleras | Web Application | Viendo la sede Cartagena 04 tiene que cambiar a monitorear Lima 01 sin salir de la sección en la que está                                     |
+|  pequeñas cadenas hoteleras | Web Application | Compare la ocupación y las llegadas de hoy entre las dos sedes                                                                                |
+|  pequeñas cadenas hoteleras | Web Application | Revise si la sede Lima 01 tiene algún insumo con stock crítico y en qué almacén está                                                          |
+|  pequeñas cadenas hoteleras | Web Application | En Lima 01 hay que dar acceso a un nuevo trabajador de limpieza. Emita su credencial y luego revise los últimos accesos registrados.          |
+|  pequeñas cadenas hoteleras | Web Application | Cambie el idioma de la aplicación a español                                                                                                   |
 **Metodología:** Sesiones de 30-40 minutos. Cada entrevistado recibió una guía con tareas específicas sobre el producto desplegado y se registraron sus apreciaciones sobre usabilidad, claridad y utilidad percibida.
 
 
