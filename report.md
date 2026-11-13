@@ -6393,6 +6393,16 @@ Para la validación del producto final se diseñaron sesiones estructuradas en l
 | **Duración** | 26 min                         |
 | **Productos evaluados** | Landing Page + Web Application |
 
+| Campo | Entrevistado |
+| :--- |:-------------------------------|
+| **Nombres y apellidos** | Otto Cuba |
+| **Edad** | 50 años |
+| **Distrito** | Huarmey, Huarmey |
+| **Fecha** | 12 de noviembre de 2026 |
+| **Duración** | 36 min |
+| **Productos evaluados** | Landing Page + Web Application |
+| **URL de la entrevista** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC-8Xgh2hOjQoTtTs1t9EoWAWZdUBxQvZ3IMSoXAbG4FTg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8QZyxe |
+
 ---
 
 ### 5.3.3. Evaluaciones según heurísticas
