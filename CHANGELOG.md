@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-11-13
+
+### Added
+
+- Added the Validation Interviews section with the interview design, the tasks given to each segment, the records of the interviews with Wilson Zapata and Otto Cuba, and the heuristic evaluation of the product.
+- Added the Video About-the-Product section with the link to the video of the integrated product.
+- Added sections 5.3 and 5.4 to the table of contents.
+
 ## [0.7.1] - 2026-11-13
 
 ### Fixed
