@@ -37,6 +37,7 @@ pandoc \
   --to=html5 \
   --standalone \
   --css="${SCRIPT_DIR}/report.css" \
+  --lua-filter="${SCRIPT_DIR}/fit-tables.lua" \
   --resource-path="${REPOSITORY_ROOT}" \
   "${INPUT_FILE}" \
   --output="${HTML_FILE}"

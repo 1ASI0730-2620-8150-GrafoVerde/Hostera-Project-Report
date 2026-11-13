@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-11-13
+
+### Fixed
+
+- Kept every table of the PDF inside the page margins: the Markdown tables get column widths from their content and break long paths, branch names and identifiers, tables with five or more columns use a smaller font, the Sprint Backlog tables have fixed column widths, and code blocks wrap their long lines.
+
 ## [0.7.0] - 2026-11-13
 
 ### Added
