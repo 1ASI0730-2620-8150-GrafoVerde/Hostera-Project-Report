@@ -6361,6 +6361,11 @@ construyó la base compartida y las habitaciones, y los otros tres integrantes s
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
+Para la validación del producto final se diseñaron sesiones estructuradas en las que representantes de cada segmento objetivo interactuaron con la **Website** desplegada y la **Web Application** integrada con el backend en producción.
+
+**Objetivo de validación:** Confirmar que Hostera resuelve la problemática de monitoreo manual, que la interfaz es comprensible para usuarios no técnicos y que los flujos del sistema funcionan correctamente en el entorno desplegado.
+
+**Metodología:** Sesiones de 30-40 minutos. Cada entrevistado recibió una guía con tareas específicas sobre el producto desplegado y se registraron sus apreciaciones sobre usabilidad, claridad y utilidad percibida.
 
 
 ---
