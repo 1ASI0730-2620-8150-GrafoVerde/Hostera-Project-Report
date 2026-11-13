@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [0.7.0] - 2026-11-13
+
+### Added
+
+- Added the AV2 entries of the report version history, the Project Report Collaboration Insights, with the commits of each member and the commit history of `develop`, and the Student Outcome of the other four members.
+- Added the team collaboration insights of the Sprint 3: the commits of each member in the three repositories, a chart by member and repository, and the GitHub contributor analytics of the services, the application and the landing page.
+- Added the deployment evidence of the Sprint 3: the RESTful Web Services on Render with their Aiven for MySQL database, the Frontend Web Application `v2.0.0` on Firebase Hosting and the Landing Page `v3.0.0` on GitHub Pages, with six screenshots.
+- Added the Rooms, Bookings, access events and Overview endpoints to the services documentation of the Sprint 3, with nine screenshots of the API reference published in Scalar.
+- Added the execution evidence of Bookings, Rooms, Overview and access events in the Sprint 3, with six screenshots of the application deployed on Firebase Hosting and served by the RESTful Web Services on Render.
+- Added the development evidence of the shared foundation, Rooms, Bookings, access events, Overview, the integration with the application and the versions 1.0.0 and 2.0.0 in the Sprint 3: the 295 commits of eleven branches with their content, leader and period.
+- Added the Access Control, rate plan and property evidence of the Sprint 3 in the development, execution and services documentation sections: the 50 commits of five branches, the credential, staff member and property endpoints, and screenshots of the deployed application and API reference.
+- Added the AV2 entries of José Santana in the Student Outcome section.
+- Added the Inventory evidence of the Sprint 3 in the development, execution and services documentation sections: the 67 commits of its three branches, the Inventory endpoints and the screenshots of the application and of Scalar on MySQL.
+
+### Changed
+
+- Rewrote the actions of the Student Outcome for AV1, TB1 and AV2 around the criteria of ABET Student Outcome 5, and gave each member their own conclusions for each delivery, in the same structure as the actions.
+- Brought the conclusions, the hypotheses status and the roadmap up to the close of AV2, linked the RESTful Web Services in the annexes, numbered the chapter 5 figures in order of appearance and dated the cover November 2026.
+- Marked the tasks of TS004 to TS010, TS015 and TS017 as done in the Sprint Backlog 3 and named who completed the shared tasks.
+- Marked the tasks TS011-T1 to TS011-T4 and TS014-T1 to TS014-T5 as done in the Sprint Backlog 3, naming who completed each one, and recorded that Mateo Condori led the Rooms aspect.
+- Marked the Inventory tasks TS012-T1 to TS012-T3, TS013-T1 and TS013-T2 as done in the Sprint Backlog 3.
+
 ## [0.6.1] - 2026-10-28
 
 ### Fixed
