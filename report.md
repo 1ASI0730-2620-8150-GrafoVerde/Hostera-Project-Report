@@ -6358,6 +6358,77 @@ check-out, además de la integración con la aplicación y el despliegue. Mateo 
 construyó la base compartida y las habitaciones, y los otros tres integrantes suman entre
 46 y 62 commits cada uno con un contexto completo.
 
+## 5.3. Validation Interviews
+
+### 5.3.1. Diseño de Entrevistas
+Para la validación del producto final se diseñaron sesiones estructuradas en las que representantes de cada segmento objetivo interactuaron con la **Website** desplegada y la **Web Application** integrada con el backend en producción.
+
+**Objetivo de validación:** Confirmar que Hostera resuelve la problemática de monitoreo manual, que la interfaz es comprensible para usuarios no técnicos y que los flujos del sistema funcionan correctamente en el entorno desplegado.
+
+| Segmento  | Producto evaluado | Tareas asignadas al entrevistado                                                                                                              |
+| :--- |  :--- |:----------------------------------------------------------------------------------------------------------------------------------------------|
+|  hoteles independientes | Web Application | Es lunes temprano y no está en el hotel.Dígame cuántas llegadas hay hoy, qué porcentaje de ocupación tiene y cuántas habitaciones están libres.|
+|  hoteles independientes | Web Application |Un huésped llama para confirmar su reserva. Búsquela y dígame su estado y si ya pagó.» (dar el nombre de una reserva de prueba) |
+|  hoteles independientes | Web Application |Una persona quiere una habitación doble para el próximo viernes, dos noches. Revise si hay disponibilidad y regístrele la reserva |
+|  hoteles independientes | Web Application |Quiere saber qué insumos están por acabarse. Luego registre que salió 1 caja de papel higiénico del almacén |
+|  hoteles independientes | Web Application |A un huésped se le perdió la tarjeta de su habitación. Revise qué credencial tenía y quién entró a esa habitación en los últimos días. |  
+|  pequeñas cadenas hoteleras | Web Application | Viendo la sede Cartagena 04 tiene que cambiar a monitorear Lima 01 sin salir de la sección en la que está                                     |
+|  pequeñas cadenas hoteleras | Web Application | Compare la ocupación y las llegadas de hoy entre las dos sedes                                                                                |
+|  pequeñas cadenas hoteleras | Web Application | Revise si la sede Lima 01 tiene algún insumo con stock crítico y en qué almacén está                                                          |
+|  pequeñas cadenas hoteleras | Web Application | En Lima 01 hay que dar acceso a un nuevo trabajador de limpieza. Emita su credencial y luego revise los últimos accesos registrados.          |
+|  pequeñas cadenas hoteleras | Web Application | Cambie el idioma de la aplicación a español                                                                                                   |
+**Metodología:** Sesiones de 30-40 minutos. Cada entrevistado recibió una guía con tareas específicas sobre el producto desplegado y se registraron sus apreciaciones sobre usabilidad, claridad y utilidad percibida.
+
+---
+### 5.3.2. Registro de Entrevistas
+
+
+#### Segmento 02: Pequeñas cadenas hoteleras
+
+| Campo | Entrevistado                   |
+| :--- |:-------------------------------|
+| **Nombres y apellidos** | Wilson Zapata                  |
+| **Edad** | 45 años                        |
+| **Distrito** | Ciudad de puno                 |
+| **Duración** | 26 min                         |
+| **Productos evaluados** | Landing Page + Web Application |
+
+| Campo | Entrevistado |
+| :--- |:-------------------------------|
+| **Nombres y apellidos** | Otto Cuba |
+| **Edad** | 50 años |
+| **Distrito** | Huarmey, Huarmey |
+| **Fecha** | 12 de noviembre de 2026 |
+| **Duración** | 36 min |
+| **Productos evaluados** | Landing Page + Web Application |
+| **URL de la entrevista** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410105_upc_edu_pe/IQC-8Xgh2hOjQoTtTs1t9EoWAWZdUBxQvZ3IMSoXAbG4FTg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8QZyxe |
+
+---
+
+### 5.3.3. Evaluaciones según heurísticas
+
+**Escala utilizada (criterio de evaluación):**
+- 1 = Cumplimiento muy bajo (requiere rediseño)
+- 2 = Cumplimiento bajo (requiere correcciones mayores)
+- 3 = Cumplimiento aceptable (requiere mejoras)
+- 4 = Cumplimiento bueno (ajustes menores)
+- 5 = Cumplimiento completo (sin observaciones críticas)
+
+| Heurística  | Hallazgo principal                          | Evidencia observada | Puntaje (1-5) |
+| :--- |:--------------------------------------------| :--- | :---: |
+|  Relación sistema–mundo real | Terminología alineada al negocio de hoteles | Entrevistados comprenden módulos sin capacitación previa | 5 |
+|  Consistencia y estándares | Coherencia visual entre landing y web app | Design system uniforme en colores, tipografía y navegación | 5 |
+|  Flexibilidad y eficiencia | Dashboard accesible desde navegador sin instalación | Acceso desde Chrome en desktop y móvil| 4 |
+|  Diseño estético y minimalista | Interfaz limpia orientada a datos operativos | Entrevistados no reportan sobrecarga visual | 5 |
+
+## 5.4. Video About-the-Product
+
+Enlace al video final del producto Hostera (versión integrada landing + frontend + backend ):
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231e443_upc_edu_pe/IQBG-jqc3HtGQ4Nhl_fB9DGlATGdRRIpyNh2Ox2LgyY4lrI?e=m6IWFv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+El video demuestra el funcionamiento del ecosistema desplegado: Website, perfil con acceso a las funciones de bookings, rooms, access control e inventory.
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
