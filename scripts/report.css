@@ -210,3 +210,50 @@ table td {
   text-indent: -1.27cm;
   overflow-wrap: anywhere;
 }
+
+p,
+li {
+  overflow-wrap: anywhere;
+}
+
+th,
+td {
+  overflow-wrap: break-word;
+}
+
+table.fitted {
+  table-layout: fixed;
+}
+
+table.dense,
+table.sprint-backlog {
+  font-size: 9pt;
+  line-height: 1.25;
+}
+
+table.dense th,
+table.dense td,
+table.sprint-backlog th,
+table.sprint-backlog td {
+  padding: 0.3em 0.35em;
+}
+
+table.sprint-backlog {
+  table-layout: fixed;
+}
+
+pre,
+pre > code,
+pre > code.sourceCode {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+pre > code.sourceCode > span {
+  text-indent: 0;
+  padding-left: 0;
+}
+
+table.sprint-backlog th {
+  font-size: 8pt;
+}

@@ -4431,7 +4431,17 @@ presenta la descomposición de trabajo y el estado al cierre del Sprint 1. Las h
 indicadas son estimaciones de planificación para cada Work-Item/Task y no sustituyen
 la estimación relativa en Story Points de cada User Story.
 
-<table>
+<table class="sprint-backlog">
+  <colgroup>
+    <col style="width: 8%">
+    <col style="width: 13%">
+    <col style="width: 10%">
+    <col style="width: 14%">
+    <col style="width: 23%">
+    <col style="width: 11%">
+    <col style="width: 10%">
+    <col style="width: 11%">
+  </colgroup>
   <thead>
     <tr>
       <th>Sprint #</th>
@@ -4720,7 +4730,17 @@ El responsable de cada tarea es el integrante con más commits sobre sus compone
 el historial del repositorio. La estimación suma 256 horas para el sprint y todas las
 tareas quedaron en estado Done al cierre.
 
-<table>
+<table class="sprint-backlog">
+  <colgroup>
+    <col style="width: 8%">
+    <col style="width: 13%">
+    <col style="width: 10%">
+    <col style="width: 14%">
+    <col style="width: 23%">
+    <col style="width: 11%">
+    <col style="width: 10%">
+    <col style="width: 11%">
+  </colgroup>
   <thead>
     <tr>
       <th>Sprint #</th>
@@ -5343,7 +5363,17 @@ estado To-do y se registran en el tablero del proyecto en YouTrack
 (https://jqcuba.youtrack.cloud/projects/US/agiles/204-1/218-5), asociadas a la
 technical story que implementan.
 
-<table>
+<table class="sprint-backlog">
+  <colgroup>
+    <col style="width: 8%">
+    <col style="width: 13%">
+    <col style="width: 10%">
+    <col style="width: 14%">
+    <col style="width: 23%">
+    <col style="width: 11%">
+    <col style="width: 10%">
+    <col style="width: 11%">
+  </colgroup>
   <thead>
     <tr>
       <th>Sprint #</th>
