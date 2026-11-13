@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-11-13
+
 ### Added
 
 - Added the AV2 entries of the report version history, the Project Report Collaboration Insights, with the commits of each member and the commit history of `develop`, and the Student Outcome of the other four members.
