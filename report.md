@@ -6363,7 +6363,14 @@ construyó la base compartida y las habitaciones, y los otros tres integrantes s
 ### 5.3.1. Diseño de Entrevistas
 
 
+---
+## 5.4. Video About-the-Product
 
+Enlace al video final del producto Hostera (versión integrada landing + frontend + backend ):
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231e443_upc_edu_pe/IQBG-jqc3HtGQ4Nhl_fB9DGlATGdRRIpyNh2Ox2LgyY4lrI?e=m6IWFv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+El video demuestra el funcionamiento del ecosistema desplegado: Website, perfil con acceso a las funciones de bookings, rooms, access control e inventory.
 
 # Conclusiones
 
