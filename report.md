@@ -6379,6 +6379,19 @@ Para la validación del producto final se diseñaron sesiones estructuradas en l
 |  pequeñas cadenas hoteleras | Web Application | Cambie el idioma de la aplicación a español                                                                                                   |
 **Metodología:** Sesiones de 30-40 minutos. Cada entrevistado recibió una guía con tareas específicas sobre el producto desplegado y se registraron sus apreciaciones sobre usabilidad, claridad y utilidad percibida.
 
+---
+### 5.3.2. Registro de Entrevistas
+
+
+#### Segmento 02: Pequeñas cadenas hoteleras
+
+| Campo | Entrevistado                   |
+| :--- |:-------------------------------|
+| **Nombres y apellidos** | Wilson Zapata                  |
+| **Edad** | 45 años                        |
+| **Distrito** | Ciudad de puno                 |
+| **Duración** | 26 min                         |
+| **Productos evaluados** | Landing Page + Web Application |
 
 ---
 ## 5.4. Video About-the-Product
