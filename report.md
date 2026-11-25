@@ -6420,6 +6420,29 @@ El sprint comprende el desarrollo de las funcionalidades de backend mediante ASP
 | Sprint 4 Velocity | 52 Story Points comprometidos para el sprint.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Sum of Story Points | 52 Story Points.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
+La velocity se establece en 52 story points debido a que el sprint concentra el esfuerzo en completar funcionalidades transversales que todavía no se encuentran disponibles en la versión conectada de Hostera. El desarrollo del bounded context de IAM implica implementar la lógica de registro, autenticación y autorización, además de conectar estos mecanismos con la aplicación web y los bounded contexts existentes. En paralelo, la integración de Resend requiere completar la configuración del proveedor externo, implementar el envío de correos desde los servicios y habilitar su interacción desde la interfaz. Finalmente, los reportes operativos deben integrarse con la información persistida de las reservas, habitaciones y demás operaciones del hotel.
+
+Las stories incluidas en el Sprint 4 comprenden funcionalidades que quedaron pendientes del Sprint 3, junto con historias de usuario y technical stories adicionales para completar los flujos de IAM y correo electrónico desde el backend hasta la Frontend Web Application.
+
+| Story ID | Story | Story Points |
+| --- | --- | :---: |
+| TS018 | Send booking confirmation emails through an external service | 5 |
+| TS016 | Retrieve and export operational reports through the API | 5 |
+| TS001 | Register an account through the API | 5 |
+| TS002 | Authenticate an operator through the API | 5 |
+| TS003 | Enforce property-scoped authorization | 8 |
+| US009 | Register a hotel operation | 5 |
+| US010 | Sign in to Hostera | 3 |
+| US031 | Find and review an operational report | 5 |
+| US032 | Export an operational report | 3 |
+| TS019 | Integrate Resend email delivery into the application | 5 |
+| US034 | Send booking confirmation emails from the web application | 3 |
+| **Total** | **11 stories** | **52** |
+
+Las nuevas stories `TS019` y `US034` se incorporan al Product Backlog para completar el recorrido de envío de correos desde la plataforma. `TS019` contempla la integración técnica y la disponibilidad del servicio de correo en el backend, mientras que `US034` permite que el operador interactúe con esta funcionalidad desde la Frontend Web Application, utilizando el servicio implementado.
+
+Las stories `TS001`, `TS002`, `TS003`, `US009` y `US010` se retoman para implementar el bounded context de IAM, proporcionando las capacidades de registro, autenticación y autorización necesarias para acceder a Hostera. Por su parte, `TS016`, `US031` y `US032` se incorporan para completar la consulta y exportación de reportes operativos, permitiendo que los administradores y responsables de operaciones puedan analizar la información de sus propiedades.
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
