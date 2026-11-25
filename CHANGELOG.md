@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+### Added
+
+- Added the PDF of the report, `report.pdf`, to the repository.
+
+### Changed
+
+- The PDF build optimizes the embedded images and limits them to 200 dpi, which reduces the PDF from 87 MB to 24 MB without visible loss of quality.
+
 ## [0.8.0] - 2026-11-13
 
 ### Added

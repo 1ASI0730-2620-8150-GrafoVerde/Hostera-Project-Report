@@ -43,6 +43,8 @@ pandoc \
   --output="${HTML_FILE}"
 
 weasyprint \
+  --optimize-images \
+  --dpi 200 \
   --base-url="${REPOSITORY_ROOT}/" \
   "${HTML_FILE}" \
   "${OUTPUT_FILE}"

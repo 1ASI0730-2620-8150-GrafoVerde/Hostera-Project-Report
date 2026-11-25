@@ -2,7 +2,7 @@
 
 Academic report repository for **Grafo Verde Startup** and its hotel-management product, **Hostera**.
 
-The complete GitHub-Flavored Markdown report is available in [`report.md`](report.md). Images used by the report are stored in [`assets/`](assets/). The project is distributed under the [MIT License](LICENSE.md).
+The complete GitHub-Flavored Markdown report is available in [`report.md`](report.md), and its PDF version in [`report.pdf`](report.pdf). Images used by the report are stored in [`assets/`](assets/). The project is distributed under the [MIT License](LICENSE.md).
 
 ## Repository structure
 
@@ -10,6 +10,7 @@ The complete GitHub-Flavored Markdown report is available in [`report.md`](repor
 .
 ├── assets/       # Images referenced by the report
 ├── report.md     # Main report in GitHub-Flavored Markdown
+├── report.pdf    # PDF generated from report.md
 ├── scripts/      # Utility scripts
 ├── CHANGELOG.md
 └── LICENSE.md
